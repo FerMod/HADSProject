@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplicationOld {
+namespace WebApplication {
     
     
     public partial class CambiarPassword {

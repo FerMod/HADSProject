@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplicationOld {
+namespace WebApplication {
 
 	public partial class Registro : System.Web.UI.Page {
 

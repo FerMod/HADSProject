@@ -10,7 +10,7 @@
 namespace WebApplication {
     
     
-    public partial class Account1 {
+    public partial class Account {
         
         /// <summary>
         /// logIn control.

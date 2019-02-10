@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebApplicationOld.Registro" MasterPageFile="~/Account.master" Title="Registro" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebApplication.Registro" MasterPageFile="~/Account.master" Title="Registro" %>
 
 <asp:Content ID="CardBodyContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
     <div class="form-group">
