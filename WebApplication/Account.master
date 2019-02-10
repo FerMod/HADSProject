@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Account.master.cs" Inherits="WebApplication1.Account1" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs nav-fill">
+                <li class="nav-item"><asp:HyperLink ID="logIn" CssClass="nav-link" runat="server" NavigateUrl="~/Inicio">Log In</asp:HyperLink></li>
+                <li class="nav-item"><asp:HyperLink ID="createAccount" CssClass="nav-link" runat="server" NavigateUrl="~/Registro">Create Account</asp:HyperLink></li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <asp:ContentPlaceHolder ID="AccountCardBodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <script>
+        $(".nav .nav-link").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+</asp:Content>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication {
+namespace WebApplicationOld {
 
 	public partial class Inicio : System.Web.UI.Page {
 
@@ -15,7 +15,6 @@ namespace WebApplication {
 
 		protected void ButtonLogin_Click(object sender, EventArgs e) {
 		}
-
 	}
 
 }
