@@ -3,23 +3,33 @@ using System.Net.Mail;
 
 namespace EmailLib {
 
-	public static class EmailUtils {
+	public class Email {
 
-		public static void SendEmail(string email, string subject, string body) {
+		public string From { get; set; }
+		public string To { get; set; }
 
-			MailMessage mail = new MailMessage("you@yourcompany.com", email) {
-				Subject = subject,
-				Body = body
-			};
+		public int Port { get; set; } = 25;
+		public SmtpDeliveryMethod DeliveryMethod { get; set; } = SmtpDeliveryMethod.Network;
+		public bool UseDefaultCredentials { get; set; } = false;
+		public string Host { get; set; } = "smtp.ehu.eus";
+
+		public Email(string from, string to) {
+			From = from;
+			To = to;
+		}
+
+		public void SendEmail(string subject, string body) {
+
+			MailMessage email = new MailMessage(this.From, this.To, subject, body);
 
 			SmtpClient client = new SmtpClient {
-				Port = 25,
-				DeliveryMethod = SmtpDeliveryMethod.Network,
-				UseDefaultCredentials = false,
-				Host = "smtp.ehu.eus"
+				Port = this.Port,
+				DeliveryMethod = this.DeliveryMethod,
+				UseDefaultCredentials = this.UseDefaultCredentials,
+				Host = this.Host
 			};
 
-			client.Send(mail);
+			client.Send(email);
 
 		}
 
