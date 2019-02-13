@@ -1,5 +1,9 @@
 ﻿using System;
+using System.IO;
+using System.Net;
 using System.Net.Mail;
+using System.Security;
+using Newtonsoft.Json;
 
 namespace EmailLib {
 
@@ -8,14 +12,12 @@ namespace EmailLib {
 		public string From { get; set; }
 		public string To { get; set; }
 
-		public int Port { get; set; } = 25;
-		public SmtpDeliveryMethod DeliveryMethod { get; set; } = SmtpDeliveryMethod.Network;
-		public bool UseDefaultCredentials { get; set; } = false;
-		public string Host { get; set; } = "smtp.ehu.eus";
+		private SmtpServerConfig SmtpConfig { get; set; }
 
-		public Email(string from, string to) {
+		public Email(string from, string to, SmtpServerConfig emailServerConfig) {
 			From = from;
 			To = to;
+			SmtpConfig = emailServerConfig;
 		}
 
 		public void SendEmail(string subject, string body) {
@@ -23,10 +25,10 @@ namespace EmailLib {
 			MailMessage email = new MailMessage(this.From, this.To, subject, body);
 
 			SmtpClient client = new SmtpClient {
-				Port = this.Port,
-				DeliveryMethod = this.DeliveryMethod,
-				UseDefaultCredentials = this.UseDefaultCredentials,
-				Host = this.Host
+				Credentials = new NetworkCredential(SmtpConfig.UserName, SmtpConfig.Password),
+				Port = SmtpConfig.Port,
+				DeliveryMethod = SmtpConfig.DeliveryMethod,
+				Host = SmtpConfig.Host
 			};
 
 			client.Send(email);

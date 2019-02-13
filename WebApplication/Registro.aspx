@@ -16,7 +16,7 @@
         <asp:Label Style="vertical-align: central;" runat="server" Font-Bold="True">Repeat password:</asp:Label>
         <asp:TextBox ID="textBoxPassword2" CssClass="form-control" placeholder="Repeat password" TextMode="Password" runat="server" autocomplete="off"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="invalid-feedback" Font-Bold="True" runat="server" ControlToValidate="textBoxPassword2" ErrorMessage="Required field" Display="Dynamic"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="PasswordCompareValidator" CssClass="invalid-feedback" Font-Bold="True" runat="server" ControlToValidate="textBoxPassword1" ErrorMessage="Passwords does not match" Display="Dynamic"></asp:CompareValidator>
+        <asp:CompareValidator ID="PasswordCompareValidator" CssClass="invalid-feedback" Font-Bold="True" runat="server" ControlToValidate="textBoxPassword1" ErrorMessage="Passwords does not match" Display="Dynamic" Operator="NotEqual"></asp:CompareValidator>
     </div>
     <div class="form-group">
         <asp:Label runat="server" Font-Bold="True">Tipo de usuario:</asp:Label>

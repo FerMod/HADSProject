@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Optimization;
@@ -7,10 +8,13 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.UI;
+using EmailLib;
 
 namespace WebApplication {
 
 	public class Global : HttpApplication {
+
+		private string SmtpConfigPath => @"~/Config/SmtpServerConfig.json";
 
 		void Application_Start(object sender, EventArgs e) {
 
@@ -18,21 +22,22 @@ namespace WebApplication {
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-			ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition {
-				Path = "~/Scripts/jquery-3.3.1.min.js",
-				DebugPath = "~/Scripts/jquery-3.3.1.min.js",
-				CdnPath = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js",
-				CdnDebugPath = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"
-			});
 
-			ScriptManager.ScriptResourceMapping.AddDefinition("bootstrap", new ScriptResourceDefinition {
-				Path = "~/Scripts/bootstrap.min.js",
-				DebugPath = "~/Scripts/bootstrap.min.js",
-				CdnPath = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js",
-				CdnDebugPath = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"
-			});
+			SmtpServerConfig SmtpConfig = ConfigFile.ReadJsonConfig<SmtpServerConfig>(SmtpConfigPath);
 
+			if(SmtpConfig is null) {
 
+				SmtpConfig = new SmtpServerConfig {
+					Host = "smtp.ehu.eus",
+					Port = 25
+				};
+
+				// TODO: Get relative path
+				ConfigFile.WriteJsonConfig(SmtpConfigPath, SmtpConfig);
+
+			}
+
+			Application.Add("SmtpConfig", SmtpConfig);
 		}
 
 	}

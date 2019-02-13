@@ -8,8 +8,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{9E9505E1-716E-4504-A2F3-0D8E1253B13B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{DE0D14F1-F2A7-404F-ABDC-C1479D22E8E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{068A3A34-96FB-40F2-AEA3-6E0ECD228DA5} = {068A3A34-96FB-40F2-AEA3-6E0ECD228DA5}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailLib", "EmailLib\EmailLib.csproj", "{068A3A34-96FB-40F2-AEA3-6E0ECD228DA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailLib", "EmailLib\EmailLib.csproj", "{068A3A34-96FB-40F2-AEA3-6E0ECD228DA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
