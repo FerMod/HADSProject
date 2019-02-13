@@ -7,14 +7,14 @@ using Newtonsoft.Json;
 
 namespace EmailLib {
 
-	public class EmailSender {
+	public class EmailService {
 
 		private Lazy<SmtpClient> lazySmtpServer;
 		private SmtpClient SmtpServer => lazySmtpServer.Value;
 
 		public SmtpServerConfig SmtpConfig { get; private set; }
 
-		public EmailSender(SmtpServerConfig smtpServerConfig) {
+		public EmailService(SmtpServerConfig smtpServerConfig) {
 
 			SmtpConfig = smtpServerConfig;
 

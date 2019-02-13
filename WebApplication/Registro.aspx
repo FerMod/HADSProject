@@ -16,11 +16,14 @@
         <asp:Label Style="vertical-align: central;" runat="server" Font-Bold="True">Repeat password:</asp:Label>
         <asp:TextBox ID="textBoxPassword2" CssClass="form-control" placeholder="Repeat password" TextMode="Password" runat="server" autocomplete="off"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="invalid-feedback" Font-Bold="True" runat="server" ControlToValidate="textBoxPassword2" ErrorMessage="Required field" Display="Dynamic"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="PasswordCompareValidator" CssClass="invalid-feedback" Font-Bold="True" runat="server" ControlToValidate="textBoxPassword1" ErrorMessage="Passwords does not match" Display="Dynamic" Operator="NotEqual"></asp:CompareValidator>
+        <asp:CompareValidator ID="PasswordCompareValidator" CssClass="invalid-feedback" Font-Bold="True" runat="server" ControlToValidate="textBoxPassword2" ErrorMessage="Passwords does not match" Display="Dynamic" Operator="Equal" ControlToCompare="textBoxPassword1"></asp:CompareValidator>
     </div>
     <div class="form-group">
         <asp:Label runat="server" Font-Bold="True">Tipo de usuario:</asp:Label>
-        <asp:DropDownList ID="dropDownRol" CssClass="form-control dropdown" placeholder="Select option" runat="server"></asp:DropDownList>
+        <asp:DropDownList ID="dropDownRol" CssClass="form-control dropdown" placeholder="Select an option" runat="server">
+            <asp:ListItem Value="Alumno"></asp:ListItem>
+            <asp:ListItem Value="Profesor"></asp:ListItem>
+        </asp:DropDownList>
     </div>
     <div class="form-group">
         <asp:Button ID="buttonCreateAccount" CssClass="btn btn-primary" runat="server" Text="Create Account" OnClick="ButtonCreateAccount_Click" TabIndex="3" />

@@ -3031,6 +3031,8 @@ input[type="button"].btn-block {
 .dropdown,
 .dropleft {
   position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .dropdown-toggle::after {
