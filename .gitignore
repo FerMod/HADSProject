@@ -343,3 +343,5 @@ healthchecksdb
 # Ignore other projects
 WebApplicationOld/
 
+#Ignore sensible information
+SmtpServerConfig.json
