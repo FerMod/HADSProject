@@ -4,6 +4,7 @@ using System.IO;
 using System.Reflection;
 using EmailLib;
 using NUnit.Framework;
+using WebApplication.Utils;
 
 namespace Tests.EmailLib {
 
@@ -22,7 +23,7 @@ namespace Tests.EmailLib {
 		private static IEnumerable<TestCaseData> ReadConfigTestData {
 			get {
 				yield return new TestCaseData(new SmtpServerConfig() {
-					UserName = "Username",
+					Account = "Username",
 					Password = "password",
 					Host = "smtp",
 					Port = 25
@@ -34,7 +35,7 @@ namespace Tests.EmailLib {
 		public void TestReadJsonFile() {
 			string execAbsolutePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 			string configAbsolutePath = execAbsolutePath + ConfigPath;
-			SmtpServerConfig config = ConfigFile.ReadJsonConfig<SmtpServerConfig>("NonExistingFile");
+			SmtpServerConfig config = JsonFile.Read<SmtpServerConfig>("NonExistingFile");
 			Assert.That(config, Is.Null);
 		}
 
@@ -44,8 +45,8 @@ namespace Tests.EmailLib {
 			string execAbsolutePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 			string configAbsolutePath = execAbsolutePath + ConfigPath;
 
-			ConfigFile.WriteJsonConfig(configAbsolutePath, expected);
-			SmtpServerConfig config = ConfigFile.ReadJsonConfig<SmtpServerConfig>(ConfigPath);
+			JsonFile.Write(configAbsolutePath, expected);
+			SmtpServerConfig config = JsonFile.Read<SmtpServerConfig>(ConfigPath);
 
 			Assert.That(config, Is.Not.Null);
 		}
@@ -55,12 +56,12 @@ namespace Tests.EmailLib {
 			string execAbsolutePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 			string configAbsolutePath = execAbsolutePath + ConfigPath;
 			SmtpServerConfig config = new SmtpServerConfig() {
-				UserName = "Username",
+				Account = "Username",
 				Password = "password",
 				Host = "smtp",
 				Port = 25
 			};
-			ConfigFile.WriteJsonConfig(configAbsolutePath, config);
+			JsonFile.Write(configAbsolutePath, config);
 			Assert.That(File.Exists(configAbsolutePath));
 		}
 	}
