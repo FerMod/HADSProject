@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
+using System.Web.Optimization;
+using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.UI;
+using EmailLib;
+using WebApplication.Utils;
 
 namespace WebApplication {
 
-	public class Global : System.Web.HttpApplication {
+	public class Global : HttpApplication {
 
-		protected void Application_Start(object sender, EventArgs e) {
-			ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition {
-				Path = "~/scripts/jquery-3.3.1.min.js",
-				DebugPath = "~/scripts/jquery-3.3.1.min.js",
-				CdnPath = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js",
-				CdnDebugPath = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"
-			});
+		void Application_Start(object sender, EventArgs e) {
+
+			// Code that runs on application startup
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
+			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 		}
 

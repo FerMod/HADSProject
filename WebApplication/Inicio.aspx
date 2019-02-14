@@ -1,33 +1,24 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApplication.Inicio" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApplication.Inicio" Title="Inicio" MasterPageFile="~/Account.master" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-	<title></title>
-</head>
-<body>
-	<form id="form1" runat="server">
-		<div style="margin: 5px; padding: 5px">
-			<asp:Label Style="vertical-align: central;" runat="server" Font-Bold="True">Email:</asp:Label>
-			<br />
-			<asp:TextBox ID="textBoxEmail" runat="server" autocomplete="off" Style="vertical-align: central; margin: 5px 5px 5px 0px;" Height="18px" Width="190px"></asp:TextBox>
-			<asp:RequiredFieldValidator ID="EmailRequiredFieldValidator" runat="server" ControlToValidate="textBoxEmail" ErrorMessage="Required field" Font-Bold="True" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
-		</div>
-		<div style="margin: 5px; padding: 5px">
-			<asp:Label Style="vertical-align: central;" runat="server" Font-Bold="True">Password:</asp:Label>
-			<br />
-			<asp:TextBox ID="textBoxPassword" TextMode="Password" runat="server" autocomplete="off" Style="vertical-align: central; margin: 5px 5px 5px 0px;" Height="18px" Width="190px"></asp:TextBox>
-			<asp:RequiredFieldValidator ID="PasswordRequiredFieldValidator" runat="server" ControlToValidate="textBoxPassword" ErrorMessage="Required field" Font-Bold="True" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
-		</div>
-		<%--		<div style="margin: 5px; padding: 5px">
-			<asp:Label Style="vertical-align: central;" runat="server" Font-Bold="True">Tipo de usuario:</asp:Label>
-			<br />
-			<asp:DropDownList ID="dropDownListRol" runat="server" Style="vertical-align: middle; margin: 5px 5px 5px 0px;" Height="20px" Width="130px" />
-		</div>--%>
-		<div style="margin: 5px; padding: 5px">
-			<asp:Button ID="buttonLogin" runat="server" Text="Log In" OnClick="ButtonLogin_Click" Width="89px" />
-		</div>
-	</form>
-</body>
-</html>
+<asp:Content ID="CardBodyContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
+    <div class="form-group">
+        <asp:Label Font-Bold="True" runat="server">Email:</asp:Label>
+        <asp:TextBox ID="textBoxEmail" CssClass="form-control" placeholder="Enter email" runat="server" autocomplete="off" TabIndex="1"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator" CssClass="invalid-feedback" runat="server" ControlToValidate="textBoxEmail" ErrorMessage="Required field" Font-Bold="True" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
+    </div>
+    <div class="form-group">
+        <asp:Label Font-Bold="True" runat="server">Password:</asp:Label>
+        <asp:TextBox ID="textBoxPassword" CssClass="form-control" placeholder="Enter password" TextMode="Password" runat="server" autocomplete="off" TabIndex="2"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="PasswordRequiredFieldValidator" CssClass="invalid-feedback" runat="server" ControlToValidate="textBoxPassword" ErrorMessage="Required field" Font-Bold="True" Display="Dynamic"></asp:RequiredFieldValidator>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <asp:Button ID="buttonLogin" CssClass="btn btn-primary" runat="server" Text="Log In" OnClick="ButtonLogin_Click" TabIndex="3" />
+            </div>
+        </div>
+        <div class="col-md-6 text-right">
+            <asp:HyperLink ID="HyperLinkCreateAccount" runat="server" NavigateUrl="~/CambiarPassword.aspx" TabIndex="4">Forgot password?</asp:HyperLink>
+        </div>
+    </div>
+</asp:Content>

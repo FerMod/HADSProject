@@ -13,15 +13,6 @@ namespace WebApplication {
     public partial class Registro {
         
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
         /// textBoxEmail control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace WebApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailRequiredFieldValidator;
+        
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// textBoxPassword1 control.
@@ -85,21 +85,21 @@ namespace WebApplication {
         protected global::System.Web.UI.WebControls.CompareValidator PasswordCompareValidator;
         
         /// <summary>
-        /// dropDownListRol control.
+        /// dropDownRol control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropDownListRol;
+        protected global::System.Web.UI.WebControls.DropDownList dropDownRol;
         
         /// <summary>
-        /// buttonLogin control.
+        /// buttonCreateAccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonLogin;
+        protected global::System.Web.UI.WebControls.Button buttonCreateAccount;
     }
 }

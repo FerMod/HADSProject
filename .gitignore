@@ -339,3 +339,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Ignore other projects
+WebApplicationOld/
+
+#Ignore sensitive data folder
+secrets/

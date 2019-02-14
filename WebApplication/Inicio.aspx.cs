@@ -15,7 +15,6 @@ namespace WebApplication {
 
 		protected void ButtonLogin_Click(object sender, EventArgs e) {
 		}
-
 	}
 
 }
