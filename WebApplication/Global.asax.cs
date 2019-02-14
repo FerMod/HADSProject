@@ -11,6 +11,7 @@ using System.Web.SessionState;
 using System.Web.UI;
 using EmailLib;
 using WebApplication.Utils;
+using System.Web.Configuration;
 
 namespace WebApplication {
 
@@ -34,7 +35,7 @@ namespace WebApplication {
 				JsonFile.Write(filePath, SmtpConfig);
 
 			}
-
+			SmtpConfig.Account = WebConfigurationManager.AppSettings["Account"];
 			Application.Add("SmtpConfig", SmtpConfig);
 		}
 

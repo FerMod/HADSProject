@@ -9,6 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using EmailLib;
 using WebApplication.Utils;
+using System.Web.Configuration;
 
 namespace WebApplication {
 
@@ -31,6 +32,8 @@ namespace WebApplication {
 			string text = $"Please click on this link to '{subject}': {confirmationUrl}";
 			string html = $"Please confirm your account by clicking this link: <a href=\"{confirmationUrl}\">link</a><br/>";
 			html += HttpUtility.HtmlEncode($"Or click on the copy the following link on the browser: {confirmationUrl}");
+
+			SmtpConfig.Account = WebConfigurationManager.AppSettings["account"];
 
 			MailMessage mail = new MailMessage();
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
