@@ -5,11 +5,11 @@ using System.Linq;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using EmailLib;
 using WebApplication.Utils;
-using System.Web.Configuration;
 
 namespace WebApplication {
 
@@ -17,10 +17,25 @@ namespace WebApplication {
 
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService.Value;
-		private SmtpServerConfig SmtpConfig => (SmtpServerConfig)Application.Get("SmtpConfig");
 
 		protected void Page_Load(object sender, EventArgs e) {
-			lazyEmailService = new Lazy<EmailService>(() => new EmailService(SmtpConfig));
+
+			if(!IsPostBack) {
+
+				SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
+					Account = AppConfig.SmtpServer.Account,
+					Password = AppConfig.SmtpServer.Password,
+					Host = AppConfig.SmtpServer.Host,
+					Port = AppConfig.SmtpServer.Port,
+					DeliveryMethod = AppConfig.SmtpServer.DeliveryMethod,
+					UseDefaultCredentials = AppConfig.SmtpServer.UseDefaultCredentials,
+					EnableSsl = AppConfig.SmtpServer.EnableSsl
+				};
+
+				lazyEmailService = new Lazy<EmailService>(() => new EmailService(smtpServerConfig));
+
+			}
+
 		}
 
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
@@ -32,8 +47,6 @@ namespace WebApplication {
 			string text = $"Please click on this link to '{subject}': {confirmationUrl}";
 			string html = $"Please confirm your account by clicking this link: <a href=\"{confirmationUrl}\">link</a><br/>";
 			html += HttpUtility.HtmlEncode($"Or click on the copy the following link on the browser: {confirmationUrl}");
-
-			SmtpConfig.Account = WebConfigurationManager.AppSettings["account"];
 
 			MailMessage mail = new MailMessage();
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);

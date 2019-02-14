@@ -45,19 +45,19 @@ namespace WebApplication.Utils {
 		public static string ApplicationFolder {
 			get {
 				string[] segments = HttpContext.Current.Request.Url.Segments;
-				string newUrl = "";
+				string url = "";
 
 				for(int x = 0; x < segments.Length - 1; x++) {
-					newUrl += segments[x];
+					url += segments[x];
 				}
 
 				string virtualPath = VirtualPath;
 
-				if(newUrl.StartsWith(virtualPath)) {
-					newUrl = newUrl.Substring(virtualPath.Length);
+				if(url.StartsWith(virtualPath)) {
+					url = url.Substring(virtualPath.Length);
 				}
 
-				return newUrl;
+				return url;
 			}
 		}
 

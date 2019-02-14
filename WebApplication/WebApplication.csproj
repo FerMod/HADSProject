@@ -205,6 +205,7 @@
     <Compile Include="Account.master.designer.cs">
       <DependentUpon>Account.master</DependentUpon>
     </Compile>
+    <Compile Include="AppConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
