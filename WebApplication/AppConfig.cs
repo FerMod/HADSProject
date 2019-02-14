@@ -52,7 +52,7 @@ namespace WebApplication {
 				Password = WebConfigurationManager.AppSettings["Password"];
 				Host = WebConfigurationManager.AppSettings["Host"];
 				Port = Int32.Parse(WebConfigurationManager.AppSettings["Port"]);
-				DeliveryMethod = (SmtpDeliveryMethod)Enum.ToObject(typeof(SmtpDeliveryMethod), WebConfigurationManager.AppSettings["DeliveryMethod"]);
+				DeliveryMethod = (SmtpDeliveryMethod)Int32.Parse(WebConfigurationManager.AppSettings["DeliveryMethod"]);
 				UseDefaultCredentials = Convert.ToBoolean(WebConfigurationManager.AppSettings["UseDefaultCredentials"]);
 				EnableSsl = Convert.ToBoolean(WebConfigurationManager.AppSettings["EnableSsl"]);
 
