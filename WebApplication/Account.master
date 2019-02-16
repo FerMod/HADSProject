@@ -4,8 +4,8 @@
     <div class="card">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs nav-fill">
-                <li class="nav-item"><asp:HyperLink ID="logIn" CssClass="nav-link" runat="server" NavigateUrl="~/Inicio">Log In</asp:HyperLink></li>
-                <li class="nav-item"><asp:HyperLink ID="createAccount" CssClass="nav-link" runat="server" NavigateUrl="~/Registro">Create Account</asp:HyperLink></li>
+                <li class="nav-item"><asp:LinkButton ID="logIn" CssClass="nav-link" runat="server" PostBackUrl="~/Inicio" CausesValidation="False" Text="Log In" /></li>
+                <li class="nav-item"><asp:LinkButton ID="createAccount" CssClass="nav-link" runat="server" PostBackUrl="~/Registro" CausesValidation="False" Text="Create Account" /></li>
             </ul>
         </div>
         <div class="card-body">

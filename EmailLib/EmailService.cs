@@ -3,7 +3,6 @@ using System.IO;
 using System.Net;
 using System.Net.Mail;
 using System.Security;
-using Newtonsoft.Json;
 
 namespace EmailLib {
 

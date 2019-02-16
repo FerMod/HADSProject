@@ -9,6 +9,7 @@ using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using EmailLib;
+using WebApplication.Framework;
 using WebApplication.Utils;
 
 namespace WebApplication {
@@ -16,31 +17,35 @@ namespace WebApplication {
 	public partial class Registro : System.Web.UI.Page {
 
 		private Lazy<EmailService> lazyEmailService;
-		private EmailService EmailService => lazyEmailService.Value;
+		private EmailService EmailService => lazyEmailService?.Value;
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if(!IsPostBack) {
+			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
+				Account = AppConfig.SmtpServer.Account,
+				Password = AppConfig.SmtpServer.Password,
+				Host = AppConfig.SmtpServer.Host,
+				Port = AppConfig.SmtpServer.Port,
+				DeliveryMethod = AppConfig.SmtpServer.DeliveryMethod,
+				UseDefaultCredentials = AppConfig.SmtpServer.UseDefaultCredentials,
+				EnableSsl = AppConfig.SmtpServer.EnableSsl
+			};
 
-				SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
-					Account = AppConfig.SmtpServer.Account,
-					Password = AppConfig.SmtpServer.Password,
-					Host = AppConfig.SmtpServer.Host,
-					Port = AppConfig.SmtpServer.Port,
-					DeliveryMethod = AppConfig.SmtpServer.DeliveryMethod,
-					UseDefaultCredentials = AppConfig.SmtpServer.UseDefaultCredentials,
-					EnableSsl = AppConfig.SmtpServer.EnableSsl
-				};
-
-				lazyEmailService = new Lazy<EmailService>(() => new EmailService(smtpServerConfig));
-
-			}
+			lazyEmailService = new Lazy<EmailService>(() => new EmailService(smtpServerConfig));
 
 		}
 
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
 
-			string confirmationUrl = $"{UrlUtils.UrlRoot}{Page.ResolveUrl(@"~/Confirmar")}";
+			Random generator = new Random();
+			int code = (int)(generator.Next(0, 999999) + 1000000);
+
+			ParametizedUrl parametizedUrl = new ParametizedUrl($"{UrlUtils.UrlRoot}{Page.ResolveUrl(@"~/Confirmar")}") {
+				{ "email", textBoxEmail.Text },
+				{ "code", code.ToString() }
+			};
+
+			string confirmationUrl = $"{parametizedUrl.CreateUrl()}";
 
 			string displayName = "HADS";
 			string subject = "Confirm Account";
