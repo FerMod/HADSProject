@@ -7,6 +7,8 @@ using System.Web.Configuration;
 
 namespace WebApplication {
 
+	// https://www.dotnetperls.com/appsettings
+
 	public static class AppConfig {
 
 		public static class SmtpServer {

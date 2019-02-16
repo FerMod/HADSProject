@@ -14,11 +14,6 @@ namespace WebApplication {
 
 			BundleTable.EnableOptimizations = true;
 
-			bundles.Add(new ScriptBundle("~/bundles/core").Include(
-				"~/Scripts/jquery-3.3.1.min.js",
-				"~/Scripts/bootstrap.min.js"
-			));
-
 			bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
 				"~/Scripts/WebForms/WebForms.js",
 				"~/Scripts/WebForms/WebUIValidation.js",

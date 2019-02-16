@@ -33,6 +33,19 @@ textarea {
     align-items: center;
 }
 
+/* Remove outline from form components */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Remove outline from any editable component */
+/*[contenteditable="true"]:focus {
+    outline: none;
+}*/
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
