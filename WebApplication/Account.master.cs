@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication { 
+namespace WebApplication {
 
 	public partial class Account : System.Web.UI.MasterPage {
 

@@ -19,7 +19,7 @@ namespace WebApplication {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink logIn;
+        protected global::System.Web.UI.WebControls.LinkButton logIn;
         
         /// <summary>
         /// createAccount control.
@@ -28,7 +28,7 @@ namespace WebApplication {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink createAccount;
+        protected global::System.Web.UI.WebControls.LinkButton createAccount;
         
         /// <summary>
         /// AccountCardBodyContent control.
