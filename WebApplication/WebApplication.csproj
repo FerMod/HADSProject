@@ -309,13 +309,13 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmailLib\EmailLib.csproj">
-      <Project>{068a3a34-96fb-40f2-aea3-6e0ecd228da5}</Project>
-      <Name>EmailLib</Name>
-    </ProjectReference>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\index.d.ts" />
+    <ProjectReference Include="..\EmailLib\EmailLib.csproj">
+      <Project>{1a41950d-f15e-4d45-96c2-56e6613b35b8}</Project>
+      <Name>EmailLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
