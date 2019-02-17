@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{9E9505E1-716E-4504-A2F3-0D8E1253B13B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{DE0D14F1-F2A7-404F-ABDC-C1479D22E8E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailLib", "EmailLib\EmailLib.csproj", "{1A41950D-F15E-4D45-96C2-56E6613B35B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{362087A0-2A59-41C0-B18E-599E6864A414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E9505E1-716E-4504-A2F3-0D8E1253B13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E9505E1-716E-4504-A2F3-0D8E1253B13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E9505E1-716E-4504-A2F3-0D8E1253B13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E9505E1-716E-4504-A2F3-0D8E1253B13B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE0D14F1-F2A7-404F-ABDC-C1479D22E8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE0D14F1-F2A7-404F-ABDC-C1479D22E8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE0D14F1-F2A7-404F-ABDC-C1479D22E8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{1A41950D-F15E-4D45-96C2-56E6613B35B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A41950D-F15E-4D45-96C2-56E6613B35B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A41950D-F15E-4D45-96C2-56E6613B35B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{362087A0-2A59-41C0-B18E-599E6864A414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362087A0-2A59-41C0-B18E-599E6864A414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362087A0-2A59-41C0-B18E-599E6864A414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362087A0-2A59-41C0-B18E-599E6864A414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
