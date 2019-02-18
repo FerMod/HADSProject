@@ -14,7 +14,7 @@ namespace WebApplication.Framework {
 			this.Url = url;
 		}
 
-		public string CreateUrl() {
+		public override string ToString() {
 
 			StringBuilder sb = new StringBuilder($"{this.Url}");
 			if(this.Count > 0) {

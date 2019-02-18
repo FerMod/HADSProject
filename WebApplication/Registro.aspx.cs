@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataBaseAccess;
 using EmailLib;
 using WebApplication.Framework;
 using WebApplication.Utils;
@@ -18,8 +19,15 @@ namespace WebApplication {
 
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
+		private DataAccess dataAccess;
 
 		protected void Page_Load(object sender, EventArgs e) {
+
+			if(!IsPostBack) {
+				Application.Lock();
+				dataAccess = Application["DataAccess"] as DataAccess;
+				Application.UnLock();
+			}
 
 			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
 				Account = AppConfig.SmtpServer.Account,
@@ -45,7 +53,7 @@ namespace WebApplication {
 				{ "code", code.ToString() }
 			};
 
-			string confirmationUrl = $"{parametizedUrl.CreateUrl()}";
+			string confirmationUrl = $"{parametizedUrl}";
 
 			string displayName = "HADS";
 			string subject = "Confirm Account";
@@ -61,7 +69,23 @@ namespace WebApplication {
 			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 			mail.IsBodyHtml = true;
 
-			this.EmailService.SendEmail(mail);
+			try {
+
+				string sql = "insert into Usuarios(email, nombre, apellidos, numconfir, confirmado, tipo, pass) values(@email, @nombre, @apellidos, @numconfir, 0, @tipo, @pass)";
+
+				sql = sql.Replace("@email", $"'{textBoxEmail.Text}'");
+				sql = sql.Replace("@nombre", $"'Nombre?'");
+				sql = sql.Replace("@apellidos", $"'Apellidos?'");
+				sql = sql.Replace("@numconfir", $"'{code.ToString()}'");
+				sql = sql.Replace("@tipo", $"'{dropDownRol.SelectedValue}'");
+				sql = sql.Replace("@pass", $"'{textBoxPassword1.Text}'");
+
+				dataAccess.Insert(sql);
+				this.EmailService.SendEmail(mail);
+
+			} catch(Exception ex) {
+				Debug.WriteLine("Exception caught: " + ex.Message);
+			}
 
 		}
 
