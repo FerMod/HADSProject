@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataBaseAccess {
 
-	public interface IDataAccess {
+	public interface IDataAccessService {
 
 
 	}

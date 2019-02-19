@@ -21,6 +21,8 @@ namespace DataBaseAccess.Extensions {
 			}
 		}
 
+		// public static Customer FromDataReader(IDataReader reader) { ... }
+
 	}
 
 }
