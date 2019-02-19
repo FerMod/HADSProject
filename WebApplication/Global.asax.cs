@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -31,7 +32,7 @@ namespace WebApplication {
 
 		void SetupDataAccess() {
 
-			DataAccess dataAccess = new DataAccess(ConfigurationManager.ConnectionStrings["HADS18-DB"].ConnectionString);
+			DataAccessService dataAccess = new DataAccessService(ConfigurationManager.ConnectionStrings["HADS18-DB"].ConnectionString);
 			Application.Lock();
 			Application.Contents.Set("DataAccess", dataAccess);
 			Application.UnLock();
