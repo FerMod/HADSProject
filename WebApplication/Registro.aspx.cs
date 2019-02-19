@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Mail;
@@ -19,15 +20,11 @@ namespace WebApplication {
 
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
-		private DataAccess dataAccess;
+
+		private Lazy<DataAccessService> lazyDataAccess;
+		private DataAccessService DataAccess => lazyDataAccess?.Value;
 
 		protected void Page_Load(object sender, EventArgs e) {
-
-			if(!IsPostBack) {
-				Application.Lock();
-				dataAccess = Application["DataAccess"] as DataAccess;
-				Application.UnLock();
-			}
 
 			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
 				Account = AppConfig.SmtpServer.Account,
@@ -57,9 +54,17 @@ namespace WebApplication {
 
 			string displayName = "HADS";
 			string subject = "Confirm Account";
-			string text = $"Please click on this link to '{subject}': {confirmationUrl}";
-			string html = $"Please confirm your account by clicking this link: <a href=\"{confirmationUrl}\">link</a><br/>";
-			html += HttpUtility.HtmlEncode($"Or click on the copy the following link on the browser: {confirmationUrl}");
+
+			string text = $"Hi {textBoxName.Text} {textBoxLastName.Text}!\n\n";
+			text += $"Please click on this link to '{subject}': {confirmationUrl}\n\n";
+			text += "Thanks,\n";
+			text += "HADS Team.";
+
+			string html = $"Hi {textBoxName.Text} {textBoxLastName.Text}!<br/><br/>";
+			html += $"Please confirm your account by clicking this link: <a href=\"{confirmationUrl}\">Confirm Account</a><br/>";
+			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(confirmationUrl)}<br/><br/>";
+			html += "Thanks,";
+			html += "HADS Team.";
 
 			MailMessage mail = new MailMessage();
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
@@ -71,17 +76,24 @@ namespace WebApplication {
 
 			try {
 
-				string sql = "insert into Usuarios(email, nombre, apellidos, numconfir, confirmado, tipo, pass) values(@email, @nombre, @apellidos, @numconfir, 0, @tipo, @pass)";
+				string sql = "insert into Usuarios(email, nombre, apellidos, numconfir, tipo, pass) values(@email, @nombre, @apellidos, @numconfir, @tipo, @pass)";
 
-				sql = sql.Replace("@email", $"'{textBoxEmail.Text}'");
-				sql = sql.Replace("@nombre", $"'Nombre?'");
-				sql = sql.Replace("@apellidos", $"'Apellidos?'");
-				sql = sql.Replace("@numconfir", $"'{code.ToString()}'");
-				sql = sql.Replace("@tipo", $"'{dropDownRol.SelectedValue}'");
-				sql = sql.Replace("@pass", $"'{textBoxPassword1.Text}'");
+				Dictionary<string, object> parameters = new Dictionary<string, object> {
+					{ "@email", textBoxEmail.Text },
+					{ "@nombre", textBoxName.Text },
+					{ "@apellidos", textBoxLastName.Text },
+					{ "@numconfir", code },
+					{ "@tipo", dropDownRol.SelectedValue },
+					{ "@pass", textBoxPassword.Text }
+				};
 
-				dataAccess.Insert(sql);
-				this.EmailService.SendEmail(mail);
+				int affectedRows = ((Account)Master).DataAccess.Insert(sql, parameters);
+
+				if(affectedRows != 1) {
+					this.EmailService.SendEmail(mail);
+				} else {
+					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
+				}
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
