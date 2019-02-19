@@ -17,12 +17,15 @@ namespace DataBaseAccess {
 			this.ConnectionString = connectionString;
 		}
 
-		public int Insert(string query) {
+		public int Insert(string query, Dictionary<string, SqlDbType> properties) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
 
 				using(SqlCommand command = new SqlCommand(query, connection)) {
+					foreach(var item in properties) {
+						command.Parameters.Add(item.Key, item.Value);
+					}
 					return command.ExecuteNonQuery();
 				}
 
