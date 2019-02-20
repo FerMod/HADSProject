@@ -10,7 +10,9 @@ using DataBaseAccess;
 
 namespace WebApplication {
 
-	public partial class Inicio : System.Web.UI.Page {
+	public partial class Inicio : Page {
+
+		private DataAccessService DataAccess => ((Account)Master).DataAccess;
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -26,7 +28,7 @@ namespace WebApplication {
 
 			try {
 
-				List<IDataRecord> result = ((Account)Master).DataAccess.Query(sql, parameters);
+				List<IDataRecord> result = DataAccess.Query(sql, parameters);
 
 				if(result.Count == 1) {
 					Response.Redirect("/Default");

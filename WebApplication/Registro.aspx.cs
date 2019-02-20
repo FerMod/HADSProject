@@ -16,10 +16,12 @@ using WebApplication.Utils;
 
 namespace WebApplication {
 
-	public partial class Registro : System.Web.UI.Page {
+	public partial class Registro : Page {
 
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
+
+		private DataAccessService DataAccess => ((Account)Master).DataAccess;
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -47,19 +49,18 @@ namespace WebApplication {
 				{ "code", code.ToString() }
 			};
 
-			string confirmationUrl = $"{parametizedUrl}";
 
 			string displayName = "HADS";
 			string subject = "Confirm Account";
 
 			string text = $"Hi {textBoxName.Text} {textBoxLastName.Text}!\n\n";
-			text += $"Please click on this link to '{subject}': {confirmationUrl}\n\n";
+			text += $"Please click on this link to '{subject}': {parametizedUrl}\n\n";
 			text += "Thanks,\n";
 			text += "HADS Team.";
 
 			string html = $"Hi {textBoxName.Text} {textBoxLastName.Text}!<br/><br/>";
-			html += $"Please confirm your account by clicking this link: <a href=\"{confirmationUrl}\">Confirm Account</a><br/>";
-			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(confirmationUrl)}<br/><br/>";
+			html += $"Please confirm your account by clicking this link: <a href=\"{parametizedUrl}\">Confirm Account</a><br/>";
+			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br/><br/>";
 			html += "Thanks,";
 			html += "HADS Team.";
 
@@ -84,10 +85,10 @@ namespace WebApplication {
 					{ "@pass", textBoxPassword.Text }
 				};
 
-				int affectedRows = ((Account)Master).DataAccess.Insert(sql, parameters);
+				int affectedRows = .Insert(sql, parameters);
 
 				if(affectedRows != 1) {
-					this.EmailService.SendEmail(mail);
+					//this.EmailService.SendEmail(mail);
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
 				}
