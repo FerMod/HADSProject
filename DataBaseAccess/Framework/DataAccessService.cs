@@ -19,7 +19,7 @@ namespace DataBaseAccess {
 		}
 
 		// https://stackoverflow.com/a/1464929/4134376
-		public int Insert(string query, Dictionary<string, object> parameters = null) {
+		public int Insert(string query, IDictionary<string, object> parameters = null) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -37,7 +37,7 @@ namespace DataBaseAccess {
 
 		}
 
-		public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null) {
+		public List<IDataRecord> Query(string query, IDictionary<string, object> parameters = null) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();

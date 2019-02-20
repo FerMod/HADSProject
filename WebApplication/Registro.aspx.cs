@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
@@ -39,6 +40,7 @@ namespace WebApplication {
 
 		}
 
+		// TODO: Check MailDefinition. https://stackoverflow.com/a/886750/4134376
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
 
 			Random generator = new Random();
@@ -49,7 +51,6 @@ namespace WebApplication {
 				{ "code", code.ToString() }
 			};
 
-
 			string displayName = "HADS";
 			string subject = "Confirm Account";
 
@@ -58,10 +59,10 @@ namespace WebApplication {
 			text += "Thanks,\n";
 			text += "HADS Team.";
 
-			string html = $"Hi {textBoxName.Text} {textBoxLastName.Text}!<br/><br/>";
-			html += $"Please confirm your account by clicking this link: <a href=\"{parametizedUrl}\">Confirm Account</a><br/>";
-			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br/><br/>";
-			html += "Thanks,";
+			string html = $"Hi {textBoxName.Text} {textBoxLastName.Text}!<br /><br />";
+			html += $"Please confirm your account by clicking this link: <a href=\"{parametizedUrl}\">Confirm Account</a><br />";
+			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br /><br />";
+			html += "Thanks,<br />";
 			html += "HADS Team.";
 
 			MailMessage mail = new MailMessage();
@@ -85,7 +86,7 @@ namespace WebApplication {
 					{ "@pass", textBoxPassword.Text }
 				};
 
-				int affectedRows = .Insert(sql, parameters);
+				int affectedRows = DataAccess.Insert(sql, parameters);
 
 				if(affectedRows != 1) {
 					//this.EmailService.SendEmail(mail);

@@ -22,7 +22,7 @@ namespace WebApplication.Framework {
 			}
 
 			int i = 1;
-			foreach(KeyValuePair<string, string> entry in this) {
+			foreach(var entry in this) {
 				sb.Append($"{entry.Key}={entry.Value}");
 				if(i < this.Count) {
 					sb.Append("&");
