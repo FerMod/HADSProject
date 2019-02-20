@@ -15,8 +15,13 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if(lazyDataAccess == null) {
-				lazyDataAccess = new Lazy<DataAccessService>(() => {
+			if(IsPostBack && Session["SessionDataAccess"] != null) {
+
+				lazyDataAccess = (Lazy<DataAccessService>)Session["SessionDataAccess"];
+
+			} else {
+
+				Session["SessionDataAccess"] = new Lazy<DataAccessService>(() => {
 					DataAccessService daService;
 					Application.Lock();
 					daService = Application["DataAccess"] as DataAccessService;

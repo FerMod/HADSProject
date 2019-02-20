@@ -21,9 +21,6 @@ namespace WebApplication {
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
 
-		private Lazy<DataAccessService> lazyDataAccess;
-		private DataAccessService DataAccess => lazyDataAccess?.Value;
-
 		protected void Page_Load(object sender, EventArgs e) {
 
 			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
