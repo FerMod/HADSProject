@@ -13,6 +13,42 @@ namespace WebApplication {
     public partial class Registro {
         
         /// <summary>
+        /// textBoxName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textBoxName;
+        
+        /// <summary>
+        /// RequiredFieldName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldName;
+        
+        /// <summary>
+        /// textBoxLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textBoxLastName;
+        
+        /// <summary>
+        /// RequiredFieldLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldLastName;
+        
+        /// <summary>
         /// textBoxEmail control.
         /// </summary>
         /// <remarks>
@@ -22,67 +58,67 @@ namespace WebApplication {
         protected global::System.Web.UI.WebControls.TextBox textBoxEmail;
         
         /// <summary>
-        /// EmailRequiredFieldValidator control.
+        /// RequiredFieldEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldEmail;
         
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// EmailRegExpr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailRegExpr;
         
         /// <summary>
-        /// textBoxPassword1 control.
+        /// textBoxPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBoxPassword1;
+        protected global::System.Web.UI.WebControls.TextBox textBoxPassword;
         
         /// <summary>
-        /// PasswordRequiredFieldValidator control.
+        /// RequiredFieldPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldPassword;
         
         /// <summary>
-        /// textBoxPassword2 control.
+        /// textBoxRepeatPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBoxPassword2;
+        protected global::System.Web.UI.WebControls.TextBox textBoxRepeatPassword;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RequiredFieldRepeatPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldRepeatPassword;
         
         /// <summary>
-        /// PasswordCompareValidator control.
+        /// CompareRepeatPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator PasswordCompareValidator;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareRepeatPassword;
         
         /// <summary>
         /// dropDownRol control.

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Web;
+using WebApplication.Framework.Extensions;
 
 namespace WebApplication.Framework {
 
@@ -11,10 +13,21 @@ namespace WebApplication.Framework {
 		public string Url { get; set; }
 
 		public ParametizedUrl(string url) {
+
+			if(url.Contains("?")) {
+
+				Uri uri = new Uri(url);
+				url = $"{uri.Scheme}{Uri.SchemeDelimiter}{uri.Authority}";
+
+				this.Add(HttpUtility.ParseQueryString(uri.Query));
+
+			}
+
 			this.Url = url;
+
 		}
 
-		public string CreateUrl() {
+		public override string ToString() {
 
 			StringBuilder sb = new StringBuilder($"{this.Url}");
 			if(this.Count > 0) {
@@ -22,7 +35,7 @@ namespace WebApplication.Framework {
 			}
 
 			int i = 1;
-			foreach(KeyValuePair<string, string> entry in this) {
+			foreach(var entry in this) {
 				sb.Append($"{entry.Key}={entry.Value}");
 				if(i < this.Count) {
 					sb.Append("&");

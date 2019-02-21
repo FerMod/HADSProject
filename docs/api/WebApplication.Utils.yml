@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Utils
+  commentId: N:WebApplication.Utils
+  id: WebApplication.Utils
+  children:
+  - WebApplication.Utils.JsonFile
+  - WebApplication.Utils.UrlUtils
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.Utils
+  nameWithType: WebApplication.Utils
+  fullName: WebApplication.Utils
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.Utils.JsonFile
+  commentId: T:WebApplication.Utils.JsonFile
+  name: JsonFile
+  nameWithType: JsonFile
+  fullName: WebApplication.Utils.JsonFile
+- uid: WebApplication.Utils.UrlUtils
+  commentId: T:WebApplication.Utils.UrlUtils
+  name: UrlUtils
+  nameWithType: UrlUtils
+  fullName: WebApplication.Utils.UrlUtils

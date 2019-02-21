@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DataBaseAccess.Extensions
+  commentId: N:DataBaseAccess.Extensions
+  id: DataBaseAccess.Extensions
+  children:
+  - DataBaseAccess.Extensions.DataReaderExtension
+  langs:
+  - csharp
+  - vb
+  name: DataBaseAccess.Extensions
+  nameWithType: DataBaseAccess.Extensions
+  fullName: DataBaseAccess.Extensions
+  type: Namespace
+  assemblies:
+  - DataBaseAccess
+references:
+- uid: DataBaseAccess.Extensions.DataReaderExtension
+  commentId: T:DataBaseAccess.Extensions.DataReaderExtension
+  name: DataReaderExtension
+  nameWithType: DataReaderExtension
+  fullName: DataBaseAccess.Extensions.DataReaderExtension

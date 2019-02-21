@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: DataBaseAccess
+  commentId: N:DataBaseAccess
+  id: DataBaseAccess
+  children:
+  - DataBaseAccess.DataAccessService
+  - DataBaseAccess.IDataAccessService
+  langs:
+  - csharp
+  - vb
+  name: DataBaseAccess
+  nameWithType: DataBaseAccess
+  fullName: DataBaseAccess
+  type: Namespace
+  assemblies:
+  - DataBaseAccess
+references:
+- uid: DataBaseAccess.DataAccessService
+  commentId: T:DataBaseAccess.DataAccessService
+  parent: DataBaseAccess
+  name: DataAccessService
+  nameWithType: DataAccessService
+  fullName: DataBaseAccess.DataAccessService
+- uid: DataBaseAccess.IDataAccessService
+  commentId: T:DataBaseAccess.IDataAccessService
+  parent: DataBaseAccess
+  name: IDataAccessService
+  nameWithType: IDataAccessService
+  fullName: DataBaseAccess.IDataAccessService
+- uid: DataBaseAccess
+  commentId: N:DataBaseAccess
+  name: DataBaseAccess
+  nameWithType: DataBaseAccess
+  fullName: DataBaseAccess

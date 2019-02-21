@@ -1,0 +1,36 @@
+### YamlMime:ManagedReference
+items:
+- uid: DataBaseAccess.IDataAccessService
+  commentId: T:DataBaseAccess.IDataAccessService
+  id: IDataAccessService
+  parent: DataBaseAccess
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IDataAccessService
+  nameWithType: IDataAccessService
+  fullName: DataBaseAccess.IDataAccessService
+  type: Interface
+  source:
+    id: IDataAccessService
+    path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
+    startLine: 6
+  assemblies:
+  - DataBaseAccess
+  namespace: DataBaseAccess
+  syntax:
+    content: public interface IDataAccessService
+    content.vb: Public Interface IDataAccessService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: DataBaseAccess
+  commentId: N:DataBaseAccess
+  name: DataBaseAccess
+  nameWithType: DataBaseAccess
+  fullName: DataBaseAccess

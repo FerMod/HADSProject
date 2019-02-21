@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Mail;
@@ -8,16 +10,19 @@ using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataBaseAccess;
 using EmailLib;
 using WebApplication.Framework;
 using WebApplication.Utils;
 
 namespace WebApplication {
 
-	public partial class Registro : System.Web.UI.Page {
+	public partial class Registro : Page {
 
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
+
+		private DataAccessService DataAccess => ((Account)Master).DataAccess;
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -35,6 +40,7 @@ namespace WebApplication {
 
 		}
 
+		// TODO: Check MailDefinition. https://stackoverflow.com/a/886750/4134376
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
 
 			Random generator = new Random();
@@ -45,13 +51,19 @@ namespace WebApplication {
 				{ "code", code.ToString() }
 			};
 
-			string confirmationUrl = $"{parametizedUrl.CreateUrl()}";
-
 			string displayName = "HADS";
 			string subject = "Confirm Account";
-			string text = $"Please click on this link to '{subject}': {confirmationUrl}";
-			string html = $"Please confirm your account by clicking this link: <a href=\"{confirmationUrl}\">link</a><br/>";
-			html += HttpUtility.HtmlEncode($"Or click on the copy the following link on the browser: {confirmationUrl}");
+
+			string text = $"Hi {textBoxName.Text} {textBoxLastName.Text}!\n\n";
+			text += $"Please click on this link to '{subject}': {parametizedUrl}\n\n";
+			text += "Thanks,\n";
+			text += "HADS Team.";
+
+			string html = $"Hi {textBoxName.Text} {textBoxLastName.Text}!<br /><br />";
+			html += $"Please confirm your account by clicking this link: <a href=\"{parametizedUrl}\">Confirm Account</a><br />";
+			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br /><br />";
+			html += "Thanks,<br />";
+			html += "HADS Team.";
 
 			MailMessage mail = new MailMessage();
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
@@ -61,7 +73,30 @@ namespace WebApplication {
 			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 			mail.IsBodyHtml = true;
 
-			this.EmailService.SendEmail(mail);
+			try {
+
+				string sql = "INSERT INTO Usuarios(email, nombre, apellidos, numconfir, tipo, pass) VALUES(@email, @nombre, @apellidos, @numconfir, @tipo, @pass)";
+
+				Dictionary<string, object> parameters = new Dictionary<string, object> {
+					{ "@email", textBoxEmail.Text },
+					{ "@nombre", textBoxName.Text },
+					{ "@apellidos", textBoxLastName.Text },
+					{ "@numconfir", code },
+					{ "@tipo", dropDownRol.SelectedValue },
+					{ "@pass", textBoxPassword.Text }
+				};
+
+				int affectedRows = DataAccess.Insert(sql, parameters);
+
+				if(affectedRows != 1) {
+					this.EmailService.SendEmail(mail);
+				} else {
+					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
+				}
+
+			} catch(Exception ex) {
+				Debug.WriteLine("Exception caught: " + ex.Message);
+			}
 
 		}
 

@@ -33,18 +33,54 @@ textarea {
     align-items: center;
 }
 
-/* Remove outline from form components */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+.auth-form {
+    margin: 0 auto;
+    max-width: 400px;
 }
 
-/* Remove outline from any editable component */
-/*[contenteditable="true"]:focus {
-    outline: none;
-}*/
+.auth-form-header {
+    background-color: transparent;
+    border: 0;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.card,
+.card-header,
+.card-body {
+    background-color: #fff;
+    border-color: rgb(216, 222, 226);
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 0;
+}
+
+.auth-form-body {
+    background-color: #fff;
+    border: 1px solid #d8dee2;
+    border-top-color: rgb(216, 222, 226);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-radius: 0 0 3px 3px;
+}
+
+.auth-form-body {
+    border-top: 0;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.label-link {
+    font-weight: 600;
+    float: right;
+    font-size: 12px;
+}
+
+    .label-link:hover {
+        text-decoration: none;
+    }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

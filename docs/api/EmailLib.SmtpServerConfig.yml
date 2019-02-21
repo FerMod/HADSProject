@@ -1,0 +1,826 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailLib.SmtpServerConfig
+  commentId: T:EmailLib.SmtpServerConfig
+  id: SmtpServerConfig
+  parent: EmailLib
+  children:
+  - EmailLib.SmtpServerConfig.Account
+  - EmailLib.SmtpServerConfig.DeliveryMethod
+  - EmailLib.SmtpServerConfig.EnableSsl
+  - EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  - EmailLib.SmtpServerConfig.Equals(System.Object)
+  - EmailLib.SmtpServerConfig.GetHashCode
+  - EmailLib.SmtpServerConfig.Host
+  - EmailLib.SmtpServerConfig.op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  - EmailLib.SmtpServerConfig.op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  - EmailLib.SmtpServerConfig.Password
+  - EmailLib.SmtpServerConfig.Port
+  - EmailLib.SmtpServerConfig.UseDefaultCredentials
+  langs:
+  - csharp
+  - vb
+  name: SmtpServerConfig
+  nameWithType: SmtpServerConfig
+  fullName: EmailLib.SmtpServerConfig
+  type: Class
+  source:
+    id: SmtpServerConfig
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 8
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public class SmtpServerConfig
+    content.vb: Public Class SmtpServerConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EmailLib.SmtpServerConfig.Account
+  commentId: P:EmailLib.SmtpServerConfig.Account
+  id: Account
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: SmtpServerConfig.Account
+  fullName: EmailLib.SmtpServerConfig.Account
+  type: Property
+  source:
+    id: Account
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 10
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public string Account { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Account As String
+  overload: EmailLib.SmtpServerConfig.Account*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.Password
+  commentId: P:EmailLib.SmtpServerConfig.Password
+  id: Password
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: SmtpServerConfig.Password
+  fullName: EmailLib.SmtpServerConfig.Password
+  type: Property
+  source:
+    id: Password
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 11
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Password As String
+  overload: EmailLib.SmtpServerConfig.Password*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.Host
+  commentId: P:EmailLib.SmtpServerConfig.Host
+  id: Host
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: SmtpServerConfig.Host
+  fullName: EmailLib.SmtpServerConfig.Host
+  type: Property
+  source:
+    id: Host
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 12
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public string Host { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Host As String
+  overload: EmailLib.SmtpServerConfig.Host*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.Port
+  commentId: P:EmailLib.SmtpServerConfig.Port
+  id: Port
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: SmtpServerConfig.Port
+  fullName: EmailLib.SmtpServerConfig.Port
+  type: Property
+  source:
+    id: Port
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 13
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: EmailLib.SmtpServerConfig.Port*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.DeliveryMethod
+  commentId: P:EmailLib.SmtpServerConfig.DeliveryMethod
+  id: DeliveryMethod
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: DeliveryMethod
+  nameWithType: SmtpServerConfig.DeliveryMethod
+  fullName: EmailLib.SmtpServerConfig.DeliveryMethod
+  type: Property
+  source:
+    id: DeliveryMethod
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 14
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public SmtpDeliveryMethod DeliveryMethod { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Mail.SmtpDeliveryMethod
+    content.vb: Public Property DeliveryMethod As SmtpDeliveryMethod
+  overload: EmailLib.SmtpServerConfig.DeliveryMethod*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.UseDefaultCredentials
+  commentId: P:EmailLib.SmtpServerConfig.UseDefaultCredentials
+  id: UseDefaultCredentials
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: UseDefaultCredentials
+  nameWithType: SmtpServerConfig.UseDefaultCredentials
+  fullName: EmailLib.SmtpServerConfig.UseDefaultCredentials
+  type: Property
+  source:
+    id: UseDefaultCredentials
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 15
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public bool UseDefaultCredentials { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseDefaultCredentials As Boolean
+  overload: EmailLib.SmtpServerConfig.UseDefaultCredentials*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.EnableSsl
+  commentId: P:EmailLib.SmtpServerConfig.EnableSsl
+  id: EnableSsl
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: EnableSsl
+  nameWithType: SmtpServerConfig.EnableSsl
+  fullName: EmailLib.SmtpServerConfig.EnableSsl
+  type: Property
+  source:
+    id: EnableSsl
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 16
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public bool EnableSsl { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnableSsl As Boolean
+  overload: EmailLib.SmtpServerConfig.EnableSsl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  commentId: M:EmailLib.SmtpServerConfig.op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  id: op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Equality(SmtpServerConfig, SmtpServerConfig)
+  nameWithType: SmtpServerConfig.Equality(SmtpServerConfig, SmtpServerConfig)
+  fullName: EmailLib.SmtpServerConfig.Equality(EmailLib.SmtpServerConfig, EmailLib.SmtpServerConfig)
+  type: Operator
+  source:
+    id: op_Equality
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 18
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public static bool operator ==(SmtpServerConfig a, SmtpServerConfig b)
+    parameters:
+    - id: a
+      type: EmailLib.SmtpServerConfig
+    - id: b
+      type: EmailLib.SmtpServerConfig
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As SmtpServerConfig, b As SmtpServerConfig) As Boolean
+  overload: EmailLib.SmtpServerConfig.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EmailLib.SmtpServerConfig.op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  commentId: M:EmailLib.SmtpServerConfig.op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  id: op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Inequality(SmtpServerConfig, SmtpServerConfig)
+  nameWithType: SmtpServerConfig.Inequality(SmtpServerConfig, SmtpServerConfig)
+  fullName: EmailLib.SmtpServerConfig.Inequality(EmailLib.SmtpServerConfig, EmailLib.SmtpServerConfig)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 40
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public static bool operator !=(SmtpServerConfig a, SmtpServerConfig b)
+    parameters:
+    - id: a
+      type: EmailLib.SmtpServerConfig
+    - id: b
+      type: EmailLib.SmtpServerConfig
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As SmtpServerConfig, b As SmtpServerConfig) As Boolean
+  overload: EmailLib.SmtpServerConfig.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EmailLib.SmtpServerConfig.Equals(System.Object)
+  commentId: M:EmailLib.SmtpServerConfig.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: SmtpServerConfig.Equals(Object)
+  fullName: EmailLib.SmtpServerConfig.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 44
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: EmailLib.SmtpServerConfig.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  commentId: M:EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  id: Equals(EmailLib.SmtpServerConfig)
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: Equals(SmtpServerConfig)
+  nameWithType: SmtpServerConfig.Equals(SmtpServerConfig)
+  fullName: EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 48
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public bool Equals(SmtpServerConfig other)
+    parameters:
+    - id: other
+      type: EmailLib.SmtpServerConfig
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As SmtpServerConfig) As Boolean
+  overload: EmailLib.SmtpServerConfig.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EmailLib.SmtpServerConfig.GetHashCode
+  commentId: M:EmailLib.SmtpServerConfig.GetHashCode
+  id: GetHashCode
+  parent: EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SmtpServerConfig.GetHashCode()
+  fullName: EmailLib.SmtpServerConfig.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    startLine: 75
+  assemblies:
+  - EmailLib
+  namespace: EmailLib
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: EmailLib.SmtpServerConfig.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: EmailLib
+  commentId: N:EmailLib
+  name: EmailLib
+  nameWithType: EmailLib
+  fullName: EmailLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EmailLib.SmtpServerConfig.Account*
+  commentId: Overload:EmailLib.SmtpServerConfig.Account
+  name: Account
+  nameWithType: SmtpServerConfig.Account
+  fullName: EmailLib.SmtpServerConfig.Account
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EmailLib.SmtpServerConfig.Password*
+  commentId: Overload:EmailLib.SmtpServerConfig.Password
+  name: Password
+  nameWithType: SmtpServerConfig.Password
+  fullName: EmailLib.SmtpServerConfig.Password
+- uid: EmailLib.SmtpServerConfig.Host*
+  commentId: Overload:EmailLib.SmtpServerConfig.Host
+  name: Host
+  nameWithType: SmtpServerConfig.Host
+  fullName: EmailLib.SmtpServerConfig.Host
+- uid: EmailLib.SmtpServerConfig.Port*
+  commentId: Overload:EmailLib.SmtpServerConfig.Port
+  name: Port
+  nameWithType: SmtpServerConfig.Port
+  fullName: EmailLib.SmtpServerConfig.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: EmailLib.SmtpServerConfig.DeliveryMethod*
+  commentId: Overload:EmailLib.SmtpServerConfig.DeliveryMethod
+  name: DeliveryMethod
+  nameWithType: SmtpServerConfig.DeliveryMethod
+  fullName: EmailLib.SmtpServerConfig.DeliveryMethod
+- uid: System.Net.Mail.SmtpDeliveryMethod
+  commentId: T:System.Net.Mail.SmtpDeliveryMethod
+  parent: System.Net.Mail
+  isExternal: true
+  name: SmtpDeliveryMethod
+  nameWithType: SmtpDeliveryMethod
+  fullName: System.Net.Mail.SmtpDeliveryMethod
+- uid: System.Net.Mail
+  commentId: N:System.Net.Mail
+  isExternal: true
+  name: System.Net.Mail
+  nameWithType: System.Net.Mail
+  fullName: System.Net.Mail
+- uid: EmailLib.SmtpServerConfig.UseDefaultCredentials*
+  commentId: Overload:EmailLib.SmtpServerConfig.UseDefaultCredentials
+  name: UseDefaultCredentials
+  nameWithType: SmtpServerConfig.UseDefaultCredentials
+  fullName: EmailLib.SmtpServerConfig.UseDefaultCredentials
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: EmailLib.SmtpServerConfig.EnableSsl*
+  commentId: Overload:EmailLib.SmtpServerConfig.EnableSsl
+  name: EnableSsl
+  nameWithType: SmtpServerConfig.EnableSsl
+  fullName: EmailLib.SmtpServerConfig.EnableSsl
+- uid: EmailLib.SmtpServerConfig.op_Equality*
+  commentId: Overload:EmailLib.SmtpServerConfig.op_Equality
+  name: Equality
+  nameWithType: SmtpServerConfig.Equality
+  fullName: EmailLib.SmtpServerConfig.Equality
+- uid: EmailLib.SmtpServerConfig
+  commentId: T:EmailLib.SmtpServerConfig
+  parent: EmailLib
+  name: SmtpServerConfig
+  nameWithType: SmtpServerConfig
+  fullName: EmailLib.SmtpServerConfig
+- uid: EmailLib.SmtpServerConfig.op_Inequality*
+  commentId: Overload:EmailLib.SmtpServerConfig.op_Inequality
+  name: Inequality
+  nameWithType: SmtpServerConfig.Inequality
+  fullName: EmailLib.SmtpServerConfig.Inequality
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EmailLib.SmtpServerConfig.Equals*
+  commentId: Overload:EmailLib.SmtpServerConfig.Equals
+  name: Equals
+  nameWithType: SmtpServerConfig.Equals
+  fullName: EmailLib.SmtpServerConfig.Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EmailLib.SmtpServerConfig.GetHashCode*
+  commentId: Overload:EmailLib.SmtpServerConfig.GetHashCode
+  name: GetHashCode
+  nameWithType: SmtpServerConfig.GetHashCode
+  fullName: EmailLib.SmtpServerConfig.GetHashCode

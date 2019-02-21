@@ -13,49 +13,49 @@ namespace WebApplication {
     public partial class CambiarPassword {
         
         /// <summary>
-        /// textBoxPassword1 control.
+        /// textBoxNewPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBoxPassword1;
+        protected global::System.Web.UI.WebControls.TextBox textBoxNewPassword;
         
         /// <summary>
-        /// PasswordRequiredFieldValidator control.
+        /// PasswordFieldRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordFieldRequired;
         
         /// <summary>
-        /// textBoxPassword2 control.
+        /// textBoxRepeatNewPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBoxPassword2;
+        protected global::System.Web.UI.WebControls.TextBox textBoxRepeatNewPassword;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// NewPasswordFieldRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NewPasswordFieldRequired;
         
         /// <summary>
-        /// PasswordCompareValidator control.
+        /// ComparePassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator PasswordCompareValidator;
+        protected global::System.Web.UI.WebControls.CompareValidator ComparePassword;
         
         /// <summary>
         /// buttonChangePassword control.

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework.Extensions
+  commentId: N:WebApplication.Framework.Extensions
+  id: WebApplication.Framework.Extensions
+  children:
+  - WebApplication.Framework.Extensions.DictionaryExtension
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.Framework.Extensions
+  nameWithType: WebApplication.Framework.Extensions
+  fullName: WebApplication.Framework.Extensions
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.Framework.Extensions.DictionaryExtension
+  commentId: T:WebApplication.Framework.Extensions.DictionaryExtension
+  parent: WebApplication.Framework.Extensions
+  name: DictionaryExtension
+  nameWithType: DictionaryExtension
+  fullName: WebApplication.Framework.Extensions.DictionaryExtension
+- uid: WebApplication.Framework.Extensions
+  commentId: N:WebApplication.Framework.Extensions
+  name: WebApplication.Framework.Extensions
+  nameWithType: WebApplication.Framework.Extensions
+  fullName: WebApplication.Framework.Extensions
