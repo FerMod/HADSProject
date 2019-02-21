@@ -59,7 +59,7 @@
         ]
       }
     ],
-    "dest": "wwwroot",
+    "dest": "../docs",
     "globalMetadataFiles": [
       "globalMetadata.json"
     ],
