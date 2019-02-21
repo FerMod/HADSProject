@@ -75,7 +75,7 @@ namespace WebApplication {
 
 			try {
 
-				string sql = "insert into Usuarios(email, nombre, apellidos, numconfir, tipo, pass) values(@email, @nombre, @apellidos, @numconfir, @tipo, @pass)";
+				string sql = "INSERT INTO Usuarios(email, nombre, apellidos, numconfir, tipo, pass) VALUES(@email, @nombre, @apellidos, @numconfir, @tipo, @pass)";
 
 				Dictionary<string, object> parameters = new Dictionary<string, object> {
 					{ "@email", textBoxEmail.Text },
@@ -89,7 +89,7 @@ namespace WebApplication {
 				int affectedRows = DataAccess.Insert(sql, parameters);
 
 				if(affectedRows != 1) {
-					//this.EmailService.SendEmail(mail);
+					this.EmailService.SendEmail(mail);
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
 				}
