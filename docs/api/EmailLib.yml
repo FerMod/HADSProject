@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailLib
+  commentId: N:EmailLib
+  id: EmailLib
+  children:
+  - EmailLib.EmailService
+  - EmailLib.SmtpServerConfig
+  langs:
+  - csharp
+  - vb
+  name: EmailLib
+  nameWithType: EmailLib
+  fullName: EmailLib
+  type: Namespace
+  assemblies:
+  - EmailLib
+references:
+- uid: EmailLib.EmailService
+  commentId: T:EmailLib.EmailService
+  name: EmailService
+  nameWithType: EmailService
+  fullName: EmailLib.EmailService
+- uid: EmailLib.SmtpServerConfig
+  commentId: T:EmailLib.SmtpServerConfig
+  parent: EmailLib
+  name: SmtpServerConfig
+  nameWithType: SmtpServerConfig
+  fullName: EmailLib.SmtpServerConfig
+- uid: EmailLib
+  commentId: N:EmailLib
+  name: EmailLib
+  nameWithType: EmailLib
+  fullName: EmailLib

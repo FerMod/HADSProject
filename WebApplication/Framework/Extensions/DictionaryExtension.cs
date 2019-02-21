@@ -11,11 +11,11 @@ namespace WebApplication.Framework.Extensions {
 
 		///
 		/// <summary>
-		/// Adds the specified <code>NameValueCollection</code> collection to the dictionary.
+		/// Adds the specified <c>NameValueCollection</c> collection to the dictionary.
 		/// </summary>
 		/// 
 		/// <param name="nameValueCollection">
-		/// The associated <code>System.String</code> keys and <code>System.String</code> values collection to add to the dictionary.
+		/// The associated <c>System.String</c> keys and <c>System.String</c> values collection to add to the dictionary.
 		/// </param>
 		/// 
 		/// <exception cref="ArgumentNullException">
@@ -23,10 +23,10 @@ namespace WebApplication.Framework.Extensions {
 		/// </exception>
 		/// 
 		/// <exception cref="ArgumentException">
-		/// An element with the same key already exists in the <code>System.Collections.Generic.Dictionary`2</code>.
+		/// An element with the same key already exists in the <c>System.Collections.Generic.Dictionary`2</c>.
 		/// </exception>
 		/// 
-		/// <see cref="NameValueCollection"/>
+		/// <seealso cref="NameValueCollection"/>
 		/// 
 		public static void Add(this Dictionary<string, string> dictionary, NameValueCollection nameValueCollection) {
 			foreach(var key in nameValueCollection.AllKeys) {

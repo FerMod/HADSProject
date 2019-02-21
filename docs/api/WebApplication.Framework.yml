@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  id: WebApplication.Framework
+  children:
+  - WebApplication.Framework.ParametizedUrl
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.Framework.ParametizedUrl
+  commentId: T:WebApplication.Framework.ParametizedUrl
+  name: ParametizedUrl
+  nameWithType: ParametizedUrl
+  fullName: WebApplication.Framework.ParametizedUrl
