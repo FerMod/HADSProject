@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebApplication.Registro" MasterPageFile="~/Account.master" Title="Registro" %>
 
-<asp:Content ID="CardBodyContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
+<asp:Content ID="RegisterContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
 
     <div id="register" class="auth-form-body">
 

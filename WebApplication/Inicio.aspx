@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApplication.Inicio" Title="Inicio" MasterPageFile="~/Account.master" %>
 
-<asp:Content ID="CardBodyContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
+<asp:Content ID="LogInContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
 
     <div id="login" class="auth-form-body">
 
