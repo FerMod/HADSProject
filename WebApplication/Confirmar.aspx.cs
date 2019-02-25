@@ -25,6 +25,7 @@ namespace WebApplication {
 				// TODO: Show message. Error parsing
 			}
 
+			// TODO: Fix issue, not a lazy object
 			if(!IsPostBack && Session["SessionDataAccess"] != null) {
 				DataAccess = (DataAccessService)Session["SessionDataAccess"];
 			} else {

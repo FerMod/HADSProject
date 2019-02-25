@@ -1,27 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.AppConfig
-  commentId: T:WebApplication.AppConfig
-  id: AppConfig
+- uid: WebApplication.ScriptResource
+  commentId: T:WebApplication.ScriptResource
+  id: ScriptResource
   parent: WebApplication
-  children: []
+  children:
+  - WebApplication.ScriptResource.RegisterBoostrap(System.String,System.String)
+  - WebApplication.ScriptResource.RegisterJQuery(System.String,System.String)
   langs:
   - csharp
   - vb
-  name: AppConfig
-  nameWithType: AppConfig
-  fullName: WebApplication.AppConfig
+  name: ScriptResource
+  nameWithType: ScriptResource
+  fullName: WebApplication.ScriptResource
   type: Class
   source:
-    id: AppConfig
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 11
+    id: ScriptResource
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication
   syntax:
-    content: public static class AppConfig
-    content.vb: Public Module AppConfig
+    content: public static class ScriptResource
+    content.vb: Public Module ScriptResource
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,6 +41,80 @@ items:
   modifiers.vb:
   - Public
   - Module
+- uid: WebApplication.ScriptResource.RegisterJQuery(System.String,System.String)
+  commentId: M:WebApplication.ScriptResource.RegisterJQuery(System.String,System.String)
+  id: RegisterJQuery(System.String,System.String)
+  parent: WebApplication.ScriptResource
+  langs:
+  - csharp
+  - vb
+  name: RegisterJQuery(String, String)
+  nameWithType: ScriptResource.RegisterJQuery(String, String)
+  fullName: WebApplication.ScriptResource.RegisterJQuery(System.String, System.String)
+  type: Method
+  source:
+    id: RegisterJQuery
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
+    startLine: 15
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nAdd a jQuery definition to the <code>ScriptManager.ScriptResourceMapping</code>.\n"
+  example: []
+  syntax:
+    content: public static void RegisterJQuery(string version, string name = "jquery")
+    parameters:
+    - id: version
+      type: System.String
+      description: The <code>jQuery</code> version.
+    - id: name
+      type: System.String
+      description: The name of the <code>jQuery</code> resource.
+    content.vb: Public Shared Sub RegisterJQuery(version As String, name As String = "jquery")
+  overload: WebApplication.ScriptResource.RegisterJQuery*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WebApplication.ScriptResource.RegisterBoostrap(System.String,System.String)
+  commentId: M:WebApplication.ScriptResource.RegisterBoostrap(System.String,System.String)
+  id: RegisterBoostrap(System.String,System.String)
+  parent: WebApplication.ScriptResource
+  langs:
+  - csharp
+  - vb
+  name: RegisterBoostrap(String, String)
+  nameWithType: ScriptResource.RegisterBoostrap(String, String)
+  fullName: WebApplication.ScriptResource.RegisterBoostrap(System.String, System.String)
+  type: Method
+  source:
+    id: RegisterBoostrap
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
+    startLine: 31
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nAdd a Bootstrap definition to the <code>ScriptManager.ScriptResourceMapping</code>.\n"
+  example: []
+  syntax:
+    content: public static void RegisterBoostrap(string version, string name = "bootstrap")
+    parameters:
+    - id: version
+      type: System.String
+      description: The Bootstrap version.
+    - id: name
+      type: System.String
+      description: The name of the Bootstrap resource.
+    content.vb: Public Shared Sub RegisterBoostrap(version As String, name As String = "bootstrap")
+  overload: WebApplication.ScriptResource.RegisterBoostrap*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: WebApplication
   commentId: N:WebApplication
@@ -337,3 +413,20 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: WebApplication.ScriptResource.RegisterJQuery*
+  commentId: Overload:WebApplication.ScriptResource.RegisterJQuery
+  name: RegisterJQuery
+  nameWithType: ScriptResource.RegisterJQuery
+  fullName: WebApplication.ScriptResource.RegisterJQuery
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WebApplication.ScriptResource.RegisterBoostrap*
+  commentId: Overload:WebApplication.ScriptResource.RegisterBoostrap
+  name: RegisterBoostrap
+  nameWithType: ScriptResource.RegisterBoostrap
+  fullName: WebApplication.ScriptResource.RegisterBoostrap

@@ -17,6 +17,7 @@ items:
   - WebApplication.Inicio
   - WebApplication.Registro
   - WebApplication.RouteConfig
+  - WebApplication.ScriptResource
   - WebApplication.Site_Mobile
   - WebApplication.SiteMaster
   - WebApplication.ViewSwitcher
@@ -55,6 +56,11 @@ references:
   name: About
   nameWithType: About
   fullName: WebApplication.About
+- uid: WebApplication.ScriptResource
+  commentId: T:WebApplication.ScriptResource
+  name: ScriptResource
+  nameWithType: ScriptResource
+  fullName: WebApplication.ScriptResource
 - uid: WebApplication.RouteConfig
   commentId: T:WebApplication.RouteConfig
   name: RouteConfig

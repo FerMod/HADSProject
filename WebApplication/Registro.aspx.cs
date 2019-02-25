@@ -88,8 +88,11 @@ namespace WebApplication {
 
 				int affectedRows = DataAccess.Insert(sql, parameters);
 
-				if(affectedRows != 1) {
+				if(affectedRows == 1) {
 					this.EmailService.SendEmail(mail);
+					Session["NotificationTitle"] = "Confirm Email";
+					Session["NotificationBody"] = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>. If yount don't receive any email <a href=\"{parametizedUrl}\">resend email</a>";
+					Response.Redirect("/WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
 				}
