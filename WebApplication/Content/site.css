@@ -78,9 +78,34 @@ textarea {
     font-size: 12px;
 }
 
-    .label-link:hover {
-        text-decoration: none;
-    }
+.label-link:hover {
+    text-decoration: none;
+}
+
+nav .container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.navbar-user-menu {
+    margin: 0;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+}
+
+.navbar-user {
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-user-logout {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

@@ -7,17 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication {
 
-	public partial class SiteMaster : MasterPage {
+	public partial class EmailSent : Page {
 
 		protected void Page_Load(object sender, EventArgs e) {
-
-			// TODO: Implement a way to check if the user is logged in
-			if(true) {
-
-				userMenu.Visible = false;
-				loggedUserMenu.Visible = true;
-
-			}
 
 		}
 

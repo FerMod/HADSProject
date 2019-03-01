@@ -13,6 +13,15 @@ namespace WebApplication {
     public partial class SiteMaster {
         
         /// <summary>
+        /// userMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel userMenu;
+        
+        /// <summary>
         /// createAccountLink control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace WebApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor loginLink;
+        
+        /// <summary>
+        /// loggedUserMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel loggedUserMenu;
         
         /// <summary>
         /// MainContent control.

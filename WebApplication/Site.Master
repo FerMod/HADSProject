@@ -41,7 +41,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
             <div class="container">
 
-                <a class="navbar-brand" runat="server" href="~/">HADS</a>
+                <a class="navbar-brand mr-0 mr-md-2" runat="server" href="~/">HADS</a>
                 <div class="ml-auto order-0">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                         <span class="navbar-toggler-icon"></span>
@@ -50,18 +50,50 @@
 
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item active"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                        <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
+                        <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <%-- Non logged user menu --%>
+                <asp:Panel ID="userMenu" CssClass="navbar-collapse collapse w-100 order-3 dual-collapse2" Visible="true" runat="server">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="~/Registro" runat="server" id="createAccountLink">Create Account</a></li>
-                        <li class="nav-item"><a class="nav-link" href="~/Inicio" runat="server" id="loginLink">Log in</a></li>
+                        <li class="nav-item"><a class="btn btn-link nav-link" href="~/Registro" runat="server" id="createAccountLink">Create Account</a></li>
+                        <li class="nav-item"><a class="btn btn-link nav-link" href="~/Inicio" runat="server" id="loginLink">Log In</a></li>
                     </ul>
-                </div>
+                </asp:Panel>
+
+                <%-- Logged user menu --%>
+                <asp:Panel ID="loggedUserMenu" CssClass="navbar-collapse collapse w-100 order-3 dual-collapse2" Visible="false" runat="server">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-link nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Account</a>
+                            <div class="navbar-user-menu dropdown-menu dropdown-menu-right">
+                                <div class="navbar-user">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img src="http://placehold.it/120x120" alt="Profile Image" class="img-responsive" />
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span>Patata Misteriosa</span>
+                                            <p class="text-muted small">mail@gmail.com</p>
+                                            <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="navbar-user navbar-user-logout">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a href="#" class="btn btn-sm btn-primary btn-block">Sign Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </asp:Panel>
 
             </div>
         </nav>
