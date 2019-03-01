@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: UrlUtils
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
     startLine: 7
   assemblies:
   - WebApplication
@@ -55,7 +55,7 @@ items:
   type: Property
   source:
     id: UrlRoot
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -90,7 +90,7 @@ items:
   type: Property
   source:
     id: VirtualPath
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
     startLine: 24
   assemblies:
   - WebApplication
@@ -127,7 +127,7 @@ items:
   type: Property
   source:
     id: ApplicationFolder
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
     startLine: 44
   assemblies:
   - WebApplication

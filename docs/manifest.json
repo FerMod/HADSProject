@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Users/Ferran/source/repos/HADSProject/ProjectDocs",
+  "source_base_path": "D:/Users/Ferran Tudela/source/repos/HADSProject/ProjectDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DataBaseAccess.DataAccessService.html",
-          "hash": "3YlVA3lc2HS8KnNHOvvjzA=="
+          "hash": "RxowiwfLeSPcqYdTzeN4MQ=="
         }
       },
       "is_incremental": false,
@@ -293,6 +293,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/WebApplication.ScriptResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebApplication.ScriptResource.html",
+          "hash": "8CU76O/U8f1Nbrao4NoB7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/WebApplication.SiteMaster.yml",
       "output": {
         ".html": {
@@ -381,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.html",
-          "hash": "7uuBkXCt2JoOIqbNnZrX1w=="
+          "hash": "JYOo8LrrwU03uyyKkPSt+A=="
         }
       },
       "is_incremental": false,
@@ -405,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "J2k3PXR/CEN4+jFxdpDgFg=="
+          "hash": "34cYGlC9rLZMqFmFxwIrPw=="
         }
       },
       "is_incremental": false,
@@ -493,11 +505,16 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 33,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
@@ -507,16 +524,11 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 32,
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

@@ -47,6 +47,8 @@
     name: Registro
   - uid: WebApplication.RouteConfig
     name: RouteConfig
+  - uid: WebApplication.ScriptResource
+    name: ScriptResource
   - uid: WebApplication.Site_Mobile
     name: Site_Mobile
   - uid: WebApplication.SiteMaster

@@ -221,6 +221,58 @@
   </table>
   
   
+  <a id="DataBaseAccess_DataAccessService_Insert_" data-uid="DataBaseAccess.DataAccessService.Insert*"></a>
+  <h4 id="DataBaseAccess_DataAccessService_Insert_System_String_System_Data_CommandType_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Insert(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">Insert(String, CommandType, Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Insert(string query, CommandType commandType = CommandType.Text, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DataBaseAccess_DataAccessService_Query_" data-uid="DataBaseAccess.DataAccessService.Query*"></a>
   <h4 id="DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">Query(String, Dictionary&lt;String, Object&gt;)</h4>
   <div class="markdown level1 summary"></div>
@@ -242,6 +294,58 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Data.IDataRecord</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DataBaseAccess_DataAccessService_Query_" data-uid="DataBaseAccess.DataAccessService.Query*"></a>
+  <h4 id="DataBaseAccess_DataAccessService_Query_System_String_System_Data_CommandType_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Query(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">Query(String, CommandType, Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IDataRecord&gt; Query(string query, CommandType commandType = CommandType.Text, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
         <td></td>
       </tr>
       <tr>
@@ -330,6 +434,73 @@
   </table>
   
   
+  <a id="DataBaseAccess_DataAccessService_Scalar_" data-uid="DataBaseAccess.DataAccessService.Scalar*"></a>
+  <h4 id="DataBaseAccess_DataAccessService_Scalar__1_System_String_System_Data_CommandType_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">Scalar&lt;T&gt;(String, CommandType, Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Scalar&lt;T&gt;(string query, CommandType commandType = CommandType.Text, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DataBaseAccess_DataAccessService_Update_" data-uid="DataBaseAccess.DataAccessService.Update*"></a>
   <h4 id="DataBaseAccess_DataAccessService_Update_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">Update(String, Dictionary&lt;String, Object&gt;)</h4>
   <div class="markdown level1 summary"></div>
@@ -351,6 +522,58 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DataBaseAccess_DataAccessService_Update_" data-uid="DataBaseAccess.DataAccessService.Update*"></a>
+  <h4 id="DataBaseAccess_DataAccessService_Update_System_String_System_Data_CommandType_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Update(System.String,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object})">Update(String, CommandType, Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Update(string query, CommandType commandType = CommandType.Text, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
         <td></td>
       </tr>
       <tr>

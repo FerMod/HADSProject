@@ -18,7 +18,7 @@ items:
   type: Class
   source:
     id: SiteMaster
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -231,7 +231,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -262,7 +262,7 @@ items:
   type: Field
   source:
     id: createAccountLink
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -292,7 +292,7 @@ items:
   type: Field
   source:
     id: loginLink
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -322,7 +322,7 @@ items:
   type: Field
   source:
     id: MainContent
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication

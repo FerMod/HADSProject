@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: ParametizedUrl
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 10
   assemblies:
   - WebApplication
@@ -109,7 +109,7 @@ items:
   type: Property
   source:
     id: Url
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -140,7 +140,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 14
   assemblies:
   - WebApplication
@@ -169,7 +169,7 @@ items:
   type: Method
   source:
     id: ToString
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 29
   assemblies:
   - WebApplication
