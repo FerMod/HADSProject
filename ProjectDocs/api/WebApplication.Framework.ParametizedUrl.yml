@@ -6,6 +6,7 @@ items:
   parent: WebApplication.Framework
   children:
   - WebApplication.Framework.ParametizedUrl.#ctor(System.String)
+  - WebApplication.Framework.ParametizedUrl.op_Implicit(WebApplication.Framework.ParametizedUrl)~System.String
   - WebApplication.Framework.ParametizedUrl.ToString
   - WebApplication.Framework.ParametizedUrl.Url
   langs:
@@ -17,7 +18,7 @@ items:
   type: Class
   source:
     id: ParametizedUrl
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 10
   assemblies:
   - WebApplication
@@ -109,7 +110,7 @@ items:
   type: Property
   source:
     id: Url
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -140,7 +141,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 14
   assemblies:
   - WebApplication
@@ -169,7 +170,7 @@ items:
   type: Method
   source:
     id: ToString
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
     startLine: 29
   assemblies:
   - WebApplication
@@ -187,6 +188,42 @@ items:
   modifiers.vb:
   - Public
   - Overrides
+- uid: WebApplication.Framework.ParametizedUrl.op_Implicit(WebApplication.Framework.ParametizedUrl)~System.String
+  commentId: M:WebApplication.Framework.ParametizedUrl.op_Implicit(WebApplication.Framework.ParametizedUrl)~System.String
+  id: op_Implicit(WebApplication.Framework.ParametizedUrl)~System.String
+  parent: WebApplication.Framework.ParametizedUrl
+  langs:
+  - csharp
+  - vb
+  name: Implicit(ParametizedUrl to String)
+  nameWithType: ParametizedUrl.Implicit(ParametizedUrl to String)
+  fullName: WebApplication.Framework.ParametizedUrl.Implicit(WebApplication.Framework.ParametizedUrl to System.String)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static implicit operator string (ParametizedUrl parametizedUrl)
+    parameters:
+    - id: parametizedUrl
+      type: WebApplication.Framework.ParametizedUrl
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(parametizedUrl As ParametizedUrl) As String
+  overload: WebApplication.Framework.ParametizedUrl.op_Implicit*
+  nameWithType.vb: ParametizedUrl.Widening(ParametizedUrl to String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.ParametizedUrl.Widening(WebApplication.Framework.ParametizedUrl to System.String)
+  name.vb: Widening(ParametizedUrl to String)
 references:
 - uid: WebApplication.Framework
   commentId: N:WebApplication.Framework
@@ -4124,3 +4161,17 @@ references:
   name: ToString
   nameWithType: ParametizedUrl.ToString
   fullName: WebApplication.Framework.ParametizedUrl.ToString
+- uid: WebApplication.Framework.ParametizedUrl.op_Implicit*
+  commentId: Overload:WebApplication.Framework.ParametizedUrl.op_Implicit
+  name: Implicit
+  nameWithType: ParametizedUrl.Implicit
+  fullName: WebApplication.Framework.ParametizedUrl.Implicit
+  nameWithType.vb: ParametizedUrl.Widening
+  fullName.vb: WebApplication.Framework.ParametizedUrl.Widening
+  name.vb: Widening
+- uid: WebApplication.Framework.ParametizedUrl
+  commentId: T:WebApplication.Framework.ParametizedUrl
+  parent: WebApplication.Framework
+  name: ParametizedUrl
+  nameWithType: ParametizedUrl
+  fullName: WebApplication.Framework.ParametizedUrl

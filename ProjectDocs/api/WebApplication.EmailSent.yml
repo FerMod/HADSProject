@@ -1,28 +1,27 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.RouteConfig
-  commentId: T:WebApplication.RouteConfig
-  id: RouteConfig
+- uid: WebApplication.EmailSent
+  commentId: T:WebApplication.EmailSent
+  id: EmailSent
   parent: WebApplication
-  children:
-  - WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
+  children: []
   langs:
   - csharp
   - vb
-  name: RouteConfig
-  nameWithType: RouteConfig
-  fullName: WebApplication.RouteConfig
+  name: EmailSent
+  nameWithType: EmailSent
+  fullName: WebApplication.EmailSent
   type: Class
   source:
-    id: RouteConfig
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\App_Start\RouteConfig.cs
-    startLine: 8
+    id: EmailSent
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.designer.cs
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
   syntax:
-    content: public static class RouteConfig
-    content.vb: Public Module RouteConfig
+    content: public class EmailSent
+    content.vb: Public Class EmailSent
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,42 +34,10 @@ items:
   - System.Object.MemberwiseClone
   modifiers.csharp:
   - public
-  - static
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
-  commentId: M:WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
-  id: RegisterRoutes(System.Web.Routing.RouteCollection)
-  parent: WebApplication.RouteConfig
-  langs:
-  - csharp
-  - vb
-  name: RegisterRoutes(RouteCollection)
-  nameWithType: RouteConfig.RegisterRoutes(RouteCollection)
-  fullName: WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
-  type: Method
-  source:
-    id: RegisterRoutes
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\App_Start\RouteConfig.cs
-    startLine: 10
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  syntax:
-    content: public static void RegisterRoutes(RouteCollection routes)
-    parameters:
-    - id: routes
-      type: System.Web.Routing.RouteCollection
-    content.vb: Public Shared Sub RegisterRoutes(routes As RouteCollection)
-  overload: WebApplication.RouteConfig.RegisterRoutes*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  - Class
 references:
 - uid: WebApplication
   commentId: N:WebApplication
@@ -369,21 +336,3 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: WebApplication.RouteConfig.RegisterRoutes*
-  commentId: Overload:WebApplication.RouteConfig.RegisterRoutes
-  name: RegisterRoutes
-  nameWithType: RouteConfig.RegisterRoutes
-  fullName: WebApplication.RouteConfig.RegisterRoutes
-- uid: System.Web.Routing.RouteCollection
-  commentId: T:System.Web.Routing.RouteCollection
-  parent: System.Web.Routing
-  isExternal: true
-  name: RouteCollection
-  nameWithType: RouteCollection
-  fullName: System.Web.Routing.RouteCollection
-- uid: System.Web.Routing
-  commentId: N:System.Web.Routing
-  isExternal: true
-  name: System.Web.Routing
-  nameWithType: System.Web.Routing
-  fullName: System.Web.Routing

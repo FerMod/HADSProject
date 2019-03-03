@@ -1,36 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.CambiarPassword
-  commentId: T:WebApplication.CambiarPassword
-  id: CambiarPassword
+- uid: WebApplication.WebNotification
+  commentId: T:WebApplication.WebNotification
+  id: WebNotification
   parent: WebApplication
   children:
-  - WebApplication.CambiarPassword.buttonChangePassword
-  - WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object,System.EventArgs)
-  - WebApplication.CambiarPassword.ComparePassword
-  - WebApplication.CambiarPassword.NewPasswordFieldRequired
-  - WebApplication.CambiarPassword.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.CambiarPassword.PasswordFieldRequired
-  - WebApplication.CambiarPassword.textBoxNewPassword
-  - WebApplication.CambiarPassword.textBoxRepeatNewPassword
+  - WebApplication.WebNotification.alert
+  - WebApplication.WebNotification.body
+  - WebApplication.WebNotification.close
+  - WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
+  - WebApplication.WebNotification.title
+  - WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
   langs:
   - csharp
   - vb
-  name: CambiarPassword
-  nameWithType: CambiarPassword
-  fullName: WebApplication.CambiarPassword
+  name: WebNotification
+  nameWithType: WebNotification
+  fullName: WebApplication.WebNotification
   type: Class
   source:
-    id: CambiarPassword
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
+    id: WebNotification
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
   syntax:
-    content: 'public class CambiarPassword : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
+    content: 'public class WebNotification : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
     content.vb: >-
-      Public Class CambiarPassword
+      Public Class WebNotification
           Inherits Page
           Implements IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler
   inheritance:
@@ -294,21 +293,52 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.CambiarPassword.Page_Load(System.Object,System.EventArgs)
-  commentId: M:WebApplication.CambiarPassword.Page_Load(System.Object,System.EventArgs)
+- uid: WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
+  commentId: M:WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
+  id: Page_PreInit(System.Object,System.EventArgs)
+  parent: WebApplication.WebNotification
+  langs:
+  - csharp
+  - vb
+  name: Page_PreInit(Object, EventArgs)
+  nameWithType: WebNotification.Page_PreInit(Object, EventArgs)
+  fullName: WebApplication.WebNotification.Page_PreInit(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Page_PreInit
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
+    startLine: 13
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Page_PreInit(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Page_PreInit(sender As Object, e As EventArgs)
+  overload: WebApplication.WebNotification.Page_PreInit*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
+  commentId: M:WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
-  parent: WebApplication.CambiarPassword
+  parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
   name: Page_Load(Object, EventArgs)
-  nameWithType: CambiarPassword.Page_Load(Object, EventArgs)
-  fullName: WebApplication.CambiarPassword.Page_Load(System.Object, System.EventArgs)
+  nameWithType: WebNotification.Page_Load(Object, EventArgs)
+  fullName: WebApplication.WebNotification.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.cs
-    startLine: 11
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
+    startLine: 16
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -320,218 +350,156 @@ items:
     - id: e
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
-  overload: WebApplication.CambiarPassword.Page_Load*
+  overload: WebApplication.WebNotification.Page_Load*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object,System.EventArgs)
-  commentId: M:WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object,System.EventArgs)
-  id: ButtonChangePassword_Click(System.Object,System.EventArgs)
-  parent: WebApplication.CambiarPassword
+- uid: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  commentId: M:WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  id: UpdateContent(WebApplication.Framework.NotificationData)
+  parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: ButtonChangePassword_Click(Object, EventArgs)
-  nameWithType: CambiarPassword.ButtonChangePassword_Click(Object, EventArgs)
-  fullName: WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object, System.EventArgs)
+  name: UpdateContent(NotificationData)
+  nameWithType: WebNotification.UpdateContent(NotificationData)
+  fullName: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
   type: Method
   source:
-    id: ButtonChangePassword_Click
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.cs
-    startLine: 15
+    id: UpdateContent
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
+    startLine: 25
   assemblies:
   - WebApplication
   namespace: WebApplication
   syntax:
-    content: protected void ButtonChangePassword_Click(object sender, EventArgs e)
+    content: public void UpdateContent(NotificationData notificationData)
     parameters:
-    - id: sender
-      type: System.Object
-    - id: e
-      type: System.EventArgs
-    content.vb: Protected Sub ButtonChangePassword_Click(sender As Object, e As EventArgs)
-  overload: WebApplication.CambiarPassword.ButtonChangePassword_Click*
+    - id: notificationData
+      type: WebApplication.Framework.NotificationData
+    content.vb: Public Sub UpdateContent(notificationData As NotificationData)
+  overload: WebApplication.WebNotification.UpdateContent*
   modifiers.csharp:
-  - protected
+  - public
   modifiers.vb:
-  - Protected
-- uid: WebApplication.CambiarPassword.textBoxNewPassword
-  commentId: F:WebApplication.CambiarPassword.textBoxNewPassword
-  id: textBoxNewPassword
-  parent: WebApplication.CambiarPassword
+  - Public
+- uid: WebApplication.WebNotification.alert
+  commentId: F:WebApplication.WebNotification.alert
+  id: alert
+  parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: textBoxNewPassword
-  nameWithType: CambiarPassword.textBoxNewPassword
-  fullName: WebApplication.CambiarPassword.textBoxNewPassword
+  name: alert
+  nameWithType: WebNotification.alert
+  fullName: WebApplication.WebNotification.alert
   type: Field
   source:
-    id: textBoxNewPassword
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
+    id: alert
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\ntextBoxNewPassword control.\n"
+  summary: "\nalert control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected TextBox textBoxNewPassword
+    content: protected Panel alert
     return:
-      type: System.Web.UI.WebControls.TextBox
-    content.vb: Protected textBoxNewPassword As TextBox
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected alert As Panel
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.CambiarPassword.PasswordFieldRequired
-  commentId: F:WebApplication.CambiarPassword.PasswordFieldRequired
-  id: PasswordFieldRequired
-  parent: WebApplication.CambiarPassword
+- uid: WebApplication.WebNotification.title
+  commentId: F:WebApplication.WebNotification.title
+  id: title
+  parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: PasswordFieldRequired
-  nameWithType: CambiarPassword.PasswordFieldRequired
-  fullName: WebApplication.CambiarPassword.PasswordFieldRequired
+  name: title
+  nameWithType: WebNotification.title
+  fullName: WebApplication.WebNotification.title
   type: Field
   source:
-    id: PasswordFieldRequired
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
+    id: title
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\nPasswordFieldRequired control.\n"
+  summary: "\ntitle control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected RequiredFieldValidator PasswordFieldRequired
+    content: protected Label title
     return:
-      type: System.Web.UI.WebControls.RequiredFieldValidator
-    content.vb: Protected PasswordFieldRequired As RequiredFieldValidator
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected title As Label
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.CambiarPassword.textBoxRepeatNewPassword
-  commentId: F:WebApplication.CambiarPassword.textBoxRepeatNewPassword
-  id: textBoxRepeatNewPassword
-  parent: WebApplication.CambiarPassword
+- uid: WebApplication.WebNotification.body
+  commentId: F:WebApplication.WebNotification.body
+  id: body
+  parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: textBoxRepeatNewPassword
-  nameWithType: CambiarPassword.textBoxRepeatNewPassword
-  fullName: WebApplication.CambiarPassword.textBoxRepeatNewPassword
+  name: body
+  nameWithType: WebNotification.body
+  fullName: WebApplication.WebNotification.body
   type: Field
   source:
-    id: textBoxRepeatNewPassword
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
+    id: body
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\ntextBoxRepeatNewPassword control.\n"
+  summary: "\nbody control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected TextBox textBoxRepeatNewPassword
+    content: protected Label body
     return:
-      type: System.Web.UI.WebControls.TextBox
-    content.vb: Protected textBoxRepeatNewPassword As TextBox
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected body As Label
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.CambiarPassword.NewPasswordFieldRequired
-  commentId: F:WebApplication.CambiarPassword.NewPasswordFieldRequired
-  id: NewPasswordFieldRequired
-  parent: WebApplication.CambiarPassword
+- uid: WebApplication.WebNotification.close
+  commentId: F:WebApplication.WebNotification.close
+  id: close
+  parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: NewPasswordFieldRequired
-  nameWithType: CambiarPassword.NewPasswordFieldRequired
-  fullName: WebApplication.CambiarPassword.NewPasswordFieldRequired
+  name: close
+  nameWithType: WebNotification.close
+  fullName: WebApplication.WebNotification.close
   type: Field
   source:
-    id: NewPasswordFieldRequired
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
+    id: close
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\nNewPasswordFieldRequired control.\n"
+  summary: "\nclose control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected RequiredFieldValidator NewPasswordFieldRequired
+    content: protected LinkButton close
     return:
-      type: System.Web.UI.WebControls.RequiredFieldValidator
-    content.vb: Protected NewPasswordFieldRequired As RequiredFieldValidator
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.CambiarPassword.ComparePassword
-  commentId: F:WebApplication.CambiarPassword.ComparePassword
-  id: ComparePassword
-  parent: WebApplication.CambiarPassword
-  langs:
-  - csharp
-  - vb
-  name: ComparePassword
-  nameWithType: CambiarPassword.ComparePassword
-  fullName: WebApplication.CambiarPassword.ComparePassword
-  type: Field
-  source:
-    id: ComparePassword
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
-    startLine: 57
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nComparePassword control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected CompareValidator ComparePassword
-    return:
-      type: System.Web.UI.WebControls.CompareValidator
-    content.vb: Protected ComparePassword As CompareValidator
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.CambiarPassword.buttonChangePassword
-  commentId: F:WebApplication.CambiarPassword.buttonChangePassword
-  id: buttonChangePassword
-  parent: WebApplication.CambiarPassword
-  langs:
-  - csharp
-  - vb
-  name: buttonChangePassword
-  nameWithType: CambiarPassword.buttonChangePassword
-  fullName: WebApplication.CambiarPassword.buttonChangePassword
-  type: Field
-  source:
-    id: buttonChangePassword
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\CambiarPassword.aspx.designer.cs
-    startLine: 66
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nbuttonChangePassword control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Button buttonChangePassword
-    return:
-      type: System.Web.UI.WebControls.Button
-    content.vb: Protected buttonChangePassword As Button
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected close As LinkButton
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -7541,11 +7509,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.CambiarPassword.Page_Load*
-  commentId: Overload:WebApplication.CambiarPassword.Page_Load
-  name: Page_Load
-  nameWithType: CambiarPassword.Page_Load
-  fullName: WebApplication.CambiarPassword.Page_Load
+- uid: WebApplication.WebNotification.Page_PreInit*
+  commentId: Overload:WebApplication.WebNotification.Page_PreInit
+  name: Page_PreInit
+  nameWithType: WebNotification.Page_PreInit
+  fullName: WebApplication.WebNotification.Page_PreInit
 - uid: System.EventArgs
   commentId: T:System.EventArgs
   parent: System
@@ -7553,42 +7521,51 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.CambiarPassword.ButtonChangePassword_Click*
-  commentId: Overload:WebApplication.CambiarPassword.ButtonChangePassword_Click
-  name: ButtonChangePassword_Click
-  nameWithType: CambiarPassword.ButtonChangePassword_Click
-  fullName: WebApplication.CambiarPassword.ButtonChangePassword_Click
-- uid: System.Web.UI.WebControls.TextBox
-  commentId: T:System.Web.UI.WebControls.TextBox
+- uid: WebApplication.WebNotification.Page_Load*
+  commentId: Overload:WebApplication.WebNotification.Page_Load
+  name: Page_Load
+  nameWithType: WebNotification.Page_Load
+  fullName: WebApplication.WebNotification.Page_Load
+- uid: WebApplication.WebNotification.UpdateContent*
+  commentId: Overload:WebApplication.WebNotification.UpdateContent
+  name: UpdateContent
+  nameWithType: WebNotification.UpdateContent
+  fullName: WebApplication.WebNotification.UpdateContent
+- uid: WebApplication.Framework.NotificationData
+  commentId: T:WebApplication.Framework.NotificationData
+  parent: WebApplication.Framework
+  name: NotificationData
+  nameWithType: NotificationData
+  fullName: WebApplication.Framework.NotificationData
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
+- uid: System.Web.UI.WebControls.Panel
+  commentId: T:System.Web.UI.WebControls.Panel
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: TextBox
-  nameWithType: TextBox
-  fullName: System.Web.UI.WebControls.TextBox
+  name: Panel
+  nameWithType: Panel
+  fullName: System.Web.UI.WebControls.Panel
 - uid: System.Web.UI.WebControls
   commentId: N:System.Web.UI.WebControls
   isExternal: true
   name: System.Web.UI.WebControls
   nameWithType: System.Web.UI.WebControls
   fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.RequiredFieldValidator
-  commentId: T:System.Web.UI.WebControls.RequiredFieldValidator
+- uid: System.Web.UI.WebControls.Label
+  commentId: T:System.Web.UI.WebControls.Label
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: RequiredFieldValidator
-  nameWithType: RequiredFieldValidator
-  fullName: System.Web.UI.WebControls.RequiredFieldValidator
-- uid: System.Web.UI.WebControls.CompareValidator
-  commentId: T:System.Web.UI.WebControls.CompareValidator
+  name: Label
+  nameWithType: Label
+  fullName: System.Web.UI.WebControls.Label
+- uid: System.Web.UI.WebControls.LinkButton
+  commentId: T:System.Web.UI.WebControls.LinkButton
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: CompareValidator
-  nameWithType: CompareValidator
-  fullName: System.Web.UI.WebControls.CompareValidator
-- uid: System.Web.UI.WebControls.Button
-  commentId: T:System.Web.UI.WebControls.Button
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: Button
-  nameWithType: Button
-  fullName: System.Web.UI.WebControls.Button
+  name: LinkButton
+  nameWithType: LinkButton
+  fullName: System.Web.UI.WebControls.LinkButton

@@ -39,6 +39,8 @@
     name: Confirmar
   - uid: WebApplication.Contact
     name: Contact
+  - uid: WebApplication.EmailSent
+    name: EmailSent
   - uid: WebApplication.Global
     name: Global
   - uid: WebApplication.Inicio
@@ -55,11 +57,19 @@
     name: SiteMaster
   - uid: WebApplication.ViewSwitcher
     name: ViewSwitcher
+  - uid: WebApplication.WebNotification
+    name: WebNotification
 - uid: WebApplication.Framework
   name: WebApplication.Framework
   items:
+  - uid: WebApplication.Framework.AlertLevel
+    name: AlertLevel
+  - uid: WebApplication.Framework.NotificationData
+    name: NotificationData
   - uid: WebApplication.Framework.ParametizedUrl
     name: ParametizedUrl
+  - uid: WebApplication.Framework.UserCredentials
+    name: UserCredentials
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   items:

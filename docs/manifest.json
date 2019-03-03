@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Users/Ferran Tudela/source/repos/HADSProject/ProjectDocs",
+  "source_base_path": "D:/Users/Ferran/source/repos/HADSProject/ProjectDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DataBaseAccess.DataAccessService.html",
-          "hash": "RxowiwfLeSPcqYdTzeN4MQ=="
+          "hash": "2LUwPhuq2AV41PqLlopJOw=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.Confirmar.html",
-          "hash": "gyW2kOzSkB/4IoIAy3RQ4w=="
+          "hash": "/FGh/+pAIOaO1NXxoXVtUQ=="
         }
       },
       "is_incremental": false,
@@ -190,6 +190,30 @@
         ".html": {
           "relative_path": "api/WebApplication.Contact.html",
           "hash": "qtBg7ajgVR2zl/TMd2oB4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebApplication.EmailSent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebApplication.EmailSent.html",
+          "hash": "bvGelPDoD5KveawIMiy8rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebApplication.Framework.AlertLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebApplication.Framework.AlertLevel.html",
+          "hash": "4IBWtXzbqrBjaApXROUTpA=="
         }
       },
       "is_incremental": false,
@@ -221,11 +245,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/WebApplication.Framework.NotificationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebApplication.Framework.NotificationData.html",
+          "hash": "Udi5pXAZ+rQgMZ7/NfDQVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/WebApplication.Framework.ParametizedUrl.yml",
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.Framework.ParametizedUrl.html",
-          "hash": "4VK+o0EHeFZ22JUnct1kBA=="
+          "hash": "K0Fg05IW+cA8miPFAwHADA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebApplication.Framework.UserCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebApplication.Framework.UserCredentials.html",
+          "hash": "MdHaXXGtRXm6KKWCEgeTMg=="
         }
       },
       "is_incremental": false,
@@ -237,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.Framework.html",
-          "hash": "iqxxxPyGG7okjWRzSb2zOw=="
+          "hash": "Zna413BupvkUJxKUPqbg5g=="
         }
       },
       "is_incremental": false,
@@ -249,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.Global.html",
-          "hash": "zsHjFDBxz1ANUpcn1q4eNQ=="
+          "hash": "P/mreNxuOeurSkpATIrHJQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.SiteMaster.html",
-          "hash": "/YtgElSTWdOPnaWEkPrHsA=="
+          "hash": "E8tlcwzSIfZrezu18WtcRQ=="
         }
       },
       "is_incremental": false,
@@ -377,6 +425,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/WebApplication.WebNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebApplication.WebNotification.html",
+          "hash": "fs3j5F23PmiGN74EcPNATA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/WebApplication._Default.yml",
       "output": {
         ".html": {
@@ -393,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WebApplication.html",
-          "hash": "JYOo8LrrwU03uyyKkPSt+A=="
+          "hash": "xpDKvjBpSUfsZN9qk3NPaQ=="
         }
       },
       "is_incremental": false,
@@ -417,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "34cYGlC9rLZMqFmFxwIrPw=="
+          "hash": "A+tDBVTqJqQ5emx/UDALYQ=="
         }
       },
       "is_incremental": false,
@@ -505,16 +565,11 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 33,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
@@ -524,11 +579,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ResourceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 38,
           "skipped_file_count": 0
         }
       }

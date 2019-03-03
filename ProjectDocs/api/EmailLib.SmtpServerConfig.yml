@@ -26,7 +26,7 @@ items:
   type: Class
   source:
     id: SmtpServerConfig
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 8
   assemblies:
   - EmailLib
@@ -61,7 +61,7 @@ items:
   type: Property
   source:
     id: Account
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 10
   assemblies:
   - EmailLib
@@ -92,7 +92,7 @@ items:
   type: Property
   source:
     id: Password
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 11
   assemblies:
   - EmailLib
@@ -123,7 +123,7 @@ items:
   type: Property
   source:
     id: Host
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 12
   assemblies:
   - EmailLib
@@ -154,7 +154,7 @@ items:
   type: Property
   source:
     id: Port
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 13
   assemblies:
   - EmailLib
@@ -185,7 +185,7 @@ items:
   type: Property
   source:
     id: DeliveryMethod
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 14
   assemblies:
   - EmailLib
@@ -216,7 +216,7 @@ items:
   type: Property
   source:
     id: UseDefaultCredentials
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 15
   assemblies:
   - EmailLib
@@ -247,7 +247,7 @@ items:
   type: Property
   source:
     id: EnableSsl
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 16
   assemblies:
   - EmailLib
@@ -278,7 +278,7 @@ items:
   type: Operator
   source:
     id: op_Equality
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 18
   assemblies:
   - EmailLib
@@ -313,7 +313,7 @@ items:
   type: Operator
   source:
     id: op_Inequality
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 40
   assemblies:
   - EmailLib
@@ -348,7 +348,7 @@ items:
   type: Method
   source:
     id: Equals
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 44
   assemblies:
   - EmailLib
@@ -382,7 +382,7 @@ items:
   type: Method
   source:
     id: Equals
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 48
   assemblies:
   - EmailLib
@@ -413,7 +413,7 @@ items:
   type: Method
   source:
     id: GetHashCode
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 75
   assemblies:
   - EmailLib

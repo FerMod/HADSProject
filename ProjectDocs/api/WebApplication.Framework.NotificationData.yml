@@ -1,34 +1,31 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.AppConfig.SmtpServer
-  commentId: T:WebApplication.AppConfig.SmtpServer
-  id: AppConfig.SmtpServer
-  parent: WebApplication
+- uid: WebApplication.Framework.NotificationData
+  commentId: T:WebApplication.Framework.NotificationData
+  id: NotificationData
+  parent: WebApplication.Framework
   children:
-  - WebApplication.AppConfig.SmtpServer.Account
-  - WebApplication.AppConfig.SmtpServer.DeliveryMethod
-  - WebApplication.AppConfig.SmtpServer.EnableSsl
-  - WebApplication.AppConfig.SmtpServer.Host
-  - WebApplication.AppConfig.SmtpServer.Password
-  - WebApplication.AppConfig.SmtpServer.Port
-  - WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+  - WebApplication.Framework.NotificationData.Body
+  - WebApplication.Framework.NotificationData.Dismissable
+  - WebApplication.Framework.NotificationData.Level
+  - WebApplication.Framework.NotificationData.Title
   langs:
   - csharp
   - vb
-  name: AppConfig.SmtpServer
-  nameWithType: AppConfig.SmtpServer
-  fullName: WebApplication.AppConfig.SmtpServer
+  name: NotificationData
+  nameWithType: NotificationData
+  fullName: WebApplication.Framework.NotificationData
   type: Class
   source:
-    id: SmtpServer
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 13
+    id: NotificationData
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\NotificationData.cs
+    startLine: 5
   assemblies:
   - WebApplication
-  namespace: WebApplication
+  namespace: WebApplication.Framework
   syntax:
-    content: public static class SmtpServer
-    content.vb: Public Module SmtpServer
+    content: public class NotificationData
+    content.vb: Public Class NotificationData
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,262 +38,140 @@ items:
   - System.Object.MemberwiseClone
   modifiers.csharp:
   - public
-  - static
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: WebApplication.AppConfig.SmtpServer.Account
-  commentId: P:WebApplication.AppConfig.SmtpServer.Account
-  id: Account
-  parent: WebApplication.AppConfig.SmtpServer
+  - Class
+- uid: WebApplication.Framework.NotificationData.Title
+  commentId: P:WebApplication.Framework.NotificationData.Title
+  id: Title
+  parent: WebApplication.Framework.NotificationData
   langs:
   - csharp
   - vb
-  name: Account
-  nameWithType: AppConfig.SmtpServer.Account
-  fullName: WebApplication.AppConfig.SmtpServer.Account
+  name: Title
+  nameWithType: NotificationData.Title
+  fullName: WebApplication.Framework.NotificationData.Title
   type: Property
   source:
-    id: Account
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 18
+    id: Title
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\NotificationData.cs
+    startLine: 7
   assemblies:
   - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
+  namespace: WebApplication.Framework
   syntax:
-    content: public static string Account { get; set; }
+    content: public string Title { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Shared Property Account As String
-  overload: WebApplication.AppConfig.SmtpServer.Account*
+    content.vb: Public Property Title As String
+  overload: WebApplication.Framework.NotificationData.Title*
   modifiers.csharp:
   - public
-  - static
   - get
   - set
   modifiers.vb:
   - Public
-  - Shared
-- uid: WebApplication.AppConfig.SmtpServer.Password
-  commentId: P:WebApplication.AppConfig.SmtpServer.Password
-  id: Password
-  parent: WebApplication.AppConfig.SmtpServer
+- uid: WebApplication.Framework.NotificationData.Body
+  commentId: P:WebApplication.Framework.NotificationData.Body
+  id: Body
+  parent: WebApplication.Framework.NotificationData
   langs:
   - csharp
   - vb
-  name: Password
-  nameWithType: AppConfig.SmtpServer.Password
-  fullName: WebApplication.AppConfig.SmtpServer.Password
+  name: Body
+  nameWithType: NotificationData.Body
+  fullName: WebApplication.Framework.NotificationData.Body
   type: Property
   source:
-    id: Password
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 23
+    id: Body
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\NotificationData.cs
+    startLine: 8
   assemblies:
   - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
+  namespace: WebApplication.Framework
   syntax:
-    content: public static string Password { get; set; }
+    content: public string Body { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Shared Property Password As String
-  overload: WebApplication.AppConfig.SmtpServer.Password*
+    content.vb: Public Property Body As String
+  overload: WebApplication.Framework.NotificationData.Body*
   modifiers.csharp:
   - public
-  - static
   - get
   - set
   modifiers.vb:
   - Public
-  - Shared
-- uid: WebApplication.AppConfig.SmtpServer.Host
-  commentId: P:WebApplication.AppConfig.SmtpServer.Host
-  id: Host
-  parent: WebApplication.AppConfig.SmtpServer
+- uid: WebApplication.Framework.NotificationData.Level
+  commentId: P:WebApplication.Framework.NotificationData.Level
+  id: Level
+  parent: WebApplication.Framework.NotificationData
   langs:
   - csharp
   - vb
-  name: Host
-  nameWithType: AppConfig.SmtpServer.Host
-  fullName: WebApplication.AppConfig.SmtpServer.Host
+  name: Level
+  nameWithType: NotificationData.Level
+  fullName: WebApplication.Framework.NotificationData.Level
   type: Property
   source:
-    id: Host
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 28
+    id: Level
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\NotificationData.cs
+    startLine: 9
   assemblies:
   - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
+  namespace: WebApplication.Framework
   syntax:
-    content: public static string Host { get; set; }
+    content: public AlertLevel Level { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Shared Property Host As String
-  overload: WebApplication.AppConfig.SmtpServer.Host*
+      type: WebApplication.Framework.AlertLevel
+    content.vb: Public Property Level As AlertLevel
+  overload: WebApplication.Framework.NotificationData.Level*
   modifiers.csharp:
   - public
-  - static
   - get
   - set
   modifiers.vb:
   - Public
-  - Shared
-- uid: WebApplication.AppConfig.SmtpServer.Port
-  commentId: P:WebApplication.AppConfig.SmtpServer.Port
-  id: Port
-  parent: WebApplication.AppConfig.SmtpServer
+- uid: WebApplication.Framework.NotificationData.Dismissable
+  commentId: P:WebApplication.Framework.NotificationData.Dismissable
+  id: Dismissable
+  parent: WebApplication.Framework.NotificationData
   langs:
   - csharp
   - vb
-  name: Port
-  nameWithType: AppConfig.SmtpServer.Port
-  fullName: WebApplication.AppConfig.SmtpServer.Port
+  name: Dismissable
+  nameWithType: NotificationData.Dismissable
+  fullName: WebApplication.Framework.NotificationData.Dismissable
   type: Property
   source:
-    id: Port
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 33
+    id: Dismissable
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\NotificationData.cs
+    startLine: 10
   assemblies:
   - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
+  namespace: WebApplication.Framework
   syntax:
-    content: public static int Port { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: Public Shared Property Port As Integer
-  overload: WebApplication.AppConfig.SmtpServer.Port*
-  modifiers.csharp:
-  - public
-  - static
-  - get
-  - set
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: WebApplication.AppConfig.SmtpServer.DeliveryMethod
-  commentId: P:WebApplication.AppConfig.SmtpServer.DeliveryMethod
-  id: DeliveryMethod
-  parent: WebApplication.AppConfig.SmtpServer
-  langs:
-  - csharp
-  - vb
-  name: DeliveryMethod
-  nameWithType: AppConfig.SmtpServer.DeliveryMethod
-  fullName: WebApplication.AppConfig.SmtpServer.DeliveryMethod
-  type: Property
-  source:
-    id: DeliveryMethod
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 38
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
-  syntax:
-    content: public static SmtpDeliveryMethod DeliveryMethod { get; set; }
-    parameters: []
-    return:
-      type: System.Net.Mail.SmtpDeliveryMethod
-    content.vb: Public Shared Property DeliveryMethod As SmtpDeliveryMethod
-  overload: WebApplication.AppConfig.SmtpServer.DeliveryMethod*
-  modifiers.csharp:
-  - public
-  - static
-  - get
-  - set
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
-  commentId: P:WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
-  id: UseDefaultCredentials
-  parent: WebApplication.AppConfig.SmtpServer
-  langs:
-  - csharp
-  - vb
-  name: UseDefaultCredentials
-  nameWithType: AppConfig.SmtpServer.UseDefaultCredentials
-  fullName: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
-  type: Property
-  source:
-    id: UseDefaultCredentials
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 43
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
-  syntax:
-    content: public static bool UseDefaultCredentials { get; set; }
+    content: public bool Dismissable { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Shared Property UseDefaultCredentials As Boolean
-  overload: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials*
+    content.vb: Public Property Dismissable As Boolean
+  overload: WebApplication.Framework.NotificationData.Dismissable*
   modifiers.csharp:
   - public
-  - static
   - get
   - set
   modifiers.vb:
   - Public
-  - Shared
-- uid: WebApplication.AppConfig.SmtpServer.EnableSsl
-  commentId: P:WebApplication.AppConfig.SmtpServer.EnableSsl
-  id: EnableSsl
-  parent: WebApplication.AppConfig.SmtpServer
-  langs:
-  - csharp
-  - vb
-  name: EnableSsl
-  nameWithType: AppConfig.SmtpServer.EnableSsl
-  fullName: WebApplication.AppConfig.SmtpServer.EnableSsl
-  type: Property
-  source:
-    id: EnableSsl
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\AppConfig.cs
-    startLine: 48
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\n\n"
-  example: []
-  syntax:
-    content: public static bool EnableSsl { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Property EnableSsl As Boolean
-  overload: WebApplication.AppConfig.SmtpServer.EnableSsl*
-  modifiers.csharp:
-  - public
-  - static
-  - get
-  - set
-  modifiers.vb:
-  - Public
-  - Shared
 references:
-- uid: WebApplication
-  commentId: N:WebApplication
-  name: WebApplication
-  nameWithType: WebApplication
-  fullName: WebApplication
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -589,11 +464,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: WebApplication.AppConfig.SmtpServer.Account*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.Account
-  name: Account
-  nameWithType: AppConfig.SmtpServer.Account
-  fullName: WebApplication.AppConfig.SmtpServer.Account
+- uid: WebApplication.Framework.NotificationData.Title*
+  commentId: Overload:WebApplication.Framework.NotificationData.Title
+  name: Title
+  nameWithType: NotificationData.Title
+  fullName: WebApplication.Framework.NotificationData.Title
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -601,51 +476,27 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: WebApplication.AppConfig.SmtpServer.Password*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.Password
-  name: Password
-  nameWithType: AppConfig.SmtpServer.Password
-  fullName: WebApplication.AppConfig.SmtpServer.Password
-- uid: WebApplication.AppConfig.SmtpServer.Host*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.Host
-  name: Host
-  nameWithType: AppConfig.SmtpServer.Host
-  fullName: WebApplication.AppConfig.SmtpServer.Host
-- uid: WebApplication.AppConfig.SmtpServer.Port*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.Port
-  name: Port
-  nameWithType: AppConfig.SmtpServer.Port
-  fullName: WebApplication.AppConfig.SmtpServer.Port
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
-- uid: WebApplication.AppConfig.SmtpServer.DeliveryMethod*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.DeliveryMethod
-  name: DeliveryMethod
-  nameWithType: AppConfig.SmtpServer.DeliveryMethod
-  fullName: WebApplication.AppConfig.SmtpServer.DeliveryMethod
-- uid: System.Net.Mail.SmtpDeliveryMethod
-  commentId: T:System.Net.Mail.SmtpDeliveryMethod
-  parent: System.Net.Mail
-  isExternal: true
-  name: SmtpDeliveryMethod
-  nameWithType: SmtpDeliveryMethod
-  fullName: System.Net.Mail.SmtpDeliveryMethod
-- uid: System.Net.Mail
-  commentId: N:System.Net.Mail
-  isExternal: true
-  name: System.Net.Mail
-  nameWithType: System.Net.Mail
-  fullName: System.Net.Mail
-- uid: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
-  name: UseDefaultCredentials
-  nameWithType: AppConfig.SmtpServer.UseDefaultCredentials
-  fullName: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+- uid: WebApplication.Framework.NotificationData.Body*
+  commentId: Overload:WebApplication.Framework.NotificationData.Body
+  name: Body
+  nameWithType: NotificationData.Body
+  fullName: WebApplication.Framework.NotificationData.Body
+- uid: WebApplication.Framework.NotificationData.Level*
+  commentId: Overload:WebApplication.Framework.NotificationData.Level
+  name: Level
+  nameWithType: NotificationData.Level
+  fullName: WebApplication.Framework.NotificationData.Level
+- uid: WebApplication.Framework.AlertLevel
+  commentId: T:WebApplication.Framework.AlertLevel
+  parent: WebApplication.Framework
+  name: AlertLevel
+  nameWithType: AlertLevel
+  fullName: WebApplication.Framework.AlertLevel
+- uid: WebApplication.Framework.NotificationData.Dismissable*
+  commentId: Overload:WebApplication.Framework.NotificationData.Dismissable
+  name: Dismissable
+  nameWithType: NotificationData.Dismissable
+  fullName: WebApplication.Framework.NotificationData.Dismissable
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -653,8 +504,3 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: WebApplication.AppConfig.SmtpServer.EnableSsl*
-  commentId: Overload:WebApplication.AppConfig.SmtpServer.EnableSsl
-  name: EnableSsl
-  nameWithType: AppConfig.SmtpServer.EnableSsl
-  fullName: WebApplication.AppConfig.SmtpServer.EnableSsl

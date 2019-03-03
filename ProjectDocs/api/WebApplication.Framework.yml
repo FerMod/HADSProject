@@ -4,7 +4,10 @@ items:
   commentId: N:WebApplication.Framework
   id: WebApplication.Framework
   children:
+  - WebApplication.Framework.AlertLevel
+  - WebApplication.Framework.NotificationData
   - WebApplication.Framework.ParametizedUrl
+  - WebApplication.Framework.UserCredentials
   langs:
   - csharp
   - vb
@@ -15,8 +18,31 @@ items:
   assemblies:
   - WebApplication
 references:
+- uid: WebApplication.Framework.AlertLevel
+  commentId: T:WebApplication.Framework.AlertLevel
+  parent: WebApplication.Framework
+  name: AlertLevel
+  nameWithType: AlertLevel
+  fullName: WebApplication.Framework.AlertLevel
+- uid: WebApplication.Framework.NotificationData
+  commentId: T:WebApplication.Framework.NotificationData
+  parent: WebApplication.Framework
+  name: NotificationData
+  nameWithType: NotificationData
+  fullName: WebApplication.Framework.NotificationData
 - uid: WebApplication.Framework.ParametizedUrl
   commentId: T:WebApplication.Framework.ParametizedUrl
+  parent: WebApplication.Framework
   name: ParametizedUrl
   nameWithType: ParametizedUrl
   fullName: WebApplication.Framework.ParametizedUrl
+- uid: WebApplication.Framework.UserCredentials
+  commentId: T:WebApplication.Framework.UserCredentials
+  name: UserCredentials
+  nameWithType: UserCredentials
+  fullName: WebApplication.Framework.UserCredentials
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework

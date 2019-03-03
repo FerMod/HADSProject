@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: DictionaryExtension
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\DictionaryExtension.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\Extensions\DictionaryExtension.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -54,7 +54,7 @@ items:
   type: Method
   source:
     id: Add
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\DictionaryExtension.cs
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Framework\Extensions\DictionaryExtension.cs
     startLine: 30
   assemblies:
   - WebApplication
