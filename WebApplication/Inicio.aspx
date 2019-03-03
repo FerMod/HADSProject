@@ -1,12 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApplication.Inicio" Title="Inicio" MasterPageFile="~/Account.master" %>
 
-<asp:Content ID="CardBodyContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
+<asp:Content ID="LogInContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
 
     <div id="login" class="auth-form-body">
 
         <div class="form-group">
             <asp:Label Font-Bold="True" runat="server" AssociatedControlID="textBoxEmail">Email:</asp:Label>
-            <asp:TextBox ID="textBoxEmail" CssClass="form-control" placeholder="Enter email" runat="server" autocomplete="off" TabIndex="1"></asp:TextBox>
+            <asp:TextBox ID="textBoxEmail" CssClass="form-control" placeholder="Enter email" runat="server" autocomplete="on" TabIndex="1"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldEmail" CssClass="invalid-feedback" runat="server" ControlToValidate="textBoxEmail" ErrorMessage="Required field" Font-Bold="True" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
         </div>
 

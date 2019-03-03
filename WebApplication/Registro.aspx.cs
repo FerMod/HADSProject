@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Net.Mime;
@@ -22,9 +23,13 @@ namespace WebApplication {
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
 
-		private DataAccessService DataAccess => ((Account)Master).DataAccess;
+		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
 
 		protected void Page_Load(object sender, EventArgs e) {
+			 
+			if((bool)Session["IsLogged"]) {
+				Response.Redirect("/Default");
+			}
 
 			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
 				Account = AppConfig.SmtpServer.Account,
@@ -54,6 +59,7 @@ namespace WebApplication {
 			string displayName = "HADS";
 			string subject = "Confirm Account";
 
+			/*
 			string text = $"Hi {textBoxName.Text} {textBoxLastName.Text}!\n\n";
 			text += $"Please click on this link to '{subject}': {parametizedUrl}\n\n";
 			text += "Thanks,\n";
@@ -64,13 +70,38 @@ namespace WebApplication {
 			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br /><br />";
 			html += "Thanks,<br />";
 			html += "HADS Team.";
+			*/
+			string emailTemplate = File.ReadAllText(HttpContext.Current.Server.MapPath("~/MailTemplates/AccountVerification.html"));
+
+			/*
+			Email Fields:
+			0 LogoImgUrl
+			1 Name
+			2 LastName
+			3 VerificationUrl
+			4 HelpWebsiteUrl
+			5 WebsiteUrl
+			6 FooterLogoImgUrl
+			*/
+
+			string[] emailFields = {
+				"",
+				textBoxName.Text,
+				textBoxLastName.Text,
+				parametizedUrl,
+				"",
+				UrlUtils.UrlRoot,
+				""
+			};
+
+			string emailHtml = String.Format(emailTemplate, emailFields);
 
 			MailMessage mail = new MailMessage();
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
 			mail.To.Add(new MailAddress(textBoxEmail.Text));
 			mail.Subject = subject;
-			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+			//mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(emailHtml, null, MediaTypeNames.Text.Html));
 			mail.IsBodyHtml = true;
 
 			try {
@@ -88,8 +119,16 @@ namespace WebApplication {
 
 				int affectedRows = DataAccess.Insert(sql, parameters);
 
-				if(affectedRows != 1) {
+				if(affectedRows == 1) {
 					this.EmailService.SendEmail(mail);
+					Session["NotificationData"] = new NotificationData() {
+						Title = "Confirm Email",
+						Body = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>.",
+						Level = AlertLevel.Info
+					};
+					// FIXME: TEMOPORAL LINE. REMOVE
+					(Session["NotificationData"] as NotificationData).Body += $"<br><br><strong><small><a href=\"{parametizedUrl}\">Ir a Pagina de Confirmacion de forma Directa</a></small></strong>";
+					Response.Redirect("/WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
 				}

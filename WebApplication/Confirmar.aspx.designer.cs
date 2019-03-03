@@ -10,6 +10,6 @@
 namespace WebApplication {
     
     
-    public partial class Confirmar {
+    public partial class EmailSent {
     }
 }

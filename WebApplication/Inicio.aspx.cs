@@ -7,14 +7,19 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
+using WebApplication.Framework;
 
 namespace WebApplication {
 
 	public partial class Inicio : Page {
 
-		private DataAccessService DataAccess => ((Account)Master).DataAccess;
+		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
 
 		protected void Page_Load(object sender, EventArgs e) {
+
+			if((bool)Session["IsLogged"]) {
+				Response.Redirect("/Default");
+			}
 
 		}
 
@@ -31,6 +36,13 @@ namespace WebApplication {
 				List<IDataRecord> result = DataAccess.Query(sql, parameters);
 
 				if(result.Count == 1) {
+
+					//IDataRecord dataRecord = result[0];
+					Session["IsLogged"] = true;
+					//Session["Email"] = dataRecord.GetValue(dataRecord.GetOrdinal("email"));
+					//Session["Name"] = dataRecord.GetValue(dataRecord.GetOrdinal("nombre"));
+					//Session["LastName"] = dataRecord.GetValue(dataRecord.GetOrdinal("apellidos"));
+
 					Response.Redirect("/Default");
 				} else {
 					Debug.WriteLine("Wrong credentials");

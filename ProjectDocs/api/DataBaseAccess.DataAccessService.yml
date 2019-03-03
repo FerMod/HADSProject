@@ -7,10 +7,10 @@ items:
   children:
   - DataBaseAccess.DataAccessService.#ctor(System.String)
   - DataBaseAccess.DataAccessService.ConnectionString
-  - DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  - DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  - DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  - DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  - DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  - DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  - DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   langs:
   - csharp
   - vb
@@ -108,52 +108,54 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  commentId: M:DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  id: Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+- uid: DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   parent: DataBaseAccess.DataAccessService
   langs:
   - csharp
   - vb
-  name: Insert(String, Dictionary<String, Object>)
-  nameWithType: DataAccessService.Insert(String, Dictionary<String, Object>)
-  fullName: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  name: Insert(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.Insert(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
     id: Insert
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public int Insert(string query, Dictionary<string, object> parameters = null)
+    content: public int Insert(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: commandType
+      type: System.Data.CommandType
     return:
       type: System.Int32
-    content.vb: Public Function Insert(query As String, parameters As Dictionary(Of String, Object) = Nothing) As Integer
+    content.vb: Public Function Insert(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As Integer
   overload: DataBaseAccess.DataAccessService.Insert*
-  nameWithType.vb: DataAccessService.Insert(String, Dictionary(Of String, Object))
+  nameWithType.vb: DataAccessService.Insert(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
-  name.vb: Insert(String, Dictionary(Of String, Object))
-- uid: DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  commentId: M:DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  id: Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  fullName.vb: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: Insert(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   parent: DataBaseAccess.DataAccessService
   langs:
   - csharp
   - vb
-  name: Query(String, Dictionary<String, Object>)
-  nameWithType: DataAccessService.Query(String, Dictionary<String, Object>)
-  fullName: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  name: Query(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.Query(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
     id: Query
@@ -163,97 +165,103 @@ items:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null)
+    content: public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: commandType
+      type: System.Data.CommandType
     return:
       type: System.Collections.Generic.List{System.Data.IDataRecord}
-    content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing) As List(Of IDataRecord)
+    content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As List(Of IDataRecord)
   overload: DataBaseAccess.DataAccessService.Query*
-  nameWithType.vb: DataAccessService.Query(String, Dictionary(Of String, Object))
+  nameWithType.vb: DataAccessService.Query(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
-  name.vb: Query(String, Dictionary(Of String, Object))
-- uid: DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  commentId: M:DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  id: Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  fullName.vb: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: Query(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   parent: DataBaseAccess.DataAccessService
   langs:
   - csharp
   - vb
-  name: Update(String, Dictionary<String, Object>)
-  nameWithType: DataAccessService.Update(String, Dictionary<String, Object>)
-  fullName: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  name: Update(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.Update(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
     id: Update
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public int Update(string query, Dictionary<string, object> parameters = null)
+    content: public int Update(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: commandType
+      type: System.Data.CommandType
     return:
       type: System.Int32
-    content.vb: Public Function Update(query As String, parameters As Dictionary(Of String, Object) = Nothing) As Integer
+    content.vb: Public Function Update(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As Integer
   overload: DataBaseAccess.DataAccessService.Update*
-  nameWithType.vb: DataAccessService.Update(String, Dictionary(Of String, Object))
+  nameWithType.vb: DataAccessService.Update(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
-  name.vb: Update(String, Dictionary(Of String, Object))
-- uid: DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  commentId: M:DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  id: Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  fullName.vb: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: Update(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   parent: DataBaseAccess.DataAccessService
   langs:
   - csharp
   - vb
-  name: Scalar<T>(String, Dictionary<String, Object>)
-  nameWithType: DataAccessService.Scalar<T>(String, Dictionary<String, Object>)
-  fullName: DataBaseAccess.DataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  name: Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
     id: Scalar
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public T Scalar<T>(string query, Dictionary<string, object> parameters = null)
+    content: public T Scalar<T>(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: commandType
+      type: System.Data.CommandType
     typeParameters:
     - id: T
     return:
       type: '{T}'
-    content.vb: Public Function Scalar(Of T)(query As String, parameters As Dictionary(Of String, Object) = Nothing) As T
+    content.vb: Public Function Scalar(Of T)(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As T
   overload: DataBaseAccess.DataAccessService.Scalar*
-  nameWithType.vb: DataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object))
+  nameWithType.vb: DataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DataBaseAccess.DataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
-  name.vb: Scalar(Of T)(String, Dictionary(Of String, Object))
+  fullName.vb: DataBaseAccess.DataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
 references:
 - uid: DataBaseAccess
   commentId: N:DataBaseAccess
@@ -640,6 +648,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Data.CommandType
+  commentId: T:System.Data.CommandType
+  parent: System.Data
+  isExternal: true
+  name: CommandType
+  nameWithType: CommandType
+  fullName: System.Data.CommandType
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -704,6 +719,12 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
 - uid: DataBaseAccess.DataAccessService.Query*
   commentId: Overload:DataBaseAccess.DataAccessService.Query
   name: Query

@@ -18,13 +18,13 @@ namespace DataBaseAccess {
 			this.ConnectionString = connectionString;
 		}
 
-		// https://stackoverflow.com/a/1464929/4134376
-		public int Insert(string query, Dictionary<string, object> parameters = null) {
+		public int Insert(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
 
 				using(SqlCommand command = new SqlCommand(query, connection)) {
+					command.CommandType = commandType;
 					if(parameters != null) {
 						foreach(var item in parameters) {
 							command.Parameters.AddWithValue(item.Key, item.Value);
@@ -37,12 +37,13 @@ namespace DataBaseAccess {
 
 		}
 
-		public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null) {
+		public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
 
 				using(SqlCommand command = new SqlCommand(query, connection)) {
+					command.CommandType = commandType;
 					if(parameters != null) {
 						foreach(var item in parameters) {
 							command.Parameters.AddWithValue(item.Key, item.Value);
@@ -56,12 +57,13 @@ namespace DataBaseAccess {
 
 		}
 
-		public int Update(string query, Dictionary<string, object> parameters = null) {
+		public int Update(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
 
 				using(SqlCommand command = new SqlCommand(query, connection)) {
+					command.CommandType = commandType;
 					if(parameters != null) {
 						foreach(var item in parameters) {
 							command.Parameters.AddWithValue(item.Key, item.Value);
@@ -74,12 +76,13 @@ namespace DataBaseAccess {
 
 		}
 
-		public T Scalar<T>(string query, Dictionary<string, object> parameters = null) {
+		public T Scalar<T>(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
 
 				using(SqlCommand command = new SqlCommand(query, connection)) {
+					command.CommandType = commandType;
 					if(parameters != null) {
 						foreach(var item in parameters) {
 							command.Parameters.AddWithValue(item.Key, item.Value);

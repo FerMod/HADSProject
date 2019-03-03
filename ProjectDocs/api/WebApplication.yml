@@ -13,13 +13,16 @@ items:
   - WebApplication.CambiarPassword
   - WebApplication.Confirmar
   - WebApplication.Contact
+  - WebApplication.EmailSent
   - WebApplication.Global
   - WebApplication.Inicio
   - WebApplication.Registro
   - WebApplication.RouteConfig
+  - WebApplication.ScriptResource
   - WebApplication.Site_Mobile
   - WebApplication.SiteMaster
   - WebApplication.ViewSwitcher
+  - WebApplication.WebNotification
   langs:
   - csharp
   - vb
@@ -55,6 +58,11 @@ references:
   name: About
   nameWithType: About
   fullName: WebApplication.About
+- uid: WebApplication.ScriptResource
+  commentId: T:WebApplication.ScriptResource
+  name: ScriptResource
+  nameWithType: ScriptResource
+  fullName: WebApplication.ScriptResource
 - uid: WebApplication.RouteConfig
   commentId: T:WebApplication.RouteConfig
   name: RouteConfig
@@ -70,6 +78,11 @@ references:
   name: Confirmar
   nameWithType: Confirmar
   fullName: WebApplication.Confirmar
+- uid: WebApplication.EmailSent
+  commentId: T:WebApplication.EmailSent
+  name: EmailSent
+  nameWithType: EmailSent
+  fullName: WebApplication.EmailSent
 - uid: WebApplication.Contact
   commentId: T:WebApplication.Contact
   name: Contact
@@ -110,3 +123,8 @@ references:
   name: ViewSwitcher
   nameWithType: ViewSwitcher
   fullName: WebApplication.ViewSwitcher
+- uid: WebApplication.WebNotification
+  commentId: T:WebApplication.WebNotification
+  name: WebNotification
+  nameWithType: WebNotification
+  fullName: WebApplication.WebNotification

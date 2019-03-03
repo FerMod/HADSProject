@@ -46,6 +46,10 @@ namespace WebApplication.Framework {
 			return sb.ToString();
 		}
 
+		public static implicit operator string(ParametizedUrl parametizedUrl) {
+			return parametizedUrl.ToString();
+		}
+
 	}
 
 }

@@ -175,12 +175,12 @@
   
   
   <a id="DataBaseAccess_DataAccessService_Insert_" data-uid="DataBaseAccess.DataAccessService.Insert*"></a>
-  <h4 id="DataBaseAccess_DataAccessService_Insert_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">Insert(String, Dictionary&lt;String, Object&gt;)</h4>
+  <h4 id="DataBaseAccess_DataAccessService_Insert_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">Insert(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Insert(string query, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public int Insert(string query, Dictionary&lt;string, object&gt; parameters = null, CommandType commandType = CommandType.Text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,6 +200,11 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -222,12 +227,12 @@
   
   
   <a id="DataBaseAccess_DataAccessService_Query_" data-uid="DataBaseAccess.DataAccessService.Query*"></a>
-  <h4 id="DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">Query(String, Dictionary&lt;String, Object&gt;)</h4>
+  <h4 id="DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">Query(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;IDataRecord&gt; Query(string query, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;IDataRecord&gt; Query(string query, Dictionary&lt;string, object&gt; parameters = null, CommandType commandType = CommandType.Text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -247,6 +252,11 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -269,12 +279,12 @@
   
   
   <a id="DataBaseAccess_DataAccessService_Scalar_" data-uid="DataBaseAccess.DataAccessService.Scalar*"></a>
-  <h4 id="DataBaseAccess_DataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">Scalar&lt;T&gt;(String, Dictionary&lt;String, Object&gt;)</h4>
+  <h4 id="DataBaseAccess_DataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">Scalar&lt;T&gt;(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Scalar&lt;T&gt;(string query, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public T Scalar&lt;T&gt;(string query, Dictionary&lt;string, object&gt; parameters = null, CommandType commandType = CommandType.Text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -294,6 +304,11 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -331,12 +346,12 @@
   
   
   <a id="DataBaseAccess_DataAccessService_Update_" data-uid="DataBaseAccess.DataAccessService.Update*"></a>
-  <h4 id="DataBaseAccess_DataAccessService_Update_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">Update(String, Dictionary&lt;String, Object&gt;)</h4>
+  <h4 id="DataBaseAccess_DataAccessService_Update_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">Update(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Update(string query, Dictionary&lt;string, object&gt; parameters = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public int Update(string query, Dictionary&lt;string, object&gt; parameters = null, CommandType commandType = CommandType.Text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -356,6 +371,11 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
         <td></td>
       </tr>
     </tbody>

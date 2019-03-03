@@ -5,10 +5,20 @@ items:
   id: SiteMaster
   parent: WebApplication
   children:
+  - WebApplication.SiteMaster.ButtonProfile_Click(System.Object,System.EventArgs)
+  - WebApplication.SiteMaster.ButtonSignOut
+  - WebApplication.SiteMaster.ButtonSignOut_Click(System.Object,System.EventArgs)
+  - WebApplication.SiteMaster.ButtonViewProfile
   - WebApplication.SiteMaster.createAccountLink
+  - WebApplication.SiteMaster.LabelLastName
+  - WebApplication.SiteMaster.LabelMail
+  - WebApplication.SiteMaster.LabelName
+  - WebApplication.SiteMaster.loggedUserMenu
   - WebApplication.SiteMaster.loginLink
   - WebApplication.SiteMaster.MainContent
+  - WebApplication.SiteMaster.NotificationContent
   - WebApplication.SiteMaster.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.SiteMaster.userMenu
   langs:
   - csharp
   - vb
@@ -232,7 +242,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -245,6 +255,98 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
   overload: WebApplication.SiteMaster.Page_Load*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.ButtonProfile_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.SiteMaster.ButtonProfile_Click(System.Object,System.EventArgs)
+  id: ButtonProfile_Click(System.Object,System.EventArgs)
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: ButtonProfile_Click(Object, EventArgs)
+  nameWithType: SiteMaster.ButtonProfile_Click(Object, EventArgs)
+  fullName: WebApplication.SiteMaster.ButtonProfile_Click(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: ButtonProfile_Click
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
+    startLine: 32
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void ButtonProfile_Click(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub ButtonProfile_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.SiteMaster.ButtonProfile_Click*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.ButtonSignOut_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.SiteMaster.ButtonSignOut_Click(System.Object,System.EventArgs)
+  id: ButtonSignOut_Click(System.Object,System.EventArgs)
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: ButtonSignOut_Click(Object, EventArgs)
+  nameWithType: SiteMaster.ButtonSignOut_Click(Object, EventArgs)
+  fullName: WebApplication.SiteMaster.ButtonSignOut_Click(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: ButtonSignOut_Click
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
+    startLine: 36
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void ButtonSignOut_Click(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub ButtonSignOut_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.SiteMaster.ButtonSignOut_Click*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.userMenu
+  commentId: F:WebApplication.SiteMaster.userMenu
+  id: userMenu
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: userMenu
+  nameWithType: SiteMaster.userMenu
+  fullName: WebApplication.SiteMaster.userMenu
+  type: Field
+  source:
+    id: userMenu
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nuserMenu control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Panel userMenu
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected userMenu As Panel
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -263,7 +365,7 @@ items:
   source:
     id: createAccountLink
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
-    startLine: 21
+    startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -293,7 +395,7 @@ items:
   source:
     id: loginLink
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
-    startLine: 30
+    startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -305,6 +407,186 @@ items:
     return:
       type: System.Web.UI.HtmlControls.HtmlAnchor
     content.vb: Protected loginLink As HtmlAnchor
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.loggedUserMenu
+  commentId: F:WebApplication.SiteMaster.loggedUserMenu
+  id: loggedUserMenu
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: loggedUserMenu
+  nameWithType: SiteMaster.loggedUserMenu
+  fullName: WebApplication.SiteMaster.loggedUserMenu
+  type: Field
+  source:
+    id: loggedUserMenu
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nloggedUserMenu control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Panel loggedUserMenu
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected loggedUserMenu As Panel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.LabelName
+  commentId: F:WebApplication.SiteMaster.LabelName
+  id: LabelName
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: LabelName
+  nameWithType: SiteMaster.LabelName
+  fullName: WebApplication.SiteMaster.LabelName
+  type: Field
+  source:
+    id: LabelName
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nLabelName control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Label LabelName
+    return:
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected LabelName As Label
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.LabelLastName
+  commentId: F:WebApplication.SiteMaster.LabelLastName
+  id: LabelLastName
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: LabelLastName
+  nameWithType: SiteMaster.LabelLastName
+  fullName: WebApplication.SiteMaster.LabelLastName
+  type: Field
+  source:
+    id: LabelLastName
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 66
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nLabelLastName control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Label LabelLastName
+    return:
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected LabelLastName As Label
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.LabelMail
+  commentId: F:WebApplication.SiteMaster.LabelMail
+  id: LabelMail
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: LabelMail
+  nameWithType: SiteMaster.LabelMail
+  fullName: WebApplication.SiteMaster.LabelMail
+  type: Field
+  source:
+    id: LabelMail
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 75
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nLabelMail control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Label LabelMail
+    return:
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected LabelMail As Label
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.ButtonViewProfile
+  commentId: F:WebApplication.SiteMaster.ButtonViewProfile
+  id: ButtonViewProfile
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: ButtonViewProfile
+  nameWithType: SiteMaster.ButtonViewProfile
+  fullName: WebApplication.SiteMaster.ButtonViewProfile
+  type: Field
+  source:
+    id: ButtonViewProfile
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 84
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nButtonViewProfile control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button ButtonViewProfile
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected ButtonViewProfile As Button
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.ButtonSignOut
+  commentId: F:WebApplication.SiteMaster.ButtonSignOut
+  id: ButtonSignOut
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: ButtonSignOut
+  nameWithType: SiteMaster.ButtonSignOut
+  fullName: WebApplication.SiteMaster.ButtonSignOut
+  type: Field
+  source:
+    id: ButtonSignOut
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 93
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nButtonSignOut control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button ButtonSignOut
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected ButtonSignOut As Button
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -323,7 +605,7 @@ items:
   source:
     id: MainContent
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
-    startLine: 39
+    startLine: 102
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -335,6 +617,36 @@ items:
     return:
       type: System.Web.UI.WebControls.ContentPlaceHolder
     content.vb: Protected MainContent As ContentPlaceHolder
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.NotificationContent
+  commentId: F:WebApplication.SiteMaster.NotificationContent
+  id: NotificationContent
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: NotificationContent
+  nameWithType: SiteMaster.NotificationContent
+  fullName: WebApplication.SiteMaster.NotificationContent
+  type: Field
+  source:
+    id: NotificationContent
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
+    startLine: 111
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nNotificationContent control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ContentPlaceHolder NotificationContent
+    return:
+      type: System.Web.UI.WebControls.ContentPlaceHolder
+    content.vb: Protected NotificationContent As ContentPlaceHolder
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -5434,6 +5746,29 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: WebApplication.SiteMaster.ButtonProfile_Click*
+  commentId: Overload:WebApplication.SiteMaster.ButtonProfile_Click
+  name: ButtonProfile_Click
+  nameWithType: SiteMaster.ButtonProfile_Click
+  fullName: WebApplication.SiteMaster.ButtonProfile_Click
+- uid: WebApplication.SiteMaster.ButtonSignOut_Click*
+  commentId: Overload:WebApplication.SiteMaster.ButtonSignOut_Click
+  name: ButtonSignOut_Click
+  nameWithType: SiteMaster.ButtonSignOut_Click
+  fullName: WebApplication.SiteMaster.ButtonSignOut_Click
+- uid: System.Web.UI.WebControls.Panel
+  commentId: T:System.Web.UI.WebControls.Panel
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Panel
+  nameWithType: Panel
+  fullName: System.Web.UI.WebControls.Panel
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
 - uid: System.Web.UI.HtmlControls.HtmlAnchor
   commentId: T:System.Web.UI.HtmlControls.HtmlAnchor
   parent: System.Web.UI.HtmlControls
@@ -5447,6 +5782,20 @@ references:
   name: System.Web.UI.HtmlControls
   nameWithType: System.Web.UI.HtmlControls
   fullName: System.Web.UI.HtmlControls
+- uid: System.Web.UI.WebControls.Label
+  commentId: T:System.Web.UI.WebControls.Label
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: System.Web.UI.WebControls.Label
+- uid: System.Web.UI.WebControls.Button
+  commentId: T:System.Web.UI.WebControls.Button
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: System.Web.UI.WebControls.Button
 - uid: System.Web.UI.WebControls.ContentPlaceHolder
   commentId: T:System.Web.UI.WebControls.ContentPlaceHolder
   parent: System.Web.UI.WebControls
@@ -5454,9 +5803,3 @@ references:
   name: ContentPlaceHolder
   nameWithType: ContentPlaceHolder
   fullName: System.Web.UI.WebControls.ContentPlaceHolder
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls

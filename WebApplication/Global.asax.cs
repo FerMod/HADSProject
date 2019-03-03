@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Diagnostics;
@@ -14,27 +15,67 @@ using System.Web.SessionState;
 using System.Web.UI;
 using DataBaseAccess;
 using EmailLib;
+using WebApplication.Framework;
 using WebApplication.Utils;
 
 namespace WebApplication {
 
 	public class Global : HttpApplication {
 
-		void Application_Start(object sender, EventArgs e) {
+		// Global.asax handlers and events: http://sandblogaspnet.blogspot.com/2008/03/methods-in-globalasax.html
 
-			// Code that runs on application startup
+		#region ASP.NET Handlers
+
+		protected void Application_Start(object sender, EventArgs e) {
+
+			ScriptResource.RegisterJQuery(WebConfigurationManager.AppSettings["jquery"]);
+			ScriptResource.RegisterBoostrap(WebConfigurationManager.AppSettings["boostrap"]);
+
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 			SetupDataAccess();
 
+#if DEBUG
+			DataAccessService dataService;
+			Application.Lock();
+			dataService = Application["DataAccess"] as DataAccessService;
+			Application.UnLock();
+			dataService.Query("DELETE FROM dbo.Usuarios");
+#endif
 		}
 
-		void SetupDataAccess() {
+		protected void Application_BeginRequest(object sender, EventArgs e) { }
+
+		protected void Application_AuthenticateRequest(object sender, EventArgs e) { }
+
+		protected void Session_Start(object sender, EventArgs e) {
+
+			Lazy<DataAccessService> dataAccessService = new Lazy<DataAccessService>(() => (DataAccessService)Application.Get("DataAccess"));
+			Session["DataAccess"] = dataAccessService.Value;
+			Session["IsLogged"] = false;
+			Session["Email"] = "";
+			Session["Name"] = "";
+			Session["LastName"] = "";
+
+		}
+
+		protected void Application_EndRequest(object sender, EventArgs e) { }
+
+		protected void Session_End(object sender, EventArgs e) {
+		}
+
+		protected void Application_End(object sender, EventArgs e) { }
+
+		protected void Application_Error(object sender, EventArgs e) { }
+
+		#endregion
+
+		protected void SetupDataAccess() {
 
 			DataAccessService dataAccess = new DataAccessService(ConfigurationManager.ConnectionStrings["HADS18-DB"].ConnectionString);
 			Application.Lock();
-			Application.Contents.Set("DataAccess", dataAccess);
+			Application.Set("DataAccess", dataAccess);
 			Application.UnLock();
 
 		}

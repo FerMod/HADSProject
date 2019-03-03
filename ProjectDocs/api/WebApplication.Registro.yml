@@ -316,7 +316,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Registro.aspx.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -347,7 +347,7 @@ items:
   source:
     id: ButtonCreateAccount_Click
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Registro.aspx.cs
-    startLine: 43
+    startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication

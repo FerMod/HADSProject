@@ -4,7 +4,16 @@ items:
   commentId: T:WebApplication.Global
   id: Global
   parent: WebApplication
-  children: []
+  children:
+  - WebApplication.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)
+  - WebApplication.Global.Application_BeginRequest(System.Object,System.EventArgs)
+  - WebApplication.Global.Application_End(System.Object,System.EventArgs)
+  - WebApplication.Global.Application_EndRequest(System.Object,System.EventArgs)
+  - WebApplication.Global.Application_Error(System.Object,System.EventArgs)
+  - WebApplication.Global.Application_Start(System.Object,System.EventArgs)
+  - WebApplication.Global.Session_End(System.Object,System.EventArgs)
+  - WebApplication.Global.Session_Start(System.Object,System.EventArgs)
+  - WebApplication.Global.SetupDataAccess
   langs:
   - csharp
   - vb
@@ -15,7 +24,7 @@ items:
   source:
     id: Global
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -133,6 +142,280 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: WebApplication.Global.Application_Start(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Application_Start(System.Object,System.EventArgs)
+  id: Application_Start(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Application_Start(Object, EventArgs)
+  nameWithType: Global.Application_Start(Object, EventArgs)
+  fullName: WebApplication.Global.Application_Start(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Application_Start
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 28
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Application_Start(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Application_Start(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Application_Start*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Application_BeginRequest(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Application_BeginRequest(System.Object,System.EventArgs)
+  id: Application_BeginRequest(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Application_BeginRequest(Object, EventArgs)
+  nameWithType: Global.Application_BeginRequest(Object, EventArgs)
+  fullName: WebApplication.Global.Application_BeginRequest(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Application_BeginRequest
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 47
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Application_BeginRequest(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Application_BeginRequest(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Application_BeginRequest*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)
+  id: Application_AuthenticateRequest(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Application_AuthenticateRequest(Object, EventArgs)
+  nameWithType: Global.Application_AuthenticateRequest(Object, EventArgs)
+  fullName: WebApplication.Global.Application_AuthenticateRequest(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Application_AuthenticateRequest
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 49
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Application_AuthenticateRequest(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Application_AuthenticateRequest(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Application_AuthenticateRequest*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Session_Start(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Session_Start(System.Object,System.EventArgs)
+  id: Session_Start(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Session_Start(Object, EventArgs)
+  nameWithType: Global.Session_Start(Object, EventArgs)
+  fullName: WebApplication.Global.Session_Start(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Session_Start
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 51
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Session_Start(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Session_Start(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Session_Start*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Application_EndRequest(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Application_EndRequest(System.Object,System.EventArgs)
+  id: Application_EndRequest(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Application_EndRequest(Object, EventArgs)
+  nameWithType: Global.Application_EndRequest(Object, EventArgs)
+  fullName: WebApplication.Global.Application_EndRequest(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Application_EndRequest
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 58
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Application_EndRequest(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Application_EndRequest(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Application_EndRequest*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Session_End(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Session_End(System.Object,System.EventArgs)
+  id: Session_End(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Session_End(Object, EventArgs)
+  nameWithType: Global.Session_End(Object, EventArgs)
+  fullName: WebApplication.Global.Session_End(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Session_End
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 60
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Session_End(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Session_End(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Session_End*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Application_End(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Application_End(System.Object,System.EventArgs)
+  id: Application_End(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Application_End(Object, EventArgs)
+  nameWithType: Global.Application_End(Object, EventArgs)
+  fullName: WebApplication.Global.Application_End(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Application_End
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 63
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Application_End(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Application_End(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Application_End*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.Application_Error(System.Object,System.EventArgs)
+  commentId: M:WebApplication.Global.Application_Error(System.Object,System.EventArgs)
+  id: Application_Error(System.Object,System.EventArgs)
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: Application_Error(Object, EventArgs)
+  nameWithType: Global.Application_Error(Object, EventArgs)
+  fullName: WebApplication.Global.Application_Error(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Application_Error
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 65
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void Application_Error(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Application_Error(sender As Object, e As EventArgs)
+  overload: WebApplication.Global.Application_Error*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.Global.SetupDataAccess
+  commentId: M:WebApplication.Global.SetupDataAccess
+  id: SetupDataAccess
+  parent: WebApplication.Global
+  langs:
+  - csharp
+  - vb
+  name: SetupDataAccess()
+  nameWithType: Global.SetupDataAccess()
+  fullName: WebApplication.Global.SetupDataAccess()
+  type: Method
+  source:
+    id: SetupDataAccess
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Global.asax.cs
+    startLine: 69
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: protected void SetupDataAccess()
+    content.vb: Protected Sub SetupDataAccess
+  overload: WebApplication.Global.SetupDataAccess*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 references:
 - uid: WebApplication
   commentId: N:WebApplication
@@ -3807,3 +4090,55 @@ references:
   name: System.ComponentModel
   nameWithType: System.ComponentModel
   fullName: System.ComponentModel
+- uid: WebApplication.Global.Application_Start*
+  commentId: Overload:WebApplication.Global.Application_Start
+  name: Application_Start
+  nameWithType: Global.Application_Start
+  fullName: WebApplication.Global.Application_Start
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: WebApplication.Global.Application_BeginRequest*
+  commentId: Overload:WebApplication.Global.Application_BeginRequest
+  name: Application_BeginRequest
+  nameWithType: Global.Application_BeginRequest
+  fullName: WebApplication.Global.Application_BeginRequest
+- uid: WebApplication.Global.Application_AuthenticateRequest*
+  commentId: Overload:WebApplication.Global.Application_AuthenticateRequest
+  name: Application_AuthenticateRequest
+  nameWithType: Global.Application_AuthenticateRequest
+  fullName: WebApplication.Global.Application_AuthenticateRequest
+- uid: WebApplication.Global.Session_Start*
+  commentId: Overload:WebApplication.Global.Session_Start
+  name: Session_Start
+  nameWithType: Global.Session_Start
+  fullName: WebApplication.Global.Session_Start
+- uid: WebApplication.Global.Application_EndRequest*
+  commentId: Overload:WebApplication.Global.Application_EndRequest
+  name: Application_EndRequest
+  nameWithType: Global.Application_EndRequest
+  fullName: WebApplication.Global.Application_EndRequest
+- uid: WebApplication.Global.Session_End*
+  commentId: Overload:WebApplication.Global.Session_End
+  name: Session_End
+  nameWithType: Global.Session_End
+  fullName: WebApplication.Global.Session_End
+- uid: WebApplication.Global.Application_End*
+  commentId: Overload:WebApplication.Global.Application_End
+  name: Application_End
+  nameWithType: Global.Application_End
+  fullName: WebApplication.Global.Application_End
+- uid: WebApplication.Global.Application_Error*
+  commentId: Overload:WebApplication.Global.Application_Error
+  name: Application_Error
+  nameWithType: Global.Application_Error
+  fullName: WebApplication.Global.Application_Error
+- uid: WebApplication.Global.SetupDataAccess*
+  commentId: Overload:WebApplication.Global.SetupDataAccess
+  name: SetupDataAccess
+  nameWithType: Global.SetupDataAccess
+  fullName: WebApplication.Global.SetupDataAccess

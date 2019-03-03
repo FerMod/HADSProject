@@ -15,8 +15,8 @@ items:
   type: Class
   source:
     id: Confirmar
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.designer.cs
-    startLine: 12
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -301,7 +301,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
-    startLine: 14
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication

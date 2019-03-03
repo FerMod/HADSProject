@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace WebApplication.Utils {
@@ -13,7 +14,7 @@ namespace WebApplication.Utils {
 		public static string UrlRoot {
 			get {
 				Uri url = HttpContext.Current.Request.Url;
-				return string.Format("{0}{1}{2}", url.Scheme, Uri.SchemeDelimiter, url.Authority);
+				return $"{url.Scheme}{Uri.SchemeDelimiter}{url.Authority}";
 			}
 		}
 
@@ -59,6 +60,27 @@ namespace WebApplication.Utils {
 
 				return url;
 			}
+		}
+
+		/// <summary>
+		/// Redirect to page using POST method
+		/// </summary>
+		/// <param name="data">The parameters being passed</param>
+		/// <param name="url">The url to redirect</param>
+		public static void RedirectWithData(Dictionary<string, object> data, string url) {
+
+			HttpResponse response = HttpContext.Current.Response;
+			response.Clear();
+
+			StringBuilder sb = new StringBuilder();
+			sb.Append("<html><body onload='document.forms[\"form\"].submit()'>");
+			sb.AppendFormat("<form name='form' action='{0}' method='post'>", url);
+			foreach(var entry in data) {
+				sb.AppendFormat("<input type='hidden' name='{0}' value='{1}' />", entry.Key, entry.Value);
+			}
+			sb.Append("</form></body></html>");
+			response.Write(sb.ToString());
+			response.End();
 		}
 
 	}
