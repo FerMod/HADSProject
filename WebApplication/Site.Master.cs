@@ -11,14 +11,25 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			// TODO: Implement a way to check if the user is logged in
-			if(false) {
-
+			if((bool)Session["IsLoggedIn"]) {
 				userMenu.Visible = false;
 				loggedUserMenu.Visible = true;
-
+				LabelName.Text = (string)Session["Name"];
+				LabelLastName.Text = (string)Session["LastName"];
+				LabelMail.Text = (string)Session["Email"];
+			} else {
+				userMenu.Visible = true;
+				loggedUserMenu.Visible = false;
 			}
 
+		}
+
+		protected void ButtonProfile_Click(object sender, EventArgs e) {
+
+		}
+
+		protected void ButtonSignOut_Click(object sender, EventArgs e) {
+			Session.Abandon();
 		}
 
 	}

@@ -76,9 +76,12 @@
                                             <img src="http://placehold.it/120x120" alt="Profile Image" class="img-responsive" />
                                         </div>
                                         <div class="col-md-7">
-                                            <span>Patata Misteriosa</span>
-                                            <p class="text-muted small">mail@gmail.com</p>
-                                            <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
+                                            <span>
+                                                <asp:Label ID="LabelName" Text="Name" runat="server" />
+                                                <asp:Label ID="LabelLastName" Text="LastName" runat="server" />
+                                            </span>
+                                            <p class="text-muted small"><asp:Label ID="LabelMail" Text="mail@gmail.com" runat="server" /></p>
+                                            <asp:Button ID="ButtonViewProfile" CssClass="btn btn-primary btn-sm active"  Text="View Profile" runat="server" OnClick="ButtonProfile_Click" />
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +89,7 @@
                                 <div class="navbar-user navbar-user-logout">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <a href="#" class="btn btn-sm btn-primary btn-block">Sign Out</a>
+                                            <asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block"  Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click"/>
                                         </div>
                                     </div>
                                 </div>
@@ -100,6 +103,8 @@
 
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="NotificationContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>

@@ -16,6 +16,10 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
+			if((bool)Session["IsLoggedIn"]) {
+				Response.Redirect("/Default");
+			}
+
 		}
 
 		protected void ButtonLogin_Click(object sender, EventArgs e) {
@@ -31,6 +35,7 @@ namespace WebApplication {
 				List<IDataRecord> result = DataAccess.Query(sql, parameters);
 
 				if(result.Count == 1) {
+					Session["IsLoggedIn"] = true;
 					Response.Redirect("/Default");
 				} else {
 					Debug.WriteLine("Wrong credentials");

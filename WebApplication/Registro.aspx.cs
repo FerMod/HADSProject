@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Net.Mime;
@@ -25,6 +26,10 @@ namespace WebApplication {
 		private DataAccessService DataAccess => ((Account)Master).DataAccess;
 
 		protected void Page_Load(object sender, EventArgs e) {
+
+			if((bool)Session["IsLoggedIn"]) {
+				Response.Redirect("/Default");
+			}
 
 			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
 				Account = AppConfig.SmtpServer.Account,
@@ -65,12 +70,38 @@ namespace WebApplication {
 			html += "Thanks,<br />";
 			html += "HADS Team.";
 
+
+			string emailTemplate = File.ReadAllText(HttpContext.Current.Server.MapPath("~/MailTemplates/AccountVerification.html"));
+
+			/*
+			Email Fields:
+			0 LogoImgUrl
+			1 Name
+			2 LastName
+			3 VerificationUrl
+			4 HelpWebsiteUrl
+			5 WebsiteUrl
+			6 FooterLogoImgUrl
+			*/
+
+			string[] emailFields = {
+				"",
+				textBoxName.Text,
+				textBoxLastName.Text,
+				parametizedUrl,
+				"",
+				UrlUtils.UrlRoot,
+				""
+			};
+
+			string emailHtml = String.Format(emailTemplate, emailFields);
+
 			MailMessage mail = new MailMessage();
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
 			mail.To.Add(new MailAddress(textBoxEmail.Text));
 			mail.Subject = subject;
 			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(emailHtml, null, MediaTypeNames.Text.Html));
 			mail.IsBodyHtml = true;
 
 			try {
@@ -90,8 +121,11 @@ namespace WebApplication {
 
 				if(affectedRows == 1) {
 					this.EmailService.SendEmail(mail);
-					Session["NotificationTitle"] = "Confirm Email";
-					Session["NotificationBody"] = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>. If yount don't receive any email <a href=\"{parametizedUrl}\">resend email</a>";
+					Session["NotificationData"] = new NotificationData() {
+						Title = "Confirm Email",
+						Body = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>. If yount don't receive any email use the following link to <a href=\"{parametizedUrl}\">resend email</a>.",
+						Level = AlertLevel.Info
+					};
 					Response.Redirect("/WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
