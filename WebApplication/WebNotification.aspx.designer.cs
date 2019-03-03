@@ -13,39 +13,39 @@ namespace WebApplication {
     public partial class WebNotification {
         
         /// <summary>
-        /// alert control.
+        /// Alert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel alert;
+        protected global::System.Web.UI.WebControls.Panel Alert;
         
         /// <summary>
-        /// title control.
+        /// AlertTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label title;
+        protected global::System.Web.UI.WebControls.Label AlertTitle;
         
         /// <summary>
-        /// body control.
+        /// AlertBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label body;
+        protected global::System.Web.UI.WebControls.Label AlertBody;
         
         /// <summary>
-        /// close control.
+        /// AlertCloseButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton close;
+        protected global::System.Web.UI.WebControls.LinkButton AlertCloseButton;
     }
 }

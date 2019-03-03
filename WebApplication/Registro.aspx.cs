@@ -23,11 +23,11 @@ namespace WebApplication {
 		private Lazy<EmailService> lazyEmailService;
 		private EmailService EmailService => lazyEmailService?.Value;
 
-		private DataAccessService DataAccess => ((Account)Master).DataAccess;
+		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
 
 		protected void Page_Load(object sender, EventArgs e) {
-
-			if((bool)Session["IsLoggedIn"]) {
+			 
+			if((bool)Session["IsLogged"]) {
 				Response.Redirect("/Default");
 			}
 
@@ -59,6 +59,7 @@ namespace WebApplication {
 			string displayName = "HADS";
 			string subject = "Confirm Account";
 
+			/*
 			string text = $"Hi {textBoxName.Text} {textBoxLastName.Text}!\n\n";
 			text += $"Please click on this link to '{subject}': {parametizedUrl}\n\n";
 			text += "Thanks,\n";
@@ -69,8 +70,7 @@ namespace WebApplication {
 			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br /><br />";
 			html += "Thanks,<br />";
 			html += "HADS Team.";
-
-
+			*/
 			string emailTemplate = File.ReadAllText(HttpContext.Current.Server.MapPath("~/MailTemplates/AccountVerification.html"));
 
 			/*
@@ -100,7 +100,7 @@ namespace WebApplication {
 			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
 			mail.To.Add(new MailAddress(textBoxEmail.Text));
 			mail.Subject = subject;
-			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+			//mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
 			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(emailHtml, null, MediaTypeNames.Text.Html));
 			mail.IsBodyHtml = true;
 
@@ -123,9 +123,11 @@ namespace WebApplication {
 					this.EmailService.SendEmail(mail);
 					Session["NotificationData"] = new NotificationData() {
 						Title = "Confirm Email",
-						Body = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>. If yount don't receive any email use the following link to <a href=\"{parametizedUrl}\">resend email</a>.",
+						Body = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>.",
 						Level = AlertLevel.Info
 					};
+					// FIXME: TEMOPORAL LINE. REMOVE
+					(Session["NotificationData"] as NotificationData).Body += $"<br><br><strong><small><a href=\"{parametizedUrl}\">Ir a Pagina de Confirmacion de forma Directa</a></small></strong>";
 					Response.Redirect("/WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");

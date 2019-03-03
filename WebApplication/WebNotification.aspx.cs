@@ -11,31 +11,28 @@ namespace WebApplication {
 
 	public partial class WebNotification : Page {
 
-		protected void Page_PreInit(object sender, EventArgs e) {
-		}
-
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if(!IsPostBack && Session["NotificationData"] != null) {
+				Alert.Visible = true;
 				UpdateContent((NotificationData)Session["NotificationData"]);
-				alert.Visible = true;
 			}
 
 		}
 
 		public void UpdateContent(NotificationData notificationData) {
 
-			title.Visible = !String.IsNullOrWhiteSpace(notificationData.Title);
-			if(title.Visible) {
-				title.Text = $"{notificationData.Title}<hr>";
+			AlertTitle.Visible = !String.IsNullOrWhiteSpace(notificationData.Title);
+			if(AlertTitle.Visible) {
+				AlertTitle.Text = $"{notificationData.Title}<hr>";
 			}
 
-			body.Text = notificationData.Body;
-			alert.CssClass = $"{alert.CssClass} {notificationData.Level}";
+			AlertBody.Text = notificationData.Body;
+			Alert.CssClass = $"{Alert.CssClass} {notificationData.Level}";
 
-			close.Visible = notificationData.Dismissable;
+			AlertCloseButton.Visible = notificationData.Dismissable;
 			if(notificationData.Dismissable) {
-				alert.CssClass += " alert-dismissible fade show";
+				Alert.CssClass += " alert-dismissible fade show";
 			}
 
 		}

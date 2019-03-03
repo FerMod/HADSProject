@@ -51,22 +51,18 @@ namespace WebApplication {
 
 		protected void Session_Start(object sender, EventArgs e) {
 
-			Session["IsLoggedIn"] = false;
-
-			Session["SessionLazyDataAccess"] = new Lazy<DataAccessService>(() => {
-				DataAccessService dataService;
-				Application.Lock();
-				dataService = Application["DataAccess"] as DataAccessService;
-				Application.UnLock();
-				return dataService;
-			});
+			Lazy<DataAccessService> dataAccessService = new Lazy<DataAccessService>(() => (DataAccessService)Application.Get("DataAccess"));
+			Session["DataAccess"] = dataAccessService.Value;
+			Session["IsLogged"] = false;
+			Session["Email"] = "";
+			Session["Name"] = "";
+			Session["LastName"] = "";
 
 		}
 
 		protected void Application_EndRequest(object sender, EventArgs e) { }
 
 		protected void Session_End(object sender, EventArgs e) {
-			Response.Redirect("/Default");
 		}
 
 		protected void Application_End(object sender, EventArgs e) { }
@@ -79,7 +75,7 @@ namespace WebApplication {
 
 			DataAccessService dataAccess = new DataAccessService(ConfigurationManager.ConnectionStrings["HADS18-DB"].ConnectionString);
 			Application.Lock();
-			Application.Contents.Set("DataAccess", dataAccess);
+			Application.Set("DataAccess", dataAccess);
 			Application.UnLock();
 
 		}

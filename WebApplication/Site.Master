@@ -89,7 +89,7 @@
                                 <div class="navbar-user navbar-user-logout">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block"  Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click"/>
+                                            <asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block"  Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click" UseSubmitBehavior="False" CausesValidation="False" />
                                         </div>
                                     </div>
                                 </div>
