@@ -7,7 +7,6 @@ items:
   - WebApplication.Framework.AlertLevel
   - WebApplication.Framework.NotificationData
   - WebApplication.Framework.ParametizedUrl
-  - WebApplication.Framework.UserCredentials
   langs:
   - csharp
   - vb
@@ -36,11 +35,6 @@ references:
   name: ParametizedUrl
   nameWithType: ParametizedUrl
   fullName: WebApplication.Framework.ParametizedUrl
-- uid: WebApplication.Framework.UserCredentials
-  commentId: T:WebApplication.Framework.UserCredentials
-  name: UserCredentials
-  nameWithType: UserCredentials
-  fullName: WebApplication.Framework.UserCredentials
 - uid: WebApplication.Framework
   commentId: N:WebApplication.Framework
   name: WebApplication.Framework

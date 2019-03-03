@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UrlUtils
+    <title>Class UserSession
    | HADS Web Application </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UrlUtils
+    <meta name="title" content="Class UserSession
    | HADS Web Application ">
     <meta name="generator" content="docfx 2.40.11.0">
     
@@ -68,17 +68,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WebApplication.Utils.UrlUtils">
+            <article class="content wrap" id="_content" data-uid="WebApplication.Framework.UserSession">
   
   
-  <h1 id="WebApplication_Utils_UrlUtils" data-uid="WebApplication.Utils.UrlUtils" class="text-break">Class UrlUtils
+  <h1 id="WebApplication_Framework_UserSession" data-uid="WebApplication.Framework.UserSession" class="text-break">Class UserSession
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UrlUtils</span></div>
+    <div class="level1"><span class="xref">UserSession</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -104,24 +104,23 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="WebApplication.Utils.html">WebApplication.Utils</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WebApplication.Framework.html">WebApplication.Framework</a></h6>
   <h6><strong>Assembly</strong>: WebApplication.dll</h6>
-  <h5 id="WebApplication_Utils_UrlUtils_syntax">Syntax</h5>
+  <h5 id="WebApplication_Framework_UserSession_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UrlUtils</code></pre>
+    <pre><code class="lang-csharp hljs">public class UserSession</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="WebApplication_Utils_UrlUtils_ApplicationFolder_" data-uid="WebApplication.Utils.UrlUtils.ApplicationFolder*"></a>
-  <h4 id="WebApplication_Utils_UrlUtils_ApplicationFolder" data-uid="WebApplication.Utils.UrlUtils.ApplicationFolder">ApplicationFolder</h4>
-  <div class="markdown level1 summary"><p>Contains the child folder portion of the path.</p>
-</div>
+  <a id="WebApplication_Framework_UserSession_Email_" data-uid="WebApplication.Framework.UserSession.Email*"></a>
+  <h4 id="WebApplication_Framework_UserSession_Email" data-uid="WebApplication.Framework.UserSession.Email">Email</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ApplicationFolder { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Email { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,14 +139,38 @@
   </table>
   
   
-  <a id="WebApplication_Utils_UrlUtils_UrlRoot_" data-uid="WebApplication.Utils.UrlUtils.UrlRoot*"></a>
-  <h4 id="WebApplication_Utils_UrlUtils_UrlRoot" data-uid="WebApplication.Utils.UrlUtils.UrlRoot">UrlRoot</h4>
-  <div class="markdown level1 summary"><p>Gets the base part of the URL 'http://www.&quot;</p>
-</div>
+  <a id="WebApplication_Framework_UserSession_IsLogged_" data-uid="WebApplication.Framework.UserSession.IsLogged*"></a>
+  <h4 id="WebApplication_Framework_UserSession_IsLogged" data-uid="WebApplication.Framework.UserSession.IsLogged">IsLogged</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string UrlRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsLogged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebApplication_Framework_UserSession_LastName_" data-uid="WebApplication.Framework.UserSession.LastName*"></a>
+  <h4 id="WebApplication_Framework_UserSession_LastName" data-uid="WebApplication.Framework.UserSession.LastName">LastName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LastName { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,14 +189,13 @@
   </table>
   
   
-  <a id="WebApplication_Utils_UrlUtils_VirtualPath_" data-uid="WebApplication.Utils.UrlUtils.VirtualPath*"></a>
-  <h4 id="WebApplication_Utils_UrlUtils_VirtualPath" data-uid="WebApplication.Utils.UrlUtils.VirtualPath">VirtualPath</h4>
-  <div class="markdown level1 summary"><p>Returns the Virtual Path.</p>
-</div>
+  <a id="WebApplication_Framework_UserSession_Name_" data-uid="WebApplication.Framework.UserSession.Name*"></a>
+  <h4 id="WebApplication_Framework_UserSession_Name" data-uid="WebApplication.Framework.UserSession.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string VirtualPath { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,46 +209,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="WebApplication_Utils_UrlUtils_VirtualPath_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The path will start and end with a /</p>
-</div>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="WebApplication_Utils_UrlUtils_RedirectWithData_" data-uid="WebApplication.Utils.UrlUtils.RedirectWithData*"></a>
-  <h4 id="WebApplication_Utils_UrlUtils_RedirectWithData_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_" data-uid="WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">RedirectWithData(Dictionary&lt;String, Object&gt;, String)</h4>
-  <div class="markdown level1 summary"><p>Redirect to page using POST method</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RedirectWithData(Dictionary&lt;string, object&gt; data, string url)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>The parameters being passed</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">url</span></td>
-        <td><p>The url to redirect</p>
-</td>
       </tr>
     </tbody>
   </table>

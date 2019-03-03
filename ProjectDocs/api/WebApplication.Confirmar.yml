@@ -5,7 +5,6 @@ items:
   id: Confirmar
   parent: WebApplication
   children:
-  - WebApplication.Confirmar.DataAccess
   - WebApplication.Confirmar.Page_Load(System.Object,System.EventArgs)
   langs:
   - csharp
@@ -17,7 +16,7 @@ items:
   source:
     id: Confirmar
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
-    startLine: 11
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -288,37 +287,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.Confirmar.DataAccess
-  commentId: P:WebApplication.Confirmar.DataAccess
-  id: DataAccess
-  parent: WebApplication.Confirmar
-  langs:
-  - csharp
-  - vb
-  name: DataAccess
-  nameWithType: Confirmar.DataAccess
-  fullName: WebApplication.Confirmar.DataAccess
-  type: Property
-  source:
-    id: DataAccess
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
-    startLine: 13
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  syntax:
-    content: public DataAccessService DataAccess { get; }
-    parameters: []
-    return:
-      type: DataBaseAccess.DataAccessService
-    content.vb: Public ReadOnly Property DataAccess As DataAccessService
-  overload: WebApplication.Confirmar.DataAccess*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
 - uid: WebApplication.Confirmar.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.Confirmar.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -333,7 +301,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
-    startLine: 15
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -7355,22 +7323,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.Confirmar.DataAccess*
-  commentId: Overload:WebApplication.Confirmar.DataAccess
-  name: DataAccess
-  nameWithType: Confirmar.DataAccess
-  fullName: WebApplication.Confirmar.DataAccess
-- uid: DataBaseAccess.DataAccessService
-  commentId: T:DataBaseAccess.DataAccessService
-  parent: DataBaseAccess
-  name: DataAccessService
-  nameWithType: DataAccessService
-  fullName: DataBaseAccess.DataAccessService
-- uid: DataBaseAccess
-  commentId: N:DataBaseAccess
-  name: DataBaseAccess
-  nameWithType: DataBaseAccess
-  fullName: DataBaseAccess
 - uid: WebApplication.Confirmar.Page_Load*
   commentId: Overload:WebApplication.Confirmar.Page_Load
   name: Page_Load

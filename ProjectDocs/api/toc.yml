@@ -68,8 +68,6 @@
     name: NotificationData
   - uid: WebApplication.Framework.ParametizedUrl
     name: ParametizedUrl
-  - uid: WebApplication.Framework.UserCredentials
-    name: UserCredentials
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   items:

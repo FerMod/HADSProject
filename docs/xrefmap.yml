@@ -418,19 +418,6 @@ references:
   commentId: F:WebApplication.Account.createAccount
   fullName: WebApplication.Account.createAccount
   nameWithType: Account.createAccount
-- uid: WebApplication.Account.DataAccess
-  name: DataAccess
-  href: api/WebApplication.Account.html#WebApplication_Account_DataAccess
-  commentId: P:WebApplication.Account.DataAccess
-  fullName: WebApplication.Account.DataAccess
-  nameWithType: Account.DataAccess
-- uid: WebApplication.Account.DataAccess*
-  name: DataAccess
-  href: api/WebApplication.Account.html#WebApplication_Account_DataAccess_
-  commentId: Overload:WebApplication.Account.DataAccess
-  isSpec: "True"
-  fullName: WebApplication.Account.DataAccess
-  nameWithType: Account.DataAccess
 - uid: WebApplication.Account.logIn
   name: logIn
   href: api/WebApplication.Account.html#WebApplication_Account_logIn
@@ -646,19 +633,6 @@ references:
   commentId: T:WebApplication.Confirmar
   fullName: WebApplication.Confirmar
   nameWithType: Confirmar
-- uid: WebApplication.Confirmar.DataAccess
-  name: DataAccess
-  href: api/WebApplication.Confirmar.html#WebApplication_Confirmar_DataAccess
-  commentId: P:WebApplication.Confirmar.DataAccess
-  fullName: WebApplication.Confirmar.DataAccess
-  nameWithType: Confirmar.DataAccess
-- uid: WebApplication.Confirmar.DataAccess*
-  name: DataAccess
-  href: api/WebApplication.Confirmar.html#WebApplication_Confirmar_DataAccess_
-  commentId: Overload:WebApplication.Confirmar.DataAccess
-  isSpec: "True"
-  fullName: WebApplication.Confirmar.DataAccess
-  nameWithType: Confirmar.DataAccess
 - uid: WebApplication.Confirmar.Page_Load(System.Object,System.EventArgs)
   name: Page_Load(Object, EventArgs)
   href: api/WebApplication.Confirmar.html#WebApplication_Confirmar_Page_Load_System_Object_System_EventArgs_
@@ -945,38 +919,6 @@ references:
   isSpec: "True"
   fullName: WebApplication.Framework.ParametizedUrl.Url
   nameWithType: ParametizedUrl.Url
-- uid: WebApplication.Framework.UserCredentials
-  name: UserCredentials
-  href: api/WebApplication.Framework.UserCredentials.html
-  commentId: T:WebApplication.Framework.UserCredentials
-  fullName: WebApplication.Framework.UserCredentials
-  nameWithType: UserCredentials
-- uid: WebApplication.Framework.UserCredentials.#ctor(System.Web.SessionState.HttpSessionState)
-  name: UserCredentials(HttpSessionState)
-  href: api/WebApplication.Framework.UserCredentials.html#WebApplication_Framework_UserCredentials__ctor_System_Web_SessionState_HttpSessionState_
-  commentId: M:WebApplication.Framework.UserCredentials.#ctor(System.Web.SessionState.HttpSessionState)
-  fullName: WebApplication.Framework.UserCredentials.UserCredentials(System.Web.SessionState.HttpSessionState)
-  nameWithType: UserCredentials.UserCredentials(HttpSessionState)
-- uid: WebApplication.Framework.UserCredentials.#ctor*
-  name: UserCredentials
-  href: api/WebApplication.Framework.UserCredentials.html#WebApplication_Framework_UserCredentials__ctor_
-  commentId: Overload:WebApplication.Framework.UserCredentials.#ctor
-  isSpec: "True"
-  fullName: WebApplication.Framework.UserCredentials.UserCredentials
-  nameWithType: UserCredentials.UserCredentials
-- uid: WebApplication.Framework.UserCredentials.IsLogged
-  name: IsLogged
-  href: api/WebApplication.Framework.UserCredentials.html#WebApplication_Framework_UserCredentials_IsLogged
-  commentId: P:WebApplication.Framework.UserCredentials.IsLogged
-  fullName: WebApplication.Framework.UserCredentials.IsLogged
-  nameWithType: UserCredentials.IsLogged
-- uid: WebApplication.Framework.UserCredentials.IsLogged*
-  name: IsLogged
-  href: api/WebApplication.Framework.UserCredentials.html#WebApplication_Framework_UserCredentials_IsLogged_
-  commentId: Overload:WebApplication.Framework.UserCredentials.IsLogged
-  isSpec: "True"
-  fullName: WebApplication.Framework.UserCredentials.IsLogged
-  nameWithType: UserCredentials.IsLogged
 - uid: WebApplication.Global
   name: Global
   href: api/WebApplication.Global.html
@@ -1559,6 +1501,22 @@ references:
   isSpec: "True"
   fullName: WebApplication.Utils.UrlUtils.ApplicationFolder
   nameWithType: UrlUtils.ApplicationFolder
+- uid: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name: RedirectWithData(Dictionary<String, Object>, String)
+  href: api/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_RedirectWithData_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_
+  commentId: M:WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name.vb: RedirectWithData(Dictionary(Of String, Object), String)
+  fullName: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  fullName.vb: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  nameWithType: UrlUtils.RedirectWithData(Dictionary<String, Object>, String)
+  nameWithType.vb: UrlUtils.RedirectWithData(Dictionary(Of String, Object), String)
+- uid: WebApplication.Utils.UrlUtils.RedirectWithData*
+  name: RedirectWithData
+  href: api/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_RedirectWithData_
+  commentId: Overload:WebApplication.Utils.UrlUtils.RedirectWithData
+  isSpec: "True"
+  fullName: WebApplication.Utils.UrlUtils.RedirectWithData
+  nameWithType: UrlUtils.RedirectWithData
 - uid: WebApplication.Utils.UrlUtils.UrlRoot
   name: UrlRoot
   href: api/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_UrlRoot
@@ -1649,24 +1607,30 @@ references:
   commentId: T:WebApplication.WebNotification
   fullName: WebApplication.WebNotification
   nameWithType: WebNotification
-- uid: WebApplication.WebNotification.alert
-  name: alert
-  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_alert
-  commentId: F:WebApplication.WebNotification.alert
-  fullName: WebApplication.WebNotification.alert
-  nameWithType: WebNotification.alert
-- uid: WebApplication.WebNotification.body
-  name: body
-  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_body
-  commentId: F:WebApplication.WebNotification.body
-  fullName: WebApplication.WebNotification.body
-  nameWithType: WebNotification.body
-- uid: WebApplication.WebNotification.close
-  name: close
-  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_close
-  commentId: F:WebApplication.WebNotification.close
-  fullName: WebApplication.WebNotification.close
-  nameWithType: WebNotification.close
+- uid: WebApplication.WebNotification.Alert
+  name: Alert
+  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_Alert
+  commentId: F:WebApplication.WebNotification.Alert
+  fullName: WebApplication.WebNotification.Alert
+  nameWithType: WebNotification.Alert
+- uid: WebApplication.WebNotification.AlertBody
+  name: AlertBody
+  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_AlertBody
+  commentId: F:WebApplication.WebNotification.AlertBody
+  fullName: WebApplication.WebNotification.AlertBody
+  nameWithType: WebNotification.AlertBody
+- uid: WebApplication.WebNotification.AlertCloseButton
+  name: AlertCloseButton
+  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_AlertCloseButton
+  commentId: F:WebApplication.WebNotification.AlertCloseButton
+  fullName: WebApplication.WebNotification.AlertCloseButton
+  nameWithType: WebNotification.AlertCloseButton
+- uid: WebApplication.WebNotification.AlertTitle
+  name: AlertTitle
+  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_AlertTitle
+  commentId: F:WebApplication.WebNotification.AlertTitle
+  fullName: WebApplication.WebNotification.AlertTitle
+  nameWithType: WebNotification.AlertTitle
 - uid: WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
   name: Page_Load(Object, EventArgs)
   href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_Page_Load_System_Object_System_EventArgs_
@@ -1680,25 +1644,6 @@ references:
   isSpec: "True"
   fullName: WebApplication.WebNotification.Page_Load
   nameWithType: WebNotification.Page_Load
-- uid: WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
-  name: Page_PreInit(Object, EventArgs)
-  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_Page_PreInit_System_Object_System_EventArgs_
-  commentId: M:WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
-  fullName: WebApplication.WebNotification.Page_PreInit(System.Object, System.EventArgs)
-  nameWithType: WebNotification.Page_PreInit(Object, EventArgs)
-- uid: WebApplication.WebNotification.Page_PreInit*
-  name: Page_PreInit
-  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_Page_PreInit_
-  commentId: Overload:WebApplication.WebNotification.Page_PreInit
-  isSpec: "True"
-  fullName: WebApplication.WebNotification.Page_PreInit
-  nameWithType: WebNotification.Page_PreInit
-- uid: WebApplication.WebNotification.title
-  name: title
-  href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_title
-  commentId: F:WebApplication.WebNotification.title
-  fullName: WebApplication.WebNotification.title
-  nameWithType: WebNotification.title
 - uid: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
   name: UpdateContent(NotificationData)
   href: api/WebApplication.WebNotification.html#WebApplication_WebNotification_UpdateContent_WebApplication_Framework_NotificationData_

@@ -18,7 +18,6 @@ items:
 references:
 - uid: DataBaseAccess.DataAccessService
   commentId: T:DataBaseAccess.DataAccessService
-  parent: DataBaseAccess
   name: DataAccessService
   nameWithType: DataAccessService
   fullName: DataBaseAccess.DataAccessService

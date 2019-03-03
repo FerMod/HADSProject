@@ -7,7 +7,6 @@ items:
   children:
   - WebApplication.Account.AccountCardBodyContent
   - WebApplication.Account.createAccount
-  - WebApplication.Account.DataAccess
   - WebApplication.Account.logIn
   - WebApplication.Account.Page_Load(System.Object,System.EventArgs)
   langs:
@@ -219,37 +218,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.Account.DataAccess
-  commentId: P:WebApplication.Account.DataAccess
-  id: DataAccess
-  parent: WebApplication.Account
-  langs:
-  - csharp
-  - vb
-  name: DataAccess
-  nameWithType: Account.DataAccess
-  fullName: WebApplication.Account.DataAccess
-  type: Property
-  source:
-    id: DataAccess
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Account.master.cs
-    startLine: 13
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  syntax:
-    content: public DataAccessService DataAccess { get; }
-    parameters: []
-    return:
-      type: DataBaseAccess.DataAccessService
-    content.vb: Public ReadOnly Property DataAccess As DataAccessService
-  overload: WebApplication.Account.DataAccess*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
 - uid: WebApplication.Account.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.Account.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -264,7 +232,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Account.master.cs
-    startLine: 15
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -5454,22 +5422,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.Account.DataAccess*
-  commentId: Overload:WebApplication.Account.DataAccess
-  name: DataAccess
-  nameWithType: Account.DataAccess
-  fullName: WebApplication.Account.DataAccess
-- uid: DataBaseAccess.DataAccessService
-  commentId: T:DataBaseAccess.DataAccessService
-  parent: DataBaseAccess
-  name: DataAccessService
-  nameWithType: DataAccessService
-  fullName: DataBaseAccess.DataAccessService
-- uid: DataBaseAccess
-  commentId: N:DataBaseAccess
-  name: DataBaseAccess
-  nameWithType: DataBaseAccess
-  fullName: DataBaseAccess
 - uid: WebApplication.Account.Page_Load*
   commentId: Overload:WebApplication.Account.Page_Load
   name: Page_Load

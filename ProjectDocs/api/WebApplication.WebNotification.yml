@@ -5,12 +5,11 @@ items:
   id: WebNotification
   parent: WebApplication
   children:
-  - WebApplication.WebNotification.alert
-  - WebApplication.WebNotification.body
-  - WebApplication.WebNotification.close
+  - WebApplication.WebNotification.Alert
+  - WebApplication.WebNotification.AlertBody
+  - WebApplication.WebNotification.AlertCloseButton
+  - WebApplication.WebNotification.AlertTitle
   - WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
-  - WebApplication.WebNotification.title
   - WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
   langs:
   - csharp
@@ -293,37 +292,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
-  commentId: M:WebApplication.WebNotification.Page_PreInit(System.Object,System.EventArgs)
-  id: Page_PreInit(System.Object,System.EventArgs)
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: Page_PreInit(Object, EventArgs)
-  nameWithType: WebNotification.Page_PreInit(Object, EventArgs)
-  fullName: WebApplication.WebNotification.Page_PreInit(System.Object, System.EventArgs)
-  type: Method
-  source:
-    id: Page_PreInit
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
-    startLine: 13
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  syntax:
-    content: protected void Page_PreInit(object sender, EventArgs e)
-    parameters:
-    - id: sender
-      type: System.Object
-    - id: e
-      type: System.EventArgs
-    content.vb: Protected Sub Page_PreInit(sender As Object, e As EventArgs)
-  overload: WebApplication.WebNotification.Page_PreInit*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
 - uid: WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -338,7 +306,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
-    startLine: 16
+    startLine: 13
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -369,7 +337,7 @@ items:
   source:
     id: UpdateContent
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
-    startLine: 25
+    startLine: 22
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -384,122 +352,122 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: WebApplication.WebNotification.alert
-  commentId: F:WebApplication.WebNotification.alert
-  id: alert
+- uid: WebApplication.WebNotification.Alert
+  commentId: F:WebApplication.WebNotification.Alert
+  id: Alert
   parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: alert
-  nameWithType: WebNotification.alert
-  fullName: WebApplication.WebNotification.alert
+  name: Alert
+  nameWithType: WebNotification.Alert
+  fullName: WebApplication.WebNotification.Alert
   type: Field
   source:
-    id: alert
+    id: Alert
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\nalert control.\n"
+  summary: "\nAlert control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected Panel alert
+    content: protected Panel Alert
     return:
       type: System.Web.UI.WebControls.Panel
-    content.vb: Protected alert As Panel
+    content.vb: Protected Alert As Panel
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.WebNotification.title
-  commentId: F:WebApplication.WebNotification.title
-  id: title
+- uid: WebApplication.WebNotification.AlertTitle
+  commentId: F:WebApplication.WebNotification.AlertTitle
+  id: AlertTitle
   parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: title
-  nameWithType: WebNotification.title
-  fullName: WebApplication.WebNotification.title
+  name: AlertTitle
+  nameWithType: WebNotification.AlertTitle
+  fullName: WebApplication.WebNotification.AlertTitle
   type: Field
   source:
-    id: title
+    id: AlertTitle
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\ntitle control.\n"
+  summary: "\nAlertTitle control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected Label title
+    content: protected Label AlertTitle
     return:
       type: System.Web.UI.WebControls.Label
-    content.vb: Protected title As Label
+    content.vb: Protected AlertTitle As Label
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.WebNotification.body
-  commentId: F:WebApplication.WebNotification.body
-  id: body
+- uid: WebApplication.WebNotification.AlertBody
+  commentId: F:WebApplication.WebNotification.AlertBody
+  id: AlertBody
   parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: body
-  nameWithType: WebNotification.body
-  fullName: WebApplication.WebNotification.body
+  name: AlertBody
+  nameWithType: WebNotification.AlertBody
+  fullName: WebApplication.WebNotification.AlertBody
   type: Field
   source:
-    id: body
+    id: AlertBody
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\nbody control.\n"
+  summary: "\nAlertBody control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected Label body
+    content: protected Label AlertBody
     return:
       type: System.Web.UI.WebControls.Label
-    content.vb: Protected body As Label
+    content.vb: Protected AlertBody As Label
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.WebNotification.close
-  commentId: F:WebApplication.WebNotification.close
-  id: close
+- uid: WebApplication.WebNotification.AlertCloseButton
+  commentId: F:WebApplication.WebNotification.AlertCloseButton
+  id: AlertCloseButton
   parent: WebApplication.WebNotification
   langs:
   - csharp
   - vb
-  name: close
-  nameWithType: WebNotification.close
-  fullName: WebApplication.WebNotification.close
+  name: AlertCloseButton
+  nameWithType: WebNotification.AlertCloseButton
+  fullName: WebApplication.WebNotification.AlertCloseButton
   type: Field
   source:
-    id: close
+    id: AlertCloseButton
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\nclose control.\n"
+  summary: "\nAlertCloseButton control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected LinkButton close
+    content: protected LinkButton AlertCloseButton
     return:
       type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected close As LinkButton
+    content.vb: Protected AlertCloseButton As LinkButton
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -7509,11 +7477,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.WebNotification.Page_PreInit*
-  commentId: Overload:WebApplication.WebNotification.Page_PreInit
-  name: Page_PreInit
-  nameWithType: WebNotification.Page_PreInit
-  fullName: WebApplication.WebNotification.Page_PreInit
+- uid: WebApplication.WebNotification.Page_Load*
+  commentId: Overload:WebApplication.WebNotification.Page_Load
+  name: Page_Load
+  nameWithType: WebNotification.Page_Load
+  fullName: WebApplication.WebNotification.Page_Load
 - uid: System.EventArgs
   commentId: T:System.EventArgs
   parent: System
@@ -7521,11 +7489,6 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.WebNotification.Page_Load*
-  commentId: Overload:WebApplication.WebNotification.Page_Load
-  name: Page_Load
-  nameWithType: WebNotification.Page_Load
-  fullName: WebApplication.WebNotification.Page_Load
 - uid: WebApplication.WebNotification.UpdateContent*
   commentId: Overload:WebApplication.WebNotification.UpdateContent
   name: UpdateContent

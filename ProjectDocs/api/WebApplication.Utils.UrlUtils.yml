@@ -6,6 +6,7 @@ items:
   parent: WebApplication.Utils
   children:
   - WebApplication.Utils.UrlUtils.ApplicationFolder
+  - WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
   - WebApplication.Utils.UrlUtils.UrlRoot
   - WebApplication.Utils.UrlUtils.VirtualPath
   langs:
@@ -18,7 +19,7 @@ items:
   source:
     id: UrlUtils
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication.Utils
@@ -56,7 +57,7 @@ items:
   source:
     id: UrlRoot
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - WebApplication
   namespace: WebApplication.Utils
@@ -91,7 +92,7 @@ items:
   source:
     id: VirtualPath
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - WebApplication
   namespace: WebApplication.Utils
@@ -128,7 +129,7 @@ items:
   source:
     id: ApplicationFolder
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - WebApplication
   namespace: WebApplication.Utils
@@ -149,6 +150,46 @@ items:
   - Public
   - Shared
   - ReadOnly
+- uid: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  commentId: M:WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  id: RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  parent: WebApplication.Utils.UrlUtils
+  langs:
+  - csharp
+  - vb
+  name: RedirectWithData(Dictionary<String, Object>, String)
+  nameWithType: UrlUtils.RedirectWithData(Dictionary<String, Object>, String)
+  fullName: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  type: Method
+  source:
+    id: RedirectWithData
+    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    startLine: 69
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Utils
+  summary: "\nRedirect to page using POST method\n"
+  example: []
+  syntax:
+    content: public static void RedirectWithData(Dictionary<string, object> data, string url)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The parameters being passed
+    - id: url
+      type: System.String
+      description: The url to redirect
+    content.vb: Public Shared Sub RedirectWithData(data As Dictionary(Of String, Object), url As String)
+  overload: WebApplication.Utils.UrlUtils.RedirectWithData*
+  nameWithType.vb: UrlUtils.RedirectWithData(Dictionary(Of String, Object), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  name.vb: RedirectWithData(Dictionary(Of String, Object), String)
 references:
 - uid: WebApplication.Utils
   commentId: N:WebApplication.Utils
@@ -469,3 +510,125 @@ references:
   name: ApplicationFolder
   nameWithType: UrlUtils.ApplicationFolder
   fullName: WebApplication.Utils.UrlUtils.ApplicationFolder
+- uid: WebApplication.Utils.UrlUtils.RedirectWithData*
+  commentId: Overload:WebApplication.Utils.UrlUtils.RedirectWithData
+  name: RedirectWithData
+  nameWithType: UrlUtils.RedirectWithData
+  fullName: WebApplication.Utils.UrlUtils.RedirectWithData
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -242,7 +242,7 @@ items:
   source:
     id: Page_Load
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -273,7 +273,7 @@ items:
   source:
     id: ButtonProfile_Click
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
-    startLine: 26
+    startLine: 32
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -304,7 +304,7 @@ items:
   source:
     id: ButtonSignOut_Click
     path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Master.cs
-    startLine: 30
+    startLine: 36
   assemblies:
   - WebApplication
   namespace: WebApplication
