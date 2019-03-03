@@ -18,11 +18,7 @@ namespace DataBaseAccess {
 			this.ConnectionString = connectionString;
 		}
 
-		public int Insert(string query, Dictionary<string, object> parameters = null) {
-			return Insert(query, CommandType.Text, parameters);
-		}
-
-		public int Insert(string query, CommandType commandType = CommandType.Text, Dictionary<string, object> parameters = null) {
+		public int Insert(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -41,11 +37,7 @@ namespace DataBaseAccess {
 
 		}
 
-		public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null) {
-			return Query(query, CommandType.Text, parameters);
-		}
-
-		public List<IDataRecord> Query(string query, CommandType commandType = CommandType.Text, Dictionary<string, object> parameters = null) {
+		public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -65,11 +57,7 @@ namespace DataBaseAccess {
 
 		}
 
-		public int Update(string query, Dictionary<string, object> parameters = null) {
-			return Update(query, CommandType.Text, parameters);
-		}
-
-		public int Update(string query, CommandType commandType = CommandType.Text, Dictionary<string, object> parameters = null) {
+		public int Update(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -88,11 +76,7 @@ namespace DataBaseAccess {
 
 		}
 
-		public T Scalar<T>(string query, Dictionary<string, object> parameters = null) {
-			return Scalar<T>(query, CommandType.Text, parameters);
-		}
-
-		public T Scalar<T>(string query, CommandType commandType = CommandType.Text, Dictionary<string, object> parameters = null) {
+		public T Scalar<T>(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
