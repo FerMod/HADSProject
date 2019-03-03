@@ -192,7 +192,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
-    <Content Include="ViewSwitcher.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -285,12 +285,12 @@
     </Compile>
     <Compile Include="Utils\JsonFile.cs" />
     <Compile Include="Utils\UrlUtils.cs" />
-    <Compile Include="ViewSwitcher.aspx.cs">
-      <DependentUpon>ViewSwitcher.aspx</DependentUpon>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewSwitcher.aspx.designer.cs">
-      <DependentUpon>ViewSwitcher.aspx</DependentUpon>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
     <Compile Include="WebNotification.aspx.cs">
       <DependentUpon>WebNotification.aspx</DependentUpon>
