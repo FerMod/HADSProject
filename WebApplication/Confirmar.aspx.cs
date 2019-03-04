@@ -30,7 +30,7 @@ namespace WebApplication {
 
 			} else {
 
-				string queryUser = "SELECT COUNT(*) FROM Usuarios WHERE email = @email AND numconfir = @numconfir";
+				string queryUser = "SELECT email, nombre, apellidos FROM Usuarios WHERE email = @email AND numconfir = @numconfir";
 				string queryUpdate = "UPDATE Usuarios SET confirmado = 1, numconfir = -1 WHERE email = @email AND numconfir = @numconfir";
 
 				Dictionary<string, object> parameters = new Dictionary<string, object> {
@@ -38,7 +38,9 @@ namespace WebApplication {
 					{ "@numConfir", code.ToString() }
 				};
 
-				if(DataAccess.Scalar<int>(queryUser, parameters) != 1 || DataAccess.Update(queryUpdate, parameters) != 1) {
+				List<Dictionary<string, object>> queryResult = DataAccess.Query(queryUser, parameters);
+
+				if(queryResult.Count != 1 || DataAccess.NonQuery(queryUpdate, parameters) != 1) {
 
 					notificationData.Title = "Could Not Verify Account";
 					notificationData.Body = $"The email could not be validated. Please try again.";
@@ -46,14 +48,10 @@ namespace WebApplication {
 
 				} else {
 
-					//string sql = "SELECT * FROM Usuarios WHERE Usuarios.email = @email";
-					//List<IDataRecord> result = DataAccess.Query(sql, parameters);
-
-					//IDataRecord dataRecord = result[0];
 					Session["IsLogged"] = true;
-					//Session["Email"] = dataRecord.GetValue(dataRecord.GetOrdinal("email"));
-					//Session["Name"] = dataRecord.GetValue(dataRecord.GetOrdinal("nombre"));
-					//Session["LastName"] = dataRecord.GetValue(dataRecord.GetOrdinal("apellidos"));
+					Session["Email"] = queryResult[0]["email"];
+					Session["Name"] = queryResult[0]["nombre"];
+					Session["LastName"] = queryResult[0]["apellidos"];
 
 					notificationData.Title = "Account Confirmed";
 					notificationData.Body = $"Thank you! Email successfully validated.";

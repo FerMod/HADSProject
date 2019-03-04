@@ -1,11 +1,8 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataBaseAccess.Extensions;
 
 namespace DataBaseAccess {
@@ -18,7 +15,7 @@ namespace DataBaseAccess {
 			this.ConnectionString = connectionString;
 		}
 
-		public int Insert(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
+		public int NonQuery(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -34,10 +31,9 @@ namespace DataBaseAccess {
 				}
 
 			}
-
 		}
 
-		public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
+		public List<Dictionary<string, object>> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -50,26 +46,7 @@ namespace DataBaseAccess {
 						}
 					}
 					IDataReader reader = command.ExecuteReader();
-					return reader.GetDataRecords().ToList();
-				}
-
-			}
-
-		}
-
-		public int Update(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
-
-			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
-				connection.Open();
-
-				using(SqlCommand command = new SqlCommand(query, connection)) {
-					command.CommandType = commandType;
-					if(parameters != null) {
-						foreach(var item in parameters) {
-							command.Parameters.AddWithValue(item.Key, item.Value);
-						}
-					}
-					return command.ExecuteNonQuery();
+					return reader.GetDataDictionary().ToList();
 				}
 
 			}
