@@ -7,10 +7,9 @@ items:
   children:
   - DataBaseAccess.DataAccessService.#ctor(System.String)
   - DataBaseAccess.DataAccessService.ConnectionString
-  - DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  - DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  - DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   langs:
   - csharp
   - vb
@@ -21,7 +20,7 @@ items:
   source:
     id: DataAccessService
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 12
+    startLine: 9
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -62,7 +61,7 @@ items:
   source:
     id: ConnectionString
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 14
+    startLine: 11
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -73,6 +72,8 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property ConnectionString As String
   overload: DataBaseAccess.DataAccessService.ConnectionString*
+  implements:
+  - DataBaseAccess.IDataAccessService.ConnectionString
   modifiers.csharp:
   - public
   - get
@@ -93,7 +94,7 @@ items:
   source:
     id: .ctor
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 16
+    startLine: 13
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -108,26 +109,26 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  commentId: M:DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  id: Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+- uid: DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   parent: DataBaseAccess.DataAccessService
   langs:
   - csharp
   - vb
-  name: Insert(String, Dictionary<String, Object>, CommandType)
-  nameWithType: DataAccessService.Insert(String, Dictionary<String, Object>, CommandType)
-  fullName: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  name: NonQuery(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.NonQuery(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    id: Insert
+    id: NonQuery
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 20
+    startLine: 17
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public int Insert(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
+    content: public int NonQuery(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
@@ -137,15 +138,17 @@ items:
       type: System.Data.CommandType
     return:
       type: System.Int32
-    content.vb: Public Function Insert(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As Integer
-  overload: DataBaseAccess.DataAccessService.Insert*
-  nameWithType.vb: DataAccessService.Insert(String, Dictionary(Of String, Object), CommandType)
+    content.vb: Public Function NonQuery(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As Integer
+  overload: DataBaseAccess.DataAccessService.NonQuery*
+  implements:
+  - DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  nameWithType.vb: DataAccessService.NonQuery(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
-  name.vb: Insert(String, Dictionary(Of String, Object), CommandType)
+  fullName.vb: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: NonQuery(String, Dictionary(Of String, Object), CommandType)
 - uid: DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   commentId: M:DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   id: Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
@@ -160,12 +163,12 @@ items:
   source:
     id: Query
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 39
+    startLine: 35
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public List<IDataRecord> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
+    content: public List<Dictionary<string, object>> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
@@ -174,9 +177,11 @@ items:
     - id: commandType
       type: System.Data.CommandType
     return:
-      type: System.Collections.Generic.List{System.Data.IDataRecord}
-    content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As List(Of IDataRecord)
+      type: System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}}
+    content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As List(Of Dictionary(Of String, Object))
   overload: DataBaseAccess.DataAccessService.Query*
+  implements:
+  - DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   nameWithType.vb: DataAccessService.Query(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
@@ -184,44 +189,6 @@ items:
   - Public
   fullName.vb: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
   name.vb: Query(String, Dictionary(Of String, Object), CommandType)
-- uid: DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  commentId: M:DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  id: Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  parent: DataBaseAccess.DataAccessService
-  langs:
-  - csharp
-  - vb
-  name: Update(String, Dictionary<String, Object>, CommandType)
-  nameWithType: DataAccessService.Update(String, Dictionary<String, Object>, CommandType)
-  fullName: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
-  type: Method
-  source:
-    id: Update
-    path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 59
-  assemblies:
-  - DataBaseAccess
-  namespace: DataBaseAccess
-  syntax:
-    content: public int Update(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
-    parameters:
-    - id: query
-      type: System.String
-    - id: parameters
-      type: System.Collections.Generic.Dictionary{System.String,System.Object}
-    - id: commandType
-      type: System.Data.CommandType
-    return:
-      type: System.Int32
-    content.vb: Public Function Update(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As Integer
-  overload: DataBaseAccess.DataAccessService.Update*
-  nameWithType.vb: DataAccessService.Update(String, Dictionary(Of String, Object), CommandType)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
-  name.vb: Update(String, Dictionary(Of String, Object), CommandType)
 - uid: DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   commentId: M:DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   id: Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
@@ -236,7 +203,7 @@ items:
   source:
     id: Scalar
     path: D:\Users\Ferran\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
-    startLine: 78
+    startLine: 55
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -255,6 +222,8 @@ items:
       type: '{T}'
     content.vb: Public Function Scalar(Of T)(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As T
   overload: DataBaseAccess.DataAccessService.Scalar*
+  implements:
+  - DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   nameWithType.vb: DataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
   modifiers.csharp:
   - public
@@ -571,6 +540,12 @@ references:
   name: ConnectionString
   nameWithType: DataAccessService.ConnectionString
   fullName: DataBaseAccess.DataAccessService.ConnectionString
+- uid: DataBaseAccess.IDataAccessService.ConnectionString
+  commentId: P:DataBaseAccess.IDataAccessService.ConnectionString
+  parent: DataBaseAccess.IDataAccessService
+  name: ConnectionString
+  nameWithType: IDataAccessService.ConnectionString
+  fullName: DataBaseAccess.IDataAccessService.ConnectionString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -583,11 +558,123 @@ references:
   name: DataAccessService
   nameWithType: DataAccessService.DataAccessService
   fullName: DataBaseAccess.DataAccessService.DataAccessService
-- uid: DataBaseAccess.DataAccessService.Insert*
-  commentId: Overload:DataBaseAccess.DataAccessService.Insert
-  name: Insert
-  nameWithType: DataAccessService.Insert
-  fullName: DataBaseAccess.DataAccessService.Insert
+- uid: DataBaseAccess.DataAccessService.NonQuery*
+  commentId: Overload:DataBaseAccess.DataAccessService.NonQuery
+  name: NonQuery
+  nameWithType: DataAccessService.NonQuery
+  fullName: DataBaseAccess.DataAccessService.NonQuery
+- uid: DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  parent: DataBaseAccess.IDataAccessService
+  isExternal: true
+  name: NonQuery(String, Dictionary<String, Object>, CommandType)
+  nameWithType: IDataAccessService.NonQuery(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  nameWithType.vb: IDataAccessService.NonQuery(String, Dictionary(Of String, Object), CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: NonQuery(String, Dictionary(Of String, Object), CommandType)
+  spec.csharp:
+  - uid: DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: NonQuery
+    nameWithType: IDataAccessService.NonQuery
+    fullName: DataBaseAccess.IDataAccessService.NonQuery
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: NonQuery
+    nameWithType: IDataAccessService.NonQuery
+    fullName: DataBaseAccess.IDataAccessService.NonQuery
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Collections.Generic.Dictionary{System.String,System.Object}
   commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
   parent: System.Collections.Generic
@@ -730,16 +817,128 @@ references:
   name: Query
   nameWithType: DataAccessService.Query
   fullName: DataBaseAccess.DataAccessService.Query
-- uid: System.Collections.Generic.List{System.Data.IDataRecord}
-  commentId: T:System.Collections.Generic.List{System.Data.IDataRecord}
+- uid: DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  parent: DataBaseAccess.IDataAccessService
+  isExternal: true
+  name: Query(String, Dictionary<String, Object>, CommandType)
+  nameWithType: IDataAccessService.Query(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  nameWithType.vb: IDataAccessService.Query(String, Dictionary(Of String, Object), CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: Query(String, Dictionary(Of String, Object), CommandType)
+  spec.csharp:
+  - uid: DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: Query
+    nameWithType: IDataAccessService.Query
+    fullName: DataBaseAccess.IDataAccessService.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: Query
+    nameWithType: IDataAccessService.Query
+    fullName: DataBaseAccess.IDataAccessService.Query
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
-  name: List<IDataRecord>
-  nameWithType: List<IDataRecord>
-  fullName: System.Collections.Generic.List<System.Data.IDataRecord>
-  nameWithType.vb: List(Of IDataRecord)
-  fullName.vb: System.Collections.Generic.List(Of System.Data.IDataRecord)
-  name.vb: List(Of IDataRecord)
+  name: List<Dictionary<String, Object>>
+  nameWithType: List<Dictionary<String, Object>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.Dictionary<System.String, System.Object>>
+  nameWithType.vb: List(Of Dictionary(Of String, Object))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: List(Of Dictionary(Of String, Object))
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
@@ -749,11 +948,30 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.Data.IDataRecord
-    name: IDataRecord
-    nameWithType: IDataRecord
-    fullName: System.Data.IDataRecord
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
     isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -766,11 +984,30 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.Data.IDataRecord
-    name: IDataRecord
-    nameWithType: IDataRecord
-    fullName: System.Data.IDataRecord
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
     isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
   - name: )
     nameWithType: )
     fullName: )
@@ -813,16 +1050,123 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DataBaseAccess.DataAccessService.Update*
-  commentId: Overload:DataBaseAccess.DataAccessService.Update
-  name: Update
-  nameWithType: DataAccessService.Update
-  fullName: DataBaseAccess.DataAccessService.Update
 - uid: DataBaseAccess.DataAccessService.Scalar*
   commentId: Overload:DataBaseAccess.DataAccessService.Scalar
   name: Scalar
   nameWithType: DataAccessService.Scalar
   fullName: DataBaseAccess.DataAccessService.Scalar
+- uid: DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  parent: DataBaseAccess.IDataAccessService
+  isExternal: true
+  name: Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  nameWithType: IDataAccessService.Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.IDataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  nameWithType.vb: IDataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+  spec.csharp:
+  - uid: DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: Scalar<T>
+    nameWithType: IDataAccessService.Scalar<T>
+    fullName: DataBaseAccess.IDataAccessService.Scalar<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: Scalar(Of T)
+    nameWithType: IDataAccessService.Scalar(Of T)
+    fullName: DataBaseAccess.IDataAccessService.Scalar(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: '{T}'
   commentId: '!:T'
   definition: T

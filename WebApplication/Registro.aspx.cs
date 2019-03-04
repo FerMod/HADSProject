@@ -57,20 +57,9 @@ namespace WebApplication {
 			};
 
 			string displayName = "HADS";
+			string address = "noreply@ftudela001.ikasle.ehu.eus";
 			string subject = "Confirm Account";
 
-			/*
-			string text = $"Hi {textBoxName.Text} {textBoxLastName.Text}!\n\n";
-			text += $"Please click on this link to '{subject}': {parametizedUrl}\n\n";
-			text += "Thanks,\n";
-			text += "HADS Team.";
-
-			string html = $"Hi {textBoxName.Text} {textBoxLastName.Text}!<br /><br />";
-			html += $"Please confirm your account by clicking this link: <a href=\"{parametizedUrl}\">Confirm Account</a><br />";
-			html += $"Or click on the copy the following link on the browser: {HttpUtility.HtmlEncode(parametizedUrl)}<br /><br />";
-			html += "Thanks,<br />";
-			html += "HADS Team.";
-			*/
 			string emailTemplate = File.ReadAllText(HttpContext.Current.Server.MapPath("~/MailTemplates/AccountVerification.html"));
 
 			/*
@@ -97,10 +86,9 @@ namespace WebApplication {
 			string emailHtml = String.Format(emailTemplate, emailFields);
 
 			MailMessage mail = new MailMessage();
-			mail.From = new MailAddress("noreply@ftudela001.ikasle.ehu.eus", displayName);
+			mail.From = new MailAddress(address, displayName);
 			mail.To.Add(new MailAddress(textBoxEmail.Text));
 			mail.Subject = subject;
-			//mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
 			mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(emailHtml, null, MediaTypeNames.Text.Html));
 			mail.IsBodyHtml = true;
 
@@ -117,17 +105,16 @@ namespace WebApplication {
 					{ "@pass", textBoxPassword.Text }
 				};
 
-				int affectedRows = DataAccess.Insert(sql, parameters);
+				int affectedRows = DataAccess.NonQuery(sql, parameters);
 
 				if(affectedRows == 1) {
 					this.EmailService.SendEmail(mail);
 					Session["NotificationData"] = new NotificationData() {
 						Title = "Confirm Email",
-						Body = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>.",
+						Body = $"Confirmation email sent to <span class=\"font-weight-bold font-italic\">{textBoxEmail.Text}</span>. Please verify your account email.",
 						Level = AlertLevel.Info
 					};
-					// FIXME: TEMOPORAL LINE. REMOVE
-					(Session["NotificationData"] as NotificationData).Body += $"<br><br><strong><small><a href=\"{parametizedUrl}\">Ir a Pagina de Confirmacion de forma Directa</a></small></strong>";
+					//Session["NotificationData"] as NotificationData).Body += $"<br><br><strong><small><a href=\"{parametizedUrl}\">Ir a Pagina de Confirmacion de forma Directa</a></small></strong>";
 					Response.Redirect("/WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");

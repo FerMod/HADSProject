@@ -1,9 +1,8 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataBaseAccess.Extensions {
 
@@ -12,6 +11,12 @@ namespace DataBaseAccess.Extensions {
 		public static IEnumerable<T> Select<T>(this IDataReader reader, Func<IDataReader, T> projection) {
 			while(reader.Read()) {
 				yield return projection(reader);
+			}
+		}
+
+		public static IEnumerable<Dictionary<string, object>> GetDataDictionary(this IDataReader reader) {
+			while(reader.Read()) { 
+				yield return Enumerable.Range(0, reader.FieldCount).ToDictionary(reader.GetName, reader.GetValue);
 			}
 		}
 

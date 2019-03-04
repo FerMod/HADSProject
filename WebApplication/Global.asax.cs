@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
@@ -41,7 +42,7 @@ namespace WebApplication {
 			Application.Lock();
 			dataService = Application["DataAccess"] as DataAccessService;
 			Application.UnLock();
-			dataService.Query("DELETE FROM dbo.Usuarios");
+			dataService.NonQuery("DELETE FROM Usuarios WHERE email = 'tudelaigarcia@gmail.com'");
 #endif
 		}
 
