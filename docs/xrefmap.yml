@@ -39,22 +39,22 @@ references:
   isSpec: "True"
   fullName: DataBaseAccess.DataAccessService.ConnectionString
   nameWithType: DataAccessService.ConnectionString
-- uid: DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  name: Insert(String, Dictionary<String, Object>, CommandType)
-  href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Insert_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
-  commentId: M:DataBaseAccess.DataAccessService.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  name.vb: Insert(String, Dictionary(Of String, Object), CommandType)
-  fullName: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
-  fullName.vb: DataBaseAccess.DataAccessService.Insert(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
-  nameWithType: DataAccessService.Insert(String, Dictionary<String, Object>, CommandType)
-  nameWithType.vb: DataAccessService.Insert(String, Dictionary(Of String, Object), CommandType)
-- uid: DataBaseAccess.DataAccessService.Insert*
-  name: Insert
-  href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Insert_
-  commentId: Overload:DataBaseAccess.DataAccessService.Insert
+- uid: DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: NonQuery(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_NonQuery_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: NonQuery(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: DataAccessService.NonQuery(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: DataAccessService.NonQuery(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.NonQuery*
+  name: NonQuery
+  href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_NonQuery_
+  commentId: Overload:DataBaseAccess.DataAccessService.NonQuery
   isSpec: "True"
-  fullName: DataBaseAccess.DataAccessService.Insert
-  nameWithType: DataAccessService.Insert
+  fullName: DataBaseAccess.DataAccessService.NonQuery
+  nameWithType: DataAccessService.NonQuery
 - uid: DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   name: Query(String, Dictionary<String, Object>, CommandType)
   href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
@@ -87,22 +87,6 @@ references:
   fullName.vb: DataBaseAccess.DataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
   nameWithType: DataAccessService.Scalar<T>(String, Dictionary<String, Object>, CommandType)
   nameWithType.vb: DataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
-- uid: DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  name: Update(String, Dictionary<String, Object>, CommandType)
-  href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Update_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
-  commentId: M:DataBaseAccess.DataAccessService.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
-  name.vb: Update(String, Dictionary(Of String, Object), CommandType)
-  fullName: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
-  fullName.vb: DataBaseAccess.DataAccessService.Update(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
-  nameWithType: DataAccessService.Update(String, Dictionary<String, Object>, CommandType)
-  nameWithType.vb: DataAccessService.Update(String, Dictionary(Of String, Object), CommandType)
-- uid: DataBaseAccess.DataAccessService.Update*
-  name: Update
-  href: api/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Update_
-  commentId: Overload:DataBaseAccess.DataAccessService.Update
-  isSpec: "True"
-  fullName: DataBaseAccess.DataAccessService.Update
-  nameWithType: DataAccessService.Update
 - uid: DataBaseAccess.Extensions
   name: DataBaseAccess.Extensions
   href: api/DataBaseAccess.Extensions.html
@@ -115,6 +99,19 @@ references:
   commentId: T:DataBaseAccess.Extensions.DataReaderExtension
   fullName: DataBaseAccess.Extensions.DataReaderExtension
   nameWithType: DataReaderExtension
+- uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
+  name: GetDataDictionary(IDataReader)
+  href: api/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataDictionary_System_Data_IDataReader_
+  commentId: M:DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
+  nameWithType: DataReaderExtension.GetDataDictionary(IDataReader)
+- uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary*
+  name: GetDataDictionary
+  href: api/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataDictionary_
+  commentId: Overload:DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary
+  isSpec: "True"
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary
+  nameWithType: DataReaderExtension.GetDataDictionary
 - uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords(System.Data.IDataReader)
   name: GetDataRecords(IDataReader)
   href: api/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataRecords_System_Data_IDataReader_
@@ -150,6 +147,67 @@ references:
   commentId: T:DataBaseAccess.IDataAccessService
   fullName: DataBaseAccess.IDataAccessService
   nameWithType: IDataAccessService
+- uid: DataBaseAccess.IDataAccessService.ConnectionString
+  name: ConnectionString
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_ConnectionString
+  commentId: P:DataBaseAccess.IDataAccessService.ConnectionString
+  fullName: DataBaseAccess.IDataAccessService.ConnectionString
+  nameWithType: IDataAccessService.ConnectionString
+- uid: DataBaseAccess.IDataAccessService.ConnectionString*
+  name: ConnectionString
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_ConnectionString_
+  commentId: Overload:DataBaseAccess.IDataAccessService.ConnectionString
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.ConnectionString
+  nameWithType: IDataAccessService.ConnectionString
+- uid: DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: NonQuery(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_NonQuery_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: NonQuery(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.NonQuery(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.NonQuery(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.IDataAccessService.NonQuery*
+  name: NonQuery
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_NonQuery_
+  commentId: Overload:DataBaseAccess.IDataAccessService.NonQuery
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.NonQuery
+  nameWithType: IDataAccessService.NonQuery
+- uid: DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: Query(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: Query(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.Query(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.Query(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.IDataAccessService.Query*
+  name: Query
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Query_
+  commentId: Overload:DataBaseAccess.IDataAccessService.Query
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.Query
+  nameWithType: IDataAccessService.Query
+- uid: DataBaseAccess.IDataAccessService.Scalar*
+  name: Scalar
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Scalar_
+  commentId: Overload:DataBaseAccess.IDataAccessService.Scalar
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.Scalar
+  nameWithType: IDataAccessService.Scalar
+- uid: DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
 - uid: EmailLib
   name: EmailLib
   href: api/EmailLib.html

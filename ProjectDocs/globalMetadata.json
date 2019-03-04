@@ -3,8 +3,17 @@
   "_appFooter": "Copyright © 2019 Ferran Tudela",
   "_appLogoPath": "images/logo.svg",
   "_appFaviconPath": "images/favicon.ico",
+  "_enableSearch": true,
+  "_enableNewTab": false,
+  "_disableNavbar": false,
   "_disableBreadcrumb": false,
+  "_disableToc": false,
   "_disableAffix": false,
-  "_disableContribution": false
+  "_disableContribution": false,
+  "_gitContribute": {
+    "repo": "https://github.com/FerMod/HADSProject",
+    "branch": "master",
+    "apiSpecFolder": "docs-ref-overwrite"
+  },
+  "_gitUrlPattern": "https://github.com/FerMod/HADSProject"
 }
-	
