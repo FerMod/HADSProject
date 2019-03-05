@@ -14,7 +14,7 @@ items:
   type: Class
   source:
     id: EmailSent
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Confirmar.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Confirmar.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication

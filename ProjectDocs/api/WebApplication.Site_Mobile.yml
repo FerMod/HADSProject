@@ -19,7 +19,7 @@ items:
   type: Class
   source:
     id: Site_Mobile
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -232,7 +232,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Mobile.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -263,7 +263,7 @@ items:
   type: Field
   source:
     id: HeadContent
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -293,7 +293,7 @@ items:
   type: Field
   source:
     id: form1
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -323,7 +323,7 @@ items:
   type: Field
   source:
     id: FeaturedContent
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -353,7 +353,7 @@ items:
   type: Field
   source:
     id: MainContent
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 48
   assemblies:
   - WebApplication

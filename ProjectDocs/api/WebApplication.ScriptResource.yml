@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: ScriptResource
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -54,7 +54,7 @@ items:
   type: Method
   source:
     id: RegisterJQuery
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
     startLine: 15
   assemblies:
   - WebApplication
@@ -91,7 +91,7 @@ items:
   type: Method
   source:
     id: RegisterBoostrap
-    path: D:\Users\Ferran\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
     startLine: 31
   assemblies:
   - WebApplication

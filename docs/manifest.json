@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Users/Ferran/source/repos/HADSProject/ProjectDocs",
+  "source_base_path": "D:/Users/Ferran Tudela/source/repos/HADSProject/ProjectDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -555,11 +555,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ResourceDocumentProcessor": {
