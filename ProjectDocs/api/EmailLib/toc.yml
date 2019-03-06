@@ -1,0 +1,8 @@
+### YamlMime:TableOfContent
+- uid: EmailLib
+  name: EmailLib
+  items:
+  - uid: EmailLib.EmailService
+    name: EmailService
+  - uid: EmailLib.SmtpServerConfig
+    name: SmtpServerConfig

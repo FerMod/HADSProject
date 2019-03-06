@@ -14,4 +14,9 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="apidoc\" />
+    <Folder Include="custom_template\" />
+  </ItemGroup>
+
 </Project>
