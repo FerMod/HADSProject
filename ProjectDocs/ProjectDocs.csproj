@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="apidoc\" />
+    <Folder Include="custom_template\" />
   </ItemGroup>
 
 </Project>
