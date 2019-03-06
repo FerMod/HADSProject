@@ -1,0 +1,20 @@
+{
+  "EmailLib": "EmailLib.yml",
+  "EmailLib.EmailService": "EmailLib.EmailService.yml",
+  "EmailLib.EmailService.#ctor(EmailLib.SmtpServerConfig)": "EmailLib.EmailService.yml",
+  "EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)": "EmailLib.EmailService.yml",
+  "EmailLib.EmailService.SmtpConfig": "EmailLib.EmailService.yml",
+  "EmailLib.SmtpServerConfig": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.Account": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.DeliveryMethod": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.EnableSsl": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.Equals(System.Object)": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.GetHashCode": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.Host": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.Password": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.Port": "EmailLib.SmtpServerConfig.yml",
+  "EmailLib.SmtpServerConfig.UseDefaultCredentials": "EmailLib.SmtpServerConfig.yml"
+}

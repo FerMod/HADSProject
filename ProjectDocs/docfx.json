@@ -4,40 +4,66 @@
       "src": [
         {
           "files": [
-            "DataBaseAccess/**.csproj",
-            "EmailLib/**.csproj",
-            "WebApplication/**.csproj"
+            "DataBaseAccess/*.csproj"
           ],
           "exclude": [
-            "obj/**",
-            "bin/**"
+            "**/bin/**",
+            "**/obj/**"
           ],
           "src": ".."
         }
       ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "properties": {
-        "TargetFramework": "net472"
-      }
+      "dest": "api/DataBaseAccess"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "EmailLib/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": ".."
+        }
+      ],
+      "dest": "api/EmailLib"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "WebApplication/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": ".."
+        }
+      ],
+      "dest": "api/WebApplication"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md",
-          "toc.md"
+          "index.md",
+          "toc.yml"
         ]
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
+          "api/**/*.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/**/*.yml",
+          "articles/**/*.md"
         ]
       }
     ],
@@ -51,11 +77,7 @@
     "overwrite": [
       {
         "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "wwwroot/**"
+          "apidoc/**/*.md"
         ]
       }
     ],
@@ -68,10 +90,6 @@
       "default"
     ],
     "postProcessors": [],
-    "markdownEngineName": "markdig",
-    "noLangKeyword": false,
-    "keepFileLink": false,
-    "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "markdownEngineName": "markdig"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "DataBaseAccess": "DataBaseAccess.yml",
+  "DataBaseAccess.DataAccessService": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.DataAccessService.#ctor(System.String)": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.DataAccessService.ConnectionString": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.Extensions": "DataBaseAccess.Extensions.yml",
+  "DataBaseAccess.Extensions.DataReaderExtension": "DataBaseAccess.Extensions.DataReaderExtension.yml",
+  "DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)": "DataBaseAccess.Extensions.DataReaderExtension.yml",
+  "DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords(System.Data.IDataReader)": "DataBaseAccess.Extensions.DataReaderExtension.yml",
+  "DataBaseAccess.Extensions.DataReaderExtension.Select``1(System.Data.IDataReader,System.Func{System.Data.IDataReader,``0})": "DataBaseAccess.Extensions.DataReaderExtension.yml",
+  "DataBaseAccess.IDataAccessService": "DataBaseAccess.IDataAccessService.yml",
+  "DataBaseAccess.IDataAccessService.ConnectionString": "DataBaseAccess.IDataAccessService.yml",
+  "DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.IDataAccessService.yml",
+  "DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.IDataAccessService.yml",
+  "DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.IDataAccessService.yml"
+}
