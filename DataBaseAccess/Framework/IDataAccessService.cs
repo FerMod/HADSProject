@@ -28,7 +28,7 @@ namespace DataBaseAccess {
 		/// <param name="parameters">The query aditional parameters</param>
 		/// <param name="commandType">Indicates how the query string will be interpreted. The default is <see cref="CommandType.Text" /></param>
 		/// <returns>A collection of rows returned by the query</returns>
-		List<Dictionary<string, object>> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
+		QueryResult Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
 
 		/// <summary> 
 		/// Retrieve a single value from a database.

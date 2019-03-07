@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
@@ -47,7 +48,7 @@ namespace WebApplication.UserPage {
 
 			string query = "SELECT codigo, Nombre FROM Asignaturas";
 
-			List<Dictionary<string, object>> queryResult = DataAccess.Query(query);
+			QueryResult queryResult = DataAccess.Query(query);
 
 			#region Table columns
 
@@ -59,14 +60,8 @@ namespace WebApplication.UserPage {
 
 			#region Table rows
 
-			foreach(var row in queryResult) {
-
-				DataRow dr = dt.NewRow();
-				dr[0] = row["codigo"];
-				dr[1] = row["Nombre"];
-
-				dt.Rows.Add(dr);
-
+			foreach(var row in queryResult.Rows) {
+				dt.Rows.Add(row);
 			}
 
 			#endregion

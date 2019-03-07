@@ -33,18 +33,18 @@ namespace WebApplication {
 
 			try {
 
-				List<Dictionary<string, object>> queryResult = DataAccess.Query(sql, parameters).ToList();
+				QueryResult queryResult = DataAccess.Query(sql, parameters);
 
-				if(queryResult.Count != 1) {
+				if(queryResult.Rows.Count != 1) {
 
 					Debug.WriteLine("Wrong credentials");
 
 				} else {
 
 					Session["IsLogged"] = true;
-					Session["Email"] = queryResult[0]["email"];
-					Session["Name"] = queryResult[0]["nombre"];
-					Session["LastName"] = queryResult[0]["apellidos"];
+					Session["Email"] = queryResult.Rows[0]["email"];
+					Session["Name"] = queryResult.Rows[0]["nombre"];
+					Session["LastName"] = queryResult.Rows[0]["apellidos"];
 
 					Response.Redirect("/Default");
 				}

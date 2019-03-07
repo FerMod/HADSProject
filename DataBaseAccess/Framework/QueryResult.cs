@@ -1,14 +1,15 @@
 ﻿
+using System.Collections;
 using System.Collections.Generic;
 
-namespace DataBaseAcces {
+namespace DataBaseAccess {
 
 	public class QueryResult {
 
-		public List<Dictionary<string, object>> Result { get; set; }
+		public List<Dictionary<string, object>> Rows { get; private set; }
 
 		public QueryResult(List<Dictionary<string, object>> result) {
-			this.Result = result;
+			this.Rows = result;
 		}
 
 	}
