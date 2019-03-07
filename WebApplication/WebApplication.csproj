@@ -126,8 +126,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="MailTemplates\AccountVerification.html" />
-    <Content Include="ManagedReference.extension.js" />
-    <Content Include="ManagedReference.overwrite.js" />
     <Content Include="plugins\HtmlAgilityPack.dll" />
     <Content Include="plugins\Microsoft.DocAsCode.Build.Common.dll" />
     <Content Include="plugins\Microsoft.DocAsCode.Build.MemberLevelManagedReference.dll" />
@@ -241,7 +239,6 @@
     <Content Include="plugins\System.Xml.XPath.dll" />
     <Content Include="plugins\System.Xml.XPath.XDocument.dll" />
     <Content Include="plugins\YamlDotNet.dll" />
-    <Content Include="toc.html.js" />
     <Content Include="WebNotification.aspx" />
     <None Include="packages.config" />
     <Content Include="partials\item.tmpl.partial" />
