@@ -51,7 +51,7 @@
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
+						<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>

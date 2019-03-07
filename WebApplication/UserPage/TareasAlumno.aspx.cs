@@ -3,27 +3,40 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Web.UI;
+using System.Web.UI.WebControls;
+using DataBaseAccess;
 
 namespace WebApplication.UserPage {
 
 	public partial class TareasAlumno : Page {
+
+		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
+		private DataView TasksDataView { get; set; }
 
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if(!IsPostBack) {
 				InitDropDownCourses();
 			}
-			
+
 		}
 
 		private void InitDropDownCourses() {
 
+			TasksDataView = CreateDataSource();
+
 			// Specify the data source and field names for the Text 
 			// and Value properties of the items (ListItem objects) 
 			// in the DropDownList control.
-			DropDownCourses.DataSource = CreateDataSource();
-			DropDownCourses.DataTextField = "TipoIvaName";
-			DropDownCourses.DataValueField = "TipoIvaValue";
+			DropDownCourses.DataSource = TasksDataView;
+			DropDownCourses.DataTextField = "CourseCode";
+			DropDownCourses.DataValueField = "CourseCode";
+
+			// Bind the data to the control
+			DropDownCourses.DataBind();
+
+			// Set the default selected item
+			DropDownCourses.SelectedIndex = 0;
 
 		}
 
@@ -32,25 +45,25 @@ namespace WebApplication.UserPage {
 			// Create a table to store data for the DropDownList control
 			DataTable dt = new DataTable();
 
+			string query = "SELECT codigo, Nombre FROM Asignaturas";
+
+			List<Dictionary<string, object>> queryResult = DataAccess.Query(query);
+
 			#region Table columns
 
 			// Define the columns of the table
-			dt.Columns.Add(new DataColumn("TipoIvaName", typeof(string)));
-			dt.Columns.Add(new DataColumn("TipoIvaValue", typeof(string)));
+			dt.Columns.Add(new DataColumn("CourseCode", typeof(string)));
+			dt.Columns.Add(new DataColumn("CourseName", typeof(string)));
 
 			#endregion
 
 			#region Table rows
 
-			List<string> enumArray = new List<string>() //TODO: Init list
-			int size = enumArray.Count;
-			for(int i = 0; i < size; i++) {
-
-				TipoIva tipoIva = enumArray[i];
+			foreach(var row in queryResult) {
 
 				DataRow dr = dt.NewRow();
-				dr[0] = tipoIva.GetName();
-				dr[1] = tipoIva;
+				dr[0] = row["codigo"];
+				dr[1] = row["Nombre"];
 
 				dt.Rows.Add(dr);
 
@@ -60,6 +73,41 @@ namespace WebApplication.UserPage {
 
 			// Create a DataView from the DataTable to act as the data source for the DropDownList control
 			return new DataView(dt);
+		}
+
+		protected void GridViewTasks_Sorting(object sender, GridViewSortEventArgs e) {
+
+			if(TasksDataView != null) {
+
+				//Sort the data.
+				TasksDataView.Table.DefaultView.Sort = $"{e.SortExpression} {GetSortDirection(e.SortExpression)}";
+				GridViewTasks.DataSource = TasksDataView;
+				GridViewTasks.DataBind();
+
+			}
+
+		}
+
+		private string GetSortDirection(string column) {
+
+			// By default, set the sort direction to ascending.
+			bool sortAsc = true;
+
+			// Retrieve the last column that was sorted, and check if the same column is being sorted.
+			if((ViewState["SortExpression"] is string sortExpression) && sortExpression == column) {
+
+				// Invert the direction of the sorting
+				if((ViewState["SortAsc"] is bool lastDirection) && sortAsc) {
+					sortAsc = !sortAsc;
+				}
+
+			}
+
+			// Save new values in ViewState.
+			ViewState["SortAsc"] = sortAsc;
+			ViewState["SortExpression"] = column;
+
+			return sortAsc ? "ASC" : "DESC";
 		}
 
 	}

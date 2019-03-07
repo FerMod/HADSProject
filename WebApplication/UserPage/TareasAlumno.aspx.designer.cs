@@ -11,5 +11,23 @@ namespace WebApplication.UserPage {
     
     
     public partial class TareasAlumno {
+        
+        /// <summary>
+        /// DropDownCourses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownCourses;
+        
+        /// <summary>
+        /// GridViewTasks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewTasks;
     }
 }

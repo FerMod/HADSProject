@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Linq;
 using DataBaseAccess;
 using WebApplication.Framework;
 
@@ -38,8 +38,8 @@ namespace WebApplication {
 					{ "@numConfir", code.ToString() }
 				};
 
-				List<Dictionary<string, object>> queryResult = DataAccess.Query(queryUser, parameters);
-
+				List<Dictionary<string, object>> queryResult = DataAccess.Query(queryUser, parameters).ToList();
+				
 				if(queryResult.Count != 1 || DataAccess.NonQuery(queryUpdate, parameters) != 1) {
 
 					notificationData.Title = "Could Not Verify Account";

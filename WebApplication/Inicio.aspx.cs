@@ -33,7 +33,7 @@ namespace WebApplication {
 
 			try {
 
-				List<Dictionary<string, object>> queryResult = DataAccess.Query(sql, parameters);
+				List<Dictionary<string, object>> queryResult = DataAccess.Query(sql, parameters).ToList();
 
 				if(queryResult.Count != 1) {
 
