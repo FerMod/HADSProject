@@ -29,12 +29,8 @@ items:
   fullName: WebApplication.Registro
   type: Class
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Registro
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -318,12 +314,8 @@ items:
   fullName: WebApplication.Registro.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Registro.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/Registro.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.cs
     startLine: 27
   assemblies:
   - WebApplication
@@ -353,12 +345,8 @@ items:
   fullName: WebApplication.Registro.ButtonCreateAccount_Click(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Registro.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonCreateAccount_Click
-    path: ../WebApplication/Registro.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -388,12 +376,8 @@ items:
   fullName: WebApplication.Registro.textBoxName
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxName
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -422,12 +406,8 @@ items:
   fullName: WebApplication.Registro.RequiredFieldName
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldName
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -456,12 +436,8 @@ items:
   fullName: WebApplication.Registro.textBoxLastName
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxLastName
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -490,12 +466,8 @@ items:
   fullName: WebApplication.Registro.RequiredFieldLastName
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldLastName
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -524,12 +496,8 @@ items:
   fullName: WebApplication.Registro.textBoxEmail
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxEmail
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -558,12 +526,8 @@ items:
   fullName: WebApplication.Registro.RequiredFieldEmail
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldEmail
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -592,12 +556,8 @@ items:
   fullName: WebApplication.Registro.EmailRegExpr
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: EmailRegExpr
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -626,12 +586,8 @@ items:
   fullName: WebApplication.Registro.textBoxPassword
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxPassword
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 84
   assemblies:
   - WebApplication
@@ -660,12 +616,8 @@ items:
   fullName: WebApplication.Registro.RequiredFieldPassword
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldPassword
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 93
   assemblies:
   - WebApplication
@@ -694,12 +646,8 @@ items:
   fullName: WebApplication.Registro.textBoxRepeatPassword
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxRepeatPassword
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 102
   assemblies:
   - WebApplication
@@ -728,12 +676,8 @@ items:
   fullName: WebApplication.Registro.RequiredFieldRepeatPassword
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldRepeatPassword
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 111
   assemblies:
   - WebApplication
@@ -762,12 +706,8 @@ items:
   fullName: WebApplication.Registro.CompareRepeatPassword
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: CompareRepeatPassword
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 120
   assemblies:
   - WebApplication
@@ -796,12 +736,8 @@ items:
   fullName: WebApplication.Registro.dropDownRol
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: dropDownRol
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 129
   assemblies:
   - WebApplication
@@ -830,12 +766,8 @@ items:
   fullName: WebApplication.Registro.buttonCreateAccount
   type: Field
   source:
-    remote:
-      path: WebApplication/Registro.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: buttonCreateAccount
-    path: ../WebApplication/Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
     startLine: 138
   assemblies:
   - WebApplication

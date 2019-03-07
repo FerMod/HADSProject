@@ -1483,6 +1483,105 @@ references:
   commentId: F:WebApplication.SiteMaster.userMenu
   fullName: WebApplication.SiteMaster.userMenu
   nameWithType: SiteMaster.userMenu
+- uid: WebApplication.UserPage
+  name: WebApplication.UserPage
+  href: api/WebApplication/WebApplication.UserPage.html
+  commentId: N:WebApplication.UserPage
+  fullName: WebApplication.UserPage
+  nameWithType: WebApplication.UserPage
+- uid: WebApplication.UserPage.InstanciarTarea
+  name: InstanciarTarea
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html
+  commentId: T:WebApplication.UserPage.InstanciarTarea
+  fullName: WebApplication.UserPage.InstanciarTarea
+  nameWithType: InstanciarTarea
+- uid: WebApplication.UserPage.InstanciarTarea.instantiateTask
+  name: instantiateTask
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_instantiateTask
+  commentId: F:WebApplication.UserPage.InstanciarTarea.instantiateTask
+  fullName: WebApplication.UserPage.InstanciarTarea.instantiateTask
+  nameWithType: InstanciarTarea.instantiateTask
+- uid: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
+  nameWithType: InstanciarTarea.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPage.InstanciarTarea.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Page_Load_
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPage.InstanciarTarea.Page_Load
+  nameWithType: InstanciarTarea.Page_Load
+- uid: WebApplication.UserPage.InstanciarTarea.studentTasks
+  name: studentTasks
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_studentTasks
+  commentId: F:WebApplication.UserPage.InstanciarTarea.studentTasks
+  fullName: WebApplication.UserPage.InstanciarTarea.studentTasks
+  nameWithType: InstanciarTarea.studentTasks
+- uid: WebApplication.UserPage.InstanciarTarea.UserPanel
+  name: UserPanel
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_UserPanel
+  commentId: F:WebApplication.UserPage.InstanciarTarea.UserPanel
+  fullName: WebApplication.UserPage.InstanciarTarea.UserPanel
+  nameWithType: InstanciarTarea.UserPanel
+- uid: WebApplication.UserPage.TareasAlumno
+  name: TareasAlumno
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html
+  commentId: T:WebApplication.UserPage.TareasAlumno
+  fullName: WebApplication.UserPage.TareasAlumno
+  nameWithType: TareasAlumno
+- uid: WebApplication.UserPage.TareasAlumno.instantiateTask
+  name: instantiateTask
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_instantiateTask
+  commentId: F:WebApplication.UserPage.TareasAlumno.instantiateTask
+  fullName: WebApplication.UserPage.TareasAlumno.instantiateTask
+  nameWithType: TareasAlumno.instantiateTask
+- uid: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object, System.EventArgs)
+  nameWithType: TareasAlumno.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPage.TareasAlumno.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Page_Load_
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPage.TareasAlumno.Page_Load
+  nameWithType: TareasAlumno.Page_Load
+- uid: WebApplication.UserPage.TareasAlumno.studentTasks
+  name: studentTasks
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_studentTasks
+  commentId: F:WebApplication.UserPage.TareasAlumno.studentTasks
+  fullName: WebApplication.UserPage.TareasAlumno.studentTasks
+  nameWithType: TareasAlumno.studentTasks
+- uid: WebApplication.UserPage.TareasAlumno.UserPanel
+  name: UserPanel
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_UserPanel
+  commentId: F:WebApplication.UserPage.TareasAlumno.UserPanel
+  fullName: WebApplication.UserPage.TareasAlumno.UserPanel
+  nameWithType: TareasAlumno.UserPanel
+- uid: WebApplication.UserTasks
+  name: UserTasks
+  href: api/WebApplication/WebApplication.UserTasks.html
+  commentId: T:WebApplication.UserTasks
+  fullName: WebApplication.UserTasks
+  nameWithType: UserTasks
+- uid: WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserTasks.Page_Load(System.Object, System.EventArgs)
+  nameWithType: UserTasks.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserTasks.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Page_Load_
+  commentId: Overload:WebApplication.UserTasks.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserTasks.Page_Load
+  nameWithType: UserTasks.Page_Load
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   href: api/WebApplication/WebApplication.Utils.html
