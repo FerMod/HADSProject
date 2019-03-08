@@ -46,6 +46,7 @@
     <Compile Include="Framework\DataAccessService.cs" />
     <Compile Include="Framework\DataReaderExtension.cs" />
     <Compile Include="Framework\IDataAccessService.cs" />
+    <Compile Include="Framework\QueryResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

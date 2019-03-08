@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Linq;
 using DataBaseAccess;
 using WebApplication.Framework;
 
@@ -38,9 +38,9 @@ namespace WebApplication {
 					{ "@numConfir", code.ToString() }
 				};
 
-				List<Dictionary<string, object>> queryResult = DataAccess.Query(queryUser, parameters);
+				QueryResult queryResult = DataAccess.Query(queryUser, parameters);
 
-				if(queryResult.Count != 1 || DataAccess.NonQuery(queryUpdate, parameters) != 1) {
+				if(queryResult.Rows.Count != 1 || DataAccess.NonQuery(queryUpdate, parameters) != 1) {
 
 					notificationData.Title = "Could Not Verify Account";
 					notificationData.Body = $"The email could not be validated. Please try again.";
@@ -49,9 +49,9 @@ namespace WebApplication {
 				} else {
 
 					Session["IsLogged"] = true;
-					Session["Email"] = queryResult[0]["email"];
-					Session["Name"] = queryResult[0]["nombre"];
-					Session["LastName"] = queryResult[0]["apellidos"];
+					Session["Email"] = queryResult.Rows[0]["email"];
+					Session["Name"] = queryResult.Rows[0]["nombre"];
+					Session["LastName"] = queryResult.Rows[0]["apellidos"];
 
 					notificationData.Title = "Account Confirmed";
 					notificationData.Body = $"Thank you! Email successfully validated.";

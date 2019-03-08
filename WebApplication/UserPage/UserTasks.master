@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UserTasks.master.cs" Inherits="WebApplication.UserTasks" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+	<div class="card">
+		<div class="card-header">
+			<ul class="nav nav-tabs card-header-tabs nav-fill">
+				<li class="nav-item"><asp:LinkButton ID="studentTasks" CssClass="nav-link" runat="server" PostBackUrl="~/UserPage/TareasAlumno" CausesValidation="False" Text="Generic Tasks" /></li>
+				<li class="nav-item"><asp:LinkButton ID="instantiateTask" CssClass="nav-link" runat="server" PostBackUrl="~/UserPage/InstanciarTarea" CausesValidation="False" Text="Instantiate Task" /></li>
+			</ul>
+		</div>
+		<asp:ContentPlaceHolder ID="UserContent" runat="server">
+        </asp:ContentPlaceHolder>
+	</div>
+	<script>
+		$(".nav .nav-link").on("click", function () {
+			$(".nav").find(".active").removeClass("active");
+			$(this).addClass("active");
+		});
+	</script>
+</asp:Content>

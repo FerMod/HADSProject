@@ -20,12 +20,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer
   type: Class
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SmtpServer
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 13
   assemblies:
   - WebApplication
@@ -62,12 +58,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.Account
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Account
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 18
   assemblies:
   - WebApplication
@@ -101,12 +93,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.Password
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Password
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 23
   assemblies:
   - WebApplication
@@ -140,12 +128,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.Host
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Host
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 28
   assemblies:
   - WebApplication
@@ -179,12 +163,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.Port
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Port
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 33
   assemblies:
   - WebApplication
@@ -218,12 +198,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.DeliveryMethod
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DeliveryMethod
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 38
   assemblies:
   - WebApplication
@@ -257,12 +233,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: UseDefaultCredentials
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 43
   assemblies:
   - WebApplication
@@ -296,12 +268,8 @@ items:
   fullName: WebApplication.AppConfig.SmtpServer.EnableSsl
   type: Property
   source:
-    remote:
-      path: WebApplication/AppConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: EnableSsl
-    path: ../WebApplication/AppConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
     startLine: 48
   assemblies:
   - WebApplication

@@ -18,12 +18,8 @@ items:
   fullName: WebApplication.Site_Mobile
   type: Class
   source:
-    remote:
-      path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Site_Mobile
-    path: ../WebApplication/Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -235,12 +231,8 @@ items:
   fullName: WebApplication.Site_Mobile.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Site.Mobile.Master.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/Site.Mobile.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -270,12 +262,8 @@ items:
   fullName: WebApplication.Site_Mobile.HeadContent
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: HeadContent
-    path: ../WebApplication/Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -304,12 +292,8 @@ items:
   fullName: WebApplication.Site_Mobile.form1
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: form1
-    path: ../WebApplication/Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -338,12 +322,8 @@ items:
   fullName: WebApplication.Site_Mobile.FeaturedContent
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: FeaturedContent
-    path: ../WebApplication/Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -372,12 +352,8 @@ items:
   fullName: WebApplication.Site_Mobile.MainContent
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: MainContent
-    path: ../WebApplication/Site.Mobile.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Mobile.Master.designer.cs
     startLine: 48
   assemblies:
   - WebApplication

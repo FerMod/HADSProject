@@ -36,6 +36,8 @@
     name: Site_Mobile
   - uid: WebApplication.SiteMaster
     name: SiteMaster
+  - uid: WebApplication.UserTasks
+    name: UserTasks
   - uid: WebApplication.ViewSwitcher
     name: ViewSwitcher
   - uid: WebApplication.WebNotification
@@ -54,6 +56,13 @@
   items:
   - uid: WebApplication.Framework.Extensions.DictionaryExtension
     name: DictionaryExtension
+- uid: WebApplication.UserPage
+  name: WebApplication.UserPage
+  items:
+  - uid: WebApplication.UserPage.InstanciarTarea
+    name: InstanciarTarea
+  - uid: WebApplication.UserPage.TareasAlumno
+    name: TareasAlumno
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   items:

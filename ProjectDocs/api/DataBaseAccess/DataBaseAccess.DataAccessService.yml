@@ -18,12 +18,8 @@ items:
   fullName: DataBaseAccess.DataAccessService
   type: Class
   source:
-    remote:
-      path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DataAccessService
-    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 9
   assemblies:
   - DataBaseAccess
@@ -63,12 +59,8 @@ items:
   fullName: DataBaseAccess.DataAccessService.ConnectionString
   type: Property
   source:
-    remote:
-      path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
-    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 11
   assemblies:
   - DataBaseAccess
@@ -100,12 +92,8 @@ items:
   fullName: DataBaseAccess.DataAccessService.DataAccessService(System.String)
   type: Constructor
   source:
-    remote:
-      path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
-    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 13
   assemblies:
   - DataBaseAccess
@@ -133,12 +121,8 @@ items:
   fullName: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
-    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 17
   assemblies:
   - DataBaseAccess
@@ -177,12 +161,8 @@ items:
   fullName: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Query
-    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 35
   assemblies:
   - DataBaseAccess
@@ -221,12 +201,8 @@ items:
   fullName: DataBaseAccess.DataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
-    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 55
   assemblies:
   - DataBaseAccess

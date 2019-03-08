@@ -33,7 +33,7 @@ namespace DataBaseAccess {
 			}
 		}
 
-		public List<Dictionary<string, object>> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
+		public QueryResult Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
 
 			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
 				connection.Open();
@@ -46,7 +46,7 @@ namespace DataBaseAccess {
 						}
 					}
 					IDataReader reader = command.ExecuteReader();
-					return reader.GetDataDictionary().ToList();
+					return new QueryResult(reader.GetDataDictionary().ToList());
 				}
 
 			}

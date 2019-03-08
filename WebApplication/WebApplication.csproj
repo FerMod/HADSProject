@@ -126,8 +126,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="MailTemplates\AccountVerification.html" />
-    <Content Include="ManagedReference.extension.js" />
-    <Content Include="ManagedReference.overwrite.js" />
     <Content Include="plugins\HtmlAgilityPack.dll" />
     <Content Include="plugins\Microsoft.DocAsCode.Build.Common.dll" />
     <Content Include="plugins\Microsoft.DocAsCode.Build.MemberLevelManagedReference.dll" />
@@ -241,13 +239,10 @@
     <Content Include="plugins\System.Xml.XPath.dll" />
     <Content Include="plugins\System.Xml.XPath.XDocument.dll" />
     <Content Include="plugins\YamlDotNet.dll" />
-    <Content Include="toc.html.js" />
+    <Content Include="UserPage\InstanciarTarea.aspx" />
+    <Content Include="UserPage\TareasAlumno.aspx" />
     <Content Include="WebNotification.aspx" />
     <None Include="packages.config" />
-    <Content Include="partials\item.tmpl.partial" />
-    <Content Include="partials\customMREFContent.tmpl.partial" />
-    <Content Include="partials\collection.tmpl.partial" />
-    <Content Include="partials\class.tmpl.partial" />
     <None Include="Properties\PublishProfiles\HADS18-Tudela - Web Deploy - DEBUG.pubxml" />
     <Content Include="Inicio.aspx" />
     <Content Include="Registro.aspx" />
@@ -395,6 +390,27 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserPage\InstanciarTarea.aspx.cs">
+      <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\InstanciarTarea.aspx.designer.cs">
+      <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\UserTasks.master.cs">
+      <DependentUpon>UserTasks.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\UserTasks.master.designer.cs">
+      <DependentUpon>UserTasks.master</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\TareasAlumno.aspx.cs">
+      <DependentUpon>TareasAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage\TareasAlumno.aspx.designer.cs">
+      <DependentUpon>TareasAlumno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Utils\JsonFile.cs" />
     <Compile Include="Utils\UrlUtils.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
@@ -428,6 +444,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="UserPage\UserTasks.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

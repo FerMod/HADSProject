@@ -21,14 +21,14 @@ namespace DataBaseAccess {
 		int NonQuery(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
 
 		/// <summary> 
-		/// Executes the passed sql query in the database and returns a <see cref="List{Dictionary{T}}" /> with elements of type <see cref="Dictionary{string, object}" />.
+		/// Executes the passed sql query in the database and returns a <see cref="List{T}" /> of elements of type <see cref="Dictionary{TKey, TValue}" />.
 		/// Each element in the list represents a row and each dictionary element represents a column. The column value can be accesed by its same.
 		/// </summary>
 		/// <param name="query">The sql query to execute</param>
 		/// <param name="parameters">The query aditional parameters</param>
 		/// <param name="commandType">Indicates how the query string will be interpreted. The default is <see cref="CommandType.Text" /></param>
-		/// <returns>The list of the rows returned by the query</returns>
-		List<Dictionary<string, object>> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
+		/// <returns>A collection of rows returned by the query</returns>
+		QueryResult Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
 
 		/// <summary> 
 		/// Retrieve a single value from a database.
