@@ -356,6 +356,7 @@
     </Compile>
     <Compile Include="Framework\Extensions\DictionaryExtension.cs" />
     <Compile Include="Framework\AlertLevel.cs" />
+    <Compile Include="Framework\Extensions\AttributeCollectionExtension.cs" />
     <Compile Include="Framework\NotificationData.cs" />
     <Compile Include="Framework\ParametizedUrl.cs" />
     <Compile Include="Global.asax.cs">

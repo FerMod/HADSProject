@@ -29,5 +29,17 @@ namespace WebApplication.UserPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewTasks;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebApplication.UserTasks Master {
+            get {
+                return ((WebApplication.UserTasks)(base.Master));
+            }
+        }
     }
 }

@@ -26,10 +26,12 @@ namespace WebApplication {
 		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
 
 		protected void Page_Load(object sender, EventArgs e) {
-			 
+
 			if((bool)Session["IsLogged"]) {
 				Response.Redirect("/Default");
 			}
+
+			Master.SetActiveNav(Account.ActiveNav.CreateAccount);
 
 			SmtpServerConfig smtpServerConfig = new SmtpServerConfig() {
 				Account = AppConfig.SmtpServer.Account,

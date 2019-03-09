@@ -11,5 +11,17 @@ namespace WebApplication.UserPage {
     
     
     public partial class InstanciarTarea {
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebApplication.UserTasks Master {
+            get {
+                return ((WebApplication.UserTasks)(base.Master));
+            }
+        }
     }
 }

@@ -21,6 +21,8 @@ namespace WebApplication {
 				Response.Redirect("/Default");
 			}
 
+			Master.SetActiveNav(Account.ActiveNav.LogIn);
+
 		}
 
 		protected void ButtonLogin_Click(object sender, EventArgs e) {

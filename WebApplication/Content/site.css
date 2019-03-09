@@ -38,23 +38,17 @@ textarea {
     max-width: 400px;
 }
 
-.auth-form-header {
-    background-color: transparent;
-    border: 0;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;
-    text-shadow: none;
-}
-
-.card,
-.card-header,
-.card-body {
-    background-color: #fff;
+.auth-form-header,
+.auth-form-body {
     border-color: rgb(216, 222, 226);
     border-style: solid;
     border-width: 1px;
     margin-bottom: 0;
+}
+
+.auth-form-header {
+    text-align: center;
+    text-shadow: none;
 }
 
 .auth-form-body {
@@ -64,9 +58,6 @@ textarea {
     border-top-style: solid;
     border-top-width: 1px;
     border-radius: 0 0 3px 3px;
-}
-
-.auth-form-body {
     border-top: 0;
     font-size: 14px;
     padding: 20px;
@@ -98,13 +89,13 @@ nav .container {
 .navbar-user {
     width: 305px;
     padding: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .navbar-user-logout {
     padding: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 /* Responsive: Portrait tablets and up */

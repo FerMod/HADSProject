@@ -1,6 +1,5 @@
 ﻿
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web.UI;
@@ -17,6 +16,7 @@ namespace WebApplication.UserPage {
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if(!IsPostBack) {
+				Master.SetActiveNav(UserTasks.ActiveNav.StudentTasks);
 				InitDropDownCourses();
 			}
 
@@ -61,7 +61,12 @@ namespace WebApplication.UserPage {
 			#region Table rows
 
 			foreach(var row in queryResult.Rows) {
-				dt.Rows.Add(row);
+
+				DataRow dr = dt.NewRow();
+				dr.ItemArray = row.Values.ToArray();
+
+				dt.Rows.Add(dr);
+
 			}
 
 			#endregion
