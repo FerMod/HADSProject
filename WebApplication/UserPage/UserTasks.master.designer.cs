@@ -13,22 +13,22 @@ namespace WebApplication {
     public partial class UserTasks {
         
         /// <summary>
-        /// studentTasks control.
+        /// StudentTasks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton studentTasks;
+        protected global::System.Web.UI.WebControls.LinkButton StudentTasks;
         
         /// <summary>
-        /// instantiateTask control.
+        /// InstantiateTask control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton instantiateTask;
+        protected global::System.Web.UI.WebControls.LinkButton InstantiateTask;
         
         /// <summary>
         /// UserContent control.
@@ -38,5 +38,17 @@ namespace WebApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder UserContent;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebApplication.SiteMaster Master {
+            get {
+                return ((WebApplication.SiteMaster)(base.Master));
+            }
+        }
     }
 }

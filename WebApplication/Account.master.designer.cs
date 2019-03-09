@@ -13,22 +13,22 @@ namespace WebApplication {
     public partial class Account {
         
         /// <summary>
-        /// logIn control.
+        /// LogIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton logIn;
+        protected global::System.Web.UI.WebControls.LinkButton LogIn;
         
         /// <summary>
-        /// createAccount control.
+        /// CreateAccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton createAccount;
+        protected global::System.Web.UI.WebControls.LinkButton CreateAccount;
         
         /// <summary>
         /// AccountCardBodyContent control.
@@ -38,5 +38,17 @@ namespace WebApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder AccountCardBodyContent;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebApplication.SiteMaster Master {
+            get {
+                return ((WebApplication.SiteMaster)(base.Master));
+            }
+        }
     }
 }

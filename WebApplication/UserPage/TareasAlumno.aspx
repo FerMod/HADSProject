@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPage/UserTasks.master" AutoEventWireup="true" CodeBehind="TareasAlumno.aspx.cs" Inherits="WebApplication.UserPage.TareasAlumno" %>
+<%@ MasterType VirtualPath="~/UserPage/UserTasks.master" %>
 
 <asp:Content ID="StudentTasksContent" ContentPlaceHolderID="UserContent" runat="server">
 	<div class="card-body">

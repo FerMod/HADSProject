@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebApplication.Registro" MasterPageFile="~/Account.master" Title="Registro" %>
+<%@ MasterType VirtualPath="~/Account.master" %>
 
 <asp:Content ID="RegisterContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
 
