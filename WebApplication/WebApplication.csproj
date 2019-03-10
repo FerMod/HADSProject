@@ -118,7 +118,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Account.master" />
+    <Content Include="Account.Master" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
@@ -239,8 +239,8 @@
     <Content Include="plugins\System.Xml.XPath.dll" />
     <Content Include="plugins\System.Xml.XPath.XDocument.dll" />
     <Content Include="plugins\YamlDotNet.dll" />
-    <Content Include="UserPage\InstanciarTarea.aspx" />
-    <Content Include="UserPage\TareasAlumno.aspx" />
+    <Content Include="UserPages\InstanciarTarea.aspx" />
+    <Content Include="UserPages\TareasAlumno.aspx" />
     <Content Include="WebNotification.aspx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\HADS18-Tudela - Web Deploy - DEBUG.pubxml" />
@@ -308,12 +308,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.master.cs">
-      <DependentUpon>Account.master</DependentUpon>
+    <Compile Include="Account.Master.cs">
+      <DependentUpon>Account.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account.master.designer.cs">
-      <DependentUpon>Account.master</DependentUpon>
+    <Compile Include="Account.Master.designer.cs">
+      <DependentUpon>Account.Master</DependentUpon>
     </Compile>
     <Compile Include="AppConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -391,26 +391,26 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\InstanciarTarea.aspx.cs">
+    <Compile Include="UserPages\InstanciarTarea.aspx.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPage\InstanciarTarea.aspx.designer.cs">
+    <Compile Include="UserPages\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\UserTasks.master.cs">
-      <DependentUpon>UserTasks.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPage\UserTasks.master.designer.cs">
-      <DependentUpon>UserTasks.master</DependentUpon>
-    </Compile>
-    <Compile Include="UserPage\TareasAlumno.aspx.cs">
+    <Compile Include="UserPages\TareasAlumno.aspx.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPage\TareasAlumno.aspx.designer.cs">
+    <Compile Include="UserPages\TareasAlumno.aspx.designer.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\UserHome.Master.cs">
+      <DependentUpon>UserHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\UserHome.Master.designer.cs">
+      <DependentUpon>UserHome.Master</DependentUpon>
     </Compile>
     <Compile Include="Utils\JsonFile.cs" />
     <Compile Include="Utils\UrlUtils.cs" />
@@ -445,7 +445,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="UserPage\UserTasks.master" />
+    <Content Include="UserPages\UserHome.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

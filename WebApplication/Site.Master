@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebApplication.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -48,54 +48,71 @@
                     </button>
                 </div>
 
-                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
-						<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
-
                 <%-- Non logged user menu --%>
-                <asp:Panel ID="userMenu" CssClass="navbar-collapse collapse w-100 order-3 dual-collapse2" Visible="true" runat="server">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="btn btn-link nav-link" href="~/Registro" runat="server" id="createAccountLink">Create Account</a></li>
-                        <li class="nav-item"><a class="btn btn-link nav-link" href="~/Inicio" runat="server" id="loginLink">Log In</a></li>
-                    </ul>
+                <asp:Panel ID="userMenu" CssClass="navbar-collapse" Visible="true" runat="server">
+
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="btn btn-link nav-link" href="~/Registro" runat="server" id="createAccountLink">Create Account</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" href="~/Inicio" runat="server" id="loginLink">Log In</a></li>
+                        </ul>
+                    </div>
+
                 </asp:Panel>
 
                 <%-- Logged user menu --%>
-                <asp:Panel ID="loggedUserMenu" CssClass="navbar-collapse collapse w-100 order-3 dual-collapse2" Visible="false" runat="server">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="btn btn-link nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Account</a>
-                            <div class="navbar-user-menu dropdown-menu dropdown-menu-right">
-                                <div class="navbar-user">
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <img src="http://placehold.it/120x120" alt="Profile Image" class="img-responsive" />
+                <asp:Panel ID="loggedUserMenu" CssClass="navbar-collapse" Visible="true" runat="server">
+
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/UserPages/TareasAlumno">Tareas</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="btn btn-link nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Account</a>
+                                <div class="navbar-user-menu dropdown-menu dropdown-menu-right">
+                                    <div class="navbar-user">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="http://placehold.it/120x120" alt="Profile Image" class="img-responsive" />
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>
+                                                    <asp:Label ID="LabelName" Text="Name" runat="server" />
+                                                    <asp:Label ID="LabelLastName" Text="LastName" runat="server" />
+                                                </span>
+                                                <p class="text-muted small">
+                                                    <asp:Label ID="LabelMail" Text="mail@gmail.com" runat="server" />
+                                                </p>
+                                                <asp:Button ID="ButtonViewProfile" CssClass="btn btn-primary btn-sm active" Text="View Profile" runat="server" OnClick="ButtonProfile_Click" />
+                                            </div>
                                         </div>
-                                        <div class="col-md-7">
-                                            <span>
-                                                <asp:Label ID="LabelName" Text="Name" runat="server" />
-                                                <asp:Label ID="LabelLastName" Text="LastName" runat="server" />
-                                            </span>
-                                            <p class="text-muted small"><asp:Label ID="LabelMail" Text="mail@gmail.com" runat="server" /></p>
-                                            <asp:Button ID="ButtonViewProfile" CssClass="btn btn-primary btn-sm active"  Text="View Profile" runat="server" OnClick="ButtonProfile_Click" />
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="navbar-user navbar-user-logout">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block" Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click" UseSubmitBehavior="False" CausesValidation="False" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="dropdown-divider"></div>
-                                <div class="navbar-user navbar-user-logout">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block"  Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click" UseSubmitBehavior="False" CausesValidation="False" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+
                 </asp:Panel>
 
             </div>
@@ -111,7 +128,6 @@
                 <p>&copy; <%: DateTime.Now.Year %> - HADS</p>
             </footer>
         </div>
-
     </form>
 </body>
 </html>

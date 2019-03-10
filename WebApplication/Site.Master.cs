@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Web.UI;
+using WebApplication.Framework.Extensions;
 
 namespace WebApplication {
 
