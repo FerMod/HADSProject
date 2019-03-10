@@ -5,10 +5,8 @@ items:
   id: InstanciarTarea
   parent: WebApplication.UserPage
   children:
-  - WebApplication.UserPage.InstanciarTarea.instantiateTask
+  - WebApplication.UserPage.InstanciarTarea.Master
   - WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPage.InstanciarTarea.studentTasks
-  - WebApplication.UserPage.InstanciarTarea.UserPanel
   langs:
   - csharp
   - vb
@@ -17,8 +15,12 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea
   type: Class
   source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: InstanciarTarea
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -113,7 +115,6 @@ items:
   - System.Web.UI.Page.AutoPostBackControl
   - System.Web.UI.Page.Header
   - System.Web.UI.Page.MaintainScrollPositionOnPostBack
-  - System.Web.UI.Page.Master
   - System.Web.UI.Page.MasterPageFile
   - System.Web.UI.Page.PageStatePersister
   - System.Web.UI.Page.Trace
@@ -302,9 +303,13 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.cs
-    startLine: 12
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    startLine: 14
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -321,96 +326,44 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPage.InstanciarTarea.studentTasks
-  commentId: F:WebApplication.UserPage.InstanciarTarea.studentTasks
-  id: studentTasks
+- uid: WebApplication.UserPage.InstanciarTarea.Master
+  commentId: P:WebApplication.UserPage.InstanciarTarea.Master
+  id: Master
   parent: WebApplication.UserPage.InstanciarTarea
   langs:
   - csharp
   - vb
-  name: studentTasks
-  nameWithType: InstanciarTarea.studentTasks
-  fullName: WebApplication.UserPage.InstanciarTarea.studentTasks
-  type: Field
+  name: Master
+  nameWithType: InstanciarTarea.Master
+  fullName: WebApplication.UserPage.InstanciarTarea.Master
+  type: Property
   source:
-    id: studentTasks
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
-    startLine: 21
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 20
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
-  summary: "\nstudentTasks control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
   example: []
   syntax:
-    content: protected LinkButton studentTasks
+    content: public UserTasks Master { get; }
+    parameters: []
     return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected studentTasks As LinkButton
+      type: WebApplication.UserTasks
+    content.vb: Public ReadOnly Property Master As UserTasks
+  overload: WebApplication.UserPage.InstanciarTarea.Master*
   modifiers.csharp:
-  - protected
+  - public
+  - get
   modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPage.InstanciarTarea.instantiateTask
-  commentId: F:WebApplication.UserPage.InstanciarTarea.instantiateTask
-  id: instantiateTask
-  parent: WebApplication.UserPage.InstanciarTarea
-  langs:
-  - csharp
-  - vb
-  name: instantiateTask
-  nameWithType: InstanciarTarea.instantiateTask
-  fullName: WebApplication.UserPage.InstanciarTarea.instantiateTask
-  type: Field
-  source:
-    id: instantiateTask
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
-    startLine: 30
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPage
-  summary: "\ninstantiateTask control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected LinkButton instantiateTask
-    return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected instantiateTask As LinkButton
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPage.InstanciarTarea.UserPanel
-  commentId: F:WebApplication.UserPage.InstanciarTarea.UserPanel
-  id: UserPanel
-  parent: WebApplication.UserPage.InstanciarTarea
-  langs:
-  - csharp
-  - vb
-  name: UserPanel
-  nameWithType: InstanciarTarea.UserPanel
-  fullName: WebApplication.UserPage.InstanciarTarea.UserPanel
-  type: Field
-  source:
-    id: UserPanel
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
-    startLine: 39
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPage
-  summary: "\nUserPanel control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Panel UserPanel
-    return:
-      type: System.Web.UI.WebControls.Panel
-    content.vb: Protected UserPanel As Panel
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
+  - Public
+  - ReadOnly
 references:
 - uid: WebApplication.UserPage
   commentId: N:WebApplication.UserPage
@@ -2888,13 +2841,6 @@ references:
   name: MaintainScrollPositionOnPostBack
   nameWithType: Page.MaintainScrollPositionOnPostBack
   fullName: System.Web.UI.Page.MaintainScrollPositionOnPostBack
-- uid: System.Web.UI.Page.Master
-  commentId: P:System.Web.UI.Page.Master
-  parent: System.Web.UI.Page
-  isExternal: true
-  name: Master
-  nameWithType: Page.Master
-  fullName: System.Web.UI.Page.Master
 - uid: System.Web.UI.Page.MasterPageFile
   commentId: P:System.Web.UI.Page.MasterPageFile
   parent: System.Web.UI.Page
@@ -7428,23 +7374,19 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: System.Web.UI.WebControls.LinkButton
-  commentId: T:System.Web.UI.WebControls.LinkButton
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: LinkButton
-  nameWithType: LinkButton
-  fullName: System.Web.UI.WebControls.LinkButton
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.Panel
-  commentId: T:System.Web.UI.WebControls.Panel
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: Panel
-  nameWithType: Panel
-  fullName: System.Web.UI.WebControls.Panel
+- uid: WebApplication.UserPage.InstanciarTarea.Master*
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Master
+  name: Master
+  nameWithType: InstanciarTarea.Master
+  fullName: WebApplication.UserPage.InstanciarTarea.Master
+- uid: WebApplication.UserTasks
+  commentId: T:WebApplication.UserTasks
+  parent: WebApplication
+  name: UserTasks
+  nameWithType: UserTasks
+  fullName: WebApplication.UserTasks
+- uid: WebApplication
+  commentId: N:WebApplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication

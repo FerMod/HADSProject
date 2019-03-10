@@ -16,8 +16,12 @@ items:
   fullName: EmailLib.EmailService
   type: Class
   source:
+    remote:
+      path: EmailLib/Framework/EmailService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: EmailService
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\EmailService.cs
+    path: ../EmailLib/Framework/EmailService.cs
     startLine: 8
   assemblies:
   - EmailLib
@@ -53,8 +57,12 @@ items:
   fullName: EmailLib.EmailService.SmtpConfig
   type: Property
   source:
+    remote:
+      path: EmailLib/Framework/EmailService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: SmtpConfig
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\EmailService.cs
+    path: ../EmailLib/Framework/EmailService.cs
     startLine: 13
   assemblies:
   - EmailLib
@@ -84,8 +92,12 @@ items:
   fullName: EmailLib.EmailService.EmailService(EmailLib.SmtpServerConfig)
   type: Constructor
   source:
+    remote:
+      path: EmailLib/Framework/EmailService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\EmailService.cs
+    path: ../EmailLib/Framework/EmailService.cs
     startLine: 15
   assemblies:
   - EmailLib
@@ -113,8 +125,12 @@ items:
   fullName: EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
   type: Method
   source:
+    remote:
+      path: EmailLib/Framework/EmailService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: SendEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\EmailService.cs
+    path: ../EmailLib/Framework/EmailService.cs
     startLine: 29
   assemblies:
   - EmailLib

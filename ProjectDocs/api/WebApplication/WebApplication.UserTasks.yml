@@ -5,7 +5,9 @@ items:
   id: UserTasks
   parent: WebApplication
   children:
+  - WebApplication.UserTasks.Master
   - WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.UserTasks.UserContent
   langs:
   - csharp
   - vb
@@ -14,8 +16,12 @@ items:
   fullName: WebApplication.UserTasks
   type: Class
   source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: UserTasks
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\UserTasks.master.designer.cs
+    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -50,7 +56,6 @@ items:
   - System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(System.Web.UI.Control,System.Web.UI.ITemplate)
   - System.Web.UI.MasterPage.ContentTemplates
   - System.Web.UI.MasterPage.ContentPlaceHolders
-  - System.Web.UI.MasterPage.Master
   - System.Web.UI.MasterPage.MasterPageFile
   - System.Web.UI.UserControl.OnInit(System.EventArgs)
   - System.Web.UI.UserControl.LoadViewState(System.Object)
@@ -227,9 +232,13 @@ items:
   fullName: WebApplication.UserTasks.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\UserTasks.master.cs
-    startLine: 8
+    path: ../WebApplication/UserPages/UserHome.Master.cs
+    startLine: 9
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -246,6 +255,78 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserTasks.UserContent
+  commentId: F:WebApplication.UserTasks.UserContent
+  id: UserContent
+  parent: WebApplication.UserTasks
+  langs:
+  - csharp
+  - vb
+  name: UserContent
+  nameWithType: UserTasks.UserContent
+  fullName: WebApplication.UserTasks.UserContent
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: UserContent
+    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nUserContent control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ContentPlaceHolder UserContent
+    return:
+      type: System.Web.UI.WebControls.ContentPlaceHolder
+    content.vb: Protected UserContent As ContentPlaceHolder
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserTasks.Master
+  commentId: P:WebApplication.UserTasks.Master
+  id: Master
+  parent: WebApplication.UserTasks
+  langs:
+  - csharp
+  - vb
+  name: Master
+  nameWithType: UserTasks.Master
+  fullName: WebApplication.UserTasks.Master
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    startLine: 29
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
+  example: []
+  syntax:
+    content: public SiteMaster Master { get; }
+    parameters: []
+    return:
+      type: WebApplication.SiteMaster
+    content.vb: Public ReadOnly Property Master As SiteMaster
+  overload: WebApplication.UserTasks.Master*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
 - uid: WebApplication
   commentId: N:WebApplication
@@ -499,13 +580,6 @@ references:
   name: ContentPlaceHolders
   nameWithType: MasterPage.ContentPlaceHolders
   fullName: System.Web.UI.MasterPage.ContentPlaceHolders
-- uid: System.Web.UI.MasterPage.Master
-  commentId: P:System.Web.UI.MasterPage.Master
-  parent: System.Web.UI.MasterPage
-  isExternal: true
-  name: Master
-  nameWithType: MasterPage.Master
-  fullName: System.Web.UI.MasterPage.Master
 - uid: System.Web.UI.MasterPage.MasterPageFile
   commentId: P:System.Web.UI.MasterPage.MasterPageFile
   parent: System.Web.UI.MasterPage
@@ -5341,3 +5415,27 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: System.Web.UI.WebControls.ContentPlaceHolder
+  commentId: T:System.Web.UI.WebControls.ContentPlaceHolder
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: ContentPlaceHolder
+  nameWithType: ContentPlaceHolder
+  fullName: System.Web.UI.WebControls.ContentPlaceHolder
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: WebApplication.UserTasks.Master*
+  commentId: Overload:WebApplication.UserTasks.Master
+  name: Master
+  nameWithType: UserTasks.Master
+  fullName: WebApplication.UserTasks.Master
+- uid: WebApplication.SiteMaster
+  commentId: T:WebApplication.SiteMaster
+  parent: WebApplication
+  name: SiteMaster
+  nameWithType: SiteMaster
+  fullName: WebApplication.SiteMaster

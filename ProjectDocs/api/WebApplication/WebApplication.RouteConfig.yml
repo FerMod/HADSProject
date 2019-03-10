@@ -14,8 +14,12 @@ items:
   fullName: WebApplication.RouteConfig
   type: Class
   source:
+    remote:
+      path: WebApplication/App_Start/RouteConfig.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RouteConfig
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\RouteConfig.cs
+    path: ../WebApplication/App_Start/RouteConfig.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -52,8 +56,12 @@ items:
   fullName: WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
   type: Method
   source:
+    remote:
+      path: WebApplication/App_Start/RouteConfig.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RegisterRoutes
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\RouteConfig.cs
+    path: ../WebApplication/App_Start/RouteConfig.cs
     startLine: 10
   assemblies:
   - WebApplication

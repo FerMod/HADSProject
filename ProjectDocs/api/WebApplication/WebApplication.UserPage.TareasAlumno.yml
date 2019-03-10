@@ -5,10 +5,13 @@ items:
   id: TareasAlumno
   parent: WebApplication.UserPage
   children:
-  - WebApplication.UserPage.TareasAlumno.instantiateTask
+  - WebApplication.UserPage.TareasAlumno.DropDownCourses
+  - WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  - WebApplication.UserPage.TareasAlumno.GridViewTasks
+  - WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  - WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  - WebApplication.UserPage.TareasAlumno.Master
   - WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPage.TareasAlumno.studentTasks
-  - WebApplication.UserPage.TareasAlumno.UserPanel
   langs:
   - csharp
   - vb
@@ -17,8 +20,12 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno
   type: Class
   source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: TareasAlumno
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\TareasAlumno.aspx.designer.cs
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -113,7 +120,6 @@ items:
   - System.Web.UI.Page.AutoPostBackControl
   - System.Web.UI.Page.Header
   - System.Web.UI.Page.MaintainScrollPositionOnPostBack
-  - System.Web.UI.Page.Master
   - System.Web.UI.Page.MasterPageFile
   - System.Web.UI.Page.PageStatePersister
   - System.Web.UI.Page.Trace
@@ -302,9 +308,13 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\TareasAlumno.aspx.cs
-    startLine: 8
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    startLine: 20
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -321,96 +331,217 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPage.TareasAlumno.studentTasks
-  commentId: F:WebApplication.UserPage.TareasAlumno.studentTasks
-  id: studentTasks
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  commentId: M:WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  id: GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
   parent: WebApplication.UserPage.TareasAlumno
   langs:
   - csharp
   - vb
-  name: studentTasks
-  nameWithType: TareasAlumno.studentTasks
-  fullName: WebApplication.UserPage.TareasAlumno.studentTasks
+  name: GridViewTasks_Sorting(Object, GridViewSortEventArgs)
+  nameWithType: TareasAlumno.GridViewTasks_Sorting(Object, GridViewSortEventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GridViewTasks_Sorting
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    startLine: 111
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  syntax:
+    content: protected void GridViewTasks_Sorting(object sender, GridViewSortEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Web.UI.WebControls.GridViewSortEventArgs
+    content.vb: Protected Sub GridViewTasks_Sorting(sender As Object, e As GridViewSortEventArgs)
+  overload: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  id: DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  parent: WebApplication.UserPage.TareasAlumno
+  langs:
+  - csharp
+  - vb
+  name: DropDownCourses_SelectedIndexChanged(Object, EventArgs)
+  nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged(Object, EventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DropDownCourses_SelectedIndexChanged
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    startLine: 148
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  syntax:
+    content: protected void DropDownCourses_SelectedIndexChanged(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub DropDownCourses_SelectedIndexChanged(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  commentId: M:WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  id: GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  parent: WebApplication.UserPage.TareasAlumno
+  langs:
+  - csharp
+  - vb
+  name: GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
+  nameWithType: TareasAlumno.GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object, System.Web.UI.WebControls.GridViewCommandEventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GridViewTasks_RowCommand
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    startLine: 163
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  syntax:
+    content: protected void GridViewTasks_RowCommand(object sender, GridViewCommandEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Web.UI.WebControls.GridViewCommandEventArgs
+    content.vb: Protected Sub GridViewTasks_RowCommand(sender As Object, e As GridViewCommandEventArgs)
+  overload: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses
+  commentId: F:WebApplication.UserPage.TareasAlumno.DropDownCourses
+  id: DropDownCourses
+  parent: WebApplication.UserPage.TareasAlumno
+  langs:
+  - csharp
+  - vb
+  name: DropDownCourses
+  nameWithType: TareasAlumno.DropDownCourses
+  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses
   type: Field
   source:
-    id: studentTasks
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\TareasAlumno.aspx.designer.cs
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DropDownCourses
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
-  summary: "\nstudentTasks control.\n"
+  summary: "\nDropDownCourses control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected LinkButton studentTasks
+    content: protected DropDownList DropDownCourses
     return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected studentTasks As LinkButton
+      type: System.Web.UI.WebControls.DropDownList
+    content.vb: Protected DropDownCourses As DropDownList
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPage.TareasAlumno.instantiateTask
-  commentId: F:WebApplication.UserPage.TareasAlumno.instantiateTask
-  id: instantiateTask
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks
+  commentId: F:WebApplication.UserPage.TareasAlumno.GridViewTasks
+  id: GridViewTasks
   parent: WebApplication.UserPage.TareasAlumno
   langs:
   - csharp
   - vb
-  name: instantiateTask
-  nameWithType: TareasAlumno.instantiateTask
-  fullName: WebApplication.UserPage.TareasAlumno.instantiateTask
+  name: GridViewTasks
+  nameWithType: TareasAlumno.GridViewTasks
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks
   type: Field
   source:
-    id: instantiateTask
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\TareasAlumno.aspx.designer.cs
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GridViewTasks
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
-  summary: "\ninstantiateTask control.\n"
+  summary: "\nGridViewTasks control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected LinkButton instantiateTask
+    content: protected GridView GridViewTasks
     return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected instantiateTask As LinkButton
+      type: System.Web.UI.WebControls.GridView
+    content.vb: Protected GridViewTasks As GridView
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPage.TareasAlumno.UserPanel
-  commentId: F:WebApplication.UserPage.TareasAlumno.UserPanel
-  id: UserPanel
+- uid: WebApplication.UserPage.TareasAlumno.Master
+  commentId: P:WebApplication.UserPage.TareasAlumno.Master
+  id: Master
   parent: WebApplication.UserPage.TareasAlumno
   langs:
   - csharp
   - vb
-  name: UserPanel
-  nameWithType: TareasAlumno.UserPanel
-  fullName: WebApplication.UserPage.TareasAlumno.UserPanel
-  type: Field
+  name: Master
+  nameWithType: TareasAlumno.Master
+  fullName: WebApplication.UserPage.TareasAlumno.Master
+  type: Property
   source:
-    id: UserPanel
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\TareasAlumno.aspx.designer.cs
-    startLine: 39
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    startLine: 38
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
-  summary: "\nUserPanel control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
   example: []
   syntax:
-    content: protected Panel UserPanel
+    content: public UserTasks Master { get; }
+    parameters: []
     return:
-      type: System.Web.UI.WebControls.Panel
-    content.vb: Protected UserPanel As Panel
+      type: WebApplication.UserTasks
+    content.vb: Public ReadOnly Property Master As UserTasks
+  overload: WebApplication.UserPage.TareasAlumno.Master*
   modifiers.csharp:
-  - protected
+  - public
+  - get
   modifiers.vb:
-  - Protected
+  - Public
+  - ReadOnly
 references:
 - uid: WebApplication.UserPage
   commentId: N:WebApplication.UserPage
@@ -2888,13 +3019,6 @@ references:
   name: MaintainScrollPositionOnPostBack
   nameWithType: Page.MaintainScrollPositionOnPostBack
   fullName: System.Web.UI.Page.MaintainScrollPositionOnPostBack
-- uid: System.Web.UI.Page.Master
-  commentId: P:System.Web.UI.Page.Master
-  parent: System.Web.UI.Page
-  isExternal: true
-  name: Master
-  nameWithType: Page.Master
-  fullName: System.Web.UI.Page.Master
 - uid: System.Web.UI.Page.MasterPageFile
   commentId: P:System.Web.UI.Page.MasterPageFile
   parent: System.Web.UI.Page
@@ -7428,23 +7552,68 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: System.Web.UI.WebControls.LinkButton
-  commentId: T:System.Web.UI.WebControls.LinkButton
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting*
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting
+  name: GridViewTasks_Sorting
+  nameWithType: TareasAlumno.GridViewTasks_Sorting
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting
+- uid: System.Web.UI.WebControls.GridViewSortEventArgs
+  commentId: T:System.Web.UI.WebControls.GridViewSortEventArgs
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: LinkButton
-  nameWithType: LinkButton
-  fullName: System.Web.UI.WebControls.LinkButton
+  name: GridViewSortEventArgs
+  nameWithType: GridViewSortEventArgs
+  fullName: System.Web.UI.WebControls.GridViewSortEventArgs
 - uid: System.Web.UI.WebControls
   commentId: N:System.Web.UI.WebControls
   isExternal: true
   name: System.Web.UI.WebControls
   nameWithType: System.Web.UI.WebControls
   fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.Panel
-  commentId: T:System.Web.UI.WebControls.Panel
+- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged*
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged
+  name: DropDownCourses_SelectedIndexChanged
+  nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged
+  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand*
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand
+  name: GridViewTasks_RowCommand
+  nameWithType: TareasAlumno.GridViewTasks_RowCommand
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand
+- uid: System.Web.UI.WebControls.GridViewCommandEventArgs
+  commentId: T:System.Web.UI.WebControls.GridViewCommandEventArgs
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: Panel
-  nameWithType: Panel
-  fullName: System.Web.UI.WebControls.Panel
+  name: GridViewCommandEventArgs
+  nameWithType: GridViewCommandEventArgs
+  fullName: System.Web.UI.WebControls.GridViewCommandEventArgs
+- uid: System.Web.UI.WebControls.DropDownList
+  commentId: T:System.Web.UI.WebControls.DropDownList
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: DropDownList
+  nameWithType: DropDownList
+  fullName: System.Web.UI.WebControls.DropDownList
+- uid: System.Web.UI.WebControls.GridView
+  commentId: T:System.Web.UI.WebControls.GridView
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: GridView
+  nameWithType: GridView
+  fullName: System.Web.UI.WebControls.GridView
+- uid: WebApplication.UserPage.TareasAlumno.Master*
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.Master
+  name: Master
+  nameWithType: TareasAlumno.Master
+  fullName: WebApplication.UserPage.TareasAlumno.Master
+- uid: WebApplication.UserTasks
+  commentId: T:WebApplication.UserTasks
+  parent: WebApplication
+  name: UserTasks
+  nameWithType: UserTasks
+  fullName: WebApplication.UserTasks
+- uid: WebApplication
+  commentId: N:WebApplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication

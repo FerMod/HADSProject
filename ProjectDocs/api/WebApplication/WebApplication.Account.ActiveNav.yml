@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Account.ActiveNav
+  commentId: T:WebApplication.Account.ActiveNav
+  id: Account.ActiveNav
+  parent: WebApplication
+  children:
+  - WebApplication.Account.ActiveNav.CreateAccount
+  - WebApplication.Account.ActiveNav.LogIn
+  - WebApplication.Account.ActiveNav.None
+  langs:
+  - csharp
+  - vb
+  name: Account.ActiveNav
+  nameWithType: Account.ActiveNav
+  fullName: WebApplication.Account.ActiveNav
+  type: Enum
+  source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ActiveNav
+    path: ../WebApplication/Account.Master.cs
+    startLine: 10
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: public enum ActiveNav
+    content.vb: Public Enum ActiveNav
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: WebApplication.Account.ActiveNav.None
+  commentId: F:WebApplication.Account.ActiveNav.None
+  id: None
+  parent: WebApplication.Account.ActiveNav
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Account.ActiveNav.None
+  fullName: WebApplication.Account.ActiveNav.None
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: None
+    path: ../WebApplication/Account.Master.cs
+    startLine: 11
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: None = -1
+    return:
+      type: WebApplication.Account.ActiveNav
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.Account.ActiveNav.LogIn
+  commentId: F:WebApplication.Account.ActiveNav.LogIn
+  id: LogIn
+  parent: WebApplication.Account.ActiveNav
+  langs:
+  - csharp
+  - vb
+  name: LogIn
+  nameWithType: Account.ActiveNav.LogIn
+  fullName: WebApplication.Account.ActiveNav.LogIn
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: LogIn
+    path: ../WebApplication/Account.Master.cs
+    startLine: 12
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: LogIn = 0
+    return:
+      type: WebApplication.Account.ActiveNav
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.Account.ActiveNav.CreateAccount
+  commentId: F:WebApplication.Account.ActiveNav.CreateAccount
+  id: CreateAccount
+  parent: WebApplication.Account.ActiveNav
+  langs:
+  - csharp
+  - vb
+  name: CreateAccount
+  nameWithType: Account.ActiveNav.CreateAccount
+  fullName: WebApplication.Account.ActiveNav.CreateAccount
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CreateAccount
+    path: ../WebApplication/Account.Master.cs
+    startLine: 13
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: CreateAccount = 1
+    return:
+      type: WebApplication.Account.ActiveNav
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: WebApplication
+  commentId: N:WebApplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication
+- uid: WebApplication.Account.ActiveNav
+  commentId: T:WebApplication.Account.ActiveNav
+  parent: WebApplication
+  name: Account.ActiveNav
+  nameWithType: Account.ActiveNav
+  fullName: WebApplication.Account.ActiveNav

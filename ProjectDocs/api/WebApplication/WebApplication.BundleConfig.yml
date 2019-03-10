@@ -14,8 +14,12 @@ items:
   fullName: WebApplication.BundleConfig
   type: Class
   source:
+    remote:
+      path: WebApplication/App_Start/BundleConfig.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: BundleConfig
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\BundleConfig.cs
+    path: ../WebApplication/App_Start/BundleConfig.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -52,8 +56,12 @@ items:
   fullName: WebApplication.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)
   type: Method
   source:
+    remote:
+      path: WebApplication/App_Start/BundleConfig.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RegisterBundles
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\BundleConfig.cs
+    path: ../WebApplication/App_Start/BundleConfig.cs
     startLine: 12
   assemblies:
   - WebApplication

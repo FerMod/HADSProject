@@ -13,8 +13,12 @@ items:
   fullName: WebApplication.AppConfig
   type: Class
   source:
+    remote:
+      path: WebApplication/AppConfig.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AppConfig
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: ../WebApplication/AppConfig.cs
     startLine: 11
   assemblies:
   - WebApplication

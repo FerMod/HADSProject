@@ -7,6 +7,7 @@ items:
   - WebApplication._Default
   - WebApplication.About
   - WebApplication.Account
+  - WebApplication.Account.ActiveNav
   - WebApplication.AppConfig
   - WebApplication.AppConfig.SmtpServer
   - WebApplication.BundleConfig
@@ -36,9 +37,16 @@ items:
 references:
 - uid: WebApplication.Account
   commentId: T:WebApplication.Account
+  parent: WebApplication
   name: Account
   nameWithType: Account
   fullName: WebApplication.Account
+- uid: WebApplication.Account.ActiveNav
+  commentId: T:WebApplication.Account.ActiveNav
+  parent: WebApplication
+  name: Account.ActiveNav
+  nameWithType: Account.ActiveNav
+  fullName: WebApplication.Account.ActiveNav
 - uid: WebApplication.AppConfig
   commentId: T:WebApplication.AppConfig
   name: AppConfig
@@ -111,6 +119,7 @@ references:
   fullName: WebApplication.Registro
 - uid: WebApplication.SiteMaster
   commentId: T:WebApplication.SiteMaster
+  parent: WebApplication
   name: SiteMaster
   nameWithType: SiteMaster
   fullName: WebApplication.SiteMaster
@@ -121,6 +130,7 @@ references:
   fullName: WebApplication.Site_Mobile
 - uid: WebApplication.UserTasks
   commentId: T:WebApplication.UserTasks
+  parent: WebApplication
   name: UserTasks
   nameWithType: UserTasks
   fullName: WebApplication.UserTasks
@@ -134,3 +144,8 @@ references:
   name: WebNotification
   nameWithType: WebNotification
   fullName: WebApplication.WebNotification
+- uid: WebApplication
+  commentId: N:WebApplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication

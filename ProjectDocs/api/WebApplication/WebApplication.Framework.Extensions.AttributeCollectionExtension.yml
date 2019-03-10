@@ -1,0 +1,801 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  commentId: T:WebApplication.Framework.Extensions.AttributeCollectionExtension
+  id: AttributeCollectionExtension
+  parent: WebApplication.Framework.Extensions
+  children:
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl,System.String[])
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl,System.String[])
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: AttributeCollectionExtension
+  nameWithType: AttributeCollectionExtension
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  type: Class
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: AttributeCollectionExtension
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 8
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  syntax:
+    content: public static class AttributeCollectionExtension
+    content.vb: Public Module AttributeCollectionExtension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl,System.String[])
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl,System.String[])
+  id: AddClass(System.Web.UI.WebControls.WebControl,System.String[])
+  isExtensionMethod: true
+  parent: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  langs:
+  - csharp
+  - vb
+  name: AddClass(WebControl, String[])
+  nameWithType: AttributeCollectionExtension.AddClass(WebControl, String[])
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl, System.String[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: AddClass
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 17
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  summary: "\nAdds to the control the class that with the passed name\n"
+  example: []
+  syntax:
+    content: public static void AddClass(this WebControl webControl, params string[] classNameParams)
+    parameters:
+    - id: webControl
+      type: System.Web.UI.WebControls.WebControl
+      description: The type the method operates on
+    - id: classNameParams
+      type: System.String[]
+      description: The class name to add
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddClass(webControl As WebControl, ParamArray classNameParams As String())
+  overload: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass*
+  nameWithType.vb: AttributeCollectionExtension.AddClass(WebControl, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl, System.String())
+  name.vb: AddClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  id: AddCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  isExtensionMethod: true
+  parent: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  langs:
+  - csharp
+  - vb
+  name: AddCssClass(WebControl, String[])
+  nameWithType: AttributeCollectionExtension.AddCssClass(WebControl, String[])
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl, System.String[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: AddCssClass
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  summary: "\nAdds to the control the class that with the passed name\n"
+  example: []
+  syntax:
+    content: public static void AddCssClass(this WebControl webControl, params string[] classNameParams)
+    parameters:
+    - id: webControl
+      type: System.Web.UI.WebControls.WebControl
+      description: The type the method operates on
+    - id: classNameParams
+      type: System.String[]
+      description: The class name to add
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddCssClass(webControl As WebControl, ParamArray classNameParams As String())
+  overload: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass*
+  nameWithType.vb: AttributeCollectionExtension.AddCssClass(WebControl, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl, System.String())
+  name.vb: AddCssClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl,System.String[])
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl,System.String[])
+  id: RemoveClass(System.Web.UI.WebControls.WebControl,System.String[])
+  isExtensionMethod: true
+  parent: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  langs:
+  - csharp
+  - vb
+  name: RemoveClass(WebControl, String[])
+  nameWithType: AttributeCollectionExtension.RemoveClass(WebControl, String[])
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl, System.String[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: RemoveClass
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 40
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  summary: "\nRemoves the from the control the class that matches the name\n"
+  example: []
+  syntax:
+    content: public static void RemoveClass(this WebControl webControl, params string[] classNameParams)
+    parameters:
+    - id: webControl
+      type: System.Web.UI.WebControls.WebControl
+      description: The type the method operates on
+    - id: classNameParams
+      type: System.String[]
+      description: The class name to remove
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveClass(webControl As WebControl, ParamArray classNameParams As String())
+  overload: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass*
+  nameWithType.vb: AttributeCollectionExtension.RemoveClass(WebControl, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl, System.String())
+  name.vb: RemoveClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  id: RemoveCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  isExtensionMethod: true
+  parent: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  langs:
+  - csharp
+  - vb
+  name: RemoveCssClass(WebControl, String[])
+  nameWithType: AttributeCollectionExtension.RemoveCssClass(WebControl, String[])
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl, System.String[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: RemoveCssClass
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 53
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  summary: "\nRemoves the from the control the class that matches the name\n"
+  example: []
+  syntax:
+    content: public static void RemoveCssClass(this WebControl webControl, params string[] classNameParams)
+    parameters:
+    - id: webControl
+      type: System.Web.UI.WebControls.WebControl
+      description: The type the method operates on
+    - id: classNameParams
+      type: System.String[]
+      description: The class name to remove
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveCssClass(webControl As WebControl, ParamArray classNameParams As String())
+  overload: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass*
+  nameWithType.vb: AttributeCollectionExtension.RemoveCssClass(WebControl, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl, System.String())
+  name.vb: RemoveCssClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  id: GetClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  langs:
+  - csharp
+  - vb
+  name: GetClassesExcept(WebControl, IEnumerable<String>)
+  nameWithType: AttributeCollectionExtension.GetClassesExcept(WebControl, IEnumerable<String>)
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GetClassesExcept
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 64
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  summary: "\nReturns the classes excluding the ones passed as parameters\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> GetClassesExcept(this WebControl webControl, IEnumerable<string> classNames)
+    parameters:
+    - id: webControl
+      type: System.Web.UI.WebControls.WebControl
+      description: The type the method operates on
+    - id: classNames
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The class name that will be excluded from the result
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetClassesExcept(webControl As WebControl, classNames As IEnumerable(Of String)) As IEnumerable(Of String)
+  overload: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept*
+  nameWithType.vb: AttributeCollectionExtension.GetClassesExcept(WebControl, IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: GetClassesExcept(WebControl, IEnumerable(Of String))
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  id: GetCssClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  langs:
+  - csharp
+  - vb
+  name: GetCssClassesExcept(WebControl, IEnumerable<String>)
+  nameWithType: AttributeCollectionExtension.GetCssClassesExcept(WebControl, IEnumerable<String>)
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GetCssClassesExcept
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+    startLine: 75
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework.Extensions
+  summary: "\nReturns the classes excluding the ones passed as parameters\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> GetCssClassesExcept(this WebControl webControl, IEnumerable<string> classNames)
+    parameters:
+    - id: webControl
+      type: System.Web.UI.WebControls.WebControl
+      description: The type the method operates on
+    - id: classNames
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The class name that will be excluded from the result
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetCssClassesExcept(webControl As WebControl, classNames As IEnumerable(Of String)) As IEnumerable(Of String)
+  overload: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept*
+  nameWithType.vb: AttributeCollectionExtension.GetCssClassesExcept(WebControl, IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: GetCssClassesExcept(WebControl, IEnumerable(Of String))
+references:
+- uid: WebApplication.Framework.Extensions
+  commentId: N:WebApplication.Framework.Extensions
+  name: WebApplication.Framework.Extensions
+  nameWithType: WebApplication.Framework.Extensions
+  fullName: WebApplication.Framework.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass*
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass
+  name: AddClass
+  nameWithType: AttributeCollectionExtension.AddClass
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass
+- uid: System.Web.UI.WebControls.WebControl
+  commentId: T:System.Web.UI.WebControls.WebControl
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: WebControl
+  nameWithType: WebControl
+  fullName: System.Web.UI.WebControls.WebControl
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass*
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass
+  name: AddCssClass
+  nameWithType: AttributeCollectionExtension.AddCssClass
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass*
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass
+  name: RemoveClass
+  nameWithType: AttributeCollectionExtension.RemoveClass
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass*
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass
+  name: RemoveCssClass
+  nameWithType: AttributeCollectionExtension.RemoveCssClass
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept*
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept
+  name: GetClassesExcept
+  nameWithType: AttributeCollectionExtension.GetClassesExcept
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept*
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept
+  name: GetCssClassesExcept
+  nameWithType: AttributeCollectionExtension.GetCssClassesExcept
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept

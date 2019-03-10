@@ -6,6 +6,7 @@ items:
   children:
   - DataBaseAccess.DataAccessService
   - DataBaseAccess.IDataAccessService
+  - DataBaseAccess.QueryResult
   langs:
   - csharp
   - vb
@@ -27,6 +28,12 @@ references:
   name: IDataAccessService
   nameWithType: IDataAccessService
   fullName: DataBaseAccess.IDataAccessService
+- uid: DataBaseAccess.QueryResult
+  commentId: T:DataBaseAccess.QueryResult
+  parent: DataBaseAccess
+  name: QueryResult
+  nameWithType: QueryResult
+  fullName: DataBaseAccess.QueryResult
 - uid: DataBaseAccess
   commentId: N:DataBaseAccess
   name: DataBaseAccess
