@@ -98,7 +98,6 @@ namespace WebApplication.UserPage {
 							"LEFT JOIN EstudiantesTareas " +
 							"ON TareasGenericas.Codigo = EstudiantesTareas.CodTarea " +
 							"WHERE EstudiantesTareas.Email = @Email " +
-							/*"AND  TareasGenericas.CodAsig = @CodAsig " +*/
 							"AND TareasGenericas.Explotacion = 1";
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
