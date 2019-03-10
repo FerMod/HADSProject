@@ -15,7 +15,6 @@ namespace WebApplication.UserPage {
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if(!IsPostBack) {
-				Master.SetActiveNav(UserTasks.ActiveNav.InstantiateTask);
 			}
 
 		}
