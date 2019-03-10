@@ -41,7 +41,14 @@ namespace DataBaseAccess {
 		/// <returns>The first column of the first row in the result set, or a <see langword="null" /> reference if the result set is empty.</returns>
 		T Scalar<T>(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
 
-
+		/// <summary>
+		/// Creates and returns a <see cref="DataTable"/> with the sql query string passed as parameter.
+		/// </summary>
+		/// <param name="query">The sql query to execute</param>
+		/// <param name="parameters">The query aditional parameters</param>
+		/// <param name="commandType">Indicates how the query string will be interpreted. The default is <see cref="CommandType.Text" /></param>
+		/// <returns>The created <see cref="DataTable"/></returns>
+		DataTable CreateQueryDataTable(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text);
 
 	}
 

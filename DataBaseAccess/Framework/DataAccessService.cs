@@ -72,6 +72,32 @@ namespace DataBaseAccess {
 
 		}
 
+		public DataTable CreateQueryDataTable(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text) {
+
+			using(SqlConnection connection = new SqlConnection(ConnectionString)) {
+				connection.Open();
+
+				using(SqlCommand command = new SqlCommand(query, connection)) {
+
+					command.CommandType = commandType;
+					if(parameters != null) {
+						foreach(var item in parameters) {
+							command.Parameters.AddWithValue(item.Key, item.Value);
+						}
+					}
+
+					DataTable dataTable = new DataTable();
+					using(SqlDataAdapter adapter = new SqlDataAdapter(command)) {
+						adapter.Fill(dataTable);
+					}
+
+					return dataTable;
+				}
+
+			}
+
+		}
+
 	}
 
 }
