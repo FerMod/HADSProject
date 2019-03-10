@@ -7,6 +7,8 @@ using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
+using WebApplication.Framework;
+using WebApplication.Utils;
 
 namespace WebApplication.UserPage {
 
@@ -158,6 +160,48 @@ namespace WebApplication.UserPage {
 			GridViewTasks.DataBind();
 
 		}
+
+		protected void GridViewTasks_RowCommand(object sender, GridViewCommandEventArgs e) {
+
+			// Check that the command is the correct one
+			if(e.CommandName.Equals("Instantiate")) {
+
+				// Obtain the row number
+				int rowIndex = Convert.ToInt32(e.CommandArgument);
+
+				// Retrieve the row that contains the button clicked
+				GridViewRow row = GridViewTasks.Rows[rowIndex];
+
+				// Obtain the column index by its name
+				int columnIndex = GetColumnIndexByName(row, "Codigo");
+
+				if(columnIndex == -1) {
+					throw new Exception("Could not find the column index for the given name.");
+				}
+
+				ParametizedUrl parametizedUrl = new ParametizedUrl($"{UrlUtils.UrlRoot}{Page.ResolveUrl(@"~/UserPages/InstanciarTarea")}") {
+					{"code", row.Cells[columnIndex].Text}
+				};
+
+				Response.Redirect(parametizedUrl);
+
+			}
+
+		}
+
+		private int GetColumnIndexByName(GridViewRow row, string columnName) {
+
+			int columnIndex = 0;
+			foreach(DataControlFieldCell cell in row.Cells) {
+				if((cell.ContainingField is BoundField containingField) && containingField.DataField.Equals(columnName)) {
+					return columnIndex;
+				}
+				columnIndex++;
+			}
+
+			return -1;
+		}
+
 	}
 
 }
