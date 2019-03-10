@@ -11,10 +11,10 @@
     </div>
 
     <div class="form-group">
-        <asp:GridView ID="GridViewTasks" CssClass="table table-hover" runat="server" TabIndex="2" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" AllowSorting="True" AllowPaging="True" PageSize="10" OnSorting="GridViewTasks_Sorting" EmptyDataText="No tasks available.">
+        <asp:GridView ID="GridViewTasks" CssClass="table table-hover" runat="server" TabIndex="2" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" AllowSorting="True" AllowPaging="True" PageSize="10" OnSorting="GridViewTasks_Sorting" EmptyDataText="No tasks available." OnRowCommand="GridViewTasks_RowCommand">
             <HeaderStyle CssClass="table-striped thead-dark" />
             <Columns>
-                <asp:ButtonField ButtonType="Button" Text="Instantiate" />
+                <asp:ButtonField ButtonType="Button" Text="Instantiate" CommandName="Instantiate" />
                 <asp:BoundField HeaderText="Code" DataField="Codigo" SortExpression="Codigo" />
                 <asp:BoundField HeaderText="Description" DataField="Descripcion" SortExpression="Descripcion" />
                 <asp:BoundField HeaderText="Hours" DataField="HEstimadas" SortExpression="HEstimadas" />
