@@ -14,8 +14,12 @@ items:
   fullName: WebApplication.Contact
   type: Class
   source:
+    remote:
+      path: WebApplication/Contact.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Contact
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Contact.aspx.designer.cs
+    path: ../WebApplication/Contact.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -299,8 +303,12 @@ items:
   fullName: WebApplication.Contact.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Contact.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Contact.aspx.cs
+    path: ../WebApplication/Contact.aspx.cs
     startLine: 11
   assemblies:
   - WebApplication

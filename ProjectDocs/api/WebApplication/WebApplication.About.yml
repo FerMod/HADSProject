@@ -14,8 +14,12 @@ items:
   fullName: WebApplication.About
   type: Class
   source:
+    remote:
+      path: WebApplication/About.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: About
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\About.aspx.designer.cs
+    path: ../WebApplication/About.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -299,8 +303,12 @@ items:
   fullName: WebApplication.About.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/About.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\About.aspx.cs
+    path: ../WebApplication/About.aspx.cs
     startLine: 9
   assemblies:
   - WebApplication

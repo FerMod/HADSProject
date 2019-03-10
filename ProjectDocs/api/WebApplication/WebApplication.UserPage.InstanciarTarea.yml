@@ -5,6 +5,7 @@ items:
   id: InstanciarTarea
   parent: WebApplication.UserPage
   children:
+  - WebApplication.UserPage.InstanciarTarea.Master
   - WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
   langs:
   - csharp
@@ -14,8 +15,12 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea
   type: Class
   source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: InstanciarTarea
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -110,7 +115,6 @@ items:
   - System.Web.UI.Page.AutoPostBackControl
   - System.Web.UI.Page.Header
   - System.Web.UI.Page.MaintainScrollPositionOnPostBack
-  - System.Web.UI.Page.Master
   - System.Web.UI.Page.MasterPageFile
   - System.Web.UI.Page.PageStatePersister
   - System.Web.UI.Page.Trace
@@ -299,9 +303,13 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\InstanciarTarea.aspx.cs
-    startLine: 12
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    startLine: 14
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -318,6 +326,44 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.Master
+  commentId: P:WebApplication.UserPage.InstanciarTarea.Master
+  id: Master
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: Master
+  nameWithType: InstanciarTarea.Master
+  fullName: WebApplication.UserPage.InstanciarTarea.Master
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 20
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
+  example: []
+  syntax:
+    content: public UserTasks Master { get; }
+    parameters: []
+    return:
+      type: WebApplication.UserTasks
+    content.vb: Public ReadOnly Property Master As UserTasks
+  overload: WebApplication.UserPage.InstanciarTarea.Master*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
 - uid: WebApplication.UserPage
   commentId: N:WebApplication.UserPage
@@ -2795,13 +2841,6 @@ references:
   name: MaintainScrollPositionOnPostBack
   nameWithType: Page.MaintainScrollPositionOnPostBack
   fullName: System.Web.UI.Page.MaintainScrollPositionOnPostBack
-- uid: System.Web.UI.Page.Master
-  commentId: P:System.Web.UI.Page.Master
-  parent: System.Web.UI.Page
-  isExternal: true
-  name: Master
-  nameWithType: Page.Master
-  fullName: System.Web.UI.Page.Master
 - uid: System.Web.UI.Page.MasterPageFile
   commentId: P:System.Web.UI.Page.MasterPageFile
   parent: System.Web.UI.Page
@@ -7335,3 +7374,19 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: WebApplication.UserPage.InstanciarTarea.Master*
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Master
+  name: Master
+  nameWithType: InstanciarTarea.Master
+  fullName: WebApplication.UserPage.InstanciarTarea.Master
+- uid: WebApplication.UserTasks
+  commentId: T:WebApplication.UserTasks
+  parent: WebApplication
+  name: UserTasks
+  nameWithType: UserTasks
+  fullName: WebApplication.UserTasks
+- uid: WebApplication
+  commentId: N:WebApplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication

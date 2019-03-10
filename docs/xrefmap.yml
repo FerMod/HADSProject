@@ -1,0 +1,2121 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: DataBaseAccess
+  name: DataBaseAccess
+  href: api/DataBaseAccess/DataBaseAccess.html
+  commentId: N:DataBaseAccess
+  fullName: DataBaseAccess
+  nameWithType: DataBaseAccess
+- uid: DataBaseAccess.DataAccessService
+  name: DataAccessService
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html
+  commentId: T:DataBaseAccess.DataAccessService
+  fullName: DataBaseAccess.DataAccessService
+  nameWithType: DataAccessService
+- uid: DataBaseAccess.DataAccessService.#ctor(System.String)
+  name: DataAccessService(String)
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService__ctor_System_String_
+  commentId: M:DataBaseAccess.DataAccessService.#ctor(System.String)
+  fullName: DataBaseAccess.DataAccessService.DataAccessService(System.String)
+  nameWithType: DataAccessService.DataAccessService(String)
+- uid: DataBaseAccess.DataAccessService.#ctor*
+  name: DataAccessService
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService__ctor_
+  commentId: Overload:DataBaseAccess.DataAccessService.#ctor
+  isSpec: "True"
+  fullName: DataBaseAccess.DataAccessService.DataAccessService
+  nameWithType: DataAccessService.DataAccessService
+- uid: DataBaseAccess.DataAccessService.ConnectionString
+  name: ConnectionString
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_ConnectionString
+  commentId: P:DataBaseAccess.DataAccessService.ConnectionString
+  fullName: DataBaseAccess.DataAccessService.ConnectionString
+  nameWithType: DataAccessService.ConnectionString
+- uid: DataBaseAccess.DataAccessService.ConnectionString*
+  name: ConnectionString
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_ConnectionString_
+  commentId: Overload:DataBaseAccess.DataAccessService.ConnectionString
+  isSpec: "True"
+  fullName: DataBaseAccess.DataAccessService.ConnectionString
+  nameWithType: DataAccessService.ConnectionString
+- uid: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_CreateQueryDataTable_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: DataAccessService.CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: DataAccessService.CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.CreateQueryDataTable*
+  name: CreateQueryDataTable
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_CreateQueryDataTable_
+  commentId: Overload:DataBaseAccess.DataAccessService.CreateQueryDataTable
+  isSpec: "True"
+  fullName: DataBaseAccess.DataAccessService.CreateQueryDataTable
+  nameWithType: DataAccessService.CreateQueryDataTable
+- uid: DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: NonQuery(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_NonQuery_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: NonQuery(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: DataAccessService.NonQuery(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: DataAccessService.NonQuery(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.NonQuery*
+  name: NonQuery
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_NonQuery_
+  commentId: Overload:DataBaseAccess.DataAccessService.NonQuery
+  isSpec: "True"
+  fullName: DataBaseAccess.DataAccessService.NonQuery
+  nameWithType: DataAccessService.NonQuery
+- uid: DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: Query(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: Query(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: DataAccessService.Query(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: DataAccessService.Query(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.Query*
+  name: Query
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Query_
+  commentId: Overload:DataBaseAccess.DataAccessService.Query
+  isSpec: "True"
+  fullName: DataBaseAccess.DataAccessService.Query
+  nameWithType: DataAccessService.Query
+- uid: DataBaseAccess.DataAccessService.Scalar*
+  name: Scalar
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Scalar_
+  commentId: Overload:DataBaseAccess.DataAccessService.Scalar
+  isSpec: "True"
+  fullName: DataBaseAccess.DataAccessService.Scalar
+  nameWithType: DataAccessService.Scalar
+- uid: DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.DataAccessService.html#DataBaseAccess_DataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.DataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.DataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: DataAccessService.Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: DataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.Extensions
+  name: DataBaseAccess.Extensions
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.html
+  commentId: N:DataBaseAccess.Extensions
+  fullName: DataBaseAccess.Extensions
+  nameWithType: DataBaseAccess.Extensions
+- uid: DataBaseAccess.Extensions.DataReaderExtension
+  name: DataReaderExtension
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html
+  commentId: T:DataBaseAccess.Extensions.DataReaderExtension
+  fullName: DataBaseAccess.Extensions.DataReaderExtension
+  nameWithType: DataReaderExtension
+- uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
+  name: GetDataDictionary(IDataReader)
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataDictionary_System_Data_IDataReader_
+  commentId: M:DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
+  nameWithType: DataReaderExtension.GetDataDictionary(IDataReader)
+- uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary*
+  name: GetDataDictionary
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataDictionary_
+  commentId: Overload:DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary
+  isSpec: "True"
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary
+  nameWithType: DataReaderExtension.GetDataDictionary
+- uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords(System.Data.IDataReader)
+  name: GetDataRecords(IDataReader)
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataRecords_System_Data_IDataReader_
+  commentId: M:DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords(System.Data.IDataReader)
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords(System.Data.IDataReader)
+  nameWithType: DataReaderExtension.GetDataRecords(IDataReader)
+- uid: DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords*
+  name: GetDataRecords
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_GetDataRecords_
+  commentId: Overload:DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords
+  isSpec: "True"
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords
+  nameWithType: DataReaderExtension.GetDataRecords
+- uid: DataBaseAccess.Extensions.DataReaderExtension.Select*
+  name: Select
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_Select_
+  commentId: Overload:DataBaseAccess.Extensions.DataReaderExtension.Select
+  isSpec: "True"
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.Select
+  nameWithType: DataReaderExtension.Select
+- uid: DataBaseAccess.Extensions.DataReaderExtension.Select``1(System.Data.IDataReader,System.Func{System.Data.IDataReader,``0})
+  name: Select<T>(IDataReader, Func<IDataReader, T>)
+  href: api/DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html#DataBaseAccess_Extensions_DataReaderExtension_Select__1_System_Data_IDataReader_System_Func_System_Data_IDataReader___0__
+  commentId: M:DataBaseAccess.Extensions.DataReaderExtension.Select``1(System.Data.IDataReader,System.Func{System.Data.IDataReader,``0})
+  name.vb: Select(Of T)(IDataReader, Func(Of IDataReader, T))
+  fullName: DataBaseAccess.Extensions.DataReaderExtension.Select<T>(System.Data.IDataReader, System.Func<System.Data.IDataReader, T>)
+  fullName.vb: DataBaseAccess.Extensions.DataReaderExtension.Select(Of T)(System.Data.IDataReader, System.Func(Of System.Data.IDataReader, T))
+  nameWithType: DataReaderExtension.Select<T>(IDataReader, Func<IDataReader, T>)
+  nameWithType.vb: DataReaderExtension.Select(Of T)(IDataReader, Func(Of IDataReader, T))
+- uid: DataBaseAccess.IDataAccessService
+  name: IDataAccessService
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html
+  commentId: T:DataBaseAccess.IDataAccessService
+  fullName: DataBaseAccess.IDataAccessService
+  nameWithType: IDataAccessService
+- uid: DataBaseAccess.IDataAccessService.ConnectionString
+  name: ConnectionString
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_ConnectionString
+  commentId: P:DataBaseAccess.IDataAccessService.ConnectionString
+  fullName: DataBaseAccess.IDataAccessService.ConnectionString
+  nameWithType: IDataAccessService.ConnectionString
+- uid: DataBaseAccess.IDataAccessService.ConnectionString*
+  name: ConnectionString
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_ConnectionString_
+  commentId: Overload:DataBaseAccess.IDataAccessService.ConnectionString
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.ConnectionString
+  nameWithType: IDataAccessService.ConnectionString
+- uid: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_CreateQueryDataTable_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.IDataAccessService.CreateQueryDataTable*
+  name: CreateQueryDataTable
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_CreateQueryDataTable_
+  commentId: Overload:DataBaseAccess.IDataAccessService.CreateQueryDataTable
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.CreateQueryDataTable
+  nameWithType: IDataAccessService.CreateQueryDataTable
+- uid: DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: NonQuery(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_NonQuery_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: NonQuery(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.NonQuery(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.NonQuery(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.IDataAccessService.NonQuery*
+  name: NonQuery
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_NonQuery_
+  commentId: Overload:DataBaseAccess.IDataAccessService.NonQuery
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.NonQuery
+  nameWithType: IDataAccessService.NonQuery
+- uid: DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: Query(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: Query(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.Query(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.Query(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.IDataAccessService.Query*
+  name: Query
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Query_
+  commentId: Overload:DataBaseAccess.IDataAccessService.Query
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.Query
+  nameWithType: IDataAccessService.Query
+- uid: DataBaseAccess.IDataAccessService.Scalar*
+  name: Scalar
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Scalar_
+  commentId: Overload:DataBaseAccess.IDataAccessService.Scalar
+  isSpec: "True"
+  fullName: DataBaseAccess.IDataAccessService.Scalar
+  nameWithType: IDataAccessService.Scalar
+- uid: DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name: Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  href: api/DataBaseAccess/DataBaseAccess.IDataAccessService.html#DataBaseAccess_IDataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_
+  commentId: M:DataBaseAccess.IDataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  name.vb: Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+  fullName: DataBaseAccess.IDataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  nameWithType: IDataAccessService.Scalar<T>(String, Dictionary<String, Object>, CommandType)
+  nameWithType.vb: IDataAccessService.Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.QueryResult
+  name: QueryResult
+  href: api/DataBaseAccess/DataBaseAccess.QueryResult.html
+  commentId: T:DataBaseAccess.QueryResult
+  fullName: DataBaseAccess.QueryResult
+  nameWithType: QueryResult
+- uid: DataBaseAccess.QueryResult.#ctor(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}})
+  name: QueryResult(List<Dictionary<String, Object>>)
+  href: api/DataBaseAccess/DataBaseAccess.QueryResult.html#DataBaseAccess_QueryResult__ctor_System_Collections_Generic_List_System_Collections_Generic_Dictionary_System_String_System_Object___
+  commentId: M:DataBaseAccess.QueryResult.#ctor(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}})
+  name.vb: QueryResult(List(Of Dictionary(Of String, Object)))
+  fullName: DataBaseAccess.QueryResult.QueryResult(System.Collections.Generic.List<System.Collections.Generic.Dictionary<System.String, System.Object>>)
+  fullName.vb: DataBaseAccess.QueryResult.QueryResult(System.Collections.Generic.List(Of System.Collections.Generic.Dictionary(Of System.String, System.Object)))
+  nameWithType: QueryResult.QueryResult(List<Dictionary<String, Object>>)
+  nameWithType.vb: QueryResult.QueryResult(List(Of Dictionary(Of String, Object)))
+- uid: DataBaseAccess.QueryResult.#ctor*
+  name: QueryResult
+  href: api/DataBaseAccess/DataBaseAccess.QueryResult.html#DataBaseAccess_QueryResult__ctor_
+  commentId: Overload:DataBaseAccess.QueryResult.#ctor
+  isSpec: "True"
+  fullName: DataBaseAccess.QueryResult.QueryResult
+  nameWithType: QueryResult.QueryResult
+- uid: DataBaseAccess.QueryResult.Rows
+  name: Rows
+  href: api/DataBaseAccess/DataBaseAccess.QueryResult.html#DataBaseAccess_QueryResult_Rows
+  commentId: P:DataBaseAccess.QueryResult.Rows
+  fullName: DataBaseAccess.QueryResult.Rows
+  nameWithType: QueryResult.Rows
+- uid: DataBaseAccess.QueryResult.Rows*
+  name: Rows
+  href: api/DataBaseAccess/DataBaseAccess.QueryResult.html#DataBaseAccess_QueryResult_Rows_
+  commentId: Overload:DataBaseAccess.QueryResult.Rows
+  isSpec: "True"
+  fullName: DataBaseAccess.QueryResult.Rows
+  nameWithType: QueryResult.Rows
+- uid: EmailLib
+  name: EmailLib
+  href: api/EmailLib/EmailLib.html
+  commentId: N:EmailLib
+  fullName: EmailLib
+  nameWithType: EmailLib
+- uid: EmailLib.EmailService
+  name: EmailService
+  href: api/EmailLib/EmailLib.EmailService.html
+  commentId: T:EmailLib.EmailService
+  fullName: EmailLib.EmailService
+  nameWithType: EmailService
+- uid: EmailLib.EmailService.#ctor(EmailLib.SmtpServerConfig)
+  name: EmailService(SmtpServerConfig)
+  href: api/EmailLib/EmailLib.EmailService.html#EmailLib_EmailService__ctor_EmailLib_SmtpServerConfig_
+  commentId: M:EmailLib.EmailService.#ctor(EmailLib.SmtpServerConfig)
+  fullName: EmailLib.EmailService.EmailService(EmailLib.SmtpServerConfig)
+  nameWithType: EmailService.EmailService(SmtpServerConfig)
+- uid: EmailLib.EmailService.#ctor*
+  name: EmailService
+  href: api/EmailLib/EmailLib.EmailService.html#EmailLib_EmailService__ctor_
+  commentId: Overload:EmailLib.EmailService.#ctor
+  isSpec: "True"
+  fullName: EmailLib.EmailService.EmailService
+  nameWithType: EmailService.EmailService
+- uid: EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
+  name: SendEmail(MailMessage)
+  href: api/EmailLib/EmailLib.EmailService.html#EmailLib_EmailService_SendEmail_System_Net_Mail_MailMessage_
+  commentId: M:EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
+  fullName: EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
+  nameWithType: EmailService.SendEmail(MailMessage)
+- uid: EmailLib.EmailService.SendEmail*
+  name: SendEmail
+  href: api/EmailLib/EmailLib.EmailService.html#EmailLib_EmailService_SendEmail_
+  commentId: Overload:EmailLib.EmailService.SendEmail
+  isSpec: "True"
+  fullName: EmailLib.EmailService.SendEmail
+  nameWithType: EmailService.SendEmail
+- uid: EmailLib.EmailService.SmtpConfig
+  name: SmtpConfig
+  href: api/EmailLib/EmailLib.EmailService.html#EmailLib_EmailService_SmtpConfig
+  commentId: P:EmailLib.EmailService.SmtpConfig
+  fullName: EmailLib.EmailService.SmtpConfig
+  nameWithType: EmailService.SmtpConfig
+- uid: EmailLib.EmailService.SmtpConfig*
+  name: SmtpConfig
+  href: api/EmailLib/EmailLib.EmailService.html#EmailLib_EmailService_SmtpConfig_
+  commentId: Overload:EmailLib.EmailService.SmtpConfig
+  isSpec: "True"
+  fullName: EmailLib.EmailService.SmtpConfig
+  nameWithType: EmailService.SmtpConfig
+- uid: EmailLib.SmtpServerConfig
+  name: SmtpServerConfig
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html
+  commentId: T:EmailLib.SmtpServerConfig
+  fullName: EmailLib.SmtpServerConfig
+  nameWithType: SmtpServerConfig
+- uid: EmailLib.SmtpServerConfig.Account
+  name: Account
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Account
+  commentId: P:EmailLib.SmtpServerConfig.Account
+  fullName: EmailLib.SmtpServerConfig.Account
+  nameWithType: SmtpServerConfig.Account
+- uid: EmailLib.SmtpServerConfig.Account*
+  name: Account
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Account_
+  commentId: Overload:EmailLib.SmtpServerConfig.Account
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Account
+  nameWithType: SmtpServerConfig.Account
+- uid: EmailLib.SmtpServerConfig.DeliveryMethod
+  name: DeliveryMethod
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_DeliveryMethod
+  commentId: P:EmailLib.SmtpServerConfig.DeliveryMethod
+  fullName: EmailLib.SmtpServerConfig.DeliveryMethod
+  nameWithType: SmtpServerConfig.DeliveryMethod
+- uid: EmailLib.SmtpServerConfig.DeliveryMethod*
+  name: DeliveryMethod
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_DeliveryMethod_
+  commentId: Overload:EmailLib.SmtpServerConfig.DeliveryMethod
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.DeliveryMethod
+  nameWithType: SmtpServerConfig.DeliveryMethod
+- uid: EmailLib.SmtpServerConfig.EnableSsl
+  name: EnableSsl
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_EnableSsl
+  commentId: P:EmailLib.SmtpServerConfig.EnableSsl
+  fullName: EmailLib.SmtpServerConfig.EnableSsl
+  nameWithType: SmtpServerConfig.EnableSsl
+- uid: EmailLib.SmtpServerConfig.EnableSsl*
+  name: EnableSsl
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_EnableSsl_
+  commentId: Overload:EmailLib.SmtpServerConfig.EnableSsl
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.EnableSsl
+  nameWithType: SmtpServerConfig.EnableSsl
+- uid: EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  name: Equals(SmtpServerConfig)
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Equals_EmailLib_SmtpServerConfig_
+  commentId: M:EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  fullName: EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
+  nameWithType: SmtpServerConfig.Equals(SmtpServerConfig)
+- uid: EmailLib.SmtpServerConfig.Equals(System.Object)
+  name: Equals(Object)
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Equals_System_Object_
+  commentId: M:EmailLib.SmtpServerConfig.Equals(System.Object)
+  fullName: EmailLib.SmtpServerConfig.Equals(System.Object)
+  nameWithType: SmtpServerConfig.Equals(Object)
+- uid: EmailLib.SmtpServerConfig.Equals*
+  name: Equals
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Equals_
+  commentId: Overload:EmailLib.SmtpServerConfig.Equals
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Equals
+  nameWithType: SmtpServerConfig.Equals
+- uid: EmailLib.SmtpServerConfig.GetHashCode
+  name: GetHashCode()
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_GetHashCode
+  commentId: M:EmailLib.SmtpServerConfig.GetHashCode
+  fullName: EmailLib.SmtpServerConfig.GetHashCode()
+  nameWithType: SmtpServerConfig.GetHashCode()
+- uid: EmailLib.SmtpServerConfig.GetHashCode*
+  name: GetHashCode
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_GetHashCode_
+  commentId: Overload:EmailLib.SmtpServerConfig.GetHashCode
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.GetHashCode
+  nameWithType: SmtpServerConfig.GetHashCode
+- uid: EmailLib.SmtpServerConfig.Host
+  name: Host
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Host
+  commentId: P:EmailLib.SmtpServerConfig.Host
+  fullName: EmailLib.SmtpServerConfig.Host
+  nameWithType: SmtpServerConfig.Host
+- uid: EmailLib.SmtpServerConfig.Host*
+  name: Host
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Host_
+  commentId: Overload:EmailLib.SmtpServerConfig.Host
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Host
+  nameWithType: SmtpServerConfig.Host
+- uid: EmailLib.SmtpServerConfig.op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  name: Equality(SmtpServerConfig, SmtpServerConfig)
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_op_Equality_EmailLib_SmtpServerConfig_EmailLib_SmtpServerConfig_
+  commentId: M:EmailLib.SmtpServerConfig.op_Equality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  fullName: EmailLib.SmtpServerConfig.Equality(EmailLib.SmtpServerConfig, EmailLib.SmtpServerConfig)
+  nameWithType: SmtpServerConfig.Equality(SmtpServerConfig, SmtpServerConfig)
+- uid: EmailLib.SmtpServerConfig.op_Equality*
+  name: Equality
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_op_Equality_
+  commentId: Overload:EmailLib.SmtpServerConfig.op_Equality
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Equality
+  nameWithType: SmtpServerConfig.Equality
+- uid: EmailLib.SmtpServerConfig.op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  name: Inequality(SmtpServerConfig, SmtpServerConfig)
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_op_Inequality_EmailLib_SmtpServerConfig_EmailLib_SmtpServerConfig_
+  commentId: M:EmailLib.SmtpServerConfig.op_Inequality(EmailLib.SmtpServerConfig,EmailLib.SmtpServerConfig)
+  fullName: EmailLib.SmtpServerConfig.Inequality(EmailLib.SmtpServerConfig, EmailLib.SmtpServerConfig)
+  nameWithType: SmtpServerConfig.Inequality(SmtpServerConfig, SmtpServerConfig)
+- uid: EmailLib.SmtpServerConfig.op_Inequality*
+  name: Inequality
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_op_Inequality_
+  commentId: Overload:EmailLib.SmtpServerConfig.op_Inequality
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Inequality
+  nameWithType: SmtpServerConfig.Inequality
+- uid: EmailLib.SmtpServerConfig.Password
+  name: Password
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Password
+  commentId: P:EmailLib.SmtpServerConfig.Password
+  fullName: EmailLib.SmtpServerConfig.Password
+  nameWithType: SmtpServerConfig.Password
+- uid: EmailLib.SmtpServerConfig.Password*
+  name: Password
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Password_
+  commentId: Overload:EmailLib.SmtpServerConfig.Password
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Password
+  nameWithType: SmtpServerConfig.Password
+- uid: EmailLib.SmtpServerConfig.Port
+  name: Port
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Port
+  commentId: P:EmailLib.SmtpServerConfig.Port
+  fullName: EmailLib.SmtpServerConfig.Port
+  nameWithType: SmtpServerConfig.Port
+- uid: EmailLib.SmtpServerConfig.Port*
+  name: Port
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_Port_
+  commentId: Overload:EmailLib.SmtpServerConfig.Port
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.Port
+  nameWithType: SmtpServerConfig.Port
+- uid: EmailLib.SmtpServerConfig.UseDefaultCredentials
+  name: UseDefaultCredentials
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_UseDefaultCredentials
+  commentId: P:EmailLib.SmtpServerConfig.UseDefaultCredentials
+  fullName: EmailLib.SmtpServerConfig.UseDefaultCredentials
+  nameWithType: SmtpServerConfig.UseDefaultCredentials
+- uid: EmailLib.SmtpServerConfig.UseDefaultCredentials*
+  name: UseDefaultCredentials
+  href: api/EmailLib/EmailLib.SmtpServerConfig.html#EmailLib_SmtpServerConfig_UseDefaultCredentials_
+  commentId: Overload:EmailLib.SmtpServerConfig.UseDefaultCredentials
+  isSpec: "True"
+  fullName: EmailLib.SmtpServerConfig.UseDefaultCredentials
+  nameWithType: SmtpServerConfig.UseDefaultCredentials
+- uid: WebApplication
+  name: WebApplication
+  href: api/WebApplication/WebApplication.html
+  commentId: N:WebApplication
+  fullName: WebApplication
+  nameWithType: WebApplication
+- uid: WebApplication._Default
+  name: _Default
+  href: api/WebApplication/WebApplication._Default.html
+  commentId: T:WebApplication._Default
+  fullName: WebApplication._Default
+  nameWithType: _Default
+- uid: WebApplication._Default.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication._Default.html#WebApplication__Default_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication._Default.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication._Default.Page_Load(System.Object, System.EventArgs)
+  nameWithType: _Default.Page_Load(Object, EventArgs)
+- uid: WebApplication._Default.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication._Default.html#WebApplication__Default_Page_Load_
+  commentId: Overload:WebApplication._Default.Page_Load
+  isSpec: "True"
+  fullName: WebApplication._Default.Page_Load
+  nameWithType: _Default.Page_Load
+- uid: WebApplication.About
+  name: About
+  href: api/WebApplication/WebApplication.About.html
+  commentId: T:WebApplication.About
+  fullName: WebApplication.About
+  nameWithType: About
+- uid: WebApplication.About.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.About.html#WebApplication_About_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.About.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.About.Page_Load(System.Object, System.EventArgs)
+  nameWithType: About.Page_Load(Object, EventArgs)
+- uid: WebApplication.About.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.About.html#WebApplication_About_Page_Load_
+  commentId: Overload:WebApplication.About.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.About.Page_Load
+  nameWithType: About.Page_Load
+- uid: WebApplication.Account
+  name: Account
+  href: api/WebApplication/WebApplication.Account.html
+  commentId: T:WebApplication.Account
+  fullName: WebApplication.Account
+  nameWithType: Account
+- uid: WebApplication.Account.AccountCardBodyContent
+  name: AccountCardBodyContent
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_AccountCardBodyContent
+  commentId: F:WebApplication.Account.AccountCardBodyContent
+  fullName: WebApplication.Account.AccountCardBodyContent
+  nameWithType: Account.AccountCardBodyContent
+- uid: WebApplication.Account.ActiveNav
+  name: Account.ActiveNav
+  href: api/WebApplication/WebApplication.Account.ActiveNav.html
+  commentId: T:WebApplication.Account.ActiveNav
+  fullName: WebApplication.Account.ActiveNav
+  nameWithType: Account.ActiveNav
+- uid: WebApplication.Account.ActiveNav.CreateAccount
+  name: CreateAccount
+  href: api/WebApplication/WebApplication.Account.ActiveNav.html#WebApplication_Account_ActiveNav_CreateAccount
+  commentId: F:WebApplication.Account.ActiveNav.CreateAccount
+  fullName: WebApplication.Account.ActiveNav.CreateAccount
+  nameWithType: Account.ActiveNav.CreateAccount
+- uid: WebApplication.Account.ActiveNav.LogIn
+  name: LogIn
+  href: api/WebApplication/WebApplication.Account.ActiveNav.html#WebApplication_Account_ActiveNav_LogIn
+  commentId: F:WebApplication.Account.ActiveNav.LogIn
+  fullName: WebApplication.Account.ActiveNav.LogIn
+  nameWithType: Account.ActiveNav.LogIn
+- uid: WebApplication.Account.ActiveNav.None
+  name: None
+  href: api/WebApplication/WebApplication.Account.ActiveNav.html#WebApplication_Account_ActiveNav_None
+  commentId: F:WebApplication.Account.ActiveNav.None
+  fullName: WebApplication.Account.ActiveNav.None
+  nameWithType: Account.ActiveNav.None
+- uid: WebApplication.Account.CreateAccount
+  name: CreateAccount
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_CreateAccount
+  commentId: F:WebApplication.Account.CreateAccount
+  fullName: WebApplication.Account.CreateAccount
+  nameWithType: Account.CreateAccount
+- uid: WebApplication.Account.LogIn
+  name: LogIn
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_LogIn
+  commentId: F:WebApplication.Account.LogIn
+  fullName: WebApplication.Account.LogIn
+  nameWithType: Account.LogIn
+- uid: WebApplication.Account.Master
+  name: Master
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_Master
+  commentId: P:WebApplication.Account.Master
+  fullName: WebApplication.Account.Master
+  nameWithType: Account.Master
+- uid: WebApplication.Account.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_Master_
+  commentId: Overload:WebApplication.Account.Master
+  isSpec: "True"
+  fullName: WebApplication.Account.Master
+  nameWithType: Account.Master
+- uid: WebApplication.Account.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Account.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.Account.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Account.Page_Load(Object, EventArgs)
+- uid: WebApplication.Account.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_Page_Load_
+  commentId: Overload:WebApplication.Account.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.Account.Page_Load
+  nameWithType: Account.Page_Load
+- uid: WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
+  name: SetActiveNav(Account.ActiveNav)
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_SetActiveNav_WebApplication_Account_ActiveNav_
+  commentId: M:WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
+  fullName: WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
+  nameWithType: Account.SetActiveNav(Account.ActiveNav)
+- uid: WebApplication.Account.SetActiveNav*
+  name: SetActiveNav
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_SetActiveNav_
+  commentId: Overload:WebApplication.Account.SetActiveNav
+  isSpec: "True"
+  fullName: WebApplication.Account.SetActiveNav
+  nameWithType: Account.SetActiveNav
+- uid: WebApplication.AppConfig
+  name: AppConfig
+  href: api/WebApplication/WebApplication.AppConfig.html
+  commentId: T:WebApplication.AppConfig
+  fullName: WebApplication.AppConfig
+  nameWithType: AppConfig
+- uid: WebApplication.AppConfig.SmtpServer
+  name: AppConfig.SmtpServer
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html
+  commentId: T:WebApplication.AppConfig.SmtpServer
+  fullName: WebApplication.AppConfig.SmtpServer
+  nameWithType: AppConfig.SmtpServer
+- uid: WebApplication.AppConfig.SmtpServer.Account
+  name: Account
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Account
+  commentId: P:WebApplication.AppConfig.SmtpServer.Account
+  fullName: WebApplication.AppConfig.SmtpServer.Account
+  nameWithType: AppConfig.SmtpServer.Account
+- uid: WebApplication.AppConfig.SmtpServer.Account*
+  name: Account
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Account_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.Account
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.Account
+  nameWithType: AppConfig.SmtpServer.Account
+- uid: WebApplication.AppConfig.SmtpServer.DeliveryMethod
+  name: DeliveryMethod
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_DeliveryMethod
+  commentId: P:WebApplication.AppConfig.SmtpServer.DeliveryMethod
+  fullName: WebApplication.AppConfig.SmtpServer.DeliveryMethod
+  nameWithType: AppConfig.SmtpServer.DeliveryMethod
+- uid: WebApplication.AppConfig.SmtpServer.DeliveryMethod*
+  name: DeliveryMethod
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_DeliveryMethod_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.DeliveryMethod
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.DeliveryMethod
+  nameWithType: AppConfig.SmtpServer.DeliveryMethod
+- uid: WebApplication.AppConfig.SmtpServer.EnableSsl
+  name: EnableSsl
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_EnableSsl
+  commentId: P:WebApplication.AppConfig.SmtpServer.EnableSsl
+  fullName: WebApplication.AppConfig.SmtpServer.EnableSsl
+  nameWithType: AppConfig.SmtpServer.EnableSsl
+- uid: WebApplication.AppConfig.SmtpServer.EnableSsl*
+  name: EnableSsl
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_EnableSsl_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.EnableSsl
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.EnableSsl
+  nameWithType: AppConfig.SmtpServer.EnableSsl
+- uid: WebApplication.AppConfig.SmtpServer.Host
+  name: Host
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Host
+  commentId: P:WebApplication.AppConfig.SmtpServer.Host
+  fullName: WebApplication.AppConfig.SmtpServer.Host
+  nameWithType: AppConfig.SmtpServer.Host
+- uid: WebApplication.AppConfig.SmtpServer.Host*
+  name: Host
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Host_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.Host
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.Host
+  nameWithType: AppConfig.SmtpServer.Host
+- uid: WebApplication.AppConfig.SmtpServer.Password
+  name: Password
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Password
+  commentId: P:WebApplication.AppConfig.SmtpServer.Password
+  fullName: WebApplication.AppConfig.SmtpServer.Password
+  nameWithType: AppConfig.SmtpServer.Password
+- uid: WebApplication.AppConfig.SmtpServer.Password*
+  name: Password
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Password_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.Password
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.Password
+  nameWithType: AppConfig.SmtpServer.Password
+- uid: WebApplication.AppConfig.SmtpServer.Port
+  name: Port
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Port
+  commentId: P:WebApplication.AppConfig.SmtpServer.Port
+  fullName: WebApplication.AppConfig.SmtpServer.Port
+  nameWithType: AppConfig.SmtpServer.Port
+- uid: WebApplication.AppConfig.SmtpServer.Port*
+  name: Port
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_Port_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.Port
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.Port
+  nameWithType: AppConfig.SmtpServer.Port
+- uid: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+  name: UseDefaultCredentials
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_UseDefaultCredentials
+  commentId: P:WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+  fullName: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+  nameWithType: AppConfig.SmtpServer.UseDefaultCredentials
+- uid: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials*
+  name: UseDefaultCredentials
+  href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html#WebApplication_AppConfig_SmtpServer_UseDefaultCredentials_
+  commentId: Overload:WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
+  nameWithType: AppConfig.SmtpServer.UseDefaultCredentials
+- uid: WebApplication.BundleConfig
+  name: BundleConfig
+  href: api/WebApplication/WebApplication.BundleConfig.html
+  commentId: T:WebApplication.BundleConfig
+  fullName: WebApplication.BundleConfig
+  nameWithType: BundleConfig
+- uid: WebApplication.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)
+  name: RegisterBundles(BundleCollection)
+  href: api/WebApplication/WebApplication.BundleConfig.html#WebApplication_BundleConfig_RegisterBundles_System_Web_Optimization_BundleCollection_
+  commentId: M:WebApplication.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)
+  fullName: WebApplication.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)
+  nameWithType: BundleConfig.RegisterBundles(BundleCollection)
+- uid: WebApplication.BundleConfig.RegisterBundles*
+  name: RegisterBundles
+  href: api/WebApplication/WebApplication.BundleConfig.html#WebApplication_BundleConfig_RegisterBundles_
+  commentId: Overload:WebApplication.BundleConfig.RegisterBundles
+  isSpec: "True"
+  fullName: WebApplication.BundleConfig.RegisterBundles
+  nameWithType: BundleConfig.RegisterBundles
+- uid: WebApplication.CambiarPassword
+  name: CambiarPassword
+  href: api/WebApplication/WebApplication.CambiarPassword.html
+  commentId: T:WebApplication.CambiarPassword
+  fullName: WebApplication.CambiarPassword
+  nameWithType: CambiarPassword
+- uid: WebApplication.CambiarPassword.buttonChangePassword
+  name: buttonChangePassword
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_buttonChangePassword
+  commentId: F:WebApplication.CambiarPassword.buttonChangePassword
+  fullName: WebApplication.CambiarPassword.buttonChangePassword
+  nameWithType: CambiarPassword.buttonChangePassword
+- uid: WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object,System.EventArgs)
+  name: ButtonChangePassword_Click(Object, EventArgs)
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_ButtonChangePassword_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.CambiarPassword.ButtonChangePassword_Click(System.Object, System.EventArgs)
+  nameWithType: CambiarPassword.ButtonChangePassword_Click(Object, EventArgs)
+- uid: WebApplication.CambiarPassword.ButtonChangePassword_Click*
+  name: ButtonChangePassword_Click
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_ButtonChangePassword_Click_
+  commentId: Overload:WebApplication.CambiarPassword.ButtonChangePassword_Click
+  isSpec: "True"
+  fullName: WebApplication.CambiarPassword.ButtonChangePassword_Click
+  nameWithType: CambiarPassword.ButtonChangePassword_Click
+- uid: WebApplication.CambiarPassword.ComparePassword
+  name: ComparePassword
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_ComparePassword
+  commentId: F:WebApplication.CambiarPassword.ComparePassword
+  fullName: WebApplication.CambiarPassword.ComparePassword
+  nameWithType: CambiarPassword.ComparePassword
+- uid: WebApplication.CambiarPassword.NewPasswordFieldRequired
+  name: NewPasswordFieldRequired
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_NewPasswordFieldRequired
+  commentId: F:WebApplication.CambiarPassword.NewPasswordFieldRequired
+  fullName: WebApplication.CambiarPassword.NewPasswordFieldRequired
+  nameWithType: CambiarPassword.NewPasswordFieldRequired
+- uid: WebApplication.CambiarPassword.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.CambiarPassword.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.CambiarPassword.Page_Load(System.Object, System.EventArgs)
+  nameWithType: CambiarPassword.Page_Load(Object, EventArgs)
+- uid: WebApplication.CambiarPassword.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_Page_Load_
+  commentId: Overload:WebApplication.CambiarPassword.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.CambiarPassword.Page_Load
+  nameWithType: CambiarPassword.Page_Load
+- uid: WebApplication.CambiarPassword.PasswordFieldRequired
+  name: PasswordFieldRequired
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_PasswordFieldRequired
+  commentId: F:WebApplication.CambiarPassword.PasswordFieldRequired
+  fullName: WebApplication.CambiarPassword.PasswordFieldRequired
+  nameWithType: CambiarPassword.PasswordFieldRequired
+- uid: WebApplication.CambiarPassword.textBoxNewPassword
+  name: textBoxNewPassword
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_textBoxNewPassword
+  commentId: F:WebApplication.CambiarPassword.textBoxNewPassword
+  fullName: WebApplication.CambiarPassword.textBoxNewPassword
+  nameWithType: CambiarPassword.textBoxNewPassword
+- uid: WebApplication.CambiarPassword.textBoxRepeatNewPassword
+  name: textBoxRepeatNewPassword
+  href: api/WebApplication/WebApplication.CambiarPassword.html#WebApplication_CambiarPassword_textBoxRepeatNewPassword
+  commentId: F:WebApplication.CambiarPassword.textBoxRepeatNewPassword
+  fullName: WebApplication.CambiarPassword.textBoxRepeatNewPassword
+  nameWithType: CambiarPassword.textBoxRepeatNewPassword
+- uid: WebApplication.Confirmar
+  name: Confirmar
+  href: api/WebApplication/WebApplication.Confirmar.html
+  commentId: T:WebApplication.Confirmar
+  fullName: WebApplication.Confirmar
+  nameWithType: Confirmar
+- uid: WebApplication.Confirmar.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Confirmar.html#WebApplication_Confirmar_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Confirmar.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.Confirmar.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Confirmar.Page_Load(Object, EventArgs)
+- uid: WebApplication.Confirmar.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.Confirmar.html#WebApplication_Confirmar_Page_Load_
+  commentId: Overload:WebApplication.Confirmar.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.Confirmar.Page_Load
+  nameWithType: Confirmar.Page_Load
+- uid: WebApplication.Contact
+  name: Contact
+  href: api/WebApplication/WebApplication.Contact.html
+  commentId: T:WebApplication.Contact
+  fullName: WebApplication.Contact
+  nameWithType: Contact
+- uid: WebApplication.Contact.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Contact.html#WebApplication_Contact_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Contact.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.Contact.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Contact.Page_Load(Object, EventArgs)
+- uid: WebApplication.Contact.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.Contact.html#WebApplication_Contact_Page_Load_
+  commentId: Overload:WebApplication.Contact.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.Contact.Page_Load
+  nameWithType: Contact.Page_Load
+- uid: WebApplication.EmailSent
+  name: EmailSent
+  href: api/WebApplication/WebApplication.EmailSent.html
+  commentId: T:WebApplication.EmailSent
+  fullName: WebApplication.EmailSent
+  nameWithType: EmailSent
+- uid: WebApplication.Framework
+  name: WebApplication.Framework
+  href: api/WebApplication/WebApplication.Framework.html
+  commentId: N:WebApplication.Framework
+  fullName: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+- uid: WebApplication.Framework.AlertLevel
+  name: AlertLevel
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html
+  commentId: T:WebApplication.Framework.AlertLevel
+  fullName: WebApplication.Framework.AlertLevel
+  nameWithType: AlertLevel
+- uid: WebApplication.Framework.AlertLevel.Danger
+  name: Danger
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Danger
+  commentId: F:WebApplication.Framework.AlertLevel.Danger
+  fullName: WebApplication.Framework.AlertLevel.Danger
+  nameWithType: AlertLevel.Danger
+- uid: WebApplication.Framework.AlertLevel.Dark
+  name: Dark
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Dark
+  commentId: F:WebApplication.Framework.AlertLevel.Dark
+  fullName: WebApplication.Framework.AlertLevel.Dark
+  nameWithType: AlertLevel.Dark
+- uid: WebApplication.Framework.AlertLevel.Info
+  name: Info
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Info
+  commentId: F:WebApplication.Framework.AlertLevel.Info
+  fullName: WebApplication.Framework.AlertLevel.Info
+  nameWithType: AlertLevel.Info
+- uid: WebApplication.Framework.AlertLevel.Light
+  name: Light
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Light
+  commentId: F:WebApplication.Framework.AlertLevel.Light
+  fullName: WebApplication.Framework.AlertLevel.Light
+  nameWithType: AlertLevel.Light
+- uid: WebApplication.Framework.AlertLevel.None
+  name: None
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_None
+  commentId: F:WebApplication.Framework.AlertLevel.None
+  fullName: WebApplication.Framework.AlertLevel.None
+  nameWithType: AlertLevel.None
+- uid: WebApplication.Framework.AlertLevel.op_Explicit(System.String)~WebApplication.Framework.AlertLevel
+  name: Explicit(String to AlertLevel)
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Explicit_System_String__WebApplication_Framework_AlertLevel
+  commentId: M:WebApplication.Framework.AlertLevel.op_Explicit(System.String)~WebApplication.Framework.AlertLevel
+  name.vb: Narrowing(String to AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Explicit(System.String to WebApplication.Framework.AlertLevel)
+  fullName.vb: WebApplication.Framework.AlertLevel.Narrowing(System.String to WebApplication.Framework.AlertLevel)
+  nameWithType: AlertLevel.Explicit(String to AlertLevel)
+  nameWithType.vb: AlertLevel.Narrowing(String to AlertLevel)
+- uid: WebApplication.Framework.AlertLevel.op_Explicit*
+  name: Explicit
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Explicit_
+  commentId: Overload:WebApplication.Framework.AlertLevel.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: WebApplication.Framework.AlertLevel.Explicit
+  fullName.vb: WebApplication.Framework.AlertLevel.Narrowing
+  nameWithType: AlertLevel.Explicit
+  nameWithType.vb: AlertLevel.Narrowing
+- uid: WebApplication.Framework.AlertLevel.Primary
+  name: Primary
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Primary
+  commentId: F:WebApplication.Framework.AlertLevel.Primary
+  fullName: WebApplication.Framework.AlertLevel.Primary
+  nameWithType: AlertLevel.Primary
+- uid: WebApplication.Framework.AlertLevel.Secondary
+  name: Secondary
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Secondary
+  commentId: F:WebApplication.Framework.AlertLevel.Secondary
+  fullName: WebApplication.Framework.AlertLevel.Secondary
+  nameWithType: AlertLevel.Secondary
+- uid: WebApplication.Framework.AlertLevel.Success
+  name: Success
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Success
+  commentId: F:WebApplication.Framework.AlertLevel.Success
+  fullName: WebApplication.Framework.AlertLevel.Success
+  nameWithType: AlertLevel.Success
+- uid: WebApplication.Framework.AlertLevel.ToString
+  name: ToString()
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_ToString
+  commentId: M:WebApplication.Framework.AlertLevel.ToString
+  fullName: WebApplication.Framework.AlertLevel.ToString()
+  nameWithType: AlertLevel.ToString()
+- uid: WebApplication.Framework.AlertLevel.ToString*
+  name: ToString
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_ToString_
+  commentId: Overload:WebApplication.Framework.AlertLevel.ToString
+  isSpec: "True"
+  fullName: WebApplication.Framework.AlertLevel.ToString
+  nameWithType: AlertLevel.ToString
+- uid: WebApplication.Framework.AlertLevel.Warning
+  name: Warning
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Warning
+  commentId: F:WebApplication.Framework.AlertLevel.Warning
+  fullName: WebApplication.Framework.AlertLevel.Warning
+  nameWithType: AlertLevel.Warning
+- uid: WebApplication.Framework.Extensions
+  name: WebApplication.Framework.Extensions
+  href: api/WebApplication/WebApplication.Framework.Extensions.html
+  commentId: N:WebApplication.Framework.Extensions
+  fullName: WebApplication.Framework.Extensions
+  nameWithType: WebApplication.Framework.Extensions
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  name: AttributeCollectionExtension
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html
+  commentId: T:WebApplication.Framework.Extensions.AttributeCollectionExtension
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  nameWithType: AttributeCollectionExtension
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name: AddClass(WebControl, String[])
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_AddClass_System_Web_UI_WebControls_WebControl_System_String___
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name.vb: AddClass(WebControl, String())
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl, System.String[])
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl, System.String())
+  nameWithType: AttributeCollectionExtension.AddClass(WebControl, String[])
+  nameWithType.vb: AttributeCollectionExtension.AddClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass*
+  name: AddClass
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_AddClass_
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass
+  nameWithType: AttributeCollectionExtension.AddClass
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name: AddCssClass(WebControl, String[])
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_AddCssClass_System_Web_UI_WebControls_WebControl_System_String___
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name.vb: AddCssClass(WebControl, String())
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl, System.String[])
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl, System.String())
+  nameWithType: AttributeCollectionExtension.AddCssClass(WebControl, String[])
+  nameWithType.vb: AttributeCollectionExtension.AddCssClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass*
+  name: AddCssClass
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_AddCssClass_
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass
+  nameWithType: AttributeCollectionExtension.AddCssClass
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  name: GetClassesExcept(WebControl, IEnumerable<String>)
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_GetClassesExcept_System_Web_UI_WebControls_WebControl_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: GetClassesExcept(WebControl, IEnumerable(Of String))
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: AttributeCollectionExtension.GetClassesExcept(WebControl, IEnumerable<String>)
+  nameWithType.vb: AttributeCollectionExtension.GetClassesExcept(WebControl, IEnumerable(Of String))
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept*
+  name: GetClassesExcept
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_GetClassesExcept_
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept
+  nameWithType: AttributeCollectionExtension.GetClassesExcept
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  name: GetCssClassesExcept(WebControl, IEnumerable<String>)
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_GetCssClassesExcept_System_Web_UI_WebControls_WebControl_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: GetCssClassesExcept(WebControl, IEnumerable(Of String))
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: AttributeCollectionExtension.GetCssClassesExcept(WebControl, IEnumerable<String>)
+  nameWithType.vb: AttributeCollectionExtension.GetCssClassesExcept(WebControl, IEnumerable(Of String))
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept*
+  name: GetCssClassesExcept
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_GetCssClassesExcept_
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept
+  nameWithType: AttributeCollectionExtension.GetCssClassesExcept
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name: RemoveClass(WebControl, String[])
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_RemoveClass_System_Web_UI_WebControls_WebControl_System_String___
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name.vb: RemoveClass(WebControl, String())
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl, System.String[])
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl, System.String())
+  nameWithType: AttributeCollectionExtension.RemoveClass(WebControl, String[])
+  nameWithType.vb: AttributeCollectionExtension.RemoveClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass*
+  name: RemoveClass
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_RemoveClass_
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass
+  nameWithType: AttributeCollectionExtension.RemoveClass
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name: RemoveCssClass(WebControl, String[])
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_RemoveCssClass_System_Web_UI_WebControls_WebControl_System_String___
+  commentId: M:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl,System.String[])
+  name.vb: RemoveCssClass(WebControl, String())
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl, System.String[])
+  fullName.vb: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl, System.String())
+  nameWithType: AttributeCollectionExtension.RemoveCssClass(WebControl, String[])
+  nameWithType.vb: AttributeCollectionExtension.RemoveCssClass(WebControl, String())
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass*
+  name: RemoveCssClass
+  href: api/WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html#WebApplication_Framework_Extensions_AttributeCollectionExtension_RemoveCssClass_
+  commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass
+  nameWithType: AttributeCollectionExtension.RemoveCssClass
+- uid: WebApplication.Framework.Extensions.DictionaryExtension
+  name: DictionaryExtension
+  href: api/WebApplication/WebApplication.Framework.Extensions.DictionaryExtension.html
+  commentId: T:WebApplication.Framework.Extensions.DictionaryExtension
+  fullName: WebApplication.Framework.Extensions.DictionaryExtension
+  nameWithType: DictionaryExtension
+- uid: WebApplication.Framework.Extensions.DictionaryExtension.Add(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Specialized.NameValueCollection)
+  name: Add(Dictionary<String, String>, NameValueCollection)
+  href: api/WebApplication/WebApplication.Framework.Extensions.DictionaryExtension.html#WebApplication_Framework_Extensions_DictionaryExtension_Add_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Specialized_NameValueCollection_
+  commentId: M:WebApplication.Framework.Extensions.DictionaryExtension.Add(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Specialized.NameValueCollection)
+  name.vb: Add(Dictionary(Of String, String), NameValueCollection)
+  fullName: WebApplication.Framework.Extensions.DictionaryExtension.Add(System.Collections.Generic.Dictionary<System.String, System.String>, System.Collections.Specialized.NameValueCollection)
+  fullName.vb: WebApplication.Framework.Extensions.DictionaryExtension.Add(System.Collections.Generic.Dictionary(Of System.String, System.String), System.Collections.Specialized.NameValueCollection)
+  nameWithType: DictionaryExtension.Add(Dictionary<String, String>, NameValueCollection)
+  nameWithType.vb: DictionaryExtension.Add(Dictionary(Of String, String), NameValueCollection)
+- uid: WebApplication.Framework.Extensions.DictionaryExtension.Add*
+  name: Add
+  href: api/WebApplication/WebApplication.Framework.Extensions.DictionaryExtension.html#WebApplication_Framework_Extensions_DictionaryExtension_Add_
+  commentId: Overload:WebApplication.Framework.Extensions.DictionaryExtension.Add
+  isSpec: "True"
+  fullName: WebApplication.Framework.Extensions.DictionaryExtension.Add
+  nameWithType: DictionaryExtension.Add
+- uid: WebApplication.Framework.NotificationData
+  name: NotificationData
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html
+  commentId: T:WebApplication.Framework.NotificationData
+  fullName: WebApplication.Framework.NotificationData
+  nameWithType: NotificationData
+- uid: WebApplication.Framework.NotificationData.Body
+  name: Body
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Body
+  commentId: P:WebApplication.Framework.NotificationData.Body
+  fullName: WebApplication.Framework.NotificationData.Body
+  nameWithType: NotificationData.Body
+- uid: WebApplication.Framework.NotificationData.Body*
+  name: Body
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Body_
+  commentId: Overload:WebApplication.Framework.NotificationData.Body
+  isSpec: "True"
+  fullName: WebApplication.Framework.NotificationData.Body
+  nameWithType: NotificationData.Body
+- uid: WebApplication.Framework.NotificationData.Dismissable
+  name: Dismissable
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Dismissable
+  commentId: P:WebApplication.Framework.NotificationData.Dismissable
+  fullName: WebApplication.Framework.NotificationData.Dismissable
+  nameWithType: NotificationData.Dismissable
+- uid: WebApplication.Framework.NotificationData.Dismissable*
+  name: Dismissable
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Dismissable_
+  commentId: Overload:WebApplication.Framework.NotificationData.Dismissable
+  isSpec: "True"
+  fullName: WebApplication.Framework.NotificationData.Dismissable
+  nameWithType: NotificationData.Dismissable
+- uid: WebApplication.Framework.NotificationData.Level
+  name: Level
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Level
+  commentId: P:WebApplication.Framework.NotificationData.Level
+  fullName: WebApplication.Framework.NotificationData.Level
+  nameWithType: NotificationData.Level
+- uid: WebApplication.Framework.NotificationData.Level*
+  name: Level
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Level_
+  commentId: Overload:WebApplication.Framework.NotificationData.Level
+  isSpec: "True"
+  fullName: WebApplication.Framework.NotificationData.Level
+  nameWithType: NotificationData.Level
+- uid: WebApplication.Framework.NotificationData.Title
+  name: Title
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Title
+  commentId: P:WebApplication.Framework.NotificationData.Title
+  fullName: WebApplication.Framework.NotificationData.Title
+  nameWithType: NotificationData.Title
+- uid: WebApplication.Framework.NotificationData.Title*
+  name: Title
+  href: api/WebApplication/WebApplication.Framework.NotificationData.html#WebApplication_Framework_NotificationData_Title_
+  commentId: Overload:WebApplication.Framework.NotificationData.Title
+  isSpec: "True"
+  fullName: WebApplication.Framework.NotificationData.Title
+  nameWithType: NotificationData.Title
+- uid: WebApplication.Framework.ParametizedUrl
+  name: ParametizedUrl
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html
+  commentId: T:WebApplication.Framework.ParametizedUrl
+  fullName: WebApplication.Framework.ParametizedUrl
+  nameWithType: ParametizedUrl
+- uid: WebApplication.Framework.ParametizedUrl.#ctor(System.String)
+  name: ParametizedUrl(String)
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl__ctor_System_String_
+  commentId: M:WebApplication.Framework.ParametizedUrl.#ctor(System.String)
+  fullName: WebApplication.Framework.ParametizedUrl.ParametizedUrl(System.String)
+  nameWithType: ParametizedUrl.ParametizedUrl(String)
+- uid: WebApplication.Framework.ParametizedUrl.#ctor*
+  name: ParametizedUrl
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl__ctor_
+  commentId: Overload:WebApplication.Framework.ParametizedUrl.#ctor
+  isSpec: "True"
+  fullName: WebApplication.Framework.ParametizedUrl.ParametizedUrl
+  nameWithType: ParametizedUrl.ParametizedUrl
+- uid: WebApplication.Framework.ParametizedUrl.op_Implicit(WebApplication.Framework.ParametizedUrl)~System.String
+  name: Implicit(ParametizedUrl to String)
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl_op_Implicit_WebApplication_Framework_ParametizedUrl__System_String
+  commentId: M:WebApplication.Framework.ParametizedUrl.op_Implicit(WebApplication.Framework.ParametizedUrl)~System.String
+  name.vb: Widening(ParametizedUrl to String)
+  fullName: WebApplication.Framework.ParametizedUrl.Implicit(WebApplication.Framework.ParametizedUrl to System.String)
+  fullName.vb: WebApplication.Framework.ParametizedUrl.Widening(WebApplication.Framework.ParametizedUrl to System.String)
+  nameWithType: ParametizedUrl.Implicit(ParametizedUrl to String)
+  nameWithType.vb: ParametizedUrl.Widening(ParametizedUrl to String)
+- uid: WebApplication.Framework.ParametizedUrl.op_Implicit*
+  name: Implicit
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl_op_Implicit_
+  commentId: Overload:WebApplication.Framework.ParametizedUrl.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: WebApplication.Framework.ParametizedUrl.Implicit
+  fullName.vb: WebApplication.Framework.ParametizedUrl.Widening
+  nameWithType: ParametizedUrl.Implicit
+  nameWithType.vb: ParametizedUrl.Widening
+- uid: WebApplication.Framework.ParametizedUrl.ToString
+  name: ToString()
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl_ToString
+  commentId: M:WebApplication.Framework.ParametizedUrl.ToString
+  fullName: WebApplication.Framework.ParametizedUrl.ToString()
+  nameWithType: ParametizedUrl.ToString()
+- uid: WebApplication.Framework.ParametizedUrl.ToString*
+  name: ToString
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl_ToString_
+  commentId: Overload:WebApplication.Framework.ParametizedUrl.ToString
+  isSpec: "True"
+  fullName: WebApplication.Framework.ParametizedUrl.ToString
+  nameWithType: ParametizedUrl.ToString
+- uid: WebApplication.Framework.ParametizedUrl.Url
+  name: Url
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl_Url
+  commentId: P:WebApplication.Framework.ParametizedUrl.Url
+  fullName: WebApplication.Framework.ParametizedUrl.Url
+  nameWithType: ParametizedUrl.Url
+- uid: WebApplication.Framework.ParametizedUrl.Url*
+  name: Url
+  href: api/WebApplication/WebApplication.Framework.ParametizedUrl.html#WebApplication_Framework_ParametizedUrl_Url_
+  commentId: Overload:WebApplication.Framework.ParametizedUrl.Url
+  isSpec: "True"
+  fullName: WebApplication.Framework.ParametizedUrl.Url
+  nameWithType: ParametizedUrl.Url
+- uid: WebApplication.Global
+  name: Global
+  href: api/WebApplication/WebApplication.Global.html
+  commentId: T:WebApplication.Global
+  fullName: WebApplication.Global
+  nameWithType: Global
+- uid: WebApplication.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)
+  name: Application_AuthenticateRequest(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_AuthenticateRequest_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Application_AuthenticateRequest(System.Object, System.EventArgs)
+  nameWithType: Global.Application_AuthenticateRequest(Object, EventArgs)
+- uid: WebApplication.Global.Application_AuthenticateRequest*
+  name: Application_AuthenticateRequest
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_AuthenticateRequest_
+  commentId: Overload:WebApplication.Global.Application_AuthenticateRequest
+  isSpec: "True"
+  fullName: WebApplication.Global.Application_AuthenticateRequest
+  nameWithType: Global.Application_AuthenticateRequest
+- uid: WebApplication.Global.Application_BeginRequest(System.Object,System.EventArgs)
+  name: Application_BeginRequest(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_BeginRequest_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Application_BeginRequest(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Application_BeginRequest(System.Object, System.EventArgs)
+  nameWithType: Global.Application_BeginRequest(Object, EventArgs)
+- uid: WebApplication.Global.Application_BeginRequest*
+  name: Application_BeginRequest
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_BeginRequest_
+  commentId: Overload:WebApplication.Global.Application_BeginRequest
+  isSpec: "True"
+  fullName: WebApplication.Global.Application_BeginRequest
+  nameWithType: Global.Application_BeginRequest
+- uid: WebApplication.Global.Application_End(System.Object,System.EventArgs)
+  name: Application_End(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_End_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Application_End(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Application_End(System.Object, System.EventArgs)
+  nameWithType: Global.Application_End(Object, EventArgs)
+- uid: WebApplication.Global.Application_End*
+  name: Application_End
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_End_
+  commentId: Overload:WebApplication.Global.Application_End
+  isSpec: "True"
+  fullName: WebApplication.Global.Application_End
+  nameWithType: Global.Application_End
+- uid: WebApplication.Global.Application_EndRequest(System.Object,System.EventArgs)
+  name: Application_EndRequest(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_EndRequest_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Application_EndRequest(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Application_EndRequest(System.Object, System.EventArgs)
+  nameWithType: Global.Application_EndRequest(Object, EventArgs)
+- uid: WebApplication.Global.Application_EndRequest*
+  name: Application_EndRequest
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_EndRequest_
+  commentId: Overload:WebApplication.Global.Application_EndRequest
+  isSpec: "True"
+  fullName: WebApplication.Global.Application_EndRequest
+  nameWithType: Global.Application_EndRequest
+- uid: WebApplication.Global.Application_Error(System.Object,System.EventArgs)
+  name: Application_Error(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_Error_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Application_Error(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Application_Error(System.Object, System.EventArgs)
+  nameWithType: Global.Application_Error(Object, EventArgs)
+- uid: WebApplication.Global.Application_Error*
+  name: Application_Error
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_Error_
+  commentId: Overload:WebApplication.Global.Application_Error
+  isSpec: "True"
+  fullName: WebApplication.Global.Application_Error
+  nameWithType: Global.Application_Error
+- uid: WebApplication.Global.Application_Start(System.Object,System.EventArgs)
+  name: Application_Start(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_Start_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Application_Start(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Application_Start(System.Object, System.EventArgs)
+  nameWithType: Global.Application_Start(Object, EventArgs)
+- uid: WebApplication.Global.Application_Start*
+  name: Application_Start
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Application_Start_
+  commentId: Overload:WebApplication.Global.Application_Start
+  isSpec: "True"
+  fullName: WebApplication.Global.Application_Start
+  nameWithType: Global.Application_Start
+- uid: WebApplication.Global.Session_End(System.Object,System.EventArgs)
+  name: Session_End(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Session_End_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Session_End(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Session_End(System.Object, System.EventArgs)
+  nameWithType: Global.Session_End(Object, EventArgs)
+- uid: WebApplication.Global.Session_End*
+  name: Session_End
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Session_End_
+  commentId: Overload:WebApplication.Global.Session_End
+  isSpec: "True"
+  fullName: WebApplication.Global.Session_End
+  nameWithType: Global.Session_End
+- uid: WebApplication.Global.Session_Start(System.Object,System.EventArgs)
+  name: Session_Start(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Session_Start_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Global.Session_Start(System.Object,System.EventArgs)
+  fullName: WebApplication.Global.Session_Start(System.Object, System.EventArgs)
+  nameWithType: Global.Session_Start(Object, EventArgs)
+- uid: WebApplication.Global.Session_Start*
+  name: Session_Start
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Session_Start_
+  commentId: Overload:WebApplication.Global.Session_Start
+  isSpec: "True"
+  fullName: WebApplication.Global.Session_Start
+  nameWithType: Global.Session_Start
+- uid: WebApplication.Global.SetupDataAccess
+  name: SetupDataAccess()
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_SetupDataAccess
+  commentId: M:WebApplication.Global.SetupDataAccess
+  fullName: WebApplication.Global.SetupDataAccess()
+  nameWithType: Global.SetupDataAccess()
+- uid: WebApplication.Global.SetupDataAccess*
+  name: SetupDataAccess
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_SetupDataAccess_
+  commentId: Overload:WebApplication.Global.SetupDataAccess
+  isSpec: "True"
+  fullName: WebApplication.Global.SetupDataAccess
+  nameWithType: Global.SetupDataAccess
+- uid: WebApplication.Inicio
+  name: Inicio
+  href: api/WebApplication/WebApplication.Inicio.html
+  commentId: T:WebApplication.Inicio
+  fullName: WebApplication.Inicio
+  nameWithType: Inicio
+- uid: WebApplication.Inicio.buttonLogin
+  name: buttonLogin
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_buttonLogin
+  commentId: F:WebApplication.Inicio.buttonLogin
+  fullName: WebApplication.Inicio.buttonLogin
+  nameWithType: Inicio.buttonLogin
+- uid: WebApplication.Inicio.ButtonLogin_Click(System.Object,System.EventArgs)
+  name: ButtonLogin_Click(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_ButtonLogin_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Inicio.ButtonLogin_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.Inicio.ButtonLogin_Click(System.Object, System.EventArgs)
+  nameWithType: Inicio.ButtonLogin_Click(Object, EventArgs)
+- uid: WebApplication.Inicio.ButtonLogin_Click*
+  name: ButtonLogin_Click
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_ButtonLogin_Click_
+  commentId: Overload:WebApplication.Inicio.ButtonLogin_Click
+  isSpec: "True"
+  fullName: WebApplication.Inicio.ButtonLogin_Click
+  nameWithType: Inicio.ButtonLogin_Click
+- uid: WebApplication.Inicio.Master
+  name: Master
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_Master
+  commentId: P:WebApplication.Inicio.Master
+  fullName: WebApplication.Inicio.Master
+  nameWithType: Inicio.Master
+- uid: WebApplication.Inicio.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_Master_
+  commentId: Overload:WebApplication.Inicio.Master
+  isSpec: "True"
+  fullName: WebApplication.Inicio.Master
+  nameWithType: Inicio.Master
+- uid: WebApplication.Inicio.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Inicio.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.Inicio.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Inicio.Page_Load(Object, EventArgs)
+- uid: WebApplication.Inicio.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_Page_Load_
+  commentId: Overload:WebApplication.Inicio.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.Inicio.Page_Load
+  nameWithType: Inicio.Page_Load
+- uid: WebApplication.Inicio.RequiredFieldEmail
+  name: RequiredFieldEmail
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_RequiredFieldEmail
+  commentId: F:WebApplication.Inicio.RequiredFieldEmail
+  fullName: WebApplication.Inicio.RequiredFieldEmail
+  nameWithType: Inicio.RequiredFieldEmail
+- uid: WebApplication.Inicio.RequiredFieldPassword
+  name: RequiredFieldPassword
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_RequiredFieldPassword
+  commentId: F:WebApplication.Inicio.RequiredFieldPassword
+  fullName: WebApplication.Inicio.RequiredFieldPassword
+  nameWithType: Inicio.RequiredFieldPassword
+- uid: WebApplication.Inicio.textBoxEmail
+  name: textBoxEmail
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_textBoxEmail
+  commentId: F:WebApplication.Inicio.textBoxEmail
+  fullName: WebApplication.Inicio.textBoxEmail
+  nameWithType: Inicio.textBoxEmail
+- uid: WebApplication.Inicio.textBoxPassword
+  name: textBoxPassword
+  href: api/WebApplication/WebApplication.Inicio.html#WebApplication_Inicio_textBoxPassword
+  commentId: F:WebApplication.Inicio.textBoxPassword
+  fullName: WebApplication.Inicio.textBoxPassword
+  nameWithType: Inicio.textBoxPassword
+- uid: WebApplication.Registro
+  name: Registro
+  href: api/WebApplication/WebApplication.Registro.html
+  commentId: T:WebApplication.Registro
+  fullName: WebApplication.Registro
+  nameWithType: Registro
+- uid: WebApplication.Registro.buttonCreateAccount
+  name: buttonCreateAccount
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_buttonCreateAccount
+  commentId: F:WebApplication.Registro.buttonCreateAccount
+  fullName: WebApplication.Registro.buttonCreateAccount
+  nameWithType: Registro.buttonCreateAccount
+- uid: WebApplication.Registro.ButtonCreateAccount_Click(System.Object,System.EventArgs)
+  name: ButtonCreateAccount_Click(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_ButtonCreateAccount_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Registro.ButtonCreateAccount_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.Registro.ButtonCreateAccount_Click(System.Object, System.EventArgs)
+  nameWithType: Registro.ButtonCreateAccount_Click(Object, EventArgs)
+- uid: WebApplication.Registro.ButtonCreateAccount_Click*
+  name: ButtonCreateAccount_Click
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_ButtonCreateAccount_Click_
+  commentId: Overload:WebApplication.Registro.ButtonCreateAccount_Click
+  isSpec: "True"
+  fullName: WebApplication.Registro.ButtonCreateAccount_Click
+  nameWithType: Registro.ButtonCreateAccount_Click
+- uid: WebApplication.Registro.CompareRepeatPassword
+  name: CompareRepeatPassword
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_CompareRepeatPassword
+  commentId: F:WebApplication.Registro.CompareRepeatPassword
+  fullName: WebApplication.Registro.CompareRepeatPassword
+  nameWithType: Registro.CompareRepeatPassword
+- uid: WebApplication.Registro.dropDownRol
+  name: dropDownRol
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_dropDownRol
+  commentId: F:WebApplication.Registro.dropDownRol
+  fullName: WebApplication.Registro.dropDownRol
+  nameWithType: Registro.dropDownRol
+- uid: WebApplication.Registro.EmailRegExpr
+  name: EmailRegExpr
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_EmailRegExpr
+  commentId: F:WebApplication.Registro.EmailRegExpr
+  fullName: WebApplication.Registro.EmailRegExpr
+  nameWithType: Registro.EmailRegExpr
+- uid: WebApplication.Registro.Master
+  name: Master
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_Master
+  commentId: P:WebApplication.Registro.Master
+  fullName: WebApplication.Registro.Master
+  nameWithType: Registro.Master
+- uid: WebApplication.Registro.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_Master_
+  commentId: Overload:WebApplication.Registro.Master
+  isSpec: "True"
+  fullName: WebApplication.Registro.Master
+  nameWithType: Registro.Master
+- uid: WebApplication.Registro.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Registro.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.Registro.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Registro.Page_Load(Object, EventArgs)
+- uid: WebApplication.Registro.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_Page_Load_
+  commentId: Overload:WebApplication.Registro.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.Registro.Page_Load
+  nameWithType: Registro.Page_Load
+- uid: WebApplication.Registro.RequiredFieldEmail
+  name: RequiredFieldEmail
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_RequiredFieldEmail
+  commentId: F:WebApplication.Registro.RequiredFieldEmail
+  fullName: WebApplication.Registro.RequiredFieldEmail
+  nameWithType: Registro.RequiredFieldEmail
+- uid: WebApplication.Registro.RequiredFieldLastName
+  name: RequiredFieldLastName
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_RequiredFieldLastName
+  commentId: F:WebApplication.Registro.RequiredFieldLastName
+  fullName: WebApplication.Registro.RequiredFieldLastName
+  nameWithType: Registro.RequiredFieldLastName
+- uid: WebApplication.Registro.RequiredFieldName
+  name: RequiredFieldName
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_RequiredFieldName
+  commentId: F:WebApplication.Registro.RequiredFieldName
+  fullName: WebApplication.Registro.RequiredFieldName
+  nameWithType: Registro.RequiredFieldName
+- uid: WebApplication.Registro.RequiredFieldPassword
+  name: RequiredFieldPassword
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_RequiredFieldPassword
+  commentId: F:WebApplication.Registro.RequiredFieldPassword
+  fullName: WebApplication.Registro.RequiredFieldPassword
+  nameWithType: Registro.RequiredFieldPassword
+- uid: WebApplication.Registro.RequiredFieldRepeatPassword
+  name: RequiredFieldRepeatPassword
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_RequiredFieldRepeatPassword
+  commentId: F:WebApplication.Registro.RequiredFieldRepeatPassword
+  fullName: WebApplication.Registro.RequiredFieldRepeatPassword
+  nameWithType: Registro.RequiredFieldRepeatPassword
+- uid: WebApplication.Registro.textBoxEmail
+  name: textBoxEmail
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_textBoxEmail
+  commentId: F:WebApplication.Registro.textBoxEmail
+  fullName: WebApplication.Registro.textBoxEmail
+  nameWithType: Registro.textBoxEmail
+- uid: WebApplication.Registro.textBoxLastName
+  name: textBoxLastName
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_textBoxLastName
+  commentId: F:WebApplication.Registro.textBoxLastName
+  fullName: WebApplication.Registro.textBoxLastName
+  nameWithType: Registro.textBoxLastName
+- uid: WebApplication.Registro.textBoxName
+  name: textBoxName
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_textBoxName
+  commentId: F:WebApplication.Registro.textBoxName
+  fullName: WebApplication.Registro.textBoxName
+  nameWithType: Registro.textBoxName
+- uid: WebApplication.Registro.textBoxPassword
+  name: textBoxPassword
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_textBoxPassword
+  commentId: F:WebApplication.Registro.textBoxPassword
+  fullName: WebApplication.Registro.textBoxPassword
+  nameWithType: Registro.textBoxPassword
+- uid: WebApplication.Registro.textBoxRepeatPassword
+  name: textBoxRepeatPassword
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_textBoxRepeatPassword
+  commentId: F:WebApplication.Registro.textBoxRepeatPassword
+  fullName: WebApplication.Registro.textBoxRepeatPassword
+  nameWithType: Registro.textBoxRepeatPassword
+- uid: WebApplication.RouteConfig
+  name: RouteConfig
+  href: api/WebApplication/WebApplication.RouteConfig.html
+  commentId: T:WebApplication.RouteConfig
+  fullName: WebApplication.RouteConfig
+  nameWithType: RouteConfig
+- uid: WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
+  name: RegisterRoutes(RouteCollection)
+  href: api/WebApplication/WebApplication.RouteConfig.html#WebApplication_RouteConfig_RegisterRoutes_System_Web_Routing_RouteCollection_
+  commentId: M:WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
+  fullName: WebApplication.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)
+  nameWithType: RouteConfig.RegisterRoutes(RouteCollection)
+- uid: WebApplication.RouteConfig.RegisterRoutes*
+  name: RegisterRoutes
+  href: api/WebApplication/WebApplication.RouteConfig.html#WebApplication_RouteConfig_RegisterRoutes_
+  commentId: Overload:WebApplication.RouteConfig.RegisterRoutes
+  isSpec: "True"
+  fullName: WebApplication.RouteConfig.RegisterRoutes
+  nameWithType: RouteConfig.RegisterRoutes
+- uid: WebApplication.ScriptResource
+  name: ScriptResource
+  href: api/WebApplication/WebApplication.ScriptResource.html
+  commentId: T:WebApplication.ScriptResource
+  fullName: WebApplication.ScriptResource
+  nameWithType: ScriptResource
+- uid: WebApplication.ScriptResource.RegisterBoostrap(System.String,System.String)
+  name: RegisterBoostrap(String, String)
+  href: api/WebApplication/WebApplication.ScriptResource.html#WebApplication_ScriptResource_RegisterBoostrap_System_String_System_String_
+  commentId: M:WebApplication.ScriptResource.RegisterBoostrap(System.String,System.String)
+  fullName: WebApplication.ScriptResource.RegisterBoostrap(System.String, System.String)
+  nameWithType: ScriptResource.RegisterBoostrap(String, String)
+- uid: WebApplication.ScriptResource.RegisterBoostrap*
+  name: RegisterBoostrap
+  href: api/WebApplication/WebApplication.ScriptResource.html#WebApplication_ScriptResource_RegisterBoostrap_
+  commentId: Overload:WebApplication.ScriptResource.RegisterBoostrap
+  isSpec: "True"
+  fullName: WebApplication.ScriptResource.RegisterBoostrap
+  nameWithType: ScriptResource.RegisterBoostrap
+- uid: WebApplication.ScriptResource.RegisterJQuery(System.String,System.String)
+  name: RegisterJQuery(String, String)
+  href: api/WebApplication/WebApplication.ScriptResource.html#WebApplication_ScriptResource_RegisterJQuery_System_String_System_String_
+  commentId: M:WebApplication.ScriptResource.RegisterJQuery(System.String,System.String)
+  fullName: WebApplication.ScriptResource.RegisterJQuery(System.String, System.String)
+  nameWithType: ScriptResource.RegisterJQuery(String, String)
+- uid: WebApplication.ScriptResource.RegisterJQuery*
+  name: RegisterJQuery
+  href: api/WebApplication/WebApplication.ScriptResource.html#WebApplication_ScriptResource_RegisterJQuery_
+  commentId: Overload:WebApplication.ScriptResource.RegisterJQuery
+  isSpec: "True"
+  fullName: WebApplication.ScriptResource.RegisterJQuery
+  nameWithType: ScriptResource.RegisterJQuery
+- uid: WebApplication.Site_Mobile
+  name: Site_Mobile
+  href: api/WebApplication/WebApplication.Site_Mobile.html
+  commentId: T:WebApplication.Site_Mobile
+  fullName: WebApplication.Site_Mobile
+  nameWithType: Site_Mobile
+- uid: WebApplication.Site_Mobile.FeaturedContent
+  name: FeaturedContent
+  href: api/WebApplication/WebApplication.Site_Mobile.html#WebApplication_Site_Mobile_FeaturedContent
+  commentId: F:WebApplication.Site_Mobile.FeaturedContent
+  fullName: WebApplication.Site_Mobile.FeaturedContent
+  nameWithType: Site_Mobile.FeaturedContent
+- uid: WebApplication.Site_Mobile.form1
+  name: form1
+  href: api/WebApplication/WebApplication.Site_Mobile.html#WebApplication_Site_Mobile_form1
+  commentId: F:WebApplication.Site_Mobile.form1
+  fullName: WebApplication.Site_Mobile.form1
+  nameWithType: Site_Mobile.form1
+- uid: WebApplication.Site_Mobile.HeadContent
+  name: HeadContent
+  href: api/WebApplication/WebApplication.Site_Mobile.html#WebApplication_Site_Mobile_HeadContent
+  commentId: F:WebApplication.Site_Mobile.HeadContent
+  fullName: WebApplication.Site_Mobile.HeadContent
+  nameWithType: Site_Mobile.HeadContent
+- uid: WebApplication.Site_Mobile.MainContent
+  name: MainContent
+  href: api/WebApplication/WebApplication.Site_Mobile.html#WebApplication_Site_Mobile_MainContent
+  commentId: F:WebApplication.Site_Mobile.MainContent
+  fullName: WebApplication.Site_Mobile.MainContent
+  nameWithType: Site_Mobile.MainContent
+- uid: WebApplication.Site_Mobile.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.Site_Mobile.html#WebApplication_Site_Mobile_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.Site_Mobile.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.Site_Mobile.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Site_Mobile.Page_Load(Object, EventArgs)
+- uid: WebApplication.Site_Mobile.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.Site_Mobile.html#WebApplication_Site_Mobile_Page_Load_
+  commentId: Overload:WebApplication.Site_Mobile.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.Site_Mobile.Page_Load
+  nameWithType: Site_Mobile.Page_Load
+- uid: WebApplication.SiteMaster
+  name: SiteMaster
+  href: api/WebApplication/WebApplication.SiteMaster.html
+  commentId: T:WebApplication.SiteMaster
+  fullName: WebApplication.SiteMaster
+  nameWithType: SiteMaster
+- uid: WebApplication.SiteMaster.ButtonProfile_Click(System.Object,System.EventArgs)
+  name: ButtonProfile_Click(Object, EventArgs)
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ButtonProfile_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.SiteMaster.ButtonProfile_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.SiteMaster.ButtonProfile_Click(System.Object, System.EventArgs)
+  nameWithType: SiteMaster.ButtonProfile_Click(Object, EventArgs)
+- uid: WebApplication.SiteMaster.ButtonProfile_Click*
+  name: ButtonProfile_Click
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ButtonProfile_Click_
+  commentId: Overload:WebApplication.SiteMaster.ButtonProfile_Click
+  isSpec: "True"
+  fullName: WebApplication.SiteMaster.ButtonProfile_Click
+  nameWithType: SiteMaster.ButtonProfile_Click
+- uid: WebApplication.SiteMaster.ButtonSignOut
+  name: ButtonSignOut
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ButtonSignOut
+  commentId: F:WebApplication.SiteMaster.ButtonSignOut
+  fullName: WebApplication.SiteMaster.ButtonSignOut
+  nameWithType: SiteMaster.ButtonSignOut
+- uid: WebApplication.SiteMaster.ButtonSignOut_Click(System.Object,System.EventArgs)
+  name: ButtonSignOut_Click(Object, EventArgs)
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ButtonSignOut_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.SiteMaster.ButtonSignOut_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.SiteMaster.ButtonSignOut_Click(System.Object, System.EventArgs)
+  nameWithType: SiteMaster.ButtonSignOut_Click(Object, EventArgs)
+- uid: WebApplication.SiteMaster.ButtonSignOut_Click*
+  name: ButtonSignOut_Click
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ButtonSignOut_Click_
+  commentId: Overload:WebApplication.SiteMaster.ButtonSignOut_Click
+  isSpec: "True"
+  fullName: WebApplication.SiteMaster.ButtonSignOut_Click
+  nameWithType: SiteMaster.ButtonSignOut_Click
+- uid: WebApplication.SiteMaster.ButtonViewProfile
+  name: ButtonViewProfile
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ButtonViewProfile
+  commentId: F:WebApplication.SiteMaster.ButtonViewProfile
+  fullName: WebApplication.SiteMaster.ButtonViewProfile
+  nameWithType: SiteMaster.ButtonViewProfile
+- uid: WebApplication.SiteMaster.createAccountLink
+  name: createAccountLink
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_createAccountLink
+  commentId: F:WebApplication.SiteMaster.createAccountLink
+  fullName: WebApplication.SiteMaster.createAccountLink
+  nameWithType: SiteMaster.createAccountLink
+- uid: WebApplication.SiteMaster.LabelLastName
+  name: LabelLastName
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_LabelLastName
+  commentId: F:WebApplication.SiteMaster.LabelLastName
+  fullName: WebApplication.SiteMaster.LabelLastName
+  nameWithType: SiteMaster.LabelLastName
+- uid: WebApplication.SiteMaster.LabelMail
+  name: LabelMail
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_LabelMail
+  commentId: F:WebApplication.SiteMaster.LabelMail
+  fullName: WebApplication.SiteMaster.LabelMail
+  nameWithType: SiteMaster.LabelMail
+- uid: WebApplication.SiteMaster.LabelName
+  name: LabelName
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_LabelName
+  commentId: F:WebApplication.SiteMaster.LabelName
+  fullName: WebApplication.SiteMaster.LabelName
+  nameWithType: SiteMaster.LabelName
+- uid: WebApplication.SiteMaster.loggedUserMenu
+  name: loggedUserMenu
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_loggedUserMenu
+  commentId: F:WebApplication.SiteMaster.loggedUserMenu
+  fullName: WebApplication.SiteMaster.loggedUserMenu
+  nameWithType: SiteMaster.loggedUserMenu
+- uid: WebApplication.SiteMaster.loginLink
+  name: loginLink
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_loginLink
+  commentId: F:WebApplication.SiteMaster.loginLink
+  fullName: WebApplication.SiteMaster.loginLink
+  nameWithType: SiteMaster.loginLink
+- uid: WebApplication.SiteMaster.MainContent
+  name: MainContent
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_MainContent
+  commentId: F:WebApplication.SiteMaster.MainContent
+  fullName: WebApplication.SiteMaster.MainContent
+  nameWithType: SiteMaster.MainContent
+- uid: WebApplication.SiteMaster.NotificationContent
+  name: NotificationContent
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_NotificationContent
+  commentId: F:WebApplication.SiteMaster.NotificationContent
+  fullName: WebApplication.SiteMaster.NotificationContent
+  nameWithType: SiteMaster.NotificationContent
+- uid: WebApplication.SiteMaster.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.SiteMaster.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.SiteMaster.Page_Load(System.Object, System.EventArgs)
+  nameWithType: SiteMaster.Page_Load(Object, EventArgs)
+- uid: WebApplication.SiteMaster.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_Page_Load_
+  commentId: Overload:WebApplication.SiteMaster.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.SiteMaster.Page_Load
+  nameWithType: SiteMaster.Page_Load
+- uid: WebApplication.SiteMaster.userMenu
+  name: userMenu
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_userMenu
+  commentId: F:WebApplication.SiteMaster.userMenu
+  fullName: WebApplication.SiteMaster.userMenu
+  nameWithType: SiteMaster.userMenu
+- uid: WebApplication.UserPage
+  name: WebApplication.UserPage
+  href: api/WebApplication/WebApplication.UserPage.html
+  commentId: N:WebApplication.UserPage
+  fullName: WebApplication.UserPage
+  nameWithType: WebApplication.UserPage
+- uid: WebApplication.UserPage.InstanciarTarea
+  name: InstanciarTarea
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html
+  commentId: T:WebApplication.UserPage.InstanciarTarea
+  fullName: WebApplication.UserPage.InstanciarTarea
+  nameWithType: InstanciarTarea
+- uid: WebApplication.UserPage.InstanciarTarea.Master
+  name: Master
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Master
+  commentId: P:WebApplication.UserPage.InstanciarTarea.Master
+  fullName: WebApplication.UserPage.InstanciarTarea.Master
+  nameWithType: InstanciarTarea.Master
+- uid: WebApplication.UserPage.InstanciarTarea.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Master_
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Master
+  isSpec: "True"
+  fullName: WebApplication.UserPage.InstanciarTarea.Master
+  nameWithType: InstanciarTarea.Master
+- uid: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
+  nameWithType: InstanciarTarea.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPage.InstanciarTarea.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Page_Load_
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPage.InstanciarTarea.Page_Load
+  nameWithType: InstanciarTarea.Page_Load
+- uid: WebApplication.UserPage.TareasAlumno
+  name: TareasAlumno
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html
+  commentId: T:WebApplication.UserPage.TareasAlumno
+  fullName: WebApplication.UserPage.TareasAlumno
+  nameWithType: TareasAlumno
+- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses
+  name: DropDownCourses
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DropDownCourses
+  commentId: F:WebApplication.UserPage.TareasAlumno.DropDownCourses
+  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses
+  nameWithType: TareasAlumno.DropDownCourses
+- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  name: DropDownCourses_SelectedIndexChanged(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DropDownCourses_SelectedIndexChanged_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object, System.EventArgs)
+  nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged(Object, EventArgs)
+- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged*
+  name: DropDownCourses_SelectedIndexChanged
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DropDownCourses_SelectedIndexChanged_
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged
+  isSpec: "True"
+  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged
+  nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks
+  name: GridViewTasks
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks
+  commentId: F:WebApplication.UserPage.TareasAlumno.GridViewTasks
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks
+  nameWithType: TareasAlumno.GridViewTasks
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  name: GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_RowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_
+  commentId: M:WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object, System.Web.UI.WebControls.GridViewCommandEventArgs)
+  nameWithType: TareasAlumno.GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand*
+  name: GridViewTasks_RowCommand
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_RowCommand_
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand
+  isSpec: "True"
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand
+  nameWithType: TareasAlumno.GridViewTasks_RowCommand
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  name: GridViewTasks_Sorting(Object, GridViewSortEventArgs)
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_Sorting_System_Object_System_Web_UI_WebControls_GridViewSortEventArgs_
+  commentId: M:WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
+  nameWithType: TareasAlumno.GridViewTasks_Sorting(Object, GridViewSortEventArgs)
+- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting*
+  name: GridViewTasks_Sorting
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_Sorting_
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting
+  isSpec: "True"
+  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting
+  nameWithType: TareasAlumno.GridViewTasks_Sorting
+- uid: WebApplication.UserPage.TareasAlumno.Master
+  name: Master
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Master
+  commentId: P:WebApplication.UserPage.TareasAlumno.Master
+  fullName: WebApplication.UserPage.TareasAlumno.Master
+  nameWithType: TareasAlumno.Master
+- uid: WebApplication.UserPage.TareasAlumno.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Master_
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.Master
+  isSpec: "True"
+  fullName: WebApplication.UserPage.TareasAlumno.Master
+  nameWithType: TareasAlumno.Master
+- uid: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object, System.EventArgs)
+  nameWithType: TareasAlumno.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPage.TareasAlumno.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Page_Load_
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPage.TareasAlumno.Page_Load
+  nameWithType: TareasAlumno.Page_Load
+- uid: WebApplication.UserTasks
+  name: UserTasks
+  href: api/WebApplication/WebApplication.UserTasks.html
+  commentId: T:WebApplication.UserTasks
+  fullName: WebApplication.UserTasks
+  nameWithType: UserTasks
+- uid: WebApplication.UserTasks.Master
+  name: Master
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Master
+  commentId: P:WebApplication.UserTasks.Master
+  fullName: WebApplication.UserTasks.Master
+  nameWithType: UserTasks.Master
+- uid: WebApplication.UserTasks.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Master_
+  commentId: Overload:WebApplication.UserTasks.Master
+  isSpec: "True"
+  fullName: WebApplication.UserTasks.Master
+  nameWithType: UserTasks.Master
+- uid: WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserTasks.Page_Load(System.Object, System.EventArgs)
+  nameWithType: UserTasks.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserTasks.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Page_Load_
+  commentId: Overload:WebApplication.UserTasks.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserTasks.Page_Load
+  nameWithType: UserTasks.Page_Load
+- uid: WebApplication.UserTasks.UserContent
+  name: UserContent
+  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_UserContent
+  commentId: F:WebApplication.UserTasks.UserContent
+  fullName: WebApplication.UserTasks.UserContent
+  nameWithType: UserTasks.UserContent
+- uid: WebApplication.Utils
+  name: WebApplication.Utils
+  href: api/WebApplication/WebApplication.Utils.html
+  commentId: N:WebApplication.Utils
+  fullName: WebApplication.Utils
+  nameWithType: WebApplication.Utils
+- uid: WebApplication.Utils.JsonFile
+  name: JsonFile
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html
+  commentId: T:WebApplication.Utils.JsonFile
+  fullName: WebApplication.Utils.JsonFile
+  nameWithType: JsonFile
+- uid: WebApplication.Utils.JsonFile.MakeRelativePath(System.String,System.String)
+  name: MakeRelativePath(String, String)
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html#WebApplication_Utils_JsonFile_MakeRelativePath_System_String_System_String_
+  commentId: M:WebApplication.Utils.JsonFile.MakeRelativePath(System.String,System.String)
+  fullName: WebApplication.Utils.JsonFile.MakeRelativePath(System.String, System.String)
+  nameWithType: JsonFile.MakeRelativePath(String, String)
+- uid: WebApplication.Utils.JsonFile.MakeRelativePath*
+  name: MakeRelativePath
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html#WebApplication_Utils_JsonFile_MakeRelativePath_
+  commentId: Overload:WebApplication.Utils.JsonFile.MakeRelativePath
+  isSpec: "True"
+  fullName: WebApplication.Utils.JsonFile.MakeRelativePath
+  nameWithType: JsonFile.MakeRelativePath
+- uid: WebApplication.Utils.JsonFile.Read*
+  name: Read
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html#WebApplication_Utils_JsonFile_Read_
+  commentId: Overload:WebApplication.Utils.JsonFile.Read
+  isSpec: "True"
+  fullName: WebApplication.Utils.JsonFile.Read
+  nameWithType: JsonFile.Read
+- uid: WebApplication.Utils.JsonFile.Read``1(System.String)
+  name: Read<T>(String)
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html#WebApplication_Utils_JsonFile_Read__1_System_String_
+  commentId: M:WebApplication.Utils.JsonFile.Read``1(System.String)
+  name.vb: Read(Of T)(String)
+  fullName: WebApplication.Utils.JsonFile.Read<T>(System.String)
+  fullName.vb: WebApplication.Utils.JsonFile.Read(Of T)(System.String)
+  nameWithType: JsonFile.Read<T>(String)
+  nameWithType.vb: JsonFile.Read(Of T)(String)
+- uid: WebApplication.Utils.JsonFile.Write*
+  name: Write
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html#WebApplication_Utils_JsonFile_Write_
+  commentId: Overload:WebApplication.Utils.JsonFile.Write
+  isSpec: "True"
+  fullName: WebApplication.Utils.JsonFile.Write
+  nameWithType: JsonFile.Write
+- uid: WebApplication.Utils.JsonFile.Write``1(System.String,``0,Newtonsoft.Json.Formatting)
+  name: Write<T>(String, T, Formatting)
+  href: api/WebApplication/WebApplication.Utils.JsonFile.html#WebApplication_Utils_JsonFile_Write__1_System_String___0_Newtonsoft_Json_Formatting_
+  commentId: M:WebApplication.Utils.JsonFile.Write``1(System.String,``0,Newtonsoft.Json.Formatting)
+  name.vb: Write(Of T)(String, T, Formatting)
+  fullName: WebApplication.Utils.JsonFile.Write<T>(System.String, T, Newtonsoft.Json.Formatting)
+  fullName.vb: WebApplication.Utils.JsonFile.Write(Of T)(System.String, T, Newtonsoft.Json.Formatting)
+  nameWithType: JsonFile.Write<T>(String, T, Formatting)
+  nameWithType.vb: JsonFile.Write(Of T)(String, T, Formatting)
+- uid: WebApplication.Utils.UrlUtils
+  name: UrlUtils
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html
+  commentId: T:WebApplication.Utils.UrlUtils
+  fullName: WebApplication.Utils.UrlUtils
+  nameWithType: UrlUtils
+- uid: WebApplication.Utils.UrlUtils.ApplicationFolder
+  name: ApplicationFolder
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_ApplicationFolder
+  commentId: P:WebApplication.Utils.UrlUtils.ApplicationFolder
+  fullName: WebApplication.Utils.UrlUtils.ApplicationFolder
+  nameWithType: UrlUtils.ApplicationFolder
+- uid: WebApplication.Utils.UrlUtils.ApplicationFolder*
+  name: ApplicationFolder
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_ApplicationFolder_
+  commentId: Overload:WebApplication.Utils.UrlUtils.ApplicationFolder
+  isSpec: "True"
+  fullName: WebApplication.Utils.UrlUtils.ApplicationFolder
+  nameWithType: UrlUtils.ApplicationFolder
+- uid: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name: RedirectWithData(Dictionary<String, Object>, String)
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_RedirectWithData_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_
+  commentId: M:WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name.vb: RedirectWithData(Dictionary(Of String, Object), String)
+  fullName: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  fullName.vb: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  nameWithType: UrlUtils.RedirectWithData(Dictionary<String, Object>, String)
+  nameWithType.vb: UrlUtils.RedirectWithData(Dictionary(Of String, Object), String)
+- uid: WebApplication.Utils.UrlUtils.RedirectWithData*
+  name: RedirectWithData
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_RedirectWithData_
+  commentId: Overload:WebApplication.Utils.UrlUtils.RedirectWithData
+  isSpec: "True"
+  fullName: WebApplication.Utils.UrlUtils.RedirectWithData
+  nameWithType: UrlUtils.RedirectWithData
+- uid: WebApplication.Utils.UrlUtils.UrlRoot
+  name: UrlRoot
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_UrlRoot
+  commentId: P:WebApplication.Utils.UrlUtils.UrlRoot
+  fullName: WebApplication.Utils.UrlUtils.UrlRoot
+  nameWithType: UrlUtils.UrlRoot
+- uid: WebApplication.Utils.UrlUtils.UrlRoot*
+  name: UrlRoot
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_UrlRoot_
+  commentId: Overload:WebApplication.Utils.UrlUtils.UrlRoot
+  isSpec: "True"
+  fullName: WebApplication.Utils.UrlUtils.UrlRoot
+  nameWithType: UrlUtils.UrlRoot
+- uid: WebApplication.Utils.UrlUtils.VirtualPath
+  name: VirtualPath
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_VirtualPath
+  commentId: P:WebApplication.Utils.UrlUtils.VirtualPath
+  fullName: WebApplication.Utils.UrlUtils.VirtualPath
+  nameWithType: UrlUtils.VirtualPath
+- uid: WebApplication.Utils.UrlUtils.VirtualPath*
+  name: VirtualPath
+  href: api/WebApplication/WebApplication.Utils.UrlUtils.html#WebApplication_Utils_UrlUtils_VirtualPath_
+  commentId: Overload:WebApplication.Utils.UrlUtils.VirtualPath
+  isSpec: "True"
+  fullName: WebApplication.Utils.UrlUtils.VirtualPath
+  nameWithType: UrlUtils.VirtualPath
+- uid: WebApplication.ViewSwitcher
+  name: ViewSwitcher
+  href: api/WebApplication/WebApplication.ViewSwitcher.html
+  commentId: T:WebApplication.ViewSwitcher
+  fullName: WebApplication.ViewSwitcher
+  nameWithType: ViewSwitcher
+- uid: WebApplication.ViewSwitcher.AlternateView
+  name: AlternateView
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_AlternateView
+  commentId: P:WebApplication.ViewSwitcher.AlternateView
+  fullName: WebApplication.ViewSwitcher.AlternateView
+  nameWithType: ViewSwitcher.AlternateView
+- uid: WebApplication.ViewSwitcher.AlternateView*
+  name: AlternateView
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_AlternateView_
+  commentId: Overload:WebApplication.ViewSwitcher.AlternateView
+  isSpec: "True"
+  fullName: WebApplication.ViewSwitcher.AlternateView
+  nameWithType: ViewSwitcher.AlternateView
+- uid: WebApplication.ViewSwitcher.CurrentView
+  name: CurrentView
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_CurrentView
+  commentId: P:WebApplication.ViewSwitcher.CurrentView
+  fullName: WebApplication.ViewSwitcher.CurrentView
+  nameWithType: ViewSwitcher.CurrentView
+- uid: WebApplication.ViewSwitcher.CurrentView*
+  name: CurrentView
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_CurrentView_
+  commentId: Overload:WebApplication.ViewSwitcher.CurrentView
+  isSpec: "True"
+  fullName: WebApplication.ViewSwitcher.CurrentView
+  nameWithType: ViewSwitcher.CurrentView
+- uid: WebApplication.ViewSwitcher.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.ViewSwitcher.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.ViewSwitcher.Page_Load(System.Object, System.EventArgs)
+  nameWithType: ViewSwitcher.Page_Load(Object, EventArgs)
+- uid: WebApplication.ViewSwitcher.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_Page_Load_
+  commentId: Overload:WebApplication.ViewSwitcher.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.ViewSwitcher.Page_Load
+  nameWithType: ViewSwitcher.Page_Load
+- uid: WebApplication.ViewSwitcher.SwitchUrl
+  name: SwitchUrl
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_SwitchUrl
+  commentId: P:WebApplication.ViewSwitcher.SwitchUrl
+  fullName: WebApplication.ViewSwitcher.SwitchUrl
+  nameWithType: ViewSwitcher.SwitchUrl
+- uid: WebApplication.ViewSwitcher.SwitchUrl*
+  name: SwitchUrl
+  href: api/WebApplication/WebApplication.ViewSwitcher.html#WebApplication_ViewSwitcher_SwitchUrl_
+  commentId: Overload:WebApplication.ViewSwitcher.SwitchUrl
+  isSpec: "True"
+  fullName: WebApplication.ViewSwitcher.SwitchUrl
+  nameWithType: ViewSwitcher.SwitchUrl
+- uid: WebApplication.WebNotification
+  name: WebNotification
+  href: api/WebApplication/WebApplication.WebNotification.html
+  commentId: T:WebApplication.WebNotification
+  fullName: WebApplication.WebNotification
+  nameWithType: WebNotification
+- uid: WebApplication.WebNotification.Alert
+  name: Alert
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_Alert
+  commentId: F:WebApplication.WebNotification.Alert
+  fullName: WebApplication.WebNotification.Alert
+  nameWithType: WebNotification.Alert
+- uid: WebApplication.WebNotification.AlertBody
+  name: AlertBody
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_AlertBody
+  commentId: F:WebApplication.WebNotification.AlertBody
+  fullName: WebApplication.WebNotification.AlertBody
+  nameWithType: WebNotification.AlertBody
+- uid: WebApplication.WebNotification.AlertCloseButton
+  name: AlertCloseButton
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_AlertCloseButton
+  commentId: F:WebApplication.WebNotification.AlertCloseButton
+  fullName: WebApplication.WebNotification.AlertCloseButton
+  nameWithType: WebNotification.AlertCloseButton
+- uid: WebApplication.WebNotification.AlertTitle
+  name: AlertTitle
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_AlertTitle
+  commentId: F:WebApplication.WebNotification.AlertTitle
+  fullName: WebApplication.WebNotification.AlertTitle
+  nameWithType: WebNotification.AlertTitle
+- uid: WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.WebNotification.Page_Load(System.Object, System.EventArgs)
+  nameWithType: WebNotification.Page_Load(Object, EventArgs)
+- uid: WebApplication.WebNotification.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_Page_Load_
+  commentId: Overload:WebApplication.WebNotification.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.WebNotification.Page_Load
+  nameWithType: WebNotification.Page_Load
+- uid: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  name: UpdateContent(NotificationData)
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_UpdateContent_WebApplication_Framework_NotificationData_
+  commentId: M:WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  fullName: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  nameWithType: WebNotification.UpdateContent(NotificationData)
+- uid: WebApplication.WebNotification.UpdateContent*
+  name: UpdateContent
+  href: api/WebApplication/WebApplication.WebNotification.html#WebApplication_WebNotification_UpdateContent_
+  commentId: Overload:WebApplication.WebNotification.UpdateContent
+  isSpec: "True"
+  fullName: WebApplication.WebNotification.UpdateContent
+  nameWithType: WebNotification.UpdateContent

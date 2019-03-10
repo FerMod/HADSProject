@@ -17,8 +17,12 @@ items:
   fullName: WebApplication.Framework.NotificationData
   type: Class
   source:
+    remote:
+      path: WebApplication/Framework/NotificationData.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: NotificationData
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\NotificationData.cs
+    path: ../WebApplication/Framework/NotificationData.cs
     startLine: 5
   assemblies:
   - WebApplication
@@ -54,8 +58,12 @@ items:
   fullName: WebApplication.Framework.NotificationData.Title
   type: Property
   source:
+    remote:
+      path: WebApplication/Framework/NotificationData.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Title
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\NotificationData.cs
+    path: ../WebApplication/Framework/NotificationData.cs
     startLine: 7
   assemblies:
   - WebApplication
@@ -85,8 +93,12 @@ items:
   fullName: WebApplication.Framework.NotificationData.Body
   type: Property
   source:
+    remote:
+      path: WebApplication/Framework/NotificationData.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Body
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\NotificationData.cs
+    path: ../WebApplication/Framework/NotificationData.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -116,8 +128,12 @@ items:
   fullName: WebApplication.Framework.NotificationData.Level
   type: Property
   source:
+    remote:
+      path: WebApplication/Framework/NotificationData.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Level
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\NotificationData.cs
+    path: ../WebApplication/Framework/NotificationData.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -147,8 +163,12 @@ items:
   fullName: WebApplication.Framework.NotificationData.Dismissable
   type: Property
   source:
+    remote:
+      path: WebApplication/Framework/NotificationData.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Dismissable
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\NotificationData.cs
+    path: ../WebApplication/Framework/NotificationData.cs
     startLine: 10
   assemblies:
   - WebApplication

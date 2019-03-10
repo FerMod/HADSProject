@@ -8,6 +8,8 @@
     name: About
   - uid: WebApplication.Account
     name: Account
+  - uid: WebApplication.Account.ActiveNav
+    name: Account.ActiveNav
   - uid: WebApplication.AppConfig
     name: AppConfig
   - uid: WebApplication.AppConfig.SmtpServer
@@ -54,6 +56,8 @@
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   items:
+  - uid: WebApplication.Framework.Extensions.AttributeCollectionExtension
+    name: AttributeCollectionExtension
   - uid: WebApplication.Framework.Extensions.DictionaryExtension
     name: DictionaryExtension
 - uid: WebApplication.UserPage

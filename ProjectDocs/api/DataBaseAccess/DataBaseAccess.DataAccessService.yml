@@ -7,6 +7,7 @@ items:
   children:
   - DataBaseAccess.DataAccessService.#ctor(System.String)
   - DataBaseAccess.DataAccessService.ConnectionString
+  - DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
@@ -18,8 +19,12 @@ items:
   fullName: DataBaseAccess.DataAccessService
   type: Class
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: DataAccessService
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 9
   assemblies:
   - DataBaseAccess
@@ -59,8 +64,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.ConnectionString
   type: Property
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 11
   assemblies:
   - DataBaseAccess
@@ -92,8 +101,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.DataAccessService(System.String)
   type: Constructor
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 13
   assemblies:
   - DataBaseAccess
@@ -121,8 +134,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 17
   assemblies:
   - DataBaseAccess
@@ -161,8 +178,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Query
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 35
   assemblies:
   - DataBaseAccess
@@ -201,8 +222,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 55
   assemblies:
   - DataBaseAccess
@@ -231,6 +256,50 @@ items:
   - Public
   fullName.vb: DataBaseAccess.DataAccessService.Scalar(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
   name.vb: Scalar(Of T)(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  parent: DataBaseAccess.DataAccessService
+  langs:
+  - csharp
+  - vb
+  name: CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  type: Method
+  source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CreateQueryDataTable
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    startLine: 74
+  assemblies:
+  - DataBaseAccess
+  namespace: DataBaseAccess
+  syntax:
+    content: public DataTable CreateQueryDataTable(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
+    parameters:
+    - id: query
+      type: System.String
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: commandType
+      type: System.Data.CommandType
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function CreateQueryDataTable(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As DataTable
+  overload: DataBaseAccess.DataAccessService.CreateQueryDataTable*
+  implements:
+  - DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  nameWithType.vb: DataAccessService.CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
 references:
 - uid: DataBaseAccess
   commentId: N:DataBaseAccess
@@ -1062,3 +1131,127 @@ references:
   name: T
   nameWithType: T
   fullName: T
+- uid: DataBaseAccess.DataAccessService.CreateQueryDataTable*
+  commentId: Overload:DataBaseAccess.DataAccessService.CreateQueryDataTable
+  name: CreateQueryDataTable
+  nameWithType: DataAccessService.CreateQueryDataTable
+  fullName: DataBaseAccess.DataAccessService.CreateQueryDataTable
+- uid: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  parent: DataBaseAccess.IDataAccessService
+  isExternal: true
+  name: CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  nameWithType: IDataAccessService.CreateQueryDataTable(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  nameWithType.vb: IDataAccessService.CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+  fullName.vb: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+  spec.csharp:
+  - uid: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: CreateQueryDataTable
+    nameWithType: IDataAccessService.CreateQueryDataTable
+    fullName: DataBaseAccess.IDataAccessService.CreateQueryDataTable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+    name: CreateQueryDataTable
+    nameWithType: IDataAccessService.CreateQueryDataTable
+    fullName: DataBaseAccess.IDataAccessService.CreateQueryDataTable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Data.CommandType
+    name: CommandType
+    nameWithType: CommandType
+    fullName: System.Data.CommandType
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable

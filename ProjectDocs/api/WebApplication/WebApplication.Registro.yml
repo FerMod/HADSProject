@@ -10,6 +10,7 @@ items:
   - WebApplication.Registro.CompareRepeatPassword
   - WebApplication.Registro.dropDownRol
   - WebApplication.Registro.EmailRegExpr
+  - WebApplication.Registro.Master
   - WebApplication.Registro.Page_Load(System.Object,System.EventArgs)
   - WebApplication.Registro.RequiredFieldEmail
   - WebApplication.Registro.RequiredFieldLastName
@@ -29,8 +30,12 @@ items:
   fullName: WebApplication.Registro
   type: Class
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Registro
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -125,7 +130,6 @@ items:
   - System.Web.UI.Page.AutoPostBackControl
   - System.Web.UI.Page.Header
   - System.Web.UI.Page.MaintainScrollPositionOnPostBack
-  - System.Web.UI.Page.Master
   - System.Web.UI.Page.MasterPageFile
   - System.Web.UI.Page.PageStatePersister
   - System.Web.UI.Page.Trace
@@ -314,8 +318,12 @@ items:
   fullName: WebApplication.Registro.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Registro.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.cs
+    path: ../WebApplication/Registro.aspx.cs
     startLine: 27
   assemblies:
   - WebApplication
@@ -345,9 +353,13 @@ items:
   fullName: WebApplication.Registro.ButtonCreateAccount_Click(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Registro.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonCreateAccount_Click
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.cs
-    startLine: 48
+    path: ../WebApplication/Registro.aspx.cs
+    startLine: 50
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -376,8 +388,12 @@ items:
   fullName: WebApplication.Registro.textBoxName
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxName
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -406,8 +422,12 @@ items:
   fullName: WebApplication.Registro.RequiredFieldName
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldName
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -436,8 +456,12 @@ items:
   fullName: WebApplication.Registro.textBoxLastName
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxLastName
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -466,8 +490,12 @@ items:
   fullName: WebApplication.Registro.RequiredFieldLastName
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldLastName
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -496,8 +524,12 @@ items:
   fullName: WebApplication.Registro.textBoxEmail
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxEmail
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -526,8 +558,12 @@ items:
   fullName: WebApplication.Registro.RequiredFieldEmail
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldEmail
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -556,8 +592,12 @@ items:
   fullName: WebApplication.Registro.EmailRegExpr
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: EmailRegExpr
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -586,8 +626,12 @@ items:
   fullName: WebApplication.Registro.textBoxPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxPassword
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 84
   assemblies:
   - WebApplication
@@ -616,8 +660,12 @@ items:
   fullName: WebApplication.Registro.RequiredFieldPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldPassword
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 93
   assemblies:
   - WebApplication
@@ -646,8 +694,12 @@ items:
   fullName: WebApplication.Registro.textBoxRepeatPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxRepeatPassword
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 102
   assemblies:
   - WebApplication
@@ -676,8 +728,12 @@ items:
   fullName: WebApplication.Registro.RequiredFieldRepeatPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldRepeatPassword
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 111
   assemblies:
   - WebApplication
@@ -706,8 +762,12 @@ items:
   fullName: WebApplication.Registro.CompareRepeatPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: CompareRepeatPassword
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 120
   assemblies:
   - WebApplication
@@ -736,8 +796,12 @@ items:
   fullName: WebApplication.Registro.dropDownRol
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: dropDownRol
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 129
   assemblies:
   - WebApplication
@@ -766,8 +830,12 @@ items:
   fullName: WebApplication.Registro.buttonCreateAccount
   type: Field
   source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: buttonCreateAccount
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
+    path: ../WebApplication/Registro.aspx.designer.cs
     startLine: 138
   assemblies:
   - WebApplication
@@ -784,6 +852,44 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.Registro.Master
+  commentId: P:WebApplication.Registro.Master
+  id: Master
+  parent: WebApplication.Registro
+  langs:
+  - csharp
+  - vb
+  name: Master
+  nameWithType: Registro.Master
+  fullName: WebApplication.Registro.Master
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/Registro.aspx.designer.cs
+    startLine: 146
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
+  example: []
+  syntax:
+    content: public Account Master { get; }
+    parameters: []
+    return:
+      type: WebApplication.Account
+    content.vb: Public ReadOnly Property Master As Account
+  overload: WebApplication.Registro.Master*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
 - uid: WebApplication
   commentId: N:WebApplication
@@ -3261,13 +3367,6 @@ references:
   name: MaintainScrollPositionOnPostBack
   nameWithType: Page.MaintainScrollPositionOnPostBack
   fullName: System.Web.UI.Page.MaintainScrollPositionOnPostBack
-- uid: System.Web.UI.Page.Master
-  commentId: P:System.Web.UI.Page.Master
-  parent: System.Web.UI.Page
-  isExternal: true
-  name: Master
-  nameWithType: Page.Master
-  fullName: System.Web.UI.Page.Master
 - uid: System.Web.UI.Page.MasterPageFile
   commentId: P:System.Web.UI.Page.MasterPageFile
   parent: System.Web.UI.Page
@@ -7854,3 +7953,14 @@ references:
   name: Button
   nameWithType: Button
   fullName: System.Web.UI.WebControls.Button
+- uid: WebApplication.Registro.Master*
+  commentId: Overload:WebApplication.Registro.Master
+  name: Master
+  nameWithType: Registro.Master
+  fullName: WebApplication.Registro.Master
+- uid: WebApplication.Account
+  commentId: T:WebApplication.Account
+  parent: WebApplication
+  name: Account
+  nameWithType: Account
+  fullName: WebApplication.Account

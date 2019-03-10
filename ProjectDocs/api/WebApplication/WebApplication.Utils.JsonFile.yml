@@ -16,8 +16,12 @@ items:
   fullName: WebApplication.Utils.JsonFile
   type: Class
   source:
+    remote:
+      path: WebApplication/Utils/JsonFile.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: JsonFile
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
+    path: ../WebApplication/Utils/JsonFile.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -54,8 +58,12 @@ items:
   fullName: WebApplication.Utils.JsonFile.Read<T>(System.String)
   type: Method
   source:
+    remote:
+      path: WebApplication/Utils/JsonFile.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Read
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
+    path: ../WebApplication/Utils/JsonFile.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -92,8 +100,12 @@ items:
   fullName: WebApplication.Utils.JsonFile.Write<T>(System.String, T, Newtonsoft.Json.Formatting)
   type: Method
   source:
+    remote:
+      path: WebApplication/Utils/JsonFile.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Write
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
+    path: ../WebApplication/Utils/JsonFile.cs
     startLine: 15
   assemblies:
   - WebApplication
@@ -132,8 +144,12 @@ items:
   fullName: WebApplication.Utils.JsonFile.MakeRelativePath(System.String, System.String)
   type: Method
   source:
+    remote:
+      path: WebApplication/Utils/JsonFile.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: MakeRelativePath
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
+    path: ../WebApplication/Utils/JsonFile.cs
     startLine: 30
   assemblies:
   - WebApplication

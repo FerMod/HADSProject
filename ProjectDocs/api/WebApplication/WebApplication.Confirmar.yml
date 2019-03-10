@@ -14,8 +14,12 @@ items:
   fullName: WebApplication.Confirmar
   type: Class
   source:
+    remote:
+      path: WebApplication/Confirmar.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Confirmar
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Confirmar.aspx.cs
+    path: ../WebApplication/Confirmar.aspx.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -299,8 +303,12 @@ items:
   fullName: WebApplication.Confirmar.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Confirmar.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Confirmar.aspx.cs
+    path: ../WebApplication/Confirmar.aspx.cs
     startLine: 13
   assemblies:
   - WebApplication

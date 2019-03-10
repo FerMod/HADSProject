@@ -6,9 +6,11 @@ items:
   parent: WebApplication
   children:
   - WebApplication.Account.AccountCardBodyContent
-  - WebApplication.Account.createAccount
-  - WebApplication.Account.logIn
+  - WebApplication.Account.CreateAccount
+  - WebApplication.Account.LogIn
+  - WebApplication.Account.Master
   - WebApplication.Account.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
   langs:
   - csharp
   - vb
@@ -17,8 +19,12 @@ items:
   fullName: WebApplication.Account
   type: Class
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Account
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -53,7 +59,6 @@ items:
   - System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(System.Web.UI.Control,System.Web.UI.ITemplate)
   - System.Web.UI.MasterPage.ContentTemplates
   - System.Web.UI.MasterPage.ContentPlaceHolders
-  - System.Web.UI.MasterPage.Master
   - System.Web.UI.MasterPage.MasterPageFile
   - System.Web.UI.UserControl.OnInit(System.EventArgs)
   - System.Web.UI.UserControl.LoadViewState(System.Object)
@@ -230,9 +235,13 @@ items:
   fullName: WebApplication.Account.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.cs
-    startLine: 9
+    path: ../WebApplication/Account.Master.cs
+    startLine: 16
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -249,62 +258,103 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.Account.logIn
-  commentId: F:WebApplication.Account.logIn
-  id: logIn
+- uid: WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
+  commentId: M:WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
+  id: SetActiveNav(WebApplication.Account.ActiveNav)
   parent: WebApplication.Account
   langs:
   - csharp
   - vb
-  name: logIn
-  nameWithType: Account.logIn
-  fullName: WebApplication.Account.logIn
+  name: SetActiveNav(Account.ActiveNav)
+  nameWithType: Account.SetActiveNav(Account.ActiveNav)
+  fullName: WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: SetActiveNav
+    path: ../WebApplication/Account.Master.cs
+    startLine: 20
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: public void SetActiveNav(Account.ActiveNav activeNav)
+    parameters:
+    - id: activeNav
+      type: WebApplication.Account.ActiveNav
+    content.vb: Public Sub SetActiveNav(activeNav As Account.ActiveNav)
+  overload: WebApplication.Account.SetActiveNav*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WebApplication.Account.LogIn
+  commentId: F:WebApplication.Account.LogIn
+  id: LogIn
+  parent: WebApplication.Account
+  langs:
+  - csharp
+  - vb
+  name: LogIn
+  nameWithType: Account.LogIn
+  fullName: WebApplication.Account.LogIn
   type: Field
   source:
-    id: logIn
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: LogIn
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\nlogIn control.\n"
+  summary: "\nLogIn control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected LinkButton logIn
+    content: protected LinkButton LogIn
     return:
       type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected logIn As LinkButton
+    content.vb: Protected LogIn As LinkButton
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.Account.createAccount
-  commentId: F:WebApplication.Account.createAccount
-  id: createAccount
+- uid: WebApplication.Account.CreateAccount
+  commentId: F:WebApplication.Account.CreateAccount
+  id: CreateAccount
   parent: WebApplication.Account
   langs:
   - csharp
   - vb
-  name: createAccount
-  nameWithType: Account.createAccount
-  fullName: WebApplication.Account.createAccount
+  name: CreateAccount
+  nameWithType: Account.CreateAccount
+  fullName: WebApplication.Account.CreateAccount
   type: Field
   source:
-    id: createAccount
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CreateAccount
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication
-  summary: "\ncreateAccount control.\n"
+  summary: "\nCreateAccount control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected LinkButton createAccount
+    content: protected LinkButton CreateAccount
     return:
       type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected createAccount As LinkButton
+    content.vb: Protected CreateAccount As LinkButton
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -321,8 +371,12 @@ items:
   fullName: WebApplication.Account.AccountCardBodyContent
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AccountCardBodyContent
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -339,6 +393,44 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.Account.Master
+  commentId: P:WebApplication.Account.Master
+  id: Master
+  parent: WebApplication.Account
+  langs:
+  - csharp
+  - vb
+  name: Master
+  nameWithType: Account.Master
+  fullName: WebApplication.Account.Master
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/Account.Master.designer.cs
+    startLine: 47
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
+  example: []
+  syntax:
+    content: public SiteMaster Master { get; }
+    parameters: []
+    return:
+      type: WebApplication.SiteMaster
+    content.vb: Public ReadOnly Property Master As SiteMaster
+  overload: WebApplication.Account.Master*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
 - uid: WebApplication
   commentId: N:WebApplication
@@ -592,13 +684,6 @@ references:
   name: ContentPlaceHolders
   nameWithType: MasterPage.ContentPlaceHolders
   fullName: System.Web.UI.MasterPage.ContentPlaceHolders
-- uid: System.Web.UI.MasterPage.Master
-  commentId: P:System.Web.UI.MasterPage.Master
-  parent: System.Web.UI.MasterPage
-  isExternal: true
-  name: Master
-  nameWithType: MasterPage.Master
-  fullName: System.Web.UI.MasterPage.Master
 - uid: System.Web.UI.MasterPage.MasterPageFile
   commentId: P:System.Web.UI.MasterPage.MasterPageFile
   parent: System.Web.UI.MasterPage
@@ -5434,6 +5519,17 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: WebApplication.Account.SetActiveNav*
+  commentId: Overload:WebApplication.Account.SetActiveNav
+  name: SetActiveNav
+  nameWithType: Account.SetActiveNav
+  fullName: WebApplication.Account.SetActiveNav
+- uid: WebApplication.Account.ActiveNav
+  commentId: T:WebApplication.Account.ActiveNav
+  parent: WebApplication
+  name: Account.ActiveNav
+  nameWithType: Account.ActiveNav
+  fullName: WebApplication.Account.ActiveNav
 - uid: System.Web.UI.WebControls.LinkButton
   commentId: T:System.Web.UI.WebControls.LinkButton
   parent: System.Web.UI.WebControls
@@ -5454,3 +5550,14 @@ references:
   name: ContentPlaceHolder
   nameWithType: ContentPlaceHolder
   fullName: System.Web.UI.WebControls.ContentPlaceHolder
+- uid: WebApplication.Account.Master*
+  commentId: Overload:WebApplication.Account.Master
+  name: Master
+  nameWithType: Account.Master
+  fullName: WebApplication.Account.Master
+- uid: WebApplication.SiteMaster
+  commentId: T:WebApplication.SiteMaster
+  parent: WebApplication
+  name: SiteMaster
+  nameWithType: SiteMaster
+  fullName: WebApplication.SiteMaster

@@ -16,8 +16,12 @@ items:
   fullName: DataBaseAccess.Extensions.DataReaderExtension
   type: Class
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataReaderExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: DataReaderExtension
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataReaderExtension.cs
+    path: ../DataBaseAccess/Framework/DataReaderExtension.cs
     startLine: 8
   assemblies:
   - DataBaseAccess
@@ -55,8 +59,12 @@ items:
   fullName: DataBaseAccess.Extensions.DataReaderExtension.Select<T>(System.Data.IDataReader, System.Func<System.Data.IDataReader, T>)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataReaderExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Select
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataReaderExtension.cs
+    path: ../DataBaseAccess/Framework/DataReaderExtension.cs
     startLine: 10
   assemblies:
   - DataBaseAccess
@@ -99,8 +107,12 @@ items:
   fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataDictionary(System.Data.IDataReader)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataReaderExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: GetDataDictionary
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataReaderExtension.cs
+    path: ../DataBaseAccess/Framework/DataReaderExtension.cs
     startLine: 16
   assemblies:
   - DataBaseAccess
@@ -136,8 +148,12 @@ items:
   fullName: DataBaseAccess.Extensions.DataReaderExtension.GetDataRecords(System.Data.IDataReader)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataReaderExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: GetDataRecords
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataReaderExtension.cs
+    path: ../DataBaseAccess/Framework/DataReaderExtension.cs
     startLine: 22
   assemblies:
   - DataBaseAccess

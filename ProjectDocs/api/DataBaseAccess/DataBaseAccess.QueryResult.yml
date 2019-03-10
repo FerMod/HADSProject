@@ -15,8 +15,12 @@ items:
   fullName: DataBaseAccess.QueryResult
   type: Class
   source:
+    remote:
+      path: DataBaseAccess/Framework/QueryResult.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: QueryResult
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\QueryResult.cs
+    path: ../DataBaseAccess/Framework/QueryResult.cs
     startLine: 6
   assemblies:
   - DataBaseAccess
@@ -52,8 +56,12 @@ items:
   fullName: DataBaseAccess.QueryResult.Rows
   type: Property
   source:
+    remote:
+      path: DataBaseAccess/Framework/QueryResult.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Rows
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\QueryResult.cs
+    path: ../DataBaseAccess/Framework/QueryResult.cs
     startLine: 8
   assemblies:
   - DataBaseAccess
@@ -83,8 +91,12 @@ items:
   fullName: DataBaseAccess.QueryResult.QueryResult(System.Collections.Generic.List<System.Collections.Generic.Dictionary<System.String, System.Object>>)
   type: Constructor
   source:
+    remote:
+      path: DataBaseAccess/Framework/QueryResult.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\QueryResult.cs
+    path: ../DataBaseAccess/Framework/QueryResult.cs
     startLine: 10
   assemblies:
   - DataBaseAccess

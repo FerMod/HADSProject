@@ -17,8 +17,12 @@ items:
   fullName: WebApplication.ViewSwitcher
   type: Class
   source:
+    remote:
+      path: WebApplication/ViewSwitcher.ascx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ViewSwitcher
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\ViewSwitcher.ascx.designer.cs
+    path: ../WebApplication/ViewSwitcher.ascx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -223,8 +227,12 @@ items:
   fullName: WebApplication.ViewSwitcher.CurrentView
   type: Property
   source:
+    remote:
+      path: WebApplication/ViewSwitcher.ascx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: CurrentView
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\ViewSwitcher.ascx.cs
+    path: ../WebApplication/ViewSwitcher.ascx.cs
     startLine: 13
   assemblies:
   - WebApplication
@@ -254,8 +262,12 @@ items:
   fullName: WebApplication.ViewSwitcher.AlternateView
   type: Property
   source:
+    remote:
+      path: WebApplication/ViewSwitcher.ascx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AlternateView
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\ViewSwitcher.ascx.cs
+    path: ../WebApplication/ViewSwitcher.ascx.cs
     startLine: 15
   assemblies:
   - WebApplication
@@ -285,8 +297,12 @@ items:
   fullName: WebApplication.ViewSwitcher.SwitchUrl
   type: Property
   source:
+    remote:
+      path: WebApplication/ViewSwitcher.ascx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: SwitchUrl
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\ViewSwitcher.ascx.cs
+    path: ../WebApplication/ViewSwitcher.ascx.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -316,8 +332,12 @@ items:
   fullName: WebApplication.ViewSwitcher.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/ViewSwitcher.ascx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\ViewSwitcher.ascx.cs
+    path: ../WebApplication/ViewSwitcher.ascx.cs
     startLine: 19
   assemblies:
   - WebApplication

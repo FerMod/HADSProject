@@ -4,6 +4,7 @@ items:
   commentId: N:WebApplication.Framework.Extensions
   id: WebApplication.Framework.Extensions
   children:
+  - WebApplication.Framework.Extensions.AttributeCollectionExtension
   - WebApplication.Framework.Extensions.DictionaryExtension
   langs:
   - csharp
@@ -21,6 +22,11 @@ references:
   name: DictionaryExtension
   nameWithType: DictionaryExtension
   fullName: WebApplication.Framework.Extensions.DictionaryExtension
+- uid: WebApplication.Framework.Extensions.AttributeCollectionExtension
+  commentId: T:WebApplication.Framework.Extensions.AttributeCollectionExtension
+  name: AttributeCollectionExtension
+  nameWithType: AttributeCollectionExtension
+  fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension
 - uid: WebApplication.Framework.Extensions
   commentId: N:WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
