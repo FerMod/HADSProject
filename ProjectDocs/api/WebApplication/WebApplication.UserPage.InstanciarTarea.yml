@@ -5,8 +5,17 @@ items:
   id: InstanciarTarea
   parent: WebApplication.UserPage
   children:
+  - WebApplication.UserPage.InstanciarTarea.CancelButton
+  - WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
+  - WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
+  - WebApplication.UserPage.InstanciarTarea.EmailTextBox
+  - WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
+  - WebApplication.UserPage.InstanciarTarea.HRealesTextBox
   - WebApplication.UserPage.InstanciarTarea.Master
   - WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.UserPage.InstanciarTarea.SaveChangesButton
+  - WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
+  - WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
   langs:
   - csharp
   - vb
@@ -309,7 +318,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
-    startLine: 14
+    startLine: 20
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -322,6 +331,314 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
   overload: WebApplication.UserPage.InstanciarTarea.Page_Load*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
+  id: SaveChangesButton_Click(System.Object,System.EventArgs)
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesButton_Click(Object, EventArgs)
+  nameWithType: InstanciarTarea.SaveChangesButton_Click(Object, EventArgs)
+  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: SaveChangesButton_Click
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    startLine: 60
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  syntax:
+    content: protected void SaveChangesButton_Click(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub SaveChangesButton_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
+  id: CancelButton_Click(System.Object,System.EventArgs)
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: CancelButton_Click(Object, EventArgs)
+  nameWithType: InstanciarTarea.CancelButton_Click(Object, EventArgs)
+  fullName: WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CancelButton_Click
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    startLine: 70
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  syntax:
+    content: protected void CancelButton_Click(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub CancelButton_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPage.InstanciarTarea.CancelButton_Click*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.EmailTextBox
+  commentId: F:WebApplication.UserPage.InstanciarTarea.EmailTextBox
+  id: EmailTextBox
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: EmailTextBox
+  nameWithType: InstanciarTarea.EmailTextBox
+  fullName: WebApplication.UserPage.InstanciarTarea.EmailTextBox
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: EmailTextBox
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nEmailTextBox control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected TextBox EmailTextBox
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected EmailTextBox As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
+  commentId: F:WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
+  id: CodTareaTextBox
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: CodTareaTextBox
+  nameWithType: InstanciarTarea.CodTareaTextBox
+  fullName: WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CodTareaTextBox
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nCodTareaTextBox control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected TextBox CodTareaTextBox
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected CodTareaTextBox As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
+  commentId: F:WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
+  id: HEstimadasTextBox
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: HEstimadasTextBox
+  nameWithType: InstanciarTarea.HEstimadasTextBox
+  fullName: WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: HEstimadasTextBox
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nHEstimadasTextBox control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected TextBox HEstimadasTextBox
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected HEstimadasTextBox As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.HRealesTextBox
+  commentId: F:WebApplication.UserPage.InstanciarTarea.HRealesTextBox
+  id: HRealesTextBox
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: HRealesTextBox
+  nameWithType: InstanciarTarea.HRealesTextBox
+  fullName: WebApplication.UserPage.InstanciarTarea.HRealesTextBox
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: HRealesTextBox
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nHRealesTextBox control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected TextBox HRealesTextBox
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected HRealesTextBox As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.CancelButton
+  commentId: F:WebApplication.UserPage.InstanciarTarea.CancelButton
+  id: CancelButton
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: CancelButton
+  nameWithType: InstanciarTarea.CancelButton
+  fullName: WebApplication.UserPage.InstanciarTarea.CancelButton
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CancelButton
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nCancelButton control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button CancelButton
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected CancelButton As Button
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
+  commentId: F:WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
+  id: SaveChangesShowModalButton
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesShowModalButton
+  nameWithType: InstanciarTarea.SaveChangesShowModalButton
+  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: SaveChangesShowModalButton
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 66
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nSaveChangesShowModalButton control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button SaveChangesShowModalButton
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected SaveChangesShowModalButton As Button
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesButton
+  commentId: F:WebApplication.UserPage.InstanciarTarea.SaveChangesButton
+  id: SaveChangesButton
+  parent: WebApplication.UserPage.InstanciarTarea
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesButton
+  nameWithType: InstanciarTarea.SaveChangesButton
+  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: SaveChangesButton
+    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    startLine: 75
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  summary: "\nSaveChangesButton control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button SaveChangesButton
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected SaveChangesButton As Button
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -344,7 +661,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-    startLine: 20
+    startLine: 83
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -7374,6 +7691,36 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click*
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click
+  name: SaveChangesButton_Click
+  nameWithType: InstanciarTarea.SaveChangesButton_Click
+  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click
+- uid: WebApplication.UserPage.InstanciarTarea.CancelButton_Click*
+  commentId: Overload:WebApplication.UserPage.InstanciarTarea.CancelButton_Click
+  name: CancelButton_Click
+  nameWithType: InstanciarTarea.CancelButton_Click
+  fullName: WebApplication.UserPage.InstanciarTarea.CancelButton_Click
+- uid: System.Web.UI.WebControls.TextBox
+  commentId: T:System.Web.UI.WebControls.TextBox
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: TextBox
+  nameWithType: TextBox
+  fullName: System.Web.UI.WebControls.TextBox
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.Button
+  commentId: T:System.Web.UI.WebControls.Button
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: System.Web.UI.WebControls.Button
 - uid: WebApplication.UserPage.InstanciarTarea.Master*
   commentId: Overload:WebApplication.UserPage.InstanciarTarea.Master
   name: Master

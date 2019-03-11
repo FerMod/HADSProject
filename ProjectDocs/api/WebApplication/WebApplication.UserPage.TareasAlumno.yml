@@ -5,6 +5,7 @@ items:
   id: TareasAlumno
   parent: WebApplication.UserPage
   children:
+  - WebApplication.UserPage.TareasAlumno.DataAccess
   - WebApplication.UserPage.TareasAlumno.DropDownCourses
   - WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
   - WebApplication.UserPage.TareasAlumno.GridViewTasks
@@ -296,6 +297,41 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: WebApplication.UserPage.TareasAlumno.DataAccess
+  commentId: P:WebApplication.UserPage.TareasAlumno.DataAccess
+  id: DataAccess
+  parent: WebApplication.UserPage.TareasAlumno
+  langs:
+  - csharp
+  - vb
+  name: DataAccess
+  nameWithType: TareasAlumno.DataAccess
+  fullName: WebApplication.UserPage.TareasAlumno.DataAccess
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DataAccess
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    startLine: 17
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPage
+  syntax:
+    content: public DataAccessService DataAccess { get; }
+    parameters: []
+    return:
+      type: DataBaseAccess.DataAccessService
+    content.vb: Public ReadOnly Property DataAccess As DataAccessService
+  overload: WebApplication.UserPage.TareasAlumno.DataAccess*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -314,7 +350,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -349,7 +385,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 111
+    startLine: 110
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -384,7 +420,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownCourses_SelectedIndexChanged
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 148
+    startLine: 147
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -419,7 +455,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 163
+    startLine: 162
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPage
@@ -7540,6 +7576,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: WebApplication.UserPage.TareasAlumno.DataAccess*
+  commentId: Overload:WebApplication.UserPage.TareasAlumno.DataAccess
+  name: DataAccess
+  nameWithType: TareasAlumno.DataAccess
+  fullName: WebApplication.UserPage.TareasAlumno.DataAccess
+- uid: DataBaseAccess.DataAccessService
+  commentId: T:DataBaseAccess.DataAccessService
+  parent: DataBaseAccess
+  name: DataAccessService
+  nameWithType: DataAccessService
+  fullName: DataBaseAccess.DataAccessService
+- uid: DataBaseAccess
+  commentId: N:DataBaseAccess
+  name: DataBaseAccess
+  nameWithType: DataBaseAccess
+  fullName: DataBaseAccess
 - uid: WebApplication.UserPage.TareasAlumno.Page_Load*
   commentId: Overload:WebApplication.UserPage.TareasAlumno.Page_Load
   name: Page_Load

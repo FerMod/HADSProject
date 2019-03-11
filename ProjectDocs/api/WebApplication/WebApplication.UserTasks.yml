@@ -5,6 +5,7 @@ items:
   id: UserTasks
   parent: WebApplication
   children:
+  - WebApplication.UserTasks.DataAccess
   - WebApplication.UserTasks.Master
   - WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
   - WebApplication.UserTasks.UserContent
@@ -220,6 +221,41 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: WebApplication.UserTasks.DataAccess
+  commentId: P:WebApplication.UserTasks.DataAccess
+  id: DataAccess
+  parent: WebApplication.UserTasks
+  langs:
+  - csharp
+  - vb
+  name: DataAccess
+  nameWithType: UserTasks.DataAccess
+  fullName: WebApplication.UserTasks.DataAccess
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DataAccess
+    path: ../WebApplication/UserPages/UserHome.Master.cs
+    startLine: 10
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  syntax:
+    content: public DataAccessService DataAccess { get; }
+    parameters: []
+    return:
+      type: DataBaseAccess.DataAccessService
+    content.vb: Public ReadOnly Property DataAccess As DataAccessService
+  overload: WebApplication.UserTasks.DataAccess*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -238,7 +274,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -5403,6 +5439,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: WebApplication.UserTasks.DataAccess*
+  commentId: Overload:WebApplication.UserTasks.DataAccess
+  name: DataAccess
+  nameWithType: UserTasks.DataAccess
+  fullName: WebApplication.UserTasks.DataAccess
+- uid: DataBaseAccess.DataAccessService
+  commentId: T:DataBaseAccess.DataAccessService
+  parent: DataBaseAccess
+  name: DataAccessService
+  nameWithType: DataAccessService
+  fullName: DataBaseAccess.DataAccessService
+- uid: DataBaseAccess
+  commentId: N:DataBaseAccess
+  name: DataBaseAccess
+  nameWithType: DataBaseAccess
+  fullName: DataBaseAccess
 - uid: WebApplication.UserTasks.Page_Load*
   commentId: Overload:WebApplication.UserTasks.Page_Load
   name: Page_Load

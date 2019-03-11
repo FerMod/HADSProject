@@ -55,10 +55,12 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
+  summary: "\nProperty containing the connection string to the database.\n"
+  example: []
   syntax:
     content: string ConnectionString { get; }
     parameters: []
@@ -88,7 +90,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -132,7 +134,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Query
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -176,7 +178,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
-    startLine: 41
+    startLine: 44
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -223,7 +225,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: CreateQueryDataTable
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
-    startLine: 50
+    startLine: 53
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess

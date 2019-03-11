@@ -3,6 +3,7 @@
   "DataBaseAccess.DataAccessService": "DataBaseAccess.DataAccessService.yml",
   "DataBaseAccess.DataAccessService.#ctor(System.String)": "DataBaseAccess.DataAccessService.yml",
   "DataBaseAccess.DataAccessService.ConnectionString": "DataBaseAccess.DataAccessService.yml",
+  "DataBaseAccess.DataAccessService.CreateDataAdapter(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",
   "DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",
   "DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",
   "DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)": "DataBaseAccess.DataAccessService.yml",

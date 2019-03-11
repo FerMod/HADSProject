@@ -304,7 +304,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Application_EndRequest
     path: ../WebApplication/Global.asax.cs
-    startLine: 63
+    startLine: 65
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -339,7 +339,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Session_End
     path: ../WebApplication/Global.asax.cs
-    startLine: 65
+    startLine: 67
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -374,7 +374,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Application_End
     path: ../WebApplication/Global.asax.cs
-    startLine: 68
+    startLine: 70
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -409,7 +409,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Application_Error
     path: ../WebApplication/Global.asax.cs
-    startLine: 70
+    startLine: 72
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -444,7 +444,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: SetupDataAccess
     path: ../WebApplication/Global.asax.cs
-    startLine: 74
+    startLine: 76
   assemblies:
   - WebApplication
   namespace: WebApplication

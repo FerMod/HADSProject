@@ -46,7 +46,15 @@
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
-            </div>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../articles/introduction.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../../api/DataBaseAccess/DataBaseAccess.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
           </div>
         </nav>
         
@@ -69,11 +77,197 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">DataBaseAccess</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../DataBaseAccess/DataBaseAccess.html" title="DataBaseAccess" class="">DataBaseAccess</a>
+                              
+                              <ul class="nav level3">
+                                <li class="active">
+                                  <a href="../DataBaseAccess/DataBaseAccess.DataAccessService.html" title="DataAccessService" class="active">DataAccessService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.IDataAccessService.html" title="IDataAccessService" class="">IDataAccessService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.QueryResult.html" title="QueryResult" class="">QueryResult</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../DataBaseAccess/DataBaseAccess.Extensions.html" title="DataBaseAccess.Extensions" class="">DataBaseAccess.Extensions</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html" title="DataReaderExtension" class="">DataReaderExtension</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">EmailLib</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../EmailLib/EmailLib.html" title="EmailLib" class="">EmailLib</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../EmailLib/EmailLib.EmailService.html" title="EmailService" class="">EmailService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../EmailLib/EmailLib.SmtpServerConfig.html" title="SmtpServerConfig" class="">SmtpServerConfig</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">WebApplication</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.html" title="WebApplication" class="">WebApplication</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication._Default.html" title="_Default" class="">_Default</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.About.html" title="About" class="">About</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Account.html" title="Account" class="">Account</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Account.ActiveNav.html" title="Account.ActiveNav" class="">Account.ActiveNav</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.AppConfig.html" title="AppConfig" class="">AppConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.AppConfig.SmtpServer.html" title="AppConfig.SmtpServer" class="">AppConfig.SmtpServer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.BundleConfig.html" title="BundleConfig" class="">BundleConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.CambiarPassword.html" title="CambiarPassword" class="">CambiarPassword</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Confirmar.html" title="Confirmar" class="">Confirmar</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Contact.html" title="Contact" class="">Contact</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.EmailSent.html" title="EmailSent" class="">EmailSent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Global.html" title="Global" class="">Global</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Inicio.html" title="Inicio" class="">Inicio</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Registro.html" title="Registro" class="">Registro</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.RouteConfig.html" title="RouteConfig" class="">RouteConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.ScriptResource.html" title="ScriptResource" class="">ScriptResource</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Site_Mobile.html" title="Site_Mobile" class="">Site_Mobile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.SiteMaster.html" title="SiteMaster" class="">SiteMaster</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserTasks.html" title="UserTasks" class="">UserTasks</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.ViewSwitcher.html" title="ViewSwitcher" class="">ViewSwitcher</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.WebNotification.html" title="WebNotification" class="">WebNotification</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.Framework.html" title="WebApplication.Framework" class="">WebApplication.Framework</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.AlertLevel.html" title="AlertLevel" class="">AlertLevel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.NotificationData.html" title="NotificationData" class="">NotificationData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.ParametizedUrl.html" title="ParametizedUrl" class="">ParametizedUrl</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.Framework.Extensions.html" title="WebApplication.Framework.Extensions" class="">WebApplication.Framework.Extensions</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html" title="AttributeCollectionExtension" class="">AttributeCollectionExtension</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.Extensions.DictionaryExtension.html" title="DictionaryExtension" class="">DictionaryExtension</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.UserPage.html" title="WebApplication.UserPage" class="">WebApplication.UserPage</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserPage.InstanciarTarea.html" title="InstanciarTarea" class="">InstanciarTarea</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserPage.TareasAlumno.html" title="TareasAlumno" class="">TareasAlumno</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.Utils.html" title="WebApplication.Utils" class="">WebApplication.Utils</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Utils.JsonFile.html" title="JsonFile" class="">JsonFile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Utils.UrlUtils.html" title="UrlUtils" class="">UrlUtils</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="article row grid-right">
@@ -131,7 +325,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService__ctor_System_String_.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L14">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L15">View Source</a>
   </span>
   <a id="DataBaseAccess_DataAccessService__ctor_" data-uid="DataBaseAccess.DataAccessService.#ctor*"></a>
   <h4 id="DataBaseAccess_DataAccessService__ctor_System_String_" data-uid="DataBaseAccess.DataAccessService.#ctor(System.String)">DataAccessService(String)</h4>
@@ -165,11 +359,12 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService_ConnectionString.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.ConnectionString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L12">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L13">View Source</a>
   </span>
   <a id="DataBaseAccess_DataAccessService_ConnectionString_" data-uid="DataBaseAccess.DataAccessService.ConnectionString*"></a>
   <h4 id="DataBaseAccess_DataAccessService_ConnectionString" data-uid="DataBaseAccess.DataAccessService.ConnectionString">ConnectionString</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Property containing the connection string to the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,14 +389,72 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService_CreateDataAdapter_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.CreateDataAdapter(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L106">View Source</a>
+  </span>
+  <a id="DataBaseAccess_DataAccessService_CreateDataAdapter_" data-uid="DataBaseAccess.DataAccessService.CreateDataAdapter*"></a>
+  <h4 id="DataBaseAccess_DataAccessService_CreateDataAdapter_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.CreateDataAdapter(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">CreateDataAdapter(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlDataAdapter CreateDataAdapter(string query, Dictionary&lt;string, object&gt; parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlDataAdapter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService_CreateQueryDataTable_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L75">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L80">View Source</a>
   </span>
   <a id="DataBaseAccess_DataAccessService_CreateQueryDataTable_" data-uid="DataBaseAccess.DataAccessService.CreateQueryDataTable*"></a>
   <h4 id="DataBaseAccess_DataAccessService_CreateQueryDataTable_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">CreateQueryDataTable(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates and returns a <span class="xref">System.Data.DataTable</span> with the sql query string passed as parameter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,17 +473,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>The sql query to execute</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The query aditional parameters</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Data.CommandType</span></td>
         <td><span class="parametername">commandType</span></td>
-        <td></td>
+        <td><p>Indicates how the query string will be interpreted. The default is <span class="xref">System.Data.CommandType.Text</span></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -245,7 +501,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Data.DataTable</span></td>
-        <td></td>
+        <td><p>The created <span class="xref">System.Data.DataTable</span></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -254,11 +511,15 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService_NonQuery_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.NonQuery(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L18">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L20">View Source</a>
   </span>
   <a id="DataBaseAccess_DataAccessService_NonQuery_" data-uid="DataBaseAccess.DataAccessService.NonQuery*"></a>
   <h4 id="DataBaseAccess_DataAccessService_NonQuery_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">NonQuery(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the passed sql query in the database and returns the number of rows affected.
+For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command.
+When a trigger exists on a table being inserted or updated, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers.
+For all other types of statements and rollbacks the return value is -1.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -277,17 +538,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>The sql query to execute</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The query aditional parameters</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Data.CommandType</span></td>
         <td><span class="parametername">commandType</span></td>
-        <td></td>
+        <td><p>Indicates how the query string will be interpreted. The default is <span class="xref">System.Data.CommandType.Text</span></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -302,7 +566,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The number of rows affected</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -311,11 +576,13 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.Query(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L36">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L39">View Source</a>
   </span>
   <a id="DataBaseAccess_DataAccessService_Query_" data-uid="DataBaseAccess.DataAccessService.Query*"></a>
   <h4 id="DataBaseAccess_DataAccessService_Query_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">Query(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the passed sql query in the database and returns a <span class="xref">System.Collections.Generic.List&lt;T&gt;</span> of elements of type <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span>.
+Each element in the list represents a row and each dictionary element represents a column. The column value can be accesed by its same.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -334,17 +601,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>The sql query to execute</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The query aditional parameters</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Data.CommandType</span></td>
         <td><span class="parametername">commandType</span></td>
-        <td></td>
+        <td><p>Indicates how the query string will be interpreted. The default is <span class="xref">System.Data.CommandType.Text</span></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -359,7 +629,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DataBaseAccess.QueryResult.html">QueryResult</a></td>
-        <td></td>
+        <td><p>A collection of rows returned by the query</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -368,11 +639,13 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=DataBaseAccess_DataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_.md&amp;value=---%0Auid%3A%20DataBaseAccess.DataAccessService.Scalar%60%601(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L56">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/DataBaseAccess/Framework/DataAccessService.cs/#L60">View Source</a>
   </span>
   <a id="DataBaseAccess_DataAccessService_Scalar_" data-uid="DataBaseAccess.DataAccessService.Scalar*"></a>
   <h4 id="DataBaseAccess_DataAccessService_Scalar__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Data_CommandType_" data-uid="DataBaseAccess.DataAccessService.Scalar``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)">Scalar&lt;T&gt;(String, Dictionary&lt;String, Object&gt;, CommandType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieve a single value from a database.
+It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -391,17 +664,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>The sql query to execute</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The query aditional parameters</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Data.CommandType</span></td>
         <td><span class="parametername">commandType</span></td>
-        <td></td>
+        <td><p>Indicates how the query string will be interpreted. The default is <span class="xref">System.Data.CommandType.Text</span></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -416,7 +692,8 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The first column of the first row in the result set, or a <span class="xref">null</span> reference if the result set is empty.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -431,7 +708,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The expected scalar query type</p>
+</td>
       </tr>
     </tbody>
   </table>
