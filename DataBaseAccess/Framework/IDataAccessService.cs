@@ -6,6 +6,9 @@ namespace DataBaseAccess {
 
 	public interface IDataAccessService {
 
+		/// <summary>
+		/// Property containing the connection string to the database.
+		/// </summary>
 		string ConnectionString { get; }
 
 		/// <summary>
