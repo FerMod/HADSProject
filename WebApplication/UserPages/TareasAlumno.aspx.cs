@@ -8,15 +8,16 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
 using WebApplication.Framework;
+using WebApplication.Framework.Extensions;
 using WebApplication.Utils;
 
 namespace WebApplication.UserPage {
 
 	public partial class TareasAlumno : Page {
 
-		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
+		public DataAccessService DataAccess => Master.DataAccess;
 		private DataTable CoursesDataTable { get => (DataTable)Session["CoursesDataTable"]; set => Session["CoursesDataTable"] = value; }
-		private DataTable TasksDataTable { get => (DataTable)Session["CoursesDataTable"]; set => Session["CoursesDataTable"] = value; }
+		private DataTable TasksDataTable { get => (DataTable)Session["TasksDataTable"]; set => Session["TasksDataTable"] = value; }
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -101,7 +102,6 @@ namespace WebApplication.UserPage {
 							"AND TareasGenericas.Explotacion = 1";
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
-				{ "@CodAsig", DropDownCourses.SelectedValue },
 				{ "@Email", (string)Session["Email"] }
 			};
 
@@ -165,40 +165,16 @@ namespace WebApplication.UserPage {
 			// Check that the command is the correct one
 			if(e.CommandName.Equals("Instantiate")) {
 
-				// Obtain the row number
-				int rowIndex = Convert.ToInt32(e.CommandArgument);
-
-				// Retrieve the row that contains the button clicked
-				GridViewRow row = GridViewTasks.Rows[rowIndex];
-
-				// Obtain the column index by its name
-				int columnIndex = GetColumnIndexByName(row, "Codigo");
-
-				if(columnIndex == -1) {
-					throw new Exception("Could not find the column index for the given name.");
-				}
+				string taskCode = Convert.ToString(e.CommandArgument);
 
 				ParametizedUrl parametizedUrl = new ParametizedUrl($"{UrlUtils.UrlRoot}{Page.ResolveUrl(@"~/UserPages/InstanciarTarea")}") {
-					{"code", row.Cells[columnIndex].Text}
+					{"code", taskCode}
 				};
 
 				Response.Redirect(parametizedUrl);
 
 			}
 
-		}
-
-		private int GetColumnIndexByName(GridViewRow row, string columnName) {
-
-			int columnIndex = 0;
-			foreach(DataControlFieldCell cell in row.Cells) {
-				if((cell.ContainingField is BoundField containingField) && containingField.DataField.Equals(columnName)) {
-					return columnIndex;
-				}
-				columnIndex++;
-			}
-
-			return -1;
 		}
 
 	}
