@@ -7,6 +7,7 @@ items:
   children:
   - DataBaseAccess.DataAccessService.#ctor(System.String)
   - DataBaseAccess.DataAccessService.ConnectionString
+  - DataBaseAccess.DataAccessService.CreateDataAdapter(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.NonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
   - DataBaseAccess.DataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
@@ -70,10 +71,12 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
     path: ../DataBaseAccess/Framework/DataAccessService.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
+  summary: "\nProperty containing the connection string to the database.\n"
+  example: []
   syntax:
     content: public string ConnectionString { get; }
     parameters: []
@@ -107,7 +110,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
     path: ../DataBaseAccess/Framework/DataAccessService.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
@@ -140,21 +143,27 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
     path: ../DataBaseAccess/Framework/DataAccessService.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
+  summary: "\nExecutes the passed sql query in the database and returns the number of rows affected.\nFor UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command.\nWhen a trigger exists on a table being inserted or updated, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers.\nFor all other types of statements and rollbacks the return value is -1.\n"
+  example: []
   syntax:
     content: public int NonQuery(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
+      description: The sql query to execute
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The query aditional parameters
     - id: commandType
       type: System.Data.CommandType
+      description: Indicates how the query string will be interpreted. The default is <xref href="System.Data.CommandType.Text" data-throw-if-not-resolved="false"></xref>
     return:
       type: System.Int32
+      description: The number of rows affected
     content.vb: Public Function NonQuery(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As Integer
   overload: DataBaseAccess.DataAccessService.NonQuery*
   implements:
@@ -184,21 +193,27 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Query
     path: ../DataBaseAccess/Framework/DataAccessService.cs
-    startLine: 35
+    startLine: 38
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
+  summary: "\nExecutes the passed sql query in the database and returns a <xref href=\"System.Collections.Generic.List%601\" data-throw-if-not-resolved=\"false\"></xref> of elements of type <xref href=\"System.Collections.Generic.Dictionary%602\" data-throw-if-not-resolved=\"false\"></xref>.\nEach element in the list represents a row and each dictionary element represents a column. The column value can be accesed by its same.\n"
+  example: []
   syntax:
     content: public QueryResult Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
+      description: The sql query to execute
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The query aditional parameters
     - id: commandType
       type: System.Data.CommandType
+      description: Indicates how the query string will be interpreted. The default is <xref href="System.Data.CommandType.Text" data-throw-if-not-resolved="false"></xref>
     return:
       type: DataBaseAccess.QueryResult
+      description: A collection of rows returned by the query
     content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As QueryResult
   overload: DataBaseAccess.DataAccessService.Query*
   implements:
@@ -228,23 +243,30 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
     path: ../DataBaseAccess/Framework/DataAccessService.cs
-    startLine: 55
+    startLine: 59
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
+  summary: "\nRetrieve a single value from a database.\nIt returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored.\n"
+  example: []
   syntax:
     content: public T Scalar<T>(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
+      description: The sql query to execute
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The query aditional parameters
     - id: commandType
       type: System.Data.CommandType
+      description: Indicates how the query string will be interpreted. The default is <xref href="System.Data.CommandType.Text" data-throw-if-not-resolved="false"></xref>
     typeParameters:
     - id: T
+      description: The expected scalar query type
     return:
       type: '{T}'
+      description: The first column of the first row in the result set, or a <xref uid="langword_csharp_null" name="null" href=""></xref> reference if the result set is empty.
     content.vb: Public Function Scalar(Of T)(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As T
   overload: DataBaseAccess.DataAccessService.Scalar*
   implements:
@@ -274,21 +296,27 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: CreateQueryDataTable
     path: ../DataBaseAccess/Framework/DataAccessService.cs
-    startLine: 74
+    startLine: 79
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
+  summary: "\nCreates and returns a <xref href=\"System.Data.DataTable\" data-throw-if-not-resolved=\"false\"></xref> with the sql query string passed as parameter.\n"
+  example: []
   syntax:
     content: public DataTable CreateQueryDataTable(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
+      description: The sql query to execute
     - id: parameters
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The query aditional parameters
     - id: commandType
       type: System.Data.CommandType
+      description: Indicates how the query string will be interpreted. The default is <xref href="System.Data.CommandType.Text" data-throw-if-not-resolved="false"></xref>
     return:
       type: System.Data.DataTable
+      description: The created <xref href="System.Data.DataTable" data-throw-if-not-resolved="false"></xref>
     content.vb: Public Function CreateQueryDataTable(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As DataTable
   overload: DataBaseAccess.DataAccessService.CreateQueryDataTable*
   implements:
@@ -300,6 +328,48 @@ items:
   - Public
   fullName.vb: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
   name.vb: CreateQueryDataTable(String, Dictionary(Of String, Object), CommandType)
+- uid: DataBaseAccess.DataAccessService.CreateDataAdapter(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  commentId: M:DataBaseAccess.DataAccessService.CreateDataAdapter(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  id: CreateDataAdapter(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
+  parent: DataBaseAccess.DataAccessService
+  langs:
+  - csharp
+  - vb
+  name: CreateDataAdapter(String, Dictionary<String, Object>, CommandType)
+  nameWithType: DataAccessService.CreateDataAdapter(String, Dictionary<String, Object>, CommandType)
+  fullName: DataBaseAccess.DataAccessService.CreateDataAdapter(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
+  type: Method
+  source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CreateDataAdapter
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
+    startLine: 105
+  assemblies:
+  - DataBaseAccess
+  namespace: DataBaseAccess
+  syntax:
+    content: public SqlDataAdapter CreateDataAdapter(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
+    parameters:
+    - id: query
+      type: System.String
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: commandType
+      type: System.Data.CommandType
+    return:
+      type: System.Data.SqlClient.SqlDataAdapter
+    content.vb: Public Function CreateDataAdapter(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As SqlDataAdapter
+  overload: DataBaseAccess.DataAccessService.CreateDataAdapter*
+  nameWithType.vb: DataAccessService.CreateDataAdapter(String, Dictionary(Of String, Object), CommandType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DataBaseAccess.DataAccessService.CreateDataAdapter(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Data.CommandType)
+  name.vb: CreateDataAdapter(String, Dictionary(Of String, Object), CommandType)
 references:
 - uid: DataBaseAccess
   commentId: N:DataBaseAccess
@@ -1255,3 +1325,21 @@ references:
   name: DataTable
   nameWithType: DataTable
   fullName: System.Data.DataTable
+- uid: DataBaseAccess.DataAccessService.CreateDataAdapter*
+  commentId: Overload:DataBaseAccess.DataAccessService.CreateDataAdapter
+  name: CreateDataAdapter
+  nameWithType: DataAccessService.CreateDataAdapter
+  fullName: DataBaseAccess.DataAccessService.CreateDataAdapter
+- uid: System.Data.SqlClient.SqlDataAdapter
+  commentId: T:System.Data.SqlClient.SqlDataAdapter
+  parent: System.Data.SqlClient
+  isExternal: true
+  name: SqlDataAdapter
+  nameWithType: SqlDataAdapter
+  fullName: System.Data.SqlClient.SqlDataAdapter
+- uid: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+  isExternal: true
+  name: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  fullName: System.Data.SqlClient
