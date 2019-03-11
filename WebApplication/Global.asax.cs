@@ -54,10 +54,12 @@ namespace WebApplication {
 
 			Lazy<DataAccessService> dataAccessService = new Lazy<DataAccessService>(() => (DataAccessService)Application.Get("DataAccess"));
 			Session["DataAccess"] = dataAccessService.Value;
+
 			Session["IsLogged"] = false;
 			Session["Email"] = "";
 			Session["Name"] = "";
 			Session["LastName"] = "";
+			Session["UserType"] = "";
 
 		}
 

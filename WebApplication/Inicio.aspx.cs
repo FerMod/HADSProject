@@ -47,6 +47,7 @@ namespace WebApplication {
 					Session["Email"] = queryResult.Rows[0]["email"];
 					Session["Name"] = queryResult.Rows[0]["nombre"];
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
+					Session["UserType"] = queryResult.Rows[0]["tipo"];
 
 					Response.Redirect("/Default");
 				}
