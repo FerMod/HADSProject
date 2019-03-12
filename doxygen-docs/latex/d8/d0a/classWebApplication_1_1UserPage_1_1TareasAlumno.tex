@@ -1,0 +1,249 @@
+\hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno}{}\section{Web\+Application.\+User\+Page.\+Tareas\+Alumno Class Reference}
+\label{classWebApplication_1_1UserPage_1_1TareasAlumno}\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+Inheritance diagram for Web\+Application.\+User\+Page.\+Tareas\+Alumno\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/d0a/classWebApplication_1_1UserPage_1_1TareasAlumno}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService}{Data\+Access\+Service}} \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a63b4d6c345c2df409f3119583bf39039}{Data\+Access}} =$>$ Master.\+Data\+Access
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a84541b38d186ebdbd9e5057e66f12360}{Page\+\_\+\+Load}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_ad5e4de37a8532e39a243840ced95ba6d}{Grid\+View\+Tasks\+\_\+\+Sorting}} (object sender, Grid\+View\+Sort\+Event\+Args e)
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a4a7bfe1dbd97f8cdaa6634c0c9fc3e91}{Drop\+Down\+Courses\+\_\+\+Selected\+Index\+Changed}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a1ec6db1595f25c6e457c8614c1cee735}{Grid\+View\+Tasks\+\_\+\+Row\+Command}} (object sender, Grid\+View\+Command\+Event\+Args e)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+global\+::\+System.\+Web.\+U\+I.\+Web\+Controls.\+Drop\+Down\+List \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a7fbd883512b50dbc46ea6e9cfc081c75}{Drop\+Down\+Courses}}
+\begin{DoxyCompactList}\small\item\em Drop\+Down\+Courses control. \end{DoxyCompactList}\item 
+global\+::\+System.\+Web.\+U\+I.\+Web\+Controls.\+Grid\+View \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_ac86a63bef568e016d56b44578e6077c7}{Grid\+View\+Tasks}}
+\begin{DoxyCompactList}\small\item\em Grid\+View\+Tasks control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Table \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_ab657733e60acfbfabf30b38472cccabb}{Courses\+Data\+Table}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Data\+Table \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a8821f4d83835e4451c0bcc48fea3001f}{Tasks\+Data\+Table}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+new \mbox{\hyperlink{classWebApplication_1_1UserTasks}{Web\+Application.\+User\+Tasks}} \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a9d8e8d7a4a4ef52ae6a5795e0094b94f}{Master}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Master property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_ab0cfef17218faaef8b7a36d84b04ab7f}{Init\+Drop\+Down\+Courses}} ()
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a6b78d89c9fb546945e4ecd7558ae1978}{Init\+Grid\+View\+Tasks}} ()
+\item 
+Data\+Table \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_aa74dc79d1151789f04e301c0647e0ce3}{Create\+Courses\+Data\+Table}} ()
+\item 
+Data\+Table \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a96f3e4eb196b0f51b3c1f44999ebc3f0}{Create\+Tasks\+Data\+Table}} ()
+\item 
+string \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_a7907c4d40a61f3a8c7390f7e1ad27219}{Get\+Sort\+Direction}} (string column)
+\item 
+void \mbox{\hyperlink{classWebApplication_1_1UserPage_1_1TareasAlumno_ad2e2604904288558892729f8b67954b3}{Update\+Displayed\+Tasks}} (string row\+Filter)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Tareas\+Alumno.\+aspx.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_aa74dc79d1151789f04e301c0647e0ce3}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_aa74dc79d1151789f04e301c0647e0ce3}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!CreateCoursesDataTable@{CreateCoursesDataTable}}
+\index{CreateCoursesDataTable@{CreateCoursesDataTable}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{CreateCoursesDataTable()}{CreateCoursesDataTable()}}
+{\footnotesize\ttfamily Data\+Table Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Create\+Courses\+Data\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a96f3e4eb196b0f51b3c1f44999ebc3f0}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a96f3e4eb196b0f51b3c1f44999ebc3f0}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!CreateTasksDataTable@{CreateTasksDataTable}}
+\index{CreateTasksDataTable@{CreateTasksDataTable}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{CreateTasksDataTable()}{CreateTasksDataTable()}}
+{\footnotesize\ttfamily Data\+Table Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Create\+Tasks\+Data\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 95 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a4a7bfe1dbd97f8cdaa6634c0c9fc3e91}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a4a7bfe1dbd97f8cdaa6634c0c9fc3e91}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!DropDownCourses\_SelectedIndexChanged@{DropDownCourses\_SelectedIndexChanged}}
+\index{DropDownCourses\_SelectedIndexChanged@{DropDownCourses\_SelectedIndexChanged}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{DropDownCourses\_SelectedIndexChanged()}{DropDownCourses\_SelectedIndexChanged()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Drop\+Down\+Courses\+\_\+\+Selected\+Index\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 148 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a7907c4d40a61f3a8c7390f7e1ad27219}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a7907c4d40a61f3a8c7390f7e1ad27219}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!GetSortDirection@{GetSortDirection}}
+\index{GetSortDirection@{GetSortDirection}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{GetSortDirection()}{GetSortDirection()}}
+{\footnotesize\ttfamily string Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Get\+Sort\+Direction (\begin{DoxyParamCaption}\item[{string}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 126 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a1ec6db1595f25c6e457c8614c1cee735}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a1ec6db1595f25c6e457c8614c1cee735}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!GridViewTasks\_RowCommand@{GridViewTasks\_RowCommand}}
+\index{GridViewTasks\_RowCommand@{GridViewTasks\_RowCommand}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{GridViewTasks\_RowCommand()}{GridViewTasks\_RowCommand()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Grid\+View\+Tasks\+\_\+\+Row\+Command (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Grid\+View\+Command\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 163 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_ad5e4de37a8532e39a243840ced95ba6d}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_ad5e4de37a8532e39a243840ced95ba6d}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!GridViewTasks\_Sorting@{GridViewTasks\_Sorting}}
+\index{GridViewTasks\_Sorting@{GridViewTasks\_Sorting}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{GridViewTasks\_Sorting()}{GridViewTasks\_Sorting()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Grid\+View\+Tasks\+\_\+\+Sorting (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Grid\+View\+Sort\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 111 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_ab0cfef17218faaef8b7a36d84b04ab7f}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_ab0cfef17218faaef8b7a36d84b04ab7f}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!InitDropDownCourses@{InitDropDownCourses}}
+\index{InitDropDownCourses@{InitDropDownCourses}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{InitDropDownCourses()}{InitDropDownCourses()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Init\+Drop\+Down\+Courses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a6b78d89c9fb546945e4ecd7558ae1978}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a6b78d89c9fb546945e4ecd7558ae1978}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!InitGridViewTasks@{InitGridViewTasks}}
+\index{InitGridViewTasks@{InitGridViewTasks}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{InitGridViewTasks()}{InitGridViewTasks()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Init\+Grid\+View\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a84541b38d186ebdbd9e5057e66f12360}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a84541b38d186ebdbd9e5057e66f12360}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!Page\_Load@{Page\_Load}}
+\index{Page\_Load@{Page\_Load}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{Page\_Load()}{Page\_Load()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Page\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 22 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_ad2e2604904288558892729f8b67954b3}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_ad2e2604904288558892729f8b67954b3}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!UpdateDisplayedTasks@{UpdateDisplayedTasks}}
+\index{UpdateDisplayedTasks@{UpdateDisplayedTasks}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{UpdateDisplayedTasks()}{UpdateDisplayedTasks()}}
+{\footnotesize\ttfamily void Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Update\+Displayed\+Tasks (\begin{DoxyParamCaption}\item[{string}]{row\+Filter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 152 of file Tareas\+Alumno.\+aspx.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a63b4d6c345c2df409f3119583bf39039}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a63b4d6c345c2df409f3119583bf39039}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!DataAccess@{DataAccess}}
+\index{DataAccess@{DataAccess}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{DataAccess}{DataAccess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService}{Data\+Access\+Service}} Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Data\+Access =$>$ Master.\+Data\+Access}
+
+
+
+Definition at line 18 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a7fbd883512b50dbc46ea6e9cfc081c75}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a7fbd883512b50dbc46ea6e9cfc081c75}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!DropDownCourses@{DropDownCourses}}
+\index{DropDownCourses@{DropDownCourses}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{DropDownCourses}{DropDownCourses}}
+{\footnotesize\ttfamily global.\+System.\+Web.\+U\+I.\+Web\+Controls.\+Drop\+Down\+List Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Drop\+Down\+Courses\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Drop\+Down\+Courses control. 
+
+Auto-\/generated field. To modify move field declaration from designer file to code-\/behind file. 
+
+Definition at line 22 of file Tareas\+Alumno.\+aspx.\+designer.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_ac86a63bef568e016d56b44578e6077c7}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_ac86a63bef568e016d56b44578e6077c7}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!GridViewTasks@{GridViewTasks}}
+\index{GridViewTasks@{GridViewTasks}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{GridViewTasks}{GridViewTasks}}
+{\footnotesize\ttfamily global.\+System.\+Web.\+U\+I.\+Web\+Controls.\+Grid\+View Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Grid\+View\+Tasks\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Grid\+View\+Tasks control. 
+
+Auto-\/generated field. To modify move field declaration from designer file to code-\/behind file. 
+
+Definition at line 31 of file Tareas\+Alumno.\+aspx.\+designer.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_ab657733e60acfbfabf30b38472cccabb}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_ab657733e60acfbfabf30b38472cccabb}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!CoursesDataTable@{CoursesDataTable}}
+\index{CoursesDataTable@{CoursesDataTable}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{CoursesDataTable}{CoursesDataTable}}
+{\footnotesize\ttfamily Data\+Table Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Courses\+Data\+Table\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Tareas\+Alumno.\+aspx.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a9d8e8d7a4a4ef52ae6a5795e0094b94f}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a9d8e8d7a4a4ef52ae6a5795e0094b94f}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!Master@{Master}}
+\index{Master@{Master}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{Master}{Master}}
+{\footnotesize\ttfamily new \mbox{\hyperlink{classWebApplication_1_1UserTasks}{Web\+Application.\+User\+Tasks}} Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Master\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Master property. 
+
+Auto-\/generated property. 
+
+Definition at line 39 of file Tareas\+Alumno.\+aspx.\+designer.\+cs.
+
+\mbox{\Hypertarget{classWebApplication_1_1UserPage_1_1TareasAlumno_a8821f4d83835e4451c0bcc48fea3001f}\label{classWebApplication_1_1UserPage_1_1TareasAlumno_a8821f4d83835e4451c0bcc48fea3001f}} 
+\index{WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}!TasksDataTable@{TasksDataTable}}
+\index{TasksDataTable@{TasksDataTable}!WebApplication.UserPage.TareasAlumno@{WebApplication.UserPage.TareasAlumno}}
+\subsubsection{\texorpdfstring{TasksDataTable}{TasksDataTable}}
+{\footnotesize\ttfamily Data\+Table Web\+Application.\+User\+Page.\+Tareas\+Alumno.\+Tasks\+Data\+Table\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Tareas\+Alumno.\+aspx.\+cs.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Ferran Tudela/git/\+H\+A\+D\+S\+Project-\/\+Fork/\+Web\+Application/\+User\+Pages/\mbox{\hyperlink{TareasAlumno_8aspx_8cs}{Tareas\+Alumno.\+aspx.\+cs}}\item 
+D\+:/\+Users/\+Ferran Tudela/git/\+H\+A\+D\+S\+Project-\/\+Fork/\+Web\+Application/\+User\+Pages/\mbox{\hyperlink{TareasAlumno_8aspx_8designer_8cs}{Tareas\+Alumno.\+aspx.\+designer.\+cs}}\end{DoxyCompactItemize}
