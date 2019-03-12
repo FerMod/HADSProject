@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['master',['Master',['../dd/db3/classWebApplication_1_1Account.html#adc7988cc207da465340c81ceeda4c7cf',1,'WebApplication.Account.Master()'],['../d0/d51/classWebApplication_1_1Inicio.html#a04286653d32ece7eda91a41ed0da0399',1,'WebApplication.Inicio.Master()'],['../dd/d59/classWebApplication_1_1Registro.html#a91e9c41ae58c68f45906a1bc3cbeab8e',1,'WebApplication.Registro.Master()'],['../d8/dfd/classWebApplication_1_1UserPage_1_1InstanciarTarea.html#a5e1a64ee6224dcb58dbadb10c5958e69',1,'WebApplication.UserPage.InstanciarTarea.Master()'],['../d8/d0a/classWebApplication_1_1UserPage_1_1TareasAlumno.html#a9d8e8d7a4a4ef52ae6a5795e0094b94f',1,'WebApplication.UserPage.TareasAlumno.Master()'],['../d3/d4e/classWebApplication_1_1UserTasks.html#a164d46c79400b72316927ce0f84f6db8',1,'WebApplication.UserTasks.Master()']]]
-];
