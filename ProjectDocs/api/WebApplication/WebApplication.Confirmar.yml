@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: Confirmar
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Confirmar.aspx.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -300,7 +300,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Confirmar.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Confirmar.aspx.cs
     startLine: 13
   assemblies:
   - WebApplication

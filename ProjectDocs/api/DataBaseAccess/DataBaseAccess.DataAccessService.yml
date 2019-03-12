@@ -19,7 +19,7 @@ items:
   type: Class
   source:
     id: DataAccessService
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 9
   assemblies:
   - DataBaseAccess
@@ -60,7 +60,7 @@ items:
   type: Property
   source:
     id: ConnectionString
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 11
   assemblies:
   - DataBaseAccess
@@ -93,7 +93,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 13
   assemblies:
   - DataBaseAccess
@@ -122,7 +122,7 @@ items:
   type: Method
   source:
     id: NonQuery
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 17
   assemblies:
   - DataBaseAccess
@@ -162,13 +162,13 @@ items:
   type: Method
   source:
     id: Query
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 35
   assemblies:
   - DataBaseAccess
   namespace: DataBaseAccess
   syntax:
-    content: public List<Dictionary<string, object>> Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
+    content: public QueryResult Query(string query, Dictionary<string, object> parameters = null, CommandType commandType = CommandType.Text)
     parameters:
     - id: query
       type: System.String
@@ -177,8 +177,8 @@ items:
     - id: commandType
       type: System.Data.CommandType
     return:
-      type: System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}}
-    content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As List(Of Dictionary(Of String, Object))
+      type: DataBaseAccess.QueryResult
+    content.vb: Public Function Query(query As String, parameters As Dictionary(Of String, Object) = Nothing, commandType As CommandType = CommandType.Text) As QueryResult
   overload: DataBaseAccess.DataAccessService.Query*
   implements:
   - DataBaseAccess.IDataAccessService.Query(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.CommandType)
@@ -202,7 +202,7 @@ items:
   type: Method
   source:
     id: Scalar
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\DataBaseAccess\Framework\DataAccessService.cs
     startLine: 55
   assemblies:
   - DataBaseAccess
@@ -929,127 +929,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}}
-  commentId: T:System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  name: List<Dictionary<String, Object>>
-  nameWithType: List<Dictionary<String, Object>>
-  fullName: System.Collections.Generic.List<System.Collections.Generic.Dictionary<System.String, System.Object>>
-  nameWithType.vb: List(Of Dictionary(Of String, Object))
-  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.Dictionary(Of System.String, System.Object))
-  name.vb: List(Of Dictionary(Of String, Object))
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
+- uid: DataBaseAccess.QueryResult
+  commentId: T:DataBaseAccess.QueryResult
+  parent: DataBaseAccess
+  name: QueryResult
+  nameWithType: QueryResult
+  fullName: DataBaseAccess.QueryResult
 - uid: DataBaseAccess.DataAccessService.Scalar*
   commentId: Overload:DataBaseAccess.DataAccessService.Scalar
   name: Scalar

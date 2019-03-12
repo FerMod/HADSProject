@@ -30,7 +30,7 @@ items:
   type: Class
   source:
     id: Registro
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -315,7 +315,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.cs
     startLine: 27
   assemblies:
   - WebApplication
@@ -346,7 +346,7 @@ items:
   type: Method
   source:
     id: ButtonCreateAccount_Click
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -377,7 +377,7 @@ items:
   type: Field
   source:
     id: textBoxName
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -407,7 +407,7 @@ items:
   type: Field
   source:
     id: RequiredFieldName
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -437,7 +437,7 @@ items:
   type: Field
   source:
     id: textBoxLastName
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -467,7 +467,7 @@ items:
   type: Field
   source:
     id: RequiredFieldLastName
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -497,7 +497,7 @@ items:
   type: Field
   source:
     id: textBoxEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -527,7 +527,7 @@ items:
   type: Field
   source:
     id: RequiredFieldEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -557,7 +557,7 @@ items:
   type: Field
   source:
     id: EmailRegExpr
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -587,7 +587,7 @@ items:
   type: Field
   source:
     id: textBoxPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 84
   assemblies:
   - WebApplication
@@ -617,7 +617,7 @@ items:
   type: Field
   source:
     id: RequiredFieldPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 93
   assemblies:
   - WebApplication
@@ -647,7 +647,7 @@ items:
   type: Field
   source:
     id: textBoxRepeatPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 102
   assemblies:
   - WebApplication
@@ -677,7 +677,7 @@ items:
   type: Field
   source:
     id: RequiredFieldRepeatPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 111
   assemblies:
   - WebApplication
@@ -707,7 +707,7 @@ items:
   type: Field
   source:
     id: CompareRepeatPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 120
   assemblies:
   - WebApplication
@@ -737,7 +737,7 @@ items:
   type: Field
   source:
     id: dropDownRol
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 129
   assemblies:
   - WebApplication
@@ -767,7 +767,7 @@ items:
   type: Field
   source:
     id: buttonCreateAccount
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Registro.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Registro.aspx.designer.cs
     startLine: 138
   assemblies:
   - WebApplication

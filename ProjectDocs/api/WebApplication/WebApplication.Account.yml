@@ -18,7 +18,7 @@ items:
   type: Class
   source:
     id: Account
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.master.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -231,8 +231,8 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.master.cs
-    startLine: 8
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.cs
+    startLine: 9
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -262,7 +262,7 @@ items:
   type: Field
   source:
     id: logIn
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.master.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -292,7 +292,7 @@ items:
   type: Field
   source:
     id: createAccount
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.master.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -322,7 +322,7 @@ items:
   type: Field
   source:
     id: AccountCardBodyContent
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.master.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Account.master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication

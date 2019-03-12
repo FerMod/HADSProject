@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: JsonFile
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\JsonFile.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -55,7 +55,7 @@ items:
   type: Method
   source:
     id: Read
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\JsonFile.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -93,7 +93,7 @@ items:
   type: Method
   source:
     id: Write
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\JsonFile.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
     startLine: 15
   assemblies:
   - WebApplication
@@ -133,7 +133,7 @@ items:
   type: Method
   source:
     id: MakeRelativePath
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\JsonFile.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Utils\JsonFile.cs
     startLine: 30
   assemblies:
   - WebApplication

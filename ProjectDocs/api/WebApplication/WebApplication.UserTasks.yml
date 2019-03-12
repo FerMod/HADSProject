@@ -5,7 +5,10 @@ items:
   id: UserTasks
   parent: WebApplication
   children:
+  - WebApplication.UserTasks.instantiateTask
   - WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.UserTasks.studentTasks
+  - WebApplication.UserTasks.UserContent
   langs:
   - csharp
   - vb
@@ -15,7 +18,7 @@ items:
   type: Class
   source:
     id: UserTasks
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\UserTasks.master.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\UserTasks.master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -228,7 +231,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\UserTasks.master.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\UserTasks.master.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -242,6 +245,96 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
   overload: WebApplication.UserTasks.Page_Load*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserTasks.studentTasks
+  commentId: F:WebApplication.UserTasks.studentTasks
+  id: studentTasks
+  parent: WebApplication.UserTasks
+  langs:
+  - csharp
+  - vb
+  name: studentTasks
+  nameWithType: UserTasks.studentTasks
+  fullName: WebApplication.UserTasks.studentTasks
+  type: Field
+  source:
+    id: studentTasks
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\UserTasks.master.designer.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nstudentTasks control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected LinkButton studentTasks
+    return:
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected studentTasks As LinkButton
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserTasks.instantiateTask
+  commentId: F:WebApplication.UserTasks.instantiateTask
+  id: instantiateTask
+  parent: WebApplication.UserTasks
+  langs:
+  - csharp
+  - vb
+  name: instantiateTask
+  nameWithType: UserTasks.instantiateTask
+  fullName: WebApplication.UserTasks.instantiateTask
+  type: Field
+  source:
+    id: instantiateTask
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\UserTasks.master.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\ninstantiateTask control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected LinkButton instantiateTask
+    return:
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected instantiateTask As LinkButton
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserTasks.UserContent
+  commentId: F:WebApplication.UserTasks.UserContent
+  id: UserContent
+  parent: WebApplication.UserTasks
+  langs:
+  - csharp
+  - vb
+  name: UserContent
+  nameWithType: UserTasks.UserContent
+  fullName: WebApplication.UserTasks.UserContent
+  type: Field
+  source:
+    id: UserContent
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\UserTasks.master.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nUserContent control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ContentPlaceHolder UserContent
+    return:
+      type: System.Web.UI.WebControls.ContentPlaceHolder
+    content.vb: Protected UserContent As ContentPlaceHolder
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -5341,3 +5434,23 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: System.Web.UI.WebControls.LinkButton
+  commentId: T:System.Web.UI.WebControls.LinkButton
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: LinkButton
+  nameWithType: LinkButton
+  fullName: System.Web.UI.WebControls.LinkButton
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.ContentPlaceHolder
+  commentId: T:System.Web.UI.WebControls.ContentPlaceHolder
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: ContentPlaceHolder
+  nameWithType: ContentPlaceHolder
+  fullName: System.Web.UI.WebControls.ContentPlaceHolder

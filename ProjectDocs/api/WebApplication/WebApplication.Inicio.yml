@@ -21,7 +21,7 @@ items:
   type: Class
   source:
     id: Inicio
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -306,7 +306,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -337,7 +337,7 @@ items:
   type: Method
   source:
     id: ButtonLogin_Click
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.cs
     startLine: 25
   assemblies:
   - WebApplication
@@ -368,7 +368,7 @@ items:
   type: Field
   source:
     id: textBoxEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -398,7 +398,7 @@ items:
   type: Field
   source:
     id: RequiredFieldEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -428,7 +428,7 @@ items:
   type: Field
   source:
     id: textBoxPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -458,7 +458,7 @@ items:
   type: Field
   source:
     id: RequiredFieldPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -488,7 +488,7 @@ items:
   type: Field
   source:
     id: buttonLogin
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Inicio.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication

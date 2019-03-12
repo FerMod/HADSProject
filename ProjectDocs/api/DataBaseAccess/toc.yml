@@ -6,6 +6,8 @@
     name: DataAccessService
   - uid: DataBaseAccess.IDataAccessService
     name: IDataAccessService
+  - uid: DataBaseAccess.QueryResult
+    name: QueryResult
 - uid: DataBaseAccess.Extensions
   name: DataBaseAccess.Extensions
   items:

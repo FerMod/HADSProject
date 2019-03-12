@@ -87,7 +87,8 @@
     ],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "statictoc"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig"

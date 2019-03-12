@@ -5,10 +5,7 @@ items:
   id: InstanciarTarea
   parent: WebApplication.UserPage
   children:
-  - WebApplication.UserPage.InstanciarTarea.instantiateTask
   - WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPage.InstanciarTarea.studentTasks
-  - WebApplication.UserPage.InstanciarTarea.UserPanel
   langs:
   - csharp
   - vb
@@ -18,7 +15,7 @@ items:
   type: Class
   source:
     id: InstanciarTarea
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -303,7 +300,7 @@ items:
   type: Method
   source:
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\UserPage\InstanciarTarea.aspx.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -317,96 +314,6 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
   overload: WebApplication.UserPage.InstanciarTarea.Page_Load*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPage.InstanciarTarea.studentTasks
-  commentId: F:WebApplication.UserPage.InstanciarTarea.studentTasks
-  id: studentTasks
-  parent: WebApplication.UserPage.InstanciarTarea
-  langs:
-  - csharp
-  - vb
-  name: studentTasks
-  nameWithType: InstanciarTarea.studentTasks
-  fullName: WebApplication.UserPage.InstanciarTarea.studentTasks
-  type: Field
-  source:
-    id: studentTasks
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
-    startLine: 21
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPage
-  summary: "\nstudentTasks control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected LinkButton studentTasks
-    return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected studentTasks As LinkButton
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPage.InstanciarTarea.instantiateTask
-  commentId: F:WebApplication.UserPage.InstanciarTarea.instantiateTask
-  id: instantiateTask
-  parent: WebApplication.UserPage.InstanciarTarea
-  langs:
-  - csharp
-  - vb
-  name: instantiateTask
-  nameWithType: InstanciarTarea.instantiateTask
-  fullName: WebApplication.UserPage.InstanciarTarea.instantiateTask
-  type: Field
-  source:
-    id: instantiateTask
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
-    startLine: 30
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPage
-  summary: "\ninstantiateTask control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected LinkButton instantiateTask
-    return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected instantiateTask As LinkButton
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPage.InstanciarTarea.UserPanel
-  commentId: F:WebApplication.UserPage.InstanciarTarea.UserPanel
-  id: UserPanel
-  parent: WebApplication.UserPage.InstanciarTarea
-  langs:
-  - csharp
-  - vb
-  name: UserPanel
-  nameWithType: InstanciarTarea.UserPanel
-  fullName: WebApplication.UserPage.InstanciarTarea.UserPanel
-  type: Field
-  source:
-    id: UserPanel
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPage\InstanciarTarea.aspx.designer.cs
-    startLine: 39
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPage
-  summary: "\nUserPanel control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Panel UserPanel
-    return:
-      type: System.Web.UI.WebControls.Panel
-    content.vb: Protected UserPanel As Panel
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -7428,23 +7335,3 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: System.Web.UI.WebControls.LinkButton
-  commentId: T:System.Web.UI.WebControls.LinkButton
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: LinkButton
-  nameWithType: LinkButton
-  fullName: System.Web.UI.WebControls.LinkButton
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.Panel
-  commentId: T:System.Web.UI.WebControls.Panel
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: Panel
-  nameWithType: Panel
-  fullName: System.Web.UI.WebControls.Panel

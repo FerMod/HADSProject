@@ -25,7 +25,7 @@ items:
   type: Class
   source:
     id: AlertLevel
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -65,7 +65,7 @@ items:
   type: Field
   source:
     id: None
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 18
   assemblies:
   - WebApplication
@@ -96,7 +96,7 @@ items:
   type: Field
   source:
     id: Primary
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 19
   assemblies:
   - WebApplication
@@ -127,7 +127,7 @@ items:
   type: Field
   source:
     id: Secondary
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 20
   assemblies:
   - WebApplication
@@ -158,7 +158,7 @@ items:
   type: Field
   source:
     id: Success
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -189,7 +189,7 @@ items:
   type: Field
   source:
     id: Danger
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 22
   assemblies:
   - WebApplication
@@ -220,7 +220,7 @@ items:
   type: Field
   source:
     id: Warning
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 23
   assemblies:
   - WebApplication
@@ -251,7 +251,7 @@ items:
   type: Field
   source:
     id: Info
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 24
   assemblies:
   - WebApplication
@@ -282,7 +282,7 @@ items:
   type: Field
   source:
     id: Light
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 25
   assemblies:
   - WebApplication
@@ -313,7 +313,7 @@ items:
   type: Field
   source:
     id: Dark
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 26
   assemblies:
   - WebApplication
@@ -344,7 +344,7 @@ items:
   type: Method
   source:
     id: ToString
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 34
   assemblies:
   - WebApplication
@@ -375,7 +375,7 @@ items:
   type: Operator
   source:
     id: op_Explicit
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\Framework\AlertLevel.cs
     startLine: 38
   assemblies:
   - WebApplication

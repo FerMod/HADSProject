@@ -21,7 +21,7 @@ items:
   type: Class
   source:
     id: SmtpServer
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 13
   assemblies:
   - WebApplication
@@ -59,7 +59,7 @@ items:
   type: Property
   source:
     id: Account
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 18
   assemblies:
   - WebApplication
@@ -94,7 +94,7 @@ items:
   type: Property
   source:
     id: Password
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 23
   assemblies:
   - WebApplication
@@ -129,7 +129,7 @@ items:
   type: Property
   source:
     id: Host
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 28
   assemblies:
   - WebApplication
@@ -164,7 +164,7 @@ items:
   type: Property
   source:
     id: Port
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 33
   assemblies:
   - WebApplication
@@ -199,7 +199,7 @@ items:
   type: Property
   source:
     id: DeliveryMethod
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 38
   assemblies:
   - WebApplication
@@ -234,7 +234,7 @@ items:
   type: Property
   source:
     id: UseDefaultCredentials
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 43
   assemblies:
   - WebApplication
@@ -269,7 +269,7 @@ items:
   type: Property
   source:
     id: EnableSsl
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\AppConfig.cs
+    path: D:\Users\Ferran Tudela\git\HADSProject-Fork\WebApplication\AppConfig.cs
     startLine: 48
   assemblies:
   - WebApplication
