@@ -20,6 +20,18 @@
 -- TareasPersonales: 1 row(s)
 -- Usuarios: 10 row(s)
 
+/*
+DELETE FROM Asignaturas;
+DELETE FROM EstudiantesGrupo;
+DELETE FROM EstudiantesTareas;
+DELETE FROM GruposClase;
+DELETE FROM GruposTrabajo;
+DELETE FROM ProfesoresGrupo;
+DELETE FROM TareasGenericas;
+DELETE FROM TareasPersonales;
+DELETE FROM Usuarios;
+*/
+
 CREATE TABLE [Usuarios] (
     [email]      NVARCHAR (50) NOT NULL,
     [nombre]     NVARCHAR (50) NOT NULL,

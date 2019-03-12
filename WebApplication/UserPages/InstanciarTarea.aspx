@@ -36,7 +36,8 @@
 
     <div class="form-group">
         <asp:Label Font-Bold="True" runat="server" AssociatedControlID="HRealesTextBox">Real hours:</asp:Label>
-        <asp:TextBox ID="HRealesTextBox" CssClass="form-control" placeholder="Enter the real hours" autocomplete="off" runat="server" TabIndex="1"></asp:TextBox>
+        <asp:TextBox ID="HRealesTextBox" CssClass="form-control" placeholder="Enter the real hours" autocomplete="off" runat="server" TabIndex="1" TextMode="DateTime"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="HRealesRequiredFieldValidator" runat="server" CssClass="invalid-feedback" ControlToValidate="HRealesTextBox" ErrorMessage="Required field" Font-Bold="True" Display="Dynamic" SetFocusOnError="True"/>
     </div>
 
     <div class="form-group float-right">

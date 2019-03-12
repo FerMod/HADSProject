@@ -32,7 +32,6 @@ namespace WebApplication.UserPage {
 				EmailTextBox.Text = TaskDataTable.Rows[0]["Email"].ToString();
 				CodTareaTextBox.Text = TaskDataTable.Rows[0]["CodTarea"].ToString();
 				HEstimadasTextBox.Text = TaskDataTable.Rows[0]["HEstimadas"].ToString();
-				HRealesTextBox.Text = TaskDataTable.Rows[0]["HReales"].ToString();
 
 			}
 
@@ -60,7 +59,13 @@ namespace WebApplication.UserPage {
 
 		protected void SaveChangesButton_Click(object sender, EventArgs e) {
 
-			TaskDataTable.Rows[0]["HReales"] = Convert.ToInt32(HRealesTextBox.Text);
+			DataRow dataRow = TaskDataTable.NewRow();
+			dataRow.SetField("Email", EmailTextBox.Text);
+			dataRow.SetField("CodTarea", CodTareaTextBox.Text);
+			dataRow.SetField("HEstimadas", HEstimadasTextBox.Text);
+			dataRow.SetField("HReales", HRealesTextBox.Text);
+
+			TaskDataTable.Rows.Add(dataRow);
 
 			TaskDataAdapter.Update(TaskDataTable);
 			TaskDataTable.AcceptChanges();

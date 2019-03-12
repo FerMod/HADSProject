@@ -94,12 +94,20 @@ namespace WebApplication.UserPage {
 
 		private DataTable CreateTasksDataTable() {
 
-			string query = "SELECT TareasGenericas.CodAsig, TareasGenericas.Codigo, TareasGenericas.Descripcion, TareasGenericas.HEstimadas, EstudiantesTareas.HReales, TareasGenericas.TipoTarea " +
-							"FROM TareasGenericas " +
-							"LEFT JOIN EstudiantesTareas " +
-							"ON TareasGenericas.Codigo = EstudiantesTareas.CodTarea " +
-							"WHERE EstudiantesTareas.Email = @Email " +
-							"AND TareasGenericas.Explotacion = 1";
+			string query = "SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea " +
+							"FROM TareasGenericas TG " +
+							"JOIN GruposClase GC " +
+							"ON GC.codigoasig = TG.CodAsig " +
+							"JOIN EstudiantesGrupo EG " +
+							"ON EG.Grupo = GC.codigo " +
+							"WHERE TG.Explotacion = 1 " +
+							"AND EG.Email = @email " +
+							"AND NOT EXISTS ( " +
+							"  SELECT Email " +
+							"  FROM EstudiantesTareas " +
+							"  WHERE CodTarea = TG.Codigo " +
+							"  AND Email = EG.Email" +
+							")";
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
 				{ "@Email", (string)Session["Email"] }
@@ -146,7 +154,7 @@ namespace WebApplication.UserPage {
 		}
 
 		protected void DropDownCourses_SelectedIndexChanged(object sender, EventArgs e) {
-			UpdateDisplayedTasks($"CodAsig = '{DropDownCourses.SelectedValue}'");
+			UpdateDisplayedTasks($"Codigo = '{DropDownCourses.SelectedValue}'");
 		}
 
 		private void UpdateDisplayedTasks(string rowFilter) {
