@@ -114,16 +114,67 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0788e764e3f4418039d73291b8c7e87c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d00/interfaceDataBaseAccess_1_1IDataAccessService.html#a0788e764e3f4418039d73291b8c7e87c">Scalar&lt; T &gt;</a> (string query, Dictionary&lt; string, object &gt; parameters=null, CommandType commandType=CommandType.Text)</td></tr>
 <tr class="memdesc:a0788e764e3f4418039d73291b8c7e87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a single value from a database. It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored.  <a href="#a0788e764e3f4418039d73291b8c7e87c">More...</a><br /></td></tr>
 <tr class="separator:a0788e764e3f4418039d73291b8c7e87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa5bc38c85e15cac8b29e1df1e09638"><td class="memItemLeft" align="right" valign="top">DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d00/interfaceDataBaseAccess_1_1IDataAccessService.html#aaaa5bc38c85e15cac8b29e1df1e09638">CreateQueryDataTable</a> (string query, Dictionary&lt; string, object &gt; parameters=null, CommandType commandType=CommandType.Text)</td></tr>
+<tr class="memdesc:aaaa5bc38c85e15cac8b29e1df1e09638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a DataTable with the sql query string passed as parameter.  <a href="#aaaa5bc38c85e15cac8b29e1df1e09638">More...</a><br /></td></tr>
+<tr class="separator:aaaa5bc38c85e15cac8b29e1df1e09638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aced282143a1c60f5cc534af50cf10b32"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d00/interfaceDataBaseAccess_1_1IDataAccessService.html#aced282143a1c60f5cc534af50cf10b32">ConnectionString</a><code> [get]</code></td></tr>
+<tr class="memdesc:aced282143a1c60f5cc534af50cf10b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property containing the connection string to the database.  <a href="#aced282143a1c60f5cc534af50cf10b32">More...</a><br /></td></tr>
 <tr class="separator:aced282143a1c60f5cc534af50cf10b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d4/db6/IDataAccessService_8cs_source.html#l00007">7</a> of file <a class="el" href="../../d4/db6/IDataAccessService_8cs_source.html">IDataAccessService.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaaa5bc38c85e15cac8b29e1df1e09638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa5bc38c85e15cac8b29e1df1e09638">&#9670;&nbsp;</a></span>CreateQueryDataTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataTable DataBaseAccess.IDataAccessService.CreateQueryDataTable </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CommandType&#160;</td>
+          <td class="paramname"><em>commandType</em> = <code>CommandType.Text</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates and returns a DataTable with the sql query string passed as parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>The sql query to execute</td></tr>
+    <tr><td class="paramname">parameters</td><td>The query aditional parameters</td></tr>
+    <tr><td class="paramname">commandType</td><td>Indicates how the query string will be interpreted. The default is CommandType.Text</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created DataTable</dd></dl>
+
+<p>Implemented in <a class="el" href="../../dc/d4e/classDataBaseAccess_1_1DataAccessService.html#a587d762011b75b6b184ba56007fd9495">DataBaseAccess.DataAccessService</a>.</p>
+
+</div>
+</div>
 <a id="a2fb8cf4238c955d7884bdb405bef50e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fb8cf4238c955d7884bdb405bef50e1">&#9670;&nbsp;</a></span>NonQuery()</h2>
 
@@ -292,7 +343,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/db6/IDataAccessService_8cs_source.html#l00009">9</a> of file <a class="el" href="../../d4/db6/IDataAccessService_8cs_source.html">IDataAccessService.cs</a>.</p>
+<p>Property containing the connection string to the database. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db6/IDataAccessService_8cs_source.html#l00012">12</a> of file <a class="el" href="../../d4/db6/IDataAccessService_8cs_source.html">IDataAccessService.cs</a>.</p>
 
 </div>
 </div>

@@ -16,7 +16,11 @@ int \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_ac0ccfab11b8a047d8
 \mbox{\hyperlink{classDataBaseAccess_1_1QueryResult}{Query\+Result}} \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_a0a2cbe1a4d93a5d946e4ccdb8ac11523}{Query}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
 \begin{DoxyCompactList}\small\item\em Executes the passed sql query in the database and returns a List$<$\+T$>$ of elements of type Dictionary$<$\+T\+Key, T\+Value$>$. Each element in the list represents a row and each dictionary element represents a column. The column value can be accesed by its same. \end{DoxyCompactList}\item 
 T \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_a422e6ead446da4cfcdc33255193ac92e}{Scalar$<$ T $>$}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
-\begin{DoxyCompactList}\small\item\em Retrieve a single value from a database. It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retrieve a single value from a database. It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored. \end{DoxyCompactList}\item 
+Data\+Table \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_a587d762011b75b6b184ba56007fd9495}{Create\+Query\+Data\+Table}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Data\+Table with the sql query string passed as parameter. \end{DoxyCompactList}\item 
+Sql\+Data\+Adapter \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_ae6a0580081ad0f43553d20a4a9b8507f}{Create\+Data\+Adapter}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
+\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,11 +44,39 @@ Definition at line 10 of file Data\+Access\+Service.\+cs.
 
 
 
-Definition at line 14 of file Data\+Access\+Service.\+cs.
+Definition at line 15 of file Data\+Access\+Service.\+cs.
 
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataBaseAccess_1_1DataAccessService_ae6a0580081ad0f43553d20a4a9b8507f}\label{classDataBaseAccess_1_1DataAccessService_ae6a0580081ad0f43553d20a4a9b8507f}} 
+\index{DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}!CreateDataAdapter@{CreateDataAdapter}}
+\index{CreateDataAdapter@{CreateDataAdapter}!DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}}
+\subsubsection{\texorpdfstring{CreateDataAdapter()}{CreateDataAdapter()}}
+{\footnotesize\ttfamily Sql\+Data\+Adapter Data\+Base\+Access.\+Data\+Access\+Service.\+Create\+Data\+Adapter (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{Dictionary$<$ string, object $>$}]{parameters = {\ttfamily null},  }\item[{Command\+Type}]{command\+Type = {\ttfamily CommandType.Text} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file Data\+Access\+Service.\+cs.
+
+\mbox{\Hypertarget{classDataBaseAccess_1_1DataAccessService_a587d762011b75b6b184ba56007fd9495}\label{classDataBaseAccess_1_1DataAccessService_a587d762011b75b6b184ba56007fd9495}} 
+\index{DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}!CreateQueryDataTable@{CreateQueryDataTable}}
+\index{CreateQueryDataTable@{CreateQueryDataTable}!DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}}
+\subsubsection{\texorpdfstring{CreateQueryDataTable()}{CreateQueryDataTable()}}
+{\footnotesize\ttfamily Data\+Table Data\+Base\+Access.\+Data\+Access\+Service.\+Create\+Query\+Data\+Table (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{Dictionary$<$ string, object $>$}]{parameters = {\ttfamily null},  }\item[{Command\+Type}]{command\+Type = {\ttfamily CommandType.Text} }\end{DoxyParamCaption})}
+
+
+
+Creates and returns a Data\+Table with the sql query string passed as parameter. 
+
+
+
+Implements \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_aaaa5bc38c85e15cac8b29e1df1e09638}{Data\+Base\+Access.\+I\+Data\+Access\+Service}}.
+
+
+
+Definition at line 80 of file Data\+Access\+Service.\+cs.
+
 \mbox{\Hypertarget{classDataBaseAccess_1_1DataAccessService_ac0ccfab11b8a047d85096cdf188e8e2f}\label{classDataBaseAccess_1_1DataAccessService_ac0ccfab11b8a047d85096cdf188e8e2f}} 
 \index{DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}!NonQuery@{NonQuery}}
 \index{NonQuery@{NonQuery}!DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}}
@@ -56,24 +88,12 @@ Definition at line 14 of file Data\+Access\+Service.\+cs.
 Executes the passed sql query in the database and returns the number of rows affected. For U\+P\+D\+A\+TE, I\+N\+S\+E\+RT, and D\+E\+L\+E\+TE statements, the return value is the number of rows affected by the command. When a trigger exists on a table being inserted or updated, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers. For all other types of statements and rollbacks the return value is -\/1. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em query} & The sql query to execute\\
-\hline
-{\em parameters} & The query aditional parameters\\
-\hline
-{\em command\+Type} & Indicates how the query string will be interpreted. The default is Command\+Type.\+Text\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The number of rows affected
-\end{DoxyReturn}
-
 
 Implements \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_a2fb8cf4238c955d7884bdb405bef50e1}{Data\+Base\+Access.\+I\+Data\+Access\+Service}}.
 
 
 
-Definition at line 18 of file Data\+Access\+Service.\+cs.
+Definition at line 20 of file Data\+Access\+Service.\+cs.
 
 \mbox{\Hypertarget{classDataBaseAccess_1_1DataAccessService_a0a2cbe1a4d93a5d946e4ccdb8ac11523}\label{classDataBaseAccess_1_1DataAccessService_a0a2cbe1a4d93a5d946e4ccdb8ac11523}} 
 \index{DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}!Query@{Query}}
@@ -86,24 +106,12 @@ Definition at line 18 of file Data\+Access\+Service.\+cs.
 Executes the passed sql query in the database and returns a List$<$\+T$>$ of elements of type Dictionary$<$\+T\+Key, T\+Value$>$. Each element in the list represents a row and each dictionary element represents a column. The column value can be accesed by its same. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em query} & The sql query to execute\\
-\hline
-{\em parameters} & The query aditional parameters\\
-\hline
-{\em command\+Type} & Indicates how the query string will be interpreted. The default is Command\+Type.\+Text\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A collection of rows returned by the query
-\end{DoxyReturn}
-
 
 Implements \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_a9beba3c892e23d5c9278d5702a6b64e8}{Data\+Base\+Access.\+I\+Data\+Access\+Service}}.
 
 
 
-Definition at line 36 of file Data\+Access\+Service.\+cs.
+Definition at line 39 of file Data\+Access\+Service.\+cs.
 
 \mbox{\Hypertarget{classDataBaseAccess_1_1DataAccessService_a422e6ead446da4cfcdc33255193ac92e}\label{classDataBaseAccess_1_1DataAccessService_a422e6ead446da4cfcdc33255193ac92e}} 
 \index{DataBaseAccess.DataAccessService@{DataBaseAccess.DataAccessService}!Scalar$<$ T $>$@{Scalar$<$ T $>$}}
@@ -116,29 +124,12 @@ Definition at line 36 of file Data\+Access\+Service.\+cs.
 Retrieve a single value from a database. It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored. 
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & The expected scalar query type\\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}{Parameters}
-{\em query} & The sql query to execute\\
-\hline
-{\em parameters} & The query aditional parameters\\
-\hline
-{\em command\+Type} & Indicates how the query string will be interpreted. The default is Command\+Type.\+Text\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The first column of the first row in the result set, or a {\ttfamily null} reference if the result set is empty.
-\end{DoxyReturn}
-
 
 Implements \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_a0788e764e3f4418039d73291b8c7e87c}{Data\+Base\+Access.\+I\+Data\+Access\+Service}}.
 
 
 
-Definition at line 56 of file Data\+Access\+Service.\+cs.
+Definition at line 60 of file Data\+Access\+Service.\+cs.
 
 
 
@@ -151,7 +142,11 @@ Definition at line 56 of file Data\+Access\+Service.\+cs.
 
 
 
-Definition at line 12 of file Data\+Access\+Service.\+cs.
+
+
+
+
+Definition at line 13 of file Data\+Access\+Service.\+cs.
 
 
 

@@ -7,7 +7,10 @@ var searchData=
   ['account_2emaster_2ecs',['Account.master.cs',['../db/d84/Account_8master_8cs.html',1,'']]],
   ['account_2emaster_2edesigner_2ecs',['Account.master.designer.cs',['../d8/d0b/Account_8master_8designer_8cs.html',1,'']]],
   ['accountcardbodycontent',['AccountCardBodyContent',['../dd/db3/classWebApplication_1_1Account.html#ad4d7bdd1cdc63398539ccec0bac3b7fa',1,'WebApplication::Account']]],
+  ['activenav',['ActiveNav',['../dd/db3/classWebApplication_1_1Account.html#a10ae11fc0b7ab15a9407a87d6c112809',1,'WebApplication::Account']]],
   ['add',['Add',['../d8/d41/classWebApplication_1_1Framework_1_1Extensions_1_1DictionaryExtension.html#a64fba34f53010c5bda7600c88a779078',1,'WebApplication::Framework::Extensions::DictionaryExtension']]],
+  ['addclass',['AddClass',['../d3/d49/classWebApplication_1_1Framework_1_1Extensions_1_1AttributeCollectionExtension.html#abc9cbb51515a7c876753483c80476567',1,'WebApplication::Framework::Extensions::AttributeCollectionExtension']]],
+  ['addcssclass',['AddCssClass',['../d3/d49/classWebApplication_1_1Framework_1_1Extensions_1_1AttributeCollectionExtension.html#a84b3934d3bbed2605e8ded47f753978e',1,'WebApplication::Framework::Extensions::AttributeCollectionExtension']]],
   ['alert',['Alert',['../da/d6c/classWebApplication_1_1WebNotification.html#aad27a714fac49b6503c5e3f5184cc0ea',1,'WebApplication::WebNotification']]],
   ['alertbody',['AlertBody',['../da/d6c/classWebApplication_1_1WebNotification.html#a10b7a855fc86a7997656b31a043493ef',1,'WebApplication::WebNotification']]],
   ['alertclosebutton',['AlertCloseButton',['../da/d6c/classWebApplication_1_1WebNotification.html#a6d7bed1a8177347a50418856a6e39a66',1,'WebApplication::WebNotification']]],
@@ -23,5 +26,7 @@ var searchData=
   ['application_5fendrequest',['Application_EndRequest',['../d3/dde/classWebApplication_1_1Global.html#a15b45cf091e77a29996c90eb2fe654d5',1,'WebApplication::Global']]],
   ['application_5ferror',['Application_Error',['../d3/dde/classWebApplication_1_1Global.html#aa2a58f064cba7da992438a63d881724a',1,'WebApplication::Global']]],
   ['application_5fstart',['Application_Start',['../d3/dde/classWebApplication_1_1Global.html#a138ffd46dafd12c3e22b7bc70c4e4238',1,'WebApplication::Global']]],
-  ['applicationfolder',['ApplicationFolder',['../d8/df3/classWebApplication_1_1Utils_1_1UrlUtils.html#ae9c551be3f6495bbcfedd6e2de4a596f',1,'WebApplication::Utils::UrlUtils']]]
+  ['applicationfolder',['ApplicationFolder',['../d8/df3/classWebApplication_1_1Utils_1_1UrlUtils.html#ae9c551be3f6495bbcfedd6e2de4a596f',1,'WebApplication::Utils::UrlUtils']]],
+  ['attributecollectionextension',['AttributeCollectionExtension',['../d3/d49/classWebApplication_1_1Framework_1_1Extensions_1_1AttributeCollectionExtension.html',1,'WebApplication::Framework::Extensions']]],
+  ['attributecollectionextension_2ecs',['AttributeCollectionExtension.cs',['../db/d9d/AttributeCollectionExtension_8cs.html',1,'']]]
 ];

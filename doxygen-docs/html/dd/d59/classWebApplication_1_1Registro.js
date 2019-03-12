@@ -18,5 +18,6 @@ var classWebApplication_1_1Registro =
     [ "textBoxLastName", "dd/d59/classWebApplication_1_1Registro.html#a8390d910d3bdf14b582533fc931f3cb7", null ],
     [ "textBoxName", "dd/d59/classWebApplication_1_1Registro.html#a3b46f9fd6df72ec564e46e3b924ab40b", null ],
     [ "textBoxPassword", "dd/d59/classWebApplication_1_1Registro.html#a7ec9a6762b64871aac1ce8518bd33f29", null ],
-    [ "textBoxRepeatPassword", "dd/d59/classWebApplication_1_1Registro.html#abdcdc987a1957369c80898f5a3b1711a", null ]
+    [ "textBoxRepeatPassword", "dd/d59/classWebApplication_1_1Registro.html#abdcdc987a1957369c80898f5a3b1711a", null ],
+    [ "Master", "dd/d59/classWebApplication_1_1Registro.html#a91e9c41ae58c68f45906a1bc3cbeab8e", null ]
 ];

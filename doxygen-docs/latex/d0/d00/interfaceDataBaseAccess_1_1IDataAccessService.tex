@@ -14,12 +14,14 @@ int \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_a2fb8cf4238c9
 \mbox{\hyperlink{classDataBaseAccess_1_1QueryResult}{Query\+Result}} \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_a9beba3c892e23d5c9278d5702a6b64e8}{Query}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
 \begin{DoxyCompactList}\small\item\em Executes the passed sql query in the database and returns a List$<$\+T$>$ of elements of type Dictionary$<$\+T\+Key, T\+Value$>$. Each element in the list represents a row and each dictionary element represents a column. The column value can be accesed by its same. \end{DoxyCompactList}\item 
 T \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_a0788e764e3f4418039d73291b8c7e87c}{Scalar$<$ T $>$}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
-\begin{DoxyCompactList}\small\item\em Retrieve a single value from a database. It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retrieve a single value from a database. It returns the first column of the first row in the result set returned by the query, the additional columns or rows are ignored. \end{DoxyCompactList}\item 
+Data\+Table \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_aaaa5bc38c85e15cac8b29e1df1e09638}{Create\+Query\+Data\+Table}} (string query, Dictionary$<$ string, object $>$ parameters=null, Command\+Type command\+Type=Command\+Type.\+Text)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Data\+Table with the sql query string passed as parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 string \mbox{\hyperlink{interfaceDataBaseAccess_1_1IDataAccessService_aced282143a1c60f5cc534af50cf10b32}{Connection\+String}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Property containing the connection string to the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -30,6 +32,32 @@ Definition at line 7 of file I\+Data\+Access\+Service.\+cs.
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceDataBaseAccess_1_1IDataAccessService_aaaa5bc38c85e15cac8b29e1df1e09638}\label{interfaceDataBaseAccess_1_1IDataAccessService_aaaa5bc38c85e15cac8b29e1df1e09638}} 
+\index{DataBaseAccess.IDataAccessService@{DataBaseAccess.IDataAccessService}!CreateQueryDataTable@{CreateQueryDataTable}}
+\index{CreateQueryDataTable@{CreateQueryDataTable}!DataBaseAccess.IDataAccessService@{DataBaseAccess.IDataAccessService}}
+\subsubsection{\texorpdfstring{CreateQueryDataTable()}{CreateQueryDataTable()}}
+{\footnotesize\ttfamily Data\+Table Data\+Base\+Access.\+I\+Data\+Access\+Service.\+Create\+Query\+Data\+Table (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{Dictionary$<$ string, object $>$}]{parameters = {\ttfamily null},  }\item[{Command\+Type}]{command\+Type = {\ttfamily CommandType.Text} }\end{DoxyParamCaption})}
+
+
+
+Creates and returns a Data\+Table with the sql query string passed as parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The sql query to execute\\
+\hline
+{\em parameters} & The query aditional parameters\\
+\hline
+{\em command\+Type} & Indicates how the query string will be interpreted. The default is Command\+Type.\+Text\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created Data\+Table
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_a587d762011b75b6b184ba56007fd9495}{Data\+Base\+Access.\+Data\+Access\+Service}}.
+
 \mbox{\Hypertarget{interfaceDataBaseAccess_1_1IDataAccessService_a2fb8cf4238c955d7884bdb405bef50e1}\label{interfaceDataBaseAccess_1_1IDataAccessService_a2fb8cf4238c955d7884bdb405bef50e1}} 
 \index{DataBaseAccess.IDataAccessService@{DataBaseAccess.IDataAccessService}!NonQuery@{NonQuery}}
 \index{NonQuery@{NonQuery}!DataBaseAccess.IDataAccessService@{DataBaseAccess.IDataAccessService}}
@@ -124,7 +152,11 @@ Implemented in \mbox{\hyperlink{classDataBaseAccess_1_1DataAccessService_a422e6e
 
 
 
-Definition at line 9 of file I\+Data\+Access\+Service.\+cs.
+Property containing the connection string to the database. 
+
+
+
+Definition at line 12 of file I\+Data\+Access\+Service.\+cs.
 
 
 

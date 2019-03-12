@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "WebApplication.Framework.AlertLevel", "d9/d40/classWebApplication_1_1Framework_1_1AlertLevel.html", null ],
     [ "WebApplication.AppConfig", "db/dc6/classWebApplication_1_1AppConfig.html", null ],
+    [ "WebApplication.Framework.Extensions.AttributeCollectionExtension", "d3/d49/classWebApplication_1_1Framework_1_1Extensions_1_1AttributeCollectionExtension.html", null ],
     [ "WebApplication.BundleConfig", "d7/dcc/classWebApplication_1_1BundleConfig.html", null ],
     [ "DataBaseAccess.Extensions.DataReaderExtension", "d3/df0/classDataBaseAccess_1_1Extensions_1_1DataReaderExtension.html", null ],
     [ "Dictionary", null, [
@@ -27,10 +28,6 @@ var hierarchy =
     ] ],
     [ "WebApplication.Framework.NotificationData", "db/d92/classWebApplication_1_1Framework_1_1NotificationData.html", null ],
     [ "Page", null, [
-      [ "WebApplication.CambiarPassword", "db/d1f/classWebApplication_1_1CambiarPassword.html", null ],
-      [ "WebApplication.Confirmar", "de/d14/classWebApplication_1_1Confirmar.html", null ]
-    ] ],
-    [ "Page", null, [
       [ "WebApplication._Default", "d6/df0/classWebApplication_1_1__Default.html", null ],
       [ "WebApplication.About", "db/d5c/classWebApplication_1_1About.html", null ],
       [ "WebApplication.Contact", "dc/dc0/classWebApplication_1_1Contact.html", null ],
@@ -39,6 +36,10 @@ var hierarchy =
       [ "WebApplication.UserPage.InstanciarTarea", "d8/dfd/classWebApplication_1_1UserPage_1_1InstanciarTarea.html", null ],
       [ "WebApplication.UserPage.TareasAlumno", "d8/d0a/classWebApplication_1_1UserPage_1_1TareasAlumno.html", null ],
       [ "WebApplication.WebNotification", "da/d6c/classWebApplication_1_1WebNotification.html", null ]
+    ] ],
+    [ "Page", null, [
+      [ "WebApplication.CambiarPassword", "db/d1f/classWebApplication_1_1CambiarPassword.html", null ],
+      [ "WebApplication.Confirmar", "de/d14/classWebApplication_1_1Confirmar.html", null ]
     ] ],
     [ "DataBaseAccess.QueryResult", "d1/d16/classDataBaseAccess_1_1QueryResult.html", null ],
     [ "WebApplication.RouteConfig", "d2/db0/classWebApplication_1_1RouteConfig.html", null ],
