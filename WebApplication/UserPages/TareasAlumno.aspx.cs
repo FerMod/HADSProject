@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,20 +11,46 @@ using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
 using WebApplication.Utils;
 
-namespace WebApplication.UserPage {
+namespace WebApplication.UserPages {
 
 	public partial class TareasAlumno : Page {
 
 		public DataAccessService DataAccess => Master.DataAccess;
-		private DataTable CoursesDataTable { get => (DataTable)Session["CoursesDataTable"]; set => Session["CoursesDataTable"] = value; }
-		private DataTable TasksDataTable { get => (DataTable)Session["TasksDataTable"]; set => Session["TasksDataTable"] = value; }
+		private DataSet UserDataSet { get => Master.UserDataSet; set => Master.UserDataSet = value; }
+
+		private DataTable CoursesDataTable {
+			get {
+				return UserDataSet.Tables["Courses"];
+			}
+			set {
+				value.TableName = "Courses";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
+
+		private DataTable TasksDataTable {
+			get {
+				return UserDataSet.Tables["Tasks"];
+			}
+			set {
+				value.TableName = "Tasks";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
 
 		protected void Page_Load(object sender, EventArgs e) {
 
+			if(!(bool)Session["IsLogged"]) {
+				Response.Redirect("~/Default");
+			}
+
 			if(!IsPostBack) {
-#if DEBUG
-				Session["Email"] = "pepe@ikasle.ehu.es";
-#endif
 
 				InitDropDownCourses();
 				InitGridViewTasks();
@@ -54,7 +80,7 @@ namespace WebApplication.UserPage {
 		private void InitGridViewTasks() {
 
 			TasksDataTable = CreateTasksDataTable();
-			UpdateDisplayedTasks($"CodAsig = '{DropDownCourses.SelectedValue}'");
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownCourses.SelectedValue}'");
 
 		}
 
@@ -94,12 +120,20 @@ namespace WebApplication.UserPage {
 
 		private DataTable CreateTasksDataTable() {
 
-			string query = "SELECT TareasGenericas.CodAsig, TareasGenericas.Codigo, TareasGenericas.Descripcion, TareasGenericas.HEstimadas, EstudiantesTareas.HReales, TareasGenericas.TipoTarea " +
-							"FROM TareasGenericas " +
-							"LEFT JOIN EstudiantesTareas " +
-							"ON TareasGenericas.Codigo = EstudiantesTareas.CodTarea " +
-							"WHERE EstudiantesTareas.Email = @Email " +
-							"AND TareasGenericas.Explotacion = 1";
+			string query = "SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig " +
+							"FROM TareasGenericas TG " +
+							"JOIN GruposClase GC " +
+							"ON GC.codigoasig = TG.CodAsig " +
+							"JOIN EstudiantesGrupo EG " +
+							"ON EG.Grupo = GC.codigo " +
+							"WHERE TG.Explotacion = 1 " +
+							"AND EG.Email = @email " +
+							"AND NOT EXISTS ( " +
+							"  SELECT Email " +
+							"  FROM EstudiantesTareas " +
+							"  WHERE CodTarea = TG.Codigo " +
+							"  AND Email = EG.Email" +
+							")";
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
 				{ "@Email", (string)Session["Email"] }
@@ -112,7 +146,7 @@ namespace WebApplication.UserPage {
 
 			if(CoursesDataTable != null) {
 
-				DataView dataView = CoursesDataTable.DefaultView;
+				DataView dataView = TasksDataTable.DefaultView;
 
 				//Sort the data.
 				dataView.Sort = $"{e.SortExpression} {GetSortDirection(e.SortExpression)}";
@@ -146,10 +180,10 @@ namespace WebApplication.UserPage {
 		}
 
 		protected void DropDownCourses_SelectedIndexChanged(object sender, EventArgs e) {
-			UpdateDisplayedTasks($"CodAsig = '{DropDownCourses.SelectedValue}'");
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownCourses.SelectedValue}'");
 		}
 
-		private void UpdateDisplayedTasks(string rowFilter) {
+		private void UpdateDisplayedTasksFilter(string rowFilter) {
 
 			DataView dataView = TasksDataTable.DefaultView;
 			dataView.RowStateFilter = DataViewRowState.Unchanged;

@@ -14,12 +14,8 @@ items:
   fullName: WebApplication._Default
   type: Class
   source:
-    remote:
-      path: WebApplication/Default.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: _Default
-    path: ../WebApplication/Default.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Default.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -303,12 +299,8 @@ items:
   fullName: WebApplication._Default.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Default.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/Default.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Default.aspx.cs
     startLine: 9
   assemblies:
   - WebApplication

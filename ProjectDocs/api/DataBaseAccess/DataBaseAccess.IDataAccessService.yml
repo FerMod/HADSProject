@@ -18,12 +18,8 @@ items:
   fullName: DataBaseAccess.IDataAccessService
   type: Interface
   source:
-    remote:
-      path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: IDataAccessService
-    path: ../DataBaseAccess/Framework/IDataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
     startLine: 6
   assemblies:
   - DataBaseAccess
@@ -49,12 +45,8 @@ items:
   fullName: DataBaseAccess.IDataAccessService.ConnectionString
   type: Property
   source:
-    remote:
-      path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
-    path: ../DataBaseAccess/Framework/IDataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
     startLine: 11
   assemblies:
   - DataBaseAccess
@@ -84,12 +76,8 @@ items:
   fullName: DataBaseAccess.IDataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
-    path: ../DataBaseAccess/Framework/IDataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
     startLine: 23
   assemblies:
   - DataBaseAccess
@@ -128,12 +116,8 @@ items:
   fullName: DataBaseAccess.IDataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Query
-    path: ../DataBaseAccess/Framework/IDataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
     startLine: 33
   assemblies:
   - DataBaseAccess
@@ -172,12 +156,8 @@ items:
   fullName: DataBaseAccess.IDataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
-    path: ../DataBaseAccess/Framework/IDataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
     startLine: 44
   assemblies:
   - DataBaseAccess
@@ -219,12 +199,8 @@ items:
   fullName: DataBaseAccess.IDataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
-    remote:
-      path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: CreateQueryDataTable
-    path: ../DataBaseAccess/Framework/IDataAccessService.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\IDataAccessService.cs
     startLine: 53
   assemblies:
   - DataBaseAccess

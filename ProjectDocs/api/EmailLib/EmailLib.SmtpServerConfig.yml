@@ -25,12 +25,8 @@ items:
   fullName: EmailLib.SmtpServerConfig
   type: Class
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SmtpServerConfig
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 8
   assemblies:
   - EmailLib
@@ -64,12 +60,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Account
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Account
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 10
   assemblies:
   - EmailLib
@@ -99,12 +91,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Password
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Password
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 11
   assemblies:
   - EmailLib
@@ -134,12 +122,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Host
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Host
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 12
   assemblies:
   - EmailLib
@@ -169,12 +153,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Port
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Port
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 13
   assemblies:
   - EmailLib
@@ -204,12 +184,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.DeliveryMethod
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DeliveryMethod
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 14
   assemblies:
   - EmailLib
@@ -239,12 +215,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.UseDefaultCredentials
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: UseDefaultCredentials
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 15
   assemblies:
   - EmailLib
@@ -274,12 +246,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.EnableSsl
   type: Property
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: EnableSsl
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 16
   assemblies:
   - EmailLib
@@ -309,12 +277,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Equality(EmailLib.SmtpServerConfig, EmailLib.SmtpServerConfig)
   type: Operator
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: op_Equality
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 18
   assemblies:
   - EmailLib
@@ -348,12 +312,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Inequality(EmailLib.SmtpServerConfig, EmailLib.SmtpServerConfig)
   type: Operator
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: op_Inequality
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 40
   assemblies:
   - EmailLib
@@ -387,12 +347,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Equals(System.Object)
   type: Method
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Equals
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 44
   assemblies:
   - EmailLib
@@ -425,12 +381,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.Equals(EmailLib.SmtpServerConfig)
   type: Method
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Equals
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 48
   assemblies:
   - EmailLib
@@ -460,12 +412,8 @@ items:
   fullName: EmailLib.SmtpServerConfig.GetHashCode()
   type: Method
   source:
-    remote:
-      path: EmailLib/Framework/SmtpServerConfig.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: GetHashCode
-    path: ../EmailLib/Framework/SmtpServerConfig.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\EmailLib\Framework\SmtpServerConfig.cs
     startLine: 75
   assemblies:
   - EmailLib

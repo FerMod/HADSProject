@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication.UserPage {
+namespace WebApplication.UserPages {
     
     
     public partial class InstanciarTarea {
@@ -49,6 +49,24 @@ namespace WebApplication.UserPage {
         protected global::System.Web.UI.WebControls.TextBox HRealesTextBox;
         
         /// <summary>
+        /// HRealesIntegerValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator HRealesIntegerValidator;
+        
+        /// <summary>
+        /// HRealesRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator HRealesRequiredFieldValidator;
+        
+        /// <summary>
         /// CancelButton control.
         /// </summary>
         /// <remarks>
@@ -56,15 +74,6 @@ namespace WebApplication.UserPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CancelButton;
-        
-        /// <summary>
-        /// SaveChangesShowModalButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveChangesShowModalButton;
         
         /// <summary>
         /// SaveChangesButton control.
@@ -81,9 +90,9 @@ namespace WebApplication.UserPage {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new WebApplication.UserTasks Master {
+        public new WebApplication.UserPages.UserHome Master {
             get {
-                return ((WebApplication.UserTasks)(base.Master));
+                return ((WebApplication.UserPages.UserHome)(base.Master));
             }
         }
     }

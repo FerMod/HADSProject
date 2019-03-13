@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,36 +10,69 @@ using System.Web.UI.WebControls;
 using DataBaseAccess;
 using WebApplication.Framework.Extensions;
 
-namespace WebApplication.UserPage {
+namespace WebApplication.UserPages {
 
 	public partial class InstanciarTarea : Page {
 
 		private DataAccessService DataAccess => Master.DataAccess;
-		private DataTable TaskDataTable { get => (DataTable)Session["TaskDataTable"]; set => Session["TaskDataTable"] = value; }
 		private SqlDataAdapter TaskDataAdapter { get => (SqlDataAdapter)Session["TaskDataAdapter"]; set => Session["TaskDataAdapter"] = value; }
+		private DataSet UserDataSet { get => Master.UserDataSet; set => Master.UserDataSet = value; }
+
+		private DataTable StudentTasksDataTable {
+			get {
+				return UserDataSet.Tables["StudentTasks"];
+			}
+			set {
+				value.TableName = "StudentTasks";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
+
+		private DataTable TasksDataTable {
+			get {
+				return UserDataSet.Tables["Tasks"];
+			}
+			set {
+				value.TableName = "Tasks";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
 
 		protected void Page_Load(object sender, EventArgs e) {
+
+			if(!(bool)Session["IsLogged"]) {
+				Response.Redirect("~/Default");
+			}
 
 			if(!IsPostBack) {
 
 				string codeParam = Request.QueryString["code"];
-
 				if(String.IsNullOrWhiteSpace(codeParam)) {
+					//TODO: Show message
 				}
 
-				InitTaskDataTable((string)Session["Email"], codeParam);
+				string email = (string)Session["Email"];
 
-				EmailTextBox.Text = TaskDataTable.Rows[0]["Email"].ToString();
-				CodTareaTextBox.Text = TaskDataTable.Rows[0]["CodTarea"].ToString();
-				HEstimadasTextBox.Text = TaskDataTable.Rows[0]["HEstimadas"].ToString();
-				HRealesTextBox.Text = TaskDataTable.Rows[0]["HReales"].ToString();
+				StudentTasksDataTable = CreateStudentsTasksDataTable(email);
+				DataRow tasksRow = TasksDataTable.Select($"Codigo = '{codeParam}'").First();
+
+				EmailTextBox.Text = email;
+				CodTareaTextBox.Text = codeParam;
+				HEstimadasTextBox.Text = tasksRow["HEstimadas"].ToString();
 
 			}
 
 		}
 
-		private void InitTaskDataTable(string email, string taskCode) {
+		private DataTable CreateStudentsTasksDataTable(string taskCode) {
 
+			/*
 			string query = "SELECT Email, CodTarea, HEstimadas, HReales " +
 							"FROM EstudiantesTareas " +
 							"WHERE Email = @Email " +
@@ -49,21 +82,28 @@ namespace WebApplication.UserPage {
 				{ "@CodTarea", taskCode },
 				{ "@Email", email }
 			};
+			*/
 
-			//TaskDataTable = DataAccess.CreateQueryDataTable(query, parameters);
-			TaskDataAdapter = DataAccess.CreateDataAdapter(query, parameters);
+			TaskDataAdapter = DataAccess.CreateDataAdapter("SELECT * FROM EstudiantesTareas");
 
-			TaskDataTable = new DataTable();
-			TaskDataAdapter.Fill(TaskDataTable);
-			
+			DataTable dataTable = new DataTable();
+			TaskDataAdapter.Fill(dataTable);
+
+			return dataTable;
 		}
 
 		protected void SaveChangesButton_Click(object sender, EventArgs e) {
 
-			TaskDataTable.Rows[0]["HReales"] = Convert.ToInt32(HRealesTextBox.Text);
+			DataRow dataRow = StudentTasksDataTable.NewRow();
+			dataRow.SetField("Email", EmailTextBox.Text);
+			dataRow.SetField("CodTarea", CodTareaTextBox.Text);
+			dataRow.SetField("HEstimadas", HEstimadasTextBox.Text);
+			dataRow.SetField("HReales", HRealesTextBox.Text);
 
-			TaskDataAdapter.Update(TaskDataTable);
-			TaskDataTable.AcceptChanges();
+			StudentTasksDataTable.Rows.Add(dataRow);
+
+			TaskDataAdapter.Update(StudentTasksDataTable);
+			StudentTasksDataTable.AcceptChanges();
 			Return();
 
 		}

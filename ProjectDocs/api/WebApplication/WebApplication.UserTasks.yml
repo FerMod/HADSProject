@@ -17,12 +17,8 @@ items:
   fullName: WebApplication.UserTasks
   type: Class
   source:
-    remote:
-      path: WebApplication/UserPages/UserHome.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: UserTasks
-    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\UserHome.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -233,12 +229,8 @@ items:
   fullName: WebApplication.UserTasks.DataAccess
   type: Property
   source:
-    remote:
-      path: WebApplication/UserPages/UserHome.Master.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
-    path: ../WebApplication/UserPages/UserHome.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\UserHome.Master.cs
     startLine: 10
   assemblies:
   - WebApplication
@@ -268,12 +260,8 @@ items:
   fullName: WebApplication.UserTasks.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/UserHome.Master.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/UserHome.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\UserHome.Master.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -303,12 +291,8 @@ items:
   fullName: WebApplication.UserTasks.UserContent
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/UserHome.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: UserContent
-    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\UserHome.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -337,12 +321,8 @@ items:
   fullName: WebApplication.UserTasks.Master
   type: Property
   source:
-    remote:
-      path: WebApplication/UserPages/UserHome.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\UserHome.Master.designer.cs
     startLine: 29
   assemblies:
   - WebApplication

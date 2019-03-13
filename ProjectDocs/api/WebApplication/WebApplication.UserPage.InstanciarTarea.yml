@@ -24,12 +24,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea
   type: Class
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: InstanciarTarea
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -312,12 +308,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.cs
     startLine: 20
   assemblies:
   - WebApplication
@@ -347,12 +339,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesButton_Click
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.cs
     startLine: 60
   assemblies:
   - WebApplication
@@ -382,12 +370,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton_Click
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.cs
     startLine: 70
   assemblies:
   - WebApplication
@@ -417,12 +401,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.EmailTextBox
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: EmailTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -451,12 +431,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: CodTareaTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -485,12 +461,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: HEstimadasTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -519,12 +491,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.HRealesTextBox
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: HRealesTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -553,12 +521,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.CancelButton
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -587,12 +551,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesShowModalButton
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -621,12 +581,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesButton
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -655,12 +611,8 @@ items:
   fullName: WebApplication.UserPage.InstanciarTarea.Master
   type: Property
   source:
-    remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\InstanciarTarea.aspx.designer.cs
     startLine: 83
   assemblies:
   - WebApplication

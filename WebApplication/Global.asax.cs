@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
@@ -55,6 +55,9 @@ namespace WebApplication {
 			Lazy<DataAccessService> dataAccessService = new Lazy<DataAccessService>(() => (DataAccessService)Application.Get("DataAccess"));
 			Session["DataAccess"] = dataAccessService.Value;
 
+			Lazy<DataSet> dataSet = new Lazy<DataSet>(() => new DataSet());
+			Session["UserDataSet"] = dataSet.Value;
+
 			Session["IsLogged"] = false;
 			Session["Email"] = "";
 			Session["Name"] = "";
@@ -66,6 +69,7 @@ namespace WebApplication {
 		protected void Application_EndRequest(object sender, EventArgs e) { }
 
 		protected void Session_End(object sender, EventArgs e) {
+			Response.Redirect("~/Default");
 		}
 
 		protected void Application_End(object sender, EventArgs e) { }

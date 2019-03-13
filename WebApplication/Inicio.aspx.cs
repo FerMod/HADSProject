@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -18,7 +18,7 @@ namespace WebApplication {
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if((bool)Session["IsLogged"]) {
-				Response.Redirect("/Default");
+				Response.Redirect("~/Default");
 			}
 
 			Master.SetActiveNav(Account.ActiveNav.LogIn);
@@ -27,7 +27,10 @@ namespace WebApplication {
 
 		protected void ButtonLogin_Click(object sender, EventArgs e) {
 
-			string sql = "SELECT email, nombre, apellidos FROM Usuarios WHERE email = @email AND pass = @password";
+			string sql = "SELECT email, nombre, apellidos, tipo " +
+						"FROM Usuarios " +
+						"WHERE email = @email " +
+						"AND pass = @password";
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
 				{ "@email", textBoxEmail.Text },
 				{ "@password", textBoxPassword.Text }
@@ -49,7 +52,7 @@ namespace WebApplication {
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
 					Session["UserType"] = queryResult.Rows[0]["tipo"];
 
-					Response.Redirect("/Default");
+					Response.Redirect("~/Default");
 				}
 
 			} catch(Exception ex) {

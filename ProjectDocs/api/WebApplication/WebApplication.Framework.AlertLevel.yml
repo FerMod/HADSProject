@@ -24,12 +24,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel
   type: Class
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: AlertLevel
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -68,12 +64,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.None
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: None
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 18
   assemblies:
   - WebApplication
@@ -103,12 +95,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Primary
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Primary
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 19
   assemblies:
   - WebApplication
@@ -138,12 +126,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Secondary
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Secondary
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 20
   assemblies:
   - WebApplication
@@ -173,12 +157,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Success
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Success
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -208,12 +188,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Danger
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Danger
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 22
   assemblies:
   - WebApplication
@@ -243,12 +219,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Warning
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Warning
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 23
   assemblies:
   - WebApplication
@@ -278,12 +250,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Info
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Info
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 24
   assemblies:
   - WebApplication
@@ -313,12 +281,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Light
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Light
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 25
   assemblies:
   - WebApplication
@@ -348,12 +312,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Dark
   type: Field
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Dark
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 26
   assemblies:
   - WebApplication
@@ -383,12 +343,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.ToString()
   type: Method
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ToString
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 34
   assemblies:
   - WebApplication
@@ -418,12 +374,8 @@ items:
   fullName: WebApplication.Framework.AlertLevel.Explicit(System.String to WebApplication.Framework.AlertLevel)
   type: Operator
   source:
-    remote:
-      path: WebApplication/Framework/AlertLevel.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: op_Explicit
-    path: ../WebApplication/Framework/AlertLevel.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\AlertLevel.cs
     startLine: 38
   assemblies:
   - WebApplication
