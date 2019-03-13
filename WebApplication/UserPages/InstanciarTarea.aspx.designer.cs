@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication.UserPage {
+namespace WebApplication.UserPages {
     
     
     public partial class InstanciarTarea {
@@ -90,9 +90,9 @@ namespace WebApplication.UserPage {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new WebApplication.UserTasks Master {
+        public new WebApplication.UserPages.UserHome Master {
             get {
-                return ((WebApplication.UserTasks)(base.Master));
+                return ((WebApplication.UserPages.UserHome)(base.Master));
             }
         }
     }

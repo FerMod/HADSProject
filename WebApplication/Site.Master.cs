@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Web.UI;
 using WebApplication.Framework.Extensions;
@@ -37,6 +37,7 @@ namespace WebApplication {
 			Session["Name"] = "";
 			Session["LastName"] = "";
 			Response.Redirect(Request.Url.AbsolutePath);
+			Session.Abandon();
 		}
 
 	}

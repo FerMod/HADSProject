@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,20 +11,46 @@ using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
 using WebApplication.Utils;
 
-namespace WebApplication.UserPage {
+namespace WebApplication.UserPages {
 
 	public partial class TareasAlumno : Page {
 
 		public DataAccessService DataAccess => Master.DataAccess;
-		private DataTable CoursesDataTable { get => (DataTable)Session["CoursesDataTable"]; set => Session["CoursesDataTable"] = value; }
-		private DataTable TasksDataTable { get => (DataTable)Session["TasksDataTable"]; set => Session["TasksDataTable"] = value; }
+		private DataSet UserDataSet { get => Master.UserDataSet; set => Master.UserDataSet = value; }
+
+		private DataTable CoursesDataTable {
+			get {
+				return UserDataSet.Tables["Courses"];
+			}
+			set {
+				value.TableName = "Courses";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
+
+		private DataTable TasksDataTable {
+			get {
+				return UserDataSet.Tables["Tasks"];
+			}
+			set {
+				value.TableName = "Tasks";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
 
 		protected void Page_Load(object sender, EventArgs e) {
 
+			if(!(bool)Session["IsLogged"]) {
+				Response.Redirect("~/Default");
+			}
+
 			if(!IsPostBack) {
-#if DEBUG
-				Session["Email"] = "pepe@ikasle.ehu.es";
-#endif
 
 				InitDropDownCourses();
 				InitGridViewTasks();

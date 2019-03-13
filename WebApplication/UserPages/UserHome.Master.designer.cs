@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication {
+namespace WebApplication.UserPages {
     
     
-    public partial class UserTasks {
+    public partial class UserHome {
         
         /// <summary>
         /// UserContent control.

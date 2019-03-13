@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,69 +10,100 @@ using System.Web.UI.WebControls;
 using DataBaseAccess;
 using WebApplication.Framework.Extensions;
 
-namespace WebApplication.UserPage {
+namespace WebApplication.UserPages {
 
 	public partial class InstanciarTarea : Page {
 
 		private DataAccessService DataAccess => Master.DataAccess;
-		private DataTable TaskDataTable { get => (DataTable)Session["TaskDataTable"]; set => Session["TaskDataTable"] = value; }
 		private SqlDataAdapter TaskDataAdapter { get => (SqlDataAdapter)Session["TaskDataAdapter"]; set => Session["TaskDataAdapter"] = value; }
+		private DataSet UserDataSet { get => Master.UserDataSet; set => Master.UserDataSet = value; }
+
+		private DataTable StudentTasksDataTable {
+			get {
+				return UserDataSet.Tables["StudentTasks"];
+			}
+			set {
+				value.TableName = "StudentTasks";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
+
+		private DataTable TasksDataTable {
+			get {
+				return UserDataSet.Tables["Tasks"];
+			}
+			set {
+				value.TableName = "Tasks";
+				if(UserDataSet.Tables.Contains(value.TableName)) {
+					UserDataSet.Tables.Remove(value.TableName);
+				}
+				UserDataSet.Tables.Add(value);
+			}
+		}
 
 		protected void Page_Load(object sender, EventArgs e) {
+
+			if(!(bool)Session["IsLogged"]) {
+				Response.Redirect("~/Default");
+			}
 
 			if(!IsPostBack) {
 
 				string codeParam = Request.QueryString["code"];
-
 				if(String.IsNullOrWhiteSpace(codeParam)) {
 					//TODO: Show message
 				}
 
-				InitTaskDataTable(codeParam);
+				string email = (string)Session["Email"];
 
-				if(TaskDataTable.Rows.Count != 1) {
-					//TODO: Show message
-				}
+				StudentTasksDataTable = CreateStudentsTasksDataTable(email);
+				DataRow tasksRow = TasksDataTable.Select($"Codigo = '{codeParam}'").First();
 
-				EmailTextBox.Text = (string)Session["Email"];
-				CodTareaTextBox.Text = TaskDataTable.Rows[0]["Codigo"].ToString();
-				HEstimadasTextBox.Text = TaskDataTable.Rows[0]["HEstimadas"].ToString();
+				EmailTextBox.Text = email;
+				CodTareaTextBox.Text = codeParam;
+				HEstimadasTextBox.Text = tasksRow["HEstimadas"].ToString();
 
 			}
 
 		}
 
-		private void InitTaskDataTable(string taskCode) {
+		private DataTable CreateStudentsTasksDataTable(string taskCode) {
 
-			string query = "SELECT Codigo, HEstimadas " +
-							"FROM TareasGenericas TG " +
-							"WHERE TG.Explotacion = 1 " +
-							"AND TG.Codigo = @Codigo";
+			/*
+			string query = "SELECT Email, CodTarea, HEstimadas, HReales " +
+							"FROM EstudiantesTareas " +
+							"WHERE Email = @Email " +
+							"AND CodTarea = @CodTarea";
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
-				{ "@Codigo", taskCode }
+				{ "@CodTarea", taskCode },
+				{ "@Email", email }
 			};
+			*/
 
-			//TaskDataTable = DataAccess.CreateQueryDataTable(query, parameters);
-			TaskDataAdapter = DataAccess.CreateDataAdapter(query, parameters);
+			TaskDataAdapter = DataAccess.CreateDataAdapter("SELECT * FROM EstudiantesTareas");
 
-			TaskDataTable = new DataTable();
-			TaskDataAdapter.Fill(TaskDataTable);
-			
+			DataTable dataTable = new DataTable();
+			TaskDataAdapter.Fill(dataTable);
+
+			return dataTable;
 		}
 
 		protected void SaveChangesButton_Click(object sender, EventArgs e) {
 
-			DataRow dataRow = TaskDataTable.NewRow();
+			DataRow dataRow = StudentTasksDataTable.NewRow();
 			dataRow.SetField("Email", EmailTextBox.Text);
 			dataRow.SetField("CodTarea", CodTareaTextBox.Text);
 			dataRow.SetField("HEstimadas", HEstimadasTextBox.Text);
 			dataRow.SetField("HReales", HRealesTextBox.Text);
 
-			TaskDataTable.Rows.Add(dataRow);
+			StudentTasksDataTable.Rows.Add(dataRow);
 
-			TaskDataAdapter.Update(TaskDataTable);
-			TaskDataTable.AcceptChanges();
+			TaskDataAdapter.Update(StudentTasksDataTable);
+			StudentTasksDataTable.AcceptChanges();
 			Return();
 
 		}

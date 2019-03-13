@@ -1,5 +1,20 @@
 ﻿--SET STATISTICS TIME ON;
 
+/*
+
+-- No filtra las asignaturas sin matricular
+
+SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig
+FROM TareasGenericas TG 
+WHERE TG.Explotacion = 1
+AND NOT EXISTS (
+	SELECT Email 
+	FROM EstudiantesTareas 
+	WHERE CodTarea = TG.Codigo 
+	AND Email = @email
+)
+*/
+
 SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig
 FROM TareasGenericas TG 
 JOIN GruposClase GC 
