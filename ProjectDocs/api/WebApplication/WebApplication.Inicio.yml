@@ -21,8 +21,12 @@ items:
   fullName: WebApplication.Inicio
   type: Class
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Inicio
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -305,8 +309,12 @@ items:
   fullName: WebApplication.Inicio.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.cs
+    path: ../WebApplication/Inicio.aspx.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -336,8 +344,12 @@ items:
   fullName: WebApplication.Inicio.ButtonLogin_Click(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonLogin_Click
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.cs
+    path: ../WebApplication/Inicio.aspx.cs
     startLine: 27
   assemblies:
   - WebApplication
@@ -367,8 +379,12 @@ items:
   fullName: WebApplication.Inicio.textBoxEmail
   type: Field
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -397,8 +413,12 @@ items:
   fullName: WebApplication.Inicio.RequiredFieldEmail
   type: Field
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldEmail
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -427,8 +447,12 @@ items:
   fullName: WebApplication.Inicio.textBoxPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: textBoxPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -457,8 +481,12 @@ items:
   fullName: WebApplication.Inicio.RequiredFieldPassword
   type: Field
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldPassword
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -487,8 +515,12 @@ items:
   fullName: WebApplication.Inicio.buttonLogin
   type: Field
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: buttonLogin
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -517,8 +549,12 @@ items:
   fullName: WebApplication.Inicio.Master
   type: Property
   source:
+    remote:
+      path: WebApplication/Inicio.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Inicio.aspx.designer.cs
+    path: ../WebApplication/Inicio.aspx.designer.cs
     startLine: 65
   assemblies:
   - WebApplication

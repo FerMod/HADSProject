@@ -1744,259 +1744,315 @@ references:
   commentId: F:WebApplication.SiteMaster.userMenu
   fullName: WebApplication.SiteMaster.userMenu
   nameWithType: SiteMaster.userMenu
-- uid: WebApplication.UserPage
-  name: WebApplication.UserPage
-  href: api/WebApplication/WebApplication.UserPage.html
-  commentId: N:WebApplication.UserPage
-  fullName: WebApplication.UserPage
-  nameWithType: WebApplication.UserPage
-- uid: WebApplication.UserPage.InstanciarTarea
+- uid: WebApplication.UserPages
+  name: WebApplication.UserPages
+  href: api/WebApplication/WebApplication.UserPages.html
+  commentId: N:WebApplication.UserPages
+  fullName: WebApplication.UserPages
+  nameWithType: WebApplication.UserPages
+- uid: WebApplication.UserPages.InstanciarTarea
   name: InstanciarTarea
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html
-  commentId: T:WebApplication.UserPage.InstanciarTarea
-  fullName: WebApplication.UserPage.InstanciarTarea
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html
+  commentId: T:WebApplication.UserPages.InstanciarTarea
+  fullName: WebApplication.UserPages.InstanciarTarea
   nameWithType: InstanciarTarea
-- uid: WebApplication.UserPage.InstanciarTarea.CancelButton
+- uid: WebApplication.UserPages.InstanciarTarea.CancelButton
   name: CancelButton
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_CancelButton
-  commentId: F:WebApplication.UserPage.InstanciarTarea.CancelButton
-  fullName: WebApplication.UserPage.InstanciarTarea.CancelButton
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_CancelButton
+  commentId: F:WebApplication.UserPages.InstanciarTarea.CancelButton
+  fullName: WebApplication.UserPages.InstanciarTarea.CancelButton
   nameWithType: InstanciarTarea.CancelButton
-- uid: WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
   name: CancelButton_Click(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_CancelButton_Click_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
-  fullName: WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object, System.EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_CancelButton_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.InstanciarTarea.CancelButton_Click(System.Object, System.EventArgs)
   nameWithType: InstanciarTarea.CancelButton_Click(Object, EventArgs)
-- uid: WebApplication.UserPage.InstanciarTarea.CancelButton_Click*
+- uid: WebApplication.UserPages.InstanciarTarea.CancelButton_Click*
   name: CancelButton_Click
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_CancelButton_Click_
-  commentId: Overload:WebApplication.UserPage.InstanciarTarea.CancelButton_Click
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_CancelButton_Click_
+  commentId: Overload:WebApplication.UserPages.InstanciarTarea.CancelButton_Click
   isSpec: "True"
-  fullName: WebApplication.UserPage.InstanciarTarea.CancelButton_Click
+  fullName: WebApplication.UserPages.InstanciarTarea.CancelButton_Click
   nameWithType: InstanciarTarea.CancelButton_Click
-- uid: WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
+- uid: WebApplication.UserPages.InstanciarTarea.CodTareaTextBox
   name: CodTareaTextBox
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_CodTareaTextBox
-  commentId: F:WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
-  fullName: WebApplication.UserPage.InstanciarTarea.CodTareaTextBox
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_CodTareaTextBox
+  commentId: F:WebApplication.UserPages.InstanciarTarea.CodTareaTextBox
+  fullName: WebApplication.UserPages.InstanciarTarea.CodTareaTextBox
   nameWithType: InstanciarTarea.CodTareaTextBox
-- uid: WebApplication.UserPage.InstanciarTarea.EmailTextBox
+- uid: WebApplication.UserPages.InstanciarTarea.EmailTextBox
   name: EmailTextBox
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_EmailTextBox
-  commentId: F:WebApplication.UserPage.InstanciarTarea.EmailTextBox
-  fullName: WebApplication.UserPage.InstanciarTarea.EmailTextBox
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_EmailTextBox
+  commentId: F:WebApplication.UserPages.InstanciarTarea.EmailTextBox
+  fullName: WebApplication.UserPages.InstanciarTarea.EmailTextBox
   nameWithType: InstanciarTarea.EmailTextBox
-- uid: WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
+- uid: WebApplication.UserPages.InstanciarTarea.HEstimadasTextBox
   name: HEstimadasTextBox
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_HEstimadasTextBox
-  commentId: F:WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
-  fullName: WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_HEstimadasTextBox
+  commentId: F:WebApplication.UserPages.InstanciarTarea.HEstimadasTextBox
+  fullName: WebApplication.UserPages.InstanciarTarea.HEstimadasTextBox
   nameWithType: InstanciarTarea.HEstimadasTextBox
-- uid: WebApplication.UserPage.InstanciarTarea.HRealesTextBox
+- uid: WebApplication.UserPages.InstanciarTarea.HRealesIntegerValidator
+  name: HRealesIntegerValidator
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_HRealesIntegerValidator
+  commentId: F:WebApplication.UserPages.InstanciarTarea.HRealesIntegerValidator
+  fullName: WebApplication.UserPages.InstanciarTarea.HRealesIntegerValidator
+  nameWithType: InstanciarTarea.HRealesIntegerValidator
+- uid: WebApplication.UserPages.InstanciarTarea.HRealesRequiredFieldValidator
+  name: HRealesRequiredFieldValidator
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_HRealesRequiredFieldValidator
+  commentId: F:WebApplication.UserPages.InstanciarTarea.HRealesRequiredFieldValidator
+  fullName: WebApplication.UserPages.InstanciarTarea.HRealesRequiredFieldValidator
+  nameWithType: InstanciarTarea.HRealesRequiredFieldValidator
+- uid: WebApplication.UserPages.InstanciarTarea.HRealesTextBox
   name: HRealesTextBox
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_HRealesTextBox
-  commentId: F:WebApplication.UserPage.InstanciarTarea.HRealesTextBox
-  fullName: WebApplication.UserPage.InstanciarTarea.HRealesTextBox
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_HRealesTextBox
+  commentId: F:WebApplication.UserPages.InstanciarTarea.HRealesTextBox
+  fullName: WebApplication.UserPages.InstanciarTarea.HRealesTextBox
   nameWithType: InstanciarTarea.HRealesTextBox
-- uid: WebApplication.UserPage.InstanciarTarea.Master
+- uid: WebApplication.UserPages.InstanciarTarea.Master
   name: Master
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Master
-  commentId: P:WebApplication.UserPage.InstanciarTarea.Master
-  fullName: WebApplication.UserPage.InstanciarTarea.Master
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_Master
+  commentId: P:WebApplication.UserPages.InstanciarTarea.Master
+  fullName: WebApplication.UserPages.InstanciarTarea.Master
   nameWithType: InstanciarTarea.Master
-- uid: WebApplication.UserPage.InstanciarTarea.Master*
+- uid: WebApplication.UserPages.InstanciarTarea.Master*
   name: Master
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Master_
-  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Master
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_Master_
+  commentId: Overload:WebApplication.UserPages.InstanciarTarea.Master
   isSpec: "True"
-  fullName: WebApplication.UserPage.InstanciarTarea.Master
+  fullName: WebApplication.UserPages.InstanciarTarea.Master
   nameWithType: InstanciarTarea.Master
-- uid: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
   name: Page_Load(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Page_Load_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
-  fullName: WebApplication.UserPage.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.InstanciarTarea.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.InstanciarTarea.Page_Load(System.Object, System.EventArgs)
   nameWithType: InstanciarTarea.Page_Load(Object, EventArgs)
-- uid: WebApplication.UserPage.InstanciarTarea.Page_Load*
+- uid: WebApplication.UserPages.InstanciarTarea.Page_Load*
   name: Page_Load
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_Page_Load_
-  commentId: Overload:WebApplication.UserPage.InstanciarTarea.Page_Load
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_Page_Load_
+  commentId: Overload:WebApplication.UserPages.InstanciarTarea.Page_Load
   isSpec: "True"
-  fullName: WebApplication.UserPage.InstanciarTarea.Page_Load
+  fullName: WebApplication.UserPages.InstanciarTarea.Page_Load
   nameWithType: InstanciarTarea.Page_Load
-- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesButton
+- uid: WebApplication.UserPages.InstanciarTarea.SaveChangesButton
   name: SaveChangesButton
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_SaveChangesButton
-  commentId: F:WebApplication.UserPage.InstanciarTarea.SaveChangesButton
-  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_SaveChangesButton
+  commentId: F:WebApplication.UserPages.InstanciarTarea.SaveChangesButton
+  fullName: WebApplication.UserPages.InstanciarTarea.SaveChangesButton
   nameWithType: InstanciarTarea.SaveChangesButton
-- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
   name: SaveChangesButton_Click(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_SaveChangesButton_Click_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
-  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object, System.EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_SaveChangesButton_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.InstanciarTarea.SaveChangesButton_Click(System.Object, System.EventArgs)
   nameWithType: InstanciarTarea.SaveChangesButton_Click(Object, EventArgs)
-- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click*
+- uid: WebApplication.UserPages.InstanciarTarea.SaveChangesButton_Click*
   name: SaveChangesButton_Click
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_SaveChangesButton_Click_
-  commentId: Overload:WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click
+  href: api/WebApplication/WebApplication.UserPages.InstanciarTarea.html#WebApplication_UserPages_InstanciarTarea_SaveChangesButton_Click_
+  commentId: Overload:WebApplication.UserPages.InstanciarTarea.SaveChangesButton_Click
   isSpec: "True"
-  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click
+  fullName: WebApplication.UserPages.InstanciarTarea.SaveChangesButton_Click
   nameWithType: InstanciarTarea.SaveChangesButton_Click
-- uid: WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
-  name: SaveChangesShowModalButton
-  href: api/WebApplication/WebApplication.UserPage.InstanciarTarea.html#WebApplication_UserPage_InstanciarTarea_SaveChangesShowModalButton
-  commentId: F:WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
-  fullName: WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton
-  nameWithType: InstanciarTarea.SaveChangesShowModalButton
-- uid: WebApplication.UserPage.TareasAlumno
+- uid: WebApplication.UserPages.TareasAlumno
   name: TareasAlumno
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html
-  commentId: T:WebApplication.UserPage.TareasAlumno
-  fullName: WebApplication.UserPage.TareasAlumno
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html
+  commentId: T:WebApplication.UserPages.TareasAlumno
+  fullName: WebApplication.UserPages.TareasAlumno
   nameWithType: TareasAlumno
-- uid: WebApplication.UserPage.TareasAlumno.DataAccess
+- uid: WebApplication.UserPages.TareasAlumno.DataAccess
   name: DataAccess
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DataAccess
-  commentId: P:WebApplication.UserPage.TareasAlumno.DataAccess
-  fullName: WebApplication.UserPage.TareasAlumno.DataAccess
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DataAccess
+  commentId: P:WebApplication.UserPages.TareasAlumno.DataAccess
+  fullName: WebApplication.UserPages.TareasAlumno.DataAccess
   nameWithType: TareasAlumno.DataAccess
-- uid: WebApplication.UserPage.TareasAlumno.DataAccess*
+- uid: WebApplication.UserPages.TareasAlumno.DataAccess*
   name: DataAccess
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DataAccess_
-  commentId: Overload:WebApplication.UserPage.TareasAlumno.DataAccess
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DataAccess_
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.DataAccess
   isSpec: "True"
-  fullName: WebApplication.UserPage.TareasAlumno.DataAccess
+  fullName: WebApplication.UserPages.TareasAlumno.DataAccess
   nameWithType: TareasAlumno.DataAccess
-- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses
+- uid: WebApplication.UserPages.TareasAlumno.DropDownCourses
   name: DropDownCourses
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DropDownCourses
-  commentId: F:WebApplication.UserPage.TareasAlumno.DropDownCourses
-  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DropDownCourses
+  commentId: F:WebApplication.UserPages.TareasAlumno.DropDownCourses
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownCourses
   nameWithType: TareasAlumno.DropDownCourses
-- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
   name: DropDownCourses_SelectedIndexChanged(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DropDownCourses_SelectedIndexChanged_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
-  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object, System.EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DropDownCourses_SelectedIndexChanged_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object, System.EventArgs)
   nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged(Object, EventArgs)
-- uid: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged*
+- uid: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged*
   name: DropDownCourses_SelectedIndexChanged
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_DropDownCourses_SelectedIndexChanged_
-  commentId: Overload:WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DropDownCourses_SelectedIndexChanged_
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged
   isSpec: "True"
-  fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged
   nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged
-- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks
+- uid: WebApplication.UserPages.TareasAlumno.GridViewTasks
   name: GridViewTasks
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks
-  commentId: F:WebApplication.UserPage.TareasAlumno.GridViewTasks
-  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_GridViewTasks
+  commentId: F:WebApplication.UserPages.TareasAlumno.GridViewTasks
+  fullName: WebApplication.UserPages.TareasAlumno.GridViewTasks
   nameWithType: TareasAlumno.GridViewTasks
-- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+- uid: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
   name: GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_RowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_
-  commentId: M:WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
-  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object, System.Web.UI.WebControls.GridViewCommandEventArgs)
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_GridViewTasks_RowCommand_System_Object_System_Web_UI_WebControls_GridViewCommandEventArgs_
+  commentId: M:WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
+  fullName: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand(System.Object, System.Web.UI.WebControls.GridViewCommandEventArgs)
   nameWithType: TareasAlumno.GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
-- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand*
+- uid: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand*
   name: GridViewTasks_RowCommand
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_RowCommand_
-  commentId: Overload:WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_GridViewTasks_RowCommand_
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand
   isSpec: "True"
-  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand
+  fullName: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand
   nameWithType: TareasAlumno.GridViewTasks_RowCommand
-- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+- uid: WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
   name: GridViewTasks_Sorting(Object, GridViewSortEventArgs)
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_Sorting_System_Object_System_Web_UI_WebControls_GridViewSortEventArgs_
-  commentId: M:WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
-  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_GridViewTasks_Sorting_System_Object_System_Web_UI_WebControls_GridViewSortEventArgs_
+  commentId: M:WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  fullName: WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
   nameWithType: TareasAlumno.GridViewTasks_Sorting(Object, GridViewSortEventArgs)
-- uid: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting*
+- uid: WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting*
   name: GridViewTasks_Sorting
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_GridViewTasks_Sorting_
-  commentId: Overload:WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_GridViewTasks_Sorting_
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting
   isSpec: "True"
-  fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting
+  fullName: WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting
   nameWithType: TareasAlumno.GridViewTasks_Sorting
-- uid: WebApplication.UserPage.TareasAlumno.Master
+- uid: WebApplication.UserPages.TareasAlumno.Master
   name: Master
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Master
-  commentId: P:WebApplication.UserPage.TareasAlumno.Master
-  fullName: WebApplication.UserPage.TareasAlumno.Master
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_Master
+  commentId: P:WebApplication.UserPages.TareasAlumno.Master
+  fullName: WebApplication.UserPages.TareasAlumno.Master
   nameWithType: TareasAlumno.Master
-- uid: WebApplication.UserPage.TareasAlumno.Master*
+- uid: WebApplication.UserPages.TareasAlumno.Master*
   name: Master
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Master_
-  commentId: Overload:WebApplication.UserPage.TareasAlumno.Master
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_Master_
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.Master
   isSpec: "True"
-  fullName: WebApplication.UserPage.TareasAlumno.Master
+  fullName: WebApplication.UserPages.TareasAlumno.Master
   nameWithType: TareasAlumno.Master
-- uid: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.TareasAlumno.Page_Load(System.Object,System.EventArgs)
   name: Page_Load(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Page_Load_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserPage.TareasAlumno.Page_Load(System.Object,System.EventArgs)
-  fullName: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object, System.EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.TareasAlumno.Page_Load(System.Object, System.EventArgs)
   nameWithType: TareasAlumno.Page_Load(Object, EventArgs)
-- uid: WebApplication.UserPage.TareasAlumno.Page_Load*
+- uid: WebApplication.UserPages.TareasAlumno.Page_Load*
   name: Page_Load
-  href: api/WebApplication/WebApplication.UserPage.TareasAlumno.html#WebApplication_UserPage_TareasAlumno_Page_Load_
-  commentId: Overload:WebApplication.UserPage.TareasAlumno.Page_Load
+  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_Page_Load_
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.Page_Load
   isSpec: "True"
-  fullName: WebApplication.UserPage.TareasAlumno.Page_Load
+  fullName: WebApplication.UserPages.TareasAlumno.Page_Load
   nameWithType: TareasAlumno.Page_Load
-- uid: WebApplication.UserTasks
-  name: UserTasks
-  href: api/WebApplication/WebApplication.UserTasks.html
-  commentId: T:WebApplication.UserTasks
-  fullName: WebApplication.UserTasks
-  nameWithType: UserTasks
-- uid: WebApplication.UserTasks.DataAccess
+- uid: WebApplication.UserPages.UserHome
+  name: UserHome
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html
+  commentId: T:WebApplication.UserPages.UserHome
+  fullName: WebApplication.UserPages.UserHome
+  nameWithType: UserHome
+- uid: WebApplication.UserPages.UserHome.ActiveNavTab
+  name: UserHome.ActiveNavTab
+  href: api/WebApplication/WebApplication.UserPages.UserHome.ActiveNavTab.html
+  commentId: T:WebApplication.UserPages.UserHome.ActiveNavTab
+  fullName: WebApplication.UserPages.UserHome.ActiveNavTab
+  nameWithType: UserHome.ActiveNavTab
+- uid: WebApplication.UserPages.UserHome.ActiveNavTab.Home
+  name: Home
+  href: api/WebApplication/WebApplication.UserPages.UserHome.ActiveNavTab.html#WebApplication_UserPages_UserHome_ActiveNavTab_Home
+  commentId: F:WebApplication.UserPages.UserHome.ActiveNavTab.Home
+  fullName: WebApplication.UserPages.UserHome.ActiveNavTab.Home
+  nameWithType: UserHome.ActiveNavTab.Home
+- uid: WebApplication.UserPages.UserHome.ActiveNavTab.None
+  name: None
+  href: api/WebApplication/WebApplication.UserPages.UserHome.ActiveNavTab.html#WebApplication_UserPages_UserHome_ActiveNavTab_None
+  commentId: F:WebApplication.UserPages.UserHome.ActiveNavTab.None
+  fullName: WebApplication.UserPages.UserHome.ActiveNavTab.None
+  nameWithType: UserHome.ActiveNavTab.None
+- uid: WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
+  name: Tasks
+  href: api/WebApplication/WebApplication.UserPages.UserHome.ActiveNavTab.html#WebApplication_UserPages_UserHome_ActiveNavTab_Tasks
+  commentId: F:WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
+  fullName: WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
+  nameWithType: UserHome.ActiveNavTab.Tasks
+- uid: WebApplication.UserPages.UserHome.DataAccess
   name: DataAccess
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_DataAccess
-  commentId: P:WebApplication.UserTasks.DataAccess
-  fullName: WebApplication.UserTasks.DataAccess
-  nameWithType: UserTasks.DataAccess
-- uid: WebApplication.UserTasks.DataAccess*
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_DataAccess
+  commentId: P:WebApplication.UserPages.UserHome.DataAccess
+  fullName: WebApplication.UserPages.UserHome.DataAccess
+  nameWithType: UserHome.DataAccess
+- uid: WebApplication.UserPages.UserHome.DataAccess*
   name: DataAccess
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_DataAccess_
-  commentId: Overload:WebApplication.UserTasks.DataAccess
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_DataAccess_
+  commentId: Overload:WebApplication.UserPages.UserHome.DataAccess
   isSpec: "True"
-  fullName: WebApplication.UserTasks.DataAccess
-  nameWithType: UserTasks.DataAccess
-- uid: WebApplication.UserTasks.Master
+  fullName: WebApplication.UserPages.UserHome.DataAccess
+  nameWithType: UserHome.DataAccess
+- uid: WebApplication.UserPages.UserHome.Master
   name: Master
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Master
-  commentId: P:WebApplication.UserTasks.Master
-  fullName: WebApplication.UserTasks.Master
-  nameWithType: UserTasks.Master
-- uid: WebApplication.UserTasks.Master*
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_Master
+  commentId: P:WebApplication.UserPages.UserHome.Master
+  fullName: WebApplication.UserPages.UserHome.Master
+  nameWithType: UserHome.Master
+- uid: WebApplication.UserPages.UserHome.Master*
   name: Master
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Master_
-  commentId: Overload:WebApplication.UserTasks.Master
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_Master_
+  commentId: Overload:WebApplication.UserPages.UserHome.Master
   isSpec: "True"
-  fullName: WebApplication.UserTasks.Master
-  nameWithType: UserTasks.Master
-- uid: WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.UserHome.Master
+  nameWithType: UserHome.Master
+- uid: WebApplication.UserPages.UserHome.Page_Load(System.Object,System.EventArgs)
   name: Page_Load(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Page_Load_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserTasks.Page_Load(System.Object,System.EventArgs)
-  fullName: WebApplication.UserTasks.Page_Load(System.Object, System.EventArgs)
-  nameWithType: UserTasks.Page_Load(Object, EventArgs)
-- uid: WebApplication.UserTasks.Page_Load*
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.UserHome.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.UserHome.Page_Load(System.Object, System.EventArgs)
+  nameWithType: UserHome.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPages.UserHome.Page_Load*
   name: Page_Load
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_Page_Load_
-  commentId: Overload:WebApplication.UserTasks.Page_Load
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_Page_Load_
+  commentId: Overload:WebApplication.UserPages.UserHome.Page_Load
   isSpec: "True"
-  fullName: WebApplication.UserTasks.Page_Load
-  nameWithType: UserTasks.Page_Load
-- uid: WebApplication.UserTasks.UserContent
+  fullName: WebApplication.UserPages.UserHome.Page_Load
+  nameWithType: UserHome.Page_Load
+- uid: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
+  name: SetActiveNavTab(UserHome.ActiveNavTab)
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_SetActiveNavTab_WebApplication_UserPages_UserHome_ActiveNavTab_
+  commentId: M:WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
+  fullName: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
+  nameWithType: UserHome.SetActiveNavTab(UserHome.ActiveNavTab)
+- uid: WebApplication.UserPages.UserHome.SetActiveNavTab*
+  name: SetActiveNavTab
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_SetActiveNavTab_
+  commentId: Overload:WebApplication.UserPages.UserHome.SetActiveNavTab
+  isSpec: "True"
+  fullName: WebApplication.UserPages.UserHome.SetActiveNavTab
+  nameWithType: UserHome.SetActiveNavTab
+- uid: WebApplication.UserPages.UserHome.UserContent
   name: UserContent
-  href: api/WebApplication/WebApplication.UserTasks.html#WebApplication_UserTasks_UserContent
-  commentId: F:WebApplication.UserTasks.UserContent
-  fullName: WebApplication.UserTasks.UserContent
-  nameWithType: UserTasks.UserContent
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_UserContent
+  commentId: F:WebApplication.UserPages.UserHome.UserContent
+  fullName: WebApplication.UserPages.UserHome.UserContent
+  nameWithType: UserHome.UserContent
+- uid: WebApplication.UserPages.UserHome.UserDataSet
+  name: UserDataSet
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_UserDataSet
+  commentId: P:WebApplication.UserPages.UserHome.UserDataSet
+  fullName: WebApplication.UserPages.UserHome.UserDataSet
+  nameWithType: UserHome.UserDataSet
+- uid: WebApplication.UserPages.UserHome.UserDataSet*
+  name: UserDataSet
+  href: api/WebApplication/WebApplication.UserPages.UserHome.html#WebApplication_UserPages_UserHome_UserDataSet_
+  commentId: Overload:WebApplication.UserPages.UserHome.UserDataSet
+  isSpec: "True"
+  fullName: WebApplication.UserPages.UserHome.UserDataSet
+  nameWithType: UserHome.UserDataSet
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   href: api/WebApplication/WebApplication.Utils.html

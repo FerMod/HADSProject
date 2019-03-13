@@ -22,7 +22,6 @@ items:
   - WebApplication.ScriptResource
   - WebApplication.Site_Mobile
   - WebApplication.SiteMaster
-  - WebApplication.UserTasks
   - WebApplication.ViewSwitcher
   - WebApplication.WebNotification
   langs:
@@ -128,12 +127,6 @@ references:
   name: Site_Mobile
   nameWithType: Site_Mobile
   fullName: WebApplication.Site_Mobile
-- uid: WebApplication.UserTasks
-  commentId: T:WebApplication.UserTasks
-  parent: WebApplication
-  name: UserTasks
-  nameWithType: UserTasks
-  fullName: WebApplication.UserTasks
 - uid: WebApplication.ViewSwitcher
   commentId: T:WebApplication.ViewSwitcher
   name: ViewSwitcher

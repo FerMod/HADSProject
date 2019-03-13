@@ -17,8 +17,12 @@ items:
   fullName: WebApplication.Framework.ParametizedUrl
   type: Class
   source:
+    remote:
+      path: WebApplication/Framework/ParametizedUrl.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ParametizedUrl
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: ../WebApplication/Framework/ParametizedUrl.cs
     startLine: 10
   assemblies:
   - WebApplication
@@ -109,8 +113,12 @@ items:
   fullName: WebApplication.Framework.ParametizedUrl.Url
   type: Property
   source:
+    remote:
+      path: WebApplication/Framework/ParametizedUrl.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Url
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: ../WebApplication/Framework/ParametizedUrl.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -140,8 +148,12 @@ items:
   fullName: WebApplication.Framework.ParametizedUrl.ParametizedUrl(System.String)
   type: Constructor
   source:
+    remote:
+      path: WebApplication/Framework/ParametizedUrl.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: ../WebApplication/Framework/ParametizedUrl.cs
     startLine: 14
   assemblies:
   - WebApplication
@@ -169,8 +181,12 @@ items:
   fullName: WebApplication.Framework.ParametizedUrl.ToString()
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/ParametizedUrl.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ToString
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: ../WebApplication/Framework/ParametizedUrl.cs
     startLine: 29
   assemblies:
   - WebApplication
@@ -200,8 +216,12 @@ items:
   fullName: WebApplication.Framework.ParametizedUrl.Implicit(WebApplication.Framework.ParametizedUrl to System.String)
   type: Operator
   source:
+    remote:
+      path: WebApplication/Framework/ParametizedUrl.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: op_Implicit
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\ParametizedUrl.cs
+    path: ../WebApplication/Framework/ParametizedUrl.cs
     startLine: 48
   assemblies:
   - WebApplication

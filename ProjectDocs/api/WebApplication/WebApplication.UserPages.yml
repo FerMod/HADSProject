@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.UserPages
+  commentId: N:WebApplication.UserPages
+  id: WebApplication.UserPages
+  children:
+  - WebApplication.UserPages.InstanciarTarea
+  - WebApplication.UserPages.TareasAlumno
+  - WebApplication.UserPages.UserHome
+  - WebApplication.UserPages.UserHome.ActiveNavTab
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.UserPages
+  nameWithType: WebApplication.UserPages
+  fullName: WebApplication.UserPages
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.UserPages.InstanciarTarea
+  commentId: T:WebApplication.UserPages.InstanciarTarea
+  name: InstanciarTarea
+  nameWithType: InstanciarTarea
+  fullName: WebApplication.UserPages.InstanciarTarea
+- uid: WebApplication.UserPages.TareasAlumno
+  commentId: T:WebApplication.UserPages.TareasAlumno
+  name: TareasAlumno
+  nameWithType: TareasAlumno
+  fullName: WebApplication.UserPages.TareasAlumno
+- uid: WebApplication.UserPages.UserHome
+  commentId: T:WebApplication.UserPages.UserHome
+  parent: WebApplication.UserPages
+  name: UserHome
+  nameWithType: UserHome
+  fullName: WebApplication.UserPages.UserHome
+- uid: WebApplication.UserPages.UserHome.ActiveNavTab
+  commentId: T:WebApplication.UserPages.UserHome.ActiveNavTab
+  parent: WebApplication.UserPages
+  name: UserHome.ActiveNavTab
+  nameWithType: UserHome.ActiveNavTab
+  fullName: WebApplication.UserPages.UserHome.ActiveNavTab
+- uid: WebApplication.UserPages
+  commentId: N:WebApplication.UserPages
+  name: WebApplication.UserPages
+  nameWithType: WebApplication.UserPages
+  fullName: WebApplication.UserPages

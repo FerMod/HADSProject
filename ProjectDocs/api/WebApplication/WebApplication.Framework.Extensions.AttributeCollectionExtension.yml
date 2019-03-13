@@ -19,8 +19,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension
   type: Class
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AttributeCollectionExtension
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -58,8 +62,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass(System.Web.UI.WebControls.WebControl, System.String[])
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AddClass
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -102,8 +110,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass(System.Web.UI.WebControls.WebControl, System.String[])
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AddCssClass
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -146,8 +158,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveClass(System.Web.UI.WebControls.WebControl, System.String[])
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RemoveClass
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 40
   assemblies:
   - WebApplication
@@ -190,8 +206,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.RemoveCssClass(System.Web.UI.WebControls.WebControl, System.String[])
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RemoveCssClass
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 53
   assemblies:
   - WebApplication
@@ -234,8 +254,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable<System.String>)
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: GetClassesExcept
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 64
   assemblies:
   - WebApplication
@@ -281,8 +305,12 @@ items:
   fullName: WebApplication.Framework.Extensions.AttributeCollectionExtension.GetCssClassesExcept(System.Web.UI.WebControls.WebControl, System.Collections.Generic.IEnumerable<System.String>)
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: GetCssClassesExcept
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\AttributeCollectionExtension.cs
+    path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
     startLine: 75
   assemblies:
   - WebApplication

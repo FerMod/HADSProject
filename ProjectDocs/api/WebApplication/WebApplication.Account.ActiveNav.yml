@@ -16,8 +16,12 @@ items:
   fullName: WebApplication.Account.ActiveNav
   type: Enum
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ActiveNav
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.cs
+    path: ../WebApplication/Account.Master.cs
     startLine: 10
   assemblies:
   - WebApplication
@@ -43,8 +47,12 @@ items:
   fullName: WebApplication.Account.ActiveNav.None
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: None
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.cs
+    path: ../WebApplication/Account.Master.cs
     startLine: 11
   assemblies:
   - WebApplication
@@ -71,8 +79,12 @@ items:
   fullName: WebApplication.Account.ActiveNav.LogIn
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: LogIn
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.cs
+    path: ../WebApplication/Account.Master.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -99,8 +111,12 @@ items:
   fullName: WebApplication.Account.ActiveNav.CreateAccount
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: CreateAccount
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.cs
+    path: ../WebApplication/Account.Master.cs
     startLine: 13
   assemblies:
   - WebApplication

@@ -20,8 +20,12 @@ items:
   fullName: DataBaseAccess.DataAccessService
   type: Class
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: DataAccessService
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 9
   assemblies:
   - DataBaseAccess
@@ -61,8 +65,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.ConnectionString
   type: Property
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 12
   assemblies:
   - DataBaseAccess
@@ -96,8 +104,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.DataAccessService(System.String)
   type: Constructor
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 14
   assemblies:
   - DataBaseAccess
@@ -125,8 +137,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.NonQuery(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 19
   assemblies:
   - DataBaseAccess
@@ -171,8 +187,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.Query(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Query
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 38
   assemblies:
   - DataBaseAccess
@@ -217,8 +237,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.Scalar<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 59
   assemblies:
   - DataBaseAccess
@@ -266,8 +290,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.CreateQueryDataTable(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: CreateQueryDataTable
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 79
   assemblies:
   - DataBaseAccess
@@ -312,8 +340,12 @@ items:
   fullName: DataBaseAccess.DataAccessService.CreateDataAdapter(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Data.CommandType)
   type: Method
   source:
+    remote:
+      path: DataBaseAccess/Framework/DataAccessService.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: CreateDataAdapter
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\DataBaseAccess\Framework\DataAccessService.cs
+    path: ../DataBaseAccess/Framework/DataAccessService.cs
     startLine: 105
   assemblies:
   - DataBaseAccess

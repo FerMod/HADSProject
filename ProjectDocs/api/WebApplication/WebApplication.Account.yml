@@ -19,8 +19,12 @@ items:
   fullName: WebApplication.Account
   type: Class
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Account
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -231,8 +235,12 @@ items:
   fullName: WebApplication.Account.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.cs
+    path: ../WebApplication/Account.Master.cs
     startLine: 16
   assemblies:
   - WebApplication
@@ -262,8 +270,12 @@ items:
   fullName: WebApplication.Account.SetActiveNav(WebApplication.Account.ActiveNav)
   type: Method
   source:
+    remote:
+      path: WebApplication/Account.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: SetActiveNav
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.cs
+    path: ../WebApplication/Account.Master.cs
     startLine: 20
   assemblies:
   - WebApplication
@@ -291,8 +303,12 @@ items:
   fullName: WebApplication.Account.LogIn
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: LogIn
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -321,8 +337,12 @@ items:
   fullName: WebApplication.Account.CreateAccount
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: CreateAccount
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -351,8 +371,12 @@ items:
   fullName: WebApplication.Account.AccountCardBodyContent
   type: Field
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: AccountCardBodyContent
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -381,8 +405,12 @@ items:
   fullName: WebApplication.Account.Master
   type: Property
   source:
+    remote:
+      path: WebApplication/Account.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Account.Master.designer.cs
+    path: ../WebApplication/Account.Master.designer.cs
     startLine: 47
   assemblies:
   - WebApplication
