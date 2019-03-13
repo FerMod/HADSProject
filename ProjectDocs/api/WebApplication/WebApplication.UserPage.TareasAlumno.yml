@@ -21,12 +21,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno
   type: Class
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: TareasAlumno
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -309,12 +305,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.DataAccess
   type: Property
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -344,12 +336,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -379,12 +367,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.cs
     startLine: 110
   assemblies:
   - WebApplication
@@ -414,12 +398,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DropDownCourses_SelectedIndexChanged
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.cs
     startLine: 147
   assemblies:
   - WebApplication
@@ -449,12 +429,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks_RowCommand(System.Object, System.Web.UI.WebControls.GridViewCommandEventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.cs
     startLine: 162
   assemblies:
   - WebApplication
@@ -484,12 +460,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.DropDownCourses
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: DropDownCourses
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -518,12 +490,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.GridViewTasks
   type: Field
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -552,12 +520,8 @@ items:
   fullName: WebApplication.UserPage.TareasAlumno.Master
   type: Property
   source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\UserPages\TareasAlumno.aspx.designer.cs
     startLine: 38
   assemblies:
   - WebApplication

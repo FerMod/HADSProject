@@ -25,28 +25,32 @@ namespace WebApplication.UserPage {
 				string codeParam = Request.QueryString["code"];
 
 				if(String.IsNullOrWhiteSpace(codeParam)) {
+					//TODO: Show message
 				}
 
-				InitTaskDataTable((string)Session["Email"], codeParam);
+				InitTaskDataTable(codeParam);
 
-				EmailTextBox.Text = TaskDataTable.Rows[0]["Email"].ToString();
-				CodTareaTextBox.Text = TaskDataTable.Rows[0]["CodTarea"].ToString();
+				if(TaskDataTable.Rows.Count != 1) {
+					//TODO: Show message
+				}
+
+				EmailTextBox.Text = (string)Session["Email"];
+				CodTareaTextBox.Text = TaskDataTable.Rows[0]["Codigo"].ToString();
 				HEstimadasTextBox.Text = TaskDataTable.Rows[0]["HEstimadas"].ToString();
 
 			}
 
 		}
 
-		private void InitTaskDataTable(string email, string taskCode) {
+		private void InitTaskDataTable(string taskCode) {
 
-			string query = "SELECT Email, CodTarea, HEstimadas, HReales " +
-							"FROM EstudiantesTareas " +
-							"WHERE Email = @Email " +
-							"AND CodTarea = @CodTarea";
+			string query = "SELECT Codigo, HEstimadas " +
+							"FROM TareasGenericas TG " +
+							"WHERE TG.Explotacion = 1 " +
+							"AND TG.Codigo = @Codigo";
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
-				{ "@CodTarea", taskCode },
-				{ "@Email", email }
+				{ "@Codigo", taskCode }
 			};
 
 			//TaskDataTable = DataAccess.CreateQueryDataTable(query, parameters);

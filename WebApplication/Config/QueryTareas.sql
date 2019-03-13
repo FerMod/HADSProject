@@ -1,6 +1,6 @@
 ﻿--SET STATISTICS TIME ON;
 
-SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea 
+SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig
 FROM TareasGenericas TG 
 JOIN GruposClase GC 
 ON GC.codigoasig = TG.CodAsig 
@@ -16,7 +16,7 @@ AND NOT EXISTS (
 )
 
 /*
-SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea 
+SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig 
 FROM TareasGenericas TG 
 JOIN GruposClase GC 
 ON GC.codigoasig = TG.CodAsig 

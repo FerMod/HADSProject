@@ -19,12 +19,8 @@ items:
   fullName: WebApplication.WebNotification
   type: Class
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: WebNotification
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -308,12 +304,8 @@ items:
   fullName: WebApplication.WebNotification.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/WebNotification.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
     startLine: 13
   assemblies:
   - WebApplication
@@ -343,12 +335,8 @@ items:
   fullName: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
   type: Method
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: UpdateContent
-    path: ../WebApplication/WebNotification.aspx.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.cs
     startLine: 22
   assemblies:
   - WebApplication
@@ -376,12 +364,8 @@ items:
   fullName: WebApplication.WebNotification.Alert
   type: Field
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Alert
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -410,12 +394,8 @@ items:
   fullName: WebApplication.WebNotification.AlertTitle
   type: Field
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: AlertTitle
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -444,12 +424,8 @@ items:
   fullName: WebApplication.WebNotification.AlertBody
   type: Field
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: AlertBody
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -478,12 +454,8 @@ items:
   fullName: WebApplication.WebNotification.AlertCloseButton
   type: Field
   source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: AlertCloseButton
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\WebNotification.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication

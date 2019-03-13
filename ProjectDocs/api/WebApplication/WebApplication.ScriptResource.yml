@@ -15,12 +15,8 @@ items:
   fullName: WebApplication.ScriptResource
   type: Class
   source:
-    remote:
-      path: WebApplication/App_Start/ScriptResource.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ScriptResource
-    path: ../WebApplication/App_Start/ScriptResource.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -57,12 +53,8 @@ items:
   fullName: WebApplication.ScriptResource.RegisterJQuery(System.String, System.String)
   type: Method
   source:
-    remote:
-      path: WebApplication/App_Start/ScriptResource.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RegisterJQuery
-    path: ../WebApplication/App_Start/ScriptResource.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
     startLine: 15
   assemblies:
   - WebApplication
@@ -98,12 +90,8 @@ items:
   fullName: WebApplication.ScriptResource.RegisterBoostrap(System.String, System.String)
   type: Method
   source:
-    remote:
-      path: WebApplication/App_Start/ScriptResource.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: RegisterBoostrap
-    path: ../WebApplication/App_Start/ScriptResource.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\App_Start\ScriptResource.cs
     startLine: 31
   assemblies:
   - WebApplication

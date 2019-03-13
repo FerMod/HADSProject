@@ -13,12 +13,8 @@ items:
   fullName: WebApplication.EmailSent
   type: Class
   source:
-    remote:
-      path: WebApplication/Confirmar.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: EmailSent
-    path: ../WebApplication/Confirmar.aspx.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Confirmar.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication

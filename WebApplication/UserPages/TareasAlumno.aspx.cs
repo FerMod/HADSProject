@@ -54,7 +54,7 @@ namespace WebApplication.UserPage {
 		private void InitGridViewTasks() {
 
 			TasksDataTable = CreateTasksDataTable();
-			UpdateDisplayedTasks($"CodAsig = '{DropDownCourses.SelectedValue}'");
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownCourses.SelectedValue}'");
 
 		}
 
@@ -94,7 +94,7 @@ namespace WebApplication.UserPage {
 
 		private DataTable CreateTasksDataTable() {
 
-			string query = "SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea " +
+			string query = "SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig " +
 							"FROM TareasGenericas TG " +
 							"JOIN GruposClase GC " +
 							"ON GC.codigoasig = TG.CodAsig " +
@@ -120,7 +120,7 @@ namespace WebApplication.UserPage {
 
 			if(CoursesDataTable != null) {
 
-				DataView dataView = CoursesDataTable.DefaultView;
+				DataView dataView = TasksDataTable.DefaultView;
 
 				//Sort the data.
 				dataView.Sort = $"{e.SortExpression} {GetSortDirection(e.SortExpression)}";
@@ -154,10 +154,10 @@ namespace WebApplication.UserPage {
 		}
 
 		protected void DropDownCourses_SelectedIndexChanged(object sender, EventArgs e) {
-			UpdateDisplayedTasks($"Codigo = '{DropDownCourses.SelectedValue}'");
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownCourses.SelectedValue}'");
 		}
 
-		private void UpdateDisplayedTasks(string rowFilter) {
+		private void UpdateDisplayedTasksFilter(string rowFilter) {
 
 			DataView dataView = TasksDataTable.DefaultView;
 			dataView.RowStateFilter = DataViewRowState.Unchanged;

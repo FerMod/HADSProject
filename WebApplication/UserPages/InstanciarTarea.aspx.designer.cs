@@ -49,6 +49,15 @@ namespace WebApplication.UserPage {
         protected global::System.Web.UI.WebControls.TextBox HRealesTextBox;
         
         /// <summary>
+        /// HRealesIntegerValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator HRealesIntegerValidator;
+        
+        /// <summary>
         /// HRealesRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
@@ -56,15 +65,6 @@ namespace WebApplication.UserPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator HRealesRequiredFieldValidator;
-        
-        /// <summary>
-        /// HRealesRegExpr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator HRealesRegExpr;
         
         /// <summary>
         /// CancelButton control.

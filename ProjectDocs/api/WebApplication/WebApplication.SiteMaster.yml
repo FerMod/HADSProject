@@ -27,12 +27,8 @@ items:
   fullName: WebApplication.SiteMaster
   type: Class
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SiteMaster
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -244,12 +240,8 @@ items:
   fullName: WebApplication.SiteMaster.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Site.Master.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/Site.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -279,12 +271,8 @@ items:
   fullName: WebApplication.SiteMaster.ButtonProfile_Click(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Site.Master.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonProfile_Click
-    path: ../WebApplication/Site.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.cs
     startLine: 29
   assemblies:
   - WebApplication
@@ -314,12 +302,8 @@ items:
   fullName: WebApplication.SiteMaster.ButtonSignOut_Click(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Site.Master.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonSignOut_Click
-    path: ../WebApplication/Site.Master.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.cs
     startLine: 33
   assemblies:
   - WebApplication
@@ -349,12 +333,8 @@ items:
   fullName: WebApplication.SiteMaster.userMenu
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: userMenu
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -383,12 +363,8 @@ items:
   fullName: WebApplication.SiteMaster.createAccountLink
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: createAccountLink
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -417,12 +393,8 @@ items:
   fullName: WebApplication.SiteMaster.loginLink
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: loginLink
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -451,12 +423,8 @@ items:
   fullName: WebApplication.SiteMaster.loggedUserMenu
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: loggedUserMenu
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -485,12 +453,8 @@ items:
   fullName: WebApplication.SiteMaster.LabelName
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: LabelName
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -519,12 +483,8 @@ items:
   fullName: WebApplication.SiteMaster.LabelLastName
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: LabelLastName
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -553,12 +513,8 @@ items:
   fullName: WebApplication.SiteMaster.LabelMail
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: LabelMail
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -587,12 +543,8 @@ items:
   fullName: WebApplication.SiteMaster.ButtonViewProfile
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonViewProfile
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 84
   assemblies:
   - WebApplication
@@ -621,12 +573,8 @@ items:
   fullName: WebApplication.SiteMaster.ButtonSignOut
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: ButtonSignOut
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 93
   assemblies:
   - WebApplication
@@ -655,12 +603,8 @@ items:
   fullName: WebApplication.SiteMaster.MainContent
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: MainContent
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 102
   assemblies:
   - WebApplication
@@ -689,12 +633,8 @@ items:
   fullName: WebApplication.SiteMaster.NotificationContent
   type: Field
   source:
-    remote:
-      path: WebApplication/Site.Master.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: NotificationContent
-    path: ../WebApplication/Site.Master.designer.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Site.Master.designer.cs
     startLine: 111
   assemblies:
   - WebApplication

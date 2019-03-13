@@ -22,12 +22,8 @@ items:
   fullName: WebApplication.Global
   type: Class
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Global
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 23
   assemblies:
   - WebApplication
@@ -158,12 +154,8 @@ items:
   fullName: WebApplication.Global.Application_Start(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Application_Start
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 29
   assemblies:
   - WebApplication
@@ -193,12 +185,8 @@ items:
   fullName: WebApplication.Global.Application_BeginRequest(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Application_BeginRequest
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -228,12 +216,8 @@ items:
   fullName: WebApplication.Global.Application_AuthenticateRequest(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Application_AuthenticateRequest
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 50
   assemblies:
   - WebApplication
@@ -263,12 +247,8 @@ items:
   fullName: WebApplication.Global.Session_Start(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Session_Start
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 52
   assemblies:
   - WebApplication
@@ -298,12 +278,8 @@ items:
   fullName: WebApplication.Global.Application_EndRequest(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Application_EndRequest
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 65
   assemblies:
   - WebApplication
@@ -333,12 +309,8 @@ items:
   fullName: WebApplication.Global.Session_End(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Session_End
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 67
   assemblies:
   - WebApplication
@@ -368,12 +340,8 @@ items:
   fullName: WebApplication.Global.Application_End(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Application_End
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 70
   assemblies:
   - WebApplication
@@ -403,12 +371,8 @@ items:
   fullName: WebApplication.Global.Application_Error(System.Object, System.EventArgs)
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: Application_Error
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 72
   assemblies:
   - WebApplication
@@ -438,12 +402,8 @@ items:
   fullName: WebApplication.Global.SetupDataAccess()
   type: Method
   source:
-    remote:
-      path: WebApplication/Global.asax.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
     id: SetupDataAccess
-    path: ../WebApplication/Global.asax.cs
+    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Global.asax.cs
     startLine: 76
   assemblies:
   - WebApplication
