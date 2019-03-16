@@ -8,8 +8,12 @@ items:
   - WebApplication.UserPages.UserHome.DataAccess
   - WebApplication.UserPages.UserHome.Master
   - WebApplication.UserPages.UserHome.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
-  - WebApplication.UserPages.UserHome.UserContent
+  - WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.StudentNavTab)
+  - WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.TeacherNavTab)
+  - WebApplication.UserPages.UserHome.StudentContent
+  - WebApplication.UserPages.UserHome.StudentPages
+  - WebApplication.UserPages.UserHome.TeacherContent
+  - WebApplication.UserPages.UserHome.TeacherPages
   - WebApplication.UserPages.UserHome.UserDataSet
   langs:
   - csharp
@@ -241,7 +245,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -276,7 +280,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: UserDataSet
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -311,7 +315,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 20
+    startLine: 27
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -328,16 +332,16 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
-  commentId: M:WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
-  id: SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
+- uid: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.StudentNavTab)
+  commentId: M:WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.StudentNavTab)
+  id: SetActiveNavTab(WebApplication.UserPages.UserHome.StudentNavTab)
   parent: WebApplication.UserPages.UserHome
   langs:
   - csharp
   - vb
-  name: SetActiveNavTab(UserHome.ActiveNavTab)
-  nameWithType: UserHome.SetActiveNavTab(UserHome.ActiveNavTab)
-  fullName: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.ActiveNavTab)
+  name: SetActiveNavTab(UserHome.StudentNavTab)
+  nameWithType: UserHome.SetActiveNavTab(UserHome.StudentNavTab)
+  fullName: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.StudentNavTab)
   type: Method
   source:
     remote:
@@ -346,51 +350,186 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: SetActiveNavTab
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 23
+    startLine: 52
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: public void SetActiveNavTab(UserHome.ActiveNavTab activeNav)
+    content: public void SetActiveNavTab(UserHome.StudentNavTab activeNav)
     parameters:
     - id: activeNav
-      type: WebApplication.UserPages.UserHome.ActiveNavTab
-    content.vb: Public Sub SetActiveNavTab(activeNav As UserHome.ActiveNavTab)
+      type: WebApplication.UserPages.UserHome.StudentNavTab
+    content.vb: Public Sub SetActiveNavTab(activeNav As UserHome.StudentNavTab)
   overload: WebApplication.UserPages.UserHome.SetActiveNavTab*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: WebApplication.UserPages.UserHome.UserContent
-  commentId: F:WebApplication.UserPages.UserHome.UserContent
-  id: UserContent
+- uid: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.TeacherNavTab)
+  commentId: M:WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.TeacherNavTab)
+  id: SetActiveNavTab(WebApplication.UserPages.UserHome.TeacherNavTab)
   parent: WebApplication.UserPages.UserHome
   langs:
   - csharp
   - vb
-  name: UserContent
-  nameWithType: UserHome.UserContent
-  fullName: WebApplication.UserPages.UserHome.UserContent
+  name: SetActiveNavTab(UserHome.TeacherNavTab)
+  nameWithType: UserHome.SetActiveNavTab(UserHome.TeacherNavTab)
+  fullName: WebApplication.UserPages.UserHome.SetActiveNavTab(WebApplication.UserPages.UserHome.TeacherNavTab)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: SetActiveNavTab
+    path: ../WebApplication/UserPages/UserHome.Master.cs
+    startLine: 72
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: public void SetActiveNavTab(UserHome.TeacherNavTab activeNav)
+    parameters:
+    - id: activeNav
+      type: WebApplication.UserPages.UserHome.TeacherNavTab
+    content.vb: Public Sub SetActiveNavTab(activeNav As UserHome.TeacherNavTab)
+  overload: WebApplication.UserPages.UserHome.SetActiveNavTab*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WebApplication.UserPages.UserHome.StudentPages
+  commentId: F:WebApplication.UserPages.UserHome.StudentPages
+  id: StudentPages
+  parent: WebApplication.UserPages.UserHome
+  langs:
+  - csharp
+  - vb
+  name: StudentPages
+  nameWithType: UserHome.StudentPages
+  fullName: WebApplication.UserPages.UserHome.StudentPages
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/UserHome.Master.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: UserContent
+    id: StudentPages
     path: ../WebApplication/UserPages/UserHome.Master.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nUserContent control.\n"
+  summary: "\nStudentPages control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected ContentPlaceHolder UserContent
+    content: protected Panel StudentPages
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected StudentPages As Panel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.UserHome.StudentContent
+  commentId: F:WebApplication.UserPages.UserHome.StudentContent
+  id: StudentContent
+  parent: WebApplication.UserPages.UserHome
+  langs:
+  - csharp
+  - vb
+  name: StudentContent
+  nameWithType: UserHome.StudentContent
+  fullName: WebApplication.UserPages.UserHome.StudentContent
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: StudentContent
+    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nStudentContent control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ContentPlaceHolder StudentContent
     return:
       type: System.Web.UI.WebControls.ContentPlaceHolder
-    content.vb: Protected UserContent As ContentPlaceHolder
+    content.vb: Protected StudentContent As ContentPlaceHolder
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.UserHome.TeacherPages
+  commentId: F:WebApplication.UserPages.UserHome.TeacherPages
+  id: TeacherPages
+  parent: WebApplication.UserPages.UserHome
+  langs:
+  - csharp
+  - vb
+  name: TeacherPages
+  nameWithType: UserHome.TeacherPages
+  fullName: WebApplication.UserPages.UserHome.TeacherPages
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherPages
+    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherPages control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Panel TeacherPages
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected TeacherPages As Panel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.UserHome.TeacherContent
+  commentId: F:WebApplication.UserPages.UserHome.TeacherContent
+  id: TeacherContent
+  parent: WebApplication.UserPages.UserHome
+  langs:
+  - csharp
+  - vb
+  name: TeacherContent
+  nameWithType: UserHome.TeacherContent
+  fullName: WebApplication.UserPages.UserHome.TeacherContent
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/UserHome.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherContent
+    path: ../WebApplication/UserPages/UserHome.Master.designer.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherContent control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ContentPlaceHolder TeacherContent
+    return:
+      type: System.Web.UI.WebControls.ContentPlaceHolder
+    content.vb: Protected TeacherContent As ContentPlaceHolder
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -413,7 +552,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/UserHome.Master.designer.cs
-    startLine: 29
+    startLine: 56
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -5560,12 +5699,31 @@ references:
   name: SetActiveNavTab
   nameWithType: UserHome.SetActiveNavTab
   fullName: WebApplication.UserPages.UserHome.SetActiveNavTab
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab
-  commentId: T:WebApplication.UserPages.UserHome.ActiveNavTab
+- uid: WebApplication.UserPages.UserHome.StudentNavTab
+  commentId: T:WebApplication.UserPages.UserHome.StudentNavTab
   parent: WebApplication.UserPages
-  name: UserHome.ActiveNavTab
-  nameWithType: UserHome.ActiveNavTab
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab
+  name: UserHome.StudentNavTab
+  nameWithType: UserHome.StudentNavTab
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab
+- uid: WebApplication.UserPages.UserHome.TeacherNavTab
+  commentId: T:WebApplication.UserPages.UserHome.TeacherNavTab
+  parent: WebApplication.UserPages
+  name: UserHome.TeacherNavTab
+  nameWithType: UserHome.TeacherNavTab
+  fullName: WebApplication.UserPages.UserHome.TeacherNavTab
+- uid: System.Web.UI.WebControls.Panel
+  commentId: T:System.Web.UI.WebControls.Panel
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Panel
+  nameWithType: Panel
+  fullName: System.Web.UI.WebControls.Panel
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
 - uid: System.Web.UI.WebControls.ContentPlaceHolder
   commentId: T:System.Web.UI.WebControls.ContentPlaceHolder
   parent: System.Web.UI.WebControls
@@ -5573,12 +5731,6 @@ references:
   name: ContentPlaceHolder
   nameWithType: ContentPlaceHolder
   fullName: System.Web.UI.WebControls.ContentPlaceHolder
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls
 - uid: WebApplication.UserPages.UserHome.Master*
   commentId: Overload:WebApplication.UserPages.UserHome.Master
   name: Master

@@ -51,6 +51,8 @@
     name: NotificationData
   - uid: WebApplication.Framework.ParametizedUrl
     name: ParametizedUrl
+  - uid: WebApplication.Framework.Query
+    name: Query
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   items:
@@ -61,14 +63,20 @@
 - uid: WebApplication.UserPages
   name: WebApplication.UserPages
   items:
+  - uid: WebApplication.UserPages.InsertarTarea
+    name: InsertarTarea
   - uid: WebApplication.UserPages.InstanciarTarea
     name: InstanciarTarea
   - uid: WebApplication.UserPages.TareasAlumno
     name: TareasAlumno
+  - uid: WebApplication.UserPages.TareasProfesor
+    name: TareasProfesor
   - uid: WebApplication.UserPages.UserHome
     name: UserHome
-  - uid: WebApplication.UserPages.UserHome.ActiveNavTab
-    name: UserHome.ActiveNavTab
+  - uid: WebApplication.UserPages.UserHome.StudentNavTab
+    name: UserHome.StudentNavTab
+  - uid: WebApplication.UserPages.UserHome.TeacherNavTab
+    name: UserHome.TeacherNavTab
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   items:

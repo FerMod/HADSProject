@@ -1,50 +1,50 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab
-  commentId: T:WebApplication.UserPages.UserHome.ActiveNavTab
-  id: UserHome.ActiveNavTab
+- uid: WebApplication.UserPages.UserHome.StudentNavTab
+  commentId: T:WebApplication.UserPages.UserHome.StudentNavTab
+  id: UserHome.StudentNavTab
   parent: WebApplication.UserPages
   children:
-  - WebApplication.UserPages.UserHome.ActiveNavTab.Home
-  - WebApplication.UserPages.UserHome.ActiveNavTab.None
-  - WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
+  - WebApplication.UserPages.UserHome.StudentNavTab.Home
+  - WebApplication.UserPages.UserHome.StudentNavTab.None
+  - WebApplication.UserPages.UserHome.StudentNavTab.Tasks
   langs:
   - csharp
   - vb
-  name: UserHome.ActiveNavTab
-  nameWithType: UserHome.ActiveNavTab
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab
+  name: UserHome.StudentNavTab
+  nameWithType: UserHome.StudentNavTab
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab
   type: Enum
   source:
     remote:
       path: WebApplication/UserPages/UserHome.Master.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: ActiveNavTab
+    id: StudentNavTab
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: public enum ActiveNavTab
-    content.vb: Public Enum ActiveNavTab
+    content: public enum StudentNavTab
+    content.vb: Public Enum StudentNavTab
   modifiers.csharp:
   - public
   - enum
   modifiers.vb:
   - Public
   - Enum
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab.None
-  commentId: F:WebApplication.UserPages.UserHome.ActiveNavTab.None
+- uid: WebApplication.UserPages.UserHome.StudentNavTab.None
+  commentId: F:WebApplication.UserPages.UserHome.StudentNavTab.None
   id: None
-  parent: WebApplication.UserPages.UserHome.ActiveNavTab
+  parent: WebApplication.UserPages.UserHome.StudentNavTab
   langs:
   - csharp
   - vb
   name: None
-  nameWithType: UserHome.ActiveNavTab.None
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab.None
+  nameWithType: UserHome.StudentNavTab.None
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab.None
   type: Field
   source:
     remote:
@@ -53,30 +53,30 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: None
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
     content: None = -1
     return:
-      type: WebApplication.UserPages.UserHome.ActiveNavTab
+      type: WebApplication.UserPages.UserHome.StudentNavTab
   modifiers.csharp:
   - public
   - const
   modifiers.vb:
   - Public
   - Const
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab.Home
-  commentId: F:WebApplication.UserPages.UserHome.ActiveNavTab.Home
+- uid: WebApplication.UserPages.UserHome.StudentNavTab.Home
+  commentId: F:WebApplication.UserPages.UserHome.StudentNavTab.Home
   id: Home
-  parent: WebApplication.UserPages.UserHome.ActiveNavTab
+  parent: WebApplication.UserPages.UserHome.StudentNavTab
   langs:
   - csharp
   - vb
   name: Home
-  nameWithType: UserHome.ActiveNavTab.Home
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab.Home
+  nameWithType: UserHome.StudentNavTab.Home
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab.Home
   type: Field
   source:
     remote:
@@ -85,30 +85,30 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Home
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
     content: Home = 0
     return:
-      type: WebApplication.UserPages.UserHome.ActiveNavTab
+      type: WebApplication.UserPages.UserHome.StudentNavTab
   modifiers.csharp:
   - public
   - const
   modifiers.vb:
   - Public
   - Const
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
-  commentId: F:WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
+- uid: WebApplication.UserPages.UserHome.StudentNavTab.Tasks
+  commentId: F:WebApplication.UserPages.UserHome.StudentNavTab.Tasks
   id: Tasks
-  parent: WebApplication.UserPages.UserHome.ActiveNavTab
+  parent: WebApplication.UserPages.UserHome.StudentNavTab
   langs:
   - csharp
   - vb
   name: Tasks
-  nameWithType: UserHome.ActiveNavTab.Tasks
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab.Tasks
+  nameWithType: UserHome.StudentNavTab.Tasks
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab.Tasks
   type: Field
   source:
     remote:
@@ -117,14 +117,14 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Tasks
     path: ../WebApplication/UserPages/UserHome.Master.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
     content: Tasks = 1
     return:
-      type: WebApplication.UserPages.UserHome.ActiveNavTab
+      type: WebApplication.UserPages.UserHome.StudentNavTab
   modifiers.csharp:
   - public
   - const
@@ -137,9 +137,9 @@ references:
   name: WebApplication.UserPages
   nameWithType: WebApplication.UserPages
   fullName: WebApplication.UserPages
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab
-  commentId: T:WebApplication.UserPages.UserHome.ActiveNavTab
+- uid: WebApplication.UserPages.UserHome.StudentNavTab
+  commentId: T:WebApplication.UserPages.UserHome.StudentNavTab
   parent: WebApplication.UserPages
-  name: UserHome.ActiveNavTab
-  nameWithType: UserHome.ActiveNavTab
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab
+  name: UserHome.StudentNavTab
+  nameWithType: UserHome.StudentNavTab
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab

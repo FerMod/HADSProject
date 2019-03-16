@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebApplication.SiteMaster" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebApplication.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -71,12 +71,21 @@
                 <%-- Logged user menu --%>
                 <asp:Panel ID="loggedUserMenu" CssClass="navbar-collapse" Visible="true" runat="server">
 
-                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <asp:Panel ID="studentMenu" class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" runat="server">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
-                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/UserPages/TareasAlumno">Tareas</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/UserPages/TareasAlumno">Manage Tasks</a></li>
                         </ul>
-                    </div>
+                    </asp:Panel>
+
+                    <asp:Panel ID="teacherMenu" class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" runat="server">
+                        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                                <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/UserPages/TareasProfesor">Manage Tasks</a></li>
+                            </ul>
+                        </div>
+                    </asp:Panel>
 
                     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                         <ul class="navbar-nav ml-auto">

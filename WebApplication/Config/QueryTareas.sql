@@ -1,4 +1,4 @@
-﻿--SET STATISTICS TIME ON;
+--SET STATISTICS TIME ON;
 
 /*
 
@@ -45,4 +45,22 @@ AND NOT EXISTS (
 	WHERE CodTarea = TG.Codigo 
 	AND Email = EG.Email
 )
+*/
+
+SELECT DISTINCT(TG.Codigo), TG.Descripcion, TG.HEstimadas, TG.Explotacion, TG.TipoTarea, TG.CodAsig
+FROM TareasGenericas TG
+JOIN GruposClase GC 
+ON GC.codigoasig = TG.CodAsig 
+JOIN  ProfesoresGrupo PG
+ON PG.codigogrupo = GC.codigo
+WHERE PG.email = 'blanco@ehu.es'
+
+/*
+SELECT DISTINCT(TG.Codigo), TG.Descripcion, TG.HEstimadas, TG.Explotacion, TG.TipoTarea, TG.CodAsig
+FROM TareasGenericas TG
+JOIN GruposClase GC 
+ON GC.codigoasig = TG.CodAsig 
+JOIN  ProfesoresGrupo PG
+ON PG.codigogrupo = GC.codigo
+WHERE PG.email = @email
 */

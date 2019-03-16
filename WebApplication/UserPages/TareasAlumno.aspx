@@ -2,11 +2,11 @@
 
 <%@ MasterType VirtualPath="~/UserPages/UserHome.Master" %>
 
-<asp:Content ID="StudentTasksContent" ContentPlaceHolderID="UserContent" runat="server">
+<asp:Content ID="StudentTasksContent" ContentPlaceHolderID="StudentContent" runat="server">
 
     <div class="form-group">
-        <asp:Label Font-Bold="True" runat="server" AssociatedControlID="DropDownCourses">Select course:</asp:Label>
-        <asp:DropDownList ID="DropDownCourses" runat="server" TabIndex="1" OnSelectedIndexChanged="DropDownCourses_SelectedIndexChanged" AutoPostBack="True" />
+        <asp:Label Font-Bold="True" runat="server" AssociatedControlID="DropDownSubjects">Select subject:</asp:Label>
+        <asp:DropDownList ID="DropDownSubjects" runat="server" TabIndex="1" OnSelectedIndexChanged="DropDownSubjects_SelectedIndexChanged" AutoPostBack="True" />
     </div>
 
     <div class="form-group">
@@ -15,13 +15,13 @@
             <Columns>
                 <asp:TemplateField ShowHeader="False">
                     <ItemTemplate>
-<%--                        <asp:Button ID="InstantiateButton" runat="server" CausesValidation="false" CommandName="Instantiate" Text="Instantiate" CommandArgument='<%# Eval("Codigo") %>' data-toggle="modal" data-target="#taskModal" />--%>
-                        <asp:Button ID="InstantiateButton" CssClass="btn btn-primary btn-block" runat="server" CausesValidation="false" CommandName="Instantiate" Text="Instantiate" CommandArgument='<%# Eval("Codigo") %>'/>
+                        <%--                        <asp:Button ID="InstantiateButton" runat="server" CausesValidation="false" CommandName="Instantiate" Text="Instantiate" CommandArgument='<%# Eval("Codigo") %>' data-toggle="modal" data-target="#taskModal" />--%>
+                        <asp:Button ID="InstantiateButton" CssClass="btn btn-primary btn-block" runat="server" CausesValidation="false" CommandName="Instantiate" Text="Instantiate" CommandArgument='<%# Eval("Codigo") %>' />
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:BoundField HeaderText="Code" DataField="Codigo" SortExpression="Codigo" />
                 <asp:BoundField HeaderText="Description" DataField="Descripcion" SortExpression="Descripcion" />
-                <asp:BoundField HeaderText="Hours" DataField="HEstimadas" SortExpression="HEstimadas" />
+                <asp:BoundField HeaderText="Estimated Hours" DataField="HEstimadas" SortExpression="HEstimadas" />
                 <asp:BoundField HeaderText="Type" DataField="TipoTarea" SortExpression="TipoTarea" />
             </Columns>
         </asp:GridView>

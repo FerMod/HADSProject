@@ -18,12 +18,12 @@ namespace WebApplication.UserPages {
 		public DataAccessService DataAccess => Master.DataAccess;
 		private DataSet UserDataSet { get => Master.UserDataSet; set => Master.UserDataSet = value; }
 
-		private DataTable CoursesDataTable {
+		private DataTable SubjectsDataTable {
 			get {
-				return UserDataSet.Tables["Courses"];
+				return UserDataSet.Tables["Subjects"];
 			}
 			set {
-				value.TableName = "Courses";
+				value.TableName = "Subjects";
 				if(UserDataSet.Tables.Contains(value.TableName)) {
 					UserDataSet.Tables.Remove(value.TableName);
 				}
@@ -52,52 +52,54 @@ namespace WebApplication.UserPages {
 
 			if(!IsPostBack) {
 
-				InitDropDownCourses();
+				InitDropDownSubjects();
 				InitGridViewTasks();
 			}
 
 		}
 
-		private void InitDropDownCourses() {
+		private void InitDropDownSubjects() {
 
-			CoursesDataTable = CreateCoursesDataTable();
+			SubjectsDataTable = CreateSubjectsDataTable();
 
 			// Specify the data source and field names for the Text 
 			// and Value properties of the items (ListItem objects) 
 			// in the DropDownList control.
-			DropDownCourses.DataSource = CoursesDataTable;
-			DropDownCourses.DataTextField = "CourseCode";
-			DropDownCourses.DataValueField = "CourseCode";
+			DropDownSubjects.DataSource = SubjectsDataTable;
+			DropDownSubjects.DataTextField = "SubjectCode";
+			DropDownSubjects.DataValueField = "SubjectCode";
 
 			// Bind the data to the control
-			DropDownCourses.DataBind();
+			DropDownSubjects.DataBind();
 
 			// Set the default selected item
-			DropDownCourses.SelectedIndex = 0;
+			DropDownSubjects.SelectedIndex = 0;
 
 		}
 
 		private void InitGridViewTasks() {
 
 			TasksDataTable = CreateTasksDataTable();
-			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownCourses.SelectedValue}'");
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
 
 		}
 
-		private DataTable CreateCoursesDataTable() {
+		private DataTable CreateSubjectsDataTable() {
 
 			// Create a table to store data for the DropDownList control
 			DataTable dt = new DataTable();
 
-			string query = "SELECT codigo, Nombre FROM Asignaturas";
+			Dictionary<string, object> parameters = new Dictionary<string, object> {
+				{ "@email", (string)Session["Email"] }
+			};
 
-			QueryResult queryResult = DataAccess.Query(query);
+			QueryResult queryResult = DataAccess.Query(Query.StudentSubjects, parameters);
 
 			#region Table columns
 
 			// Define the columns of the table
-			dt.Columns.Add(new DataColumn("CourseCode", typeof(string)));
-			dt.Columns.Add(new DataColumn("CourseName", typeof(string)));
+			dt.Columns.Add(new DataColumn("SubjectCode", typeof(string)));
+			dt.Columns.Add(new DataColumn("SubjectName", typeof(string)));
 
 			#endregion
 
@@ -120,31 +122,16 @@ namespace WebApplication.UserPages {
 
 		private DataTable CreateTasksDataTable() {
 
-			string query = "SELECT TG.Codigo, TG.Descripcion, TG.HEstimadas, TG.TipoTarea, TG.CodAsig " +
-							"FROM TareasGenericas TG " +
-							"JOIN GruposClase GC " +
-							"ON GC.codigoasig = TG.CodAsig " +
-							"JOIN EstudiantesGrupo EG " +
-							"ON EG.Grupo = GC.codigo " +
-							"WHERE TG.Explotacion = 1 " +
-							"AND EG.Email = @email " +
-							"AND NOT EXISTS ( " +
-							"  SELECT Email " +
-							"  FROM EstudiantesTareas " +
-							"  WHERE CodTarea = TG.Codigo " +
-							"  AND Email = EG.Email" +
-							")";
-
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
-				{ "@Email", (string)Session["Email"] }
+				{ "@email", (string)Session["Email"] }
 			};
 
-			return DataAccess.CreateQueryDataTable(query, parameters);
+			return DataAccess.CreateQueryDataTable(Query.StudentSubjectsTasks, parameters);
 		}
 
 		protected void GridViewTasks_Sorting(object sender, GridViewSortEventArgs e) {
 
-			if(CoursesDataTable != null) {
+			if(SubjectsDataTable != null) {
 
 				DataView dataView = TasksDataTable.DefaultView;
 
@@ -179,8 +166,8 @@ namespace WebApplication.UserPages {
 			return sortAsc ? "ASC" : "DESC";
 		}
 
-		protected void DropDownCourses_SelectedIndexChanged(object sender, EventArgs e) {
-			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownCourses.SelectedValue}'");
+		protected void DropDownSubjects_SelectedIndexChanged(object sender, EventArgs e) {
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
 		}
 
 		private void UpdateDisplayedTasksFilter(string rowFilter) {

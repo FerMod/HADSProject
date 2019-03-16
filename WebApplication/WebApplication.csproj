@@ -126,7 +126,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="MailTemplates\AccountVerification.html" />
+    <Content Include="UserPages\InsertarTarea.aspx" />
     <Content Include="UserPages\InstanciarTarea.aspx" />
+    <Content Include="UserPages\TareasProfesor.aspx" />
     <Content Include="UserPages\TareasAlumno.aspx" />
     <Content Include="WebNotification.aspx" />
     <None Include="packages.config" />
@@ -246,6 +248,7 @@
     <Compile Include="Framework\Extensions\AttributeCollectionExtension.cs" />
     <Compile Include="Framework\NotificationData.cs" />
     <Compile Include="Framework\ParametizedUrl.cs" />
+    <Compile Include="Framework\Queries\Query.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -278,12 +281,26 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserPages\InsertarTarea.aspx.cs">
+      <DependentUpon>InsertarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\InsertarTarea.aspx.designer.cs">
+      <DependentUpon>InsertarTarea.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPages\InstanciarTarea.aspx.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserPages\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\TareasProfesor.aspx.cs">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\TareasProfesor.aspx.designer.cs">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPages\TareasAlumno.aspx.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>

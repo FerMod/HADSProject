@@ -13,13 +13,58 @@ namespace WebApplication.UserPages {
     public partial class UserHome {
         
         /// <summary>
-        /// UserContent control.
+        /// StudentPages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder UserContent;
+        protected global::System.Web.UI.WebControls.Panel StudentPages;
+        
+        /// <summary>
+        /// StudentTasksUpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel StudentTasksUpdatePanel;
+        
+        /// <summary>
+        /// StudentContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder StudentContent;
+        
+        /// <summary>
+        /// TeacherPages control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel TeacherPages;
+        
+        /// <summary>
+        /// TeacherTasksUpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel TeacherTasksUpdatePanel;
+        
+        /// <summary>
+        /// TeacherContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder TeacherContent;
         
         /// <summary>
         /// Master property.

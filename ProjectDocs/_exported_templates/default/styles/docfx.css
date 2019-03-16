@@ -955,18 +955,3 @@ div.embeddedvideo iframe {
 
 .mainContainer[dir='rtl'] main ul[role="tablist"] {
   margin: 0; }
-
-.body-content {
-  width: 100%;
-}
-.container, .container-fluid {
-  padding-left: 0;
-  margin-left: none;
-}
-.sidetoc {
-  bottom: 0 !important;
-}
-
-#breadcrumb {
-  margin-left: 10px;
-}

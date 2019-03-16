@@ -6,13 +6,14 @@ items:
   parent: WebApplication.UserPages
   children:
   - WebApplication.UserPages.TareasAlumno.DataAccess
-  - WebApplication.UserPages.TareasAlumno.DropDownCourses
-  - WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+  - WebApplication.UserPages.TareasAlumno.DropDownSubjects
+  - WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
   - WebApplication.UserPages.TareasAlumno.GridViewTasks
   - WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
   - WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
   - WebApplication.UserPages.TareasAlumno.Master
   - WebApplication.UserPages.TareasAlumno.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.UserPages.TareasAlumno.UpdatePanel1
   langs:
   - csharp
   - vb
@@ -385,7 +386,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 144
+    startLine: 127
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -402,37 +403,37 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
-  id: DropDownCourses_SelectedIndexChanged(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
+  id: DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
   parent: WebApplication.UserPages.TareasAlumno
   langs:
   - csharp
   - vb
-  name: DropDownCourses_SelectedIndexChanged(Object, EventArgs)
-  nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged(Object, EventArgs)
-  fullName: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged(System.Object, System.EventArgs)
+  name: DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
+  nameWithType: TareasAlumno.DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: DropDownCourses_SelectedIndexChanged
+    id: DropDownSubjects_SelectedIndexChanged
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 181
+    startLine: 164
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: protected void DropDownCourses_SelectedIndexChanged(object sender, EventArgs e)
+    content: protected void DropDownSubjects_SelectedIndexChanged(object sender, EventArgs e)
     parameters:
     - id: sender
       type: System.Object
     - id: e
       type: System.EventArgs
-    content.vb: Protected Sub DropDownCourses_SelectedIndexChanged(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged*
+    content.vb: Protected Sub DropDownSubjects_SelectedIndexChanged(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -455,7 +456,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 196
+    startLine: 179
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -472,36 +473,70 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.TareasAlumno.DropDownCourses
-  commentId: F:WebApplication.UserPages.TareasAlumno.DropDownCourses
-  id: DropDownCourses
+- uid: WebApplication.UserPages.TareasAlumno.UpdatePanel1
+  commentId: F:WebApplication.UserPages.TareasAlumno.UpdatePanel1
+  id: UpdatePanel1
   parent: WebApplication.UserPages.TareasAlumno
   langs:
   - csharp
   - vb
-  name: DropDownCourses
-  nameWithType: TareasAlumno.DropDownCourses
-  fullName: WebApplication.UserPages.TareasAlumno.DropDownCourses
+  name: UpdatePanel1
+  nameWithType: TareasAlumno.UpdatePanel1
+  fullName: WebApplication.UserPages.TareasAlumno.UpdatePanel1
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: DropDownCourses
+    id: UpdatePanel1
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nDropDownCourses control.\n"
+  summary: "\nUpdatePanel1 control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected DropDownList DropDownCourses
+    content: protected UpdatePanel UpdatePanel1
+    return:
+      type: System.Web.UI.UpdatePanel
+    content.vb: Protected UpdatePanel1 As UpdatePanel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects
+  commentId: F:WebApplication.UserPages.TareasAlumno.DropDownSubjects
+  id: DropDownSubjects
+  parent: WebApplication.UserPages.TareasAlumno
+  langs:
+  - csharp
+  - vb
+  name: DropDownSubjects
+  nameWithType: TareasAlumno.DropDownSubjects
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DropDownSubjects
+    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nDropDownSubjects control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected DropDownList DropDownSubjects
     return:
       type: System.Web.UI.WebControls.DropDownList
-    content.vb: Protected DropDownCourses As DropDownList
+    content.vb: Protected DropDownSubjects As DropDownList
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -524,7 +559,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-    startLine: 30
+    startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -558,7 +593,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-    startLine: 38
+    startLine: 47
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -7622,11 +7657,11 @@ references:
   name: System.Web.UI.WebControls
   nameWithType: System.Web.UI.WebControls
   fullName: System.Web.UI.WebControls
-- uid: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged*
-  commentId: Overload:WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged
-  name: DropDownCourses_SelectedIndexChanged
-  nameWithType: TareasAlumno.DropDownCourses_SelectedIndexChanged
-  fullName: WebApplication.UserPages.TareasAlumno.DropDownCourses_SelectedIndexChanged
+- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged*
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged
+  name: DropDownSubjects_SelectedIndexChanged
+  nameWithType: TareasAlumno.DropDownSubjects_SelectedIndexChanged
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged
 - uid: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand*
   commentId: Overload:WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand
   name: GridViewTasks_RowCommand
@@ -7639,6 +7674,13 @@ references:
   name: GridViewCommandEventArgs
   nameWithType: GridViewCommandEventArgs
   fullName: System.Web.UI.WebControls.GridViewCommandEventArgs
+- uid: System.Web.UI.UpdatePanel
+  commentId: T:System.Web.UI.UpdatePanel
+  parent: System.Web.UI
+  isExternal: true
+  name: UpdatePanel
+  nameWithType: UpdatePanel
+  fullName: System.Web.UI.UpdatePanel
 - uid: System.Web.UI.WebControls.DropDownList
   commentId: T:System.Web.UI.WebControls.DropDownList
   parent: System.Web.UI.WebControls

@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Web.UI;
 using DataBaseAccess;
+using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
 
 namespace WebApplication.UserPages {
@@ -12,30 +13,26 @@ namespace WebApplication.UserPages {
 		public DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
 		public DataSet UserDataSet { get => (DataSet)Session["UserDataSet"]; set => Session["UserDataSet"] = value; }
 
-		public enum ActiveNavTab {
-			None = -1,
-			Home,
-			Tasks
-		}
-
 		protected void Page_Load(object sender, EventArgs e) {
+
+			if(!IsPostBack) {
+				ShowUserPanel((string)Session["UserType"]);
+			}
+
 		}
 
-		public void SetActiveNavTab(ActiveNavTab activeNav) {
+		private void ShowUserPanel(string userType) {
 
-			switch(activeNav) {
-				case ActiveNavTab.Tasks:
-					//Home.RemoveCssClass("active");
-					//HomeTab.RemoveCssClass("show", "active");
-					//Tasks.AddCssClass("active");
-					//TasksTab.AddCssClass("show", "active");
+			switch(userType) {
+				case "Alumno":
+					StudentPages.Visible = true;
+					TeacherPages.Visible = false;
 					break;
-				case ActiveNavTab.Home:
+				case "Profesor":
+					StudentPages.Visible = false;
+					TeacherPages.Visible = true;
+					break;
 				default:
-					//Home.AddCssClass("active");
-					//HomeTab.AddCssClass("show", "active");
-					//Tasks.RemoveCssClass("active");
-					//TasksTab.RemoveCssClass("show", "active");
 					break;
 			}
 

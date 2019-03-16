@@ -4,10 +4,13 @@ items:
   commentId: N:WebApplication.UserPages
   id: WebApplication.UserPages
   children:
+  - WebApplication.UserPages.InsertarTarea
   - WebApplication.UserPages.InstanciarTarea
   - WebApplication.UserPages.TareasAlumno
+  - WebApplication.UserPages.TareasProfesor
   - WebApplication.UserPages.UserHome
-  - WebApplication.UserPages.UserHome.ActiveNavTab
+  - WebApplication.UserPages.UserHome.StudentNavTab
+  - WebApplication.UserPages.UserHome.TeacherNavTab
   langs:
   - csharp
   - vb
@@ -18,11 +21,21 @@ items:
   assemblies:
   - WebApplication
 references:
+- uid: WebApplication.UserPages.InsertarTarea
+  commentId: T:WebApplication.UserPages.InsertarTarea
+  name: InsertarTarea
+  nameWithType: InsertarTarea
+  fullName: WebApplication.UserPages.InsertarTarea
 - uid: WebApplication.UserPages.InstanciarTarea
   commentId: T:WebApplication.UserPages.InstanciarTarea
   name: InstanciarTarea
   nameWithType: InstanciarTarea
   fullName: WebApplication.UserPages.InstanciarTarea
+- uid: WebApplication.UserPages.TareasProfesor
+  commentId: T:WebApplication.UserPages.TareasProfesor
+  name: TareasProfesor
+  nameWithType: TareasProfesor
+  fullName: WebApplication.UserPages.TareasProfesor
 - uid: WebApplication.UserPages.TareasAlumno
   commentId: T:WebApplication.UserPages.TareasAlumno
   name: TareasAlumno
@@ -34,12 +47,18 @@ references:
   name: UserHome
   nameWithType: UserHome
   fullName: WebApplication.UserPages.UserHome
-- uid: WebApplication.UserPages.UserHome.ActiveNavTab
-  commentId: T:WebApplication.UserPages.UserHome.ActiveNavTab
+- uid: WebApplication.UserPages.UserHome.StudentNavTab
+  commentId: T:WebApplication.UserPages.UserHome.StudentNavTab
   parent: WebApplication.UserPages
-  name: UserHome.ActiveNavTab
-  nameWithType: UserHome.ActiveNavTab
-  fullName: WebApplication.UserPages.UserHome.ActiveNavTab
+  name: UserHome.StudentNavTab
+  nameWithType: UserHome.StudentNavTab
+  fullName: WebApplication.UserPages.UserHome.StudentNavTab
+- uid: WebApplication.UserPages.UserHome.TeacherNavTab
+  commentId: T:WebApplication.UserPages.UserHome.TeacherNavTab
+  parent: WebApplication.UserPages
+  name: UserHome.TeacherNavTab
+  nameWithType: UserHome.TeacherNavTab
+  fullName: WebApplication.UserPages.UserHome.TeacherNavTab
 - uid: WebApplication.UserPages
   commentId: N:WebApplication.UserPages
   name: WebApplication.UserPages
