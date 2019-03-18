@@ -9,11 +9,32 @@
     <title><%: Page.Title %> - HADS</title>
 
     <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/core", "~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/modernizr", "~/bundles/SvgInjector") %>
     </asp:PlaceHolder>
 
     <webopt:BundleReference runat="server" Path="~/bundles/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<%--    <script>
+		// Elements to inject
+		var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
+
+		// Options
+		var injectorOptions = {
+			evalScripts: 'once',
+			pngFallback: 'assets/png',
+			each: function (svg) {
+				// Callback after each SVG is injected
+				console.log('SVG injected: ' + svg.getAttribute('id'));
+			}
+		};
+
+		// Trigger the injection
+		SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
+			// Callback after all SVGs are injected
+			console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
+		});
+    </script>--%>
 
 </head>
 <body>
@@ -137,6 +158,7 @@
                 <p>&copy; <%: DateTime.Now.Year %> - HADS</p>
             </footer>
         </div>
+
     </form>
 </body>
 </html>
