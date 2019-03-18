@@ -96,7 +96,7 @@ namespace WebApplication.UserPages {
 				{ "@email", (string)Session["Email"] }
 			};
 
-			QueryResult queryResult = DataAccess.Query(Query.StudentSubjects, parameters);
+			QueryResult queryResult = DataAccess.Query("StudentTasks", parameters, commandType: CommandType.StoredProcedure);
 
 			#region Table columns
 
