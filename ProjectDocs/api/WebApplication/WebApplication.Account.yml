@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Account
     path: ../WebApplication/Account.Master.designer.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/Account.Master.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SetActiveNav
     path: ../WebApplication/Account.Master.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: LogIn
     path: ../WebApplication/Account.Master.designer.cs
@@ -339,7 +339,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CreateAccount
     path: ../WebApplication/Account.Master.designer.cs
@@ -373,7 +373,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AccountCardBodyContent
     path: ../WebApplication/Account.Master.designer.cs
@@ -407,7 +407,7 @@ items:
   source:
     remote:
       path: WebApplication/Account.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/Account.Master.designer.cs
