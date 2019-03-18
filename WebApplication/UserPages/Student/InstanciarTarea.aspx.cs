@@ -52,12 +52,19 @@ namespace WebApplication.UserPages {
 
 			if(!IsPostBack) {
 
+				/*
 				string codeParam = Request.QueryString["code"];
 				if(String.IsNullOrWhiteSpace(codeParam)) {
 					//TODO: Show message
 				}
+				*/
 
-				string email = (string)Session["Email"];
+				string codeParam = Convert.ToString(Page.RouteData.Values["code"]);
+				if(String.IsNullOrWhiteSpace(codeParam)) {
+					//TODO: Show error message
+				}
+
+				string email = Convert.ToString(Session["Email"]);
 
 				StudentTasksDataTable = CreateStudentsTasksDataTable(email);
 				DataRow tasksRow = TasksDataTable.Select($"Codigo = '{codeParam}'").First();
@@ -113,7 +120,8 @@ namespace WebApplication.UserPages {
 		}
 
 		private void Return() {
-			Response.Redirect(Page.ResolveUrl(@"~/UserPages/TareasAlumno"));
+			//Response.Redirect("javascript:history.go(-1);");
+			Response.RedirectToRoute("StudentTasks");
 		}
 
 	}

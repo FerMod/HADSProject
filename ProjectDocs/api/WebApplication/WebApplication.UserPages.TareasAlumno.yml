@@ -22,11 +22,11 @@ items:
   type: Class
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TareasAlumno
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -310,11 +310,11 @@ items:
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -345,11 +345,11 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
     startLine: 46
   assemblies:
   - WebApplication
@@ -380,12 +380,12 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 132
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+    startLine: 134
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -415,12 +415,12 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects_SelectedIndexChanged
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 169
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+    startLine: 171
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -450,12 +450,12 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 184
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+    startLine: 186
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -485,11 +485,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -519,11 +519,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -553,11 +553,11 @@ items:
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
     startLine: 38
   assemblies:
   - WebApplication
@@ -566,11 +566,11 @@ items:
   remarks: "\nAuto-generated property.\n"
   example: []
   syntax:
-    content: public UserHome Master { get; }
+    content: public Student Master { get; }
     parameters: []
     return:
-      type: WebApplication.UserPages.UserHome
-    content.vb: Public ReadOnly Property Master As UserHome
+      type: WebApplication.UserPages.Student
+    content.vb: Public ReadOnly Property Master As Student
   overload: WebApplication.UserPages.TareasAlumno.Master*
   modifiers.csharp:
   - public
@@ -7658,9 +7658,9 @@ references:
   name: Master
   nameWithType: TareasAlumno.Master
   fullName: WebApplication.UserPages.TareasAlumno.Master
-- uid: WebApplication.UserPages.UserHome
-  commentId: T:WebApplication.UserPages.UserHome
+- uid: WebApplication.UserPages.Student
+  commentId: T:WebApplication.UserPages.Student
   parent: WebApplication.UserPages
-  name: UserHome
-  nameWithType: UserHome
-  fullName: WebApplication.UserPages.UserHome
+  name: Student
+  nameWithType: Student
+  fullName: WebApplication.UserPages.Student

@@ -67,12 +67,22 @@
     name: InsertarTarea
   - uid: WebApplication.UserPages.InstanciarTarea
     name: InstanciarTarea
+  - uid: WebApplication.UserPages.Student
+    name: Student
+  - uid: WebApplication.UserPages.StudentHome
+    name: StudentHome
+  - uid: WebApplication.UserPages.StudentMenu
+    name: StudentMenu
   - uid: WebApplication.UserPages.TareasAlumno
     name: TareasAlumno
   - uid: WebApplication.UserPages.TareasProfesor
     name: TareasProfesor
-  - uid: WebApplication.UserPages.UserHome
-    name: UserHome
+  - uid: WebApplication.UserPages.Teacher
+    name: Teacher
+  - uid: WebApplication.UserPages.TeacherHome
+    name: TeacherHome
+  - uid: WebApplication.UserPages.TeacherMenu
+    name: TeacherMenu
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   items:

@@ -21,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TareasProfesor
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -309,11 +309,11 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.cs
     startLine: 17
   assemblies:
   - WebApplication
@@ -344,11 +344,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -378,11 +378,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsTasksDataSource
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -412,11 +412,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: NewTaskButton
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -446,11 +446,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -480,11 +480,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -514,11 +514,11 @@ items:
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
     startLine: 65
   assemblies:
   - WebApplication
@@ -527,11 +527,11 @@ items:
   remarks: "\nAuto-generated property.\n"
   example: []
   syntax:
-    content: public UserHome Master { get; }
+    content: public Teacher Master { get; }
     parameters: []
     return:
-      type: WebApplication.UserPages.UserHome
-    content.vb: Public ReadOnly Property Master As UserHome
+      type: WebApplication.UserPages.Teacher
+    content.vb: Public ReadOnly Property Master As Teacher
   overload: WebApplication.UserPages.TareasProfesor.Master*
   modifiers.csharp:
   - public
@@ -7588,9 +7588,9 @@ references:
   name: Master
   nameWithType: TareasProfesor.Master
   fullName: WebApplication.UserPages.TareasProfesor.Master
-- uid: WebApplication.UserPages.UserHome
-  commentId: T:WebApplication.UserPages.UserHome
+- uid: WebApplication.UserPages.Teacher
+  commentId: T:WebApplication.UserPages.Teacher
   parent: WebApplication.UserPages
-  name: UserHome
-  nameWithType: UserHome
-  fullName: WebApplication.UserPages.UserHome
+  name: Teacher
+  nameWithType: Teacher
+  fullName: WebApplication.UserPages.Teacher

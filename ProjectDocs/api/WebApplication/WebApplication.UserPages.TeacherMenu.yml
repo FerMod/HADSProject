@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.UserPages.TeacherMenu
+  commentId: T:WebApplication.UserPages.TeacherMenu
+  id: TeacherMenu
+  parent: WebApplication.UserPages
+  children:
+  - WebApplication.UserPages.TeacherMenu.Home
+  - WebApplication.UserPages.TeacherMenu.None
+  - WebApplication.UserPages.TeacherMenu.Tasks
+  langs:
+  - csharp
+  - vb
+  name: TeacherMenu
+  nameWithType: TeacherMenu
+  fullName: WebApplication.UserPages.TeacherMenu
+  type: Enum
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherMenu
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
+    startLine: 11
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: public enum TeacherMenu
+    content.vb: Public Enum TeacherMenu
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: WebApplication.UserPages.TeacherMenu.None
+  commentId: F:WebApplication.UserPages.TeacherMenu.None
+  id: None
+  parent: WebApplication.UserPages.TeacherMenu
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TeacherMenu.None
+  fullName: WebApplication.UserPages.TeacherMenu.None
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: None
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
+    startLine: 12
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: None = -1
+    return:
+      type: WebApplication.UserPages.TeacherMenu
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.UserPages.TeacherMenu.Home
+  commentId: F:WebApplication.UserPages.TeacherMenu.Home
+  id: Home
+  parent: WebApplication.UserPages.TeacherMenu
+  langs:
+  - csharp
+  - vb
+  name: Home
+  nameWithType: TeacherMenu.Home
+  fullName: WebApplication.UserPages.TeacherMenu.Home
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Home
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
+    startLine: 13
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: Home = 0
+    return:
+      type: WebApplication.UserPages.TeacherMenu
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.UserPages.TeacherMenu.Tasks
+  commentId: F:WebApplication.UserPages.TeacherMenu.Tasks
+  id: Tasks
+  parent: WebApplication.UserPages.TeacherMenu
+  langs:
+  - csharp
+  - vb
+  name: Tasks
+  nameWithType: TeacherMenu.Tasks
+  fullName: WebApplication.UserPages.TeacherMenu.Tasks
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Tasks
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
+    startLine: 14
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: Tasks = 1
+    return:
+      type: WebApplication.UserPages.TeacherMenu
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: WebApplication.UserPages
+  commentId: N:WebApplication.UserPages
+  name: WebApplication.UserPages
+  nameWithType: WebApplication.UserPages
+  fullName: WebApplication.UserPages
+- uid: WebApplication.UserPages.TeacherMenu
+  commentId: T:WebApplication.UserPages.TeacherMenu
+  parent: WebApplication.UserPages
+  name: TeacherMenu
+  nameWithType: TeacherMenu
+  fullName: WebApplication.UserPages.TeacherMenu

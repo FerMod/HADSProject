@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: WebApplication/App_Start/ScriptResource.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ScriptResource
     path: ../WebApplication/App_Start/ScriptResource.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: WebApplication/App_Start/ScriptResource.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterJQuery
     path: ../WebApplication/App_Start/ScriptResource.cs
@@ -100,7 +100,7 @@ items:
   source:
     remote:
       path: WebApplication/App_Start/ScriptResource.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterBoostrap
     path: ../WebApplication/App_Start/ScriptResource.cs

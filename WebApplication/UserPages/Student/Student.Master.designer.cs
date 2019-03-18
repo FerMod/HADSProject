@@ -10,25 +10,43 @@
 namespace WebApplication.UserPages {
     
     
-    public partial class TareasAlumno {
+    public partial class Student {
         
         /// <summary>
-        /// DropDownSubjects control.
+        /// HomeTab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownSubjects;
+        protected global::System.Web.UI.WebControls.LinkButton HomeTab;
         
         /// <summary>
-        /// GridViewTasks control.
+        /// TasksTab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewTasks;
+        protected global::System.Web.UI.WebControls.LinkButton TasksTab;
+        
+        /// <summary>
+        /// StudentTasksUpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel StudentTasksUpdatePanel;
+        
+        /// <summary>
+        /// StudentContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder StudentContent;
         
         /// <summary>
         /// Master property.
@@ -36,9 +54,9 @@ namespace WebApplication.UserPages {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new WebApplication.UserPages.UserHome Master {
+        public new WebApplication.SiteMaster Master {
             get {
-                return ((WebApplication.UserPages.UserHome)(base.Master));
+                return ((WebApplication.SiteMaster)(base.Master));
             }
         }
     }

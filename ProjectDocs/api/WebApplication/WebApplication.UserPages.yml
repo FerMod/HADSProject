@@ -6,9 +6,14 @@ items:
   children:
   - WebApplication.UserPages.InsertarTarea
   - WebApplication.UserPages.InstanciarTarea
+  - WebApplication.UserPages.Student
+  - WebApplication.UserPages.StudentHome
+  - WebApplication.UserPages.StudentMenu
   - WebApplication.UserPages.TareasAlumno
   - WebApplication.UserPages.TareasProfesor
-  - WebApplication.UserPages.UserHome
+  - WebApplication.UserPages.Teacher
+  - WebApplication.UserPages.TeacherHome
+  - WebApplication.UserPages.TeacherMenu
   langs:
   - csharp
   - vb
@@ -19,6 +24,23 @@ items:
   assemblies:
   - WebApplication
 references:
+- uid: WebApplication.UserPages.StudentHome
+  commentId: T:WebApplication.UserPages.StudentHome
+  name: StudentHome
+  nameWithType: StudentHome
+  fullName: WebApplication.UserPages.StudentHome
+- uid: WebApplication.UserPages.StudentMenu
+  commentId: T:WebApplication.UserPages.StudentMenu
+  parent: WebApplication.UserPages
+  name: StudentMenu
+  nameWithType: StudentMenu
+  fullName: WebApplication.UserPages.StudentMenu
+- uid: WebApplication.UserPages.Student
+  commentId: T:WebApplication.UserPages.Student
+  parent: WebApplication.UserPages
+  name: Student
+  nameWithType: Student
+  fullName: WebApplication.UserPages.Student
 - uid: WebApplication.UserPages.InsertarTarea
   commentId: T:WebApplication.UserPages.InsertarTarea
   name: InsertarTarea
@@ -29,6 +51,11 @@ references:
   name: InstanciarTarea
   nameWithType: InstanciarTarea
   fullName: WebApplication.UserPages.InstanciarTarea
+- uid: WebApplication.UserPages.TeacherHome
+  commentId: T:WebApplication.UserPages.TeacherHome
+  name: TeacherHome
+  nameWithType: TeacherHome
+  fullName: WebApplication.UserPages.TeacherHome
 - uid: WebApplication.UserPages.TareasProfesor
   commentId: T:WebApplication.UserPages.TareasProfesor
   name: TareasProfesor
@@ -39,12 +66,18 @@ references:
   name: TareasAlumno
   nameWithType: TareasAlumno
   fullName: WebApplication.UserPages.TareasAlumno
-- uid: WebApplication.UserPages.UserHome
-  commentId: T:WebApplication.UserPages.UserHome
+- uid: WebApplication.UserPages.TeacherMenu
+  commentId: T:WebApplication.UserPages.TeacherMenu
   parent: WebApplication.UserPages
-  name: UserHome
-  nameWithType: UserHome
-  fullName: WebApplication.UserPages.UserHome
+  name: TeacherMenu
+  nameWithType: TeacherMenu
+  fullName: WebApplication.UserPages.TeacherMenu
+- uid: WebApplication.UserPages.Teacher
+  commentId: T:WebApplication.UserPages.Teacher
+  parent: WebApplication.UserPages
+  name: Teacher
+  nameWithType: Teacher
+  fullName: WebApplication.UserPages.Teacher
 - uid: WebApplication.UserPages
   commentId: N:WebApplication.UserPages
   name: WebApplication.UserPages

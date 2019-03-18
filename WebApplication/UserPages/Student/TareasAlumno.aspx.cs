@@ -52,6 +52,8 @@ namespace WebApplication.UserPages {
 
 			if(!IsPostBack) {
 
+				Master.ShowPage(StudentMenu.Tasks);
+
 				InitDropDownSubjects();
 				InitGridViewTasks();
 
@@ -189,11 +191,13 @@ namespace WebApplication.UserPages {
 
 				string taskCode = Convert.ToString(e.CommandArgument);
 
-				ParametizedUrl parametizedUrl = new ParametizedUrl($"{UrlUtils.UrlRoot}{Page.ResolveUrl(@"~/UserPages/InstanciarTarea")}") {
-					{"code", taskCode}
-				};
+				//ParametizedUrl parametizedUrl = new ParametizedUrl($"{UrlUtils.UrlRoot}{Page.ResolveUrl(@"~/UserPages/InstanciarTarea")}") {
+				//	{"code", taskCode}
+				//};
 
-				Response.Redirect(parametizedUrl);
+				//Response.Redirect(parametizedUrl);
+
+				Response.RedirectToRoute("StudentTaskInstantiation", new { code = taskCode });
 
 			}
 

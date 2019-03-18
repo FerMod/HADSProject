@@ -26,11 +26,11 @@ items:
   type: Class
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: InstanciarTarea
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -314,11 +314,11 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.cs
     startLine: 46
   assemblies:
   - WebApplication
@@ -349,12 +349,12 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesButton_Click
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
-    startLine: 94
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.cs
+    startLine: 101
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -384,12 +384,12 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton_Click
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
-    startLine: 110
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.cs
+    startLine: 117
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -419,11 +419,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EmailTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -453,11 +453,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CodTareaTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -487,11 +487,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HEstimadasTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -521,11 +521,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HRealesTextBox
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -555,11 +555,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HRealesIntegerValidator
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -589,11 +589,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HRealesRequiredFieldValidator
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -623,11 +623,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -657,11 +657,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesButton
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 84
   assemblies:
   - WebApplication
@@ -691,11 +691,11 @@ items:
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Student/InstanciarTarea.aspx.designer.cs
     startLine: 92
   assemblies:
   - WebApplication
@@ -704,11 +704,11 @@ items:
   remarks: "\nAuto-generated property.\n"
   example: []
   syntax:
-    content: public UserHome Master { get; }
+    content: public Student Master { get; }
     parameters: []
     return:
-      type: WebApplication.UserPages.UserHome
-    content.vb: Public ReadOnly Property Master As UserHome
+      type: WebApplication.UserPages.Student
+    content.vb: Public ReadOnly Property Master As Student
   overload: WebApplication.UserPages.InstanciarTarea.Master*
   modifiers.csharp:
   - public
@@ -7775,9 +7775,9 @@ references:
   name: Master
   nameWithType: InstanciarTarea.Master
   fullName: WebApplication.UserPages.InstanciarTarea.Master
-- uid: WebApplication.UserPages.UserHome
-  commentId: T:WebApplication.UserPages.UserHome
+- uid: WebApplication.UserPages.Student
+  commentId: T:WebApplication.UserPages.Student
   parent: WebApplication.UserPages
-  name: UserHome
-  nameWithType: UserHome
-  fullName: WebApplication.UserPages.UserHome
+  name: Student
+  nameWithType: Student
+  fullName: WebApplication.UserPages.Student

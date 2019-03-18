@@ -1,6 +1,6 @@
-<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/UserHome.Master" AutoEventWireup="true" CodeBehind="InsertarTarea.aspx.cs" Inherits="WebApplication.UserPages.InsertarTarea" %>
+<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="InsertarTarea.aspx.cs" Inherits="WebApplication.UserPages.InsertarTarea" %>
 
-<%@ MasterType VirtualPath="~/UserPages/UserHome.Master" %>
+<%@ MasterType VirtualPath="~/UserPages/Teacher/Teacher.Master" %>
 
 <asp:Content ID="TeacherTasksContent" ContentPlaceHolderID="TeacherContent" runat="server">
 

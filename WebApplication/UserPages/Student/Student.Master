@@ -1,0 +1,32 @@
+<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Student.Master.cs" Inherits="WebApplication.UserPages.Student" %>
+
+<%@ MasterType VirtualPath="~/Site.Master" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+        <div class="row">
+
+            <!-- Nav tabs -->
+            <div class="col-3 nav-tabs-pills">
+                <div class="nav flex-column nav-pills nav-tabs" id="studentTabs" role="tablist" aria-orientation="vertical">
+                    <asp:LinkButton CssClass="nav-link" ID="HomeTab" PostBackUrl="/Student/Home" role="tab" aria-controls="Home" aria-selected="false" runat="server" CausesValidation="False">Home</asp:LinkButton>
+                    <asp:LinkButton CssClass="nav-link" ID="TasksTab" PostBackUrl="/Student/Tasks" role="tab" aria-controls="Tasks" aria-selected="false" runat="server" CausesValidation="False">Tasks</asp:LinkButton>
+                </div>
+            </div>
+
+           <!-- Tab panes -->
+            <div class="col-9">
+                <div class="tab-content" id="studentTabContents" role="tablist">
+
+                    <asp:UpdatePanel ID="StudentTasksUpdatePanel" runat="server">
+                        <ContentTemplate>
+                            <asp:ContentPlaceHolder ID="StudentContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                </div>
+            </div>
+        </div>
+
+</asp:Content>

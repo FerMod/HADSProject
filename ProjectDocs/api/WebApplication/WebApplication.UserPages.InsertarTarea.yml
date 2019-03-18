@@ -31,11 +31,11 @@ items:
   type: Class
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: InsertarTarea
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
@@ -319,11 +319,11 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.cs
     startLine: 32
   assemblies:
   - WebApplication
@@ -354,11 +354,11 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AddTaskButton_Click
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.cs
     startLine: 50
   assemblies:
   - WebApplication
@@ -389,11 +389,11 @@ items:
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton_Click
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.cs
     startLine: 73
   assemblies:
   - WebApplication
@@ -424,11 +424,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -458,11 +458,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GenericTasksSqlDataSource
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
@@ -492,11 +492,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SubjectsDropDown
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
@@ -526,11 +526,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CodeTextBox
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
@@ -560,11 +560,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CodeRequiredFieldValidator
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
@@ -594,11 +594,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EstimatedHoursTextBox
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
@@ -628,11 +628,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EstimatedHoursIntegerValidator
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 75
   assemblies:
   - WebApplication
@@ -662,11 +662,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EstimatedHoursRequiredFieldValidator
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 84
   assemblies:
   - WebApplication
@@ -696,11 +696,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DescriptionTextBox
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 93
   assemblies:
   - WebApplication
@@ -730,11 +730,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TaskType
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 102
   assemblies:
   - WebApplication
@@ -764,11 +764,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ActiveCheckBox
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 111
   assemblies:
   - WebApplication
@@ -798,11 +798,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 120
   assemblies:
   - WebApplication
@@ -832,11 +832,11 @@ items:
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AddTaskButton
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 129
   assemblies:
   - WebApplication
@@ -866,11 +866,11 @@ items:
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/InsertarTarea.aspx.designer.cs
     startLine: 137
   assemblies:
   - WebApplication
@@ -879,11 +879,11 @@ items:
   remarks: "\nAuto-generated property.\n"
   example: []
   syntax:
-    content: public UserHome Master { get; }
+    content: public Teacher Master { get; }
     parameters: []
     return:
-      type: WebApplication.UserPages.UserHome
-    content.vb: Public ReadOnly Property Master As UserHome
+      type: WebApplication.UserPages.Teacher
+    content.vb: Public ReadOnly Property Master As Teacher
   overload: WebApplication.UserPages.InsertarTarea.Master*
   modifiers.csharp:
   - public
@@ -7977,9 +7977,9 @@ references:
   name: Master
   nameWithType: InsertarTarea.Master
   fullName: WebApplication.UserPages.InsertarTarea.Master
-- uid: WebApplication.UserPages.UserHome
-  commentId: T:WebApplication.UserPages.UserHome
+- uid: WebApplication.UserPages.Teacher
+  commentId: T:WebApplication.UserPages.Teacher
   parent: WebApplication.UserPages
-  name: UserHome
-  nameWithType: UserHome
-  fullName: WebApplication.UserPages.UserHome
+  name: Teacher
+  nameWithType: Teacher
+  fullName: WebApplication.UserPages.Teacher
