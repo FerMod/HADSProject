@@ -66,7 +66,7 @@
 
             <!-- Tab panes -->
             <div class="col-9">
-                <div class="tab-content" id="techerTabContents" role="tablist">
+                <div class="tab-content" id="teacherTabContents" role="tablist">
 
                     <div class="tab-pane fade show active" id="teacher-home" role="tabpanel" aria-labelledby="teacher-home-tab">
                         <code>PLACEHOLDER!</code>

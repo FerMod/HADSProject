@@ -1,4 +1,4 @@
-﻿
+
 body {
     height: 100%;
     margin: 0;
@@ -106,6 +106,24 @@ nav .container {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     padding: 10px;
+}
+
+.icon {
+	width: 16px;
+    height: 16px;
+}
+
+.icon-edit {
+	fill: #06f !important;
+}
+
+.icon-trash,
+.icon-cancel {
+	fill: #f00 !important;
+}
+
+.icon-accept {
+	fill: #0f0 !important;
 }
 
 /* Responsive: Portrait tablets and up */

@@ -33,6 +33,8 @@ namespace WebApplication.UserPages {
 					TeacherPages.Visible = true;
 					break;
 				default:
+					StudentPages.Visible = false;
+					TeacherPages.Visible = false;
 					break;
 			}
 
