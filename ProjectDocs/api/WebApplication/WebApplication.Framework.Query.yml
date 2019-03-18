@@ -5,8 +5,8 @@ items:
   id: Query
   parent: WebApplication.Framework
   children:
+  - WebApplication.Framework.Query.StudentSubjects
   - WebApplication.Framework.Query.StudentSubjectsTasks
-  - WebApplication.Framework.Query.StudentTasks
   - WebApplication.Framework.Query.TeacherSubjects
   langs:
   - csharp
@@ -85,37 +85,37 @@ items:
   - Public
   - Shared
   - ReadOnly
-- uid: WebApplication.Framework.Query.StudentTasks
-  commentId: P:WebApplication.Framework.Query.StudentTasks
-  id: StudentTasks
+- uid: WebApplication.Framework.Query.StudentSubjects
+  commentId: P:WebApplication.Framework.Query.StudentSubjects
+  id: StudentSubjects
   parent: WebApplication.Framework.Query
   langs:
   - csharp
   - vb
-  name: StudentTasks
-  nameWithType: Query.StudentTasks
-  fullName: WebApplication.Framework.Query.StudentTasks
+  name: StudentSubjects
+  nameWithType: Query.StudentSubjects
+  fullName: WebApplication.Framework.Query.StudentSubjects
   type: Property
   source:
     remote:
       path: WebApplication/Framework/Queries/Query.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: StudentTasks
+    id: StudentSubjects
     path: ../WebApplication/Framework/Queries/Query.cs
     startLine: 59
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
-  summary: "\nObtain the student tasks query string.\n<p>\nRequired query parameters:\n<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@email</code></td><td>The student email</td></tr></tbody></table>\n</p>\n"
+  summary: "\nObtain the student subjects query string.\n<p>\nRequired query parameters:\n<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@email</code></td><td>The student email</td></tr></tbody></table>\n</p>\n"
   example: []
   syntax:
-    content: public static string StudentTasks { get; }
+    content: public static string StudentSubjects { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Shared ReadOnly Property StudentTasks As String
-  overload: WebApplication.Framework.Query.StudentTasks*
+    content.vb: Public Shared ReadOnly Property StudentSubjects As String
+  overload: WebApplication.Framework.Query.StudentSubjects*
   modifiers.csharp:
   - public
   - static
@@ -473,11 +473,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: WebApplication.Framework.Query.StudentTasks*
-  commentId: Overload:WebApplication.Framework.Query.StudentTasks
-  name: StudentTasks
-  nameWithType: Query.StudentTasks
-  fullName: WebApplication.Framework.Query.StudentTasks
+- uid: WebApplication.Framework.Query.StudentSubjects*
+  commentId: Overload:WebApplication.Framework.Query.StudentSubjects
+  name: StudentSubjects
+  nameWithType: Query.StudentSubjects
+  fullName: WebApplication.Framework.Query.StudentSubjects
 - uid: WebApplication.Framework.Query.TeacherSubjects*
   commentId: Overload:WebApplication.Framework.Query.TeacherSubjects
   name: TeacherSubjects

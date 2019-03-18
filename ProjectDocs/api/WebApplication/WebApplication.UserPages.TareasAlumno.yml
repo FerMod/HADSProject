@@ -13,7 +13,6 @@ items:
   - WebApplication.UserPages.TareasAlumno.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
   - WebApplication.UserPages.TareasAlumno.Master
   - WebApplication.UserPages.TareasAlumno.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPages.TareasAlumno.UpdatePanel1
   langs:
   - csharp
   - vb
@@ -386,7 +385,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 127
+    startLine: 132
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -421,7 +420,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects_SelectedIndexChanged
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 164
+    startLine: 169
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -456,7 +455,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
-    startLine: 179
+    startLine: 184
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -469,40 +468,6 @@ items:
       type: System.Web.UI.WebControls.GridViewCommandEventArgs
     content.vb: Protected Sub GridViewTasks_RowCommand(sender As Object, e As GridViewCommandEventArgs)
   overload: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPages.TareasAlumno.UpdatePanel1
-  commentId: F:WebApplication.UserPages.TareasAlumno.UpdatePanel1
-  id: UpdatePanel1
-  parent: WebApplication.UserPages.TareasAlumno
-  langs:
-  - csharp
-  - vb
-  name: UpdatePanel1
-  nameWithType: TareasAlumno.UpdatePanel1
-  fullName: WebApplication.UserPages.TareasAlumno.UpdatePanel1
-  type: Field
-  source:
-    remote:
-      path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: UpdatePanel1
-    path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-    startLine: 21
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  summary: "\nUpdatePanel1 control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected UpdatePanel UpdatePanel1
-    return:
-      type: System.Web.UI.UpdatePanel
-    content.vb: Protected UpdatePanel1 As UpdatePanel
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -525,7 +490,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-    startLine: 30
+    startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -559,7 +524,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-    startLine: 39
+    startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -593,7 +558,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-    startLine: 47
+    startLine: 38
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -7674,13 +7639,6 @@ references:
   name: GridViewCommandEventArgs
   nameWithType: GridViewCommandEventArgs
   fullName: System.Web.UI.WebControls.GridViewCommandEventArgs
-- uid: System.Web.UI.UpdatePanel
-  commentId: T:System.Web.UI.UpdatePanel
-  parent: System.Web.UI
-  isExternal: true
-  name: UpdatePanel
-  nameWithType: UpdatePanel
-  fullName: System.Web.UI.UpdatePanel
 - uid: System.Web.UI.WebControls.DropDownList
   commentId: T:System.Web.UI.WebControls.DropDownList
   parent: System.Web.UI.WebControls

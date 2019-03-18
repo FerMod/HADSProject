@@ -260,12 +260,6 @@
                                 <li class="">
                                   <a href="../WebApplication/WebApplication.UserPages.UserHome.html" title="UserHome" class="">UserHome</a>
                                 </li>
-                                <li class="">
-                                  <a href="../WebApplication/WebApplication.UserPages.UserHome.StudentNavTab.html" title="UserHome.StudentNavTab" class="">UserHome.StudentNavTab</a>
-                                </li>
-                                <li class="">
-                                  <a href="../WebApplication/WebApplication.UserPages.UserHome.TeacherNavTab.html" title="UserHome.TeacherNavTab" class="">UserHome.TeacherNavTab</a>
-                                </li>
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
@@ -333,14 +327,14 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_Framework_Query_StudentSubjectsTasks.md&amp;value=---%0Auid%3A%20WebApplication.Framework.Query.StudentSubjectsTasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_Framework_Query_StudentSubjects.md&amp;value=---%0Auid%3A%20WebApplication.Framework.Query.StudentSubjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/Framework/Queries/Query.cs/#L28">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/Framework/Queries/Query.cs/#L60">View Source</a>
   </span>
-  <a id="WebApplication_Framework_Query_StudentSubjectsTasks_" data-uid="WebApplication.Framework.Query.StudentSubjectsTasks*"></a>
-  <h4 id="WebApplication_Framework_Query_StudentSubjectsTasks" data-uid="WebApplication.Framework.Query.StudentSubjectsTasks">StudentSubjectsTasks</h4>
-  <div class="markdown level1 summary"><p>Obtain the query string that is used to query all the subjects tasks that the student is enrolled in.</p>
+  <a id="WebApplication_Framework_Query_StudentSubjects_" data-uid="WebApplication.Framework.Query.StudentSubjects*"></a>
+  <h4 id="WebApplication_Framework_Query_StudentSubjects" data-uid="WebApplication.Framework.Query.StudentSubjects">StudentSubjects</h4>
+  <div class="markdown level1 summary"><p>Obtain the student subjects query string.</p>
 <p>
 Required query parameters:
 <table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@email</code></td><td>The student email</td></tr></tbody></table>
@@ -349,7 +343,7 @@ Required query parameters:
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string StudentSubjectsTasks { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string StudentSubjects { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -368,14 +362,14 @@ Required query parameters:
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_Framework_Query_StudentTasks.md&amp;value=---%0Auid%3A%20WebApplication.Framework.Query.StudentTasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_Framework_Query_StudentSubjectsTasks.md&amp;value=---%0Auid%3A%20WebApplication.Framework.Query.StudentSubjectsTasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/Framework/Queries/Query.cs/#L60">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/Framework/Queries/Query.cs/#L28">View Source</a>
   </span>
-  <a id="WebApplication_Framework_Query_StudentTasks_" data-uid="WebApplication.Framework.Query.StudentTasks*"></a>
-  <h4 id="WebApplication_Framework_Query_StudentTasks" data-uid="WebApplication.Framework.Query.StudentTasks">StudentTasks</h4>
-  <div class="markdown level1 summary"><p>Obtain the student tasks query string.</p>
+  <a id="WebApplication_Framework_Query_StudentSubjectsTasks_" data-uid="WebApplication.Framework.Query.StudentSubjectsTasks*"></a>
+  <h4 id="WebApplication_Framework_Query_StudentSubjectsTasks" data-uid="WebApplication.Framework.Query.StudentSubjectsTasks">StudentSubjectsTasks</h4>
+  <div class="markdown level1 summary"><p>Obtain the query string that is used to query all the subjects tasks that the student is enrolled in.</p>
 <p>
 Required query parameters:
 <table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@email</code></td><td>The student email</td></tr></tbody></table>
@@ -384,7 +378,7 @@ Required query parameters:
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string StudentTasks { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string StudentSubjectsTasks { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

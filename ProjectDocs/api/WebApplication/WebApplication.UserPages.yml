@@ -9,8 +9,6 @@ items:
   - WebApplication.UserPages.TareasAlumno
   - WebApplication.UserPages.TareasProfesor
   - WebApplication.UserPages.UserHome
-  - WebApplication.UserPages.UserHome.StudentNavTab
-  - WebApplication.UserPages.UserHome.TeacherNavTab
   langs:
   - csharp
   - vb
@@ -47,18 +45,6 @@ references:
   name: UserHome
   nameWithType: UserHome
   fullName: WebApplication.UserPages.UserHome
-- uid: WebApplication.UserPages.UserHome.StudentNavTab
-  commentId: T:WebApplication.UserPages.UserHome.StudentNavTab
-  parent: WebApplication.UserPages
-  name: UserHome.StudentNavTab
-  nameWithType: UserHome.StudentNavTab
-  fullName: WebApplication.UserPages.UserHome.StudentNavTab
-- uid: WebApplication.UserPages.UserHome.TeacherNavTab
-  commentId: T:WebApplication.UserPages.UserHome.TeacherNavTab
-  parent: WebApplication.UserPages
-  name: UserHome.TeacherNavTab
-  nameWithType: UserHome.TeacherNavTab
-  fullName: WebApplication.UserPages.UserHome.TeacherNavTab
 - uid: WebApplication.UserPages
   commentId: N:WebApplication.UserPages
   name: WebApplication.UserPages

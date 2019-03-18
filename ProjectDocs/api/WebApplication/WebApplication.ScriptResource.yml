@@ -21,7 +21,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ScriptResource
     path: ../WebApplication/App_Start/ScriptResource.cs
-    startLine: 8
+    startLine: 5
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -63,7 +63,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterJQuery
     path: ../WebApplication/App_Start/ScriptResource.cs
-    startLine: 15
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -104,7 +104,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterBoostrap
     path: ../WebApplication/App_Start/ScriptResource.cs
-    startLine: 31
+    startLine: 28
   assemblies:
   - WebApplication
   namespace: WebApplication

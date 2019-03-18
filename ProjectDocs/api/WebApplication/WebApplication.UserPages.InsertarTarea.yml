@@ -5,18 +5,23 @@ items:
   id: InsertarTarea
   parent: WebApplication.UserPages
   children:
+  - WebApplication.UserPages.InsertarTarea.ActiveCheckBox
+  - WebApplication.UserPages.InsertarTarea.AddTaskButton
+  - WebApplication.UserPages.InsertarTarea.AddTaskButton_Click(System.Object,System.EventArgs)
   - WebApplication.UserPages.InsertarTarea.CancelButton
   - WebApplication.UserPages.InsertarTarea.CancelButton_Click(System.Object,System.EventArgs)
-  - WebApplication.UserPages.InsertarTarea.CodTareaTextBox
-  - WebApplication.UserPages.InsertarTarea.EmailTextBox
-  - WebApplication.UserPages.InsertarTarea.HEstimadasTextBox
-  - WebApplication.UserPages.InsertarTarea.HRealesIntegerValidator
-  - WebApplication.UserPages.InsertarTarea.HRealesRequiredFieldValidator
-  - WebApplication.UserPages.InsertarTarea.HRealesTextBox
+  - WebApplication.UserPages.InsertarTarea.CodeRequiredFieldValidator
+  - WebApplication.UserPages.InsertarTarea.CodeTextBox
+  - WebApplication.UserPages.InsertarTarea.DescriptionTextBox
+  - WebApplication.UserPages.InsertarTarea.EstimatedHoursIntegerValidator
+  - WebApplication.UserPages.InsertarTarea.EstimatedHoursRequiredFieldValidator
+  - WebApplication.UserPages.InsertarTarea.EstimatedHoursTextBox
+  - WebApplication.UserPages.InsertarTarea.GenericTasksSqlDataSource
   - WebApplication.UserPages.InsertarTarea.Master
   - WebApplication.UserPages.InsertarTarea.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPages.InsertarTarea.SaveChangesButton
-  - WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
+  - WebApplication.UserPages.InsertarTarea.SubjectsDropDown
+  - WebApplication.UserPages.InsertarTarea.TaskType
+  - WebApplication.UserPages.InsertarTarea.TeacherSubjectsDataSource
   langs:
   - csharp
   - vb
@@ -319,7 +324,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
-    startLine: 46
+    startLine: 32
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -336,37 +341,37 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)
-  id: SaveChangesButton_Click(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.InsertarTarea.AddTaskButton_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.InsertarTarea.AddTaskButton_Click(System.Object,System.EventArgs)
+  id: AddTaskButton_Click(System.Object,System.EventArgs)
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: SaveChangesButton_Click(Object, EventArgs)
-  nameWithType: InsertarTarea.SaveChangesButton_Click(Object, EventArgs)
-  fullName: WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click(System.Object, System.EventArgs)
+  name: AddTaskButton_Click(Object, EventArgs)
+  nameWithType: InsertarTarea.AddTaskButton_Click(Object, EventArgs)
+  fullName: WebApplication.UserPages.InsertarTarea.AddTaskButton_Click(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: SaveChangesButton_Click
+    id: AddTaskButton_Click
     path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
-    startLine: 94
+    startLine: 50
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: protected void SaveChangesButton_Click(object sender, EventArgs e)
+    content: protected void AddTaskButton_Click(object sender, EventArgs e)
     parameters:
     - id: sender
       type: System.Object
     - id: e
       type: System.EventArgs
-    content.vb: Protected Sub SaveChangesButton_Click(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click*
+    content.vb: Protected Sub AddTaskButton_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.InsertarTarea.AddTaskButton_Click*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -389,7 +394,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton_Click
     path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
-    startLine: 110
+    startLine: 73
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -406,206 +411,376 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.EmailTextBox
-  commentId: F:WebApplication.UserPages.InsertarTarea.EmailTextBox
-  id: EmailTextBox
+- uid: WebApplication.UserPages.InsertarTarea.TeacherSubjectsDataSource
+  commentId: F:WebApplication.UserPages.InsertarTarea.TeacherSubjectsDataSource
+  id: TeacherSubjectsDataSource
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: EmailTextBox
-  nameWithType: InsertarTarea.EmailTextBox
-  fullName: WebApplication.UserPages.InsertarTarea.EmailTextBox
+  name: TeacherSubjectsDataSource
+  nameWithType: InsertarTarea.TeacherSubjectsDataSource
+  fullName: WebApplication.UserPages.InsertarTarea.TeacherSubjectsDataSource
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: EmailTextBox
+    id: TeacherSubjectsDataSource
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nEmailTextBox control.\n"
+  summary: "\nTeacherSubjectsDataSource control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected TextBox EmailTextBox
+    content: protected SqlDataSource TeacherSubjectsDataSource
     return:
-      type: System.Web.UI.WebControls.TextBox
-    content.vb: Protected EmailTextBox As TextBox
+      type: System.Web.UI.WebControls.SqlDataSource
+    content.vb: Protected TeacherSubjectsDataSource As SqlDataSource
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.CodTareaTextBox
-  commentId: F:WebApplication.UserPages.InsertarTarea.CodTareaTextBox
-  id: CodTareaTextBox
+- uid: WebApplication.UserPages.InsertarTarea.GenericTasksSqlDataSource
+  commentId: F:WebApplication.UserPages.InsertarTarea.GenericTasksSqlDataSource
+  id: GenericTasksSqlDataSource
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: CodTareaTextBox
-  nameWithType: InsertarTarea.CodTareaTextBox
-  fullName: WebApplication.UserPages.InsertarTarea.CodTareaTextBox
+  name: GenericTasksSqlDataSource
+  nameWithType: InsertarTarea.GenericTasksSqlDataSource
+  fullName: WebApplication.UserPages.InsertarTarea.GenericTasksSqlDataSource
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: CodTareaTextBox
+    id: GenericTasksSqlDataSource
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
     startLine: 30
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nCodTareaTextBox control.\n"
+  summary: "\nGenericTasksSqlDataSource control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected TextBox CodTareaTextBox
+    content: protected SqlDataSource GenericTasksSqlDataSource
     return:
-      type: System.Web.UI.WebControls.TextBox
-    content.vb: Protected CodTareaTextBox As TextBox
+      type: System.Web.UI.WebControls.SqlDataSource
+    content.vb: Protected GenericTasksSqlDataSource As SqlDataSource
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.HEstimadasTextBox
-  commentId: F:WebApplication.UserPages.InsertarTarea.HEstimadasTextBox
-  id: HEstimadasTextBox
+- uid: WebApplication.UserPages.InsertarTarea.SubjectsDropDown
+  commentId: F:WebApplication.UserPages.InsertarTarea.SubjectsDropDown
+  id: SubjectsDropDown
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: HEstimadasTextBox
-  nameWithType: InsertarTarea.HEstimadasTextBox
-  fullName: WebApplication.UserPages.InsertarTarea.HEstimadasTextBox
+  name: SubjectsDropDown
+  nameWithType: InsertarTarea.SubjectsDropDown
+  fullName: WebApplication.UserPages.InsertarTarea.SubjectsDropDown
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: HEstimadasTextBox
+    id: SubjectsDropDown
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
     startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nHEstimadasTextBox control.\n"
+  summary: "\nSubjectsDropDown control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected TextBox HEstimadasTextBox
+    content: protected DropDownList SubjectsDropDown
     return:
-      type: System.Web.UI.WebControls.TextBox
-    content.vb: Protected HEstimadasTextBox As TextBox
+      type: System.Web.UI.WebControls.DropDownList
+    content.vb: Protected SubjectsDropDown As DropDownList
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.HRealesTextBox
-  commentId: F:WebApplication.UserPages.InsertarTarea.HRealesTextBox
-  id: HRealesTextBox
+- uid: WebApplication.UserPages.InsertarTarea.CodeTextBox
+  commentId: F:WebApplication.UserPages.InsertarTarea.CodeTextBox
+  id: CodeTextBox
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: HRealesTextBox
-  nameWithType: InsertarTarea.HRealesTextBox
-  fullName: WebApplication.UserPages.InsertarTarea.HRealesTextBox
+  name: CodeTextBox
+  nameWithType: InsertarTarea.CodeTextBox
+  fullName: WebApplication.UserPages.InsertarTarea.CodeTextBox
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: HRealesTextBox
+    id: CodeTextBox
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nHRealesTextBox control.\n"
+  summary: "\nCodeTextBox control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected TextBox HRealesTextBox
+    content: protected TextBox CodeTextBox
     return:
       type: System.Web.UI.WebControls.TextBox
-    content.vb: Protected HRealesTextBox As TextBox
+    content.vb: Protected CodeTextBox As TextBox
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.HRealesIntegerValidator
-  commentId: F:WebApplication.UserPages.InsertarTarea.HRealesIntegerValidator
-  id: HRealesIntegerValidator
+- uid: WebApplication.UserPages.InsertarTarea.CodeRequiredFieldValidator
+  commentId: F:WebApplication.UserPages.InsertarTarea.CodeRequiredFieldValidator
+  id: CodeRequiredFieldValidator
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: HRealesIntegerValidator
-  nameWithType: InsertarTarea.HRealesIntegerValidator
-  fullName: WebApplication.UserPages.InsertarTarea.HRealesIntegerValidator
+  name: CodeRequiredFieldValidator
+  nameWithType: InsertarTarea.CodeRequiredFieldValidator
+  fullName: WebApplication.UserPages.InsertarTarea.CodeRequiredFieldValidator
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: HRealesIntegerValidator
+    id: CodeRequiredFieldValidator
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nHRealesIntegerValidator control.\n"
+  summary: "\nCodeRequiredFieldValidator control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected CompareValidator HRealesIntegerValidator
+    content: protected RequiredFieldValidator CodeRequiredFieldValidator
     return:
-      type: System.Web.UI.WebControls.CompareValidator
-    content.vb: Protected HRealesIntegerValidator As CompareValidator
+      type: System.Web.UI.WebControls.RequiredFieldValidator
+    content.vb: Protected CodeRequiredFieldValidator As RequiredFieldValidator
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.HRealesRequiredFieldValidator
-  commentId: F:WebApplication.UserPages.InsertarTarea.HRealesRequiredFieldValidator
-  id: HRealesRequiredFieldValidator
+- uid: WebApplication.UserPages.InsertarTarea.EstimatedHoursTextBox
+  commentId: F:WebApplication.UserPages.InsertarTarea.EstimatedHoursTextBox
+  id: EstimatedHoursTextBox
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: HRealesRequiredFieldValidator
-  nameWithType: InsertarTarea.HRealesRequiredFieldValidator
-  fullName: WebApplication.UserPages.InsertarTarea.HRealesRequiredFieldValidator
+  name: EstimatedHoursTextBox
+  nameWithType: InsertarTarea.EstimatedHoursTextBox
+  fullName: WebApplication.UserPages.InsertarTarea.EstimatedHoursTextBox
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: HRealesRequiredFieldValidator
+    id: EstimatedHoursTextBox
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
     startLine: 66
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nHRealesRequiredFieldValidator control.\n"
+  summary: "\nEstimatedHoursTextBox control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected RequiredFieldValidator HRealesRequiredFieldValidator
+    content: protected TextBox EstimatedHoursTextBox
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected EstimatedHoursTextBox As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.InsertarTarea.EstimatedHoursIntegerValidator
+  commentId: F:WebApplication.UserPages.InsertarTarea.EstimatedHoursIntegerValidator
+  id: EstimatedHoursIntegerValidator
+  parent: WebApplication.UserPages.InsertarTarea
+  langs:
+  - csharp
+  - vb
+  name: EstimatedHoursIntegerValidator
+  nameWithType: InsertarTarea.EstimatedHoursIntegerValidator
+  fullName: WebApplication.UserPages.InsertarTarea.EstimatedHoursIntegerValidator
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: EstimatedHoursIntegerValidator
+    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    startLine: 75
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nEstimatedHoursIntegerValidator control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected CompareValidator EstimatedHoursIntegerValidator
+    return:
+      type: System.Web.UI.WebControls.CompareValidator
+    content.vb: Protected EstimatedHoursIntegerValidator As CompareValidator
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.InsertarTarea.EstimatedHoursRequiredFieldValidator
+  commentId: F:WebApplication.UserPages.InsertarTarea.EstimatedHoursRequiredFieldValidator
+  id: EstimatedHoursRequiredFieldValidator
+  parent: WebApplication.UserPages.InsertarTarea
+  langs:
+  - csharp
+  - vb
+  name: EstimatedHoursRequiredFieldValidator
+  nameWithType: InsertarTarea.EstimatedHoursRequiredFieldValidator
+  fullName: WebApplication.UserPages.InsertarTarea.EstimatedHoursRequiredFieldValidator
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: EstimatedHoursRequiredFieldValidator
+    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    startLine: 84
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nEstimatedHoursRequiredFieldValidator control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected RequiredFieldValidator EstimatedHoursRequiredFieldValidator
     return:
       type: System.Web.UI.WebControls.RequiredFieldValidator
-    content.vb: Protected HRealesRequiredFieldValidator As RequiredFieldValidator
+    content.vb: Protected EstimatedHoursRequiredFieldValidator As RequiredFieldValidator
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.InsertarTarea.DescriptionTextBox
+  commentId: F:WebApplication.UserPages.InsertarTarea.DescriptionTextBox
+  id: DescriptionTextBox
+  parent: WebApplication.UserPages.InsertarTarea
+  langs:
+  - csharp
+  - vb
+  name: DescriptionTextBox
+  nameWithType: InsertarTarea.DescriptionTextBox
+  fullName: WebApplication.UserPages.InsertarTarea.DescriptionTextBox
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DescriptionTextBox
+    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    startLine: 93
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nDescriptionTextBox control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected TextBox DescriptionTextBox
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected DescriptionTextBox As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.InsertarTarea.TaskType
+  commentId: F:WebApplication.UserPages.InsertarTarea.TaskType
+  id: TaskType
+  parent: WebApplication.UserPages.InsertarTarea
+  langs:
+  - csharp
+  - vb
+  name: TaskType
+  nameWithType: InsertarTarea.TaskType
+  fullName: WebApplication.UserPages.InsertarTarea.TaskType
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TaskType
+    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    startLine: 102
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTaskType control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected TextBox TaskType
+    return:
+      type: System.Web.UI.WebControls.TextBox
+    content.vb: Protected TaskType As TextBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.InsertarTarea.ActiveCheckBox
+  commentId: F:WebApplication.UserPages.InsertarTarea.ActiveCheckBox
+  id: ActiveCheckBox
+  parent: WebApplication.UserPages.InsertarTarea
+  langs:
+  - csharp
+  - vb
+  name: ActiveCheckBox
+  nameWithType: InsertarTarea.ActiveCheckBox
+  fullName: WebApplication.UserPages.InsertarTarea.ActiveCheckBox
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ActiveCheckBox
+    path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
+    startLine: 111
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nActiveCheckBox control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected HtmlInputCheckBox ActiveCheckBox
+    return:
+      type: System.Web.UI.HtmlControls.HtmlInputCheckBox
+    content.vb: Protected ActiveCheckBox As HtmlInputCheckBox
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -628,7 +803,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-    startLine: 75
+    startLine: 120
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -644,36 +819,36 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.InsertarTarea.SaveChangesButton
-  commentId: F:WebApplication.UserPages.InsertarTarea.SaveChangesButton
-  id: SaveChangesButton
+- uid: WebApplication.UserPages.InsertarTarea.AddTaskButton
+  commentId: F:WebApplication.UserPages.InsertarTarea.AddTaskButton
+  id: AddTaskButton
   parent: WebApplication.UserPages.InsertarTarea
   langs:
   - csharp
   - vb
-  name: SaveChangesButton
-  nameWithType: InsertarTarea.SaveChangesButton
-  fullName: WebApplication.UserPages.InsertarTarea.SaveChangesButton
+  name: AddTaskButton
+  nameWithType: InsertarTarea.AddTaskButton
+  fullName: WebApplication.UserPages.InsertarTarea.AddTaskButton
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: SaveChangesButton
+    id: AddTaskButton
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-    startLine: 84
+    startLine: 129
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nSaveChangesButton control.\n"
+  summary: "\nAddTaskButton control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected Button SaveChangesButton
+    content: protected Button AddTaskButton
     return:
       type: System.Web.UI.WebControls.Button
-    content.vb: Protected SaveChangesButton As Button
+    content.vb: Protected AddTaskButton As Button
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -696,7 +871,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-    startLine: 92
+    startLine: 137
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -7726,16 +7901,36 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click*
-  commentId: Overload:WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click
-  name: SaveChangesButton_Click
-  nameWithType: InsertarTarea.SaveChangesButton_Click
-  fullName: WebApplication.UserPages.InsertarTarea.SaveChangesButton_Click
+- uid: WebApplication.UserPages.InsertarTarea.AddTaskButton_Click*
+  commentId: Overload:WebApplication.UserPages.InsertarTarea.AddTaskButton_Click
+  name: AddTaskButton_Click
+  nameWithType: InsertarTarea.AddTaskButton_Click
+  fullName: WebApplication.UserPages.InsertarTarea.AddTaskButton_Click
 - uid: WebApplication.UserPages.InsertarTarea.CancelButton_Click*
   commentId: Overload:WebApplication.UserPages.InsertarTarea.CancelButton_Click
   name: CancelButton_Click
   nameWithType: InsertarTarea.CancelButton_Click
   fullName: WebApplication.UserPages.InsertarTarea.CancelButton_Click
+- uid: System.Web.UI.WebControls.SqlDataSource
+  commentId: T:System.Web.UI.WebControls.SqlDataSource
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: SqlDataSource
+  nameWithType: SqlDataSource
+  fullName: System.Web.UI.WebControls.SqlDataSource
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.DropDownList
+  commentId: T:System.Web.UI.WebControls.DropDownList
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: DropDownList
+  nameWithType: DropDownList
+  fullName: System.Web.UI.WebControls.DropDownList
 - uid: System.Web.UI.WebControls.TextBox
   commentId: T:System.Web.UI.WebControls.TextBox
   parent: System.Web.UI.WebControls
@@ -7743,19 +7938,6 @@ references:
   name: TextBox
   nameWithType: TextBox
   fullName: System.Web.UI.WebControls.TextBox
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.CompareValidator
-  commentId: T:System.Web.UI.WebControls.CompareValidator
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: CompareValidator
-  nameWithType: CompareValidator
-  fullName: System.Web.UI.WebControls.CompareValidator
 - uid: System.Web.UI.WebControls.RequiredFieldValidator
   commentId: T:System.Web.UI.WebControls.RequiredFieldValidator
   parent: System.Web.UI.WebControls
@@ -7763,6 +7945,26 @@ references:
   name: RequiredFieldValidator
   nameWithType: RequiredFieldValidator
   fullName: System.Web.UI.WebControls.RequiredFieldValidator
+- uid: System.Web.UI.WebControls.CompareValidator
+  commentId: T:System.Web.UI.WebControls.CompareValidator
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: CompareValidator
+  nameWithType: CompareValidator
+  fullName: System.Web.UI.WebControls.CompareValidator
+- uid: System.Web.UI.HtmlControls.HtmlInputCheckBox
+  commentId: T:System.Web.UI.HtmlControls.HtmlInputCheckBox
+  parent: System.Web.UI.HtmlControls
+  isExternal: true
+  name: HtmlInputCheckBox
+  nameWithType: HtmlInputCheckBox
+  fullName: System.Web.UI.HtmlControls.HtmlInputCheckBox
+- uid: System.Web.UI.HtmlControls
+  commentId: N:System.Web.UI.HtmlControls
+  isExternal: true
+  name: System.Web.UI.HtmlControls
+  nameWithType: System.Web.UI.HtmlControls
+  fullName: System.Web.UI.HtmlControls
 - uid: System.Web.UI.WebControls.Button
   commentId: T:System.Web.UI.WebControls.Button
   parent: System.Web.UI.WebControls

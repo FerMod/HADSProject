@@ -5,15 +5,13 @@ items:
   id: TareasProfesor
   parent: WebApplication.UserPages
   children:
-  - WebApplication.UserPages.TareasProfesor.DataAccess
   - WebApplication.UserPages.TareasProfesor.DropDownSubjects
-  - WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
   - WebApplication.UserPages.TareasProfesor.GridViewTasks
-  - WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
-  - WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
   - WebApplication.UserPages.TareasProfesor.Master
+  - WebApplication.UserPages.TareasProfesor.NewTaskButton
   - WebApplication.UserPages.TareasProfesor.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPages.TareasProfesor.TeacherTasksDataSource
+  - WebApplication.UserPages.TareasProfesor.TeacherSubjectsDataSource
+  - WebApplication.UserPages.TareasProfesor.TeacherSubjectsTasksDataSource
   langs:
   - csharp
   - vb
@@ -298,41 +296,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.UserPages.TareasProfesor.DataAccess
-  commentId: P:WebApplication.UserPages.TareasProfesor.DataAccess
-  id: DataAccess
-  parent: WebApplication.UserPages.TareasProfesor
-  langs:
-  - csharp
-  - vb
-  name: DataAccess
-  nameWithType: TareasProfesor.DataAccess
-  fullName: WebApplication.UserPages.TareasProfesor.DataAccess
-  type: Property
-  source:
-    remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: DataAccess
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.cs
-    startLine: 17
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  syntax:
-    content: public DataAccessService DataAccess { get; }
-    parameters: []
-    return:
-      type: DataBaseAccess.DataAccessService
-    content.vb: Public ReadOnly Property DataAccess As DataAccessService
-  overload: WebApplication.UserPages.TareasProfesor.DataAccess*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
 - uid: WebApplication.UserPages.TareasProfesor.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.UserPages.TareasProfesor.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -351,7 +314,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/TareasProfesor.aspx.cs
-    startLine: 46
+    startLine: 17
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -368,141 +331,104 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
-  commentId: M:WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
-  id: GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+- uid: WebApplication.UserPages.TareasProfesor.TeacherSubjectsDataSource
+  commentId: F:WebApplication.UserPages.TareasProfesor.TeacherSubjectsDataSource
+  id: TeacherSubjectsDataSource
   parent: WebApplication.UserPages.TareasProfesor
   langs:
   - csharp
   - vb
-  name: GridViewTasks_Sorting(Object, GridViewSortEventArgs)
-  nameWithType: TareasProfesor.GridViewTasks_Sorting(Object, GridViewSortEventArgs)
-  fullName: WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
-  type: Method
-  source:
-    remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: GridViewTasks_Sorting
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.cs
-    startLine: 144
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  syntax:
-    content: protected void GridViewTasks_Sorting(object sender, GridViewSortEventArgs e)
-    parameters:
-    - id: sender
-      type: System.Object
-    - id: e
-      type: System.Web.UI.WebControls.GridViewSortEventArgs
-    content.vb: Protected Sub GridViewTasks_Sorting(sender As Object, e As GridViewSortEventArgs)
-  overload: WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  id: DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  parent: WebApplication.UserPages.TareasProfesor
-  langs:
-  - csharp
-  - vb
-  name: DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
-  nameWithType: TareasProfesor.DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
-  fullName: WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged(System.Object, System.EventArgs)
-  type: Method
-  source:
-    remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: DropDownSubjects_SelectedIndexChanged
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.cs
-    startLine: 181
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  syntax:
-    content: protected void DropDownSubjects_SelectedIndexChanged(object sender, EventArgs e)
-    parameters:
-    - id: sender
-      type: System.Object
-    - id: e
-      type: System.EventArgs
-    content.vb: Protected Sub DropDownSubjects_SelectedIndexChanged(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
-  commentId: M:WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
-  id: GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
-  parent: WebApplication.UserPages.TareasProfesor
-  langs:
-  - csharp
-  - vb
-  name: GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
-  nameWithType: TareasProfesor.GridViewTasks_RowCommand(Object, GridViewCommandEventArgs)
-  fullName: WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand(System.Object, System.Web.UI.WebControls.GridViewCommandEventArgs)
-  type: Method
-  source:
-    remote:
-      path: WebApplication/UserPages/TareasProfesor.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: GridViewTasks_RowCommand
-    path: ../WebApplication/UserPages/TareasProfesor.aspx.cs
-    startLine: 196
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  syntax:
-    content: protected void GridViewTasks_RowCommand(object sender, GridViewCommandEventArgs e)
-    parameters:
-    - id: sender
-      type: System.Object
-    - id: e
-      type: System.Web.UI.WebControls.GridViewCommandEventArgs
-    content.vb: Protected Sub GridViewTasks_RowCommand(sender As Object, e As GridViewCommandEventArgs)
-  overload: WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPages.TareasProfesor.TeacherTasksDataSource
-  commentId: F:WebApplication.UserPages.TareasProfesor.TeacherTasksDataSource
-  id: TeacherTasksDataSource
-  parent: WebApplication.UserPages.TareasProfesor
-  langs:
-  - csharp
-  - vb
-  name: TeacherTasksDataSource
-  nameWithType: TareasProfesor.TeacherTasksDataSource
-  fullName: WebApplication.UserPages.TareasProfesor.TeacherTasksDataSource
+  name: TeacherSubjectsDataSource
+  nameWithType: TareasProfesor.TeacherSubjectsDataSource
+  fullName: WebApplication.UserPages.TareasProfesor.TeacherSubjectsDataSource
   type: Field
   source:
     remote:
       path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: TeacherTasksDataSource
+    id: TeacherSubjectsDataSource
     path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nTeacherTasksDataSource control.\n"
+  summary: "\nTeacherSubjectsDataSource control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected SqlDataSource TeacherTasksDataSource
+    content: protected SqlDataSource TeacherSubjectsDataSource
     return:
       type: System.Web.UI.WebControls.SqlDataSource
-    content.vb: Protected TeacherTasksDataSource As SqlDataSource
+    content.vb: Protected TeacherSubjectsDataSource As SqlDataSource
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TareasProfesor.TeacherSubjectsTasksDataSource
+  commentId: F:WebApplication.UserPages.TareasProfesor.TeacherSubjectsTasksDataSource
+  id: TeacherSubjectsTasksDataSource
+  parent: WebApplication.UserPages.TareasProfesor
+  langs:
+  - csharp
+  - vb
+  name: TeacherSubjectsTasksDataSource
+  nameWithType: TareasProfesor.TeacherSubjectsTasksDataSource
+  fullName: WebApplication.UserPages.TareasProfesor.TeacherSubjectsTasksDataSource
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherSubjectsTasksDataSource
+    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherSubjectsTasksDataSource control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected SqlDataSource TeacherSubjectsTasksDataSource
+    return:
+      type: System.Web.UI.WebControls.SqlDataSource
+    content.vb: Protected TeacherSubjectsTasksDataSource As SqlDataSource
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TareasProfesor.NewTaskButton
+  commentId: F:WebApplication.UserPages.TareasProfesor.NewTaskButton
+  id: NewTaskButton
+  parent: WebApplication.UserPages.TareasProfesor
+  langs:
+  - csharp
+  - vb
+  name: NewTaskButton
+  nameWithType: TareasProfesor.NewTaskButton
+  fullName: WebApplication.UserPages.TareasProfesor.NewTaskButton
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: NewTaskButton
+    path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nNewTaskButton control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button NewTaskButton
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected NewTaskButton As Button
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -525,7 +451,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-    startLine: 30
+    startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -559,7 +485,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-    startLine: 39
+    startLine: 57
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -593,7 +519,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/TareasProfesor.aspx.designer.cs
-    startLine: 47
+    startLine: 65
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -7611,22 +7537,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.UserPages.TareasProfesor.DataAccess*
-  commentId: Overload:WebApplication.UserPages.TareasProfesor.DataAccess
-  name: DataAccess
-  nameWithType: TareasProfesor.DataAccess
-  fullName: WebApplication.UserPages.TareasProfesor.DataAccess
-- uid: DataBaseAccess.DataAccessService
-  commentId: T:DataBaseAccess.DataAccessService
-  parent: DataBaseAccess
-  name: DataAccessService
-  nameWithType: DataAccessService
-  fullName: DataBaseAccess.DataAccessService
-- uid: DataBaseAccess
-  commentId: N:DataBaseAccess
-  name: DataBaseAccess
-  nameWithType: DataBaseAccess
-  fullName: DataBaseAccess
 - uid: WebApplication.UserPages.TareasProfesor.Page_Load*
   commentId: Overload:WebApplication.UserPages.TareasProfesor.Page_Load
   name: Page_Load
@@ -7639,41 +7549,6 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting*
-  commentId: Overload:WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting
-  name: GridViewTasks_Sorting
-  nameWithType: TareasProfesor.GridViewTasks_Sorting
-  fullName: WebApplication.UserPages.TareasProfesor.GridViewTasks_Sorting
-- uid: System.Web.UI.WebControls.GridViewSortEventArgs
-  commentId: T:System.Web.UI.WebControls.GridViewSortEventArgs
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: GridViewSortEventArgs
-  nameWithType: GridViewSortEventArgs
-  fullName: System.Web.UI.WebControls.GridViewSortEventArgs
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls
-- uid: WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged*
-  commentId: Overload:WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged
-  name: DropDownSubjects_SelectedIndexChanged
-  nameWithType: TareasProfesor.DropDownSubjects_SelectedIndexChanged
-  fullName: WebApplication.UserPages.TareasProfesor.DropDownSubjects_SelectedIndexChanged
-- uid: WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand*
-  commentId: Overload:WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand
-  name: GridViewTasks_RowCommand
-  nameWithType: TareasProfesor.GridViewTasks_RowCommand
-  fullName: WebApplication.UserPages.TareasProfesor.GridViewTasks_RowCommand
-- uid: System.Web.UI.WebControls.GridViewCommandEventArgs
-  commentId: T:System.Web.UI.WebControls.GridViewCommandEventArgs
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: GridViewCommandEventArgs
-  nameWithType: GridViewCommandEventArgs
-  fullName: System.Web.UI.WebControls.GridViewCommandEventArgs
 - uid: System.Web.UI.WebControls.SqlDataSource
   commentId: T:System.Web.UI.WebControls.SqlDataSource
   parent: System.Web.UI.WebControls
@@ -7681,6 +7556,19 @@ references:
   name: SqlDataSource
   nameWithType: SqlDataSource
   fullName: System.Web.UI.WebControls.SqlDataSource
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.Button
+  commentId: T:System.Web.UI.WebControls.Button
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: System.Web.UI.WebControls.Button
 - uid: System.Web.UI.WebControls.DropDownList
   commentId: T:System.Web.UI.WebControls.DropDownList
   parent: System.Web.UI.WebControls

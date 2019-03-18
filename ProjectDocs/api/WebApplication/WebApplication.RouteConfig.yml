@@ -20,7 +20,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: RouteConfig
     path: ../WebApplication/App_Start/RouteConfig.cs
-    startLine: 8
+    startLine: 6
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -62,7 +62,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterRoutes
     path: ../WebApplication/App_Start/RouteConfig.cs
-    startLine: 10
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication

@@ -18,6 +18,8 @@ items:
   - WebApplication.SiteMaster.MainContent
   - WebApplication.SiteMaster.NotificationContent
   - WebApplication.SiteMaster.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.SiteMaster.studentMenu
+  - WebApplication.SiteMaster.teacherMenu
   - WebApplication.SiteMaster.userMenu
   langs:
   - csharp
@@ -285,7 +287,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonProfile_Click
     path: ../WebApplication/Site.Master.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -320,7 +322,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonSignOut_Click
     path: ../WebApplication/Site.Master.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -473,6 +475,74 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.SiteMaster.studentMenu
+  commentId: F:WebApplication.SiteMaster.studentMenu
+  id: studentMenu
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: studentMenu
+  nameWithType: SiteMaster.studentMenu
+  fullName: WebApplication.SiteMaster.studentMenu
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Site.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: studentMenu
+    path: ../WebApplication/Site.Master.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nstudentMenu control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Panel studentMenu
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected studentMenu As Panel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.SiteMaster.teacherMenu
+  commentId: F:WebApplication.SiteMaster.teacherMenu
+  id: teacherMenu
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: teacherMenu
+  nameWithType: SiteMaster.teacherMenu
+  fullName: WebApplication.SiteMaster.teacherMenu
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Site.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: teacherMenu
+    path: ../WebApplication/Site.Master.designer.cs
+    startLine: 66
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nteacherMenu control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Panel teacherMenu
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected teacherMenu As Panel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.SiteMaster.LabelName
   commentId: F:WebApplication.SiteMaster.LabelName
   id: LabelName
@@ -491,7 +561,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: LabelName
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 57
+    startLine: 75
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -525,7 +595,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: LabelLastName
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 66
+    startLine: 84
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -559,7 +629,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: LabelMail
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 75
+    startLine: 93
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -593,7 +663,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonViewProfile
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 84
+    startLine: 102
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -627,7 +697,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonSignOut
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 93
+    startLine: 111
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -661,7 +731,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: MainContent
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 102
+    startLine: 120
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -695,7 +765,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: NotificationContent
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 111
+    startLine: 129
   assemblies:
   - WebApplication
   namespace: WebApplication

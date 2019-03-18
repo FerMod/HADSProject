@@ -20,7 +20,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: BundleConfig
     path: ../WebApplication/App_Start/BundleConfig.cs
-    startLine: 9
+    startLine: 5
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -62,7 +62,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterBundles
     path: ../WebApplication/App_Start/BundleConfig.cs
-    startLine: 12
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication
