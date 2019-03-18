@@ -1702,10 +1702,12 @@
     <Content Include="img\open-iconic\svg\zoom-out.svg" />
     <Content Include="MailTemplates\AccountVerification.html" />
     <Content Include="Scripts\svg-injector.min.js" />
-    <Content Include="UserPages\InsertarTarea.aspx" />
-    <Content Include="UserPages\InstanciarTarea.aspx" />
-    <Content Include="UserPages\TareasProfesor.aspx" />
-    <Content Include="UserPages\TareasAlumno.aspx" />
+    <Content Include="UserPages\Student\StudentHome.aspx" />
+    <Content Include="UserPages\Teacher\InsertarTarea.aspx" />
+    <Content Include="UserPages\Student\InstanciarTarea.aspx" />
+    <Content Include="UserPages\Teacher\TeacherHome.aspx" />
+    <Content Include="UserPages\Teacher\TareasProfesor.aspx" />
+    <Content Include="UserPages\Student\TareasAlumno.aspx" />
     <Content Include="WebNotification.aspx" />
     <Content Include="img\open-iconic\bower.json" />
     <Content Include="img\open-iconic\FONT-LICENSE" />
@@ -3214,40 +3216,61 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="UserPages\InsertarTarea.aspx.cs">
+    <Compile Include="UserPages\Student\StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Student\StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Student\Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Student\Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Teacher\InsertarTarea.aspx.cs">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPages\InsertarTarea.aspx.designer.cs">
+    <Compile Include="UserPages\Teacher\InsertarTarea.aspx.designer.cs">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPages\InstanciarTarea.aspx.cs">
+    <Compile Include="UserPages\Student\InstanciarTarea.aspx.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPages\InstanciarTarea.aspx.designer.cs">
+    <Compile Include="UserPages\Student\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPages\TareasProfesor.aspx.cs">
+    <Compile Include="UserPages\Teacher\TeacherHome.aspx.cs">
+      <DependentUpon>TeacherHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\TeacherHome.aspx.designer.cs">
+      <DependentUpon>TeacherHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Teacher\TareasProfesor.aspx.cs">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPages\TareasProfesor.aspx.designer.cs">
+    <Compile Include="UserPages\Teacher\TareasProfesor.aspx.designer.cs">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPages\TareasAlumno.aspx.cs">
+    <Compile Include="UserPages\Student\TareasAlumno.aspx.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPages\TareasAlumno.aspx.designer.cs">
+    <Compile Include="UserPages\Student\TareasAlumno.aspx.designer.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPages\UserHome.Master.cs">
-      <DependentUpon>UserHome.Master</DependentUpon>
+    <Compile Include="UserPages\Teacher\Teacher.Master.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPages\UserHome.Master.designer.cs">
-      <DependentUpon>UserHome.Master</DependentUpon>
+    <Compile Include="UserPages\Teacher\Teacher.Master.designer.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
     </Compile>
     <Compile Include="Utils\JsonFile.cs" />
     <Compile Include="Utils\UrlUtils.cs" />
@@ -3282,8 +3305,9 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="UserPages\UserHome.Master" />
     <Content Include="Scripts\svg-injector.js.map" />
+    <Content Include="UserPages\Teacher\Teacher.Master" />
+    <Content Include="UserPages\Student\Student.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

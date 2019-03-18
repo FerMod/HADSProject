@@ -135,9 +135,9 @@ namespace WebApplication.UserPages {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new WebApplication.UserPages.UserHome Master {
+        public new WebApplication.UserPages.Teacher Master {
             get {
-                return ((WebApplication.UserPages.UserHome)(base.Master));
+                return ((WebApplication.UserPages.Teacher)(base.Master));
             }
         }
     }

@@ -76,7 +76,8 @@ namespace WebApplication.UserPages {
 		}
 
 		private void Return() {
-			Response.Redirect(Page.ResolveUrl(@"~/UserPages/TareasProfesor"));
+			//Response.Redirect("javascript:history.go(-1);");
+			Response.RedirectToRoute("TeacherTasks");
 		}
 
 	}

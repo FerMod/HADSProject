@@ -1,6 +1,6 @@
-<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/UserHome.Master" AutoEventWireup="true" CodeBehind="TareasProfesor.aspx.cs" Inherits="WebApplication.UserPages.TareasProfesor" %>
+<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="TareasProfesor.aspx.cs" Inherits="WebApplication.UserPages.TareasProfesor" %>
 
-<%@ MasterType VirtualPath="~/UserPages/UserHome.Master" %>
+<%@ MasterType VirtualPath="~/UserPages/Teacher/Teacher.Master" %>
 
 <asp:Content ID="TeacherTasksContent" ContentPlaceHolderID="TeacherContent" runat="server">
 
@@ -50,7 +50,7 @@
     </asp:SqlDataSource>
 
     <div class="form-group">
-        <asp:Button ID="NewTaskButton" PostBackUrl="~/UserPages/InsertarTarea.aspx" CssClass="btn btn-primary" runat="server" Text="New Task" TabIndex="1" />
+        <asp:Button ID="NewTaskButton" PostBackUrl="/Teacher/Tasks/NewTask" CssClass="btn btn-primary" runat="server" Text="New Task" TabIndex="1" />
     </div>
 
     <div class="form-group">

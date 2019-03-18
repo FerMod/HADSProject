@@ -10,52 +10,43 @@
 namespace WebApplication.UserPages {
     
     
-    public partial class TareasProfesor {
+    public partial class Teacher {
         
         /// <summary>
-        /// TeacherSubjectsDataSource control.
+        /// HomeTab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsDataSource;
+        protected global::System.Web.UI.WebControls.LinkButton HomeTab;
         
         /// <summary>
-        /// TeacherSubjectsTasksDataSource control.
+        /// TasksTab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsTasksDataSource;
+        protected global::System.Web.UI.WebControls.LinkButton TasksTab;
         
         /// <summary>
-        /// NewTaskButton control.
+        /// TeacherTasksUpdatePanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NewTaskButton;
+        protected global::System.Web.UI.UpdatePanel TeacherTasksUpdatePanel;
         
         /// <summary>
-        /// DropDownSubjects control.
+        /// TeacherContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownSubjects;
-        
-        /// <summary>
-        /// GridViewTasks control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewTasks;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder TeacherContent;
         
         /// <summary>
         /// Master property.
@@ -63,9 +54,9 @@ namespace WebApplication.UserPages {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new WebApplication.UserPages.UserHome Master {
+        public new WebApplication.SiteMaster Master {
             get {
-                return ((WebApplication.UserPages.UserHome)(base.Master));
+                return ((WebApplication.SiteMaster)(base.Master));
             }
         }
     }

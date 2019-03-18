@@ -1,6 +1,6 @@
-<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/UserHome.Master" AutoEventWireup="true" CodeBehind="TareasAlumno.aspx.cs" Inherits="WebApplication.UserPages.TareasAlumno" %>
+<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/Student/Student.Master" AutoEventWireup="true" CodeBehind="TareasAlumno.aspx.cs" Inherits="WebApplication.UserPages.TareasAlumno" %>
 
-<%@ MasterType VirtualPath="~/UserPages/UserHome.Master" %>
+<%@ MasterType VirtualPath="~/UserPages/Student/Student.Master" %>
 
 <asp:Content ID="StudentTasksContent" ContentPlaceHolderID="StudentContent" runat="server">
 

@@ -90,9 +90,9 @@ namespace WebApplication.UserPages {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new WebApplication.UserPages.UserHome Master {
+        public new WebApplication.UserPages.Student Master {
             get {
-                return ((WebApplication.UserPages.UserHome)(base.Master));
+                return ((WebApplication.UserPages.Student)(base.Master));
             }
         }
     }
