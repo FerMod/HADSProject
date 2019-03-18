@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Site_Mobile
     path: ../WebApplication/Site.Mobile.Master.designer.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Mobile.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/Site.Mobile.Master.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: HeadContent
     path: ../WebApplication/Site.Mobile.Master.designer.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: form1
     path: ../WebApplication/Site.Mobile.Master.designer.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: FeaturedContent
     path: ../WebApplication/Site.Mobile.Master.designer.cs
@@ -374,7 +374,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Mobile.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: MainContent
     path: ../WebApplication/Site.Mobile.Master.designer.cs

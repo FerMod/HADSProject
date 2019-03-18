@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/QueryResult.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: QueryResult
     path: ../DataBaseAccess/Framework/QueryResult.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/QueryResult.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Rows
     path: ../DataBaseAccess/Framework/QueryResult.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/QueryResult.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
     path: ../DataBaseAccess/Framework/QueryResult.cs

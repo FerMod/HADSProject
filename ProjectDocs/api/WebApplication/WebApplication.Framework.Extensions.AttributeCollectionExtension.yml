@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AttributeCollectionExtension
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AddClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AddCssClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -160,7 +160,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: RemoveClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -208,7 +208,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: RemoveCssClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -256,7 +256,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GetClassesExcept
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -307,7 +307,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GetCssClassesExcept
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs

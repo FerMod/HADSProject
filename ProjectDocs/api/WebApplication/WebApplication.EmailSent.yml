@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: WebApplication/Confirmar.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: EmailSent
     path: ../WebApplication/Confirmar.aspx.designer.cs

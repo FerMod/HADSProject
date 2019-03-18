@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/ParametizedUrl.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ParametizedUrl
     path: ../WebApplication/Framework/ParametizedUrl.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/ParametizedUrl.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Url
     path: ../WebApplication/Framework/ParametizedUrl.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/ParametizedUrl.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
     path: ../WebApplication/Framework/ParametizedUrl.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/ParametizedUrl.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ToString
     path: ../WebApplication/Framework/ParametizedUrl.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/ParametizedUrl.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: op_Implicit
     path: ../WebApplication/Framework/ParametizedUrl.cs

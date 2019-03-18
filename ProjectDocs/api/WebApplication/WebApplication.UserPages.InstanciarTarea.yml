@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: InstanciarTarea
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
@@ -350,7 +350,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesButton_Click
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton_Click
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: EmailTextBox
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -454,7 +454,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CodTareaTextBox
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -488,7 +488,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: HEstimadasTextBox
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -522,7 +522,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: HRealesTextBox
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -556,7 +556,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: HRealesIntegerValidator
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -590,7 +590,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: HRealesRequiredFieldValidator
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -624,7 +624,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -658,7 +658,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: SaveChangesButton
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
@@ -692,7 +692,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InstanciarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/InstanciarTarea.aspx.designer.cs

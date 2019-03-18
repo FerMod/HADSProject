@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TareasAlumno
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
@@ -346,7 +346,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
@@ -381,7 +381,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
@@ -416,7 +416,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects_SelectedIndexChanged
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
@@ -451,7 +451,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
     path: ../WebApplication/UserPages/TareasAlumno.aspx.cs
@@ -486,7 +486,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
@@ -520,7 +520,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs
@@ -554,7 +554,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/TareasAlumno.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/TareasAlumno.aspx.designer.cs

@@ -32,7 +32,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: InsertarTarea
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -320,7 +320,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
@@ -355,7 +355,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AddTaskButton_Click
     path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
@@ -390,7 +390,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton_Click
     path: ../WebApplication/UserPages/InsertarTarea.aspx.cs
@@ -425,7 +425,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -459,7 +459,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GenericTasksSqlDataSource
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -493,7 +493,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: SubjectsDropDown
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -527,7 +527,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CodeTextBox
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -561,7 +561,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CodeRequiredFieldValidator
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -595,7 +595,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: EstimatedHoursTextBox
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -629,7 +629,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: EstimatedHoursIntegerValidator
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -663,7 +663,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: EstimatedHoursRequiredFieldValidator
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -697,7 +697,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DescriptionTextBox
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -731,7 +731,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TaskType
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -765,7 +765,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ActiveCheckBox
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -799,7 +799,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CancelButton
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -833,7 +833,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AddTaskButton
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
@@ -867,7 +867,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/InsertarTarea.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/InsertarTarea.aspx.designer.cs
