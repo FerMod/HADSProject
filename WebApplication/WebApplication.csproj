@@ -118,7 +118,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Account.master" />
+    <Content Include="Account.Master" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
@@ -126,121 +126,11 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="MailTemplates\AccountVerification.html" />
-    <Content Include="plugins\HtmlAgilityPack.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.Build.Common.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.Build.MemberLevelManagedReference.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.Common.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.DataContracts.Common.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.DataContracts.ManagedReference.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.MarkdownLite.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.Plugins.dll" />
-    <Content Include="plugins\Microsoft.DocAsCode.YamlSerialization.dll" />
-    <Content Include="plugins\Microsoft.Win32.Primitives.dll" />
-    <Content Include="plugins\netstandard.dll" />
-    <Content Include="plugins\Newtonsoft.Json.dll" />
-    <Content Include="plugins\System.AppContext.dll" />
-    <Content Include="plugins\System.Collections.Concurrent.dll" />
-    <Content Include="plugins\System.Collections.dll" />
-    <Content Include="plugins\System.Collections.Immutable.dll" />
-    <Content Include="plugins\System.Collections.NonGeneric.dll" />
-    <Content Include="plugins\System.Collections.Specialized.dll" />
-    <Content Include="plugins\System.ComponentModel.dll" />
-    <Content Include="plugins\System.ComponentModel.EventBasedAsync.dll" />
-    <Content Include="plugins\System.ComponentModel.Primitives.dll" />
-    <Content Include="plugins\System.ComponentModel.TypeConverter.dll" />
-    <Content Include="plugins\System.Composition.AttributedModel.dll" />
-    <Content Include="plugins\System.Composition.Convention.dll" />
-    <Content Include="plugins\System.Composition.Hosting.dll" />
-    <Content Include="plugins\System.Composition.Runtime.dll" />
-    <Content Include="plugins\System.Composition.TypedParts.dll" />
-    <Content Include="plugins\System.Console.dll" />
-    <Content Include="plugins\System.Data.Common.dll" />
-    <Content Include="plugins\System.Diagnostics.Contracts.dll" />
-    <Content Include="plugins\System.Diagnostics.Debug.dll" />
-    <Content Include="plugins\System.Diagnostics.FileVersionInfo.dll" />
-    <Content Include="plugins\System.Diagnostics.Process.dll" />
-    <Content Include="plugins\System.Diagnostics.StackTrace.dll" />
-    <Content Include="plugins\System.Diagnostics.TextWriterTraceListener.dll" />
-    <Content Include="plugins\System.Diagnostics.Tools.dll" />
-    <Content Include="plugins\System.Diagnostics.TraceSource.dll" />
-    <Content Include="plugins\System.Diagnostics.Tracing.dll" />
-    <Content Include="plugins\System.Drawing.Primitives.dll" />
-    <Content Include="plugins\System.Dynamic.Runtime.dll" />
-    <Content Include="plugins\System.Globalization.Calendars.dll" />
-    <Content Include="plugins\System.Globalization.dll" />
-    <Content Include="plugins\System.Globalization.Extensions.dll" />
-    <Content Include="plugins\System.IO.Compression.dll" />
-    <Content Include="plugins\System.IO.Compression.ZipFile.dll" />
-    <Content Include="plugins\System.IO.dll" />
-    <Content Include="plugins\System.IO.FileSystem.dll" />
-    <Content Include="plugins\System.IO.FileSystem.DriveInfo.dll" />
-    <Content Include="plugins\System.IO.FileSystem.Primitives.dll" />
-    <Content Include="plugins\System.IO.FileSystem.Watcher.dll" />
-    <Content Include="plugins\System.IO.IsolatedStorage.dll" />
-    <Content Include="plugins\System.IO.MemoryMappedFiles.dll" />
-    <Content Include="plugins\System.IO.Pipes.dll" />
-    <Content Include="plugins\System.IO.UnmanagedMemoryStream.dll" />
-    <Content Include="plugins\System.Linq.dll" />
-    <Content Include="plugins\System.Linq.Expressions.dll" />
-    <Content Include="plugins\System.Linq.Parallel.dll" />
-    <Content Include="plugins\System.Linq.Queryable.dll" />
-    <Content Include="plugins\System.Net.Http.dll" />
-    <Content Include="plugins\System.Net.NameResolution.dll" />
-    <Content Include="plugins\System.Net.NetworkInformation.dll" />
-    <Content Include="plugins\System.Net.Ping.dll" />
-    <Content Include="plugins\System.Net.Primitives.dll" />
-    <Content Include="plugins\System.Net.Requests.dll" />
-    <Content Include="plugins\System.Net.Security.dll" />
-    <Content Include="plugins\System.Net.Sockets.dll" />
-    <Content Include="plugins\System.Net.WebHeaderCollection.dll" />
-    <Content Include="plugins\System.Net.WebSockets.Client.dll" />
-    <Content Include="plugins\System.Net.WebSockets.dll" />
-    <Content Include="plugins\System.ObjectModel.dll" />
-    <Content Include="plugins\System.Reflection.dll" />
-    <Content Include="plugins\System.Reflection.Extensions.dll" />
-    <Content Include="plugins\System.Reflection.Primitives.dll" />
-    <Content Include="plugins\System.Resources.Reader.dll" />
-    <Content Include="plugins\System.Resources.ResourceManager.dll" />
-    <Content Include="plugins\System.Resources.Writer.dll" />
-    <Content Include="plugins\System.Runtime.CompilerServices.VisualC.dll" />
-    <Content Include="plugins\System.Runtime.dll" />
-    <Content Include="plugins\System.Runtime.Extensions.dll" />
-    <Content Include="plugins\System.Runtime.Handles.dll" />
-    <Content Include="plugins\System.Runtime.InteropServices.dll" />
-    <Content Include="plugins\System.Runtime.InteropServices.RuntimeInformation.dll" />
-    <Content Include="plugins\System.Runtime.Numerics.dll" />
-    <Content Include="plugins\System.Runtime.Serialization.Formatters.dll" />
-    <Content Include="plugins\System.Runtime.Serialization.Json.dll" />
-    <Content Include="plugins\System.Runtime.Serialization.Primitives.dll" />
-    <Content Include="plugins\System.Runtime.Serialization.Xml.dll" />
-    <Content Include="plugins\System.Security.Claims.dll" />
-    <Content Include="plugins\System.Security.Cryptography.Algorithms.dll" />
-    <Content Include="plugins\System.Security.Cryptography.Csp.dll" />
-    <Content Include="plugins\System.Security.Cryptography.Encoding.dll" />
-    <Content Include="plugins\System.Security.Cryptography.Primitives.dll" />
-    <Content Include="plugins\System.Security.Cryptography.X509Certificates.dll" />
-    <Content Include="plugins\System.Security.Principal.dll" />
-    <Content Include="plugins\System.Security.SecureString.dll" />
-    <Content Include="plugins\System.Text.Encoding.dll" />
-    <Content Include="plugins\System.Text.Encoding.Extensions.dll" />
-    <Content Include="plugins\System.Text.RegularExpressions.dll" />
-    <Content Include="plugins\System.Threading.dll" />
-    <Content Include="plugins\System.Threading.Overlapped.dll" />
-    <Content Include="plugins\System.Threading.Tasks.dll" />
-    <Content Include="plugins\System.Threading.Tasks.Parallel.dll" />
-    <Content Include="plugins\System.Threading.Thread.dll" />
-    <Content Include="plugins\System.Threading.ThreadPool.dll" />
-    <Content Include="plugins\System.Threading.Timer.dll" />
-    <Content Include="plugins\System.ValueTuple.dll" />
-    <Content Include="plugins\System.Xml.ReaderWriter.dll" />
-    <Content Include="plugins\System.Xml.XDocument.dll" />
-    <Content Include="plugins\System.Xml.XmlDocument.dll" />
-    <Content Include="plugins\System.Xml.XmlSerializer.dll" />
-    <Content Include="plugins\System.Xml.XPath.dll" />
-    <Content Include="plugins\System.Xml.XPath.XDocument.dll" />
-    <Content Include="plugins\YamlDotNet.dll" />
-    <Content Include="UserPage\InstanciarTarea.aspx" />
-    <Content Include="UserPage\TareasAlumno.aspx" />
+    <Content Include="Scripts\svg-injector.min.js" />
+    <Content Include="UserPages\InsertarTarea.aspx" />
+    <Content Include="UserPages\InstanciarTarea.aspx" />
+    <Content Include="UserPages\TareasProfesor.aspx" />
+    <Content Include="UserPages\TareasAlumno.aspx" />
     <Content Include="WebNotification.aspx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\HADS18-Tudela - Web Deploy - DEBUG.pubxml" />
@@ -308,14 +198,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.master.cs">
-      <DependentUpon>Account.master</DependentUpon>
+    <Compile Include="Account.Master.cs">
+      <DependentUpon>Account.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account.master.designer.cs">
-      <DependentUpon>Account.master</DependentUpon>
+    <Compile Include="Account.Master.designer.cs">
+      <DependentUpon>Account.Master</DependentUpon>
     </Compile>
     <Compile Include="AppConfig.cs" />
+    <Content Include="App_Code\CharCount.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -356,8 +247,10 @@
     </Compile>
     <Compile Include="Framework\Extensions\DictionaryExtension.cs" />
     <Compile Include="Framework\AlertLevel.cs" />
+    <Compile Include="Framework\Extensions\AttributeCollectionExtension.cs" />
     <Compile Include="Framework\NotificationData.cs" />
     <Compile Include="Framework\ParametizedUrl.cs" />
+    <Compile Include="Framework\Queries\Query.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -390,26 +283,40 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\InstanciarTarea.aspx.cs">
+    <Compile Include="UserPages\InsertarTarea.aspx.cs">
+      <DependentUpon>InsertarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\InsertarTarea.aspx.designer.cs">
+      <DependentUpon>InsertarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\InstanciarTarea.aspx.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPage\InstanciarTarea.aspx.designer.cs">
+    <Compile Include="UserPages\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\UserTasks.master.cs">
-      <DependentUpon>UserTasks.master</DependentUpon>
+    <Compile Include="UserPages\TareasProfesor.aspx.cs">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPage\UserTasks.master.designer.cs">
-      <DependentUpon>UserTasks.master</DependentUpon>
+    <Compile Include="UserPages\TareasProfesor.aspx.designer.cs">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPage\TareasAlumno.aspx.cs">
+    <Compile Include="UserPages\TareasAlumno.aspx.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPage\TareasAlumno.aspx.designer.cs">
+    <Compile Include="UserPages\TareasAlumno.aspx.designer.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\UserHome.Master.cs">
+      <DependentUpon>UserHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\UserHome.Master.designer.cs">
+      <DependentUpon>UserHome.Master</DependentUpon>
     </Compile>
     <Compile Include="Utils\JsonFile.cs" />
     <Compile Include="Utils\UrlUtils.cs" />
@@ -444,7 +351,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="UserPage\UserTasks.master" />
+    <Content Include="UserPages\UserHome.Master" />
+    <Content Include="Scripts\svg-injector.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

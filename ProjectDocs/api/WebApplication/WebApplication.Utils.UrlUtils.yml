@@ -17,8 +17,12 @@ items:
   fullName: WebApplication.Utils.UrlUtils
   type: Class
   source:
+    remote:
+      path: WebApplication/Utils/UrlUtils.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: UrlUtils
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: ../WebApplication/Utils/UrlUtils.cs
     startLine: 8
   assemblies:
   - WebApplication
@@ -55,8 +59,12 @@ items:
   fullName: WebApplication.Utils.UrlUtils.UrlRoot
   type: Property
   source:
+    remote:
+      path: WebApplication/Utils/UrlUtils.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: UrlRoot
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: ../WebApplication/Utils/UrlUtils.cs
     startLine: 13
   assemblies:
   - WebApplication
@@ -90,8 +98,12 @@ items:
   fullName: WebApplication.Utils.UrlUtils.VirtualPath
   type: Property
   source:
+    remote:
+      path: WebApplication/Utils/UrlUtils.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: VirtualPath
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: ../WebApplication/Utils/UrlUtils.cs
     startLine: 25
   assemblies:
   - WebApplication
@@ -127,8 +139,12 @@ items:
   fullName: WebApplication.Utils.UrlUtils.ApplicationFolder
   type: Property
   source:
+    remote:
+      path: WebApplication/Utils/UrlUtils.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: ApplicationFolder
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: ../WebApplication/Utils/UrlUtils.cs
     startLine: 45
   assemblies:
   - WebApplication
@@ -162,8 +178,12 @@ items:
   fullName: WebApplication.Utils.UrlUtils.RedirectWithData(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
   type: Method
   source:
+    remote:
+      path: WebApplication/Utils/UrlUtils.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: RedirectWithData
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Utils\UrlUtils.cs
+    path: ../WebApplication/Utils/UrlUtils.cs
     startLine: 69
   assemblies:
   - WebApplication

@@ -8,6 +8,8 @@
     name: About
   - uid: WebApplication.Account
     name: Account
+  - uid: WebApplication.Account.ActiveNav
+    name: Account.ActiveNav
   - uid: WebApplication.AppConfig
     name: AppConfig
   - uid: WebApplication.AppConfig.SmtpServer
@@ -36,8 +38,6 @@
     name: Site_Mobile
   - uid: WebApplication.SiteMaster
     name: SiteMaster
-  - uid: WebApplication.UserTasks
-    name: UserTasks
   - uid: WebApplication.ViewSwitcher
     name: ViewSwitcher
   - uid: WebApplication.WebNotification
@@ -51,18 +51,28 @@
     name: NotificationData
   - uid: WebApplication.Framework.ParametizedUrl
     name: ParametizedUrl
+  - uid: WebApplication.Framework.Query
+    name: Query
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   items:
+  - uid: WebApplication.Framework.Extensions.AttributeCollectionExtension
+    name: AttributeCollectionExtension
   - uid: WebApplication.Framework.Extensions.DictionaryExtension
     name: DictionaryExtension
-- uid: WebApplication.UserPage
-  name: WebApplication.UserPage
+- uid: WebApplication.UserPages
+  name: WebApplication.UserPages
   items:
-  - uid: WebApplication.UserPage.InstanciarTarea
+  - uid: WebApplication.UserPages.InsertarTarea
+    name: InsertarTarea
+  - uid: WebApplication.UserPages.InstanciarTarea
     name: InstanciarTarea
-  - uid: WebApplication.UserPage.TareasAlumno
+  - uid: WebApplication.UserPages.TareasAlumno
     name: TareasAlumno
+  - uid: WebApplication.UserPages.TareasProfesor
+    name: TareasProfesor
+  - uid: WebApplication.UserPages.UserHome
+    name: UserHome
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   items:

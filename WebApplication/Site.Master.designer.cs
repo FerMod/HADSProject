@@ -49,6 +49,24 @@ namespace WebApplication {
         protected global::System.Web.UI.WebControls.Panel loggedUserMenu;
         
         /// <summary>
+        /// studentMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel studentMenu;
+        
+        /// <summary>
+        /// teacherMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel teacherMenu;
+        
+        /// <summary>
         /// LabelName control.
         /// </summary>
         /// <remarks>

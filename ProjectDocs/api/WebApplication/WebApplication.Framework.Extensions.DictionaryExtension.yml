@@ -14,8 +14,12 @@ items:
   fullName: WebApplication.Framework.Extensions.DictionaryExtension
   type: Class
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/DictionaryExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: DictionaryExtension
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\DictionaryExtension.cs
+    path: ../WebApplication/Framework/Extensions/DictionaryExtension.cs
     startLine: 9
   assemblies:
   - WebApplication
@@ -53,8 +57,12 @@ items:
   fullName: WebApplication.Framework.Extensions.DictionaryExtension.Add(System.Collections.Generic.Dictionary<System.String, System.String>, System.Collections.Specialized.NameValueCollection)
   type: Method
   source:
+    remote:
+      path: WebApplication/Framework/Extensions/DictionaryExtension.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
     id: Add
-    path: D:\Users\Ferran Tudela\source\repos\HADSProject\WebApplication\Framework\Extensions\DictionaryExtension.cs
+    path: ../WebApplication/Framework/Extensions/DictionaryExtension.cs
     startLine: 30
   assemblies:
   - WebApplication

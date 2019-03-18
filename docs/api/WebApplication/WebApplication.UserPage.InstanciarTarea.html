@@ -46,7 +46,15 @@
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
-            </div>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../articles/introduction.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../../api/DataBaseAccess/DataBaseAccess.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
           </div>
         </nav>
         
@@ -69,11 +77,197 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">DataBaseAccess</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../DataBaseAccess/DataBaseAccess.html" title="DataBaseAccess" class="">DataBaseAccess</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.DataAccessService.html" title="DataAccessService" class="">DataAccessService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.IDataAccessService.html" title="IDataAccessService" class="">IDataAccessService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.QueryResult.html" title="QueryResult" class="">QueryResult</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../DataBaseAccess/DataBaseAccess.Extensions.html" title="DataBaseAccess.Extensions" class="">DataBaseAccess.Extensions</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../DataBaseAccess/DataBaseAccess.Extensions.DataReaderExtension.html" title="DataReaderExtension" class="">DataReaderExtension</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">EmailLib</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../EmailLib/EmailLib.html" title="EmailLib" class="">EmailLib</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../EmailLib/EmailLib.EmailService.html" title="EmailService" class="">EmailService</a>
+                                </li>
+                                <li class="">
+                                  <a href="../EmailLib/EmailLib.SmtpServerConfig.html" title="SmtpServerConfig" class="">SmtpServerConfig</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">WebApplication</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.html" title="WebApplication" class="">WebApplication</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication._Default.html" title="_Default" class="">_Default</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.About.html" title="About" class="">About</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Account.html" title="Account" class="">Account</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Account.ActiveNav.html" title="Account.ActiveNav" class="">Account.ActiveNav</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.AppConfig.html" title="AppConfig" class="">AppConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.AppConfig.SmtpServer.html" title="AppConfig.SmtpServer" class="">AppConfig.SmtpServer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.BundleConfig.html" title="BundleConfig" class="">BundleConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.CambiarPassword.html" title="CambiarPassword" class="">CambiarPassword</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Confirmar.html" title="Confirmar" class="">Confirmar</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Contact.html" title="Contact" class="">Contact</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.EmailSent.html" title="EmailSent" class="">EmailSent</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Global.html" title="Global" class="">Global</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Inicio.html" title="Inicio" class="">Inicio</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Registro.html" title="Registro" class="">Registro</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.RouteConfig.html" title="RouteConfig" class="">RouteConfig</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.ScriptResource.html" title="ScriptResource" class="">ScriptResource</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Site_Mobile.html" title="Site_Mobile" class="">Site_Mobile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.SiteMaster.html" title="SiteMaster" class="">SiteMaster</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserTasks.html" title="UserTasks" class="">UserTasks</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.ViewSwitcher.html" title="ViewSwitcher" class="">ViewSwitcher</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.WebNotification.html" title="WebNotification" class="">WebNotification</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.Framework.html" title="WebApplication.Framework" class="">WebApplication.Framework</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.AlertLevel.html" title="AlertLevel" class="">AlertLevel</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.NotificationData.html" title="NotificationData" class="">NotificationData</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.ParametizedUrl.html" title="ParametizedUrl" class="">ParametizedUrl</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.Framework.Extensions.html" title="WebApplication.Framework.Extensions" class="">WebApplication.Framework.Extensions</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.Extensions.AttributeCollectionExtension.html" title="AttributeCollectionExtension" class="">AttributeCollectionExtension</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.Extensions.DictionaryExtension.html" title="DictionaryExtension" class="">DictionaryExtension</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.UserPage.html" title="WebApplication.UserPage" class="">WebApplication.UserPage</a>
+                              
+                              <ul class="nav level3">
+                                <li class="active">
+                                  <a href="../WebApplication/WebApplication.UserPage.InstanciarTarea.html" title="InstanciarTarea" class="active">InstanciarTarea</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserPage.TareasAlumno.html" title="TareasAlumno" class="">TareasAlumno</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.Utils.html" title="WebApplication.Utils" class="">WebApplication.Utils</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Utils.JsonFile.html" title="JsonFile" class="">JsonFile</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Utils.UrlUtils.html" title="UrlUtils" class="">UrlUtils</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="article row grid-right">
@@ -306,9 +500,6 @@
     </div>
     <div>
       <span class="xref">System.Web.UI.Page.MaintainScrollPositionOnPostBack</span>
-    </div>
-    <div>
-      <span class="xref">System.Web.UI.Page.Master</span>
     </div>
     <div>
       <span class="xref">System.Web.UI.Page.MasterPageFile</span>
@@ -831,13 +1022,13 @@
   </h3>
   
   
-  <h4 id="WebApplication_UserPage_InstanciarTarea_instantiateTask" data-uid="WebApplication.UserPage.InstanciarTarea.instantiateTask">instantiateTask</h4>
-  <div class="markdown level1 summary"><p>instantiateTask control.</p>
+  <h4 id="WebApplication_UserPage_InstanciarTarea_CancelButton" data-uid="WebApplication.UserPage.InstanciarTarea.CancelButton">CancelButton</h4>
+  <div class="markdown level1 summary"><p>CancelButton control.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LinkButton instantiateTask</code></pre>
+    <pre><code class="lang-csharp hljs">protected Button CancelButton</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -849,24 +1040,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.UI.WebControls.LinkButton</span></td>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="WebApplication_UserPage_InstanciarTarea_instantiateTask_remarks">Remarks</h5>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_CancelButton_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Auto-generated field.
 To modify move field declaration from designer file to code-behind file.</p>
 </div>
   
   
-  <h4 id="WebApplication_UserPage_InstanciarTarea_studentTasks" data-uid="WebApplication.UserPage.InstanciarTarea.studentTasks">studentTasks</h4>
-  <div class="markdown level1 summary"><p>studentTasks control.</p>
+  <h4 id="WebApplication_UserPage_InstanciarTarea_CodTareaTextBox" data-uid="WebApplication.UserPage.InstanciarTarea.CodTareaTextBox">CodTareaTextBox</h4>
+  <div class="markdown level1 summary"><p>CodTareaTextBox control.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LinkButton studentTasks</code></pre>
+    <pre><code class="lang-csharp hljs">protected TextBox CodTareaTextBox</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -878,24 +1069,24 @@ To modify move field declaration from designer file to code-behind file.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.UI.WebControls.LinkButton</span></td>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="WebApplication_UserPage_InstanciarTarea_studentTasks_remarks">Remarks</h5>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_CodTareaTextBox_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Auto-generated field.
 To modify move field declaration from designer file to code-behind file.</p>
 </div>
   
   
-  <h4 id="WebApplication_UserPage_InstanciarTarea_UserPanel" data-uid="WebApplication.UserPage.InstanciarTarea.UserPanel">UserPanel</h4>
-  <div class="markdown level1 summary"><p>UserPanel control.</p>
+  <h4 id="WebApplication_UserPage_InstanciarTarea_EmailTextBox" data-uid="WebApplication.UserPage.InstanciarTarea.EmailTextBox">EmailTextBox</h4>
+  <div class="markdown level1 summary"><p>EmailTextBox control.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Panel UserPanel</code></pre>
+    <pre><code class="lang-csharp hljs">protected TextBox EmailTextBox</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -907,17 +1098,196 @@ To modify move field declaration from designer file to code-behind file.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Web.UI.WebControls.Panel</span></td>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="WebApplication_UserPage_InstanciarTarea_UserPanel_remarks">Remarks</h5>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_EmailTextBox_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Auto-generated field.
 To modify move field declaration from designer file to code-behind file.</p>
+</div>
+  
+  
+  <h4 id="WebApplication_UserPage_InstanciarTarea_HEstimadasTextBox" data-uid="WebApplication.UserPage.InstanciarTarea.HEstimadasTextBox">HEstimadasTextBox</h4>
+  <div class="markdown level1 summary"><p>HEstimadasTextBox control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox HEstimadasTextBox</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_HEstimadasTextBox_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Auto-generated field.
+To modify move field declaration from designer file to code-behind file.</p>
+</div>
+  
+  
+  <h4 id="WebApplication_UserPage_InstanciarTarea_HRealesTextBox" data-uid="WebApplication.UserPage.InstanciarTarea.HRealesTextBox">HRealesTextBox</h4>
+  <div class="markdown level1 summary"><p>HRealesTextBox control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBox HRealesTextBox</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.TextBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_HRealesTextBox_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Auto-generated field.
+To modify move field declaration from designer file to code-behind file.</p>
+</div>
+  
+  
+  <h4 id="WebApplication_UserPage_InstanciarTarea_SaveChangesButton" data-uid="WebApplication.UserPage.InstanciarTarea.SaveChangesButton">SaveChangesButton</h4>
+  <div class="markdown level1 summary"><p>SaveChangesButton control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button SaveChangesButton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_SaveChangesButton_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Auto-generated field.
+To modify move field declaration from designer file to code-behind file.</p>
+</div>
+  
+  
+  <h4 id="WebApplication_UserPage_InstanciarTarea_SaveChangesShowModalButton" data-uid="WebApplication.UserPage.InstanciarTarea.SaveChangesShowModalButton">SaveChangesShowModalButton</h4>
+  <div class="markdown level1 summary"><p>SaveChangesShowModalButton control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button SaveChangesShowModalButton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.UI.WebControls.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_SaveChangesShowModalButton_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Auto-generated field.
+To modify move field declaration from designer file to code-behind file.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="WebApplication_UserPage_InstanciarTarea_Master_" data-uid="WebApplication.UserPage.InstanciarTarea.Master*"></a>
+  <h4 id="WebApplication_UserPage_InstanciarTarea_Master" data-uid="WebApplication.UserPage.InstanciarTarea.Master">Master</h4>
+  <div class="markdown level1 summary"><p>Master property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserTasks Master { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebApplication.UserTasks.html">UserTasks</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WebApplication_UserPage_InstanciarTarea_Master_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Auto-generated property.</p>
 </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="WebApplication_UserPage_InstanciarTarea_CancelButton_Click_" data-uid="WebApplication.UserPage.InstanciarTarea.CancelButton_Click*"></a>
+  <h4 id="WebApplication_UserPage_InstanciarTarea_CancelButton_Click_System_Object_System_EventArgs_" data-uid="WebApplication.UserPage.InstanciarTarea.CancelButton_Click(System.Object,System.EventArgs)">CancelButton_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CancelButton_Click(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="WebApplication_UserPage_InstanciarTarea_Page_Load_" data-uid="WebApplication.UserPage.InstanciarTarea.Page_Load*"></a>
@@ -927,6 +1297,38 @@ To modify move field declaration from designer file to code-behind file.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void Page_Load(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebApplication_UserPage_InstanciarTarea_SaveChangesButton_Click_" data-uid="WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click*"></a>
+  <h4 id="WebApplication_UserPage_InstanciarTarea_SaveChangesButton_Click_System_Object_System_EventArgs_" data-uid="WebApplication.UserPage.InstanciarTarea.SaveChangesButton_Click(System.Object,System.EventArgs)">SaveChangesButton_Click(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SaveChangesButton_Click(object sender, EventArgs e)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+
 using System.Web.Optimization;
-using System.Web.UI;
 
 namespace WebApplication {
 
@@ -37,6 +33,10 @@ namespace WebApplication {
 			// ready for production, use the build tool at https://modernizr.com to pick only the tests you need
 			bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
 				"~/Scripts/modernizr-*"
+			));
+
+			bundles.Add(new ScriptBundle("~/bundles/SvgInjector").Include(
+				"~/Scripts/svg-injector.min.js"
 			));
 
 		}

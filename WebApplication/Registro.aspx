@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebApplication.Registro" MasterPageFile="~/Account.master" Title="Registro" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebApplication.Registro" MasterPageFile="~/Account.Master" Title="Registro" %>
+<%@ MasterType VirtualPath="~/Account.Master" %>
 
 <asp:Content ID="RegisterContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
 
@@ -39,7 +40,7 @@
 
         <div class="form-group">
             <asp:Label runat="server" Font-Bold="True" AssociatedControlID="dropDownRol">Tipo de usuario:</asp:Label>
-            <asp:DropDownList ID="dropDownRol" CssClass="form-control dropdown dropdown-toggle" runat="server" TabIndex="6">
+            <asp:DropDownList ID="dropDownRol" CssClass="custom-select form-control dropdown dropdown-toggle" runat="server" TabIndex="6">
                 <asp:ListItem Value="Alumno"></asp:ListItem>
                 <asp:ListItem Value="Profesor"></asp:ListItem>
             </asp:DropDownList>

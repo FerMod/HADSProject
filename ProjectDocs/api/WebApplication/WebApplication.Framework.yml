@@ -7,6 +7,7 @@ items:
   - WebApplication.Framework.AlertLevel
   - WebApplication.Framework.NotificationData
   - WebApplication.Framework.ParametizedUrl
+  - WebApplication.Framework.Query
   langs:
   - csharp
   - vb
@@ -35,6 +36,11 @@ references:
   name: ParametizedUrl
   nameWithType: ParametizedUrl
   fullName: WebApplication.Framework.ParametizedUrl
+- uid: WebApplication.Framework.Query
+  commentId: T:WebApplication.Framework.Query
+  name: Query
+  nameWithType: Query
+  fullName: WebApplication.Framework.Query
 - uid: WebApplication.Framework
   commentId: N:WebApplication.Framework
   name: WebApplication.Framework
