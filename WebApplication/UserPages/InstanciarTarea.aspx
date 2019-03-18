@@ -17,7 +17,8 @@
                 <div class="modal-body">
     --%>
 
-    <h5>Instantiate Task</h5>
+    <h4>Instantiate Task</h4>
+	<hr />
 
     <div class="form-group">
         <asp:Label Font-Bold="True" runat="server" AssociatedControlID="EmailTextBox">Email:</asp:Label>
