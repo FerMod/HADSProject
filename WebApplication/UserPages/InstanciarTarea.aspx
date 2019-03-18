@@ -61,8 +61,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Save the made changes?
-                    Those changes will made permanent.
+                    Save the made changes?<br />
+                    Those changes will be made permanent, and cannot be edited after the submit.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
