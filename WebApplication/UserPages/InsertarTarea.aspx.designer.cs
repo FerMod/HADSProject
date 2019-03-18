@@ -13,58 +13,103 @@ namespace WebApplication.UserPages {
     public partial class InsertarTarea {
         
         /// <summary>
-        /// EmailTextBox control.
+        /// TeacherSubjectsDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
+        protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsDataSource;
         
         /// <summary>
-        /// CodTareaTextBox control.
+        /// GenericTasksSqlDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CodTareaTextBox;
+        protected global::System.Web.UI.WebControls.SqlDataSource GenericTasksSqlDataSource;
         
         /// <summary>
-        /// HEstimadasTextBox control.
+        /// SubjectsDropDown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox HEstimadasTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList SubjectsDropDown;
         
         /// <summary>
-        /// HRealesTextBox control.
+        /// CodeTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox HRealesTextBox;
+        protected global::System.Web.UI.WebControls.TextBox CodeTextBox;
         
         /// <summary>
-        /// HRealesIntegerValidator control.
+        /// CodeRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator HRealesIntegerValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CodeRequiredFieldValidator;
         
         /// <summary>
-        /// HRealesRequiredFieldValidator control.
+        /// EstimatedHoursTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator HRealesRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.TextBox EstimatedHoursTextBox;
+        
+        /// <summary>
+        /// EstimatedHoursIntegerValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator EstimatedHoursIntegerValidator;
+        
+        /// <summary>
+        /// EstimatedHoursRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EstimatedHoursRequiredFieldValidator;
+        
+        /// <summary>
+        /// DescriptionTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DescriptionTextBox;
+        
+        /// <summary>
+        /// TaskType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TaskType;
+        
+        /// <summary>
+        /// ActiveCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox ActiveCheckBox;
         
         /// <summary>
         /// CancelButton control.
@@ -76,13 +121,13 @@ namespace WebApplication.UserPages {
         protected global::System.Web.UI.WebControls.Button CancelButton;
         
         /// <summary>
-        /// SaveChangesButton control.
+        /// AddTaskButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveChangesButton;
+        protected global::System.Web.UI.WebControls.Button AddTaskButton;
         
         /// <summary>
         /// Master property.

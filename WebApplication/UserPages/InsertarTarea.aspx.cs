@@ -16,31 +16,17 @@ namespace WebApplication.UserPages {
 
 		private DataAccessService DataAccess => Master.DataAccess;
 		private SqlDataAdapter TaskDataAdapter { get => (SqlDataAdapter)Session["TaskDataAdapter"]; set => Session["TaskDataAdapter"] = value; }
-		private DataSet UserDataSet { get => Master.UserDataSet; set => Master.UserDataSet = value; }
-
-		private DataTable StudentTasksDataTable {
-			get {
-				return UserDataSet.Tables["StudentTasks"];
-			}
-			set {
-				value.TableName = "StudentTasks";
-				if(UserDataSet.Tables.Contains(value.TableName)) {
-					UserDataSet.Tables.Remove(value.TableName);
-				}
-				UserDataSet.Tables.Add(value);
-			}
-		}
 
 		private DataTable TasksDataTable {
 			get {
-				return UserDataSet.Tables["Tasks"];
+				return Master.UserDataSet.Tables["Tasks"];
 			}
 			set {
 				value.TableName = "Tasks";
-				if(UserDataSet.Tables.Contains(value.TableName)) {
-					UserDataSet.Tables.Remove(value.TableName);
+				if(Master.UserDataSet.Tables.Contains(value.TableName)) {
+					Master.UserDataSet.Tables.Remove(value.TableName);
 				}
-				UserDataSet.Tables.Add(value);
+				Master.UserDataSet.Tables.Add(value);
 			}
 		}
 
@@ -51,59 +37,36 @@ namespace WebApplication.UserPages {
 			}
 
 			if(!IsPostBack) {
-
-				string codeParam = Request.QueryString["code"];
-				if(String.IsNullOrWhiteSpace(codeParam)) {
-					//TODO: Show message
-				}
-
-				string email = (string)Session["Email"];
-
-				StudentTasksDataTable = CreateStudentsTasksDataTable(email);
-				DataRow tasksRow = TasksDataTable.Select($"Codigo = '{codeParam}'").First();
-
-				EmailTextBox.Text = email;
-				CodTareaTextBox.Text = codeParam;
-				HEstimadasTextBox.Text = tasksRow["HEstimadas"].ToString();
-
+				InitTasksDataTable();
 			}
 
 		}
 
-		private DataTable CreateStudentsTasksDataTable(string taskCode) {
-
-			/*
-			string query = "SELECT Email, CodTarea, HEstimadas, HReales " +
-							"FROM EstudiantesTareas " +
-							"WHERE Email = @Email " +
-							"AND CodTarea = @CodTarea";
-
-			Dictionary<string, object> parameters = new Dictionary<string, object> {
-				{ "@CodTarea", taskCode },
-				{ "@Email", email }
-			};
-			*/
-
-			TaskDataAdapter = DataAccess.CreateDataAdapter("SELECT * FROM EstudiantesTareas");
-
-			DataTable dataTable = new DataTable();
-			TaskDataAdapter.Fill(dataTable);
-
-			return dataTable;
+		private void InitTasksDataTable() {
+			TasksDataTable = new DataTable();
+			TaskDataAdapter = DataAccess.CreateDataAdapter(GenericTasksSqlDataSource.SelectCommand);
+			TaskDataAdapter.Fill(TasksDataTable);
 		}
 
-		protected void SaveChangesButton_Click(object sender, EventArgs e) {
+		protected void AddTaskButton_Click(object sender, EventArgs e) {
 
-			DataRow dataRow = StudentTasksDataTable.NewRow();
-			dataRow.SetField("Email", EmailTextBox.Text);
-			dataRow.SetField("CodTarea", CodTareaTextBox.Text);
-			dataRow.SetField("HEstimadas", HEstimadasTextBox.Text);
-			dataRow.SetField("HReales", HRealesTextBox.Text);
+			if(TasksDataTable.Select($"Codigo = '{CodeTextBox.Text}'").Length > 0) {
+				//ShowError("Duplicated code", "There is already a task with that code");
+				return;
+			}
 
-			StudentTasksDataTable.Rows.Add(dataRow);
+			DataRow dataRow = TasksDataTable.NewRow();
+			dataRow.SetField("Codigo", CodeTextBox.Text);
+			dataRow.SetField("Descripcion", DescriptionTextBox.Text);
+			dataRow.SetField("HEstimadas", EstimatedHoursTextBox.Text);
+			dataRow.SetField("CodAsig", SubjectsDropDown.Text);
+			dataRow.SetField("Explotacion", ActiveCheckBox.Checked);
+			dataRow.SetField("TipoTarea", TaskType.Text);
 
-			TaskDataAdapter.Update(StudentTasksDataTable);
-			StudentTasksDataTable.AcceptChanges();
+			TasksDataTable.Rows.Add(dataRow);
+
+			TaskDataAdapter.Update(TasksDataTable);
+			TasksDataTable.AcceptChanges();
 			Return();
 
 		}
@@ -113,7 +76,7 @@ namespace WebApplication.UserPages {
 		}
 
 		private void Return() {
-			Response.Redirect(Page.ResolveUrl(@"~/UserPages/TareasAlumno"));
+			Response.Redirect(Page.ResolveUrl(@"~/UserPages/TareasProfesor"));
 		}
 
 	}
