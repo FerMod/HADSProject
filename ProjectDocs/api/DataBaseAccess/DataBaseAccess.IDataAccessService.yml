@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: IDataAccessService
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Query
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
@@ -221,7 +221,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/IDataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CreateQueryDataTable
     path: ../DataBaseAccess/Framework/IDataAccessService.cs
