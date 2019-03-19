@@ -108,22 +108,40 @@ nav .container {
     padding: 10px;
 }
 
-.icon {
+.icon-sm {
+    width: 8px;
+    height: 8px;
+}
+
+.icon,
+.icon-md {
 	width: 16px;
     height: 16px;
 }
 
-.icon-edit {
-	fill: #06f !important;
+.icon-lg {
+	width: 32px;
+    height: 32px;
 }
 
-.icon-trash,
+.icon-edit {
+    /* background: url('/../img/open-iconic/svg/pencil.svg') no-repeat; */
+    fill: #06f;
+}
+
+.icon-trash {
+    /* background: url('/../img/open-iconic/svg/trash.svg') no-repeat; */
+    fill: #f00;
+}
+
 .icon-cancel {
-	fill: #f00 !important;
+    /* background: url('/../img/open-iconic/svg/x.svg') no-repeat; */
+    fill: #f00;
 }
 
 .icon-accept {
-	fill: #0f0 !important;
+    /* background: url('/../img/open-iconic/svg/check.svg') no-repeat; */
+    fill: #0f0;
 }
 
 /* Responsive: Portrait tablets and up */
