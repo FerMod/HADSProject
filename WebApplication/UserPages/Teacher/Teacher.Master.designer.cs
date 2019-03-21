@@ -31,6 +31,24 @@ namespace WebApplication.UserPages {
         protected global::System.Web.UI.WebControls.LinkButton TasksTab;
         
         /// <summary>
+        /// ImportTasksXmlDocumentTab control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ImportTasksXmlDocumentTab;
+        
+        /// <summary>
+        /// ImportTasksDataSetTab control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ImportTasksDataSetTab;
+        
+        /// <summary>
         /// TeacherTasksUpdatePanel control.
         /// </summary>
         /// <remarks>

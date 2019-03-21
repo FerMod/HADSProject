@@ -172,6 +172,10 @@ namespace WebApplication.UserPages {
 		protected void DropDownSubjects_SelectedIndexChanged(object sender, EventArgs e) {
 			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
 		}
+		
+		protected void DropDownSubjects_DataBound(object sender, EventArgs e) {
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
+		}
 
 		private void UpdateDisplayedTasksFilter(string rowFilter) {
 

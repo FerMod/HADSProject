@@ -6,7 +6,7 @@
 
     <div class="form-group">
         <asp:Label Font-Bold="True" runat="server" AssociatedControlID="DropDownSubjects">Select subject:</asp:Label>
-        <asp:DropDownList ID="DropDownSubjects" runat="server" TabIndex="1" OnSelectedIndexChanged="DropDownSubjects_SelectedIndexChanged" AutoPostBack="True" />
+        <asp:DropDownList ID="DropDownSubjects" runat="server" TabIndex="1" OnSelectedIndexChanged="DropDownSubjects_SelectedIndexChanged" AutoPostBack="True" OnDataBound="DropDownSubjects_DataBound"/>
     </div>
 
     <div class="form-group">

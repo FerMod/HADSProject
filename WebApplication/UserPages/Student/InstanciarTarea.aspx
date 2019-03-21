@@ -1,4 +1,4 @@
-<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/Student/Student.Master" AutoEventWireup="true" CodeBehind="InstanciarTarea.aspx.cs" Inherits="WebApplication.UserPages.InstanciarTarea" %>
+<%@ Page Title="Instantiate Task" Language="C#" MasterPageFile="~/UserPages/Student/Student.Master" AutoEventWireup="true" CodeBehind="InstanciarTarea.aspx.cs" Inherits="WebApplication.UserPages.InstanciarTarea" %>
 
 <%@ MasterType VirtualPath="~/UserPages/Student/Student.Master" %>
 

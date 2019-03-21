@@ -105,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\xml\HAS.xml" />
+    <Content Include="App_Data\xml\SEG.xml" />
+    <Content Include="App_Data\xml\XSLTFile.xsl" />
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Contact.aspx" />
@@ -1703,8 +1706,10 @@
     <Content Include="MailTemplates\AccountVerification.html" />
     <Content Include="Scripts\svg-injector.min.js" />
     <Content Include="UserPages\Student\StudentHome.aspx" />
+    <Content Include="UserPages\Teacher\ImportarTareasDataSet.aspx" />
     <Content Include="UserPages\Teacher\InsertarTarea.aspx" />
     <Content Include="UserPages\Student\InstanciarTarea.aspx" />
+    <Content Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx" />
     <Content Include="UserPages\Teacher\TeacherHome.aspx" />
     <Content Include="UserPages\Teacher\TareasProfesor.aspx" />
     <Content Include="UserPages\Student\TareasAlumno.aspx" />
@@ -3065,6 +3070,9 @@
     <Content Include="img\open-iconic\webp\zoom-out-6x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out-8x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out.webp" />
+    <None Include="App_Data\xml\tareas.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\HADS18-Tudela - Web Deploy - DEBUG.pubxml" />
     <Content Include="Inicio.aspx" />
@@ -3230,6 +3238,13 @@
     <Compile Include="UserPages\Student\Student.Master.designer.cs">
       <DependentUpon>Student.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasDataSet.aspx.cs">
+      <DependentUpon>ImportarTareasDataSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasDataSet.aspx.designer.cs">
+      <DependentUpon>ImportarTareasDataSet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPages\Teacher\InsertarTarea.aspx.cs">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3243,6 +3258,13 @@
     </Compile>
     <Compile Include="UserPages\Student\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx.cs">
+      <DependentUpon>ImportarTareasXmlDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx.designer.cs">
+      <DependentUpon>ImportarTareasXmlDocument.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPages\Teacher\TeacherHome.aspx.cs">
       <DependentUpon>TeacherHome.aspx</DependentUpon>
@@ -3289,9 +3311,7 @@
       <DependentUpon>WebNotification.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />

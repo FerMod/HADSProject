@@ -1,4 +1,4 @@
-<%@ Page Title="Student Tasks" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="TareasProfesor.aspx.cs" Inherits="WebApplication.UserPages.TareasProfesor" %>
+<%@ Page Title="Teacher Tasks" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="TareasProfesor.aspx.cs" Inherits="WebApplication.UserPages.TareasProfesor" %>
 
 <%@ MasterType VirtualPath="~/UserPages/Teacher/Teacher.Master" %>
 

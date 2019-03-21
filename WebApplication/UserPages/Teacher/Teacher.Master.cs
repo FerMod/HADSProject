@@ -12,7 +12,9 @@ namespace WebApplication.UserPages {
 	public enum TeacherMenu {
 		None = -1,
 		Home,
-		Tasks
+		Tasks,
+		ImportTasksXmlDocument,
+		ImportTasksDataSet
 	}
 
 	public partial class Teacher : MasterPage {
@@ -36,19 +38,27 @@ namespace WebApplication.UserPages {
 		}
 
 		public void ShowPage(TeacherMenu selectedMenu) {
+
+			HomeTab.RemoveCssClass("active", "disabled");
+			TasksTab.RemoveCssClass("active", "disabled");
+			ImportTasksXmlDocumentTab.RemoveCssClass("active", "disabled");
+			ImportTasksDataSetTab.RemoveCssClass("active", "disabled");
+
 			switch(selectedMenu) {
 				case TeacherMenu.Home:
 					HomeTab.AddCssClass("active", "disabled");
-					TasksTab.RemoveCssClass("active", "disabled");
 					break;
 				case TeacherMenu.Tasks:
-					HomeTab.RemoveCssClass("active", "disabled");
 					TasksTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.ImportTasksXmlDocument:
+					ImportTasksXmlDocumentTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.ImportTasksDataSet:
+					ImportTasksDataSetTab.AddCssClass("active", "disabled");
 					break;
 				case TeacherMenu.None:
 				default:
-					HomeTab.RemoveCssClass("active", "disabled");
-					TasksTab.RemoveCssClass("active", "disabled");
 					break;
 			}
 		}

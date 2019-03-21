@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
@@ -57,6 +57,21 @@ namespace WebApplication {
 				DeliveryMethod = (SmtpDeliveryMethod)Int32.Parse(WebConfigurationManager.AppSettings["DeliveryMethod"]);
 				UseDefaultCredentials = Convert.ToBoolean(WebConfigurationManager.AppSettings["UseDefaultCredentials"]);
 				EnableSsl = Convert.ToBoolean(WebConfigurationManager.AppSettings["EnableSsl"]);
+
+			}
+
+		}
+
+		public static class Xml {
+
+			/// <summary>
+			/// 
+			/// </summary>
+			public static string Folder { get; set; }
+
+			static Xml() {
+
+				Folder = WebConfigurationManager.AppSettings["XmlFolder"];
 
 			}
 
