@@ -27,7 +27,7 @@
     </div>
 
     <div class="form-group">
-        <asp:Button ID="ImportTasks" CssClass="btn btn-primary" runat="server" Text="Import Tasks" TabIndex="2" />
+        <asp:Button ID="ImportTasks" CssClass="btn btn-primary" runat="server" Text="Import Tasks" TabIndex="2" OnClick="ImportTasks_Click" />
     </div>
 
 </asp:Content>
