@@ -29,8 +29,8 @@ namespace WebApplication {
 
 		protected void Application_Start(object sender, EventArgs e) {
 
-			ScriptResource.RegisterJQuery(WebConfigurationManager.AppSettings["jquery"]);
-			ScriptResource.RegisterBoostrap(WebConfigurationManager.AppSettings["boostrap"]);
+			ScriptResource.RegisterJQuery(AppConfig.WebSite.JQueryVersion);
+			ScriptResource.RegisterBoostrap(AppConfig.WebSite.BoostrapVersion);
 
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);

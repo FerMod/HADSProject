@@ -11,14 +11,14 @@ namespace WebApplication {
 
 			if((bool)Session["IsLogged"]) {
 
-				LabelName.Text = (string)Session["Email"];
-				LabelLastName.Text = (string)Session["Name"];
-				LabelMail.Text = (string)Session["LastName"];
+				LabelName.Text = Convert.ToString(Session["Name"]);
+				LabelLastName.Text = Convert.ToString(Session["LastName"]);
+				LabelMail.Text = Convert.ToString(Session["Email"]);
 
 				userMenu.Visible = false;
 				loggedUserMenu.Visible = true;
 
-				ShowUserMenu((string)Session["UserType"]);
+				ShowUserMenu(Convert.ToString(Session["UserType"]));
 
 			} else {
 
@@ -44,18 +44,15 @@ namespace WebApplication {
 
 		private void ShowUserMenu(string userType) {
 
+			studentMenu.Visible = false;
+			teacherMenu.Visible = false;
+
 			switch(userType) {
 				case "Alumno":
 					studentMenu.Visible = true;
-					teacherMenu.Visible = false;
 					break;
 				case "Profesor":
-					studentMenu.Visible = false;
 					teacherMenu.Visible = true;
-					break;
-				default:
-					studentMenu.Visible = false;
-					teacherMenu.Visible = false;
 					break;
 			}
 

@@ -108,6 +108,14 @@ nav .container {
     padding: 10px;
 }
 
+.table-row-middle {
+	white-space: nowrap;
+}
+
+.table-row-middle > tbody > tr > td {
+	vertical-align: middle;
+}
+
 .icon-sm {
     width: 8px;
     height: 8px;

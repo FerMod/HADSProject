@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="tareas">
     <html>
-      <H3> Lista de tareas de la asignatura selecionada</H3>
+      <h5>Selected subject tasks</h5>
       <body>
-        <table border="2">
-          <tr>
-            <td>CODIGO</td>
-            <td>DESCRIPCION</td>
-            <td>HORAS EST.</td>
-          </tr>
-          <xsl:for-each select="./tarea">
+        <table class="table table-sm table-bordered table-responsive-md table-hover table-row-middle">
+          <thead class="thead-dark">
             <tr>
-              <td>
-                <xsl:value-of select="./@codigo"/>
-              </td>
-              <td>
-                <xsl:value-of select="./descripcion"/>
-              </td>
-              <td>
-                <xsl:value-of select="./hestimadas"/>
-              </td>
+              <th scope="col">Code</th>
+              <th scope="col">Description</th>
+              <th scope="col">Estimated Hours</th>
             </tr>
-          </xsl:for-each>
+          </thead>
+          <tbody>
+            <xsl:for-each select="./tarea">
+              <tr>
+                <td>
+                  <xsl:value-of select="./@codigo"/>
+                </td>
+                <td>
+                  <xsl:value-of select="./descripcion"/>
+                </td>
+                <td>
+                  <xsl:value-of select="./hestimadas"/>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </tbody>
         </table>
       </body>
     </html>
   </xsl:template>
-</xsl:stylesheet> 
+</xsl:stylesheet>
 

@@ -59,9 +59,9 @@
     </div>
 
     <div class="form-group">
-        <asp:GridView ID="GridViewTasks" ClientIDMode="Static" CssClass="table table-responsive-md table-hover" DataKeyNames="Codigo" AutoPostBack="True" runat="server" TabIndex="2" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" AllowSorting="True" EmptyDataText="No tasks available." DataSourceID="TeacherSubjectsTasksDataSource">
+        <asp:GridView ID="GridViewTasks" ClientIDMode="Static" CssClass="table table-sm table-bordered table-responsive-md table-hover table-row-middle" DataKeyNames="Codigo" AutoPostBack="True" runat="server" TabIndex="2" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" AllowSorting="True" EmptyDataText="No tasks available." DataSourceID="TeacherSubjectsTasksDataSource">
             <Columns>
-                <asp:TemplateField ShowHeader="False" ItemStyle-HorizontalAlign="center" ItemStyle-VerticalAlign="Middle">
+                <asp:TemplateField ShowHeader="False" ItemStyle-HorizontalAlign="Center">
                     <ItemTemplate>
                         <asp:ImageButton ID="EditButton" CssClass="icon icon-edit" runat="server" ImageUrl="~/img/open-iconic/svg/pencil.svg"
                             CommandName="Edit"
@@ -83,10 +83,10 @@
                 <asp:BoundField DataField="Descripcion" HeaderText="Description" SortExpression="Descripcion" />
                 <asp:BoundField DataField="HEstimadas" HeaderText="Estimated Hours" SortExpression="HEstimadas" />
                 <asp:BoundField DataField="TipoTarea" HeaderText="Task Type" SortExpression="TipoTarea" />
-                <asp:CheckBoxField DataField="Explotacion" HeaderText="Active" SortExpression="Explotacion" />
+                <asp:CheckBoxField DataField="Explotacion" HeaderText="Active" SortExpression="Explotacion" ItemStyle-HorizontalAlign="Center" />
 
             </Columns>
-            <HeaderStyle CssClass="table-striped thead-dark" />
+            <HeaderStyle CssClass="thead-dark" />
         </asp:GridView>
     </div>
 

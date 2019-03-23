@@ -13,6 +13,51 @@ namespace WebApplication.UserPages {
     public partial class ImportarTareasXmlDocument {
         
         /// <summary>
+        /// TeacherSubjectsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsDataSource;
+        
+        /// <summary>
+        /// DropDownSubjects control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownSubjects;
+        
+        /// <summary>
+        /// XmlData control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Xml XmlData;
+        
+        /// <summary>
+        /// ImportNotification control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebApplication.CustomControls.WebNotification ImportNotification;
+        
+        /// <summary>
+        /// ImportTasks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ImportTasks;
+        
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>

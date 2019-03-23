@@ -29,8 +29,8 @@ namespace WebApplication.UserPages {
 
 			if(!IsPostBack) {
 
-				if(!IsUserAllowed()) {
-					Response.Redirect("~/Default");
+				if(!IsAllowedUser()) {
+					Response.Redirect(AppConfig.WebSite.MainPage);
 				}
 
 			}
@@ -63,7 +63,7 @@ namespace WebApplication.UserPages {
 			}
 		}
 
-		private bool IsUserAllowed() {
+		private bool IsAllowedUser() {
 
 			if(!Convert.ToBoolean(Session["IsLogged"]) && RequiresLoggedUser) {
 				return false;

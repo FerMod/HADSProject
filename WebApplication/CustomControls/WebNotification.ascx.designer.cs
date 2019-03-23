@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication {
+namespace WebApplication.CustomControls {
     
     
     public partial class WebNotification {
