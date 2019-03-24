@@ -68,9 +68,9 @@ textarea {
     font-size: 12px;
 }
 
-    .label-link:hover {
-        text-decoration: none;
-    }
+.label-link:hover {
+    text-decoration: none;
+}
 
 nav .container {
     margin-left: 0;
@@ -117,8 +117,8 @@ nav .container {
 }
 
 .icon-sm {
-    width: 8px;
-    height: 8px;
+	width: 8px;
+	height: 8px;
 }
 
 .icon,
