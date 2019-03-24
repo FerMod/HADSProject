@@ -23,11 +23,12 @@
 
     <div class="form-group">
         <asp:Xml ID="XmlData" runat="server"></asp:Xml>
-        <web:Notification ID="ImportNotification" runat="server" />
     </div>
 
+	<web:Notification ID="ImportNotification" Dismissible="true" runat="server" />
+
     <div class="form-group">
-        <asp:Button ID="ImportTasks" CssClass="btn btn-primary" runat="server" Text="Import Tasks" TabIndex="2" OnClick="ImportTasks_Click" />
+        <asp:Button ID="ImportTasksButton" CssClass="btn btn-primary" Text="Import Tasks" TabIndex="2" OnClick="ImportTasks_Click" CausesValidation="False" Enabled="true" runat="server" />
     </div>
 
 </asp:Content>

@@ -1,15 +1,11 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WebNotification.ascx.cs" Inherits="WebApplication.CustomControls.WebNotification" %>
 
-<%--<asp:Content ID="NotificationContent" ContentPlaceHolderID="NotificationContent" runat="server">--%>
-
-<asp:Panel ID="Alert" CssClass="alert" role="alert" Visible="false" runat="server">
+<asp:Panel ID="Alert" CssClass="alert fade show" role="alert" Visible="false" runat="server" ViewStateMode="Enabled">
     <asp:Label ID="AlertTitle" CssClass="h4 alert-heading" Text="" runat="server" />
     <p class="mb-0">
         <asp:Label ID="AlertBody" Text="" runat="server" />
     </p>
-    <asp:LinkButton ID="AlertCloseButton" CssClass="close" data-dismiss="alert" aria-label="Close" Visible="false" runat="server">
+    <asp:LinkButton ID="AlertCloseButton" CssClass="close" data-dismiss="alert" aria-label="close" Visible="false" OnClick="AlertCloseButton_Click" runat="server" CausesValidation="False">
         <span aria-hidden="true">&times;</span>
     </asp:LinkButton>
 </asp:Panel>
-
-<%--</asp:Content>--%>

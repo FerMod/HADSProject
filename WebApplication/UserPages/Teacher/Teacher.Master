@@ -1,6 +1,7 @@
 <%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Teacher.Master.cs" Inherits="WebApplication.UserPages.Teacher" %>
 
 <%@ MasterType VirtualPath="~/Site.Master" %>
+<%@ Register TagPrefix="web" TagName="Notification" Src="~/CustomControls/WebNotification.ascx" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -22,8 +23,7 @@
 
                 <asp:UpdatePanel ID="TeacherTasksUpdatePanel" runat="server">
                     <ContentTemplate>
-                        <asp:ContentPlaceHolder ID="TeacherContent" runat="server">
-                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="TeacherContent" runat="server" />
                     </ContentTemplate>
                 </asp:UpdatePanel>
 

@@ -17,7 +17,12 @@ namespace WebApplication.UserPages {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			Master.ShowPage(TeacherMenu.ImportTasksDataSet);
+			if(!IsPostBack) {
+
+				// Change the current selected menu element
+				Master.ShowPage(TeacherMenu.ImportTasksDataSet);
+
+			}
 
 		}
 

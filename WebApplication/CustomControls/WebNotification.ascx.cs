@@ -1,5 +1,6 @@
 
 using System;
+using System.Text.RegularExpressions;
 using System.Web.UI;
 using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
@@ -17,15 +18,23 @@ namespace WebApplication.CustomControls {
 			get => _title;
 			set {
 				_title = value;
-				AlertTitle.Text = (value != null && value.Length != 0) ? $"{value}<hr>" : "";
+				AlertTitle.Text = (value != null && value.Length != 0) ? value : "";
 			}
 		}
-
+		public int DepartmentID {
+			get {
+				if(ViewState["departmentID"] == null)
+					return int.MinValue;
+				else
+					return (int)ViewState["departmentID"];
+			}
+			set { ViewState["departmentID"] = value; }
+		}
 		public AlertLevel Level {
 			get => _level;
 			set {
 				if(_level != value) {
-					Alert.RemoveCssClass(_level.ToString());
+					Alert.CssClass = Regex.Replace(Alert.CssClass, "(alert-(?!dismissible|link|heading))(?:\\w*|$)", "");
 				}
 				Alert.AddCssClass(value.ToString());
 				_level = value;
@@ -45,9 +54,9 @@ namespace WebApplication.CustomControls {
 			set {
 				AlertCloseButton.Visible = value;
 				if(value) {
-					Alert.AddCssClass("alert-dismissible", "fade", "show");
+					Alert.AddCssClass("alert-dismissible");
 				} else {
-					Alert.RemoveCssClass("alert-dismissible", "fade", "show");
+					Alert.RemoveCssClass("alert-dismissible");
 				}
 			}
 		}
@@ -73,26 +82,9 @@ namespace WebApplication.CustomControls {
 
 		}
 
-		/*
-		public void ShowNotification(NotificationData notificationData) {
-
-			AlertTitle.Visible = !String.IsNullOrWhiteSpace(notificationData.Title);
-			if(AlertTitle.Visible) {
-				AlertTitle.Text = $"{notificationData.Title}<hr>";
-			}
-
-			AlertBody.Text = notificationData.Body;
-			Alert.CssClass = $"{Alert.CssClass} {notificationData.Level}";
-
-			AlertCloseButton.Visible = notificationData.Dismissible;
-			if(notificationData.Dismissible) {
-				Alert.CssClass += " alert-dismissible fade show";
-			}
-
-			Visible = true;
-
+		protected void AlertCloseButton_Click(object sender, EventArgs e) {
+			Visible = false;
 		}
-		*/
 
 	}
 

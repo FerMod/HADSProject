@@ -64,12 +64,19 @@ namespace WebApplication {
 			Session["LastName"] = "";
 			Session["UserType"] = "";
 
+#if DEBUG
+			//TODO: Remove section
+			Session["IsLogged"] = true;
+			Session["Email"] = "blanco@ehu.es";
+			Session["UserType"] = "Profesor";
+#endif
+
 		}
 
 		protected void Application_EndRequest(object sender, EventArgs e) { }
 
 		protected void Session_End(object sender, EventArgs e) {
-			Response.Redirect("~/Default");
+			Response.Redirect(AppConfig.WebSite.MainPage);
 		}
 
 		protected void Application_End(object sender, EventArgs e) { }
