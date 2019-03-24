@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AlertLevel
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: None
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Primary
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Secondary
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Success
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Danger
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -245,7 +245,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Warning
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -280,7 +280,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Info
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Light
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -350,7 +350,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Dark
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ToString
     path: ../WebApplication/Framework/AlertLevel.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/AlertLevel.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: op_Explicit
     path: ../WebApplication/Framework/AlertLevel.cs

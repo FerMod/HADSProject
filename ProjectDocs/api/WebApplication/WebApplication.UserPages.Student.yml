@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Student
     path: ../WebApplication/UserPages/Student/Student.Master.designer.cs
@@ -240,7 +240,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Student/Student.Master.cs
@@ -275,7 +275,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: UserDataSet
     path: ../WebApplication/UserPages/Student/Student.Master.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Student/Student.Master.cs
@@ -345,7 +345,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowPage
     path: ../WebApplication/UserPages/Student/Student.Master.cs
@@ -378,7 +378,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HomeTab
     path: ../WebApplication/UserPages/Student/Student.Master.designer.cs
@@ -412,7 +412,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TasksTab
     path: ../WebApplication/UserPages/Student/Student.Master.designer.cs
@@ -446,7 +446,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: StudentTasksUpdatePanel
     path: ../WebApplication/UserPages/Student/Student.Master.designer.cs
@@ -480,7 +480,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: StudentContent
     path: ../WebApplication/UserPages/Student/Student.Master.designer.cs
@@ -514,7 +514,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Student/Student.Master.designer.cs

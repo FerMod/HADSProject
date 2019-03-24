@@ -4,6 +4,8 @@ items:
   commentId: N:WebApplication.UserPages
   id: WebApplication.UserPages
   children:
+  - WebApplication.UserPages.ImportarTareasDataSet
+  - WebApplication.UserPages.ImportarTareasXmlDocument
   - WebApplication.UserPages.InsertarTarea
   - WebApplication.UserPages.InstanciarTarea
   - WebApplication.UserPages.Student
@@ -41,6 +43,11 @@ references:
   name: Student
   nameWithType: Student
   fullName: WebApplication.UserPages.Student
+- uid: WebApplication.UserPages.ImportarTareasDataSet
+  commentId: T:WebApplication.UserPages.ImportarTareasDataSet
+  name: ImportarTareasDataSet
+  nameWithType: ImportarTareasDataSet
+  fullName: WebApplication.UserPages.ImportarTareasDataSet
 - uid: WebApplication.UserPages.InsertarTarea
   commentId: T:WebApplication.UserPages.InsertarTarea
   name: InsertarTarea
@@ -51,6 +58,11 @@ references:
   name: InstanciarTarea
   nameWithType: InstanciarTarea
   fullName: WebApplication.UserPages.InstanciarTarea
+- uid: WebApplication.UserPages.ImportarTareasXmlDocument
+  commentId: T:WebApplication.UserPages.ImportarTareasXmlDocument
+  name: ImportarTareasXmlDocument
+  nameWithType: ImportarTareasXmlDocument
+  fullName: WebApplication.UserPages.ImportarTareasXmlDocument
 - uid: WebApplication.UserPages.TeacherHome
   commentId: T:WebApplication.UserPages.TeacherHome
   name: TeacherHome

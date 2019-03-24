@@ -22,11 +22,11 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SmtpServer
     path: ../WebApplication/AppConfig.cs
-    startLine: 13
+    startLine: 40
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -64,31 +64,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Account
     path: ../WebApplication/AppConfig.cs
-    startLine: 18
+    startLine: 45
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static string Account { get; set; }
+    content: public static string Account { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Shared Property Account As String
+    content.vb: Public Shared ReadOnly Property Account As String
   overload: WebApplication.AppConfig.SmtpServer.Account*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: WebApplication.AppConfig.SmtpServer.Password
   commentId: P:WebApplication.AppConfig.SmtpServer.Password
   id: Password
@@ -103,31 +103,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Password
     path: ../WebApplication/AppConfig.cs
-    startLine: 23
+    startLine: 50
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static string Password { get; set; }
+    content: public static string Password { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Shared Property Password As String
+    content.vb: Public Shared ReadOnly Property Password As String
   overload: WebApplication.AppConfig.SmtpServer.Password*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: WebApplication.AppConfig.SmtpServer.Host
   commentId: P:WebApplication.AppConfig.SmtpServer.Host
   id: Host
@@ -142,31 +142,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Host
     path: ../WebApplication/AppConfig.cs
-    startLine: 28
+    startLine: 55
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static string Host { get; set; }
+    content: public static string Host { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Shared Property Host As String
+    content.vb: Public Shared ReadOnly Property Host As String
   overload: WebApplication.AppConfig.SmtpServer.Host*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: WebApplication.AppConfig.SmtpServer.Port
   commentId: P:WebApplication.AppConfig.SmtpServer.Port
   id: Port
@@ -181,31 +181,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Port
     path: ../WebApplication/AppConfig.cs
-    startLine: 33
+    startLine: 60
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static int Port { get; set; }
+    content: public static int Port { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Shared Property Port As Integer
+    content.vb: Public Shared ReadOnly Property Port As Integer
   overload: WebApplication.AppConfig.SmtpServer.Port*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: WebApplication.AppConfig.SmtpServer.DeliveryMethod
   commentId: P:WebApplication.AppConfig.SmtpServer.DeliveryMethod
   id: DeliveryMethod
@@ -220,31 +220,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DeliveryMethod
     path: ../WebApplication/AppConfig.cs
-    startLine: 38
+    startLine: 65
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static SmtpDeliveryMethod DeliveryMethod { get; set; }
+    content: public static SmtpDeliveryMethod DeliveryMethod { get; }
     parameters: []
     return:
       type: System.Net.Mail.SmtpDeliveryMethod
-    content.vb: Public Shared Property DeliveryMethod As SmtpDeliveryMethod
+    content.vb: Public Shared ReadOnly Property DeliveryMethod As SmtpDeliveryMethod
   overload: WebApplication.AppConfig.SmtpServer.DeliveryMethod*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
   commentId: P:WebApplication.AppConfig.SmtpServer.UseDefaultCredentials
   id: UseDefaultCredentials
@@ -259,31 +259,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: UseDefaultCredentials
     path: ../WebApplication/AppConfig.cs
-    startLine: 43
+    startLine: 70
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static bool UseDefaultCredentials { get; set; }
+    content: public static bool UseDefaultCredentials { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Shared Property UseDefaultCredentials As Boolean
+    content.vb: Public Shared ReadOnly Property UseDefaultCredentials As Boolean
   overload: WebApplication.AppConfig.SmtpServer.UseDefaultCredentials*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: WebApplication.AppConfig.SmtpServer.EnableSsl
   commentId: P:WebApplication.AppConfig.SmtpServer.EnableSsl
   id: EnableSsl
@@ -298,31 +298,31 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EnableSsl
     path: ../WebApplication/AppConfig.cs
-    startLine: 48
+    startLine: 75
   assemblies:
   - WebApplication
   namespace: WebApplication
   summary: "\n\n"
   example: []
   syntax:
-    content: public static bool EnableSsl { get; set; }
+    content: public static bool EnableSsl { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Shared Property EnableSsl As Boolean
+    content.vb: Public Shared ReadOnly Property EnableSsl As Boolean
   overload: WebApplication.AppConfig.SmtpServer.EnableSsl*
   modifiers.csharp:
   - public
   - static
   - get
-  - set
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 references:
 - uid: WebApplication
   commentId: N:WebApplication

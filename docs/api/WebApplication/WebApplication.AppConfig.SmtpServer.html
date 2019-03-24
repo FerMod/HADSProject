@@ -168,6 +168,12 @@
                                   <a href="../WebApplication/WebApplication.AppConfig.SmtpServer.html" title="AppConfig.SmtpServer" class="active">AppConfig.SmtpServer</a>
                                 </li>
                                 <li class="">
+                                  <a href="../WebApplication/WebApplication.AppConfig.WebSite.html" title="AppConfig.WebSite" class="">AppConfig.WebSite</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.AppConfig.Xml.html" title="AppConfig.Xml" class="">AppConfig.Xml</a>
+                                </li>
+                                <li class="">
                                   <a href="../WebApplication/WebApplication.BundleConfig.html" title="BundleConfig" class="">BundleConfig</a>
                                 </li>
                                 <li class="">
@@ -207,7 +213,16 @@
                                   <a href="../WebApplication/WebApplication.ViewSwitcher.html" title="ViewSwitcher" class="">ViewSwitcher</a>
                                 </li>
                                 <li class="">
-                                  <a href="../WebApplication/WebApplication.WebNotification.html" title="WebNotification" class="">WebNotification</a>
+                                  <a href="../WebApplication/WebApplication.WebAlertNotification.html" title="WebAlertNotification" class="">WebAlertNotification</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../WebApplication/WebApplication.CustomControls.html" title="WebApplication.CustomControls" class="">WebApplication.CustomControls</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.CustomControls.WebNotification.html" title="WebNotification" class="">WebNotification</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -227,6 +242,9 @@
                                 <li class="">
                                   <a href="../WebApplication/WebApplication.Framework.Query.html" title="Query" class="">Query</a>
                                 </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.Framework.Query.GenericTasks.html" title="Query.GenericTasks" class="">Query.GenericTasks</a>
+                                </li>
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
@@ -245,6 +263,12 @@
                             <a href="../WebApplication/WebApplication.UserPages.html" title="WebApplication.UserPages" class="">WebApplication.UserPages</a>
                               
                               <ul class="nav level3">
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserPages.ImportarTareasDataSet.html" title="ImportarTareasDataSet" class="">ImportarTareasDataSet</a>
+                                </li>
+                                <li class="">
+                                  <a href="../WebApplication/WebApplication.UserPages.ImportarTareasXmlDocument.html" title="ImportarTareasXmlDocument" class="">ImportarTareasXmlDocument</a>
+                                </li>
                                 <li class="">
                                   <a href="../WebApplication/WebApplication.UserPages.InsertarTarea.html" title="InsertarTarea" class="">InsertarTarea</a>
                                 </li>
@@ -345,7 +369,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_Account.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.Account%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L19">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L46">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_Account_" data-uid="WebApplication.AppConfig.SmtpServer.Account*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_Account" data-uid="WebApplication.AppConfig.SmtpServer.Account">Account</h4>
@@ -353,7 +377,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Account { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Account { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -375,7 +399,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_DeliveryMethod.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.DeliveryMethod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L39">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L66">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_DeliveryMethod_" data-uid="WebApplication.AppConfig.SmtpServer.DeliveryMethod*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_DeliveryMethod" data-uid="WebApplication.AppConfig.SmtpServer.DeliveryMethod">DeliveryMethod</h4>
@@ -383,7 +407,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SmtpDeliveryMethod DeliveryMethod { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static SmtpDeliveryMethod DeliveryMethod { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -405,7 +429,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_EnableSsl.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.EnableSsl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L49">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L76">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_EnableSsl_" data-uid="WebApplication.AppConfig.SmtpServer.EnableSsl*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_EnableSsl" data-uid="WebApplication.AppConfig.SmtpServer.EnableSsl">EnableSsl</h4>
@@ -413,7 +437,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EnableSsl { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool EnableSsl { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -435,7 +459,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_Host.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.Host%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L29">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L56">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_Host_" data-uid="WebApplication.AppConfig.SmtpServer.Host*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_Host" data-uid="WebApplication.AppConfig.SmtpServer.Host">Host</h4>
@@ -443,7 +467,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Host { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Host { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -465,7 +489,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_Password.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.Password%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L24">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L51">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_Password_" data-uid="WebApplication.AppConfig.SmtpServer.Password*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_Password" data-uid="WebApplication.AppConfig.SmtpServer.Password">Password</h4>
@@ -473,7 +497,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Password { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Password { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -495,7 +519,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_Port.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.Port%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L34">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L61">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_Port_" data-uid="WebApplication.AppConfig.SmtpServer.Port*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_Port" data-uid="WebApplication.AppConfig.SmtpServer.Port">Port</h4>
@@ -503,7 +527,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Port { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int Port { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -525,7 +549,7 @@
     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer_UseDefaultCredentials.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer.UseDefaultCredentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L44">View Source</a>
+    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L71">View Source</a>
   </span>
   <a id="WebApplication_AppConfig_SmtpServer_UseDefaultCredentials_" data-uid="WebApplication.AppConfig.SmtpServer.UseDefaultCredentials*"></a>
   <h4 id="WebApplication_AppConfig_SmtpServer_UseDefaultCredentials" data-uid="WebApplication.AppConfig.SmtpServer.UseDefaultCredentials">UseDefaultCredentials</h4>
@@ -533,7 +557,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool UseDefaultCredentials { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool UseDefaultCredentials { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -561,7 +585,7 @@
                     <a href="https://github.com/FerMod/HADSProject/new/master/docs-ref-overwrite/new?filename=WebApplication_AppConfig_SmtpServer.md&amp;value=---%0Auid%3A%20WebApplication.AppConfig.SmtpServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/FerMod/HADSProject/blob/master/WebApplication/AppConfig.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FerMod/HADSProject/blob/FerMod/WebApplication/AppConfig.cs/#L41" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

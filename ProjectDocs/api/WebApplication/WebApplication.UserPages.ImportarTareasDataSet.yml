@@ -1,38 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.WebNotification
-  commentId: T:WebApplication.WebNotification
-  id: WebNotification
-  parent: WebApplication
+- uid: WebApplication.UserPages.ImportarTareasDataSet
+  commentId: T:WebApplication.UserPages.ImportarTareasDataSet
+  id: ImportarTareasDataSet
+  parent: WebApplication.UserPages
   children:
-  - WebApplication.WebNotification.Alert
-  - WebApplication.WebNotification.AlertBody
-  - WebApplication.WebNotification.AlertCloseButton
-  - WebApplication.WebNotification.AlertTitle
-  - WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  - WebApplication.UserPages.ImportarTareasDataSet.Master
+  - WebApplication.UserPages.ImportarTareasDataSet.Page_Load(System.Object,System.EventArgs)
   langs:
   - csharp
   - vb
-  name: WebNotification
-  nameWithType: WebNotification
-  fullName: WebApplication.WebNotification
+  name: ImportarTareasDataSet
+  nameWithType: ImportarTareasDataSet
+  fullName: WebApplication.UserPages.ImportarTareasDataSet
   type: Class
   source:
     remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: WebNotification
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    id: ImportarTareasDataSet
+    path: ../WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
-  namespace: WebApplication
+  namespace: WebApplication.UserPages
   syntax:
-    content: 'public class WebNotification : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
+    content: 'public class ImportarTareasDataSet : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
     content.vb: >-
-      Public Class WebNotification
+      Public Class ImportarTareasDataSet
           Inherits Page
           Implements IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler
   inheritance:
@@ -119,7 +115,6 @@ items:
   - System.Web.UI.Page.AutoPostBackControl
   - System.Web.UI.Page.Header
   - System.Web.UI.Page.MaintainScrollPositionOnPostBack
-  - System.Web.UI.Page.Master
   - System.Web.UI.Page.MasterPageFile
   - System.Web.UI.Page.PageStatePersister
   - System.Web.UI.Page.Trace
@@ -296,28 +291,28 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
-  commentId: M:WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.ImportarTareasDataSet.Page_Load(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ImportarTareasDataSet.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
-  parent: WebApplication.WebNotification
+  parent: WebApplication.UserPages.ImportarTareasDataSet
   langs:
   - csharp
   - vb
   name: Page_Load(Object, EventArgs)
-  nameWithType: WebNotification.Page_Load(Object, EventArgs)
-  fullName: WebApplication.WebNotification.Page_Load(System.Object, System.EventArgs)
+  nameWithType: ImportarTareasDataSet.Page_Load(Object, EventArgs)
+  fullName: WebApplication.UserPages.ImportarTareasDataSet.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
-      path: WebApplication/WebNotification.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/WebNotification.aspx.cs
-    startLine: 13
+    path: ../WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.cs
+    startLine: 17
   assemblies:
   - WebApplication
-  namespace: WebApplication
+  namespace: WebApplication.UserPages
   syntax:
     content: protected void Page_Load(object sender, EventArgs e)
     parameters:
@@ -326,186 +321,55 @@ items:
     - id: e
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
-  overload: WebApplication.WebNotification.Page_Load*
+  overload: WebApplication.UserPages.ImportarTareasDataSet.Page_Load*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
-  commentId: M:WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
-  id: UpdateContent(WebApplication.Framework.NotificationData)
-  parent: WebApplication.WebNotification
+- uid: WebApplication.UserPages.ImportarTareasDataSet.Master
+  commentId: P:WebApplication.UserPages.ImportarTareasDataSet.Master
+  id: Master
+  parent: WebApplication.UserPages.ImportarTareasDataSet
   langs:
   - csharp
   - vb
-  name: UpdateContent(NotificationData)
-  nameWithType: WebNotification.UpdateContent(NotificationData)
-  fullName: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
-  type: Method
+  name: Master
+  nameWithType: ImportarTareasDataSet.Master
+  fullName: WebApplication.UserPages.ImportarTareasDataSet.Master
+  type: Property
   source:
     remote:
-      path: WebApplication/WebNotification.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: UpdateContent
-    path: ../WebApplication/WebNotification.aspx.cs
-    startLine: 22
+    id: Master
+    path: ../WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
+    startLine: 20
   assemblies:
   - WebApplication
-  namespace: WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
+  example: []
   syntax:
-    content: public void UpdateContent(NotificationData notificationData)
-    parameters:
-    - id: notificationData
-      type: WebApplication.Framework.NotificationData
-    content.vb: Public Sub UpdateContent(notificationData As NotificationData)
-  overload: WebApplication.WebNotification.UpdateContent*
+    content: public Teacher Master { get; }
+    parameters: []
+    return:
+      type: WebApplication.UserPages.Teacher
+    content.vb: Public ReadOnly Property Master As Teacher
+  overload: WebApplication.UserPages.ImportarTareasDataSet.Master*
   modifiers.csharp:
   - public
+  - get
   modifiers.vb:
   - Public
-- uid: WebApplication.WebNotification.Alert
-  commentId: F:WebApplication.WebNotification.Alert
-  id: Alert
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: Alert
-  nameWithType: WebNotification.Alert
-  fullName: WebApplication.WebNotification.Alert
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: Alert
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 21
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlert control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Panel Alert
-    return:
-      type: System.Web.UI.WebControls.Panel
-    content.vb: Protected Alert As Panel
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.WebNotification.AlertTitle
-  commentId: F:WebApplication.WebNotification.AlertTitle
-  id: AlertTitle
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: AlertTitle
-  nameWithType: WebNotification.AlertTitle
-  fullName: WebApplication.WebNotification.AlertTitle
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: AlertTitle
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 30
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlertTitle control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Label AlertTitle
-    return:
-      type: System.Web.UI.WebControls.Label
-    content.vb: Protected AlertTitle As Label
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.WebNotification.AlertBody
-  commentId: F:WebApplication.WebNotification.AlertBody
-  id: AlertBody
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: AlertBody
-  nameWithType: WebNotification.AlertBody
-  fullName: WebApplication.WebNotification.AlertBody
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: AlertBody
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 39
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlertBody control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Label AlertBody
-    return:
-      type: System.Web.UI.WebControls.Label
-    content.vb: Protected AlertBody As Label
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.WebNotification.AlertCloseButton
-  commentId: F:WebApplication.WebNotification.AlertCloseButton
-  id: AlertCloseButton
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: AlertCloseButton
-  nameWithType: WebNotification.AlertCloseButton
-  fullName: WebApplication.WebNotification.AlertCloseButton
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: AlertCloseButton
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 48
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlertCloseButton control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected LinkButton AlertCloseButton
-    return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected AlertCloseButton As LinkButton
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
+  - ReadOnly
 references:
-- uid: WebApplication
-  commentId: N:WebApplication
-  name: WebApplication
-  nameWithType: WebApplication
-  fullName: WebApplication
+- uid: WebApplication.UserPages
+  commentId: N:WebApplication.UserPages
+  name: WebApplication.UserPages
+  nameWithType: WebApplication.UserPages
+  fullName: WebApplication.UserPages
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -2977,13 +2841,6 @@ references:
   name: MaintainScrollPositionOnPostBack
   nameWithType: Page.MaintainScrollPositionOnPostBack
   fullName: System.Web.UI.Page.MaintainScrollPositionOnPostBack
-- uid: System.Web.UI.Page.Master
-  commentId: P:System.Web.UI.Page.Master
-  parent: System.Web.UI.Page
-  isExternal: true
-  name: Master
-  nameWithType: Page.Master
-  fullName: System.Web.UI.Page.Master
 - uid: System.Web.UI.Page.MasterPageFile
   commentId: P:System.Web.UI.Page.MasterPageFile
   parent: System.Web.UI.Page
@@ -7505,11 +7362,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.WebNotification.Page_Load*
-  commentId: Overload:WebApplication.WebNotification.Page_Load
+- uid: WebApplication.UserPages.ImportarTareasDataSet.Page_Load*
+  commentId: Overload:WebApplication.UserPages.ImportarTareasDataSet.Page_Load
   name: Page_Load
-  nameWithType: WebNotification.Page_Load
-  fullName: WebApplication.WebNotification.Page_Load
+  nameWithType: ImportarTareasDataSet.Page_Load
+  fullName: WebApplication.UserPages.ImportarTareasDataSet.Page_Load
 - uid: System.EventArgs
   commentId: T:System.EventArgs
   parent: System
@@ -7517,46 +7374,14 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.WebNotification.UpdateContent*
-  commentId: Overload:WebApplication.WebNotification.UpdateContent
-  name: UpdateContent
-  nameWithType: WebNotification.UpdateContent
-  fullName: WebApplication.WebNotification.UpdateContent
-- uid: WebApplication.Framework.NotificationData
-  commentId: T:WebApplication.Framework.NotificationData
-  parent: WebApplication.Framework
-  name: NotificationData
-  nameWithType: NotificationData
-  fullName: WebApplication.Framework.NotificationData
-- uid: WebApplication.Framework
-  commentId: N:WebApplication.Framework
-  name: WebApplication.Framework
-  nameWithType: WebApplication.Framework
-  fullName: WebApplication.Framework
-- uid: System.Web.UI.WebControls.Panel
-  commentId: T:System.Web.UI.WebControls.Panel
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: Panel
-  nameWithType: Panel
-  fullName: System.Web.UI.WebControls.Panel
-- uid: System.Web.UI.WebControls
-  commentId: N:System.Web.UI.WebControls
-  isExternal: true
-  name: System.Web.UI.WebControls
-  nameWithType: System.Web.UI.WebControls
-  fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.Label
-  commentId: T:System.Web.UI.WebControls.Label
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: Label
-  nameWithType: Label
-  fullName: System.Web.UI.WebControls.Label
-- uid: System.Web.UI.WebControls.LinkButton
-  commentId: T:System.Web.UI.WebControls.LinkButton
-  parent: System.Web.UI.WebControls
-  isExternal: true
-  name: LinkButton
-  nameWithType: LinkButton
-  fullName: System.Web.UI.WebControls.LinkButton
+- uid: WebApplication.UserPages.ImportarTareasDataSet.Master*
+  commentId: Overload:WebApplication.UserPages.ImportarTareasDataSet.Master
+  name: Master
+  nameWithType: ImportarTareasDataSet.Master
+  fullName: WebApplication.UserPages.ImportarTareasDataSet.Master
+- uid: WebApplication.UserPages.Teacher
+  commentId: T:WebApplication.UserPages.Teacher
+  parent: WebApplication.UserPages
+  name: Teacher
+  nameWithType: Teacher
+  fullName: WebApplication.UserPages.Teacher

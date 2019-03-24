@@ -8,6 +8,7 @@ items:
   - WebApplication.Framework.NotificationData
   - WebApplication.Framework.ParametizedUrl
   - WebApplication.Framework.Query
+  - WebApplication.Framework.Query.GenericTasks
   langs:
   - csharp
   - vb
@@ -41,6 +42,11 @@ references:
   name: Query
   nameWithType: Query
   fullName: WebApplication.Framework.Query
+- uid: WebApplication.Framework.Query.GenericTasks
+  commentId: T:WebApplication.Framework.Query.GenericTasks
+  name: Query.GenericTasks
+  nameWithType: Query.GenericTasks
+  fullName: WebApplication.Framework.Query.GenericTasks
 - uid: WebApplication.Framework
   commentId: N:WebApplication.Framework
   name: WebApplication.Framework

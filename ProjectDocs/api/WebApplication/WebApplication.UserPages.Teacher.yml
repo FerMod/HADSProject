@@ -7,6 +7,8 @@ items:
   children:
   - WebApplication.UserPages.Teacher.DataAccess
   - WebApplication.UserPages.Teacher.HomeTab
+  - WebApplication.UserPages.Teacher.ImportTasksDataSetTab
+  - WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
   - WebApplication.UserPages.Teacher.Master
   - WebApplication.UserPages.Teacher.Page_Load(System.Object,System.EventArgs)
   - WebApplication.UserPages.Teacher.ShowPage(WebApplication.UserPages.TeacherMenu)
@@ -24,7 +26,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Teacher
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -240,11 +242,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -275,11 +277,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: UserDataSet
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -310,11 +312,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -345,11 +347,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowPage
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 37
+    startLine: 40
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -378,7 +380,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HomeTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -412,7 +414,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TasksTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -432,6 +434,74 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
+  commentId: F:WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
+  id: ImportTasksXmlDocumentTab
+  parent: WebApplication.UserPages.Teacher
+  langs:
+  - csharp
+  - vb
+  name: ImportTasksXmlDocumentTab
+  nameWithType: Teacher.ImportTasksXmlDocumentTab
+  fullName: WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ImportTasksXmlDocumentTab
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nImportTasksXmlDocumentTab control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected LinkButton ImportTasksXmlDocumentTab
+    return:
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected ImportTasksXmlDocumentTab As LinkButton
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.Teacher.ImportTasksDataSetTab
+  commentId: F:WebApplication.UserPages.Teacher.ImportTasksDataSetTab
+  id: ImportTasksDataSetTab
+  parent: WebApplication.UserPages.Teacher
+  langs:
+  - csharp
+  - vb
+  name: ImportTasksDataSetTab
+  nameWithType: Teacher.ImportTasksDataSetTab
+  fullName: WebApplication.UserPages.Teacher.ImportTasksDataSetTab
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ImportTasksDataSetTab
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nImportTasksDataSetTab control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected LinkButton ImportTasksDataSetTab
+    return:
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected ImportTasksDataSetTab As LinkButton
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.UserPages.Teacher.TeacherTasksUpdatePanel
   commentId: F:WebApplication.UserPages.Teacher.TeacherTasksUpdatePanel
   id: TeacherTasksUpdatePanel
@@ -446,11 +516,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherTasksUpdatePanel
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 39
+    startLine: 57
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -480,11 +550,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherContent
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 48
+    startLine: 66
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -514,11 +584,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 56
+    startLine: 74
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages

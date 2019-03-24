@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AttributeCollectionExtension
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
@@ -64,15 +64,15 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AddClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework.Extensions
-  summary: "\nAdds to the control the class that with the passed name\n"
+  summary: "\nAppends the <code>CSS</code> classes passed as parameters to the already existing ones in the control <xref href=\"System.Web.UI.WebControls.WebControl.Attributes\" data-throw-if-not-resolved=\"false\"></xref> collection.\nIf there is no attribute named <code>&quot;class&quot;</code> in the collection, one will be added.\n"
   example: []
   syntax:
     content: public static void AddClass(this WebControl webControl, params string[] classNameParams)
@@ -112,15 +112,15 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AddCssClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework.Extensions
-  summary: "\nAdds to the control the class that with the passed name\n"
+  summary: "\nAppends the <code>CSS</code> classes passed as parameters to the already existing ones in the control <xref href=\"System.Web.UI.WebControls.WebControl.CssClass\" data-throw-if-not-resolved=\"false\"></xref> property.\n"
   example: []
   syntax:
     content: public static void AddCssClass(this WebControl webControl, params string[] classNameParams)
@@ -160,15 +160,15 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RemoveClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-    startLine: 40
+    startLine: 61
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework.Extensions
-  summary: "\nRemoves the from the control the class that matches the name\n"
+  summary: "\nRemove the <code>CSS</code> classes of the attribute <code>&quot;class&quot;</code> defined in the control <xref href=\"System.Web.UI.WebControls.WebControl.Attributes\" data-throw-if-not-resolved=\"false\"></xref> collection, that match the names passed as parameters.\nIf the attribute <code>&quot;class&quot;</code> in the collection has no <code>CSS</code> classes it will be removed from the control.\n"
   example: []
   syntax:
     content: public static void RemoveClass(this WebControl webControl, params string[] classNameParams)
@@ -208,15 +208,15 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RemoveCssClass
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-    startLine: 53
+    startLine: 82
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework.Extensions
-  summary: "\nRemoves the from the control the class that matches the name\n"
+  summary: "\nRemoves from the control <xref href=\"System.Web.UI.WebControls.WebControl.CssClass\" data-throw-if-not-resolved=\"false\"></xref> property, the <code>CSS</code> classes that match the name from the passed parameters.\n"
   example: []
   syntax:
     content: public static void RemoveCssClass(this WebControl webControl, params string[] classNameParams)
@@ -256,15 +256,15 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GetClassesExcept
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-    startLine: 64
+    startLine: 93
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework.Extensions
-  summary: "\nReturns the classes excluding the ones passed as parameters\n"
+  summary: "\nReturns the <code>CSS</code> classes of the attribute <code>&quot;class&quot;</code> in the control <xref href=\"System.Web.UI.WebControls.WebControl.Attributes\" data-throw-if-not-resolved=\"false\"></xref> collection, excluding the ones passed as parameters.\n"
   example: []
   syntax:
     content: public static IEnumerable<string> GetClassesExcept(this WebControl webControl, IEnumerable<string> classNames)
@@ -307,15 +307,15 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GetCssClassesExcept
     path: ../WebApplication/Framework/Extensions/AttributeCollectionExtension.cs
-    startLine: 75
+    startLine: 104
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework.Extensions
-  summary: "\nReturns the classes excluding the ones passed as parameters\n"
+  summary: "\nReturns the <code>CSS</code> classes in the property <xref href=\"System.Web.UI.WebControls.WebControl.CssClass\" data-throw-if-not-resolved=\"false\"></xref>, excluding the ones passed as parameters.\n"
   example: []
   syntax:
     content: public static IEnumerable<string> GetCssClassesExcept(this WebControl webControl, IEnumerable<string> classNames)
@@ -641,6 +641,9 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Web.UI.WebControls.WebControl.Attributes
+  commentId: P:System.Web.UI.WebControls.WebControl.Attributes
+  isExternal: true
 - uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass*
   commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddClass
   name: AddClass
@@ -685,6 +688,9 @@ references:
   name: System.Web.UI.WebControls
   nameWithType: System.Web.UI.WebControls
   fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.WebControl.CssClass
+  commentId: P:System.Web.UI.WebControls.WebControl.CssClass
+  isExternal: true
 - uid: WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass*
   commentId: Overload:WebApplication.Framework.Extensions.AttributeCollectionExtension.AddCssClass
   name: AddCssClass

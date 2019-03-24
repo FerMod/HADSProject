@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.CustomControls
+  commentId: N:WebApplication.CustomControls
+  id: WebApplication.CustomControls
+  children:
+  - WebApplication.CustomControls.WebNotification
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.CustomControls
+  nameWithType: WebApplication.CustomControls
+  fullName: WebApplication.CustomControls
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.CustomControls.WebNotification
+  commentId: T:WebApplication.CustomControls.WebNotification
+  parent: WebApplication.CustomControls
+  name: WebNotification
+  nameWithType: WebNotification
+  fullName: WebApplication.CustomControls.WebNotification
+- uid: WebApplication.CustomControls
+  commentId: N:WebApplication.CustomControls
+  name: WebApplication.CustomControls
+  nameWithType: WebApplication.CustomControls
+  fullName: WebApplication.CustomControls
