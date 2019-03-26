@@ -16,19 +16,19 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-    <div class="form-group">
-        <asp:Label Font-Bold="True" runat="server" AssociatedControlID="DropDownSubjects">Select subject:</asp:Label>
-        <asp:DropDownList ID="DropDownSubjects" CssClass="custom-select" runat="server" TabIndex="1" AutoPostBack="True" DataSourceID="TeacherSubjectsDataSource" DataTextField="codigoasig" DataValueField="codigoasig" OnDataBound="DropDownSubjects_DataBound" OnSelectedIndexChanged="DropDownSubjects_SelectedIndexChanged" />
+    <div class="form-group form-row">
+        <div class="input-group col-md-6">
+            <asp:DropDownList ID="DropDownSubjects" CssClass="custom-select" runat="server" TabIndex="1" AutoPostBack="True" DataSourceID="TeacherSubjectsDataSource" DataTextField="codigoasig" DataValueField="codigoasig" OnDataBound="DropDownSubjects_DataBound" OnSelectedIndexChanged="DropDownSubjects_SelectedIndexChanged" />
+            <div class="input-group-append">
+                <asp:Button ID="ImportTasksButton" CssClass="btn btn-primary" Text="Import Tasks" TabIndex="2" OnClick="ImportTasks_Click" CausesValidation="False" Enabled="true" runat="server" UseSubmitBehavior="False" />
+            </div>
+        </div>
     </div>
 
     <div class="form-group">
         <asp:Xml ID="XmlData" runat="server"></asp:Xml>
     </div>
 
-	<web:Notification ID="ImportNotification" Dismissible="true" runat="server" />
-
-    <div class="form-group">
-        <asp:Button ID="ImportTasksButton" CssClass="btn btn-primary" Text="Import Tasks" TabIndex="2" OnClick="ImportTasks_Click" CausesValidation="False" Enabled="true" runat="server" />
-    </div>
+    <web:Notification ID="ImportNotification" Dismissible="true" runat="server" />
 
 </asp:Content>

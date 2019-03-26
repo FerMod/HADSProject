@@ -10,7 +10,7 @@
 namespace WebApplication.UserPages {
     
     
-    public partial class ImportarTareasXmlDocument {
+    public partial class ExportarTareas {
         
         /// <summary>
         /// TeacherSubjectsDataSource control.
@@ -22,6 +22,15 @@ namespace WebApplication.UserPages {
         protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsDataSource;
         
         /// <summary>
+        /// TeacherSubjectsTasksDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsTasksDataSource;
+        
+        /// <summary>
         /// DropDownSubjects control.
         /// </summary>
         /// <remarks>
@@ -31,31 +40,31 @@ namespace WebApplication.UserPages {
         protected global::System.Web.UI.WebControls.DropDownList DropDownSubjects;
         
         /// <summary>
-        /// ImportTasksButton control.
+        /// ExportTasksButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ImportTasksButton;
+        protected global::System.Web.UI.WebControls.Button ExportTasksButton;
         
         /// <summary>
-        /// XmlData control.
+        /// GridViewTasks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Xml XmlData;
+        protected global::System.Web.UI.WebControls.GridView GridViewTasks;
         
         /// <summary>
-        /// ImportNotification control.
+        /// ExportNotification control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::WebApplication.CustomControls.WebNotification ImportNotification;
+        protected global::WebApplication.CustomControls.WebNotification ExportNotification;
         
         /// <summary>
         /// Master property.

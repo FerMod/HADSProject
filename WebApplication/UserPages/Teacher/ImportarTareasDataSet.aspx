@@ -1,4 +1,4 @@
-<%@ Page Title="Import Tasks" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="ImportarTareasDataSet.aspx.cs" Inherits="WebApplication.UserPages.TareasProfesor" %>
+<%@ Page Title="Import Tasks" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="ImportarTareasDataSet.aspx.cs" Inherits="WebApplication.UserPages.ImportarTareasDataSet" %>
 
 <%@ MasterType VirtualPath="~/UserPages/Teacher/Teacher.Master" %>
 

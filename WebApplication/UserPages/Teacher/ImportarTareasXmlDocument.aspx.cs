@@ -130,7 +130,6 @@ namespace WebApplication.UserPages {
 					Level = AlertLevel.Danger,
 					Dismissible = true
 				};
-
 				ImportNotification.ShowNotification(data);
 
 			}
@@ -159,8 +158,7 @@ namespace WebApplication.UserPages {
 					Dismissible = true
 				};
 				ImportNotification.ShowNotification(data);
-
-
+				
 				XmlData.Visible = false;
 				ImportTasksButton.Enabled = false;
 
