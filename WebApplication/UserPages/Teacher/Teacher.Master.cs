@@ -15,7 +15,8 @@ namespace WebApplication.UserPages {
 		Home,
 		Tasks,
 		ImportTasksXmlDocument,
-		ImportTasksDataSet
+		ImportTasksDataSet,
+		ExportTasksDataSet
 	}
 
 	public partial class Teacher : MasterPage {
@@ -57,6 +58,9 @@ namespace WebApplication.UserPages {
 					break;
 				case TeacherMenu.ImportTasksDataSet:
 					ImportTasksDataSetTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.ExportTasksDataSet:
+					ExportTasksDataSetTab.AddCssClass("active", "disabled");
 					break;
 				case TeacherMenu.None:
 				default:

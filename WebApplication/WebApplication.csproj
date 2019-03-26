@@ -105,9 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\xml\HAS.xml" />
-    <Content Include="App_Data\xml\SEG.xml" />
-    <Content Include="App_Data\xml\XSLTFile.xsl" />
+    <Content Include="App_Data\xml\HAS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\xml\SEG.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\xml\XSLTFile.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Contact.aspx" />
@@ -3073,6 +3079,7 @@
     <Content Include="WebAlertNotification.aspx" />
     <None Include="App_Data\xml\tareas.xsd">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\HADS18-Tudela - Web Deploy - DEBUG.pubxml" />

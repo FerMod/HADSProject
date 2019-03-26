@@ -14,6 +14,7 @@
                 <asp:LinkButton CssClass="nav-link" ID="TasksTab" PostBackUrl="/Teacher/Tasks" role="tab" aria-controls="Tasks" aria-selected="false" runat="server" CausesValidation="False">Tasks</asp:LinkButton>
                 <asp:LinkButton CssClass="nav-link" ID="ImportTasksXmlDocumentTab" PostBackUrl="/Teacher/Tasks/ImportTasksXmlDocument" role="tab" aria-controls="ImportTasksXmlDocument" aria-selected="false" runat="server" CausesValidation="False">Import Tasks (XmlDocument)</asp:LinkButton>
                 <asp:LinkButton CssClass="nav-link" ID="ImportTasksDataSetTab" PostBackUrl="/Teacher/Tasks/ImportTasksDataSet" role="tab" aria-controls="ImportTasksDataSet" aria-selected="false" runat="server" CausesValidation="False">Import Tasks (DataSet)</asp:LinkButton>
+                <asp:LinkButton CssClass="nav-link" ID="ExportTasksDataSetTab" PostBackUrl="/Teacher/Tasks/Export" role="tab" aria-controls="Export" aria-selected="false" runat="server" CausesValidation="False">Export Tasks</asp:LinkButton>
             </div>
         </div>
 

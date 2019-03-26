@@ -82,6 +82,12 @@ namespace WebApplication {
 				"~/UserPages/Teacher/ImportarTareasDataSet.aspx"
 			);
 
+			routes.MapPageRoute(
+				"TeacherImportTasksDataSet",
+				"Teacher/Tasks/Export",
+				"~/UserPages/Teacher/ExportarXml.aspx"
+			);
+
 		}
 
 	}
