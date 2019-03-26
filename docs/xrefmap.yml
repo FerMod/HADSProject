@@ -995,19 +995,6 @@ references:
   isSpec: "True"
   fullName: WebApplication.CustomControls.WebNotification.Body
   nameWithType: WebNotification.Body
-- uid: WebApplication.CustomControls.WebNotification.DepartmentID
-  name: DepartmentID
-  href: api/WebApplication/WebApplication.CustomControls.WebNotification.html#WebApplication_CustomControls_WebNotification_DepartmentID
-  commentId: P:WebApplication.CustomControls.WebNotification.DepartmentID
-  fullName: WebApplication.CustomControls.WebNotification.DepartmentID
-  nameWithType: WebNotification.DepartmentID
-- uid: WebApplication.CustomControls.WebNotification.DepartmentID*
-  name: DepartmentID
-  href: api/WebApplication/WebApplication.CustomControls.WebNotification.html#WebApplication_CustomControls_WebNotification_DepartmentID_
-  commentId: Overload:WebApplication.CustomControls.WebNotification.DepartmentID
-  isSpec: "True"
-  fullName: WebApplication.CustomControls.WebNotification.DepartmentID
-  nameWithType: WebNotification.DepartmentID
 - uid: WebApplication.CustomControls.WebNotification.Dismissible
   name: Dismissible
   href: api/WebApplication/WebApplication.CustomControls.WebNotification.html#WebApplication_CustomControls_WebNotification_Dismissible
@@ -1103,6 +1090,38 @@ references:
   commentId: F:WebApplication.Framework.AlertLevel.Dark
   fullName: WebApplication.Framework.AlertLevel.Dark
   nameWithType: AlertLevel.Dark
+- uid: WebApplication.Framework.AlertLevel.Equals(System.Object)
+  name: Equals(Object)
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Equals_System_Object_
+  commentId: M:WebApplication.Framework.AlertLevel.Equals(System.Object)
+  fullName: WebApplication.Framework.AlertLevel.Equals(System.Object)
+  nameWithType: AlertLevel.Equals(Object)
+- uid: WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  name: Equals(AlertLevel)
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Equals_WebApplication_Framework_AlertLevel_
+  commentId: M:WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  nameWithType: AlertLevel.Equals(AlertLevel)
+- uid: WebApplication.Framework.AlertLevel.Equals*
+  name: Equals
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Equals_
+  commentId: Overload:WebApplication.Framework.AlertLevel.Equals
+  isSpec: "True"
+  fullName: WebApplication.Framework.AlertLevel.Equals
+  nameWithType: AlertLevel.Equals
+- uid: WebApplication.Framework.AlertLevel.GetHashCode
+  name: GetHashCode()
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_GetHashCode
+  commentId: M:WebApplication.Framework.AlertLevel.GetHashCode
+  fullName: WebApplication.Framework.AlertLevel.GetHashCode()
+  nameWithType: AlertLevel.GetHashCode()
+- uid: WebApplication.Framework.AlertLevel.GetHashCode*
+  name: GetHashCode
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_GetHashCode_
+  commentId: Overload:WebApplication.Framework.AlertLevel.GetHashCode
+  isSpec: "True"
+  fullName: WebApplication.Framework.AlertLevel.GetHashCode
+  nameWithType: AlertLevel.GetHashCode
 - uid: WebApplication.Framework.AlertLevel.Info
   name: Info
   href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Info
@@ -1121,6 +1140,19 @@ references:
   commentId: F:WebApplication.Framework.AlertLevel.None
   fullName: WebApplication.Framework.AlertLevel.None
   nameWithType: AlertLevel.None
+- uid: WebApplication.Framework.AlertLevel.op_Equality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  name: Equality(AlertLevel, AlertLevel)
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Equality_WebApplication_Framework_AlertLevel_WebApplication_Framework_AlertLevel_
+  commentId: M:WebApplication.Framework.AlertLevel.op_Equality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Equality(WebApplication.Framework.AlertLevel, WebApplication.Framework.AlertLevel)
+  nameWithType: AlertLevel.Equality(AlertLevel, AlertLevel)
+- uid: WebApplication.Framework.AlertLevel.op_Equality*
+  name: Equality
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Equality_
+  commentId: Overload:WebApplication.Framework.AlertLevel.op_Equality
+  isSpec: "True"
+  fullName: WebApplication.Framework.AlertLevel.Equality
+  nameWithType: AlertLevel.Equality
 - uid: WebApplication.Framework.AlertLevel.op_Explicit(System.String)~WebApplication.Framework.AlertLevel
   name: Explicit(String to AlertLevel)
   href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Explicit_System_String__WebApplication_Framework_AlertLevel
@@ -1140,6 +1172,19 @@ references:
   fullName.vb: WebApplication.Framework.AlertLevel.Narrowing
   nameWithType: AlertLevel.Explicit
   nameWithType.vb: AlertLevel.Narrowing
+- uid: WebApplication.Framework.AlertLevel.op_Inequality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  name: Inequality(AlertLevel, AlertLevel)
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Inequality_WebApplication_Framework_AlertLevel_WebApplication_Framework_AlertLevel_
+  commentId: M:WebApplication.Framework.AlertLevel.op_Inequality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Inequality(WebApplication.Framework.AlertLevel, WebApplication.Framework.AlertLevel)
+  nameWithType: AlertLevel.Inequality(AlertLevel, AlertLevel)
+- uid: WebApplication.Framework.AlertLevel.op_Inequality*
+  name: Inequality
+  href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_op_Inequality_
+  commentId: Overload:WebApplication.Framework.AlertLevel.op_Inequality
+  isSpec: "True"
+  fullName: WebApplication.Framework.AlertLevel.Inequality
+  nameWithType: AlertLevel.Inequality
 - uid: WebApplication.Framework.AlertLevel.Primary
   name: Primary
   href: api/WebApplication/WebApplication.Framework.AlertLevel.html#WebApplication_Framework_AlertLevel_Primary
@@ -2082,6 +2127,113 @@ references:
   commentId: N:WebApplication.UserPages
   fullName: WebApplication.UserPages
   nameWithType: WebApplication.UserPages
+- uid: WebApplication.UserPages.ExportarTareas
+  name: ExportarTareas
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html
+  commentId: T:WebApplication.UserPages.ExportarTareas
+  fullName: WebApplication.UserPages.ExportarTareas
+  nameWithType: ExportarTareas
+- uid: WebApplication.UserPages.ExportarTareas.DataAccess
+  name: DataAccess
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_DataAccess
+  commentId: P:WebApplication.UserPages.ExportarTareas.DataAccess
+  fullName: WebApplication.UserPages.ExportarTareas.DataAccess
+  nameWithType: ExportarTareas.DataAccess
+- uid: WebApplication.UserPages.ExportarTareas.DataAccess*
+  name: DataAccess
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_DataAccess_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.DataAccess
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.DataAccess
+  nameWithType: ExportarTareas.DataAccess
+- uid: WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  name: DropDownSubjects
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_DropDownSubjects
+  commentId: F:WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  fullName: WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  nameWithType: ExportarTareas.DropDownSubjects
+- uid: WebApplication.UserPages.ExportarTareas.ExportNotification
+  name: ExportNotification
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_ExportNotification
+  commentId: F:WebApplication.UserPages.ExportarTareas.ExportNotification
+  fullName: WebApplication.UserPages.ExportarTareas.ExportNotification
+  nameWithType: ExportarTareas.ExportNotification
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  name: ExportTasks_Click(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_ExportTasks_Click_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.ExportTasks_Click(Object, EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasks_Click*
+  name: ExportTasks_Click
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_ExportTasks_Click_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.ExportTasks_Click
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasks_Click
+  nameWithType: ExportarTareas.ExportTasks_Click
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  name: ExportTasksButton
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_ExportTasksButton
+  commentId: F:WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  nameWithType: ExportarTareas.ExportTasksButton
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks
+  name: GridViewTasks
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_GridViewTasks
+  commentId: F:WebApplication.UserPages.ExportarTareas.GridViewTasks
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks
+  nameWithType: ExportarTareas.GridViewTasks
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  name: GridViewTasks_DataBound(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_GridViewTasks_DataBound_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.GridViewTasks_DataBound(Object, EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound*
+  name: GridViewTasks_DataBound
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_GridViewTasks_DataBound_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
+  nameWithType: ExportarTareas.GridViewTasks_DataBound
+- uid: WebApplication.UserPages.ExportarTareas.Master
+  name: Master
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_Master
+  commentId: P:WebApplication.UserPages.ExportarTareas.Master
+  fullName: WebApplication.UserPages.ExportarTareas.Master
+  nameWithType: ExportarTareas.Master
+- uid: WebApplication.UserPages.ExportarTareas.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_Master_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.Master
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.Master
+  nameWithType: ExportarTareas.Master
+- uid: WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.Page_Load(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_Page_Load_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.Page_Load
+  nameWithType: ExportarTareas.Page_Load
+- uid: WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  name: TeacherSubjectsDataSource
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_TeacherSubjectsDataSource
+  commentId: F:WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  fullName: WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  nameWithType: ExportarTareas.TeacherSubjectsDataSource
+- uid: WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  name: TeacherSubjectsTasksDataSource
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_TeacherSubjectsTasksDataSource
+  commentId: F:WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  fullName: WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  nameWithType: ExportarTareas.TeacherSubjectsTasksDataSource
 - uid: WebApplication.UserPages.ImportarTareasDataSet
   name: ImportarTareasDataSet
   href: api/WebApplication/WebApplication.UserPages.ImportarTareasDataSet.html
@@ -2824,6 +2976,12 @@ references:
   isSpec: "True"
   fullName: WebApplication.UserPages.Teacher.DataAccess
   nameWithType: Teacher.DataAccess
+- uid: WebApplication.UserPages.Teacher.ExportTasksTab
+  name: ExportTasksTab
+  href: api/WebApplication/WebApplication.UserPages.Teacher.html#WebApplication_UserPages_Teacher_ExportTasksTab
+  commentId: F:WebApplication.UserPages.Teacher.ExportTasksTab
+  fullName: WebApplication.UserPages.Teacher.ExportTasksTab
+  nameWithType: Teacher.ExportTasksTab
 - uid: WebApplication.UserPages.Teacher.HomeTab
   name: HomeTab
   href: api/WebApplication/WebApplication.UserPages.Teacher.html#WebApplication_UserPages_Teacher_HomeTab
@@ -2950,6 +3108,12 @@ references:
   commentId: T:WebApplication.UserPages.TeacherMenu
   fullName: WebApplication.UserPages.TeacherMenu
   nameWithType: TeacherMenu
+- uid: WebApplication.UserPages.TeacherMenu.ExportTasks
+  name: ExportTasks
+  href: api/WebApplication/WebApplication.UserPages.TeacherMenu.html#WebApplication_UserPages_TeacherMenu_ExportTasks
+  commentId: F:WebApplication.UserPages.TeacherMenu.ExportTasks
+  fullName: WebApplication.UserPages.TeacherMenu.ExportTasks
+  nameWithType: TeacherMenu.ExportTasks
 - uid: WebApplication.UserPages.TeacherMenu.Home
   name: Home
   href: api/WebApplication/WebApplication.UserPages.TeacherMenu.html#WebApplication_UserPages_TeacherMenu_Home

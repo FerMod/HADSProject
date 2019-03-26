@@ -11,7 +11,6 @@ items:
   - WebApplication.CustomControls.WebNotification.AlertCloseButton_Click(System.Object,System.EventArgs)
   - WebApplication.CustomControls.WebNotification.AlertTitle
   - WebApplication.CustomControls.WebNotification.Body
-  - WebApplication.CustomControls.WebNotification.DepartmentID
   - WebApplication.CustomControls.WebNotification.Dismissible
   - WebApplication.CustomControls.WebNotification.Level
   - WebApplication.CustomControls.WebNotification.ShowNotification(WebApplication.Framework.NotificationData)
@@ -240,7 +239,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Title
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -251,41 +250,6 @@ items:
       type: System.String
     content.vb: Public Property Title As String
   overload: WebApplication.CustomControls.WebNotification.Title*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: WebApplication.CustomControls.WebNotification.DepartmentID
-  commentId: P:WebApplication.CustomControls.WebNotification.DepartmentID
-  id: DepartmentID
-  parent: WebApplication.CustomControls.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: DepartmentID
-  nameWithType: WebNotification.DepartmentID
-  fullName: WebApplication.CustomControls.WebNotification.DepartmentID
-  type: Property
-  source:
-    remote:
-      path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: DepartmentID
-    path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 23
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.CustomControls
-  syntax:
-    content: public int DepartmentID { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: Public Property DepartmentID As Integer
-  overload: WebApplication.CustomControls.WebNotification.DepartmentID*
   modifiers.csharp:
   - public
   - get
@@ -310,7 +274,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Level
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 32
+    startLine: 28
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -345,7 +309,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Body
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -380,7 +344,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Dismissible
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 51
+    startLine: 54
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -415,7 +379,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Visible
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 63
+    startLine: 70
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -453,7 +417,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowNotification
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 73
+    startLine: 80
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -486,7 +450,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: AlertCloseButton_Click
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
-    startLine: 84
+    startLine: 91
   assemblies:
   - WebApplication
   namespace: WebApplication.CustomControls
@@ -5578,18 +5542,6 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: WebApplication.CustomControls.WebNotification.DepartmentID*
-  commentId: Overload:WebApplication.CustomControls.WebNotification.DepartmentID
-  name: DepartmentID
-  nameWithType: WebNotification.DepartmentID
-  fullName: WebApplication.CustomControls.WebNotification.DepartmentID
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
 - uid: WebApplication.CustomControls.WebNotification.Level*
   commentId: Overload:WebApplication.CustomControls.WebNotification.Level
   name: Level

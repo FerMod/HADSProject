@@ -1,44 +1,43 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument
-  commentId: T:WebApplication.UserPages.ImportarTareasXmlDocument
-  id: ImportarTareasXmlDocument
+- uid: WebApplication.UserPages.ExportarTareas
+  commentId: T:WebApplication.UserPages.ExportarTareas
+  id: ExportarTareas
   parent: WebApplication.UserPages
   children:
-  - WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess
-  - WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects
-  - WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound(System.Object,System.EventArgs)
-  - WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  - WebApplication.UserPages.ImportarTareasXmlDocument.ImportNotification
-  - WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click(System.Object,System.EventArgs)
-  - WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasksButton
-  - WebApplication.UserPages.ImportarTareasXmlDocument.Master
-  - WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.UserPages.ImportarTareasXmlDocument.TeacherSubjectsDataSource
-  - WebApplication.UserPages.ImportarTareasXmlDocument.XmlData
-  - WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource
+  - WebApplication.UserPages.ExportarTareas.DataAccess
+  - WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  - WebApplication.UserPages.ExportarTareas.ExportNotification
+  - WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  - WebApplication.UserPages.ExportarTareas.GridViewTasks
+  - WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.Master
+  - WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  - WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
   langs:
   - csharp
   - vb
-  name: ImportarTareasXmlDocument
-  nameWithType: ImportarTareasXmlDocument
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument
+  name: ExportarTareas
+  nameWithType: ExportarTareas
+  fullName: WebApplication.UserPages.ExportarTareas
   type: Class
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: ImportarTareasXmlDocument
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+    id: ExportarTareas
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: 'public class ImportarTareasXmlDocument : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
+    content: 'public class ExportarTareas : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
     content.vb: >-
-      Public Class ImportarTareasXmlDocument
+      Public Class ExportarTareas
           Inherits Page
           Implements IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler
   inheritance:
@@ -301,25 +300,25 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess
-  commentId: P:WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess
+- uid: WebApplication.UserPages.ExportarTareas.DataAccess
+  commentId: P:WebApplication.UserPages.ExportarTareas.DataAccess
   id: DataAccess
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
   name: DataAccess
-  nameWithType: ImportarTareasXmlDocument.DataAccess
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess
+  nameWithType: ExportarTareas.DataAccess
+  fullName: WebApplication.UserPages.ExportarTareas.DataAccess
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 22
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -329,67 +328,32 @@ items:
     return:
       type: DataBaseAccess.DataAccessService
     content.vb: Public ReadOnly Property DataAccess As DataAccessService
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess*
+  overload: WebApplication.UserPages.ExportarTareas.DataAccess*
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource
-  commentId: P:WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource
-  id: XmlDocumentSource
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
-  langs:
-  - csharp
-  - vb
-  name: XmlDocumentSource
-  nameWithType: ImportarTareasXmlDocument.XmlDocumentSource
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource
-  type: Property
-  source:
-    remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: XmlDocumentSource
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 39
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  syntax:
-    content: public string XmlDocumentSource { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property XmlDocumentSource As String
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
   name: Page_Load(Object, EventArgs)
-  nameWithType: ImportarTareasXmlDocument.Page_Load(Object, EventArgs)
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.Page_Load(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 48
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 37
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -401,134 +365,99 @@ items:
     - id: e
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load*
+  overload: WebApplication.UserPages.ExportarTareas.Page_Load*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound(System.Object,System.EventArgs)
-  id: DropDownSubjects_DataBound(System.Object,System.EventArgs)
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  id: ExportTasks_Click(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
-  name: DropDownSubjects_DataBound(Object, EventArgs)
-  nameWithType: ImportarTareasXmlDocument.DropDownSubjects_DataBound(Object, EventArgs)
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound(System.Object, System.EventArgs)
+  name: ExportTasks_Click(Object, EventArgs)
+  nameWithType: ExportarTareas.ExportTasks_Click(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: DropDownSubjects_DataBound
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 64
+    id: ExportTasks_Click
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: protected void DropDownSubjects_DataBound(object sender, EventArgs e)
+    content: protected void ExportTasks_Click(object sender, EventArgs e)
     parameters:
     - id: sender
       type: System.Object
     - id: e
       type: System.EventArgs
-    content.vb: Protected Sub DropDownSubjects_DataBound(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound*
+    content.vb: Protected Sub ExportTasks_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.ExportarTareas.ExportTasks_Click*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  id: DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  id: GridViewTasks_DataBound(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
-  name: DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
-  nameWithType: ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged(System.Object, System.EventArgs)
+  name: GridViewTasks_DataBound(Object, EventArgs)
+  nameWithType: ExportarTareas.GridViewTasks_DataBound(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: DropDownSubjects_SelectedIndexChanged
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 68
+    id: GridViewTasks_DataBound
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 180
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
-    content: protected void DropDownSubjects_SelectedIndexChanged(object sender, EventArgs e)
+    content: protected void GridViewTasks_DataBound(object sender, EventArgs e)
     parameters:
     - id: sender
       type: System.Object
     - id: e
       type: System.EventArgs
-    content.vb: Protected Sub DropDownSubjects_SelectedIndexChanged(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged*
+    content.vb: Protected Sub GridViewTasks_DataBound(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click(System.Object,System.EventArgs)
-  commentId: M:WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click(System.Object,System.EventArgs)
-  id: ImportTasks_Click(System.Object,System.EventArgs)
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
-  langs:
-  - csharp
-  - vb
-  name: ImportTasks_Click(Object, EventArgs)
-  nameWithType: ImportarTareasXmlDocument.ImportTasks_Click(Object, EventArgs)
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click(System.Object, System.EventArgs)
-  type: Method
-  source:
-    remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: ImportTasks_Click
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 72
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  syntax:
-    content: protected void ImportTasks_Click(object sender, EventArgs e)
-    parameters:
-    - id: sender
-      type: System.Object
-    - id: e
-      type: System.EventArgs
-    content.vb: Protected Sub ImportTasks_Click(sender As Object, e As EventArgs)
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.TeacherSubjectsDataSource
-  commentId: F:WebApplication.UserPages.ImportarTareasXmlDocument.TeacherSubjectsDataSource
+- uid: WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  commentId: F:WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
   id: TeacherSubjectsDataSource
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
   name: TeacherSubjectsDataSource
-  nameWithType: ImportarTareasXmlDocument.TeacherSubjectsDataSource
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.TeacherSubjectsDataSource
+  nameWithType: ExportarTareas.TeacherSubjectsDataSource
+  fullName: WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
     startLine: 21
   assemblies:
   - WebApplication
@@ -545,25 +474,59 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects
-  commentId: F:WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects
+- uid: WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  commentId: F:WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  id: TeacherSubjectsTasksDataSource
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: TeacherSubjectsTasksDataSource
+  nameWithType: ExportarTareas.TeacherSubjectsTasksDataSource
+  fullName: WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherSubjectsTasksDataSource
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherSubjectsTasksDataSource control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected SqlDataSource TeacherSubjectsTasksDataSource
+    return:
+      type: System.Web.UI.WebControls.SqlDataSource
+    content.vb: Protected TeacherSubjectsTasksDataSource As SqlDataSource
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  commentId: F:WebApplication.UserPages.ExportarTareas.DropDownSubjects
   id: DropDownSubjects
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
   name: DropDownSubjects
-  nameWithType: ImportarTareasXmlDocument.DropDownSubjects
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects
+  nameWithType: ExportarTareas.DropDownSubjects
+  fullName: WebApplication.UserPages.ExportarTareas.DropDownSubjects
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-    startLine: 30
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -579,127 +542,127 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasksButton
-  commentId: F:WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasksButton
-  id: ImportTasksButton
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  commentId: F:WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  id: ExportTasksButton
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
-  name: ImportTasksButton
-  nameWithType: ImportarTareasXmlDocument.ImportTasksButton
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasksButton
+  name: ExportTasksButton
+  nameWithType: ExportarTareas.ExportTasksButton
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasksButton
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: ImportTasksButton
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-    startLine: 39
-  assemblies:
-  - WebApplication
-  namespace: WebApplication.UserPages
-  summary: "\nImportTasksButton control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Button ImportTasksButton
-    return:
-      type: System.Web.UI.WebControls.Button
-    content.vb: Protected ImportTasksButton As Button
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.XmlData
-  commentId: F:WebApplication.UserPages.ImportarTareasXmlDocument.XmlData
-  id: XmlData
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
-  langs:
-  - csharp
-  - vb
-  name: XmlData
-  nameWithType: ImportarTareasXmlDocument.XmlData
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.XmlData
-  type: Field
-  source:
-    remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
-      repo: git@github.com:FerMod/HADSProject.git
-    id: XmlData
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+    id: ExportTasksButton
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
     startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nXmlData control.\n"
+  summary: "\nExportTasksButton control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected Xml XmlData
+    content: protected Button ExportTasksButton
     return:
-      type: System.Web.UI.WebControls.Xml
-    content.vb: Protected XmlData As Xml
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected ExportTasksButton As Button
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.ImportNotification
-  commentId: F:WebApplication.UserPages.ImportarTareasXmlDocument.ImportNotification
-  id: ImportNotification
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks
+  commentId: F:WebApplication.UserPages.ExportarTareas.GridViewTasks
+  id: GridViewTasks
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
-  name: ImportNotification
-  nameWithType: ImportarTareasXmlDocument.ImportNotification
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.ImportNotification
+  name: GridViewTasks
+  nameWithType: ExportarTareas.GridViewTasks
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks
   type: Field
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: ImportNotification
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+    id: GridViewTasks
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
     startLine: 57
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
-  summary: "\nImportNotification control.\n"
+  summary: "\nGridViewTasks control.\n"
   remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
   example: []
   syntax:
-    content: protected WebNotification ImportNotification
+    content: protected GridView GridViewTasks
     return:
-      type: WebApplication.CustomControls.WebNotification
-    content.vb: Protected ImportNotification As WebNotification
+      type: System.Web.UI.WebControls.GridView
+    content.vb: Protected GridViewTasks As GridView
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.Master
-  commentId: P:WebApplication.UserPages.ImportarTareasXmlDocument.Master
+- uid: WebApplication.UserPages.ExportarTareas.ExportNotification
+  commentId: F:WebApplication.UserPages.ExportarTareas.ExportNotification
+  id: ExportNotification
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: ExportNotification
+  nameWithType: ExportarTareas.ExportNotification
+  fullName: WebApplication.UserPages.ExportarTareas.ExportNotification
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ExportNotification
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 66
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nExportNotification control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected WebNotification ExportNotification
+    return:
+      type: WebApplication.CustomControls.WebNotification
+    content.vb: Protected ExportNotification As WebNotification
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.Master
+  commentId: P:WebApplication.UserPages.ExportarTareas.Master
   id: Master
-  parent: WebApplication.UserPages.ImportarTareasXmlDocument
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
   name: Master
-  nameWithType: ImportarTareasXmlDocument.Master
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.Master
+  nameWithType: ExportarTareas.Master
+  fullName: WebApplication.UserPages.ExportarTareas.Master
   type: Property
   source:
     remote:
-      path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
       branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
-    path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-    startLine: 65
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 74
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -712,7 +675,7 @@ items:
     return:
       type: WebApplication.UserPages.Teacher
     content.vb: Public ReadOnly Property Master As Teacher
-  overload: WebApplication.UserPages.ImportarTareasXmlDocument.Master*
+  overload: WebApplication.UserPages.ExportarTareas.Master*
   modifiers.csharp:
   - public
   - get
@@ -7717,11 +7680,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess
+- uid: WebApplication.UserPages.ExportarTareas.DataAccess*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.DataAccess
   name: DataAccess
-  nameWithType: ImportarTareasXmlDocument.DataAccess
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DataAccess
+  nameWithType: ExportarTareas.DataAccess
+  fullName: WebApplication.UserPages.ExportarTareas.DataAccess
 - uid: DataBaseAccess.DataAccessService
   commentId: T:DataBaseAccess.DataAccessService
   parent: DataBaseAccess
@@ -7733,23 +7696,11 @@ references:
   name: DataBaseAccess
   nameWithType: DataBaseAccess
   fullName: DataBaseAccess
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource
-  name: XmlDocumentSource
-  nameWithType: ImportarTareasXmlDocument.XmlDocumentSource
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.XmlDocumentSource
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load
+- uid: WebApplication.UserPages.ExportarTareas.Page_Load*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.Page_Load
   name: Page_Load
-  nameWithType: ImportarTareasXmlDocument.Page_Load
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.Page_Load
+  nameWithType: ExportarTareas.Page_Load
+  fullName: WebApplication.UserPages.ExportarTareas.Page_Load
 - uid: System.EventArgs
   commentId: T:System.EventArgs
   parent: System
@@ -7757,21 +7708,16 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound
-  name: DropDownSubjects_DataBound
-  nameWithType: ImportarTareasXmlDocument.DropDownSubjects_DataBound
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_DataBound
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged
-  name: DropDownSubjects_SelectedIndexChanged
-  nameWithType: ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.DropDownSubjects_SelectedIndexChanged
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click
-  name: ImportTasks_Click
-  nameWithType: ImportarTareasXmlDocument.ImportTasks_Click
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.ImportTasks_Click
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasks_Click*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.ExportTasks_Click
+  name: ExportTasks_Click
+  nameWithType: ExportarTareas.ExportTasks_Click
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasks_Click
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
+  name: GridViewTasks_DataBound
+  nameWithType: ExportarTareas.GridViewTasks_DataBound
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
 - uid: System.Web.UI.WebControls.SqlDataSource
   commentId: T:System.Web.UI.WebControls.SqlDataSource
   parent: System.Web.UI.WebControls
@@ -7799,13 +7745,13 @@ references:
   name: Button
   nameWithType: Button
   fullName: System.Web.UI.WebControls.Button
-- uid: System.Web.UI.WebControls.Xml
-  commentId: T:System.Web.UI.WebControls.Xml
+- uid: System.Web.UI.WebControls.GridView
+  commentId: T:System.Web.UI.WebControls.GridView
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: Xml
-  nameWithType: Xml
-  fullName: System.Web.UI.WebControls.Xml
+  name: GridView
+  nameWithType: GridView
+  fullName: System.Web.UI.WebControls.GridView
 - uid: WebApplication.CustomControls.WebNotification
   commentId: T:WebApplication.CustomControls.WebNotification
   parent: WebApplication.CustomControls
@@ -7817,11 +7763,11 @@ references:
   name: WebApplication.CustomControls
   nameWithType: WebApplication.CustomControls
   fullName: WebApplication.CustomControls
-- uid: WebApplication.UserPages.ImportarTareasXmlDocument.Master*
-  commentId: Overload:WebApplication.UserPages.ImportarTareasXmlDocument.Master
+- uid: WebApplication.UserPages.ExportarTareas.Master*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.Master
   name: Master
-  nameWithType: ImportarTareasXmlDocument.Master
-  fullName: WebApplication.UserPages.ImportarTareasXmlDocument.Master
+  nameWithType: ExportarTareas.Master
+  fullName: WebApplication.UserPages.ExportarTareas.Master
 - uid: WebApplication.UserPages.Teacher
   commentId: T:WebApplication.UserPages.Teacher
   parent: WebApplication.UserPages

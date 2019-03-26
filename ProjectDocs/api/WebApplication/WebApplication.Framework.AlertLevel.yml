@@ -7,10 +7,15 @@ items:
   children:
   - WebApplication.Framework.AlertLevel.Danger
   - WebApplication.Framework.AlertLevel.Dark
+  - WebApplication.Framework.AlertLevel.Equals(System.Object)
+  - WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  - WebApplication.Framework.AlertLevel.GetHashCode
   - WebApplication.Framework.AlertLevel.Info
   - WebApplication.Framework.AlertLevel.Light
   - WebApplication.Framework.AlertLevel.None
+  - WebApplication.Framework.AlertLevel.op_Equality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
   - WebApplication.Framework.AlertLevel.op_Explicit(System.String)~WebApplication.Framework.AlertLevel
+  - WebApplication.Framework.AlertLevel.op_Inequality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
   - WebApplication.Framework.AlertLevel.Primary
   - WebApplication.Framework.AlertLevel.Secondary
   - WebApplication.Framework.AlertLevel.Success
@@ -37,17 +42,25 @@ items:
   summary: "\nClass to act like an enum, that holds different values.\nThis class specifies the alert level.\n"
   example: []
   syntax:
-    content: public sealed class AlertLevel
-    content.vb: Public NotInheritable Class AlertLevel
+    content: >-
+      [Serializable]
+
+      public sealed class AlertLevel
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class AlertLevel
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - sealed
@@ -74,7 +87,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: None
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -109,7 +122,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Primary
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -144,7 +157,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Secondary
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -179,7 +192,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Success
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -214,7 +227,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Danger
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -249,7 +262,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Warning
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -284,7 +297,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Info
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -319,7 +332,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Light
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -354,7 +367,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Dark
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -389,7 +402,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ToString
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -424,7 +437,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: op_Explicit
     path: ../WebApplication/Framework/AlertLevel.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
@@ -446,6 +459,192 @@ items:
   - Shared
   fullName.vb: WebApplication.Framework.AlertLevel.Narrowing(System.String to WebApplication.Framework.AlertLevel)
   name.vb: Narrowing(String to AlertLevel)
+- uid: WebApplication.Framework.AlertLevel.op_Equality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  commentId: M:WebApplication.Framework.AlertLevel.op_Equality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  id: op_Equality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  parent: WebApplication.Framework.AlertLevel
+  langs:
+  - csharp
+  - vb
+  name: Equality(AlertLevel, AlertLevel)
+  nameWithType: AlertLevel.Equality(AlertLevel, AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Equality(WebApplication.Framework.AlertLevel, WebApplication.Framework.AlertLevel)
+  type: Operator
+  source:
+    remote:
+      path: WebApplication/Framework/AlertLevel.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: op_Equality
+    path: ../WebApplication/Framework/AlertLevel.cs
+    startLine: 47
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static bool operator ==(AlertLevel a, AlertLevel b)
+    parameters:
+    - id: a
+      type: WebApplication.Framework.AlertLevel
+    - id: b
+      type: WebApplication.Framework.AlertLevel
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As AlertLevel, b As AlertLevel) As Boolean
+  overload: WebApplication.Framework.AlertLevel.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WebApplication.Framework.AlertLevel.op_Inequality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  commentId: M:WebApplication.Framework.AlertLevel.op_Inequality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  id: op_Inequality(WebApplication.Framework.AlertLevel,WebApplication.Framework.AlertLevel)
+  parent: WebApplication.Framework.AlertLevel
+  langs:
+  - csharp
+  - vb
+  name: Inequality(AlertLevel, AlertLevel)
+  nameWithType: AlertLevel.Inequality(AlertLevel, AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Inequality(WebApplication.Framework.AlertLevel, WebApplication.Framework.AlertLevel)
+  type: Operator
+  source:
+    remote:
+      path: WebApplication/Framework/AlertLevel.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: op_Inequality
+    path: ../WebApplication/Framework/AlertLevel.cs
+    startLine: 63
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static bool operator !=(AlertLevel a, AlertLevel b)
+    parameters:
+    - id: a
+      type: WebApplication.Framework.AlertLevel
+    - id: b
+      type: WebApplication.Framework.AlertLevel
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As AlertLevel, b As AlertLevel) As Boolean
+  overload: WebApplication.Framework.AlertLevel.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WebApplication.Framework.AlertLevel.Equals(System.Object)
+  commentId: M:WebApplication.Framework.AlertLevel.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: WebApplication.Framework.AlertLevel
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: AlertLevel.Equals(Object)
+  fullName: WebApplication.Framework.AlertLevel.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AlertLevel.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Equals
+    path: ../WebApplication/Framework/AlertLevel.cs
+    startLine: 67
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: WebApplication.Framework.AlertLevel.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  commentId: M:WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  id: Equals(WebApplication.Framework.AlertLevel)
+  parent: WebApplication.Framework.AlertLevel
+  langs:
+  - csharp
+  - vb
+  name: Equals(AlertLevel)
+  nameWithType: AlertLevel.Equals(AlertLevel)
+  fullName: WebApplication.Framework.AlertLevel.Equals(WebApplication.Framework.AlertLevel)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AlertLevel.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Equals
+    path: ../WebApplication/Framework/AlertLevel.cs
+    startLine: 71
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public bool Equals(AlertLevel other)
+    parameters:
+    - id: other
+      type: WebApplication.Framework.AlertLevel
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As AlertLevel) As Boolean
+  overload: WebApplication.Framework.AlertLevel.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WebApplication.Framework.AlertLevel.GetHashCode
+  commentId: M:WebApplication.Framework.AlertLevel.GetHashCode
+  id: GetHashCode
+  parent: WebApplication.Framework.AlertLevel
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AlertLevel.GetHashCode()
+  fullName: WebApplication.Framework.AlertLevel.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AlertLevel.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GetHashCode
+    path: ../WebApplication/Framework/AlertLevel.cs
+    startLine: 92
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: WebApplication.Framework.AlertLevel.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 references:
 - uid: WebApplication.Framework
   commentId: N:WebApplication.Framework
@@ -459,47 +658,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
   parent: System.Object
@@ -611,37 +769,6 @@ references:
     nameWithType: Object
     fullName: System.Object
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -770,3 +897,109 @@ references:
   nameWithType.vb: AlertLevel.Narrowing
   fullName.vb: WebApplication.Framework.AlertLevel.Narrowing
   name.vb: Narrowing
+- uid: WebApplication.Framework.AlertLevel.op_Equality*
+  commentId: Overload:WebApplication.Framework.AlertLevel.op_Equality
+  name: Equality
+  nameWithType: AlertLevel.Equality
+  fullName: WebApplication.Framework.AlertLevel.Equality
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WebApplication.Framework.AlertLevel.op_Inequality*
+  commentId: Overload:WebApplication.Framework.AlertLevel.op_Inequality
+  name: Inequality
+  nameWithType: AlertLevel.Inequality
+  fullName: WebApplication.Framework.AlertLevel.Inequality
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WebApplication.Framework.AlertLevel.Equals*
+  commentId: Overload:WebApplication.Framework.AlertLevel.Equals
+  name: Equals
+  nameWithType: AlertLevel.Equals
+  fullName: WebApplication.Framework.AlertLevel.Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WebApplication.Framework.AlertLevel.GetHashCode*
+  commentId: Overload:WebApplication.Framework.AlertLevel.GetHashCode
+  name: GetHashCode
+  nameWithType: AlertLevel.GetHashCode
+  fullName: WebApplication.Framework.AlertLevel.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

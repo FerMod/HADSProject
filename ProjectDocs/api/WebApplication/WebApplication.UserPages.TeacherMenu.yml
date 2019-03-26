@@ -5,6 +5,7 @@ items:
   id: TeacherMenu
   parent: WebApplication.UserPages
   children:
+  - WebApplication.UserPages.TeacherMenu.ExportTasks
   - WebApplication.UserPages.TeacherMenu.Home
   - WebApplication.UserPages.TeacherMenu.ImportTasksDataSet
   - WebApplication.UserPages.TeacherMenu.ImportTasksXmlDocument
@@ -189,6 +190,38 @@ items:
   namespace: WebApplication.UserPages
   syntax:
     content: ImportTasksDataSet = 3
+    return:
+      type: WebApplication.UserPages.TeacherMenu
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.UserPages.TeacherMenu.ExportTasks
+  commentId: F:WebApplication.UserPages.TeacherMenu.ExportTasks
+  id: ExportTasks
+  parent: WebApplication.UserPages.TeacherMenu
+  langs:
+  - csharp
+  - vb
+  name: ExportTasks
+  nameWithType: TeacherMenu.ExportTasks
+  fullName: WebApplication.UserPages.TeacherMenu.ExportTasks
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ExportTasks
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
+    startLine: 18
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: ExportTasks = 4
     return:
       type: WebApplication.UserPages.TeacherMenu
   modifiers.csharp:

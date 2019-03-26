@@ -4,6 +4,7 @@ items:
   commentId: N:WebApplication.UserPages
   id: WebApplication.UserPages
   children:
+  - WebApplication.UserPages.ExportarTareas
   - WebApplication.UserPages.ImportarTareasDataSet
   - WebApplication.UserPages.ImportarTareasXmlDocument
   - WebApplication.UserPages.InsertarTarea
@@ -63,6 +64,11 @@ references:
   name: ImportarTareasXmlDocument
   nameWithType: ImportarTareasXmlDocument
   fullName: WebApplication.UserPages.ImportarTareasXmlDocument
+- uid: WebApplication.UserPages.ExportarTareas
+  commentId: T:WebApplication.UserPages.ExportarTareas
+  name: ExportarTareas
+  nameWithType: ExportarTareas
+  fullName: WebApplication.UserPages.ExportarTareas
 - uid: WebApplication.UserPages.TeacherHome
   commentId: T:WebApplication.UserPages.TeacherHome
   name: TeacherHome

@@ -6,6 +6,7 @@ items:
   parent: WebApplication.UserPages
   children:
   - WebApplication.UserPages.Teacher.DataAccess
+  - WebApplication.UserPages.Teacher.ExportTasksTab
   - WebApplication.UserPages.Teacher.HomeTab
   - WebApplication.UserPages.Teacher.ImportTasksDataSetTab
   - WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
@@ -246,7 +247,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -281,7 +282,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: UserDataSet
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -316,7 +317,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -351,7 +352,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowPage
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -502,6 +503,40 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserPages.Teacher.ExportTasksTab
+  commentId: F:WebApplication.UserPages.Teacher.ExportTasksTab
+  id: ExportTasksTab
+  parent: WebApplication.UserPages.Teacher
+  langs:
+  - csharp
+  - vb
+  name: ExportTasksTab
+  nameWithType: Teacher.ExportTasksTab
+  fullName: WebApplication.UserPages.Teacher.ExportTasksTab
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ExportTasksTab
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nExportTasksTab control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected LinkButton ExportTasksTab
+    return:
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected ExportTasksTab As LinkButton
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.UserPages.Teacher.TeacherTasksUpdatePanel
   commentId: F:WebApplication.UserPages.Teacher.TeacherTasksUpdatePanel
   id: TeacherTasksUpdatePanel
@@ -520,7 +555,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherTasksUpdatePanel
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 57
+    startLine: 66
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -554,7 +589,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherContent
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 66
+    startLine: 75
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -588,7 +623,7 @@ items:
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 74
+    startLine: 83
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
