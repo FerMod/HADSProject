@@ -80,7 +80,7 @@ namespace WebApplication.UserPages {
 							sb.Append($"Existing XML file overrided.<br />");
 						}
 						tasksDataSet.WriteXml(xmlFilePath);
-						AddXmlNamespaceAttribute(xmlFilePath, subject.ToLower());
+						AddXmlNamespaceAttribute(xmlFilePath);
 						break;
 					case "json":
 						Directory.CreateDirectory(AppConfig.Json.Folder);
@@ -122,15 +122,11 @@ namespace WebApplication.UserPages {
 			ExportTasksButton.Enabled = GridViewTasks.Rows.Count > 0;
 		}
 
-		private static void AddXmlNamespaceAttribute(string filePath, string subject) {
+		private static void AddXmlNamespaceAttribute(string filePath) {
 
 			XmlDocument xmlDoc = new XmlDocument();
 			xmlDoc.Load(filePath);
-
-			string attributeName = String.Format("xmlns:{0}", subject);
-			string attributeValue = String.Format("http://ji.ehu.es/{0}", subject);
-			xmlDoc.DocumentElement.SetAttribute(attributeName, attributeValue);
-
+			xmlDoc.DocumentElement.SetAttribute("xmlns:has", "http://ji.ehu.es/has");
 			xmlDoc.Save(filePath);
 
 		}
