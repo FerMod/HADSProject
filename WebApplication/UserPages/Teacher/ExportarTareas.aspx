@@ -34,10 +34,23 @@
     </asp:SqlDataSource>
 
     <div class="form-group form-row">
-        <div class="input-group col-md-6">
-            <asp:DropDownList ID="DropDownSubjects" CssClass="custom-select" runat="server" TabIndex="1" AutoPostBack="True" DataSourceID="TeacherSubjectsDataSource" DataTextField="codigoasig" DataValueField="codigoasig" />
+        <div class="col-md-4">
+            <asp:Label Font-Bold="True" AssociatedControlID="FileFormatDropDown" runat="server">Select file format:</asp:Label>
+            <asp:DropDownList ID="FileFormatDropDown" CssClass="custom-select" runat="server" TabIndex="1" AutoPostBack="True" OnLoad="FileFormatDropDown_Load" OnSelectedIndexChanged="FileFormatDropDown_SelectedIndexChanged">
+                <asp:ListItem Selected="True">Xml</asp:ListItem>
+                <asp:ListItem>Json</asp:ListItem>
+            </asp:DropDownList>
+        </div>
+    </div>
+
+    <div class="form-group form-row">
+        <div class="input-group col-md-4">
+            <asp:DropDownList ID="DropDownSubjects" CssClass="custom-select" runat="server" TabIndex="2" AutoPostBack="True" DataSourceID="TeacherSubjectsDataSource" DataTextField="codigoasig" DataValueField="codigoasig" />
             <div class="input-group-append">
-                <asp:Button ID="ExportTasksButton" CssClass="btn btn-primary" Text="Export Tasks" TabIndex="2" OnClick="ExportTasks_Click" CausesValidation="False" Enabled="true" runat="server" UseSubmitBehavior="False" />
+                <asp:Label ID="FileExtensionLabel" CssClass="input-group-text" runat="server"></asp:Label>
+            </div>
+            <div class="input-group-append">
+                <asp:Button ID="ExportTasksButton" CssClass="btn btn-primary" Text="Export Tasks" TabIndex="3" OnClick="ExportTasks_Click" CausesValidation="False" Enabled="true" runat="server" UseSubmitBehavior="False" />
             </div>
         </div>
     </div>
@@ -53,9 +66,8 @@
             </Columns>
             <HeaderStyle CssClass="thead-dark" />
         </asp:GridView>
-
-        <web:Notification ID="ExportNotification" Dismissible="true" runat="server" />
-
     </div>
+
+    <web:Notification ID="ExportNotification" Dismissible="true" runat="server" />
 
 </asp:Content>

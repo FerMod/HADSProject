@@ -1,20 +1,13 @@
 
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
 using DataBaseAccess;
-using WebApplication.CustomControls;
 using WebApplication.Framework;
-using WebApplication.Framework.Extensions;
-using WebApplication.Utils;
 
 namespace WebApplication.UserPages {
 
@@ -59,6 +52,7 @@ namespace WebApplication.UserPages {
 			}
 
 			XmlData.TransformSource = Path.Combine(AppConfig.Xml.Folder, AppConfig.Xml.SubjectsXsltFile);
+			XmlData.DocumentSource = XmlDocumentSource;
 
 		}
 
@@ -119,7 +113,6 @@ namespace WebApplication.UserPages {
 					Level = AlertLevel.Info,
 					Dismissible = true
 				};
-
 				ImportNotification.ShowNotification(data);
 
 			} catch(Exception ex) {
@@ -158,7 +151,7 @@ namespace WebApplication.UserPages {
 					Dismissible = true
 				};
 				ImportNotification.ShowNotification(data);
-				
+
 				XmlData.Visible = false;
 				ImportTasksButton.Enabled = false;
 

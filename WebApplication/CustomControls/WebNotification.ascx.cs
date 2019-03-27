@@ -58,12 +58,12 @@ namespace WebApplication.CustomControls {
 			}
 
 			set {
-				AlertCloseButton.Visible = value;
 				if(value) {
 					Alert.AddCssClass("alert-dismissible");
 				} else {
 					Alert.RemoveCssClass("alert-dismissible");
 				}
+				AlertCloseButton.Visible = value;
 				ViewState["Dismissible"] = value;
 			}
 		}

@@ -26,7 +26,7 @@
     </div>
 
     <div class="form-group">
-        <asp:Xml ID="XmlData" runat="server"></asp:Xml>
+        <asp:Xml ID="XmlData" runat="server" />
     </div>
 
     <web:Notification ID="ImportNotification" Dismissible="true" runat="server" />

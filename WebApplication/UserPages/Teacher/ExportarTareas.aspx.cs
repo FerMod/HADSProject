@@ -1,19 +1,16 @@
 
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
 using DataBaseAccess;
+using Newtonsoft.Json;
 using WebApplication.Framework;
-using WebApplication.Framework.Extensions;
-using WebApplication.Utils;
+using Formatting = Newtonsoft.Json.Formatting;
 
 namespace WebApplication.UserPages {
 
@@ -50,73 +47,47 @@ namespace WebApplication.UserPages {
 
 			try {
 
-				StringBuilder sb = new StringBuilder();
-
 				string subject = DropDownSubjects.SelectedValue;
 
-				string tableNamespace = String.Format("http://ji.ehu.es/{0}", subject.ToLower());
-				DataTable subjectTasks = new DataTable() {
-					Prefix = subject.ToLower(),
-					Namespace = tableNamespace,
+				EnumerableRowCollection<DataRow> rowColection = GenericTasksDataTable.AsEnumerable().Where(r => r.Field<string>("CodAsig") == subject);
+				DataTable tasksDataTable = rowColection.Any() ? rowColection.CopyToDataTable() : GenericTasksDataTable.Clone();
+				tasksDataTable.TableName = "tarea";
+				int rowCount = tasksDataTable.Rows.Count;
+
+				DataSet tasksDataSet = new DataSet("tareas") {
+					Locale = CultureInfo.InvariantCulture
 				};
+				tasksDataSet.Tables.Add(tasksDataTable);
 
-				DataSet subjectsDataSet = new DataSet("tareas");
-				subjectsDataSet.Tables.Add(subjectTasks);
-
-				subjectTasks = GenericTasksDataTable.Select($"CodAsig = '{subject}'").CopyToDataTable();
-				if(subjectTasks.Rows.Count >= 0) {
-
-					string filePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.xml");
-					if(File.Exists(filePath)) {
-						sb.Append($"Overriden already existing file \"<code>{subject}.xml</code>\".");
-					} else {
-						sb.Append($"Data saved in file \"<code>{subject}.xml</code>\".");
-					}
-
-					foreach(DataColumn column in subjectTasks.Columns) {
+				if(rowCount > 0) {
+					foreach(DataColumn column in tasksDataTable.Columns) {
 						column.ColumnName = column.ColumnName.ToLower();
 						if(column.ColumnName.Equals("codigo", StringComparison.InvariantCultureIgnoreCase)) {
 							column.ColumnMapping = MappingType.Attribute;
 						}
 					}
-					subjectTasks.WriteXml(filePath);
-					////
-					
-					/*
-					// TODO: Generate correctly the xml 
-					XmlDocument xmlDoc = new XmlDocument();
-
-					//string localName = subject.ToLower();
-					//string namespaceUrl = String.Format("http://ji.ehu.es/{0}", localName);
-					//XmlAttribute nsAttribute = xmlDoc.CreateAttribute("xmlns", localName, namespaceUrl);
-					//xmlDoc.DocumentElement.Attributes.Append(nsAttribute);
-
-					foreach(DataRow row in dataRowsResult) {
-						XmlElement tarea = xmlDoc.CreateElement("tarea");
-						//tarea.AppendChild();
-
-						XmlElement element = xmlDoc.CreateElement("descripcion");
-						XmlText textElement = xmlDoc.CreateTextNode(Convert.ToString(row["Descripcion"]));
-						element.AppendChild(textElement);
-						tarea.AppendChild(element);
-
-						xt = xd.CreateTextNode("Chicot, Marcos")
-							aut.AppendChild(xt)
-							libro.AppendChild(aut)
-						XmlT descripcion = xmlDoc.CreateTextNode(descripcion);
-						 = Convert.ToString(taskElement["descripcion"].InnerXml);
-						row["CodAsig"] = DropDownSubjects.SelectedValue;
-						row["HEstimadas"] = Convert.ToInt32(taskElement["hestimadas"].InnerXml);
-						row["Explotacion"] = Convert.ToBoolean(taskElement["explotacion"].InnerXml);
-						row["TipoTarea"] = Convert.ToString(taskElement["tipotarea"].InnerXml);
-						xmlDoc.Attributes.Append(nsAttribute);
-						xmlDoc.E
-						xmlDoc.CreateElement("tarea");
-					}
-					*/
-
 				}
 
+				string fileExtension = FileFormatDropDown.SelectedValue.ToLower();
+				string filePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.{fileExtension}");
+				switch(fileExtension) {
+					case "xml":
+						tasksDataSet.WriteXml(filePath);
+						AddXmlNamespaceAttribute(filePath, subject.ToLower());
+						break;
+					case "json":
+						tasksDataTable.Columns.Remove("codasig");
+						File.WriteAllText(filePath, JsonConvert.SerializeObject(tasksDataTable, Formatting.Indented));
+						break;
+					default:
+						break;
+				}
+
+				StringBuilder sb = new StringBuilder();
+				if(File.Exists(filePath)) {
+					sb.Append($"Existing file overrided.<br />");
+				}
+				sb.Append($"Exported {rowCount} rows to file \"<code>{subject}.{fileExtension}</code>\".");
 
 				NotificationData data = new NotificationData {
 					Body = sb.ToString(),
@@ -125,52 +96,6 @@ namespace WebApplication.UserPages {
 				};
 				ExportNotification.ShowNotification(data);
 
-
-				//XmlDocument xmlDoc = new XmlDocument();
-				//		xmlDoc.Load(XmlDocumentSource);
-
-				//		XmlNodeList tasksNodeList = xmlDoc.DocumentElement.ChildNodes;
-				//		foreach(XmlElement taskElement in tasksNodeList) {
-
-				//			string code = taskElement.Attributes["codigo"].Value;
-				//			DataRow[] resultRows = GenericTasksDataTable.Select($"Codigo = '{code}'");
-				//			bool updateRow = resultRows.Length > 0;
-
-				//			DataRow dataRow;
-				//			if(updateRow) {
-				//				// Row already exists
-				//				dataRow = resultRows[0];
-				//			} else {
-				//				// Create new row
-				//				dataRow = GenericTasksDataTable.NewRow();
-				//				dataRow["Codigo"] = code;
-				//			}
-
-				//			dataRow["Descripcion"] = Convert.ToString(taskElement["descripcion"].InnerXml);
-				//			dataRow["CodAsig"] = DropDownSubjects.SelectedValue;
-				//			dataRow["HEstimadas"] = Convert.ToInt32(taskElement["hestimadas"].InnerXml);
-				//			dataRow["Explotacion"] = Convert.ToBoolean(taskElement["explotacion"].InnerXml);
-				//			dataRow["TipoTarea"] = Convert.ToString(taskElement["tipotarea"].InnerXml);
-
-				//			if(updateRow) {
-				//				sb.AppendFormat("<b>Updated row:</b> \"<code>{0}</code>\"<br />", dataRow["Codigo"]);
-				//			} else {
-				//				GenericTasksDataTable.Rows.Add(dataRow);
-				//				sb.AppendFormat("<b>Inserted row:</b> \"<code>{0}</code>\"<br />", dataRow["Codigo"]);
-				//			}
-
-				//		}
-
-				//		GenericTaskDataAdapter.Update(GenericTasksDataTable);
-				//		GenericTasksDataTable.AcceptChanges();
-
-				//		NotificationData data = new NotificationData {
-				//			Body = sb.ToString(),
-				//			Level = AlertLevel.Info,
-				//			Dismissible = true
-				//		};
-
-				//		ImportNotification.ShowNotification(data);
 
 			} catch(Exception ex) {
 
@@ -189,6 +114,31 @@ namespace WebApplication.UserPages {
 		protected void GridViewTasks_DataBound(object sender, EventArgs e) {
 			// Enable export button only if there are rows
 			ExportTasksButton.Enabled = GridViewTasks.Rows.Count > 0;
+		}
+
+		private static void AddXmlNamespaceAttribute(string filePath, string subject) {
+
+			XmlDocument xmlDoc = new XmlDocument();
+			xmlDoc.Load(filePath);
+
+			string attributeName = String.Format("xmlns:{0}", subject);
+			string attributeValue = String.Format("http://ji.ehu.es/{0}", subject);
+			xmlDoc.DocumentElement.SetAttribute(attributeName, attributeValue);
+
+			xmlDoc.Save(filePath);
+
+		}
+
+		protected void FileFormatDropDown_Load(object sender, EventArgs e) {
+			UpdateFileExtensionLabel(FileFormatDropDown.SelectedValue);
+		}
+
+		protected void FileFormatDropDown_SelectedIndexChanged(object sender, EventArgs e) {
+			UpdateFileExtensionLabel(FileFormatDropDown.SelectedValue);
+		}
+
+		private void UpdateFileExtensionLabel(string fileExtension) {
+			FileExtensionLabel.Text = $".{fileExtension.ToLower()}";
 		}
 
 	}

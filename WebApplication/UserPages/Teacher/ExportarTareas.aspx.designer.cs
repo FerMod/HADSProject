@@ -31,6 +31,15 @@ namespace WebApplication.UserPages {
         protected global::System.Web.UI.WebControls.SqlDataSource TeacherSubjectsTasksDataSource;
         
         /// <summary>
+        /// FileFormatDropDown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList FileFormatDropDown;
+        
+        /// <summary>
         /// DropDownSubjects control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace WebApplication.UserPages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownSubjects;
+        
+        /// <summary>
+        /// FileExtensionLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FileExtensionLabel;
         
         /// <summary>
         /// ExportTasksButton control.

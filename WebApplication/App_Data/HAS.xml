@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes" ?>
-<tareas  xmlns:has="http://ji.ehu.es/has">
+<tareas xmlns:has="http://ji.ehu.es/has">
   <tarea codigo= "HAS18-Test1">
     <descripcion>Test 5 de la asignatura</descripcion>
     <hestimadas>1</hestimadas>
