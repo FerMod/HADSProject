@@ -69,49 +69,39 @@ namespace WebApplication.UserPages {
 					}
 				}
 
+				StringBuilder sb = new StringBuilder();
+
 				string fileExtension = FileFormatDropDown.SelectedValue.ToLower();
-				string filePath = String.Empty;
 				switch(fileExtension) {
 					case "xml":
 						Directory.CreateDirectory(AppConfig.Xml.Folder);
-						filePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.{fileExtension}");
-						tasksDataSet.WriteXml(filePath);
-						AddXmlNamespaceAttribute(filePath, subject.ToLower());
+						string xmlFilePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.{fileExtension}");
+						if(File.Exists(xmlFilePath)) {
+							sb.Append($"Existing XML file overrided.<br />");
+						}
+						tasksDataSet.WriteXml(xmlFilePath);
+						AddXmlNamespaceAttribute(xmlFilePath, subject.ToLower());
 						break;
 					case "json":
 						Directory.CreateDirectory(AppConfig.Json.Folder);
-						filePath = Path.Combine(AppConfig.Json.Folder, $"{subject}.{fileExtension}");
-						File.WriteAllText(filePath, JsonConvert.SerializeObject(tasksDataTable, Formatting.Indented));
+						string jsonFilePath = Path.Combine(AppConfig.Json.Folder, $"{subject}.{fileExtension}");
+						if(File.Exists(jsonFilePath)) {
+							sb.Append($"Existing JSON file overrided.<br />");
+						}
+						File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(tasksDataTable, Formatting.Indented));
 						break;
 					default:
 						break;
 				}
 
-				StringBuilder sb = new StringBuilder();
-				if(!String.IsNullOrWhiteSpace(filePath)) {
+				sb.Append($"Exported {rowCount} rows to file \"<code>{subject}.{fileExtension}</code>\".");
 
-					if(File.Exists(filePath)) {
-						sb.Append($"Existing file overrided.<br />");
-					}
-					sb.Append($"Exported {rowCount} rows to file \"<code>{subject}.{fileExtension}</code>\".");
-
-					NotificationData data = new NotificationData {
-						Body = sb.ToString(),
-						Level = AlertLevel.Info,
-						Dismissible = true
-					};
-					ExportNotification.ShowNotification(data);
-
-				} else {
-
-					NotificationData data = new NotificationData {
-						Body = "Could not save the file correctly. Please, try again later.",
-						Level = AlertLevel.Danger,
-						Dismissible = true
-					};
-					ExportNotification.ShowNotification(data);
-
-				}
+				NotificationData data = new NotificationData {
+					Body = sb.ToString(),
+					Level = AlertLevel.Info,
+					Dismissible = true
+				};
+				ExportNotification.ShowNotification(data);
 
 			} catch(Exception ex) {
 
