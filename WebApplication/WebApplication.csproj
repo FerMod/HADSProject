@@ -3078,6 +3078,8 @@
     <Content Include="img\open-iconic\webp\zoom-out-8x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out.webp" />
     <Content Include="WebAlertNotification.aspx" />
+    <Content Include="App_Data\json\EDA1.json" />
+    <Content Include="App_Data\json\HAS.json" />
     <None Include="App_Data\xml\tareas.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
