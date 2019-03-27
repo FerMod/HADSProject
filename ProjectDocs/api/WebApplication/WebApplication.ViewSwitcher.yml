@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: WebApplication/ViewSwitcher.ascx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ViewSwitcher
     path: ../WebApplication/ViewSwitcher.ascx.designer.cs
@@ -229,7 +229,7 @@ items:
   source:
     remote:
       path: WebApplication/ViewSwitcher.ascx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CurrentView
     path: ../WebApplication/ViewSwitcher.ascx.cs
@@ -264,7 +264,7 @@ items:
   source:
     remote:
       path: WebApplication/ViewSwitcher.ascx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: AlternateView
     path: ../WebApplication/ViewSwitcher.ascx.cs
@@ -299,7 +299,7 @@ items:
   source:
     remote:
       path: WebApplication/ViewSwitcher.ascx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SwitchUrl
     path: ../WebApplication/ViewSwitcher.ascx.cs
@@ -334,7 +334,7 @@ items:
   source:
     remote:
       path: WebApplication/ViewSwitcher.ascx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/ViewSwitcher.ascx.cs

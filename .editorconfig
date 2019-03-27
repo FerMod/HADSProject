@@ -5,3 +5,7 @@ charset = utf-8
 indent_style = tab
 indent_size = 4
 insert_final_newline = true
+
+[*.{xml, xsl, xsd, xslt, html, xhtml}]
+indent_style = tab
+indent_size = 2

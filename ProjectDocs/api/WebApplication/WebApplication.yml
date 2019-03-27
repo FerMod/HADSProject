@@ -10,6 +10,8 @@ items:
   - WebApplication.Account.ActiveNav
   - WebApplication.AppConfig
   - WebApplication.AppConfig.SmtpServer
+  - WebApplication.AppConfig.WebSite
+  - WebApplication.AppConfig.Xml
   - WebApplication.BundleConfig
   - WebApplication.CambiarPassword
   - WebApplication.Confirmar
@@ -23,7 +25,7 @@ items:
   - WebApplication.Site_Mobile
   - WebApplication.SiteMaster
   - WebApplication.ViewSwitcher
-  - WebApplication.WebNotification
+  - WebApplication.WebAlertNotification
   langs:
   - csharp
   - vb
@@ -51,11 +53,21 @@ references:
   name: AppConfig
   nameWithType: AppConfig
   fullName: WebApplication.AppConfig
+- uid: WebApplication.AppConfig.WebSite
+  commentId: T:WebApplication.AppConfig.WebSite
+  name: AppConfig.WebSite
+  nameWithType: AppConfig.WebSite
+  fullName: WebApplication.AppConfig.WebSite
 - uid: WebApplication.AppConfig.SmtpServer
   commentId: T:WebApplication.AppConfig.SmtpServer
   name: AppConfig.SmtpServer
   nameWithType: AppConfig.SmtpServer
   fullName: WebApplication.AppConfig.SmtpServer
+- uid: WebApplication.AppConfig.Xml
+  commentId: T:WebApplication.AppConfig.Xml
+  name: AppConfig.Xml
+  nameWithType: AppConfig.Xml
+  fullName: WebApplication.AppConfig.Xml
 - uid: WebApplication.BundleConfig
   commentId: T:WebApplication.BundleConfig
   name: BundleConfig
@@ -132,11 +144,11 @@ references:
   name: ViewSwitcher
   nameWithType: ViewSwitcher
   fullName: WebApplication.ViewSwitcher
-- uid: WebApplication.WebNotification
-  commentId: T:WebApplication.WebNotification
-  name: WebNotification
-  nameWithType: WebNotification
-  fullName: WebApplication.WebNotification
+- uid: WebApplication.WebAlertNotification
+  commentId: T:WebApplication.WebAlertNotification
+  name: WebAlertNotification
+  nameWithType: WebAlertNotification
+  fullName: WebApplication.WebAlertNotification
 - uid: WebApplication
   commentId: N:WebApplication
   name: WebApplication

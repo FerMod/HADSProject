@@ -1,6 +1,7 @@
 <%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Teacher.Master.cs" Inherits="WebApplication.UserPages.Teacher" %>
 
 <%@ MasterType VirtualPath="~/Site.Master" %>
+<%@ Register TagPrefix="web" TagName="Notification" Src="~/CustomControls/WebNotification.ascx" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -11,6 +12,9 @@
             <div class="nav flex-column nav-pills nav-tabs" id="teacherTabs" role="tablist" aria-orientation="vertical">
                 <asp:LinkButton CssClass="nav-link" ID="HomeTab" PostBackUrl="/Teacher/Home" role="tab" aria-controls="Home" aria-selected="false" runat="server" CausesValidation="False">Home</asp:LinkButton>
                 <asp:LinkButton CssClass="nav-link" ID="TasksTab" PostBackUrl="/Teacher/Tasks" role="tab" aria-controls="Tasks" aria-selected="false" runat="server" CausesValidation="False">Tasks</asp:LinkButton>
+                <asp:LinkButton CssClass="nav-link" ID="ImportTasksXmlDocumentTab" PostBackUrl="/Teacher/Tasks/ImportTasksXmlDocument" role="tab" aria-controls="ImportTasksXmlDocument" aria-selected="false" runat="server" CausesValidation="False">Import Tasks (XmlDocument)</asp:LinkButton>
+                <asp:LinkButton CssClass="nav-link" ID="ImportTasksDataSetTab" PostBackUrl="/Teacher/Tasks/ImportTasksDataSet" role="tab" aria-controls="ImportTasksDataSet" aria-selected="false" runat="server" CausesValidation="False">Import Tasks (DataSet)</asp:LinkButton>
+                <asp:LinkButton CssClass="nav-link" ID="ExportTasksTab" PostBackUrl="/Teacher/Tasks/Export" role="tab" aria-controls="ExportTasks" aria-selected="false" runat="server" CausesValidation="False">Export Tasks</asp:LinkButton>
             </div>
         </div>
 
@@ -20,8 +24,7 @@
 
                 <asp:UpdatePanel ID="TeacherTasksUpdatePanel" runat="server">
                     <ContentTemplate>
-                        <asp:ContentPlaceHolder ID="TeacherContent" runat="server">
-                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="TeacherContent" runat="server" />
                     </ContentTemplate>
                 </asp:UpdatePanel>
 

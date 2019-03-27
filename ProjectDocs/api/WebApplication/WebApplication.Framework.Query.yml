@@ -7,6 +7,7 @@ items:
   children:
   - WebApplication.Framework.Query.StudentSubjects
   - WebApplication.Framework.Query.StudentSubjectsTasks
+  - WebApplication.Framework.Query.TeacherGenericTasks
   - WebApplication.Framework.Query.TeacherSubjects
   langs:
   - csharp
@@ -18,7 +19,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Queries/Query.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Query
     path: ../WebApplication/Framework/Queries/Query.cs
@@ -60,7 +61,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Queries/Query.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: StudentSubjectsTasks
     path: ../WebApplication/Framework/Queries/Query.cs
@@ -99,7 +100,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Queries/Query.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: StudentSubjects
     path: ../WebApplication/Framework/Queries/Query.cs
@@ -138,7 +139,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/Queries/Query.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjects
     path: ../WebApplication/Framework/Queries/Query.cs
@@ -155,6 +156,45 @@ items:
       type: System.String
     content.vb: Public Shared ReadOnly Property TeacherSubjects As String
   overload: WebApplication.Framework.Query.TeacherSubjects*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WebApplication.Framework.Query.TeacherGenericTasks
+  commentId: P:WebApplication.Framework.Query.TeacherGenericTasks
+  id: TeacherGenericTasks
+  parent: WebApplication.Framework.Query
+  langs:
+  - csharp
+  - vb
+  name: TeacherGenericTasks
+  nameWithType: Query.TeacherGenericTasks
+  fullName: WebApplication.Framework.Query.TeacherGenericTasks
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Framework/Queries/Query.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherGenericTasks
+    path: ../WebApplication/Framework/Queries/Query.cs
+    startLine: 105
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  summary: "\nObtain all the teacher generic tasks query string.\n<p>\nRequired query parameters:\n<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@email</code></td><td>The teacher email</td></tr></tbody></table>\n</p>\n"
+  example: []
+  syntax:
+    content: public static string TeacherGenericTasks { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property TeacherGenericTasks As String
+  overload: WebApplication.Framework.Query.TeacherGenericTasks*
   modifiers.csharp:
   - public
   - static
@@ -483,3 +523,8 @@ references:
   name: TeacherSubjects
   nameWithType: Query.TeacherSubjects
   fullName: WebApplication.Framework.Query.TeacherSubjects
+- uid: WebApplication.Framework.Query.TeacherGenericTasks*
+  commentId: Overload:WebApplication.Framework.Query.TeacherGenericTasks
+  name: TeacherGenericTasks
+  nameWithType: Query.TeacherGenericTasks
+  fullName: WebApplication.Framework.Query.TeacherGenericTasks

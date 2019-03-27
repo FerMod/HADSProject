@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TareasProfesor
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.cs
@@ -345,7 +345,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
@@ -379,7 +379,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsTasksDataSource
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: NewTaskButton
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
@@ -447,7 +447,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
@@ -515,7 +515,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/TareasProfesor.aspx.designer.cs

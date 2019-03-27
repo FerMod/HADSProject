@@ -7,6 +7,7 @@ items:
   children:
   - WebApplication.UserPages.TareasAlumno.DataAccess
   - WebApplication.UserPages.TareasAlumno.DropDownSubjects
+  - WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object,System.EventArgs)
   - WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
   - WebApplication.UserPages.TareasAlumno.GridViewTasks
   - WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)
@@ -23,7 +24,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TareasAlumno
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
@@ -311,7 +312,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
@@ -346,7 +347,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
@@ -381,11 +382,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_Sorting
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-    startLine: 134
+    startLine: 130
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -416,11 +417,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects_SelectedIndexChanged
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-    startLine: 171
+    startLine: 167
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -433,6 +434,41 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub DropDownSubjects_SelectedIndexChanged(sender As Object, e As EventArgs)
   overload: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object,System.EventArgs)
+  id: DropDownSubjects_DataBound(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.TareasAlumno
+  langs:
+  - csharp
+  - vb
+  name: DropDownSubjects_DataBound(Object, EventArgs)
+  nameWithType: TareasAlumno.DropDownSubjects_DataBound(Object, EventArgs)
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DropDownSubjects_DataBound
+    path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
+    startLine: 171
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: protected void DropDownSubjects_DataBound(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub DropDownSubjects_DataBound(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -451,7 +487,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_RowCommand
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.cs
@@ -486,7 +522,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
@@ -520,7 +556,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
@@ -554,7 +590,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Student/TareasAlumno.aspx.designer.cs
@@ -7627,6 +7663,11 @@ references:
   name: DropDownSubjects_SelectedIndexChanged
   nameWithType: TareasAlumno.DropDownSubjects_SelectedIndexChanged
   fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged
+- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound*
+  commentId: Overload:WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound
+  name: DropDownSubjects_DataBound
+  nameWithType: TareasAlumno.DropDownSubjects_DataBound
+  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound
 - uid: WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand*
   commentId: Overload:WebApplication.UserPages.TareasAlumno.GridViewTasks_RowCommand
   name: GridViewTasks_RowCommand

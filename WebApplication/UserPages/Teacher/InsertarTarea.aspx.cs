@@ -33,7 +33,7 @@ namespace WebApplication.UserPages {
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if(!(bool)Session["IsLogged"]) {
-				Response.Redirect("~/Default");
+				Response.Redirect(AppConfig.WebSite.MainPage);
 			}
 
 			if(!IsPostBack) {

@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: EmailLib/Framework/EmailService.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EmailService
     path: ../EmailLib/Framework/EmailService.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: EmailLib/Framework/EmailService.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SmtpConfig
     path: ../EmailLib/Framework/EmailService.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: EmailLib/Framework/EmailService.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
     path: ../EmailLib/Framework/EmailService.cs
@@ -127,7 +127,7 @@ items:
   source:
     remote:
       path: EmailLib/Framework/EmailService.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SendEmail
     path: ../EmailLib/Framework/EmailService.cs

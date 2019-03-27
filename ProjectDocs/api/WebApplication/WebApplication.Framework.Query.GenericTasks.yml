@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework.Query.GenericTasks
+  commentId: T:WebApplication.Framework.Query.GenericTasks
+  id: Query.GenericTasks
+  parent: WebApplication.Framework
+  children:
+  - WebApplication.Framework.Query.GenericTasks.Insert
+  - WebApplication.Framework.Query.GenericTasks.Select
+  - WebApplication.Framework.Query.GenericTasks.Update
+  langs:
+  - csharp
+  - vb
+  name: Query.GenericTasks
+  nameWithType: Query.GenericTasks
+  fullName: WebApplication.Framework.Query.GenericTasks
+  type: Class
+  source:
+    remote:
+      path: WebApplication/Framework/Queries/Query.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GenericTasks
+    path: ../WebApplication/Framework/Queries/Query.cs
+    startLine: 114
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static class GenericTasks
+    content.vb: Public Module GenericTasks
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: WebApplication.Framework.Query.GenericTasks.Select
+  commentId: P:WebApplication.Framework.Query.GenericTasks.Select
+  id: Select
+  parent: WebApplication.Framework.Query.GenericTasks
+  langs:
+  - csharp
+  - vb
+  name: Select
+  nameWithType: Query.GenericTasks.Select
+  fullName: WebApplication.Framework.Query.GenericTasks.Select
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Framework/Queries/Query.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Select
+    path: ../WebApplication/Framework/Queries/Query.cs
+    startLine: 119
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  summary: "\nObtain the generic tasks select command string.\n"
+  example: []
+  syntax:
+    content: public static string Select { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Select As String
+  overload: WebApplication.Framework.Query.GenericTasks.Select*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WebApplication.Framework.Query.GenericTasks.Insert
+  commentId: P:WebApplication.Framework.Query.GenericTasks.Insert
+  id: Insert
+  parent: WebApplication.Framework.Query.GenericTasks
+  langs:
+  - csharp
+  - vb
+  name: Insert
+  nameWithType: Query.GenericTasks.Insert
+  fullName: WebApplication.Framework.Query.GenericTasks.Insert
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Framework/Queries/Query.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Insert
+    path: ../WebApplication/Framework/Queries/Query.cs
+    startLine: 159
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  summary: "\nObtain the generic tasks insert command string.\n<p>\nRequired query parameters:\n<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@codigo</code></td><td>The task key</td></tr><tr><td><code>@descripcion</code></td><td>A brief description of the task</td></tr><tr><td><code>@codasig</code></td><td>The subject key</td></tr><tr><td><code>@hestimadas</code></td><td>The ammount of hours estimation</td></tr><tr><td><code>@explotacion</code></td><td>Value referencing if the task is currently active</td></tr><tr><td><code>@tipoTarea</code></td><td>The type of the task</td></tr></tbody></table>\n</p>\n"
+  example: []
+  syntax:
+    content: public static string Insert { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Insert As String
+  overload: WebApplication.Framework.Query.GenericTasks.Insert*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WebApplication.Framework.Query.GenericTasks.Update
+  commentId: P:WebApplication.Framework.Query.GenericTasks.Update
+  id: Update
+  parent: WebApplication.Framework.Query.GenericTasks
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: Query.GenericTasks.Update
+  fullName: WebApplication.Framework.Query.GenericTasks.Update
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Framework/Queries/Query.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Update
+    path: ../WebApplication/Framework/Queries/Query.cs
+    startLine: 199
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  summary: "\nObtain the generic tasks update command string.\n<p>\nRequired query parameters:\n<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>@codigo</code></td><td>The task key</td></tr><tr><td><code>@descripcion</code></td><td>A brief description of the task</td></tr><tr><td><code>@codasig</code></td><td>The subject key</td></tr><tr><td><code>@hestimadas</code></td><td>The ammount of hours estimation</td></tr><tr><td><code>@explotacion</code></td><td>Value referencing if the task is currently active</td></tr><tr><td><code>@tipoTarea</code></td><td>The type of the task</td></tr></tbody></table>\n</p>\n"
+  example: []
+  syntax:
+    content: public static string Update { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Update As String
+  overload: WebApplication.Framework.Query.GenericTasks.Update*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebApplication.Framework.Query.GenericTasks.Select*
+  commentId: Overload:WebApplication.Framework.Query.GenericTasks.Select
+  name: Select
+  nameWithType: Query.GenericTasks.Select
+  fullName: WebApplication.Framework.Query.GenericTasks.Select
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WebApplication.Framework.Query.GenericTasks.Insert*
+  commentId: Overload:WebApplication.Framework.Query.GenericTasks.Insert
+  name: Insert
+  nameWithType: Query.GenericTasks.Insert
+  fullName: WebApplication.Framework.Query.GenericTasks.Insert
+- uid: WebApplication.Framework.Query.GenericTasks.Update*
+  commentId: Overload:WebApplication.Framework.Query.GenericTasks.Update
+  name: Update
+  nameWithType: Query.GenericTasks.Update
+  fullName: WebApplication.Framework.Query.GenericTasks.Update

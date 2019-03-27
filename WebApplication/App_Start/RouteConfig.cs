@@ -70,6 +70,24 @@ namespace WebApplication {
 				"~/UserPages/Teacher/InsertarTarea.aspx"
 			);
 
+			routes.MapPageRoute(
+				"TeacherImportTasksXmlDocument",
+				"Teacher/Tasks/ImportTasksXmlDocument",
+				"~/UserPages/Teacher/ImportarTareasXmlDocument.aspx"
+			);
+
+			routes.MapPageRoute(
+				"TeacherImportTasksDataSet",
+				"Teacher/Tasks/ImportTasksDataSet",
+				"~/UserPages/Teacher/ImportarTareasDataSet.aspx"
+			);
+
+			routes.MapPageRoute(
+				"TeacherExportTasks",
+				"Teacher/Tasks/Export",
+				"~/UserPages/Teacher/ExportarTareas.aspx"
+			);
+
 		}
 
 	}

@@ -1,38 +1,43 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WebApplication.WebNotification
-  commentId: T:WebApplication.WebNotification
-  id: WebNotification
-  parent: WebApplication
+- uid: WebApplication.UserPages.ExportarTareas
+  commentId: T:WebApplication.UserPages.ExportarTareas
+  id: ExportarTareas
+  parent: WebApplication.UserPages
   children:
-  - WebApplication.WebNotification.Alert
-  - WebApplication.WebNotification.AlertBody
-  - WebApplication.WebNotification.AlertCloseButton
-  - WebApplication.WebNotification.AlertTitle
-  - WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
-  - WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  - WebApplication.UserPages.ExportarTareas.DataAccess
+  - WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  - WebApplication.UserPages.ExportarTareas.ExportNotification
+  - WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  - WebApplication.UserPages.ExportarTareas.GridViewTasks
+  - WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.Master
+  - WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  - WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
   langs:
   - csharp
   - vb
-  name: WebNotification
-  nameWithType: WebNotification
-  fullName: WebApplication.WebNotification
+  name: ExportarTareas
+  nameWithType: ExportarTareas
+  fullName: WebApplication.UserPages.ExportarTareas
   type: Class
   source:
     remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: WebNotification
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    id: ExportarTareas
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
     startLine: 12
   assemblies:
   - WebApplication
-  namespace: WebApplication
+  namespace: WebApplication.UserPages
   syntax:
-    content: 'public class WebNotification : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
+    content: 'public class ExportarTareas : Page, IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler'
     content.vb: >-
-      Public Class WebNotification
+      Public Class ExportarTareas
           Inherits Page
           Implements IComponent, IDisposable, IParserAccessor, IUrlResolutionService, IDataBindingsAccessor, IControlBuilderAccessor, IControlDesignerAccessor, IExpressionsAccessor, INamingContainer, IFilterResolutionService, IHttpHandler
   inheritance:
@@ -119,7 +124,6 @@ items:
   - System.Web.UI.Page.AutoPostBackControl
   - System.Web.UI.Page.Header
   - System.Web.UI.Page.MaintainScrollPositionOnPostBack
-  - System.Web.UI.Page.Master
   - System.Web.UI.Page.MasterPageFile
   - System.Web.UI.Page.PageStatePersister
   - System.Web.UI.Page.Trace
@@ -296,28 +300,63 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
-  commentId: M:WebApplication.WebNotification.Page_Load(System.Object,System.EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.DataAccess
+  commentId: P:WebApplication.UserPages.ExportarTareas.DataAccess
+  id: DataAccess
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: DataAccess
+  nameWithType: ExportarTareas.DataAccess
+  fullName: WebApplication.UserPages.ExportarTareas.DataAccess
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DataAccess
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: public DataAccessService DataAccess { get; }
+    parameters: []
+    return:
+      type: DataBaseAccess.DataAccessService
+    content.vb: Public ReadOnly Property DataAccess As DataAccessService
+  overload: WebApplication.UserPages.ExportarTareas.DataAccess*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
-  parent: WebApplication.WebNotification
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
   name: Page_Load(Object, EventArgs)
-  nameWithType: WebNotification.Page_Load(Object, EventArgs)
-  fullName: WebApplication.WebNotification.Page_Load(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.Page_Load(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.Page_Load(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
-      path: WebApplication/WebNotification.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
-    path: ../WebApplication/WebNotification.aspx.cs
-    startLine: 13
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 37
   assemblies:
   - WebApplication
-  namespace: WebApplication
+  namespace: WebApplication.UserPages
   syntax:
     content: protected void Page_Load(object sender, EventArgs e)
     parameters:
@@ -326,186 +365,329 @@ items:
     - id: e
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
-  overload: WebApplication.WebNotification.Page_Load*
+  overload: WebApplication.UserPages.ExportarTareas.Page_Load*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
-  commentId: M:WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
-  id: UpdateContent(WebApplication.Framework.NotificationData)
-  parent: WebApplication.WebNotification
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
+  id: ExportTasks_Click(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.ExportarTareas
   langs:
   - csharp
   - vb
-  name: UpdateContent(NotificationData)
-  nameWithType: WebNotification.UpdateContent(NotificationData)
-  fullName: WebApplication.WebNotification.UpdateContent(WebApplication.Framework.NotificationData)
+  name: ExportTasks_Click(Object, EventArgs)
+  nameWithType: ExportarTareas.ExportTasks_Click(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object, System.EventArgs)
   type: Method
   source:
     remote:
-      path: WebApplication/WebNotification.aspx.cs
-      branch: master
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: UpdateContent
-    path: ../WebApplication/WebNotification.aspx.cs
-    startLine: 22
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  syntax:
-    content: public void UpdateContent(NotificationData notificationData)
-    parameters:
-    - id: notificationData
-      type: WebApplication.Framework.NotificationData
-    content.vb: Public Sub UpdateContent(notificationData As NotificationData)
-  overload: WebApplication.WebNotification.UpdateContent*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: WebApplication.WebNotification.Alert
-  commentId: F:WebApplication.WebNotification.Alert
-  id: Alert
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: Alert
-  nameWithType: WebNotification.Alert
-  fullName: WebApplication.WebNotification.Alert
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: Alert
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 21
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlert control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Panel Alert
-    return:
-      type: System.Web.UI.WebControls.Panel
-    content.vb: Protected Alert As Panel
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.WebNotification.AlertTitle
-  commentId: F:WebApplication.WebNotification.AlertTitle
-  id: AlertTitle
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: AlertTitle
-  nameWithType: WebNotification.AlertTitle
-  fullName: WebApplication.WebNotification.AlertTitle
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: AlertTitle
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 30
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlertTitle control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Label AlertTitle
-    return:
-      type: System.Web.UI.WebControls.Label
-    content.vb: Protected AlertTitle As Label
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.WebNotification.AlertBody
-  commentId: F:WebApplication.WebNotification.AlertBody
-  id: AlertBody
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: AlertBody
-  nameWithType: WebNotification.AlertBody
-  fullName: WebApplication.WebNotification.AlertBody
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: AlertBody
-    path: ../WebApplication/WebNotification.aspx.designer.cs
-    startLine: 39
-  assemblies:
-  - WebApplication
-  namespace: WebApplication
-  summary: "\nAlertBody control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
-  syntax:
-    content: protected Label AlertBody
-    return:
-      type: System.Web.UI.WebControls.Label
-    content.vb: Protected AlertBody As Label
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
-- uid: WebApplication.WebNotification.AlertCloseButton
-  commentId: F:WebApplication.WebNotification.AlertCloseButton
-  id: AlertCloseButton
-  parent: WebApplication.WebNotification
-  langs:
-  - csharp
-  - vb
-  name: AlertCloseButton
-  nameWithType: WebNotification.AlertCloseButton
-  fullName: WebApplication.WebNotification.AlertCloseButton
-  type: Field
-  source:
-    remote:
-      path: WebApplication/WebNotification.aspx.designer.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: AlertCloseButton
-    path: ../WebApplication/WebNotification.aspx.designer.cs
+    id: ExportTasks_Click
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
     startLine: 48
   assemblies:
   - WebApplication
-  namespace: WebApplication
-  summary: "\nAlertCloseButton control.\n"
-  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
-  example: []
+  namespace: WebApplication.UserPages
   syntax:
-    content: protected LinkButton AlertCloseButton
-    return:
-      type: System.Web.UI.WebControls.LinkButton
-    content.vb: Protected AlertCloseButton As LinkButton
+    content: protected void ExportTasks_Click(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub ExportTasks_Click(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.ExportarTareas.ExportTasks_Click*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
+  id: GridViewTasks_DataBound(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: GridViewTasks_DataBound(Object, EventArgs)
+  nameWithType: ExportarTareas.GridViewTasks_DataBound(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GridViewTasks_DataBound
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 180
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: protected void GridViewTasks_DataBound(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub GridViewTasks_DataBound(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  commentId: F:WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  id: TeacherSubjectsDataSource
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: TeacherSubjectsDataSource
+  nameWithType: ExportarTareas.TeacherSubjectsDataSource
+  fullName: WebApplication.UserPages.ExportarTareas.TeacherSubjectsDataSource
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherSubjectsDataSource
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherSubjectsDataSource control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected SqlDataSource TeacherSubjectsDataSource
+    return:
+      type: System.Web.UI.WebControls.SqlDataSource
+    content.vb: Protected TeacherSubjectsDataSource As SqlDataSource
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  commentId: F:WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  id: TeacherSubjectsTasksDataSource
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: TeacherSubjectsTasksDataSource
+  nameWithType: ExportarTareas.TeacherSubjectsTasksDataSource
+  fullName: WebApplication.UserPages.ExportarTareas.TeacherSubjectsTasksDataSource
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherSubjectsTasksDataSource
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherSubjectsTasksDataSource control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected SqlDataSource TeacherSubjectsTasksDataSource
+    return:
+      type: System.Web.UI.WebControls.SqlDataSource
+    content.vb: Protected TeacherSubjectsTasksDataSource As SqlDataSource
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  commentId: F:WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  id: DropDownSubjects
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: DropDownSubjects
+  nameWithType: ExportarTareas.DropDownSubjects
+  fullName: WebApplication.UserPages.ExportarTareas.DropDownSubjects
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: DropDownSubjects
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nDropDownSubjects control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected DropDownList DropDownSubjects
+    return:
+      type: System.Web.UI.WebControls.DropDownList
+    content.vb: Protected DropDownSubjects As DropDownList
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  commentId: F:WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  id: ExportTasksButton
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: ExportTasksButton
+  nameWithType: ExportarTareas.ExportTasksButton
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ExportTasksButton
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nExportTasksButton control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Button ExportTasksButton
+    return:
+      type: System.Web.UI.WebControls.Button
+    content.vb: Protected ExportTasksButton As Button
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks
+  commentId: F:WebApplication.UserPages.ExportarTareas.GridViewTasks
+  id: GridViewTasks
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: GridViewTasks
+  nameWithType: ExportarTareas.GridViewTasks
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GridViewTasks
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nGridViewTasks control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected GridView GridViewTasks
+    return:
+      type: System.Web.UI.WebControls.GridView
+    content.vb: Protected GridViewTasks As GridView
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.ExportNotification
+  commentId: F:WebApplication.UserPages.ExportarTareas.ExportNotification
+  id: ExportNotification
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: ExportNotification
+  nameWithType: ExportarTareas.ExportNotification
+  fullName: WebApplication.UserPages.ExportarTareas.ExportNotification
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ExportNotification
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 66
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nExportNotification control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected WebNotification ExportNotification
+    return:
+      type: WebApplication.CustomControls.WebNotification
+    content.vb: Protected ExportNotification As WebNotification
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.Master
+  commentId: P:WebApplication.UserPages.ExportarTareas.Master
+  id: Master
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: Master
+  nameWithType: ExportarTareas.Master
+  fullName: WebApplication.UserPages.ExportarTareas.Master
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Master
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 74
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nMaster property.\n"
+  remarks: "\nAuto-generated property.\n"
+  example: []
+  syntax:
+    content: public Teacher Master { get; }
+    parameters: []
+    return:
+      type: WebApplication.UserPages.Teacher
+    content.vb: Public ReadOnly Property Master As Teacher
+  overload: WebApplication.UserPages.ExportarTareas.Master*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
-- uid: WebApplication
-  commentId: N:WebApplication
-  name: WebApplication
-  nameWithType: WebApplication
-  fullName: WebApplication
+- uid: WebApplication.UserPages
+  commentId: N:WebApplication.UserPages
+  name: WebApplication.UserPages
+  nameWithType: WebApplication.UserPages
+  fullName: WebApplication.UserPages
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -2977,13 +3159,6 @@ references:
   name: MaintainScrollPositionOnPostBack
   nameWithType: Page.MaintainScrollPositionOnPostBack
   fullName: System.Web.UI.Page.MaintainScrollPositionOnPostBack
-- uid: System.Web.UI.Page.Master
-  commentId: P:System.Web.UI.Page.Master
-  parent: System.Web.UI.Page
-  isExternal: true
-  name: Master
-  nameWithType: Page.Master
-  fullName: System.Web.UI.Page.Master
 - uid: System.Web.UI.Page.MasterPageFile
   commentId: P:System.Web.UI.Page.MasterPageFile
   parent: System.Web.UI.Page
@@ -7505,11 +7680,27 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: WebApplication.WebNotification.Page_Load*
-  commentId: Overload:WebApplication.WebNotification.Page_Load
+- uid: WebApplication.UserPages.ExportarTareas.DataAccess*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.DataAccess
+  name: DataAccess
+  nameWithType: ExportarTareas.DataAccess
+  fullName: WebApplication.UserPages.ExportarTareas.DataAccess
+- uid: DataBaseAccess.DataAccessService
+  commentId: T:DataBaseAccess.DataAccessService
+  parent: DataBaseAccess
+  name: DataAccessService
+  nameWithType: DataAccessService
+  fullName: DataBaseAccess.DataAccessService
+- uid: DataBaseAccess
+  commentId: N:DataBaseAccess
+  name: DataBaseAccess
+  nameWithType: DataBaseAccess
+  fullName: DataBaseAccess
+- uid: WebApplication.UserPages.ExportarTareas.Page_Load*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.Page_Load
   name: Page_Load
-  nameWithType: WebNotification.Page_Load
-  fullName: WebApplication.WebNotification.Page_Load
+  nameWithType: ExportarTareas.Page_Load
+  fullName: WebApplication.UserPages.ExportarTareas.Page_Load
 - uid: System.EventArgs
   commentId: T:System.EventArgs
   parent: System
@@ -7517,46 +7708,69 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
-- uid: WebApplication.WebNotification.UpdateContent*
-  commentId: Overload:WebApplication.WebNotification.UpdateContent
-  name: UpdateContent
-  nameWithType: WebNotification.UpdateContent
-  fullName: WebApplication.WebNotification.UpdateContent
-- uid: WebApplication.Framework.NotificationData
-  commentId: T:WebApplication.Framework.NotificationData
-  parent: WebApplication.Framework
-  name: NotificationData
-  nameWithType: NotificationData
-  fullName: WebApplication.Framework.NotificationData
-- uid: WebApplication.Framework
-  commentId: N:WebApplication.Framework
-  name: WebApplication.Framework
-  nameWithType: WebApplication.Framework
-  fullName: WebApplication.Framework
-- uid: System.Web.UI.WebControls.Panel
-  commentId: T:System.Web.UI.WebControls.Panel
+- uid: WebApplication.UserPages.ExportarTareas.ExportTasks_Click*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.ExportTasks_Click
+  name: ExportTasks_Click
+  nameWithType: ExportarTareas.ExportTasks_Click
+  fullName: WebApplication.UserPages.ExportarTareas.ExportTasks_Click
+- uid: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
+  name: GridViewTasks_DataBound
+  nameWithType: ExportarTareas.GridViewTasks_DataBound
+  fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
+- uid: System.Web.UI.WebControls.SqlDataSource
+  commentId: T:System.Web.UI.WebControls.SqlDataSource
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: Panel
-  nameWithType: Panel
-  fullName: System.Web.UI.WebControls.Panel
+  name: SqlDataSource
+  nameWithType: SqlDataSource
+  fullName: System.Web.UI.WebControls.SqlDataSource
 - uid: System.Web.UI.WebControls
   commentId: N:System.Web.UI.WebControls
   isExternal: true
   name: System.Web.UI.WebControls
   nameWithType: System.Web.UI.WebControls
   fullName: System.Web.UI.WebControls
-- uid: System.Web.UI.WebControls.Label
-  commentId: T:System.Web.UI.WebControls.Label
+- uid: System.Web.UI.WebControls.DropDownList
+  commentId: T:System.Web.UI.WebControls.DropDownList
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: Label
-  nameWithType: Label
-  fullName: System.Web.UI.WebControls.Label
-- uid: System.Web.UI.WebControls.LinkButton
-  commentId: T:System.Web.UI.WebControls.LinkButton
+  name: DropDownList
+  nameWithType: DropDownList
+  fullName: System.Web.UI.WebControls.DropDownList
+- uid: System.Web.UI.WebControls.Button
+  commentId: T:System.Web.UI.WebControls.Button
   parent: System.Web.UI.WebControls
   isExternal: true
-  name: LinkButton
-  nameWithType: LinkButton
-  fullName: System.Web.UI.WebControls.LinkButton
+  name: Button
+  nameWithType: Button
+  fullName: System.Web.UI.WebControls.Button
+- uid: System.Web.UI.WebControls.GridView
+  commentId: T:System.Web.UI.WebControls.GridView
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: GridView
+  nameWithType: GridView
+  fullName: System.Web.UI.WebControls.GridView
+- uid: WebApplication.CustomControls.WebNotification
+  commentId: T:WebApplication.CustomControls.WebNotification
+  parent: WebApplication.CustomControls
+  name: WebNotification
+  nameWithType: WebNotification
+  fullName: WebApplication.CustomControls.WebNotification
+- uid: WebApplication.CustomControls
+  commentId: N:WebApplication.CustomControls
+  name: WebApplication.CustomControls
+  nameWithType: WebApplication.CustomControls
+  fullName: WebApplication.CustomControls
+- uid: WebApplication.UserPages.ExportarTareas.Master*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.Master
+  name: Master
+  nameWithType: ExportarTareas.Master
+  fullName: WebApplication.UserPages.ExportarTareas.Master
+- uid: WebApplication.UserPages.Teacher
+  commentId: T:WebApplication.UserPages.Teacher
+  parent: WebApplication.UserPages
+  name: Teacher
+  nameWithType: Teacher
+  fullName: WebApplication.UserPages.Teacher

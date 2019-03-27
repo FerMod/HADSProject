@@ -105,6 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\xml\HAS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\xml\SEG.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\xml\XSLTFile.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Contact.aspx" />
@@ -1703,12 +1712,15 @@
     <Content Include="MailTemplates\AccountVerification.html" />
     <Content Include="Scripts\svg-injector.min.js" />
     <Content Include="UserPages\Student\StudentHome.aspx" />
+    <Content Include="UserPages\Teacher\ImportarTareasDataSet.aspx" />
     <Content Include="UserPages\Teacher\InsertarTarea.aspx" />
     <Content Include="UserPages\Student\InstanciarTarea.aspx" />
+    <Content Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx" />
+    <Content Include="UserPages\Teacher\ExportarTareas.aspx" />
     <Content Include="UserPages\Teacher\TeacherHome.aspx" />
     <Content Include="UserPages\Teacher\TareasProfesor.aspx" />
     <Content Include="UserPages\Student\TareasAlumno.aspx" />
-    <Content Include="WebNotification.aspx" />
+    <Content Include="CustomControls\WebNotification.ascx" />
     <Content Include="img\open-iconic\bower.json" />
     <Content Include="img\open-iconic\FONT-LICENSE" />
     <Content Include="img\open-iconic\font\css\open-iconic-bootstrap.less" />
@@ -3065,6 +3077,11 @@
     <Content Include="img\open-iconic\webp\zoom-out-6x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out-8x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out.webp" />
+    <Content Include="WebAlertNotification.aspx" />
+    <None Include="App_Data\xml\tareas.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\HADS18-Tudela - Web Deploy - DEBUG.pubxml" />
     <Content Include="Inicio.aspx" />
@@ -3139,7 +3156,6 @@
       <DependentUpon>Account.Master</DependentUpon>
     </Compile>
     <Compile Include="AppConfig.cs" />
-    <Content Include="App_Code\CharCount.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -3230,6 +3246,13 @@
     <Compile Include="UserPages\Student\Student.Master.designer.cs">
       <DependentUpon>Student.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasDataSet.aspx.cs">
+      <DependentUpon>ImportarTareasDataSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasDataSet.aspx.designer.cs">
+      <DependentUpon>ImportarTareasDataSet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPages\Teacher\InsertarTarea.aspx.cs">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3243,6 +3266,20 @@
     </Compile>
     <Compile Include="UserPages\Student\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx.cs">
+      <DependentUpon>ImportarTareasXmlDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx.designer.cs">
+      <DependentUpon>ImportarTareasXmlDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ExportarTareas.aspx.cs">
+      <DependentUpon>ExportarTareas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\ExportarTareas.aspx.designer.cs">
+      <DependentUpon>ExportarTareas.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPages\Teacher\TeacherHome.aspx.cs">
       <DependentUpon>TeacherHome.aspx</DependentUpon>
@@ -3281,16 +3318,23 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebNotification.aspx.cs">
-      <DependentUpon>WebNotification.aspx</DependentUpon>
+    <Compile Include="CustomControls\WebNotification.ascx.cs">
+      <DependentUpon>WebNotification.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebNotification.aspx.designer.cs">
-      <DependentUpon>WebNotification.aspx</DependentUpon>
+    <Compile Include="CustomControls\WebNotification.ascx.designer.cs">
+      <DependentUpon>WebNotification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAlertNotification.aspx.cs">
+      <DependentUpon>WebAlertNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAlertNotification.aspx.designer.cs">
+      <DependentUpon>WebAlertNotification.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Code\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />

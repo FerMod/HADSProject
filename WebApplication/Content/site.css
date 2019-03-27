@@ -68,9 +68,9 @@ textarea {
     font-size: 12px;
 }
 
-    .label-link:hover {
-        text-decoration: none;
-    }
+.label-link:hover {
+    text-decoration: none;
+}
 
 nav .container {
     margin-left: 0;
@@ -108,9 +108,17 @@ nav .container {
     padding: 10px;
 }
 
+.table-row-middle {
+	white-space: nowrap;
+}
+
+.table-row-middle > tbody > tr > td {
+	vertical-align: middle;
+}
+
 .icon-sm {
-    width: 8px;
-    height: 8px;
+	width: 8px;
+	height: 8px;
 }
 
 .icon,

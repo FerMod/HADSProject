@@ -6,7 +6,7 @@ items:
   parent: WebApplication.Framework
   children:
   - WebApplication.Framework.NotificationData.Body
-  - WebApplication.Framework.NotificationData.Dismissable
+  - WebApplication.Framework.NotificationData.Dismissible
   - WebApplication.Framework.NotificationData.Level
   - WebApplication.Framework.NotificationData.Title
   langs:
@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: NotificationData
     path: ../WebApplication/Framework/NotificationData.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Title
     path: ../WebApplication/Framework/NotificationData.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Body
     path: ../WebApplication/Framework/NotificationData.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Level
     path: ../WebApplication/Framework/NotificationData.cs
@@ -151,35 +151,35 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: WebApplication.Framework.NotificationData.Dismissable
-  commentId: P:WebApplication.Framework.NotificationData.Dismissable
-  id: Dismissable
+- uid: WebApplication.Framework.NotificationData.Dismissible
+  commentId: P:WebApplication.Framework.NotificationData.Dismissible
+  id: Dismissible
   parent: WebApplication.Framework.NotificationData
   langs:
   - csharp
   - vb
-  name: Dismissable
-  nameWithType: NotificationData.Dismissable
-  fullName: WebApplication.Framework.NotificationData.Dismissable
+  name: Dismissible
+  nameWithType: NotificationData.Dismissible
+  fullName: WebApplication.Framework.NotificationData.Dismissible
   type: Property
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
-    id: Dismissable
+    id: Dismissible
     path: ../WebApplication/Framework/NotificationData.cs
     startLine: 10
   assemblies:
   - WebApplication
   namespace: WebApplication.Framework
   syntax:
-    content: public bool Dismissable { get; set; }
+    content: public bool Dismissible { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property Dismissable As Boolean
-  overload: WebApplication.Framework.NotificationData.Dismissable*
+    content.vb: Public Property Dismissible As Boolean
+  overload: WebApplication.Framework.NotificationData.Dismissible*
   modifiers.csharp:
   - public
   - get
@@ -512,11 +512,11 @@ references:
   name: AlertLevel
   nameWithType: AlertLevel
   fullName: WebApplication.Framework.AlertLevel
-- uid: WebApplication.Framework.NotificationData.Dismissable*
-  commentId: Overload:WebApplication.Framework.NotificationData.Dismissable
-  name: Dismissable
-  nameWithType: NotificationData.Dismissable
-  fullName: WebApplication.Framework.NotificationData.Dismissable
+- uid: WebApplication.Framework.NotificationData.Dismissible*
+  commentId: Overload:WebApplication.Framework.NotificationData.Dismissible
+  name: Dismissible
+  nameWithType: NotificationData.Dismissible
+  fullName: WebApplication.Framework.NotificationData.Dismissible
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

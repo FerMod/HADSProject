@@ -46,10 +46,6 @@ namespace WebApplication.UserPages {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if(!(bool)Session["IsLogged"]) {
-				Response.Redirect("~/Default");
-			}
-
 			if(!IsPostBack) {
 
 				Master.ShowPage(StudentMenu.Tasks);
@@ -126,7 +122,7 @@ namespace WebApplication.UserPages {
 		private DataTable CreateTasksDataTable() {
 
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
-				{ "@email", (string)Session["Email"] }
+				{ "@email", Convert.ToString(Session["Email"]) }
 			};
 
 			return DataAccess.CreateQueryDataTable(Query.StudentSubjectsTasks, parameters);
@@ -170,6 +166,10 @@ namespace WebApplication.UserPages {
 		}
 
 		protected void DropDownSubjects_SelectedIndexChanged(object sender, EventArgs e) {
+			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
+		}
+		
+		protected void DropDownSubjects_DataBound(object sender, EventArgs e) {
 			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
 		}
 

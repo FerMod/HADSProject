@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +30,7 @@ namespace WebApplication {
 
 			} else {
 
-				string queryUser = "SELECT email, nombre, apellidos FROM Usuarios WHERE email = @email AND numconfir = @numconfir";
+				string queryUser = "SELECT email, nombre, apellidos, tipo FROM Usuarios WHERE email = @email AND numconfir = @numconfir";
 				string queryUpdate = "UPDATE Usuarios SET confirmado = 1, numconfir = -1 WHERE email = @email AND numconfir = @numconfir";
 
 				Dictionary<string, object> parameters = new Dictionary<string, object> {
@@ -63,7 +63,7 @@ namespace WebApplication {
 			}
 
 			Session["NotificationData"] = notificationData;
-			Response.Redirect("/WebNotification");
+			Response.Redirect("~/WebAlertNotification");
 
 		}
 

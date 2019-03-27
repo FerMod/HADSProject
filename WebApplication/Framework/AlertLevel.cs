@@ -9,6 +9,7 @@ namespace WebApplication.Framework {
 	/// Class to act like an enum, that holds different values.
 	/// This class specifies the alert level.
 	/// </summary>
+	[Serializable]
 	public sealed class AlertLevel {
 
 		private readonly int value;
@@ -43,6 +44,68 @@ namespace WebApplication.Framework {
 				throw new InvalidCastException();
 			}
 		}
+
+		public static bool operator ==(AlertLevel a, AlertLevel b) {
+
+			// If both are null, or both are same instance, return true.
+			if(Object.ReferenceEquals(a, b)) {
+				return true;
+			}
+
+			// If one is null, but not both, return false.
+			if(a is null || b is null) {
+				return false;
+			}
+
+			// Return true if the fields match
+			return (a.value == b.value) && (a.name == b.name);
+		}
+
+		public static bool operator !=(AlertLevel a, AlertLevel b) {
+			return !(a == b);
+		}
+
+		public override bool Equals(object obj) {
+			return Equals(obj as AlertLevel);
+		}
+
+		public bool Equals(AlertLevel other) {
+
+			// If parameter is null, return false.
+			if(other is null) {
+				return false;
+			}
+
+			// Optimization for a common success case.
+			if(Object.ReferenceEquals(this, other)) {
+				return true;
+			}
+
+			// If run-time types are not exactly the same, return false.
+			if(this.GetType() != other.GetType()) {
+				return false;
+			}
+
+			// Return true if the fields match.
+			return (this.value == other.value) && (this.name == other.name);
+		}
+
+		public override int GetHashCode() {
+
+			// Overflow is fine, just wrap
+			unchecked {
+
+				int hash = 17;
+
+				hash = hash * 23 + GetHashCode(value);
+				hash = hash * 23 + GetHashCode(name);
+
+				return hash;
+			}
+
+		}
+
+		private int GetHashCode<T>(T t) => (t == null) ? 0 : t.GetHashCode();
 
 	}
 

@@ -4,6 +4,7 @@ using System.Data;
 using System.Web.Routing;
 using System.Web.UI;
 using DataBaseAccess;
+using WebApplication.CustomControls;
 using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
 
@@ -12,7 +13,10 @@ namespace WebApplication.UserPages {
 	public enum TeacherMenu {
 		None = -1,
 		Home,
-		Tasks
+		Tasks,
+		ImportTasksXmlDocument,
+		ImportTasksDataSet,
+		ExportTasks
 	}
 
 	public partial class Teacher : MasterPage {
@@ -27,8 +31,8 @@ namespace WebApplication.UserPages {
 
 			if(!IsPostBack) {
 
-				if(!IsUserAllowed()) {
-					Response.Redirect("~/Default");
+				if(!IsAllowedUser()) {
+					Response.Redirect(AppConfig.WebSite.MainPage);
 				}
 
 			}
@@ -36,24 +40,35 @@ namespace WebApplication.UserPages {
 		}
 
 		public void ShowPage(TeacherMenu selectedMenu) {
+
+			HomeTab.RemoveCssClass("active", "disabled");
+			TasksTab.RemoveCssClass("active", "disabled");
+			ImportTasksXmlDocumentTab.RemoveCssClass("active", "disabled");
+			ImportTasksDataSetTab.RemoveCssClass("active", "disabled");
+
 			switch(selectedMenu) {
 				case TeacherMenu.Home:
 					HomeTab.AddCssClass("active", "disabled");
-					TasksTab.RemoveCssClass("active", "disabled");
 					break;
 				case TeacherMenu.Tasks:
-					HomeTab.RemoveCssClass("active", "disabled");
 					TasksTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.ImportTasksXmlDocument:
+					ImportTasksXmlDocumentTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.ImportTasksDataSet:
+					ImportTasksDataSetTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.ExportTasks:
+					ExportTasksTab.AddCssClass("active", "disabled");
 					break;
 				case TeacherMenu.None:
 				default:
-					HomeTab.RemoveCssClass("active", "disabled");
-					TasksTab.RemoveCssClass("active", "disabled");
 					break;
 			}
 		}
 
-		private bool IsUserAllowed() {
+		private bool IsAllowedUser() {
 
 			if(!Convert.ToBoolean(Session["IsLogged"]) && RequiresLoggedUser) {
 				return false;

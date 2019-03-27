@@ -149,10 +149,8 @@
         </nav>
 
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="NotificationContent" runat="server">
-            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <asp:ContentPlaceHolder ID="NotificationContent" runat="server" />
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - HADS</p>
