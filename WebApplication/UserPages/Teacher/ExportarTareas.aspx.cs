@@ -70,13 +70,17 @@ namespace WebApplication.UserPages {
 				}
 
 				string fileExtension = FileFormatDropDown.SelectedValue.ToLower();
-				string filePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.{fileExtension}");
+				string filePath = String.Empty;
 				switch(fileExtension) {
 					case "xml":
+						Directory.CreateDirectory(AppConfig.Xml.Folder);
+						filePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.{fileExtension}");
 						tasksDataSet.WriteXml(filePath);
 						AddXmlNamespaceAttribute(filePath, subject.ToLower());
 						break;
 					case "json":
+						Directory.CreateDirectory(AppConfig.Json.Folder);
+						filePath = Path.Combine(AppConfig.Json.Folder, $"{subject}.{fileExtension}");
 						File.WriteAllText(filePath, JsonConvert.SerializeObject(tasksDataTable, Formatting.Indented));
 						break;
 					default:
@@ -84,18 +88,30 @@ namespace WebApplication.UserPages {
 				}
 
 				StringBuilder sb = new StringBuilder();
-				if(File.Exists(filePath)) {
-					sb.Append($"Existing file overrided.<br />");
+				if(!String.IsNullOrWhiteSpace(filePath)) {
+
+					if(File.Exists(filePath)) {
+						sb.Append($"Existing file overrided.<br />");
+					}
+					sb.Append($"Exported {rowCount} rows to file \"<code>{subject}.{fileExtension}</code>\".");
+
+					NotificationData data = new NotificationData {
+						Body = sb.ToString(),
+						Level = AlertLevel.Info,
+						Dismissible = true
+					};
+					ExportNotification.ShowNotification(data);
+
+				} else {
+
+					NotificationData data = new NotificationData {
+						Body = "Could not save the file correctly. Please, try again later.",
+						Level = AlertLevel.Danger,
+						Dismissible = true
+					};
+					ExportNotification.ShowNotification(data);
+
 				}
-				sb.Append($"Exported {rowCount} rows to file \"<code>{subject}.{fileExtension}</code>\".");
-
-				NotificationData data = new NotificationData {
-					Body = sb.ToString(),
-					Level = AlertLevel.Info,
-					Dismissible = true
-				};
-				ExportNotification.ShowNotification(data);
-
 
 			} catch(Exception ex) {
 

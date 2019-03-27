@@ -1,15 +1,69 @@
-<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="yes"?>
 <tareas xmlns:has="http://ji.ehu.es/has">
-  <tarea codigo= "HAS18-Test1">
-    <descripcion>Test 5 de la asignatura</descripcion>
+  <tarea codigo="DeleteMe">
+    <descripcion>Delete me, I'm a test... </descripcion>
+    <hestimadas>404</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Test</tipotarea>
+  </tarea>
+  <tarea codigo="GIS-Lab4">
+    <descripcion>ddfdfdf</descripcion>
+    <hestimadas>6</hestimadas>
+    <explotacion>false</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HADS-Task01">
+    <descripcion>Test task 01</descripcion>
     <hestimadas>1</hestimadas>
     <explotacion>false</explotacion>
-    <tipotarea>Examen</tipotarea>
+    <tipotarea>Test</tipotarea>
   </tarea>
-  <tarea codigo="HAS18-Lab4">
-    <descripcion>Laboratorio 12</descripcion>
+  <tarea codigo="HADS-Task02">
+    <descripcion>Test task 02</descripcion>
+    <hestimadas>2</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Test</tipotarea>
+  </tarea>
+  <tarea codigo="HADS-Task03">
+    <descripcion>Test task 03</descripcion>
+    <hestimadas>7</hestimadas>
+    <explotacion>false</explotacion>
+    <tipotarea>Test</tipotarea>
+  </tarea>
+  <tarea codigo="HAS08-Lab10">
+    <descripcion>aaaa</descripcion>
+    <hestimadas>10</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HAS08-Lab12">
+    <descripcion>Laboratorio 12 de la asignatura</descripcion>
     <hestimadas>12</hestimadas>
     <explotacion>true</explotacion>
     <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HAS08-Test5">
+    <descripcion>Test 5 de la asignatura</descripcion>
+    <hestimadas>3</hestimadas>
+    <explotacion>false</explotacion>
+    <tipotarea>examen</tipotarea>
+  </tarea>
+  <tarea codigo="HAS11-LAB4">
+    <descripcion>lalalalal</descripcion>
+    <hestimadas>20</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="Lab4">
+    <descripcion>lelelelelelelel</descripcion>
+    <hestimadas>12</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="Testtrt">
+    <descripcion>ta</descripcion>
+    <hestimadas>0</hestimadas>
+    <explotacion>false</explotacion>
+    <tipotarea>Test</tipotarea>
   </tarea>
 </tareas>

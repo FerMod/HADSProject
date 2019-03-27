@@ -1,0 +1,79 @@
+[
+  {
+    "codigo": "DeleteMe",
+    "descripcion": "Delete me, I'm a test... ",
+    "hestimadas": 404,
+    "explotacion": true,
+    "tipotarea": "Test"
+  },
+  {
+    "codigo": "GIS-Lab4",
+    "descripcion": "ddfdfdf",
+    "hestimadas": 6,
+    "explotacion": false,
+    "tipotarea": "Laboratorio"
+  },
+  {
+    "codigo": "HADS-Task01",
+    "descripcion": "Test task 01",
+    "hestimadas": 1,
+    "explotacion": false,
+    "tipotarea": "Test"
+  },
+  {
+    "codigo": "HADS-Task02",
+    "descripcion": "Test task 02",
+    "hestimadas": 2,
+    "explotacion": true,
+    "tipotarea": "Test"
+  },
+  {
+    "codigo": "HADS-Task03",
+    "descripcion": "Test task 03",
+    "hestimadas": 7,
+    "explotacion": false,
+    "tipotarea": "Test"
+  },
+  {
+    "codigo": "HAS08-Lab10",
+    "descripcion": "aaaa",
+    "hestimadas": 10,
+    "explotacion": true,
+    "tipotarea": "Laboratorio"
+  },
+  {
+    "codigo": "HAS08-Lab12",
+    "descripcion": "Laboratorio 12 de la asignatura",
+    "hestimadas": 12,
+    "explotacion": true,
+    "tipotarea": "Laboratorio"
+  },
+  {
+    "codigo": "HAS08-Test5",
+    "descripcion": "Test 5 de la asignatura",
+    "hestimadas": 3,
+    "explotacion": false,
+    "tipotarea": "examen"
+  },
+  {
+    "codigo": "HAS11-LAB4",
+    "descripcion": "lalalalal",
+    "hestimadas": 20,
+    "explotacion": true,
+    "tipotarea": "Laboratorio"
+  },
+  {
+    "codigo": "Lab4",
+    "descripcion": "lelelelelelelel",
+    "hestimadas": 12,
+    "explotacion": true,
+    "tipotarea": "Laboratorio"
+  },
+  {
+    "codigo": "Testtrt",
+    "descripcion": "ta",
+    "hestimadas": 0,
+    "explotacion": false,
+    "tipotarea": "Test"
+  }
+]

@@ -56,7 +56,7 @@
     </div>
 
     <div class="form-group">
-        <asp:GridView ID="GridViewTasks" ClientIDMode="Static" CssClass="table table-sm table-bordered table-responsive-md table-hover table-row-middle" DataKeyNames="Codigo" AutoPostBack="True" runat="server" TabIndex="2" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" AllowSorting="True" EmptyDataText="No tasks available." DataSourceID="TeacherSubjectsTasksDataSource" OnDataBound="GridViewTasks_DataBound">
+        <asp:GridView ID="GridViewTasks" ClientIDMode="Static" CssClass="table table-sm table-bordered table-responsive-md table-hover table-row-middle" DataKeyNames="Codigo" AutoPostBack="True" runat="server" TabIndex="0" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" AllowSorting="True" EmptyDataText="No tasks available." DataSourceID="TeacherSubjectsTasksDataSource" OnDataBound="GridViewTasks_DataBound">
             <Columns>
                 <asp:BoundField DataField="Codigo" HeaderText="Code" SortExpression="Codigo" ReadOnly="True" />
                 <asp:BoundField DataField="Descripcion" HeaderText="Description" SortExpression="Descripcion" />

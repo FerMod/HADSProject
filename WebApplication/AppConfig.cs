@@ -110,6 +110,21 @@ namespace WebApplication {
 
 		}
 
+		public static class Json {
+
+			/// <summary>
+			/// The path where the json files are stored.
+			/// </summary>
+			public static string Folder { get; internal set; }
+
+			static Json() {
+
+				Folder = HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["JsonFolder"]);
+
+			}
+
+		}
+
 	}
 
 }

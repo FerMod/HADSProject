@@ -20,7 +20,7 @@
         <div class="input-group col-md-6">
             <asp:DropDownList ID="DropDownSubjects" CssClass="custom-select" runat="server" TabIndex="1" AutoPostBack="True" DataSourceID="TeacherSubjectsDataSource" DataTextField="codigoasig" DataValueField="codigoasig" OnDataBound="DropDownSubjects_DataBound" OnSelectedIndexChanged="DropDownSubjects_SelectedIndexChanged" />
             <div class="input-group-append">
-                <asp:Button ID="ImportTasksButton" CssClass="btn btn-primary" Text="Import Tasks" TabIndex="2" OnClick="ImportTasks_Click" CausesValidation="False" Enabled="true" runat="server" UseSubmitBehavior="False" />
+                <asp:Button ID="ImportTasksButton" CssClass="btn btn-primary" Text="Import Tasks" TabIndex="0" OnClick="ImportTasks_Click" CausesValidation="False" Enabled="true" runat="server" UseSubmitBehavior="False" />
             </div>
         </div>
     </div>
