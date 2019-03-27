@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: WebApplication/Default.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: _Default
     path: ../WebApplication/Default.aspx.designer.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: WebApplication/Default.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/Default.aspx.cs

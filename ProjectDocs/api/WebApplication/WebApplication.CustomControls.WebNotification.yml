@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: WebNotification
     path: ../WebApplication/CustomControls/WebNotification.ascx.designer.cs
@@ -235,7 +235,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Title
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Level
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Body
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Dismissible
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Visible
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowNotification
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -446,7 +446,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AlertCloseButton_Click
     path: ../WebApplication/CustomControls/WebNotification.ascx.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Alert
     path: ../WebApplication/CustomControls/WebNotification.ascx.designer.cs
@@ -515,7 +515,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AlertTitle
     path: ../WebApplication/CustomControls/WebNotification.ascx.designer.cs
@@ -549,7 +549,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AlertBody
     path: ../WebApplication/CustomControls/WebNotification.ascx.designer.cs
@@ -583,7 +583,7 @@ items:
   source:
     remote:
       path: WebApplication/CustomControls/WebNotification.ascx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: AlertCloseButton
     path: ../WebApplication/CustomControls/WebNotification.ascx.designer.cs

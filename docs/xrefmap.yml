@@ -634,6 +634,25 @@ references:
   commentId: T:WebApplication.AppConfig
   fullName: WebApplication.AppConfig
   nameWithType: AppConfig
+- uid: WebApplication.AppConfig.Json
+  name: AppConfig.Json
+  href: api/WebApplication/WebApplication.AppConfig.Json.html
+  commentId: T:WebApplication.AppConfig.Json
+  fullName: WebApplication.AppConfig.Json
+  nameWithType: AppConfig.Json
+- uid: WebApplication.AppConfig.Json.Folder
+  name: Folder
+  href: api/WebApplication/WebApplication.AppConfig.Json.html#WebApplication_AppConfig_Json_Folder
+  commentId: P:WebApplication.AppConfig.Json.Folder
+  fullName: WebApplication.AppConfig.Json.Folder
+  nameWithType: AppConfig.Json.Folder
+- uid: WebApplication.AppConfig.Json.Folder*
+  name: Folder
+  href: api/WebApplication/WebApplication.AppConfig.Json.html#WebApplication_AppConfig_Json_Folder_
+  commentId: Overload:WebApplication.AppConfig.Json.Folder
+  isSpec: "True"
+  fullName: WebApplication.AppConfig.Json.Folder
+  nameWithType: AppConfig.Json.Folder
 - uid: WebApplication.AppConfig.SmtpServer
   name: AppConfig.SmtpServer
   href: api/WebApplication/WebApplication.AppConfig.SmtpServer.html
@@ -2177,6 +2196,44 @@ references:
   commentId: F:WebApplication.UserPages.ExportarTareas.ExportTasksButton
   fullName: WebApplication.UserPages.ExportarTareas.ExportTasksButton
   nameWithType: ExportarTareas.ExportTasksButton
+- uid: WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  name: FileExtensionLabel
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_FileExtensionLabel
+  commentId: F:WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  fullName: WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  nameWithType: ExportarTareas.FileExtensionLabel
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  name: FileFormatDropDown
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_FileFormatDropDown
+  commentId: F:WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  nameWithType: ExportarTareas.FileFormatDropDown
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object,System.EventArgs)
+  name: FileFormatDropDown_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_FileFormatDropDown_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.FileFormatDropDown_Load(Object, EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load*
+  name: FileFormatDropDown_Load
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_FileFormatDropDown_Load_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load
+  nameWithType: ExportarTareas.FileFormatDropDown_Load
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object,System.EventArgs)
+  name: FileFormatDropDown_SelectedIndexChanged(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_FileFormatDropDown_SelectedIndexChanged_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object, System.EventArgs)
+  nameWithType: ExportarTareas.FileFormatDropDown_SelectedIndexChanged(Object, EventArgs)
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged*
+  name: FileFormatDropDown_SelectedIndexChanged
+  href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_FileFormatDropDown_SelectedIndexChanged_
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged
+  isSpec: "True"
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged
+  nameWithType: ExportarTareas.FileFormatDropDown_SelectedIndexChanged
 - uid: WebApplication.UserPages.ExportarTareas.GridViewTasks
   name: GridViewTasks
   href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html#WebApplication_UserPages_ExportarTareas_GridViewTasks

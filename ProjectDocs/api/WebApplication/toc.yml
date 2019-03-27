@@ -12,6 +12,8 @@
     name: Account.ActiveNav
   - uid: WebApplication.AppConfig
     name: AppConfig
+  - uid: WebApplication.AppConfig.Json
+    name: AppConfig.Json
   - uid: WebApplication.AppConfig.SmtpServer
     name: AppConfig.SmtpServer
   - uid: WebApplication.AppConfig.WebSite

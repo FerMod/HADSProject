@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/StudentHome.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: StudentHome
     path: ../WebApplication/UserPages/Student/StudentHome.aspx.designer.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/StudentHome.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Student/StudentHome.aspx.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/StudentHome.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Student/StudentHome.aspx.designer.cs

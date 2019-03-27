@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportarTareasXmlDocument
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
@@ -315,11 +315,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 22
+    startLine: 15
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -350,11 +350,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: XmlDocumentSource
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 39
+    startLine: 32
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -385,11 +385,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 48
+    startLine: 41
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -420,11 +420,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects_DataBound
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 64
+    startLine: 58
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -455,11 +455,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects_SelectedIndexChanged
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 68
+    startLine: 62
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -490,11 +490,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasks_Click
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.cs
-    startLine: 72
+    startLine: 66
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -525,7 +525,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
@@ -559,7 +559,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
@@ -593,7 +593,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksButton
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
@@ -627,7 +627,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: XmlData
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
@@ -661,7 +661,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportNotification
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
@@ -695,7 +695,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/ImportarTareasXmlDocument.aspx.designer.cs

@@ -1,34 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: EmailLib.EmailService
-  commentId: T:EmailLib.EmailService
-  id: EmailService
-  parent: EmailLib
+- uid: WebApplication.AppConfig.Json
+  commentId: T:WebApplication.AppConfig.Json
+  id: AppConfig.Json
+  parent: WebApplication
   children:
-  - EmailLib.EmailService.#ctor(EmailLib.SmtpServerConfig)
-  - EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
-  - EmailLib.EmailService.SmtpConfig
+  - WebApplication.AppConfig.Json.Folder
   langs:
   - csharp
   - vb
-  name: EmailService
-  nameWithType: EmailService
-  fullName: EmailLib.EmailService
+  name: AppConfig.Json
+  nameWithType: AppConfig.Json
+  fullName: WebApplication.AppConfig.Json
   type: Class
   source:
     remote:
-      path: EmailLib/Framework/EmailService.cs
+      path: WebApplication/AppConfig.cs
       branch: master
       repo: git@github.com:FerMod/HADSProject.git
-    id: EmailService
-    path: ../EmailLib/Framework/EmailService.cs
-    startLine: 8
+    id: Json
+    path: ../WebApplication/AppConfig.cs
+    startLine: 112
   assemblies:
-  - EmailLib
-  namespace: EmailLib
+  - WebApplication
+  namespace: WebApplication
   syntax:
-    content: public class EmailService
-    content.vb: Public Class EmailService
+    content: public static class Json
+    content.vb: Public Module Json
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,117 +39,56 @@ items:
   - System.Object.MemberwiseClone
   modifiers.csharp:
   - public
+  - static
   - class
   modifiers.vb:
   - Public
-  - Class
-- uid: EmailLib.EmailService.SmtpConfig
-  commentId: P:EmailLib.EmailService.SmtpConfig
-  id: SmtpConfig
-  parent: EmailLib.EmailService
+  - Module
+- uid: WebApplication.AppConfig.Json.Folder
+  commentId: P:WebApplication.AppConfig.Json.Folder
+  id: Folder
+  parent: WebApplication.AppConfig.Json
   langs:
   - csharp
   - vb
-  name: SmtpConfig
-  nameWithType: EmailService.SmtpConfig
-  fullName: EmailLib.EmailService.SmtpConfig
+  name: Folder
+  nameWithType: AppConfig.Json.Folder
+  fullName: WebApplication.AppConfig.Json.Folder
   type: Property
   source:
     remote:
-      path: EmailLib/Framework/EmailService.cs
+      path: WebApplication/AppConfig.cs
       branch: master
       repo: git@github.com:FerMod/HADSProject.git
-    id: SmtpConfig
-    path: ../EmailLib/Framework/EmailService.cs
-    startLine: 13
+    id: Folder
+    path: ../WebApplication/AppConfig.cs
+    startLine: 117
   assemblies:
-  - EmailLib
-  namespace: EmailLib
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nThe path where the json files are stored.\n"
+  example: []
   syntax:
-    content: public SmtpServerConfig SmtpConfig { get; }
+    content: public static string Folder { get; }
     parameters: []
     return:
-      type: EmailLib.SmtpServerConfig
-    content.vb: Public ReadOnly Property SmtpConfig As SmtpServerConfig
-  overload: EmailLib.EmailService.SmtpConfig*
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Folder As String
+  overload: WebApplication.AppConfig.Json.Folder*
   modifiers.csharp:
   - public
+  - static
   - get
   modifiers.vb:
   - Public
+  - Shared
   - ReadOnly
-- uid: EmailLib.EmailService.#ctor(EmailLib.SmtpServerConfig)
-  commentId: M:EmailLib.EmailService.#ctor(EmailLib.SmtpServerConfig)
-  id: '#ctor(EmailLib.SmtpServerConfig)'
-  parent: EmailLib.EmailService
-  langs:
-  - csharp
-  - vb
-  name: EmailService(SmtpServerConfig)
-  nameWithType: EmailService.EmailService(SmtpServerConfig)
-  fullName: EmailLib.EmailService.EmailService(EmailLib.SmtpServerConfig)
-  type: Constructor
-  source:
-    remote:
-      path: EmailLib/Framework/EmailService.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: .ctor
-    path: ../EmailLib/Framework/EmailService.cs
-    startLine: 15
-  assemblies:
-  - EmailLib
-  namespace: EmailLib
-  syntax:
-    content: public EmailService(SmtpServerConfig smtpServerConfig)
-    parameters:
-    - id: smtpServerConfig
-      type: EmailLib.SmtpServerConfig
-    content.vb: Public Sub New(smtpServerConfig As SmtpServerConfig)
-  overload: EmailLib.EmailService.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
-  commentId: M:EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
-  id: SendEmail(System.Net.Mail.MailMessage)
-  parent: EmailLib.EmailService
-  langs:
-  - csharp
-  - vb
-  name: SendEmail(MailMessage)
-  nameWithType: EmailService.SendEmail(MailMessage)
-  fullName: EmailLib.EmailService.SendEmail(System.Net.Mail.MailMessage)
-  type: Method
-  source:
-    remote:
-      path: EmailLib/Framework/EmailService.cs
-      branch: master
-      repo: git@github.com:FerMod/HADSProject.git
-    id: SendEmail
-    path: ../EmailLib/Framework/EmailService.cs
-    startLine: 29
-  assemblies:
-  - EmailLib
-  namespace: EmailLib
-  syntax:
-    content: public void SendEmail(MailMessage mailMessage)
-    parameters:
-    - id: mailMessage
-      type: System.Net.Mail.MailMessage
-    content.vb: Public Sub SendEmail(mailMessage As MailMessage)
-  overload: EmailLib.EmailService.SendEmail*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 references:
-- uid: EmailLib
-  commentId: N:EmailLib
-  name: EmailLib
-  nameWithType: EmailLib
-  fullName: EmailLib
+- uid: WebApplication
+  commentId: N:WebApplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -444,37 +381,15 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: EmailLib.EmailService.SmtpConfig*
-  commentId: Overload:EmailLib.EmailService.SmtpConfig
-  name: SmtpConfig
-  nameWithType: EmailService.SmtpConfig
-  fullName: EmailLib.EmailService.SmtpConfig
-- uid: EmailLib.SmtpServerConfig
-  commentId: T:EmailLib.SmtpServerConfig
-  parent: EmailLib
-  name: SmtpServerConfig
-  nameWithType: SmtpServerConfig
-  fullName: EmailLib.SmtpServerConfig
-- uid: EmailLib.EmailService.#ctor*
-  commentId: Overload:EmailLib.EmailService.#ctor
-  name: EmailService
-  nameWithType: EmailService.EmailService
-  fullName: EmailLib.EmailService.EmailService
-- uid: EmailLib.EmailService.SendEmail*
-  commentId: Overload:EmailLib.EmailService.SendEmail
-  name: SendEmail
-  nameWithType: EmailService.SendEmail
-  fullName: EmailLib.EmailService.SendEmail
-- uid: System.Net.Mail.MailMessage
-  commentId: T:System.Net.Mail.MailMessage
-  parent: System.Net.Mail
+- uid: WebApplication.AppConfig.Json.Folder*
+  commentId: Overload:WebApplication.AppConfig.Json.Folder
+  name: Folder
+  nameWithType: AppConfig.Json.Folder
+  fullName: WebApplication.AppConfig.Json.Folder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: MailMessage
-  nameWithType: MailMessage
-  fullName: System.Net.Mail.MailMessage
-- uid: System.Net.Mail
-  commentId: N:System.Net.Mail
-  isExternal: true
-  name: System.Net.Mail
-  nameWithType: System.Net.Mail
-  fullName: System.Net.Mail
+  name: String
+  nameWithType: String
+  fullName: System.String

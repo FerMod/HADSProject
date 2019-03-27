@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccessService
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ConnectionString
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: .ctor
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -139,7 +139,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: NonQuery
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Query
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Scalar
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -292,7 +292,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CreateQueryDataTable
     path: ../DataBaseAccess/Framework/DataAccessService.cs
@@ -342,7 +342,7 @@ items:
   source:
     remote:
       path: DataBaseAccess/Framework/DataAccessService.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: CreateDataAdapter
     path: ../DataBaseAccess/Framework/DataAccessService.cs

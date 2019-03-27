@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportarTareasDataSet
     path: ../WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/ImportarTareasDataSet.aspx.designer.cs

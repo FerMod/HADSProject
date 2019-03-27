@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherMenu
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: None
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Home
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -116,7 +116,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Tasks
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksXmlDocument
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksDataSet
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportTasks
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs

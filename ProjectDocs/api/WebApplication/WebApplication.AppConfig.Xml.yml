@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Xml
     path: ../WebApplication/AppConfig.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Folder
     path: ../WebApplication/AppConfig.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: SubjectsXsltFile
     path: ../WebApplication/AppConfig.cs

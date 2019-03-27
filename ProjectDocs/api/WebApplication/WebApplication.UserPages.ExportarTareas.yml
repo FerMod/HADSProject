@@ -10,6 +10,10 @@ items:
   - WebApplication.UserPages.ExportarTareas.ExportNotification
   - WebApplication.UserPages.ExportarTareas.ExportTasks_Click(System.Object,System.EventArgs)
   - WebApplication.UserPages.ExportarTareas.ExportTasksButton
+  - WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  - WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  - WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object,System.EventArgs)
+  - WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object,System.EventArgs)
   - WebApplication.UserPages.ExportarTareas.GridViewTasks
   - WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound(System.Object,System.EventArgs)
   - WebApplication.UserPages.ExportarTareas.Master
@@ -26,7 +30,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportarTareas
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
@@ -314,11 +318,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-    startLine: 21
+    startLine: 18
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -349,11 +353,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-    startLine: 37
+    startLine: 34
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -384,11 +388,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportTasks_Click
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-    startLine: 48
+    startLine: 45
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -419,11 +423,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks_DataBound
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
-    startLine: 180
+    startLine: 129
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -436,6 +440,76 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub GridViewTasks_DataBound(sender As Object, e As EventArgs)
   overload: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object,System.EventArgs)
+  id: FileFormatDropDown_Load(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: FileFormatDropDown_Load(Object, EventArgs)
+  nameWithType: ExportarTareas.FileFormatDropDown_Load(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+      branch: master
+      repo: git@github.com:FerMod/HADSProject.git
+    id: FileFormatDropDown_Load
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 147
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: protected void FileFormatDropDown_Load(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub FileFormatDropDown_Load(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object,System.EventArgs)
+  id: FileFormatDropDown_SelectedIndexChanged(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: FileFormatDropDown_SelectedIndexChanged(Object, EventArgs)
+  nameWithType: ExportarTareas.FileFormatDropDown_SelectedIndexChanged(Object, EventArgs)
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+      branch: master
+      repo: git@github.com:FerMod/HADSProject.git
+    id: FileFormatDropDown_SelectedIndexChanged
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.cs
+    startLine: 151
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: protected void FileFormatDropDown_SelectedIndexChanged(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub FileFormatDropDown_SelectedIndexChanged(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -454,7 +528,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsDataSource
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
@@ -488,7 +562,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherSubjectsTasksDataSource
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
@@ -508,6 +582,40 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  commentId: F:WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  id: FileFormatDropDown
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: FileFormatDropDown
+  nameWithType: ExportarTareas.FileFormatDropDown
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: master
+      repo: git@github.com:FerMod/HADSProject.git
+    id: FileFormatDropDown
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nFileFormatDropDown control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected DropDownList FileFormatDropDown
+    return:
+      type: System.Web.UI.WebControls.DropDownList
+    content.vb: Protected FileFormatDropDown As DropDownList
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.UserPages.ExportarTareas.DropDownSubjects
   commentId: F:WebApplication.UserPages.ExportarTareas.DropDownSubjects
   id: DropDownSubjects
@@ -522,11 +630,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DropDownSubjects
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-    startLine: 39
+    startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -538,6 +646,40 @@ items:
     return:
       type: System.Web.UI.WebControls.DropDownList
     content.vb: Protected DropDownSubjects As DropDownList
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  commentId: F:WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  id: FileExtensionLabel
+  parent: WebApplication.UserPages.ExportarTareas
+  langs:
+  - csharp
+  - vb
+  name: FileExtensionLabel
+  nameWithType: ExportarTareas.FileExtensionLabel
+  fullName: WebApplication.UserPages.ExportarTareas.FileExtensionLabel
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+      branch: master
+      repo: git@github.com:FerMod/HADSProject.git
+    id: FileExtensionLabel
+    path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nFileExtensionLabel control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Label FileExtensionLabel
+    return:
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected FileExtensionLabel As Label
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -556,11 +698,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportTasksButton
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-    startLine: 48
+    startLine: 66
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -590,11 +732,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GridViewTasks
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-    startLine: 57
+    startLine: 75
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -624,11 +766,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportNotification
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-    startLine: 66
+    startLine: 84
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -658,11 +800,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/ExportarTareas.aspx.designer.cs
-    startLine: 74
+    startLine: 92
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -7718,6 +7860,16 @@ references:
   name: GridViewTasks_DataBound
   nameWithType: ExportarTareas.GridViewTasks_DataBound
   fullName: WebApplication.UserPages.ExportarTareas.GridViewTasks_DataBound
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load
+  name: FileFormatDropDown_Load
+  nameWithType: ExportarTareas.FileFormatDropDown_Load
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_Load
+- uid: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged*
+  commentId: Overload:WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged
+  name: FileFormatDropDown_SelectedIndexChanged
+  nameWithType: ExportarTareas.FileFormatDropDown_SelectedIndexChanged
+  fullName: WebApplication.UserPages.ExportarTareas.FileFormatDropDown_SelectedIndexChanged
 - uid: System.Web.UI.WebControls.SqlDataSource
   commentId: T:System.Web.UI.WebControls.SqlDataSource
   parent: System.Web.UI.WebControls
@@ -7738,6 +7890,13 @@ references:
   name: DropDownList
   nameWithType: DropDownList
   fullName: System.Web.UI.WebControls.DropDownList
+- uid: System.Web.UI.WebControls.Label
+  commentId: T:System.Web.UI.WebControls.Label
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: System.Web.UI.WebControls.Label
 - uid: System.Web.UI.WebControls.Button
   commentId: T:System.Web.UI.WebControls.Button
   parent: System.Web.UI.WebControls

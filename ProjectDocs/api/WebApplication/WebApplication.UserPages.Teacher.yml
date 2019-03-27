@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Teacher
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -278,7 +278,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: UserDataSet
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -313,7 +313,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowPage
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -381,7 +381,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: HomeTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -415,7 +415,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TasksTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -449,7 +449,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksXmlDocumentTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -483,7 +483,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksDataSetTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -517,7 +517,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportTasksTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -551,7 +551,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherTasksUpdatePanel
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -585,7 +585,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherContent
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -619,7 +619,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs

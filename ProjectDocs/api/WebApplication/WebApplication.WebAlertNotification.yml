@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: WebApplication/WebAlertNotification.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: WebAlertNotification
     path: ../WebApplication/WebAlertNotification.aspx.designer.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: WebApplication/WebAlertNotification.aspx.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/WebAlertNotification.aspx.cs
@@ -341,7 +341,7 @@ items:
   source:
     remote:
       path: WebApplication/WebAlertNotification.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: GlobalNotification
     path: ../WebApplication/WebAlertNotification.aspx.designer.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: WebApplication/WebAlertNotification.aspx.designer.cs
-      branch: FerMod
+      branch: master
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/WebAlertNotification.aspx.designer.cs

@@ -9,6 +9,7 @@ items:
   - WebApplication.Account
   - WebApplication.Account.ActiveNav
   - WebApplication.AppConfig
+  - WebApplication.AppConfig.Json
   - WebApplication.AppConfig.SmtpServer
   - WebApplication.AppConfig.WebSite
   - WebApplication.AppConfig.Xml
@@ -68,6 +69,11 @@ references:
   name: AppConfig.Xml
   nameWithType: AppConfig.Xml
   fullName: WebApplication.AppConfig.Xml
+- uid: WebApplication.AppConfig.Json
+  commentId: T:WebApplication.AppConfig.Json
+  name: AppConfig.Json
+  nameWithType: AppConfig.Json
+  fullName: WebApplication.AppConfig.Json
 - uid: WebApplication.BundleConfig
   commentId: T:WebApplication.BundleConfig
   name: BundleConfig
