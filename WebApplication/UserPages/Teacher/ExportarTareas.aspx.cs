@@ -51,6 +51,7 @@ namespace WebApplication.UserPages {
 
 				EnumerableRowCollection<DataRow> rowColection = GenericTasksDataTable.AsEnumerable().Where(r => r.Field<string>("CodAsig") == subject);
 				DataTable tasksDataTable = rowColection.Any() ? rowColection.CopyToDataTable() : GenericTasksDataTable.Clone();
+				tasksDataTable.Columns.Remove("CodAsig");
 				tasksDataTable.TableName = "tarea";
 				int rowCount = tasksDataTable.Rows.Count;
 
@@ -76,7 +77,6 @@ namespace WebApplication.UserPages {
 						AddXmlNamespaceAttribute(filePath, subject.ToLower());
 						break;
 					case "json":
-						tasksDataTable.Columns.Remove("codasig");
 						File.WriteAllText(filePath, JsonConvert.SerializeObject(tasksDataTable, Formatting.Indented));
 						break;
 					default:

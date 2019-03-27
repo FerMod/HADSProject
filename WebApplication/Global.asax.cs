@@ -37,13 +37,6 @@ namespace WebApplication {
 
 			SetupDataAccess();
 
-#if DEBUG
-			DataAccessService dataService;
-			Application.Lock();
-			dataService = Application["DataAccess"] as DataAccessService;
-			Application.UnLock();
-			dataService.NonQuery("DELETE FROM Usuarios WHERE email = 'tudelaigarcia@gmail.com'");
-#endif
 		}
 
 		protected void Application_BeginRequest(object sender, EventArgs e) { }
@@ -63,13 +56,6 @@ namespace WebApplication {
 			Session["Name"] = "";
 			Session["LastName"] = "";
 			Session["UserType"] = "";
-
-#if DEBUG
-			//TODO: Remove section
-			Session["IsLogged"] = true;
-			Session["Email"] = "blanco@ehu.es";
-			Session["UserType"] = "Profesor";
-#endif
 
 		}
 
