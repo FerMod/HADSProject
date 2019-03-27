@@ -54,8 +54,17 @@ namespace WebApplication.UserPages {
 
 				string subject = DropDownSubjects.SelectedValue;
 
-				DataRow[] dataRowsResult = GenericTasksDataTable.Select($"CodAsig = '{subject}'");
-				if(dataRowsResult.Length >= 0) {
+				string tableNamespace = String.Format("http://ji.ehu.es/{0}", subject.ToLower());
+				DataTable subjectTasks = new DataTable() {
+					Prefix = subject.ToLower(),
+					Namespace = tableNamespace,
+				};
+
+				DataSet subjectsDataSet = new DataSet("tareas");
+				subjectsDataSet.Tables.Add(subjectTasks);
+
+				subjectTasks = GenericTasksDataTable.Select($"CodAsig = '{subject}'").CopyToDataTable();
+				if(subjectTasks.Rows.Count >= 0) {
 
 					string filePath = Path.Combine(AppConfig.Xml.Folder, $"{subject}.xml");
 					if(File.Exists(filePath)) {
@@ -64,14 +73,13 @@ namespace WebApplication.UserPages {
 						sb.Append($"Data saved in file \"<code>{subject}.xml</code>\".");
 					}
 
-					////
-					foreach(DataColumn column in GenericTasksDataTable.Columns) {
+					foreach(DataColumn column in subjectTasks.Columns) {
 						column.ColumnName = column.ColumnName.ToLower();
 						if(column.ColumnName.Equals("codigo", StringComparison.InvariantCultureIgnoreCase)) {
 							column.ColumnMapping = MappingType.Attribute;
 						}
 					}
-					GenericTasksDataTable.WriteXml(filePath);
+					subjectTasks.WriteXml(filePath);
 					////
 					
 					/*
