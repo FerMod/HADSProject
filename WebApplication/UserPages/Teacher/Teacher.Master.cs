@@ -31,9 +31,9 @@ namespace WebApplication.UserPages {
 
 			if(!IsPostBack) {
 
-				if(!IsAllowedUser()) {
-					Response.Redirect(AppConfig.WebSite.MainPage);
-				}
+				//if(!IsAllowedUser()) {
+				//	Response.Redirect(AppConfig.WebSite.MainPage);
+				//}
 
 			}
 

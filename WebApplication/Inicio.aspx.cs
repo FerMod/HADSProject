@@ -4,6 +4,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
@@ -52,7 +53,8 @@ namespace WebApplication {
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
 					Session["UserType"] = queryResult.Rows[0]["tipo"];
 
-					Response.Redirect("~/Default");
+					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
+					Response.Redirect(AppConfig.WebSite.MainPage);
 				}
 
 			} catch(Exception ex) {

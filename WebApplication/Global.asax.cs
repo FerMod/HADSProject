@@ -62,7 +62,8 @@ namespace WebApplication {
 		protected void Application_EndRequest(object sender, EventArgs e) { }
 
 		protected void Session_End(object sender, EventArgs e) {
-			Response.Redirect(AppConfig.WebSite.MainPage);
+			FormsAuthentication.SignOut();
+			//Response.Redirect(AppConfig.WebSite.MainPage);
 		}
 
 		protected void Application_End(object sender, EventArgs e) { }
