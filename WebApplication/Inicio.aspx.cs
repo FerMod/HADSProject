@@ -18,9 +18,9 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if((bool)Session["IsLogged"]) {
-				Response.Redirect("~/Default");
-			}
+			//if(Convert.ToBoolean(Session["IsLogged"])) {
+			//	Response.Redirect(AppConfig.WebSite.MainPage);
+			//}
 
 			Master.SetActiveNav(Account.ActiveNav.LogIn);
 
@@ -48,19 +48,39 @@ namespace WebApplication {
 				} else {
 
 					Session["IsLogged"] = true;
-					Session["Email"] = queryResult.Rows[0]["email"];
+					string email = Convert.ToString(queryResult.Rows[0]["email"]);
+					Session["Email"] = email;
 					Session["Name"] = queryResult.Rows[0]["nombre"];
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
-					Session["UserType"] = queryResult.Rows[0]["tipo"];
+					Session["UserType"] = GetUserType(email, Convert.ToString(queryResult.Rows[0]["tipo"]));
 
 					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
 					Response.Redirect(AppConfig.WebSite.MainPage);
+
 				}
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
 			}
 
+		}
+
+		private string GetUserType(string email, string type) {
+
+			// Special case
+			if(email.Equals("vadillo@ehu.es")) {
+				return "teacher_admin";
+			}
+
+			switch(type.ToLower()) {
+				case "alumno":
+					return "student";
+				case "profesor":
+					return "teacher";
+				default:
+					return String.Empty;
+			}
+			
 		}
 
 	}

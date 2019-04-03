@@ -79,7 +79,7 @@ namespace WebApplication.UserPages {
 		private void InitGridViewTasks() {
 
 			TasksDataTable = CreateTasksDataTable();
-			UpdateDisplayedTasksFilter($"CodAsig = '{DropDownSubjects.SelectedValue}'");
+			UpdateDisplayedTasksFilter($"codigoasig = '{DropDownSubjects.SelectedValue}'");
 
 		}
 

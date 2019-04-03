@@ -9,7 +9,7 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if((bool)Session["IsLogged"]) {
+			if(Convert.ToBoolean(Session["IsLogged"])) {
 
 				LabelName.Text = Convert.ToString(Session["Name"]);
 				LabelLastName.Text = Convert.ToString(Session["LastName"]);
@@ -38,7 +38,7 @@ namespace WebApplication {
 			Session["Email"] = "";
 			Session["Name"] = "";
 			Session["LastName"] = "";
-			Response.Redirect(Request.Url.AbsolutePath);
+			Response.Redirect(AppConfig.WebSite.MainPage);
 			Session.Abandon();
 		}
 
@@ -48,10 +48,11 @@ namespace WebApplication {
 			teacherMenu.Visible = false;
 
 			switch(userType) {
-				case "Alumno":
+				case "student":
 					studentMenu.Visible = true;
 					break;
-				case "Profesor":
+				case "teacher_admin":
+				case "teacher":
 					teacherMenu.Visible = true;
 					break;
 			}

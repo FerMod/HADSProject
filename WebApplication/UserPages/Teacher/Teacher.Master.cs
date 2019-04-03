@@ -25,15 +25,15 @@ namespace WebApplication.UserPages {
 		public DataSet UserDataSet { get => (DataSet)Session["UserDataSet"]; set => Session["UserDataSet"] = value; }
 
 		private bool RequiresLoggedUser => true;
-		private string AllowedUserType => "Profesor";
+		private string[] AllowedUserTypes => new[] { "teacher", "teacher_admin" };
 
 		protected void Page_Load(object sender, EventArgs e) {
 
 			if(!IsPostBack) {
 
-				//if(!IsAllowedUser()) {
-				//	Response.Redirect(AppConfig.WebSite.MainPage);
-				//}
+				if(!IsAllowedUser()) {
+					Response.Redirect(AppConfig.WebSite.MainPage);
+				}
 
 			}
 
@@ -74,7 +74,7 @@ namespace WebApplication.UserPages {
 				return false;
 			}
 
-			if(!Convert.ToString(Session["UserType"]).Equals(AllowedUserType)) {
+			if(Array.IndexOf(AllowedUserTypes, Session["UserType"]) == -1) {
 				return false;
 			}
 
