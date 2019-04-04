@@ -35,6 +35,8 @@ namespace WebApplication.UserPages {
 					Response.Redirect(AppConfig.WebSite.MainPage);
 				}
 
+				TeacherAdminPanel.Visible = IsTeacherAdmin();
+
 			}
 
 		}
@@ -66,6 +68,10 @@ namespace WebApplication.UserPages {
 				default:
 					break;
 			}
+		}
+
+		private bool IsTeacherAdmin() {
+			return Array.IndexOf(AllowedUserTypes, Session["UserType"]) == 1;
 		}
 
 		private bool IsAllowedUser() {
