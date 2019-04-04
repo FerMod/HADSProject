@@ -27,6 +27,8 @@ namespace WebApplication {
 
 		#region ASP.NET Handlers
 
+		#region Application Handlers
+
 		protected void Application_Start(object sender, EventArgs e) {
 
 			ScriptResource.RegisterJQuery(AppConfig.WebSite.JQueryVersion);
@@ -42,6 +44,16 @@ namespace WebApplication {
 		protected void Application_BeginRequest(object sender, EventArgs e) { }
 
 		protected void Application_AuthenticateRequest(object sender, EventArgs e) { }
+
+		protected void Application_EndRequest(object sender, EventArgs e) { }
+
+		protected void Application_End(object sender, EventArgs e) { }
+
+		protected void Application_Error(object sender, EventArgs e) { }
+
+		#endregion
+
+		#region Session Handlers
 
 		protected void Session_Start(object sender, EventArgs e) {
 
@@ -59,16 +71,12 @@ namespace WebApplication {
 
 		}
 
-		protected void Application_EndRequest(object sender, EventArgs e) { }
-
 		protected void Session_End(object sender, EventArgs e) {
 			FormsAuthentication.SignOut();
 			//Response.Redirect(AppConfig.WebSite.MainPage);
 		}
 
-		protected void Application_End(object sender, EventArgs e) { }
-
-		protected void Application_Error(object sender, EventArgs e) { }
+		#endregion
 
 		#endregion
 
