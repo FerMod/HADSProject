@@ -46,8 +46,8 @@ namespace WebApplication.UserPages {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if(!(bool)Session["IsLogged"]) {
-				Response.Redirect("~/Default");
+			if(!Convert.ToBoolean(Session["IsLogged"])) {
+				Response.Redirect(AppConfig.WebSite.MainPage);
 			}
 
 			if(!IsPostBack) {

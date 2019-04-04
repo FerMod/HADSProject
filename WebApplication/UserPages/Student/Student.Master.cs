@@ -21,7 +21,7 @@ namespace WebApplication.UserPages {
 		public DataSet UserDataSet { get => (DataSet)Session["UserDataSet"]; set => Session["UserDataSet"] = value; }
 
 		private bool RequiresLoggedUser => true;
-		private string AllowedUserType => "Alumno";
+		private string[] AllowedUserTypes => new[] { "student" };
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -60,7 +60,7 @@ namespace WebApplication.UserPages {
 				return false;
 			}
 
-			if(!Convert.ToString(Session["UserType"]).Equals(AllowedUserType)) {
+			if(Array.IndexOf(AllowedUserTypes, Session["UserType"]) == -1) {
 				return false;
 			}
 

@@ -30,7 +30,7 @@ namespace WebApplication {
 
 			routes.MapPageRoute(
 				"",
-				"Default",
+				"",
 				"~/Default.aspx"
 			);
 

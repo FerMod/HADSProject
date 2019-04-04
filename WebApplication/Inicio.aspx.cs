@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
@@ -17,8 +19,8 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			if((bool)Session["IsLogged"]) {
-				Response.Redirect("~/Default");
+			if(Convert.ToBoolean(Session["IsLogged"])) {
+				Response.Redirect(AppConfig.WebSite.MainPage);
 			}
 
 			Master.SetActiveNav(Account.ActiveNav.LogIn);
@@ -31,11 +33,14 @@ namespace WebApplication {
 						"FROM Usuarios " +
 						"WHERE email = @email " +
 						"AND pass = @password";
+
+			byte[] hashedPass = AppSecurity.GenerateHash(textBoxPassword.Text);
+
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
 				{ "@email", textBoxEmail.Text },
-				{ "@password", textBoxPassword.Text }
+				{ "@password", hashedPass }
 			};
-
+			
 			try {
 
 				QueryResult queryResult = DataAccess.Query(sql, parameters);
@@ -47,16 +52,38 @@ namespace WebApplication {
 				} else {
 
 					Session["IsLogged"] = true;
-					Session["Email"] = queryResult.Rows[0]["email"];
+					string email = Convert.ToString(queryResult.Rows[0]["email"]);
+					Session["Email"] = email;
 					Session["Name"] = queryResult.Rows[0]["nombre"];
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
-					Session["UserType"] = queryResult.Rows[0]["tipo"];
+					string tipo = Convert.ToString(queryResult.Rows[0]["tipo"]);
+					Session["UserType"] = GetUserType(email, tipo);
 
-					Response.Redirect("~/Default");
+					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
+					Response.Redirect(AppConfig.WebSite.MainPage);
+
 				}
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
+			}
+
+		}
+
+		private string GetUserType(string email, string type) {
+
+			// Special case
+			if(email.Equals("vadillo@ehu.es")) {
+				return "teacher_admin";
+			}
+
+			switch(type.ToLower()) {
+				case "alumno":
+					return "student";
+				case "profesor":
+					return "teacher";
+				default:
+					return String.Empty;
 			}
 
 		}
