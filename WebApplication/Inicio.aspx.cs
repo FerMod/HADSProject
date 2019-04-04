@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
@@ -18,9 +19,9 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			//if(Convert.ToBoolean(Session["IsLogged"])) {
-			//	Response.Redirect(AppConfig.WebSite.MainPage);
-			//}
+			if(Convert.ToBoolean(Session["IsLogged"])) {
+				Response.Redirect(AppConfig.WebSite.MainPage);
+			}
 
 			Master.SetActiveNav(Account.ActiveNav.LogIn);
 
@@ -32,11 +33,14 @@ namespace WebApplication {
 						"FROM Usuarios " +
 						"WHERE email = @email " +
 						"AND pass = @password";
+
+			byte[] hashedPass = AppSecurity.GenerateHash(textBoxPassword.Text);
+
 			Dictionary<string, object> parameters = new Dictionary<string, object> {
 				{ "@email", textBoxEmail.Text },
-				{ "@password", textBoxPassword.Text }
+				{ "@password", hashedPass }
 			};
-
+			
 			try {
 
 				QueryResult queryResult = DataAccess.Query(sql, parameters);
@@ -52,7 +56,8 @@ namespace WebApplication {
 					Session["Email"] = email;
 					Session["Name"] = queryResult.Rows[0]["nombre"];
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
-					Session["UserType"] = GetUserType(email, Convert.ToString(queryResult.Rows[0]["tipo"]));
+					string tipo = Convert.ToString(queryResult.Rows[0]["tipo"]);
+					Session["UserType"] = GetUserType(email, tipo);
 
 					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
 					Response.Redirect(AppConfig.WebSite.MainPage);
@@ -80,7 +85,7 @@ namespace WebApplication {
 				default:
 					return String.Empty;
 			}
-			
+
 		}
 
 	}
