@@ -27,9 +27,9 @@ namespace WebApplication {
 
 		protected void Page_Load(object sender, EventArgs e) {
 
-			//if(Convert.ToBoolean(Session["IsLogged"])) {
-			//	Response.Redirect(AppConfig.WebSite.MainPage);
-			//}
+			if(Convert.ToBoolean(Session["IsLogged"])) {
+				Response.Redirect(AppConfig.WebSite.MainPage);
+			}
 
 			Master.SetActiveNav(Account.ActiveNav.CreateAccount);
 

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Security;
 using DataBaseAccess;
 using WebApplication.Framework;
 
@@ -49,10 +50,14 @@ namespace WebApplication {
 				} else {
 
 					Session["IsLogged"] = true;
-					Session["Email"] = queryResult.Rows[0]["email"];
+					string email = Convert.ToString(queryResult.Rows[0]["email"]);
+					Session["Email"] = email;
 					Session["Name"] = queryResult.Rows[0]["nombre"];
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
-					Session["UserType"] = queryResult.Rows[0]["tipo"];
+					string tipo = Convert.ToString(queryResult.Rows[0]["tipo"]);
+					Session["UserType"] = GetUserType(email, tipo);
+
+					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
 
 					notificationData.Title = "Account Confirmed";
 					notificationData.Body = $"Thank you! Email successfully validated.";
@@ -64,6 +69,24 @@ namespace WebApplication {
 
 			Session["NotificationData"] = notificationData;
 			Response.Redirect("~/WebAlertNotification");
+
+		}
+
+		private string GetUserType(string email, string type) {
+
+			// Special case
+			if(email.Equals("vadillo@ehu.es")) {
+				return "teacher_admin";
+			}
+
+			switch(type.ToLower()) {
+				case "alumno":
+					return "student";
+				case "profesor":
+					return "teacher";
+				default:
+					return String.Empty;
+			}
 
 		}
 

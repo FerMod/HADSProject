@@ -9,7 +9,6 @@
                 <li class="nav-item"><asp:LinkButton ID="CreateAccount" CssClass="nav-link" runat="server" PostBackUrl="~/Registro" CausesValidation="False" Text="Create Account" /></li>
             </ul>
         </div>
-        <asp:ContentPlaceHolder ID="AccountCardBodyContent" runat="server">
-        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="AccountCardBodyContent" runat="server" />
     </div>
 </asp:Content>
