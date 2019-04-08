@@ -157,6 +157,24 @@
 
 			<asp:ContentPlaceHolder ID="NotificationContent" runat="server" />
 
+
+			<asp:Timer ID="ConnectedUsersTimer" Interval="3000" runat="server" OnTick="ConnectedUsersTimer_Tick" />
+			<asp:UpdatePanel ID="ConnectedUsersUpdatePanel" runat="server" UpdateMode="Conditional">
+				<ContentTemplate>
+					<div class="container">
+						<asp:ListBox ID="ConnectedStudents" runat="server" />
+						<asp:ListBox ID="ConnectedTeachers" runat="server" />
+					</div>
+					<div class="container">
+						<asp:Label ID="ConnectedStudentCount" Text="0" runat="server" />
+						<asp:Label ID="ConnectedTeacherCount" Text="0" runat="server" />
+					</div>
+				</ContentTemplate>
+				<Triggers>
+					<asp:AsyncPostBackTrigger ControlID="ConnectedUsersTimer" EventName="Tick" />
+				</Triggers>
+			</asp:UpdatePanel>
+
 			<hr />
 			<footer>
 				<p>&copy; <%: DateTime.Now.Year %> - HADS</p>

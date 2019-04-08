@@ -1,11 +1,16 @@
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.UI;
+using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
 
 namespace WebApplication {
 
 	public partial class SiteMaster : MasterPage {
+
+		public ConnectedUsersTrack ConnectedUsers => (ConnectedUsersTrack)Application.Get("LoggedUsers");
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -27,6 +32,8 @@ namespace WebApplication {
 
 			}
 
+			RefreshConnectedUsers();
+
 		}
 
 		protected void ButtonProfile_Click(object sender, EventArgs e) {
@@ -34,11 +41,11 @@ namespace WebApplication {
 		}
 
 		protected void ButtonSignOut_Click(object sender, EventArgs e) {
-			Session["IsLogged"] = false;
-			Session["Email"] = "";
-			Session["Name"] = "";
-			Session["LastName"] = "";
-			Response.Redirect(AppConfig.WebSite.MainPage);
+			//Session["IsLogged"] = false;
+			//Session["Email"] = "";
+			//Session["Name"] = "";
+			//Session["LastName"] = "";
+			//Response.Redirect(AppConfig.WebSite.MainPage);
 			Session.Abandon();
 		}
 
@@ -56,6 +63,22 @@ namespace WebApplication {
 					teacherMenu.Visible = true;
 					break;
 			}
+
+		}
+
+		protected void ConnectedUsersTimer_Tick(object sender, EventArgs e) {
+			RefreshConnectedUsers();
+		}
+
+		private void RefreshConnectedUsers() {
+
+			List<string> connectedStudents = ConnectedUsers.GetUsers("student").ToList();
+			ConnectedStudentCount.Text = connectedStudents.Count.ToString();
+			ConnectedStudents.DataSource = connectedStudents;
+
+			List<string> connectedTeachers = ConnectedUsers.GetUsers("teacher", "teacher_admin").ToList();
+			ConnectedTeacherCount.Text = connectedTeachers.Count.ToString();
+			ConnectedTeachers.DataSource = connectedTeachers;
 
 		}
 

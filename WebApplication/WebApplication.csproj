@@ -3201,6 +3201,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Framework\AppSecurity.cs" />
+    <Compile Include="Framework\ConnectedUsersTrack.cs" />
     <Compile Include="Framework\UserType.cs" />
     <Compile Include="Framework\Extensions\DictionaryExtension.cs" />
     <Compile Include="Framework\AlertLevel.cs" />

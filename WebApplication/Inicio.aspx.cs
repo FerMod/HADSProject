@@ -57,9 +57,12 @@ namespace WebApplication {
 					Session["Name"] = queryResult.Rows[0]["nombre"];
 					Session["LastName"] = queryResult.Rows[0]["apellidos"];
 					string tipo = Convert.ToString(queryResult.Rows[0]["tipo"]);
-					Session["UserType"] = GetUserType(email, tipo);
+					Session["UserType"] = GetUserTypeName(email, tipo);
 
 					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
+
+					AddConnectedUsers(Session["UserType"].ToString(), email);
+
 					Response.Redirect(AppConfig.WebSite.MainPage);
 
 				}
@@ -70,7 +73,13 @@ namespace WebApplication {
 
 		}
 
-		private string GetUserType(string email, string type) {
+		private void AddConnectedUsers(string type, string email) {
+
+			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Add(Session["UserType"].ToString(), email);
+
+		}
+
+		private string GetUserTypeName(string email, string type) {
 
 			// Special case
 			if(email.Equals("vadillo@ehu.es")) {

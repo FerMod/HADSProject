@@ -38,6 +38,7 @@ namespace WebApplication {
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 			SetupDataAccess();
+			InitLoggedUsersTrack();
 
 		}
 
@@ -72,8 +73,14 @@ namespace WebApplication {
 		}
 
 		protected void Session_End(object sender, EventArgs e) {
+
+			string email = Convert.ToString(Session["Email"]);
+			string userType = Convert.ToString(Session["UserType"]);
+			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Remove(userType, email);
+
 			FormsAuthentication.SignOut();
-			//Response.Redirect(AppConfig.WebSite.MainPage);
+			Response.Redirect(AppConfig.WebSite.MainPage);
+
 		}
 
 		#endregion
@@ -89,6 +96,14 @@ namespace WebApplication {
 
 		}
 
+		protected void InitLoggedUsersTrack() {
+
+			Application.Lock();
+			Application.Set("LoggedUsers", new ConnectedUsersTrack());
+			Application.UnLock();
+
+		}
+		
 	}
 
 }
