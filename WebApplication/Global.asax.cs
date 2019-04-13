@@ -79,7 +79,7 @@ namespace WebApplication {
 			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Remove(userType, email);
 
 			FormsAuthentication.SignOut();
-			Response.Redirect(AppConfig.WebSite.MainPage);
+			Session.Clear();
 
 		}
 

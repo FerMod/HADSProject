@@ -4,18 +4,18 @@
 
 <html lang="en">
 <head runat="server">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title><%: Page.Title %> - HADS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - HADS</title>
 
-	<asp:PlaceHolder runat="server">
-		<%: Scripts.Render("~/bundles/modernizr", "~/bundles/SvgInjector") %>
-	</asp:PlaceHolder>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr", "~/bundles/SvgInjector") %>
+    </asp:PlaceHolder>
 
-	<webopt:BundleReference runat="server" Path="~/bundles/css" />
-	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <webopt:BundleReference runat="server" Path="~/bundles/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-	<%--    <script>
+    <%--    <script>
 		// Elements to inject
 		var mySVGsToInject = document.querySelectorAll('.iconic-sprite');
 
@@ -37,150 +37,132 @@
     </script>--%>
 </head>
 <body>
-	<form runat="server">
-		<asp:ScriptManager runat="server">
-			<Scripts>
-				<%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-				<%--Framework Scripts--%>
-				<asp:ScriptReference Name="MsAjaxBundle" />
-				<asp:ScriptReference Name="jquery" />
-				<asp:ScriptReference Name="bootstrap" />
-				<asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-				<asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-				<asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-				<asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-				<asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-				<asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-				<asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-				<asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-				<asp:ScriptReference Name="WebFormsBundle" />
-				<%--Site Scripts--%>
-			</Scripts>
-		</asp:ScriptManager>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
 
-		<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-			<div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+            <div class="container">
 
-				<a class="navbar-brand mr-0 mr-md-2" runat="server" href="~/">HADS</a>
-				<div class="ml-auto order-0">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
+                <a class="navbar-brand mr-0 mr-md-2" runat="server" href="~/">HADS</a>
+                <div class="ml-auto order-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
-				<%-- Non logged user menu --%>
-				<asp:Panel ID="userMenu" CssClass="navbar-collapse" Visible="true" runat="server">
+                <%-- Non logged user menu --%>
+                <asp:Panel ID="userMenu" CssClass="navbar-collapse" Visible="true" runat="server">
 
-					<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
-							<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
-							<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/Contact">Contact</a></li>
-						</ul>
-					</div>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/About">About</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        </ul>
+                    </div>
 
-					<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item"><a class="btn btn-link nav-link" href="~/Registro" runat="server" id="createAccountLink">Create Account</a></li>
-							<li class="nav-item"><a class="btn btn-link nav-link" href="~/Inicio" runat="server" id="loginLink">Log In</a></li>
-						</ul>
-					</div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="btn btn-link nav-link" href="~/Registro" runat="server" id="createAccountLink">Create Account</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" href="~/Inicio" runat="server" id="loginLink">Log In</a></li>
+                        </ul>
+                    </div>
 
-				</asp:Panel>
+                </asp:Panel>
 
-				<%-- Logged user menu --%>
-				<asp:Panel ID="loggedUserMenu" CssClass="navbar-collapse" Visible="true" runat="server">
+                <%-- Logged user menu --%>
+                <asp:Panel ID="loggedUserMenu" CssClass="navbar-collapse" Visible="true" runat="server">
 
-					<asp:Panel ID="studentMenu" class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" runat="server">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
-							<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="Student/Home">User Home</a></li>
-						</ul>
-					</asp:Panel>
+                    <asp:Panel ID="studentMenu" class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" runat="server">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                            <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="Student/Home">User Home</a></li>
+                        </ul>
+                    </asp:Panel>
 
-					<asp:Panel ID="teacherMenu" class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" runat="server">
-						<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
-								<li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="Teacher/Home">User Home</a></li>
-							</ul>
-						</div>
-					</asp:Panel>
+                    <asp:Panel ID="teacherMenu" class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" runat="server">
+                        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="~/">Home</a></li>
+                                <li class="nav-item"><a class="btn btn-link nav-link" runat="server" href="Teacher/Home">User Home</a></li>
+                            </ul>
+                        </div>
+                    </asp:Panel>
 
-					<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="btn btn-link nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Account</a>
-								<div class="navbar-user-menu dropdown-menu dropdown-menu-right">
-									<div class="navbar-user">
-										<div class="row">
-											<div class="col-md-5">
-												<img src="http://placehold.it/120x120" alt="Profile Image" class="img-responsive" />
-											</div>
-											<div class="col-md-7">
-												<span>
-													<asp:Label ID="LabelName" Text="Name" runat="server" />
-													<asp:Label ID="LabelLastName" Text="LastName" runat="server" />
-												</span>
-												<p class="text-muted small">
-													<asp:Label ID="LabelMail" Text="mail@gmail.com" runat="server" />
-												</p>
-												<asp:Button ID="ButtonViewProfile" CssClass="btn btn-primary btn-sm active" Text="View Profile" runat="server" OnClick="ButtonProfile_Click" />
-											</div>
-										</div>
-									</div>
-									<div class="dropdown-divider"></div>
-									<div class="navbar-user navbar-user-logout">
-										<div class="row">
-											<div class="col-md-12">
-												<asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block" Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click" UseSubmitBehavior="False" CausesValidation="False" />
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="btn btn-link nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Account</a>
+                                <div class="navbar-user-menu dropdown-menu dropdown-menu-right">
+                                    <div class="navbar-user">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img src="http://placehold.it/120x120" alt="Profile Image" class="img-responsive" />
+                                            </div>
+                                            <div class="col-md-7">
+                                                <span>
+                                                    <asp:Label ID="LabelName" Text="Name" runat="server" />
+                                                    <asp:Label ID="LabelLastName" Text="LastName" runat="server" />
+                                                </span>
+                                                <p class="text-muted small">
+                                                    <asp:Label ID="LabelMail" Text="mail@gmail.com" runat="server" />
+                                                </p>
+                                                <asp:Button ID="ButtonViewProfile" CssClass="btn btn-primary btn-sm active" Text="View Profile" runat="server" OnClick="ButtonProfile_Click" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="navbar-user navbar-user-logout">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <asp:Button ID="ButtonSignOut" CssClass="btn btn-sm btn-primary btn-block" Text="Sign Out" runat="server" OnClick="ButtonSignOut_Click" UseSubmitBehavior="False" CausesValidation="False" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-				</asp:Panel>
+                </asp:Panel>
 
-			</div>
-		</nav>
+            </div>
+        </nav>
 
-		<div class="container body-content">
+        <div class="container body-content">
 
-			<asp:UpdatePanel ID="TeacherTasksUpdatePanel" runat="server">
-				<ContentTemplate>
-					<asp:ContentPlaceHolder ID="MainContent" runat="server" />
-				</ContentTemplate>
-			</asp:UpdatePanel>
+            <asp:UpdatePanel ID="ContentUpdatePanel" runat="server">
+                <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
 
-			<asp:ContentPlaceHolder ID="NotificationContent" runat="server" />
+            <asp:ContentPlaceHolder ID="NotificationContent" runat="server" />
 
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - HADS</p>
+            </footer>
+        </div>
 
-			<asp:Timer ID="ConnectedUsersTimer" Interval="3000" runat="server" OnTick="ConnectedUsersTimer_Tick" />
-			<asp:UpdatePanel ID="ConnectedUsersUpdatePanel" runat="server" UpdateMode="Conditional">
-				<ContentTemplate>
-					<div class="container">
-						<asp:ListBox ID="ConnectedStudents" runat="server" />
-						<asp:ListBox ID="ConnectedTeachers" runat="server" />
-					</div>
-					<div class="container">
-						<asp:Label ID="ConnectedStudentCount" Text="0" runat="server" />
-						<asp:Label ID="ConnectedTeacherCount" Text="0" runat="server" />
-					</div>
-				</ContentTemplate>
-				<Triggers>
-					<asp:AsyncPostBackTrigger ControlID="ConnectedUsersTimer" EventName="Tick" />
-				</Triggers>
-			</asp:UpdatePanel>
-
-			<hr />
-			<footer>
-				<p>&copy; <%: DateTime.Now.Year %> - HADS</p>
-			</footer>
-		</div>
-
-	</form>
+    </form>
 </body>
 </html>

@@ -7,19 +7,28 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication.UserPages {
+namespace WebApplication.CustomControls {
     
     
-    public partial class StudentHome {
+    public partial class ConnectedUsers {
         
         /// <summary>
-        /// ConnectedUsersTimer control.
+        /// ConnectedUsersPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.Timer ConnectedUsersTimer;
+        protected global::System.Web.UI.WebControls.Panel ConnectedUsersPanel;
+        
+        /// <summary>
+        /// UpdateTimer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.Timer UpdateTimer;
         
         /// <summary>
         /// ConnectedUsersUpdatePanel control.
@@ -31,51 +40,39 @@ namespace WebApplication.UserPages {
         protected global::System.Web.UI.UpdatePanel ConnectedUsersUpdatePanel;
         
         /// <summary>
-        /// ConnectedStudentCount control.
+        /// StudentList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ConnectedStudentCount;
+        protected global::System.Web.UI.WebControls.ListBox StudentList;
         
         /// <summary>
-        /// ConnectedStudents control.
+        /// TeacherList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ConnectedStudents;
+        protected global::System.Web.UI.WebControls.ListBox TeacherList;
         
         /// <summary>
-        /// ConnectedTeacherCount control.
+        /// StudentCount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ConnectedTeacherCount;
+        protected global::System.Web.UI.WebControls.Label StudentCount;
         
         /// <summary>
-        /// ConnectedTeachers control.
+        /// TeacherCount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ConnectedTeachers;
-        
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new WebApplication.UserPages.Student Master {
-            get {
-                return ((WebApplication.UserPages.Student)(base.Master));
-            }
-        }
+        protected global::System.Web.UI.WebControls.Label TeacherCount;
     }
 }

@@ -13,6 +13,60 @@ namespace WebApplication.UserPages {
     public partial class TeacherHome {
         
         /// <summary>
+        /// ConnectedUsersTimer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.Timer ConnectedUsersTimer;
+        
+        /// <summary>
+        /// ConnectedUsersUpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel ConnectedUsersUpdatePanel;
+        
+        /// <summary>
+        /// ConnectedStudentCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ConnectedStudentCount;
+        
+        /// <summary>
+        /// ConnectedStudents control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ConnectedStudents;
+        
+        /// <summary>
+        /// ConnectedTeacherCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ConnectedTeacherCount;
+        
+        /// <summary>
+        /// ConnectedTeachers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ConnectedTeachers;
+        
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
