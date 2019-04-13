@@ -112,13 +112,13 @@ namespace WebApplication {
         protected global::System.Web.UI.WebControls.Button ButtonSignOut;
         
         /// <summary>
-        /// TeacherTasksUpdatePanel control.
+        /// ContentUpdatePanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel TeacherTasksUpdatePanel;
+        protected global::System.Web.UI.UpdatePanel ContentUpdatePanel;
         
         /// <summary>
         /// MainContent control.

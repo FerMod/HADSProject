@@ -38,6 +38,7 @@ namespace WebApplication {
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 			SetupDataAccess();
+			InitLoggedUsersTrack();
 
 		}
 
@@ -72,8 +73,27 @@ namespace WebApplication {
 		}
 
 		protected void Session_End(object sender, EventArgs e) {
+
+			string email = Convert.ToString(Session["Email"]);
+			string userType = Convert.ToString(Session["UserType"]);
+			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Remove(userType, email);
+
 			FormsAuthentication.SignOut();
-			//Response.Redirect(AppConfig.WebSite.MainPage);
+			Session.Abandon();
+
+			// clear authentication cookie
+			HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "") {
+				Expires = DateTime.Now.AddYears(-1)
+			};
+			Response.Cookies.Add(authCookie);
+
+			// clear session cookie 
+			SessionStateSection sessionStateSection = (SessionStateSection)WebConfigurationManager.GetSection("system.web/sessionState");
+			HttpCookie sessionCookie = new HttpCookie(sessionStateSection.CookieName, "") {
+				Expires = DateTime.Now.AddYears(-1)
+			};
+			Response.Cookies.Add(sessionCookie);
+
 		}
 
 		#endregion
@@ -89,6 +109,14 @@ namespace WebApplication {
 
 		}
 
+		protected void InitLoggedUsersTrack() {
+
+			Application.Lock();
+			Application.Set("LoggedUsers", new ConnectedUsersTrack());
+			Application.UnLock();
+
+		}
+		
 	}
 
 }

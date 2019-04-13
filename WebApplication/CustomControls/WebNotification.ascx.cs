@@ -10,11 +10,6 @@ namespace WebApplication.CustomControls {
 
 	public partial class WebNotification : UserControl {
 
-		//private string _title;
-		//private string _body;
-		//private AlertLevel _level = AlertLevel.None;
-		//private bool _dismissible = false;
-
 		public string Title {
 			get {
 				return (string)ViewState["Title"] ?? String.Empty;
@@ -31,11 +26,9 @@ namespace WebApplication.CustomControls {
 				return (AlertLevel)ViewState["Level"] ?? AlertLevel.None;
 			}
 			set {
-				//if(_level != value) {
-				//	Alert.CssClass = Regex.Replace(Alert.CssClass, "(alert-(?!dismissible|link|heading))(?:\\w*|$)", "");
-				//}
 				if(ViewState["Level"] is AlertLevel alertLevel && alertLevel != value) {
 					Alert.RemoveCssClass(alertLevel.ToString());
+					// Alert.CssClass = Regex.Replace(Alert.CssClass, "(alert-(?!dismissible|link|heading))(?:\\w*|$)", "");
 				}
 				Alert.AddCssClass(value.ToString());
 				ViewState["Level"] = value;
