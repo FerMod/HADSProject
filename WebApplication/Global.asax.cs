@@ -79,7 +79,20 @@ namespace WebApplication {
 			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Remove(userType, email);
 
 			FormsAuthentication.SignOut();
-			Session.Clear();
+			Session.Abandon();
+
+			// clear authentication cookie
+			HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "") {
+				Expires = DateTime.Now.AddYears(-1)
+			};
+			Response.Cookies.Add(authCookie);
+
+			// clear session cookie 
+			SessionStateSection sessionStateSection = (SessionStateSection)WebConfigurationManager.GetSection("system.web/sessionState");
+			HttpCookie sessionCookie = new HttpCookie(sessionStateSection.CookieName, "") {
+				Expires = DateTime.Now.AddYears(-1)
+			};
+			Response.Cookies.Add(sessionCookie);
 
 		}
 

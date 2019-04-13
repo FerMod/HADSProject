@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Security;
 using System.Web.UI;
 using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
@@ -37,9 +38,13 @@ namespace WebApplication {
 		}
 
 		protected void ButtonSignOut_Click(object sender, EventArgs e) {
-			Session["IsLogged"] = false;
-			Response.Redirect(AppConfig.WebSite.MainPage);
+			SignOut();
+		}
+
+		private void SignOut() {
+			FormsAuthentication.SignOut();
 			Session.Abandon();
+			FormsAuthentication.RedirectToLoginPage();
 		}
 
 		private void ShowUserMenu(string userType) {
