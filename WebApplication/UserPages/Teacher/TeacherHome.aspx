@@ -1,6 +1,7 @@
 <%@ Page Title="Teacher Home" Language="C#" MasterPageFile="~/UserPages/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="TeacherHome.aspx.cs" Inherits="WebApplication.UserPages.TeacherHome" %>
 
 <%@ MasterType VirtualPath="~/UserPages/Teacher/Teacher.Master" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
 <asp:Content ID="TeacherTasksContent" ContentPlaceHolderID="TeacherContent" runat="server">
 
@@ -25,6 +26,15 @@
                         <asp:Label ID="ConnectedTeacherCount" for="ConnectedTeachers" Text="Connected teachers (0):" runat="server" />
                         <asp:ListBox ID="ConnectedTeachers" CssClass="form-control" runat="server" Enabled="False" TabIndex="-1" />
                     </div>
+                </div>
+                <div class="form-row">
+                    <ajaxtoolkit:BarChart ID="OnlineUsersChart" CssClass="col-md-4 col-md-offset-4" runat="server" BorderWidth="0" DisplayValues="True" ChartHeight="300"  ChartWidth="400"
+						ChartTitle="Online Users" ChartType="Column" >
+						<series>
+							<ajaxToolkit:BarChartSeries Name="Students" />
+							<ajaxToolkit:BarChartSeries Name="Teachers" />
+						</series>
+					</ajaxtoolkit:BarChart>
                 </div>
             </ContentTemplate>
             <Triggers>
