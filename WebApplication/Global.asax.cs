@@ -112,11 +112,13 @@ namespace WebApplication {
 		protected void InitLoggedUsersTrack() {
 
 			Application.Lock();
-			Application.Set("LoggedUsers", new ConnectedUsersTrack());
+			if(Application.Get("LoggedUsers") == null) {
+				Application.Set("LoggedUsers", new ConnectedUsersTrack());
+			}
 			Application.UnLock();
 
 		}
-		
+
 	}
 
 }
