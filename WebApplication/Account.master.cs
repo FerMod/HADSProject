@@ -15,6 +15,7 @@ namespace WebApplication {
 			CreateAccount
 		}
 
+		//FIXME: Error when calling property
 		public WebNotification Notification => this.Notification;
 
 		protected void Page_Load(object sender, EventArgs e) {
