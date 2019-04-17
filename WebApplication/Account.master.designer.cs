@@ -40,6 +40,24 @@ namespace WebApplication {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder AccountCardBodyContent;
         
         /// <summary>
+        /// NotificationUpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel NotificationUpdatePanel;
+        
+        /// <summary>
+        /// WebNotification control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebApplication.CustomControls.WebNotification WebNotification;
+        
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>

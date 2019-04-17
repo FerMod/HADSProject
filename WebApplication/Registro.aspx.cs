@@ -13,6 +13,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
 using EmailLib;
+using WebApplication.ComprobarMatriculaService;
 using WebApplication.Framework;
 using WebApplication.Utils;
 
@@ -49,6 +50,16 @@ namespace WebApplication {
 
 		// TODO: Check MailDefinition. https://stackoverflow.com/a/886750/4134376
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
+
+			if(IsEnrolledUser(textBoxEmail.Text)) {
+				NotificationData data = new NotificationData {
+					Body = "The user is not enrolled.",
+					Level = AlertLevel.Danger,
+					Dismissible = true
+				};
+				Master.Notification.ShowNotification(data);
+				return;
+			}
 
 			Random generator = new Random();
 			int code = (int)(generator.Next(0, 999999) + 1000000);
@@ -126,6 +137,11 @@ namespace WebApplication {
 				Debug.WriteLine("Exception caught: " + ex.Message);
 			}
 
+		}
+
+		private bool IsEnrolledUser(string email) {
+			Matriculas matriculasService = new Matriculas();
+			return matriculasService.comprobar(email).Equals("si", StringComparison.OrdinalIgnoreCase);
 		}
 
 	}

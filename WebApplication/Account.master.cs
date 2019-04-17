@@ -2,6 +2,7 @@
 using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebApplication.CustomControls;
 using WebApplication.Framework.Extensions;
 
 namespace WebApplication {
@@ -13,6 +14,8 @@ namespace WebApplication {
 			LogIn,
 			CreateAccount
 		}
+
+		public WebNotification Notification => this.Notification;
 
 		protected void Page_Load(object sender, EventArgs e) {
 

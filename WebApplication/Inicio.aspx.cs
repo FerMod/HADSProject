@@ -10,6 +10,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataBaseAccess;
 using WebApplication.Framework;
+using WebApplication.ComprobarMatriculaService;
 
 namespace WebApplication {
 
