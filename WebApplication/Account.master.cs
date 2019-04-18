@@ -16,7 +16,7 @@ namespace WebApplication {
 		}
 
 		//FIXME: Error when calling property
-		public WebNotification Notification => this.Notification;
+		public WebNotification UserNotification => Notification;
 
 		protected void Page_Load(object sender, EventArgs e) {
 

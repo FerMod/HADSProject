@@ -16,7 +16,8 @@ namespace WebApplication.UserPages {
 		Tasks,
 		ImportTasksXmlDocument,
 		ImportTasksDataSet,
-		ExportTasks
+		ExportTasks,
+		TasksMeans
 	}
 
 	public partial class Teacher : MasterPage {
@@ -47,6 +48,7 @@ namespace WebApplication.UserPages {
 			TasksTab.RemoveCssClass("active", "disabled");
 			ImportTasksXmlDocumentTab.RemoveCssClass("active", "disabled");
 			ImportTasksDataSetTab.RemoveCssClass("active", "disabled");
+			TasksMeansTab.RemoveCssClass("active", "disabled");
 
 			switch(selectedMenu) {
 				case TeacherMenu.Home:
@@ -63,6 +65,9 @@ namespace WebApplication.UserPages {
 					break;
 				case TeacherMenu.ExportTasks:
 					ExportTasksTab.AddCssClass("active", "disabled");
+					break;
+				case TeacherMenu.TasksMeans:
+					TasksMeansTab.AddCssClass("active", "disabled");
 					break;
 				case TeacherMenu.None:
 				default:

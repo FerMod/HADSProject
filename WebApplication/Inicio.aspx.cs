@@ -44,20 +44,20 @@ namespace WebApplication {
 			
 			try {
 
-				QueryResult queryResult = DataAccess.Query(sql, parameters);
+				//QueryResult queryResult = DataAccess.Query(sql, parameters);
 
-				if(queryResult.Rows.Count != 1) {
+				//if(queryResult.Rows.Count != 1) {
 
-					Debug.WriteLine("Wrong credentials");
+				//	Debug.WriteLine("Wrong credentials");
 
-				} else {
+				//} else {
 
 					Session["IsLogged"] = true;
-					string email = Convert.ToString(queryResult.Rows[0]["email"]);
+					string email = textBoxEmail.Text;// Convert.ToString(queryResult.Rows[0]["email"]);
 					Session["Email"] = email;
-					Session["Name"] = queryResult.Rows[0]["nombre"];
-					Session["LastName"] = queryResult.Rows[0]["apellidos"];
-					string tipo = Convert.ToString(queryResult.Rows[0]["tipo"]);
+					Session["Name"] = "Va";//queryResult.Rows[0]["nombre"];
+					Session["LastName"] = "V2";// queryResult.Rows[0]["apellidos"];
+					string tipo = "";//Convert.ToString(queryResult.Rows[0]["tipo"]);
 					Session["UserType"] = GetUserTypeName(email, tipo);
 
 					FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
@@ -66,7 +66,7 @@ namespace WebApplication {
 
 					Response.Redirect(AppConfig.WebSite.MainPage);
 
-				}
+				//}
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);

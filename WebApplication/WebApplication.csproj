@@ -1724,6 +1724,7 @@
     <Content Include="UserPages\Student\InstanciarTarea.aspx" />
     <Content Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx" />
     <Content Include="UserPages\Teacher\ExportarTareas.aspx" />
+    <Content Include="UserPages\Teacher\Coordinador.aspx" />
     <Content Include="UserPages\Teacher\TeacherHome.aspx" />
     <Content Include="UserPages\Teacher\TareasProfesor.aspx" />
     <Content Include="UserPages\Student\TareasAlumno.aspx" />
@@ -3315,6 +3316,13 @@
     </Compile>
     <Compile Include="UserPages\Teacher\ExportarTareas.aspx.designer.cs">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Teacher\Coordinador.aspx.cs">
+      <DependentUpon>Coordinador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\Coordinador.aspx.designer.cs">
+      <DependentUpon>Coordinador.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPages\Teacher\TeacherHome.aspx.cs">
       <DependentUpon>TeacherHome.aspx</DependentUpon>

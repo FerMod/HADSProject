@@ -4,21 +4,21 @@
 <%@ Register TagPrefix="web" TagName="Notification" Src="~/CustomControls/WebNotification.ascx" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+	<asp:UpdatePanel ID="NotificationUpdatePanel" CssClass="container" runat="server">
+		<ContentTemplate>
+			<web:Notification ID="Notification" Dismissible="true" runat="server" />
+		</ContentTemplate>
+	</asp:UpdatePanel>
+
 	<div class="auth-form card">
 		<div class="auth-form-header card-header">
 			<ul class="nav nav-tabs card-header-tabs nav-fill">
-				<li class="nav-item">
-					<asp:LinkButton ID="LogIn" CssClass="nav-link" runat="server" PostBackUrl="~/Inicio" CausesValidation="False" Text="Log In" /></li>
-				<li class="nav-item">
-					<asp:LinkButton ID="CreateAccount" CssClass="nav-link" runat="server" PostBackUrl="~/Registro" CausesValidation="False" Text="Create Account" /></li>
+				<li class="nav-item"><asp:LinkButton ID="LogIn" CssClass="nav-link" runat="server" PostBackUrl="~/Inicio" CausesValidation="False" Text="Log In" /></li>
+				<li class="nav-item"><asp:LinkButton ID="CreateAccount" CssClass="nav-link" runat="server" PostBackUrl="~/Registro" CausesValidation="False" Text="Create Account" /></li>
 			</ul>
 		</div>
 		<asp:ContentPlaceHolder ID="AccountCardBodyContent" runat="server" />
 	</div>
-	<asp:UpdatePanel ID="NotificationUpdatePanel" runat="server">
-		<ContentTemplate>
-			<web:Notification ID="WebNotification" Dismissible="true" runat="server" />
-		</ContentTemplate>
-	</asp:UpdatePanel>
 
 </asp:Content>

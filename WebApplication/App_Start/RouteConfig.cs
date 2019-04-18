@@ -88,6 +88,12 @@ namespace WebApplication {
 				"~/UserPages/Teacher/ExportarTareas.aspx"
 			);
 
+			routes.MapPageRoute(
+				"TeacherTasksMeans",
+				"Teacher/Tasks/Means",
+				"~/UserPages/Teacher/Coordinador.aspx"
+			);
+
 		}
 
 	}

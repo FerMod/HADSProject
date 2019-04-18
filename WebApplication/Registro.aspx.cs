@@ -1,16 +1,13 @@
+
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Web;
-using System.Web.Configuration;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using DataBaseAccess;
 using EmailLib;
 using WebApplication.ComprobarMatriculaService;
@@ -25,6 +22,7 @@ namespace WebApplication {
 		private EmailService EmailService => lazyEmailService?.Value;
 
 		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
+		private Matriculas ComprobarMatriculasService => (Matriculas)Application["Matriculas"];
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -51,14 +49,23 @@ namespace WebApplication {
 		// TODO: Check MailDefinition. https://stackoverflow.com/a/886750/4134376
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
 
-			if(!IsEnrolledUser(textBoxEmail.Text)) {
-				NotificationData data = new NotificationData {
-					Body = "The user is not enrolled.",
-					Level = AlertLevel.Danger,
-					Dismissible = true
-				};
-				Master.Notification.ShowNotification(data);
-				return;
+			bool isEnrolled = false;
+			NotificationData data = new NotificationData();
+			try {
+				isEnrolled = IsEnrolledUser(textBoxEmail.Text);
+				if(!isEnrolled) {
+					data.Body = "The user is not enrolled.";
+					data.Level = AlertLevel.Warning;
+					data.Dismissible = true;
+				}
+			} catch(WebException) {
+				data.Body = "Could not perform the enrollment check.";
+				data.Level = AlertLevel.Danger;
+				data.Dismissible = true;
+			}
+
+			if(!isEnrolled) {
+				Master.UserNotification.ShowNotification(data);
 			}
 
 			Random generator = new Random();
@@ -140,8 +147,7 @@ namespace WebApplication {
 		}
 
 		private bool IsEnrolledUser(string email) {
-			Matriculas matriculasService = new Matriculas();
-			return matriculasService.comprobar(email).Equals("si", StringComparison.OrdinalIgnoreCase);
+			return ComprobarMatriculasService.comprobar(email).Equals("si", StringComparison.OrdinalIgnoreCase);
 		}
 
 	}

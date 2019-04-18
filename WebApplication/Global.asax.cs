@@ -16,6 +16,7 @@ using System.Web.SessionState;
 using System.Web.UI;
 using DataBaseAccess;
 using EmailLib;
+using WebApplication.ComprobarMatriculaService;
 using WebApplication.Framework;
 using WebApplication.Utils;
 
@@ -39,6 +40,7 @@ namespace WebApplication {
 
 			SetupDataAccess();
 			InitLoggedUsersTrack();
+			InitEnrolledUsersService();
 
 		}
 
@@ -114,6 +116,16 @@ namespace WebApplication {
 			Application.Lock();
 			if(Application.Get("LoggedUsers") == null) {
 				Application.Set("LoggedUsers", new ConnectedUsersTrack());
+			}
+			Application.UnLock();
+
+		}
+
+		protected void InitEnrolledUsersService() {
+
+			Application.Lock();
+			if(Application.Get("Matriculas") == null) {
+				Application.Set("Matriculas", new Matriculas());
 			}
 			Application.UnLock();
 

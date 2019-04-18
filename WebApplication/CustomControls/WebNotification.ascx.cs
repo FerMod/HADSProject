@@ -73,10 +73,12 @@ namespace WebApplication.CustomControls {
 
 		public void ShowNotification(NotificationData notificationData) {
 
-			Title = notificationData.Title;
-			Body = notificationData.Body;
-			Level = notificationData.Level;
-			Dismissible = notificationData.Dismissible;
+			if(notificationData != null) {
+				Title = notificationData.Title;
+				Body = notificationData.Body;
+				Level = notificationData.Level;
+				Dismissible = notificationData.Dismissible;
+			}
 
 			Visible = true;
 
