@@ -51,7 +51,7 @@ namespace WebApplication {
 		// TODO: Check MailDefinition. https://stackoverflow.com/a/886750/4134376
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
 
-			if(IsEnrolledUser(textBoxEmail.Text)) {
+			if(!IsEnrolledUser(textBoxEmail.Text)) {
 				NotificationData data = new NotificationData {
 					Body = "The user is not enrolled.",
 					Level = AlertLevel.Danger,
