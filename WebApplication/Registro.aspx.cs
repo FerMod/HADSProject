@@ -64,8 +64,11 @@ namespace WebApplication {
 				data.Dismissible = true;
 			}
 
+			EnrolledEmailValidator.IsValid = isEnrolled;
+
 			if(!isEnrolled) {
 				Master.UserNotification.ShowNotification(data);
+				return;
 			}
 
 			Random generator = new Random();
@@ -122,7 +125,7 @@ namespace WebApplication {
 					{ "@apellidos", textBoxLastName.Text },
 					{ "@numconfir", code },
 					{ "@tipo", dropDownRol.SelectedValue },
-					{ "@pass", textBoxPassword.Text }
+					{ "@pass", AppSecurity.GenerateHash(textBoxPassword.Text) }
 				};
 
 				int affectedRows = DataAccess.NonQuery(sql, parameters);
@@ -135,13 +138,20 @@ namespace WebApplication {
 						Level = AlertLevel.Info
 					};
 					//Session["NotificationData"] as NotificationData).Body += $"<br><br><strong><small><a href=\"{parametizedUrl}\">Ir a Pagina de Confirmacion de forma Directa</a></small></strong>";
-					Response.Redirect("~/WebAlertNotification");
+					Response.RedirectToRoute("WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
 				}
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
+				NotificationData exceptionData = new NotificationData() {
+					Title = "Exception Trown",
+					Body = ex.Message,
+					Level = AlertLevel.Danger,
+					Dismissible = true
+				};
+				Master.UserNotification.ShowNotification(exceptionData);
 			}
 
 		}

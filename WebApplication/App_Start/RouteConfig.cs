@@ -35,6 +35,12 @@ namespace WebApplication {
 			);
 
 			routes.MapPageRoute(
+				"WebNotification",
+				"WebNotification",
+				"~/WebAlertNotification.aspx"
+			);
+
+			routes.MapPageRoute(
 				"StudentHome",
 				"Student/Home",
 				"~/UserPages/Student/StudentHome.aspx"

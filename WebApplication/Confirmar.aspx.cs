@@ -68,7 +68,7 @@ namespace WebApplication {
 			}
 
 			Session["NotificationData"] = notificationData;
-			Response.Redirect("~/WebAlertNotification");
+			Response.RedirectToRoute("WebNotification");
 
 		}
 

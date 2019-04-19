@@ -72,6 +72,13 @@ namespace WebApplication {
 			Session["LastName"] = "";
 			Session["UserType"] = "";
 
+			//Session["IsLogged"] = true;
+			//Session["Email"] = "vadillo@ehu.es";
+			//Session["Name"] = "Nombre";
+			//Session["LastName"] = "Apellido";
+			//Session["UserType"] = "teacher_admin";
+			//FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
+
 		}
 
 		protected void Session_End(object sender, EventArgs e) {

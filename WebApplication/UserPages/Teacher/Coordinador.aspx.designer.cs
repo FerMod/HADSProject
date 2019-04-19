@@ -13,6 +13,33 @@ namespace WebApplication.UserPages {
     public partial class Coordinador {
         
         /// <summary>
+        /// SubjectsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SubjectsDataSource;
+        
+        /// <summary>
+        /// DropDownSubjects control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownSubjects;
+        
+        /// <summary>
+        /// GridViewTasksMeans control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewTasksMeans;
+        
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
