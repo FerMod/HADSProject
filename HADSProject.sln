@@ -16,6 +16,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TimeMeanWebService", "TimeMeanWebService\", "{F1A72181-BDE3-4D1B-BDEF-7AF3E9D2B931}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{fb8ef5f9-4ad5-453f-8183-95f709b031a2}|DataBaseAccess.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50253"
 		Debug.AspNetCompiler.PhysicalPath = "TimeMeanWebService\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50253\"
