@@ -1,24 +1,13 @@
+
 using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Web;
-using System.Web.Configuration;
 using System.Web.Optimization;
 using System.Web.Routing;
-using System.Web.Security;
-using System.Web.SessionState;
-using System.Web.UI;
 using DataBaseAccess;
-using EmailLib;
 using WebApplication.ComprobarMatriculaService;
 using WebApplication.Framework;
-using WebApplication.Utils;
 
 namespace WebApplication {
 
