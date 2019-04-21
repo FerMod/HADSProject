@@ -36,10 +36,10 @@ namespace WebApplication.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:50253/SubjectsMeansService.asmx")]
-        public string WebApplication_SubjectsMeansService_SubjectsMeansService {
+        [global::System.Configuration.DefaultSettingValueAttribute("https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx")]
+        public string WebApplication_TimeMeanWebService_SubjectsMeansService {
             get {
-                return ((string)(this["WebApplication_SubjectsMeansService_SubjectsMeansService"]));
+                return ((string)(this["WebApplication_TimeMeanWebService_SubjectsMeansService"]));
             }
         }
     }

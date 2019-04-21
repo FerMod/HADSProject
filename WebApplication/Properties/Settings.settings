@@ -5,8 +5,8 @@
     <Setting Name="WebApplication_ComprobarMatriculaService_Matriculas" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://ehusw.es/jav/ServiciosWeb/comprobarmatricula.php</Value>
     </Setting>
-    <Setting Name="WebApplication_SubjectsMeansService_SubjectsMeansService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:50253/SubjectsMeansService.asmx</Value>
+    <Setting Name="WebApplication_TimeMeanWebService_SubjectsMeansService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

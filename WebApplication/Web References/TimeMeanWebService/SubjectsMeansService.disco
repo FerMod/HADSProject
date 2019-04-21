@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx?wsdl" docRef="https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx" xmlns:q1="http://localhost:50253/" binding="q1:SubjectsMeansServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx" xmlns:q2="http://localhost:50253/" binding="q2:SubjectsMeansServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

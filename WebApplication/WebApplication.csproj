@@ -3085,11 +3085,11 @@
     <Content Include="img\open-iconic\webp\zoom-out-6x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out-8x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out.webp" />
-    <None Include="Web References\SubjectsMeansService\Reference.map">
+    <None Include="Web References\TimeMeanWebService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Web References\SubjectsMeansService\SubjectsMeansService.disco" />
+    <None Include="Web References\TimeMeanWebService\SubjectsMeansService.disco" />
     <Content Include="WebAlertNotification.aspx" />
     <Content Include="App_Data\json\EDA1.json" />
     <Content Include="App_Data\json\HAS.json" />
@@ -3378,7 +3378,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="Web References\SubjectsMeansService\Reference.cs">
+    <Compile Include="Web References\TimeMeanWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -3415,7 +3415,7 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
-    <None Include="Web References\SubjectsMeansService\SubjectsMeansService.wsdl" />
+    <None Include="Web References\TimeMeanWebService\SubjectsMeansService.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3454,16 +3454,16 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>WebApplication_ComprobarMatriculaService_Matriculas</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="http://localhost:50253/SubjectsMeansService.asmx">
+    <WebReferenceUrl Include="https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\SubjectsMeansService\</RelPath>
-      <UpdateFromURL>http://localhost:50253/SubjectsMeansService.asmx</UpdateFromURL>
+      <RelPath>Web References\TimeMeanWebService\</RelPath>
+      <UpdateFromURL>https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>WebApplication_SubjectsMeansService_SubjectsMeansService</CachedSettingsPropName>
+      <CachedSettingsPropName>WebApplication_TimeMeanWebService_SubjectsMeansService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
