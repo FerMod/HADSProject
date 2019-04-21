@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
+using System.Web.Configuration;
 using System.Web.Security;
 using System.Web.UI;
 using WebApplication.Framework;
@@ -42,9 +44,25 @@ namespace WebApplication {
 		}
 
 		private void SignOut() {
+
 			FormsAuthentication.SignOut();
 			Session.Abandon();
+
+			// clear authentication cookie
+			HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "") {
+				Expires = DateTime.Now.AddYears(-1)
+			};
+			Response.Cookies.Add(authCookie);
+
+			// clear session cookie 
+			SessionStateSection sessionStateSection = (SessionStateSection)WebConfigurationManager.GetSection("system.web/sessionState");
+			HttpCookie sessionCookie = new HttpCookie(sessionStateSection.CookieName, "") {
+				Expires = DateTime.Now.AddYears(-1)
+			};
+			Response.Cookies.Add(sessionCookie);
+
 			FormsAuthentication.RedirectToLoginPage();
+
 		}
 
 		private void ShowUserMenu(string userType) {

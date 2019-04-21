@@ -72,13 +72,6 @@ namespace WebApplication {
 			Session["LastName"] = "";
 			Session["UserType"] = "";
 
-			//Session["IsLogged"] = true;
-			//Session["Email"] = "vadillo@ehu.es";
-			//Session["Name"] = "Nombre";
-			//Session["LastName"] = "Apellido";
-			//Session["UserType"] = "teacher_admin";
-			//FormsAuthentication.SetAuthCookie(Session["UserType"].ToString(), true);
-
 		}
 
 		protected void Session_End(object sender, EventArgs e) {
@@ -86,22 +79,6 @@ namespace WebApplication {
 			string email = Convert.ToString(Session["Email"]);
 			string userType = Convert.ToString(Session["UserType"]);
 			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Remove(userType, email);
-
-			FormsAuthentication.SignOut();
-			Session.Abandon();
-
-			// clear authentication cookie
-			HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "") {
-				Expires = DateTime.Now.AddYears(-1)
-			};
-			Response.Cookies.Add(authCookie);
-
-			// clear session cookie 
-			SessionStateSection sessionStateSection = (SessionStateSection)WebConfigurationManager.GetSection("system.web/sessionState");
-			HttpCookie sessionCookie = new HttpCookie(sessionStateSection.CookieName, "") {
-				Expires = DateTime.Now.AddYears(-1)
-			};
-			Response.Cookies.Add(sessionCookie);
 
 		}
 
