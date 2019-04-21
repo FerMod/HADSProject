@@ -71,6 +71,13 @@ namespace WebApplication {
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
+				NotificationData data = new NotificationData {
+					Title = "Exception caught",
+					Body = $"Could not perform the login correctly.",
+					Level = AlertLevel.Danger,
+					Dismissible = true
+				};
+				Master.UserNotification.ShowNotification(data);
 			}
 
 		}
