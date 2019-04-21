@@ -13,7 +13,6 @@ using DataBaseAccess;
 /// <summary>
 /// Summary description for SubjectsMeansService
 /// </summary>
-//[WebService(Namespace = "http://localhost:50253/")]
 [WebService(Namespace = "http://localhost:50253/")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 // To allow this Web Service to be called from script, using ASP.NET AJAX
@@ -29,7 +28,7 @@ public class SubjectsMeansService : WebService {
 	}
 
 	[WebMethod]
-	public DataTable GetSubjectsMeans() {
+	public DataTable GetAllSubjectsMeans() {
 
 		string query = "SELECT ET.Email, AVG(ET.HReales) as MediaHReales, TG.CodAsig " +
 						"FROM EstudiantesTareas ET " +
@@ -39,6 +38,28 @@ public class SubjectsMeansService : WebService {
 
 
 		DataTable dataTable = dataAccess.CreateQueryDataTable(query);
+		dataTable.TableName = "SubjectsMeans";
+
+		return dataTable;
+	}
+
+
+	[WebMethod]
+	public DataTable GetSubjectMeans(string subjectCode) {
+
+		string query = "SELECT ET.Email, AVG(ET.HReales) as MediaHReales, TG.CodAsig " +
+						"FROM EstudiantesTareas ET " +
+						"JOIN TareasGenericas TG " +
+						"ON ET.CodTarea = TG.Codigo " +
+						"WHERE ET.CodTarea = @codigo " +
+						"GROUP BY ET.Email, TG.CodAsig";
+
+		Dictionary<string, object> parameters = new Dictionary<string, object> {
+			{ "@codigo", subjectCode }
+		};
+
+
+		DataTable dataTable = dataAccess.CreateQueryDataTable(query, parameters);
 		dataTable.TableName = "SubjectsMeans";
 
 		return dataTable;
