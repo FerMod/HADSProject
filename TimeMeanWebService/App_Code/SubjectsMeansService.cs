@@ -1,17 +1,13 @@
 
-using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
-using System.Data.Common;
-using System.Linq;
-using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
 using DataBaseAccess;
 
 /// <summary>
-/// Summary description for SubjectsMeansService
+/// Service to obtain the subjects means
 /// </summary>
 [WebService(Namespace = "http://localhost:50253/")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
@@ -36,7 +32,6 @@ public class SubjectsMeansService : WebService {
 						"ON ET.CodTarea = TG.Codigo " +
 						"GROUP BY ET.Email, TG.CodAsig";
 
-
 		DataTable dataTable = dataAccess.CreateQueryDataTable(query);
 		dataTable.TableName = "SubjectsMeans";
 
@@ -57,7 +52,6 @@ public class SubjectsMeansService : WebService {
 		Dictionary<string, object> parameters = new Dictionary<string, object> {
 			{ "@codigo", subjectCode }
 		};
-
 
 		DataTable dataTable = dataAccess.CreateQueryDataTable(query, parameters);
 		dataTable.TableName = "SubjectsMeans";
