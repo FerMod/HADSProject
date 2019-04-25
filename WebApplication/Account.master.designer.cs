@@ -13,6 +13,24 @@ namespace WebApplication {
     public partial class Account {
         
         /// <summary>
+        /// NotificationUpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel NotificationUpdatePanel;
+        
+        /// <summary>
+        /// Notification control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebApplication.CustomControls.WebNotification Notification;
+        
+        /// <summary>
         /// LogIn control.
         /// </summary>
         /// <remarks>

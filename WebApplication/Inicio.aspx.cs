@@ -1,13 +1,9 @@
+
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Web;
 using System.Web.Security;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using DataBaseAccess;
 using WebApplication.Framework;
 
@@ -69,6 +65,13 @@ namespace WebApplication {
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
+				NotificationData data = new NotificationData {
+					Title = "Exception caught",
+					Body = $"Could not perform the login correctly.",
+					Level = AlertLevel.Danger,
+					Dismissible = true
+				};
+				Master.UserNotification.ShowNotification(data);
 			}
 
 		}

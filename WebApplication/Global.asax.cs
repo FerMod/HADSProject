@@ -1,23 +1,13 @@
+
 using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Web;
-using System.Web.Configuration;
 using System.Web.Optimization;
 using System.Web.Routing;
-using System.Web.Security;
-using System.Web.SessionState;
-using System.Web.UI;
 using DataBaseAccess;
-using EmailLib;
+using WebApplication.ComprobarMatriculaService;
 using WebApplication.Framework;
-using WebApplication.Utils;
 
 namespace WebApplication {
 
@@ -39,6 +29,7 @@ namespace WebApplication {
 
 			SetupDataAccess();
 			InitLoggedUsersTrack();
+			InitEnrolledUsersService();
 
 		}
 
@@ -78,22 +69,6 @@ namespace WebApplication {
 			string userType = Convert.ToString(Session["UserType"]);
 			((ConnectedUsersTrack)Application.Get("LoggedUsers")).Remove(userType, email);
 
-			FormsAuthentication.SignOut();
-			Session.Abandon();
-
-			// clear authentication cookie
-			HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "") {
-				Expires = DateTime.Now.AddYears(-1)
-			};
-			Response.Cookies.Add(authCookie);
-
-			// clear session cookie 
-			SessionStateSection sessionStateSection = (SessionStateSection)WebConfigurationManager.GetSection("system.web/sessionState");
-			HttpCookie sessionCookie = new HttpCookie(sessionStateSection.CookieName, "") {
-				Expires = DateTime.Now.AddYears(-1)
-			};
-			Response.Cookies.Add(sessionCookie);
-
 		}
 
 		#endregion
@@ -114,6 +89,16 @@ namespace WebApplication {
 			Application.Lock();
 			if(Application.Get("LoggedUsers") == null) {
 				Application.Set("LoggedUsers", new ConnectedUsersTrack());
+			}
+			Application.UnLock();
+
+		}
+
+		protected void InitEnrolledUsersService() {
+
+			Application.Lock();
+			if(Application.Get("Matriculas") == null) {
+				Application.Set("Matriculas", new Matriculas());
 			}
 			Application.UnLock();
 

@@ -28,8 +28,9 @@
         <div class="form-group">
             <asp:Label runat="server" Font-Bold="True" AssociatedControlID="textBoxPassword">Password:</asp:Label>
             <asp:TextBox ID="textBoxPassword" CssClass="form-control" TabIndex="4" placeholder="Enter password" TextMode="Password" autocomplete="off" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldPassword" Font-Bold="True" CssClass="invalid-feedback" runat="server" ControlToValidate="textBoxPassword" ErrorMessage="Required field" Display="Dynamic"></asp:RequiredFieldValidator>
-        </div>
+            <asp:RequiredFieldValidator ID="RequiredFieldPassword" Font-Bold="True" CssClass="invalid-feedback" runat="server" ControlToValidate="textBoxPassword" ErrorMessage="Required field" Display="Dynamic" />
+			<asp:CustomValidator ID="EnrolledEmailValidator" runat="server" Font-Bold="True" CssClass="invalid-feedback" Display="Dynamic" ControlToValidate="textBoxPassword" ErrorMessage="The user is not enrolled." />
+		</div>
 
         <div class="form-group">
             <asp:Label runat="server" Font-Bold="True" AssociatedControlID="RequiredFieldPassword">Repeat password:</asp:Label>

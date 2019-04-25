@@ -35,6 +35,12 @@ namespace WebApplication {
 			);
 
 			routes.MapPageRoute(
+				"WebNotification",
+				"WebNotification",
+				"~/WebAlertNotification.aspx"
+			);
+
+			routes.MapPageRoute(
 				"StudentHome",
 				"Student/Home",
 				"~/UserPages/Student/StudentHome.aspx"
@@ -86,6 +92,12 @@ namespace WebApplication {
 				"TeacherExportTasks",
 				"Teacher/Tasks/Export",
 				"~/UserPages/Teacher/ExportarTareas.aspx"
+			);
+
+			routes.MapPageRoute(
+				"TeacherTasksMeans",
+				"Teacher/Tasks/Means",
+				"~/UserPages/Teacher/Coordinador.aspx"
 			);
 
 		}

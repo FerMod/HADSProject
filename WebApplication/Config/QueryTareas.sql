@@ -65,6 +65,7 @@ ON PG.codigogrupo = GC.codigo
 WHERE PG.email = @email
 */
 
+/*
 UPDATE TareasGenericas
 SET Descripcion = @descripcion, HEstimadas=@hestimadas, Explotacion=@explotacion, TipoTarea=@tipotarea
 WHERE Codigo = @codigo
@@ -74,3 +75,4 @@ VALUES (@codigo, @descripcion, @codasig, @hestimadas, @explotacion, @tipotarea)
 
 DELETE FROM TareasGenericas
 WHERE Codigo = @codigo
+*/

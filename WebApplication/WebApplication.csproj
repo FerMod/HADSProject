@@ -88,6 +88,8 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -1722,6 +1724,7 @@
     <Content Include="UserPages\Student\InstanciarTarea.aspx" />
     <Content Include="UserPages\Teacher\ImportarTareasXmlDocument.aspx" />
     <Content Include="UserPages\Teacher\ExportarTareas.aspx" />
+    <Content Include="UserPages\Teacher\Coordinador.aspx" />
     <Content Include="UserPages\Teacher\TeacherHome.aspx" />
     <Content Include="UserPages\Teacher\TareasProfesor.aspx" />
     <Content Include="UserPages\Student\TareasAlumno.aspx" />
@@ -3082,6 +3085,11 @@
     <Content Include="img\open-iconic\webp\zoom-out-6x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out-8x.webp" />
     <Content Include="img\open-iconic\webp\zoom-out.webp" />
+    <None Include="Web References\TimeMeanWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TimeMeanWebService\SubjectsMeansService.disco" />
     <Content Include="WebAlertNotification.aspx" />
     <Content Include="App_Data\json\EDA1.json" />
     <Content Include="App_Data\json\HAS.json" />
@@ -3110,6 +3118,10 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -3228,6 +3240,11 @@
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="RedirectPage.aspx.cs">
       <DependentUpon>RedirectPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3305,6 +3322,13 @@
     <Compile Include="UserPages\Teacher\ExportarTareas.aspx.designer.cs">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserPages\Teacher\Coordinador.aspx.cs">
+      <DependentUpon>Coordinador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Teacher\Coordinador.aspx.designer.cs">
+      <DependentUpon>Coordinador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPages\Teacher\TeacherHome.aspx.cs">
       <DependentUpon>TeacherHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3349,6 +3373,16 @@
     <Compile Include="CustomControls\WebNotification.ascx.designer.cs">
       <DependentUpon>WebNotification.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Web References\ComprobarMatriculaService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TimeMeanWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="WebAlertNotification.aspx.cs">
       <DependentUpon>WebAlertNotification.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3376,6 +3410,12 @@
     <Content Include="Scripts\svg-injector.js.map" />
     <Content Include="UserPages\Teacher\Teacher.Master" />
     <Content Include="UserPages\Student\Student.Master" />
+    <None Include="Web References\ComprobarMatriculaService\comprobarmatricula.wsdl" />
+    <Content Include="Web References\ComprobarMatriculaService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\TimeMeanWebService\SubjectsMeansService.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3398,6 +3438,36 @@
       <Project>{1a41950d-f15e-4d45-96c2-56e6613b35b8}</Project>
       <Name>EmailLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://ehusw.es/jav/ServiciosWeb/comprobarmatricula.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ComprobarMatriculaService\</RelPath>
+      <UpdateFromURL>http://ehusw.es/jav/ServiciosWeb/comprobarmatricula.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebApplication_ComprobarMatriculaService_Matriculas</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TimeMeanWebService\</RelPath>
+      <UpdateFromURL>https://timemeanwebservice.azurewebsites.net/SubjectsMeansService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebApplication_TimeMeanWebService_SubjectsMeansService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

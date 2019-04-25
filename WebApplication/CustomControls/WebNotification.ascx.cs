@@ -1,8 +1,6 @@
 
 using System;
-using System.Text.RegularExpressions;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using WebApplication.Framework;
 using WebApplication.Framework.Extensions;
 
@@ -73,10 +71,12 @@ namespace WebApplication.CustomControls {
 
 		public void ShowNotification(NotificationData notificationData) {
 
-			Title = notificationData.Title;
-			Body = notificationData.Body;
-			Level = notificationData.Level;
-			Dismissible = notificationData.Dismissible;
+			if(notificationData != null) {
+				Title = notificationData.Title;
+				Body = notificationData.Body;
+				Level = notificationData.Level;
+				Dismissible = notificationData.Dismissible;
+			}
 
 			Visible = true;
 

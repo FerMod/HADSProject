@@ -1,18 +1,16 @@
+
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Web;
-using System.Web.Configuration;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using DataBaseAccess;
 using EmailLib;
+using WebApplication.ComprobarMatriculaService;
 using WebApplication.Framework;
 using WebApplication.Utils;
 
@@ -24,6 +22,7 @@ namespace WebApplication {
 		private EmailService EmailService => lazyEmailService?.Value;
 
 		private DataAccessService DataAccess => (DataAccessService)Session["DataAccess"];
+		private Matriculas ComprobarMatriculasService => (Matriculas)Application["Matriculas"];
 
 		protected void Page_Load(object sender, EventArgs e) {
 
@@ -49,6 +48,28 @@ namespace WebApplication {
 
 		// TODO: Check MailDefinition. https://stackoverflow.com/a/886750/4134376
 		protected void ButtonCreateAccount_Click(object sender, EventArgs e) {
+
+			bool isEnrolled = false;
+			NotificationData data = new NotificationData();
+			try {
+				isEnrolled = IsEnrolledUser(textBoxEmail.Text);
+				if(!isEnrolled) {
+					data.Body = "The user is not enrolled.";
+					data.Level = AlertLevel.Warning;
+					data.Dismissible = true;
+				}
+			} catch(WebException) {
+				data.Body = "Could not perform the enrollment check.";
+				data.Level = AlertLevel.Danger;
+				data.Dismissible = true;
+			}
+
+			EnrolledEmailValidator.IsValid = isEnrolled;
+
+			if(!isEnrolled) {
+				Master.UserNotification.ShowNotification(data);
+				return;
+			}
 
 			Random generator = new Random();
 			int code = (int)(generator.Next(0, 999999) + 1000000);
@@ -104,7 +125,7 @@ namespace WebApplication {
 					{ "@apellidos", textBoxLastName.Text },
 					{ "@numconfir", code },
 					{ "@tipo", dropDownRol.SelectedValue },
-					{ "@pass", textBoxPassword.Text }
+					{ "@pass", AppSecurity.GenerateHash(textBoxPassword.Text) }
 				};
 
 				int affectedRows = DataAccess.NonQuery(sql, parameters);
@@ -117,15 +138,26 @@ namespace WebApplication {
 						Level = AlertLevel.Info
 					};
 					//Session["NotificationData"] as NotificationData).Body += $"<br><br><strong><small><a href=\"{parametizedUrl}\">Ir a Pagina de Confirmacion de forma Directa</a></small></strong>";
-					Response.Redirect("~/WebAlertNotification");
+					Response.RedirectToRoute("WebNotification");
 				} else {
 					throw new Exception($"Unexpected number of rows affected.\nExpected: 1\nObtained: {affectedRows}");
 				}
 
 			} catch(Exception ex) {
 				Debug.WriteLine("Exception caught: " + ex.Message);
+				NotificationData exceptionData = new NotificationData() {
+					Title = "Exception Trown",
+					Body = ex.Message,
+					Level = AlertLevel.Danger,
+					Dismissible = true
+				};
+				Master.UserNotification.ShowNotification(exceptionData);
 			}
 
+		}
+
+		private bool IsEnrolledUser(string email) {
+			return ComprobarMatriculasService.comprobar(email).Equals("si", StringComparison.OrdinalIgnoreCase);
 		}
 
 	}

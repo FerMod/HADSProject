@@ -1,7 +1,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web.Security;
 using DataBaseAccess;
 using WebApplication.Framework;
@@ -68,7 +67,7 @@ namespace WebApplication {
 			}
 
 			Session["NotificationData"] = notificationData;
-			Response.Redirect("~/WebAlertNotification");
+			Response.RedirectToRoute("WebNotification");
 
 		}
 

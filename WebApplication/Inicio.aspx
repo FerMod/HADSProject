@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApplication.Inicio" Title="Inicio" MasterPageFile="~/Account.Master" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="WebApplication.Inicio" Title="Inicio" MasterPageFile="~/Account.Master" %>
 <%@ MasterType VirtualPath="~/Account.Master" %>
 
 <asp:Content ID="LogInContent" ContentPlaceHolderID="AccountCardBodyContent" runat="server">
@@ -7,7 +7,7 @@
 
         <div class="form-group">
             <asp:Label Font-Bold="True" runat="server" AssociatedControlID="textBoxEmail">Email:</asp:Label>
-            <asp:TextBox ID="textBoxEmail" CssClass="form-control" placeholder="Enter email" runat="server" autocomplete="on" TabIndex="1"></asp:TextBox>
+            <asp:TextBox ID="textBoxEmail" CssClass="form-control" placeholder="Enter email" runat="server" ClientIDMode="Static" autocomplete="on" TabIndex="1"/>
             <asp:RequiredFieldValidator ID="RequiredFieldEmail" CssClass="invalid-feedback" runat="server" ControlToValidate="textBoxEmail" ErrorMessage="Required field" Font-Bold="True" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
         </div>
 
