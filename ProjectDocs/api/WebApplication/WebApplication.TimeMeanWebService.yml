@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.TimeMeanWebService
+  commentId: N:WebApplication.TimeMeanWebService
+  id: WebApplication.TimeMeanWebService
+  children:
+  - WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  - WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  - WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+  - WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+  - WebApplication.TimeMeanWebService.SubjectsMeansService
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.TimeMeanWebService
+  nameWithType: WebApplication.TimeMeanWebService
+  fullName: WebApplication.TimeMeanWebService
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService
+  commentId: T:WebApplication.TimeMeanWebService.SubjectsMeansService
+  parent: WebApplication.TimeMeanWebService
+  name: SubjectsMeansService
+  nameWithType: SubjectsMeansService
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  commentId: T:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  parent: WebApplication.TimeMeanWebService
+  name: GetAllSubjectsMeansCompletedEventHandler
+  nameWithType: GetAllSubjectsMeansCompletedEventHandler
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  commentId: T:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  parent: WebApplication.TimeMeanWebService
+  name: GetAllSubjectsMeansCompletedEventArgs
+  nameWithType: GetAllSubjectsMeansCompletedEventArgs
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+- uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+  commentId: T:WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+  parent: WebApplication.TimeMeanWebService
+  name: GetSubjectMeansCompletedEventHandler
+  nameWithType: GetSubjectMeansCompletedEventHandler
+  fullName: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+- uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+  commentId: T:WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+  parent: WebApplication.TimeMeanWebService
+  name: GetSubjectMeansCompletedEventArgs
+  nameWithType: GetSubjectMeansCompletedEventArgs
+  fullName: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+- uid: WebApplication.TimeMeanWebService
+  commentId: N:WebApplication.TimeMeanWebService
+  name: WebApplication.TimeMeanWebService
+  nameWithType: WebApplication.TimeMeanWebService
+  fullName: WebApplication.TimeMeanWebService

@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: StudentMenu
     path: ../WebApplication/UserPages/Student/Student.Master.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -49,11 +49,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: None
     path: ../WebApplication/UserPages/Student/Student.Master.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -81,11 +81,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Home
     path: ../WebApplication/UserPages/Student/Student.Master.cs
-    startLine: 13
+    startLine: 11
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -113,11 +113,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Student/Student.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Tasks
     path: ../WebApplication/UserPages/Student/Student.Master.cs
-    startLine: 14
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages

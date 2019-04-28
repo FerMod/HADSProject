@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Json
     path: ../WebApplication/AppConfig.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: WebApplication/AppConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Folder
     path: ../WebApplication/AppConfig.cs

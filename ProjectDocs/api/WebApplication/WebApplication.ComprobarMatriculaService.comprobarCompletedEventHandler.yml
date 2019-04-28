@@ -1,0 +1,66 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  commentId: T:WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  id: comprobarCompletedEventHandler
+  parent: WebApplication.ComprobarMatriculaService
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: comprobarCompletedEventHandler
+  nameWithType: comprobarCompletedEventHandler
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: WebApplication/Web References/ComprobarMatriculaService/Reference.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: comprobarCompletedEventHandler
+    path: ../WebApplication/Web References/ComprobarMatriculaService/Reference.cs
+    startLine: 124
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.ComprobarMatriculaService
+  remarks: ''
+  example: []
+  syntax:
+    content: public delegate void comprobarCompletedEventHandler(object sender, comprobarCompletedEventArgs e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+    content.vb: Public Delegate Sub comprobarCompletedEventHandler(sender As Object, e As comprobarCompletedEventArgs)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: WebApplication.ComprobarMatriculaService
+  commentId: N:WebApplication.ComprobarMatriculaService
+  name: WebApplication.ComprobarMatriculaService
+  nameWithType: WebApplication.ComprobarMatriculaService
+  fullName: WebApplication.ComprobarMatriculaService
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  commentId: T:WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  parent: WebApplication.ComprobarMatriculaService
+  name: comprobarCompletedEventArgs
+  nameWithType: comprobarCompletedEventArgs
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -9,6 +9,7 @@ items:
   - WebApplication.SiteMaster.ButtonSignOut
   - WebApplication.SiteMaster.ButtonSignOut_Click(System.Object,System.EventArgs)
   - WebApplication.SiteMaster.ButtonViewProfile
+  - WebApplication.SiteMaster.ContentUpdatePanel
   - WebApplication.SiteMaster.createAccountLink
   - WebApplication.SiteMaster.LabelLastName
   - WebApplication.SiteMaster.LabelMail
@@ -31,7 +32,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: SiteMaster
     path: ../WebApplication/Site.Master.designer.cs
@@ -248,11 +249,11 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/Site.Master.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -283,11 +284,11 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonProfile_Click
     path: ../WebApplication/Site.Master.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -318,11 +319,11 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonSignOut_Click
     path: ../WebApplication/Site.Master.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -353,7 +354,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: userMenu
     path: ../WebApplication/Site.Master.designer.cs
@@ -387,7 +388,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: createAccountLink
     path: ../WebApplication/Site.Master.designer.cs
@@ -421,7 +422,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: loginLink
     path: ../WebApplication/Site.Master.designer.cs
@@ -455,7 +456,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: loggedUserMenu
     path: ../WebApplication/Site.Master.designer.cs
@@ -489,7 +490,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: studentMenu
     path: ../WebApplication/Site.Master.designer.cs
@@ -523,7 +524,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: teacherMenu
     path: ../WebApplication/Site.Master.designer.cs
@@ -557,7 +558,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: LabelName
     path: ../WebApplication/Site.Master.designer.cs
@@ -591,7 +592,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: LabelLastName
     path: ../WebApplication/Site.Master.designer.cs
@@ -625,7 +626,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: LabelMail
     path: ../WebApplication/Site.Master.designer.cs
@@ -659,7 +660,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonViewProfile
     path: ../WebApplication/Site.Master.designer.cs
@@ -693,7 +694,7 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonSignOut
     path: ../WebApplication/Site.Master.designer.cs
@@ -713,6 +714,40 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.SiteMaster.ContentUpdatePanel
+  commentId: F:WebApplication.SiteMaster.ContentUpdatePanel
+  id: ContentUpdatePanel
+  parent: WebApplication.SiteMaster
+  langs:
+  - csharp
+  - vb
+  name: ContentUpdatePanel
+  nameWithType: SiteMaster.ContentUpdatePanel
+  fullName: WebApplication.SiteMaster.ContentUpdatePanel
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Site.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ContentUpdatePanel
+    path: ../WebApplication/Site.Master.designer.cs
+    startLine: 120
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nContentUpdatePanel control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected UpdatePanel ContentUpdatePanel
+    return:
+      type: System.Web.UI.UpdatePanel
+    content.vb: Protected ContentUpdatePanel As UpdatePanel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.SiteMaster.MainContent
   commentId: F:WebApplication.SiteMaster.MainContent
   id: MainContent
@@ -727,11 +762,11 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: MainContent
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 120
+    startLine: 129
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -761,11 +796,11 @@ items:
   source:
     remote:
       path: WebApplication/Site.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: NotificationContent
     path: ../WebApplication/Site.Master.designer.cs
-    startLine: 129
+    startLine: 138
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -5926,6 +5961,13 @@ references:
   name: Button
   nameWithType: Button
   fullName: System.Web.UI.WebControls.Button
+- uid: System.Web.UI.UpdatePanel
+  commentId: T:System.Web.UI.UpdatePanel
+  parent: System.Web.UI
+  isExternal: true
+  name: UpdatePanel
+  nameWithType: UpdatePanel
+  fullName: System.Web.UI.UpdatePanel
 - uid: System.Web.UI.WebControls.ContentPlaceHolder
   commentId: T:System.Web.UI.WebControls.ContentPlaceHolder
   parent: System.Web.UI.WebControls

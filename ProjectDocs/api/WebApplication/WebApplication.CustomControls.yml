@@ -4,6 +4,7 @@ items:
   commentId: N:WebApplication.CustomControls
   id: WebApplication.CustomControls
   children:
+  - WebApplication.CustomControls.ConnectedUsers
   - WebApplication.CustomControls.WebNotification
   langs:
   - csharp
@@ -15,6 +16,11 @@ items:
   assemblies:
   - WebApplication
 references:
+- uid: WebApplication.CustomControls.ConnectedUsers
+  commentId: T:WebApplication.CustomControls.ConnectedUsers
+  name: ConnectedUsers
+  nameWithType: ConnectedUsers
+  fullName: WebApplication.CustomControls.ConnectedUsers
 - uid: WebApplication.CustomControls.WebNotification
   commentId: T:WebApplication.CustomControls.WebNotification
   parent: WebApplication.CustomControls

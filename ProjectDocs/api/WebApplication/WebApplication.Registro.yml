@@ -10,6 +10,7 @@ items:
   - WebApplication.Registro.CompareRepeatPassword
   - WebApplication.Registro.dropDownRol
   - WebApplication.Registro.EmailRegExpr
+  - WebApplication.Registro.EnrolledEmailValidator
   - WebApplication.Registro.Master
   - WebApplication.Registro.Page_Load(System.Object,System.EventArgs)
   - WebApplication.Registro.RequiredFieldEmail
@@ -32,7 +33,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Registro
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -320,11 +321,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/Registro.aspx.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -355,11 +356,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ButtonCreateAccount_Click
     path: ../WebApplication/Registro.aspx.cs
-    startLine: 50
+    startLine: 49
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -390,7 +391,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: textBoxName
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -424,7 +425,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldName
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -458,7 +459,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: textBoxLastName
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -492,7 +493,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldLastName
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -526,7 +527,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: textBoxEmail
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -560,7 +561,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldEmail
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -594,7 +595,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: EmailRegExpr
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -628,7 +629,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: textBoxPassword
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -662,7 +663,7 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldPassword
     path: ../WebApplication/Registro.aspx.designer.cs
@@ -682,6 +683,40 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.Registro.EnrolledEmailValidator
+  commentId: F:WebApplication.Registro.EnrolledEmailValidator
+  id: EnrolledEmailValidator
+  parent: WebApplication.Registro
+  langs:
+  - csharp
+  - vb
+  name: EnrolledEmailValidator
+  nameWithType: Registro.EnrolledEmailValidator
+  fullName: WebApplication.Registro.EnrolledEmailValidator
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Registro.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: EnrolledEmailValidator
+    path: ../WebApplication/Registro.aspx.designer.cs
+    startLine: 102
+  assemblies:
+  - WebApplication
+  namespace: WebApplication
+  summary: "\nEnrolledEmailValidator control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected CustomValidator EnrolledEmailValidator
+    return:
+      type: System.Web.UI.WebControls.CustomValidator
+    content.vb: Protected EnrolledEmailValidator As CustomValidator
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.Registro.textBoxRepeatPassword
   commentId: F:WebApplication.Registro.textBoxRepeatPassword
   id: textBoxRepeatPassword
@@ -696,11 +731,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: textBoxRepeatPassword
     path: ../WebApplication/Registro.aspx.designer.cs
-    startLine: 102
+    startLine: 111
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -730,11 +765,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RequiredFieldRepeatPassword
     path: ../WebApplication/Registro.aspx.designer.cs
-    startLine: 111
+    startLine: 120
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -764,11 +799,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: CompareRepeatPassword
     path: ../WebApplication/Registro.aspx.designer.cs
-    startLine: 120
+    startLine: 129
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -798,11 +833,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: dropDownRol
     path: ../WebApplication/Registro.aspx.designer.cs
-    startLine: 129
+    startLine: 138
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -832,11 +867,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: buttonCreateAccount
     path: ../WebApplication/Registro.aspx.designer.cs
-    startLine: 138
+    startLine: 147
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -866,11 +901,11 @@ items:
   source:
     remote:
       path: WebApplication/Registro.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/Registro.aspx.designer.cs
-    startLine: 146
+    startLine: 155
   assemblies:
   - WebApplication
   namespace: WebApplication
@@ -7932,6 +7967,13 @@ references:
   name: RegularExpressionValidator
   nameWithType: RegularExpressionValidator
   fullName: System.Web.UI.WebControls.RegularExpressionValidator
+- uid: System.Web.UI.WebControls.CustomValidator
+  commentId: T:System.Web.UI.WebControls.CustomValidator
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: CustomValidator
+  nameWithType: CustomValidator
+  fullName: System.Web.UI.WebControls.CustomValidator
 - uid: System.Web.UI.WebControls.CompareValidator
   commentId: T:System.Web.UI.WebControls.CompareValidator
   parent: System.Web.UI.WebControls

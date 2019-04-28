@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.ComprobarMatriculaService
+  commentId: N:WebApplication.ComprobarMatriculaService
+  id: WebApplication.ComprobarMatriculaService
+  children:
+  - WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  - WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  - WebApplication.ComprobarMatriculaService.Matriculas
+  langs:
+  - csharp
+  - vb
+  name: WebApplication.ComprobarMatriculaService
+  nameWithType: WebApplication.ComprobarMatriculaService
+  fullName: WebApplication.ComprobarMatriculaService
+  type: Namespace
+  assemblies:
+  - WebApplication
+references:
+- uid: WebApplication.ComprobarMatriculaService.Matriculas
+  commentId: T:WebApplication.ComprobarMatriculaService.Matriculas
+  name: Matriculas
+  nameWithType: Matriculas
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  commentId: T:WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  parent: WebApplication.ComprobarMatriculaService
+  name: comprobarCompletedEventHandler
+  nameWithType: comprobarCompletedEventHandler
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  commentId: T:WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  parent: WebApplication.ComprobarMatriculaService
+  name: comprobarCompletedEventArgs
+  nameWithType: comprobarCompletedEventArgs
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+- uid: WebApplication.ComprobarMatriculaService
+  commentId: N:WebApplication.ComprobarMatriculaService
+  name: WebApplication.ComprobarMatriculaService
+  nameWithType: WebApplication.ComprobarMatriculaService
+  fullName: WebApplication.ComprobarMatriculaService

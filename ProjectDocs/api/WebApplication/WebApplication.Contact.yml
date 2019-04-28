@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: WebApplication/Contact.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Contact
     path: ../WebApplication/Contact.aspx.designer.cs
@@ -305,11 +305,11 @@ items:
   source:
     remote:
       path: WebApplication/Contact.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/Contact.aspx.cs
-    startLine: 11
+    startLine: 8
   assemblies:
   - WebApplication
   namespace: WebApplication

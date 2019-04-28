@@ -1,0 +1,66 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  commentId: T:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  id: GetAllSubjectsMeansCompletedEventHandler
+  parent: WebApplication.TimeMeanWebService
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GetAllSubjectsMeansCompletedEventHandler
+  nameWithType: GetAllSubjectsMeansCompletedEventHandler
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: WebApplication/Web References/TimeMeanWebService/Reference.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GetAllSubjectsMeansCompletedEventHandler
+    path: ../WebApplication/Web References/TimeMeanWebService/Reference.cs
+    startLine: 156
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.TimeMeanWebService
+  remarks: ''
+  example: []
+  syntax:
+    content: public delegate void GetAllSubjectsMeansCompletedEventHandler(object sender, GetAllSubjectsMeansCompletedEventArgs e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+    content.vb: Public Delegate Sub GetAllSubjectsMeansCompletedEventHandler(sender As Object, e As GetAllSubjectsMeansCompletedEventArgs)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: WebApplication.TimeMeanWebService
+  commentId: N:WebApplication.TimeMeanWebService
+  name: WebApplication.TimeMeanWebService
+  nameWithType: WebApplication.TimeMeanWebService
+  fullName: WebApplication.TimeMeanWebService
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  commentId: T:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  parent: WebApplication.TimeMeanWebService
+  name: GetAllSubjectsMeansCompletedEventArgs
+  nameWithType: GetAllSubjectsMeansCompletedEventArgs
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

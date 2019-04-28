@@ -5,6 +5,14 @@ items:
   id: TeacherHome
   parent: WebApplication.UserPages
   children:
+  - WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  - WebApplication.UserPages.TeacherHome.ConnectedStudents
+  - WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  - WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  - WebApplication.UserPages.TeacherHome.ConnectedUsers
+  - WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  - WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  - WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
   - WebApplication.UserPages.TeacherHome.Master
   - WebApplication.UserPages.TeacherHome.Page_Load(System.Object,System.EventArgs)
   langs:
@@ -17,7 +25,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherHome
     path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
@@ -291,6 +299,41 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsers
+  commentId: P:WebApplication.UserPages.TeacherHome.ConnectedUsers
+  id: ConnectedUsers
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedUsers
+  nameWithType: TeacherHome.ConnectedUsers
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsers
+  type: Property
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedUsers
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.cs
+    startLine: 12
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: public ConnectedUsersTrack ConnectedUsers { get; }
+    parameters: []
+    return:
+      type: WebApplication.Framework.ConnectedUsersTrack
+    content.vb: Public ReadOnly Property ConnectedUsers As ConnectedUsersTrack
+  overload: WebApplication.UserPages.TeacherHome.ConnectedUsers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: WebApplication.UserPages.TeacherHome.Page_Load(System.Object,System.EventArgs)
   commentId: M:WebApplication.UserPages.TeacherHome.Page_Load(System.Object,System.EventArgs)
   id: Page_Load(System.Object,System.EventArgs)
@@ -305,11 +348,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TeacherHome.aspx.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.cs
-    startLine: 17
+    startLine: 14
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -322,6 +365,245 @@ items:
       type: System.EventArgs
     content.vb: Protected Sub Page_Load(sender As Object, e As EventArgs)
   overload: WebApplication.UserPages.TeacherHome.Page_Load*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  commentId: M:WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  id: ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedUsersTimer_Tick(Object, EventArgs)
+  nameWithType: TeacherHome.ConnectedUsersTimer_Tick(Object, EventArgs)
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedUsersTimer_Tick
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: protected void ConnectedUsersTimer_Tick(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub ConnectedUsersTimer_Tick(sender As Object, e As EventArgs)
+  overload: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  id: ConnectedUsersTimer
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedUsersTimer
+  nameWithType: TeacherHome.ConnectedUsersTimer
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedUsersTimer
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+    startLine: 21
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nConnectedUsersTimer control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Timer ConnectedUsersTimer
+    return:
+      type: System.Web.UI.Timer
+    content.vb: Protected ConnectedUsersTimer As Timer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
+  id: ConnectedUsersUpdatePanel
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedUsersUpdatePanel
+  nameWithType: TeacherHome.ConnectedUsersUpdatePanel
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedUsersUpdatePanel
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nConnectedUsersUpdatePanel control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected UpdatePanel ConnectedUsersUpdatePanel
+    return:
+      type: System.Web.UI.UpdatePanel
+    content.vb: Protected ConnectedUsersUpdatePanel As UpdatePanel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  id: ConnectedStudentCount
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedStudentCount
+  nameWithType: TeacherHome.ConnectedStudentCount
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedStudentCount
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nConnectedStudentCount control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Label ConnectedStudentCount
+    return:
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected ConnectedStudentCount As Label
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedStudents
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedStudents
+  id: ConnectedStudents
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedStudents
+  nameWithType: TeacherHome.ConnectedStudents
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedStudents
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedStudents
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+    startLine: 48
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nConnectedStudents control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ListBox ConnectedStudents
+    return:
+      type: System.Web.UI.WebControls.ListBox
+    content.vb: Protected ConnectedStudents As ListBox
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  id: ConnectedTeacherCount
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedTeacherCount
+  nameWithType: TeacherHome.ConnectedTeacherCount
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedTeacherCount
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+    startLine: 57
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nConnectedTeacherCount control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Label ConnectedTeacherCount
+    return:
+      type: System.Web.UI.WebControls.Label
+    content.vb: Protected ConnectedTeacherCount As Label
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  id: ConnectedTeachers
+  parent: WebApplication.UserPages.TeacherHome
+  langs:
+  - csharp
+  - vb
+  name: ConnectedTeachers
+  nameWithType: TeacherHome.ConnectedTeachers
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConnectedTeachers
+    path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
+    startLine: 66
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nConnectedTeachers control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected ListBox ConnectedTeachers
+    return:
+      type: System.Web.UI.WebControls.ListBox
+    content.vb: Protected ConnectedTeachers As ListBox
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -340,11 +622,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/TeacherHome.aspx.designer.cs
-    startLine: 20
+    startLine: 74
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -7362,6 +7644,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsers*
+  commentId: Overload:WebApplication.UserPages.TeacherHome.ConnectedUsers
+  name: ConnectedUsers
+  nameWithType: TeacherHome.ConnectedUsers
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsers
+- uid: WebApplication.Framework.ConnectedUsersTrack
+  commentId: T:WebApplication.Framework.ConnectedUsersTrack
+  parent: WebApplication.Framework
+  name: ConnectedUsersTrack
+  nameWithType: ConnectedUsersTrack
+  fullName: WebApplication.Framework.ConnectedUsersTrack
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
 - uid: WebApplication.UserPages.TeacherHome.Page_Load*
   commentId: Overload:WebApplication.UserPages.TeacherHome.Page_Load
   name: Page_Load
@@ -7374,6 +7672,45 @@ references:
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick*
+  commentId: Overload:WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick
+  name: ConnectedUsersTimer_Tick
+  nameWithType: TeacherHome.ConnectedUsersTimer_Tick
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick
+- uid: System.Web.UI.Timer
+  commentId: T:System.Web.UI.Timer
+  parent: System.Web.UI
+  isExternal: true
+  name: Timer
+  nameWithType: Timer
+  fullName: System.Web.UI.Timer
+- uid: System.Web.UI.UpdatePanel
+  commentId: T:System.Web.UI.UpdatePanel
+  parent: System.Web.UI
+  isExternal: true
+  name: UpdatePanel
+  nameWithType: UpdatePanel
+  fullName: System.Web.UI.UpdatePanel
+- uid: System.Web.UI.WebControls.Label
+  commentId: T:System.Web.UI.WebControls.Label
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: System.Web.UI.WebControls.Label
+- uid: System.Web.UI.WebControls
+  commentId: N:System.Web.UI.WebControls
+  isExternal: true
+  name: System.Web.UI.WebControls
+  nameWithType: System.Web.UI.WebControls
+  fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.ListBox
+  commentId: T:System.Web.UI.WebControls.ListBox
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: ListBox
+  nameWithType: ListBox
+  fullName: System.Web.UI.WebControls.ListBox
 - uid: WebApplication.UserPages.TeacherHome.Master*
   commentId: Overload:WebApplication.UserPages.TeacherHome.Master
   name: Master

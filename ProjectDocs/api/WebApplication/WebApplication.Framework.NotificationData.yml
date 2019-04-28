@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: NotificationData
     path: ../WebApplication/Framework/NotificationData.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Title
     path: ../WebApplication/Framework/NotificationData.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Body
     path: ../WebApplication/Framework/NotificationData.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Level
     path: ../WebApplication/Framework/NotificationData.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: WebApplication/Framework/NotificationData.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Dismissible
     path: ../WebApplication/Framework/NotificationData.cs
