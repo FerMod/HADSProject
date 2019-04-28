@@ -5,10 +5,14 @@ items:
   id: WebApplication.Framework
   children:
   - WebApplication.Framework.AlertLevel
+  - WebApplication.Framework.AppSecurity
+  - WebApplication.Framework.ConnectedUsersTrack
   - WebApplication.Framework.NotificationData
   - WebApplication.Framework.ParametizedUrl
   - WebApplication.Framework.Query
   - WebApplication.Framework.Query.GenericTasks
+  - WebApplication.Framework.UserRole
+  - WebApplication.Framework.UserType
   langs:
   - csharp
   - vb
@@ -19,6 +23,29 @@ items:
   assemblies:
   - WebApplication
 references:
+- uid: WebApplication.Framework.AppSecurity
+  commentId: T:WebApplication.Framework.AppSecurity
+  name: AppSecurity
+  nameWithType: AppSecurity
+  fullName: WebApplication.Framework.AppSecurity
+- uid: WebApplication.Framework.ConnectedUsersTrack
+  commentId: T:WebApplication.Framework.ConnectedUsersTrack
+  parent: WebApplication.Framework
+  name: ConnectedUsersTrack
+  nameWithType: ConnectedUsersTrack
+  fullName: WebApplication.Framework.ConnectedUsersTrack
+- uid: WebApplication.Framework.UserType
+  commentId: T:WebApplication.Framework.UserType
+  parent: WebApplication.Framework
+  name: UserType
+  nameWithType: UserType
+  fullName: WebApplication.Framework.UserType
+- uid: WebApplication.Framework.UserRole
+  commentId: T:WebApplication.Framework.UserRole
+  parent: WebApplication.Framework
+  name: UserRole
+  nameWithType: UserRole
+  fullName: WebApplication.Framework.UserRole
 - uid: WebApplication.Framework.AlertLevel
   commentId: T:WebApplication.Framework.AlertLevel
   parent: WebApplication.Framework

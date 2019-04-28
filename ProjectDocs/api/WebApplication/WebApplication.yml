@@ -20,6 +20,7 @@ items:
   - WebApplication.EmailSent
   - WebApplication.Global
   - WebApplication.Inicio
+  - WebApplication.RedirectPage
   - WebApplication.Registro
   - WebApplication.RouteConfig
   - WebApplication.ScriptResource
@@ -129,6 +130,11 @@ references:
   name: Inicio
   nameWithType: Inicio
   fullName: WebApplication.Inicio
+- uid: WebApplication.RedirectPage
+  commentId: T:WebApplication.RedirectPage
+  name: RedirectPage
+  nameWithType: RedirectPage
+  fullName: WebApplication.RedirectPage
 - uid: WebApplication.Registro
   commentId: T:WebApplication.Registro
   name: Registro

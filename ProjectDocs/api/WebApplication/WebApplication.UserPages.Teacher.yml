@@ -13,7 +13,9 @@ items:
   - WebApplication.UserPages.Teacher.Master
   - WebApplication.UserPages.Teacher.Page_Load(System.Object,System.EventArgs)
   - WebApplication.UserPages.Teacher.ShowPage(WebApplication.UserPages.TeacherMenu)
+  - WebApplication.UserPages.Teacher.TasksMeansTab
   - WebApplication.UserPages.Teacher.TasksTab
+  - WebApplication.UserPages.Teacher.TeacherAdminPanel
   - WebApplication.UserPages.Teacher.TeacherContent
   - WebApplication.UserPages.Teacher.TeacherTasksUpdatePanel
   - WebApplication.UserPages.Teacher.UserDataSet
@@ -27,7 +29,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Teacher
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -243,11 +245,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: DataAccess
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -278,11 +280,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: UserDataSet
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -313,11 +315,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Page_Load
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 29
+    startLine: 27
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -348,7 +350,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ShowPage
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
@@ -381,7 +383,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: HomeTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -415,7 +417,7 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TasksTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
@@ -435,6 +437,40 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: WebApplication.UserPages.Teacher.TeacherAdminPanel
+  commentId: F:WebApplication.UserPages.Teacher.TeacherAdminPanel
+  id: TeacherAdminPanel
+  parent: WebApplication.UserPages.Teacher
+  langs:
+  - csharp
+  - vb
+  name: TeacherAdminPanel
+  nameWithType: Teacher.TeacherAdminPanel
+  fullName: WebApplication.UserPages.Teacher.TeacherAdminPanel
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherAdminPanel
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+    startLine: 39
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTeacherAdminPanel control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected Panel TeacherAdminPanel
+    return:
+      type: System.Web.UI.WebControls.Panel
+    content.vb: Protected TeacherAdminPanel As Panel
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
   commentId: F:WebApplication.UserPages.Teacher.ImportTasksXmlDocumentTab
   id: ImportTasksXmlDocumentTab
@@ -449,11 +485,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksXmlDocumentTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 39
+    startLine: 48
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -483,11 +519,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksDataSetTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 48
+    startLine: 57
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -517,11 +553,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportTasksTab
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 57
+    startLine: 66
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -533,6 +569,40 @@ items:
     return:
       type: System.Web.UI.WebControls.LinkButton
     content.vb: Protected ExportTasksTab As LinkButton
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WebApplication.UserPages.Teacher.TasksMeansTab
+  commentId: F:WebApplication.UserPages.Teacher.TasksMeansTab
+  id: TasksMeansTab
+  parent: WebApplication.UserPages.Teacher
+  langs:
+  - csharp
+  - vb
+  name: TasksMeansTab
+  nameWithType: Teacher.TasksMeansTab
+  fullName: WebApplication.UserPages.Teacher.TasksMeansTab
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TasksMeansTab
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
+    startLine: 75
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  summary: "\nTasksMeansTab control.\n"
+  remarks: "\nAuto-generated field.\nTo modify move field declaration from designer file to code-behind file.\n"
+  example: []
+  syntax:
+    content: protected LinkButton TasksMeansTab
+    return:
+      type: System.Web.UI.WebControls.LinkButton
+    content.vb: Protected TasksMeansTab As LinkButton
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -551,11 +621,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherTasksUpdatePanel
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 66
+    startLine: 84
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -585,11 +655,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherContent
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 75
+    startLine: 93
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -619,11 +689,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Master
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.designer.cs
-    startLine: 83
+    startLine: 101
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -5789,6 +5859,13 @@ references:
   name: System.Web.UI.WebControls
   nameWithType: System.Web.UI.WebControls
   fullName: System.Web.UI.WebControls
+- uid: System.Web.UI.WebControls.Panel
+  commentId: T:System.Web.UI.WebControls.Panel
+  parent: System.Web.UI.WebControls
+  isExternal: true
+  name: Panel
+  nameWithType: Panel
+  fullName: System.Web.UI.WebControls.Panel
 - uid: System.Web.UI.UpdatePanel
   commentId: T:System.Web.UI.UpdatePanel
   parent: System.Web.UI

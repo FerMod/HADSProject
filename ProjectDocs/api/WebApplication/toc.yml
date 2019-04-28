@@ -34,6 +34,8 @@
     name: Global
   - uid: WebApplication.Inicio
     name: Inicio
+  - uid: WebApplication.RedirectPage
+    name: RedirectPage
   - uid: WebApplication.Registro
     name: Registro
   - uid: WebApplication.RouteConfig
@@ -48,9 +50,20 @@
     name: ViewSwitcher
   - uid: WebApplication.WebAlertNotification
     name: WebAlertNotification
+- uid: WebApplication.ComprobarMatriculaService
+  name: WebApplication.ComprobarMatriculaService
+  items:
+  - uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+    name: comprobarCompletedEventArgs
+  - uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+    name: comprobarCompletedEventHandler
+  - uid: WebApplication.ComprobarMatriculaService.Matriculas
+    name: Matriculas
 - uid: WebApplication.CustomControls
   name: WebApplication.CustomControls
   items:
+  - uid: WebApplication.CustomControls.ConnectedUsers
+    name: ConnectedUsers
   - uid: WebApplication.CustomControls.WebNotification
     name: WebNotification
 - uid: WebApplication.Framework
@@ -58,6 +71,10 @@
   items:
   - uid: WebApplication.Framework.AlertLevel
     name: AlertLevel
+  - uid: WebApplication.Framework.AppSecurity
+    name: AppSecurity
+  - uid: WebApplication.Framework.ConnectedUsersTrack
+    name: ConnectedUsersTrack
   - uid: WebApplication.Framework.NotificationData
     name: NotificationData
   - uid: WebApplication.Framework.ParametizedUrl
@@ -66,6 +83,10 @@
     name: Query
   - uid: WebApplication.Framework.Query.GenericTasks
     name: Query.GenericTasks
+  - uid: WebApplication.Framework.UserRole
+    name: UserRole
+  - uid: WebApplication.Framework.UserType
+    name: UserType
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   items:
@@ -73,9 +94,24 @@
     name: AttributeCollectionExtension
   - uid: WebApplication.Framework.Extensions.DictionaryExtension
     name: DictionaryExtension
+- uid: WebApplication.TimeMeanWebService
+  name: WebApplication.TimeMeanWebService
+  items:
+  - uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+    name: GetAllSubjectsMeansCompletedEventArgs
+  - uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+    name: GetAllSubjectsMeansCompletedEventHandler
+  - uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+    name: GetSubjectMeansCompletedEventArgs
+  - uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+    name: GetSubjectMeansCompletedEventHandler
+  - uid: WebApplication.TimeMeanWebService.SubjectsMeansService
+    name: SubjectsMeansService
 - uid: WebApplication.UserPages
   name: WebApplication.UserPages
   items:
+  - uid: WebApplication.UserPages.Coordinador
+    name: Coordinador
   - uid: WebApplication.UserPages.ExportarTareas
     name: ExportarTareas
   - uid: WebApplication.UserPages.ImportarTareasDataSet

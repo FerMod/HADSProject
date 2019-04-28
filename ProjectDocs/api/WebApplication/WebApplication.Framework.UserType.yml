@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework.UserType
+  commentId: T:WebApplication.Framework.UserType
+  id: UserType
+  parent: WebApplication.Framework
+  children:
+  - WebApplication.Framework.UserType.Student
+  - WebApplication.Framework.UserType.Teacher
+  - WebApplication.Framework.UserType.TeacherAdmin
+  - WebApplication.Framework.UserType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: UserType
+  nameWithType: UserType
+  fullName: WebApplication.Framework.UserType
+  type: Enum
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: UserType
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 3
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public enum UserType
+    content.vb: Public Enum UserType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: WebApplication.Framework.UserType.Unknown
+  commentId: F:WebApplication.Framework.UserType.Unknown
+  id: Unknown
+  parent: WebApplication.Framework.UserType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: UserType.Unknown
+  fullName: WebApplication.Framework.UserType.Unknown
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Unknown
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 4
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: Unknown = -1
+    return:
+      type: WebApplication.Framework.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.Framework.UserType.Student
+  commentId: F:WebApplication.Framework.UserType.Student
+  id: Student
+  parent: WebApplication.Framework.UserType
+  langs:
+  - csharp
+  - vb
+  name: Student
+  nameWithType: UserType.Student
+  fullName: WebApplication.Framework.UserType.Student
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Student
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 5
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: Student = 0
+    return:
+      type: WebApplication.Framework.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.Framework.UserType.Teacher
+  commentId: F:WebApplication.Framework.UserType.Teacher
+  id: Teacher
+  parent: WebApplication.Framework.UserType
+  langs:
+  - csharp
+  - vb
+  name: Teacher
+  nameWithType: UserType.Teacher
+  fullName: WebApplication.Framework.UserType.Teacher
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Teacher
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 6
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: Teacher = 1
+    return:
+      type: WebApplication.Framework.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.Framework.UserType.TeacherAdmin
+  commentId: F:WebApplication.Framework.UserType.TeacherAdmin
+  id: TeacherAdmin
+  parent: WebApplication.Framework.UserType
+  langs:
+  - csharp
+  - vb
+  name: TeacherAdmin
+  nameWithType: UserType.TeacherAdmin
+  fullName: WebApplication.Framework.UserType.TeacherAdmin
+  type: Field
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TeacherAdmin
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 7
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: TeacherAdmin = 2
+    return:
+      type: WebApplication.Framework.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
+- uid: WebApplication.Framework.UserType
+  commentId: T:WebApplication.Framework.UserType
+  parent: WebApplication.Framework
+  name: UserType
+  nameWithType: UserType
+  fullName: WebApplication.Framework.UserType

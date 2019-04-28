@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework.UserRole
+  commentId: T:WebApplication.Framework.UserRole
+  id: UserRole
+  parent: WebApplication.Framework
+  children:
+  - WebApplication.Framework.UserRole.#ctor
+  - WebApplication.Framework.UserRole.#ctor(WebApplication.Framework.UserType)
+  - WebApplication.Framework.UserRole.Name
+  - WebApplication.Framework.UserRole.op_Implicit(WebApplication.Framework.UserRole)~System.String
+  - WebApplication.Framework.UserRole.ToString
+  - WebApplication.Framework.UserRole.Value
+  langs:
+  - csharp
+  - vb
+  name: UserRole
+  nameWithType: UserRole
+  fullName: WebApplication.Framework.UserRole
+  type: Class
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: UserRole
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 10
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public class UserRole
+    content.vb: Public Class UserRole
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WebApplication.Framework.UserRole.Value
+  commentId: P:WebApplication.Framework.UserRole.Value
+  id: Value
+  parent: WebApplication.Framework.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: UserRole.Value
+  fullName: WebApplication.Framework.UserRole.Value
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Value
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 12
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public UserType Value { get; set; }
+    parameters: []
+    return:
+      type: WebApplication.Framework.UserType
+    content.vb: Public Property Value As UserType
+  overload: WebApplication.Framework.UserRole.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WebApplication.Framework.UserRole.Name
+  commentId: P:WebApplication.Framework.UserRole.Name
+  id: Name
+  parent: WebApplication.Framework.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UserRole.Name
+  fullName: WebApplication.Framework.UserRole.Name
+  type: Property
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: Name
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 14
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: WebApplication.Framework.UserRole.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WebApplication.Framework.UserRole.#ctor
+  commentId: M:WebApplication.Framework.UserRole.#ctor
+  id: '#ctor'
+  parent: WebApplication.Framework.UserRole
+  langs:
+  - csharp
+  - vb
+  name: UserRole()
+  nameWithType: UserRole.UserRole()
+  fullName: WebApplication.Framework.UserRole.UserRole()
+  type: Constructor
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: .ctor
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 30
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public UserRole()
+    content.vb: Public Sub New
+  overload: WebApplication.Framework.UserRole.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WebApplication.Framework.UserRole.#ctor(WebApplication.Framework.UserType)
+  commentId: M:WebApplication.Framework.UserRole.#ctor(WebApplication.Framework.UserType)
+  id: '#ctor(WebApplication.Framework.UserType)'
+  parent: WebApplication.Framework.UserRole
+  langs:
+  - csharp
+  - vb
+  name: UserRole(UserType)
+  nameWithType: UserRole.UserRole(UserType)
+  fullName: WebApplication.Framework.UserRole.UserRole(WebApplication.Framework.UserType)
+  type: Constructor
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: .ctor
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 33
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public UserRole(UserType userType)
+    parameters:
+    - id: userType
+      type: WebApplication.Framework.UserType
+    content.vb: Public Sub New(userType As UserType)
+  overload: WebApplication.Framework.UserRole.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WebApplication.Framework.UserRole.ToString
+  commentId: M:WebApplication.Framework.UserRole.ToString
+  id: ToString
+  parent: WebApplication.Framework.UserRole
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: UserRole.ToString()
+  fullName: WebApplication.Framework.UserRole.ToString()
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ToString
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 37
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: WebApplication.Framework.UserRole.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WebApplication.Framework.UserRole.op_Implicit(WebApplication.Framework.UserRole)~System.String
+  commentId: M:WebApplication.Framework.UserRole.op_Implicit(WebApplication.Framework.UserRole)~System.String
+  id: op_Implicit(WebApplication.Framework.UserRole)~System.String
+  parent: WebApplication.Framework.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Implicit(UserRole to String)
+  nameWithType: UserRole.Implicit(UserRole to String)
+  fullName: WebApplication.Framework.UserRole.Implicit(WebApplication.Framework.UserRole to System.String)
+  type: Operator
+  source:
+    remote:
+      path: WebApplication/Framework/UserType.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: op_Implicit
+    path: ../WebApplication/Framework/UserType.cs
+    startLine: 41
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static implicit operator string (UserRole userRole)
+    parameters:
+    - id: userRole
+      type: WebApplication.Framework.UserRole
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(userRole As UserRole) As String
+  overload: WebApplication.Framework.UserRole.op_Implicit*
+  nameWithType.vb: UserRole.Widening(UserRole to String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.UserRole.Widening(WebApplication.Framework.UserRole to System.String)
+  name.vb: Widening(UserRole to String)
+references:
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WebApplication.Framework.UserRole.Value*
+  commentId: Overload:WebApplication.Framework.UserRole.Value
+  name: Value
+  nameWithType: UserRole.Value
+  fullName: WebApplication.Framework.UserRole.Value
+- uid: WebApplication.Framework.UserType
+  commentId: T:WebApplication.Framework.UserType
+  parent: WebApplication.Framework
+  name: UserType
+  nameWithType: UserType
+  fullName: WebApplication.Framework.UserType
+- uid: WebApplication.Framework.UserRole.Name*
+  commentId: Overload:WebApplication.Framework.UserRole.Name
+  name: Name
+  nameWithType: UserRole.Name
+  fullName: WebApplication.Framework.UserRole.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WebApplication.Framework.UserRole.#ctor*
+  commentId: Overload:WebApplication.Framework.UserRole.#ctor
+  name: UserRole
+  nameWithType: UserRole.UserRole
+  fullName: WebApplication.Framework.UserRole.UserRole
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WebApplication.Framework.UserRole.ToString*
+  commentId: Overload:WebApplication.Framework.UserRole.ToString
+  name: ToString
+  nameWithType: UserRole.ToString
+  fullName: WebApplication.Framework.UserRole.ToString
+- uid: WebApplication.Framework.UserRole.op_Implicit*
+  commentId: Overload:WebApplication.Framework.UserRole.op_Implicit
+  name: Implicit
+  nameWithType: UserRole.Implicit
+  fullName: WebApplication.Framework.UserRole.Implicit
+  nameWithType.vb: UserRole.Widening
+  fullName.vb: WebApplication.Framework.UserRole.Widening
+  name.vb: Widening
+- uid: WebApplication.Framework.UserRole
+  commentId: T:WebApplication.Framework.UserRole
+  parent: WebApplication.Framework
+  name: UserRole
+  nameWithType: UserRole
+  fullName: WebApplication.Framework.UserRole

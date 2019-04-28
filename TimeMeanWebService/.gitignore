@@ -1,0 +1,7 @@
+
+#Ignore sensitive data folder
+!secrets/
+secrets/*
+
+#Allow the secret config example
+!secrets/Connections.config.EXAMPLE

@@ -11,6 +11,7 @@ items:
   - WebApplication.UserPages.TeacherMenu.ImportTasksXmlDocument
   - WebApplication.UserPages.TeacherMenu.None
   - WebApplication.UserPages.TeacherMenu.Tasks
+  - WebApplication.UserPages.TeacherMenu.TasksMeans
   langs:
   - csharp
   - vb
@@ -21,11 +22,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: TeacherMenu
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 12
+    startLine: 9
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -52,11 +53,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: None
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 13
+    startLine: 10
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -84,11 +85,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Home
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 14
+    startLine: 11
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -116,11 +117,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: Tasks
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 15
+    startLine: 12
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -148,11 +149,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksXmlDocument
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 16
+    startLine: 13
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -180,11 +181,11 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ImportTasksDataSet
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 17
+    startLine: 14
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
@@ -212,16 +213,48 @@ items:
   source:
     remote:
       path: WebApplication/UserPages/Teacher/Teacher.Master.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: ExportTasks
     path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
-    startLine: 18
+    startLine: 15
   assemblies:
   - WebApplication
   namespace: WebApplication.UserPages
   syntax:
     content: ExportTasks = 4
+    return:
+      type: WebApplication.UserPages.TeacherMenu
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WebApplication.UserPages.TeacherMenu.TasksMeans
+  commentId: F:WebApplication.UserPages.TeacherMenu.TasksMeans
+  id: TasksMeans
+  parent: WebApplication.UserPages.TeacherMenu
+  langs:
+  - csharp
+  - vb
+  name: TasksMeans
+  nameWithType: TeacherMenu.TasksMeans
+  fullName: WebApplication.UserPages.TeacherMenu.TasksMeans
+  type: Field
+  source:
+    remote:
+      path: WebApplication/UserPages/Teacher/Teacher.Master.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: TasksMeans
+    path: ../WebApplication/UserPages/Teacher/Teacher.Master.cs
+    startLine: 16
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.UserPages
+  syntax:
+    content: TasksMeans = 5
     return:
       type: WebApplication.UserPages.TeacherMenu
   modifiers.csharp:

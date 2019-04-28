@@ -602,6 +602,18 @@ references:
   isSpec: "True"
   fullName: WebApplication.Account.Master
   nameWithType: Account.Master
+- uid: WebApplication.Account.Notification
+  name: Notification
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_Notification
+  commentId: F:WebApplication.Account.Notification
+  fullName: WebApplication.Account.Notification
+  nameWithType: Account.Notification
+- uid: WebApplication.Account.NotificationUpdatePanel
+  name: NotificationUpdatePanel
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_NotificationUpdatePanel
+  commentId: F:WebApplication.Account.NotificationUpdatePanel
+  fullName: WebApplication.Account.NotificationUpdatePanel
+  nameWithType: Account.NotificationUpdatePanel
 - uid: WebApplication.Account.Page_Load(System.Object,System.EventArgs)
   name: Page_Load(Object, EventArgs)
   href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_Page_Load_System_Object_System_EventArgs_
@@ -628,6 +640,19 @@ references:
   isSpec: "True"
   fullName: WebApplication.Account.SetActiveNav
   nameWithType: Account.SetActiveNav
+- uid: WebApplication.Account.UserNotification
+  name: UserNotification
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_UserNotification
+  commentId: P:WebApplication.Account.UserNotification
+  fullName: WebApplication.Account.UserNotification
+  nameWithType: Account.UserNotification
+- uid: WebApplication.Account.UserNotification*
+  name: UserNotification
+  href: api/WebApplication/WebApplication.Account.html#WebApplication_Account_UserNotification_
+  commentId: Overload:WebApplication.Account.UserNotification
+  isSpec: "True"
+  fullName: WebApplication.Account.UserNotification
+  nameWithType: Account.UserNotification
 - uid: WebApplication.AppConfig
   name: AppConfig
   href: api/WebApplication/WebApplication.AppConfig.html
@@ -914,6 +939,133 @@ references:
   commentId: F:WebApplication.CambiarPassword.textBoxRepeatNewPassword
   fullName: WebApplication.CambiarPassword.textBoxRepeatNewPassword
   nameWithType: CambiarPassword.textBoxRepeatNewPassword
+- uid: WebApplication.ComprobarMatriculaService
+  name: WebApplication.ComprobarMatriculaService
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.html
+  commentId: N:WebApplication.ComprobarMatriculaService
+  fullName: WebApplication.ComprobarMatriculaService
+  nameWithType: WebApplication.ComprobarMatriculaService
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  name: comprobarCompletedEventArgs
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.html
+  commentId: T:WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs
+  nameWithType: comprobarCompletedEventArgs
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.Result
+  name: Result
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.html#WebApplication_ComprobarMatriculaService_comprobarCompletedEventArgs_Result
+  commentId: P:WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.Result
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.Result
+  nameWithType: comprobarCompletedEventArgs.Result
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.Result*
+  name: Result
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.html#WebApplication_ComprobarMatriculaService_comprobarCompletedEventArgs_Result_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.Result
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventArgs.Result
+  nameWithType: comprobarCompletedEventArgs.Result
+- uid: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  name: comprobarCompletedEventHandler
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler.html
+  commentId: T:WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  fullName: WebApplication.ComprobarMatriculaService.comprobarCompletedEventHandler
+  nameWithType: comprobarCompletedEventHandler
+- uid: WebApplication.ComprobarMatriculaService.Matriculas
+  name: Matriculas
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html
+  commentId: T:WebApplication.ComprobarMatriculaService.Matriculas
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas
+  nameWithType: Matriculas
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.#ctor
+  name: Matriculas()
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas__ctor
+  commentId: M:WebApplication.ComprobarMatriculaService.Matriculas.#ctor
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.Matriculas()
+  nameWithType: Matriculas.Matriculas()
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.#ctor*
+  name: Matriculas
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas__ctor_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.Matriculas.#ctor
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.Matriculas
+  nameWithType: Matriculas.Matriculas
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.CancelAsync(System.Object)
+  name: CancelAsync(Object)
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_CancelAsync_System_Object_
+  commentId: M:WebApplication.ComprobarMatriculaService.Matriculas.CancelAsync(System.Object)
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.CancelAsync(System.Object)
+  nameWithType: Matriculas.CancelAsync(Object)
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.CancelAsync*
+  name: CancelAsync
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_CancelAsync_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.Matriculas.CancelAsync
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.CancelAsync
+  nameWithType: Matriculas.CancelAsync
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.comprobar(System.String)
+  name: comprobar(String)
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_comprobar_System_String_
+  commentId: M:WebApplication.ComprobarMatriculaService.Matriculas.comprobar(System.String)
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.comprobar(System.String)
+  nameWithType: Matriculas.comprobar(String)
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.comprobar*
+  name: comprobar
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_comprobar_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.Matriculas.comprobar
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.comprobar
+  nameWithType: Matriculas.comprobar
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync(System.String)
+  name: comprobarAsync(String)
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_comprobarAsync_System_String_
+  commentId: M:WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync(System.String)
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync(System.String)
+  nameWithType: Matriculas.comprobarAsync(String)
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync(System.String,System.Object)
+  name: comprobarAsync(String, Object)
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_comprobarAsync_System_String_System_Object_
+  commentId: M:WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync(System.String,System.Object)
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync(System.String, System.Object)
+  nameWithType: Matriculas.comprobarAsync(String, Object)
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync*
+  name: comprobarAsync
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_comprobarAsync_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.comprobarAsync
+  nameWithType: Matriculas.comprobarAsync
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.comprobarCompleted
+  name: comprobarCompleted
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_comprobarCompleted
+  commentId: E:WebApplication.ComprobarMatriculaService.Matriculas.comprobarCompleted
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.comprobarCompleted
+  nameWithType: Matriculas.comprobarCompleted
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.Url
+  name: Url
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_Url
+  commentId: P:WebApplication.ComprobarMatriculaService.Matriculas.Url
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.Url
+  nameWithType: Matriculas.Url
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.Url*
+  name: Url
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_Url_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.Matriculas.Url
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.Url
+  nameWithType: Matriculas.Url
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.UseDefaultCredentials
+  name: UseDefaultCredentials
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_UseDefaultCredentials
+  commentId: P:WebApplication.ComprobarMatriculaService.Matriculas.UseDefaultCredentials
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.UseDefaultCredentials
+  nameWithType: Matriculas.UseDefaultCredentials
+- uid: WebApplication.ComprobarMatriculaService.Matriculas.UseDefaultCredentials*
+  name: UseDefaultCredentials
+  href: api/WebApplication/WebApplication.ComprobarMatriculaService.Matriculas.html#WebApplication_ComprobarMatriculaService_Matriculas_UseDefaultCredentials_
+  commentId: Overload:WebApplication.ComprobarMatriculaService.Matriculas.UseDefaultCredentials
+  isSpec: "True"
+  fullName: WebApplication.ComprobarMatriculaService.Matriculas.UseDefaultCredentials
+  nameWithType: Matriculas.UseDefaultCredentials
 - uid: WebApplication.Confirmar
   name: Confirmar
   href: api/WebApplication/WebApplication.Confirmar.html
@@ -958,6 +1110,93 @@ references:
   commentId: N:WebApplication.CustomControls
   fullName: WebApplication.CustomControls
   nameWithType: WebApplication.CustomControls
+- uid: WebApplication.CustomControls.ConnectedUsers
+  name: ConnectedUsers
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html
+  commentId: T:WebApplication.CustomControls.ConnectedUsers
+  fullName: WebApplication.CustomControls.ConnectedUsers
+  nameWithType: ConnectedUsers
+- uid: WebApplication.CustomControls.ConnectedUsers.ConnectedUsersPanel
+  name: ConnectedUsersPanel
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_ConnectedUsersPanel
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.ConnectedUsersPanel
+  fullName: WebApplication.CustomControls.ConnectedUsers.ConnectedUsersPanel
+  nameWithType: ConnectedUsers.ConnectedUsersPanel
+- uid: WebApplication.CustomControls.ConnectedUsers.ConnectedUsersUpdatePanel
+  name: ConnectedUsersUpdatePanel
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_ConnectedUsersUpdatePanel
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.ConnectedUsersUpdatePanel
+  fullName: WebApplication.CustomControls.ConnectedUsers.ConnectedUsersUpdatePanel
+  nameWithType: ConnectedUsers.ConnectedUsersUpdatePanel
+- uid: WebApplication.CustomControls.ConnectedUsers.LoggedUsers
+  name: LoggedUsers
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_LoggedUsers
+  commentId: P:WebApplication.CustomControls.ConnectedUsers.LoggedUsers
+  fullName: WebApplication.CustomControls.ConnectedUsers.LoggedUsers
+  nameWithType: ConnectedUsers.LoggedUsers
+- uid: WebApplication.CustomControls.ConnectedUsers.LoggedUsers*
+  name: LoggedUsers
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_LoggedUsers_
+  commentId: Overload:WebApplication.CustomControls.ConnectedUsers.LoggedUsers
+  isSpec: "True"
+  fullName: WebApplication.CustomControls.ConnectedUsers.LoggedUsers
+  nameWithType: ConnectedUsers.LoggedUsers
+- uid: WebApplication.CustomControls.ConnectedUsers.StudentCount
+  name: StudentCount
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_StudentCount
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.StudentCount
+  fullName: WebApplication.CustomControls.ConnectedUsers.StudentCount
+  nameWithType: ConnectedUsers.StudentCount
+- uid: WebApplication.CustomControls.ConnectedUsers.StudentList
+  name: StudentList
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_StudentList
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.StudentList
+  fullName: WebApplication.CustomControls.ConnectedUsers.StudentList
+  nameWithType: ConnectedUsers.StudentList
+- uid: WebApplication.CustomControls.ConnectedUsers.TeacherCount
+  name: TeacherCount
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_TeacherCount
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.TeacherCount
+  fullName: WebApplication.CustomControls.ConnectedUsers.TeacherCount
+  nameWithType: ConnectedUsers.TeacherCount
+- uid: WebApplication.CustomControls.ConnectedUsers.TeacherList
+  name: TeacherList
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_TeacherList
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.TeacherList
+  fullName: WebApplication.CustomControls.ConnectedUsers.TeacherList
+  nameWithType: ConnectedUsers.TeacherList
+- uid: WebApplication.CustomControls.ConnectedUsers.UpdateRate
+  name: UpdateRate
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_UpdateRate
+  commentId: P:WebApplication.CustomControls.ConnectedUsers.UpdateRate
+  fullName: WebApplication.CustomControls.ConnectedUsers.UpdateRate
+  nameWithType: ConnectedUsers.UpdateRate
+- uid: WebApplication.CustomControls.ConnectedUsers.UpdateRate*
+  name: UpdateRate
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_UpdateRate_
+  commentId: Overload:WebApplication.CustomControls.ConnectedUsers.UpdateRate
+  isSpec: "True"
+  fullName: WebApplication.CustomControls.ConnectedUsers.UpdateRate
+  nameWithType: ConnectedUsers.UpdateRate
+- uid: WebApplication.CustomControls.ConnectedUsers.UpdateTimer
+  name: UpdateTimer
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_UpdateTimer
+  commentId: F:WebApplication.CustomControls.ConnectedUsers.UpdateTimer
+  fullName: WebApplication.CustomControls.ConnectedUsers.UpdateTimer
+  nameWithType: ConnectedUsers.UpdateTimer
+- uid: WebApplication.CustomControls.ConnectedUsers.UpdateTimer_Tick(System.Object,System.EventArgs)
+  name: UpdateTimer_Tick(Object, EventArgs)
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_UpdateTimer_Tick_System_Object_System_EventArgs_
+  commentId: M:WebApplication.CustomControls.ConnectedUsers.UpdateTimer_Tick(System.Object,System.EventArgs)
+  fullName: WebApplication.CustomControls.ConnectedUsers.UpdateTimer_Tick(System.Object, System.EventArgs)
+  nameWithType: ConnectedUsers.UpdateTimer_Tick(Object, EventArgs)
+- uid: WebApplication.CustomControls.ConnectedUsers.UpdateTimer_Tick*
+  name: UpdateTimer_Tick
+  href: api/WebApplication/WebApplication.CustomControls.ConnectedUsers.html#WebApplication_CustomControls_ConnectedUsers_UpdateTimer_Tick_
+  commentId: Overload:WebApplication.CustomControls.ConnectedUsers.UpdateTimer_Tick
+  isSpec: "True"
+  fullName: WebApplication.CustomControls.ConnectedUsers.UpdateTimer_Tick
+  nameWithType: ConnectedUsers.UpdateTimer_Tick
 - uid: WebApplication.CustomControls.WebNotification
   name: WebNotification
   href: api/WebApplication/WebApplication.CustomControls.WebNotification.html
@@ -1241,6 +1480,134 @@ references:
   commentId: F:WebApplication.Framework.AlertLevel.Warning
   fullName: WebApplication.Framework.AlertLevel.Warning
   nameWithType: AlertLevel.Warning
+- uid: WebApplication.Framework.AppSecurity
+  name: AppSecurity
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html
+  commentId: T:WebApplication.Framework.AppSecurity
+  fullName: WebApplication.Framework.AppSecurity
+  nameWithType: AppSecurity
+- uid: WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[],System.Byte[])
+  name: CompareByteArrays(Byte[], Byte[])
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_CompareByteArrays_System_Byte___System_Byte___
+  commentId: M:WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[],System.Byte[])
+  name.vb: CompareByteArrays(Byte(), Byte())
+  fullName: WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[], System.Byte[])
+  fullName.vb: WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte(), System.Byte())
+  nameWithType: AppSecurity.CompareByteArrays(Byte[], Byte[])
+  nameWithType.vb: AppSecurity.CompareByteArrays(Byte(), Byte())
+- uid: WebApplication.Framework.AppSecurity.CompareByteArrays*
+  name: CompareByteArrays
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_CompareByteArrays_
+  commentId: Overload:WebApplication.Framework.AppSecurity.CompareByteArrays
+  isSpec: "True"
+  fullName: WebApplication.Framework.AppSecurity.CompareByteArrays
+  nameWithType: AppSecurity.CompareByteArrays
+- uid: WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  name: ConvertToString(Byte[])
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_ConvertToString_System_Byte___
+  commentId: M:WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  name.vb: ConvertToString(Byte())
+  fullName: WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  fullName.vb: WebApplication.Framework.AppSecurity.ConvertToString(System.Byte())
+  nameWithType: AppSecurity.ConvertToString(Byte[])
+  nameWithType.vb: AppSecurity.ConvertToString(Byte())
+- uid: WebApplication.Framework.AppSecurity.ConvertToString*
+  name: ConvertToString
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_ConvertToString_
+  commentId: Overload:WebApplication.Framework.AppSecurity.ConvertToString
+  isSpec: "True"
+  fullName: WebApplication.Framework.AppSecurity.ConvertToString
+  nameWithType: AppSecurity.ConvertToString
+- uid: WebApplication.Framework.AppSecurity.GenerateHash(System.String,System.String)
+  name: GenerateHash(String, String)
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_GenerateHash_System_String_System_String_
+  commentId: M:WebApplication.Framework.AppSecurity.GenerateHash(System.String,System.String)
+  fullName: WebApplication.Framework.AppSecurity.GenerateHash(System.String, System.String)
+  nameWithType: AppSecurity.GenerateHash(String, String)
+- uid: WebApplication.Framework.AppSecurity.GenerateHash*
+  name: GenerateHash
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_GenerateHash_
+  commentId: Overload:WebApplication.Framework.AppSecurity.GenerateHash
+  isSpec: "True"
+  fullName: WebApplication.Framework.AppSecurity.GenerateHash
+  nameWithType: AppSecurity.GenerateHash
+- uid: WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[],System.Byte[])
+  name: GenerateSaltedHash(Byte[], Byte[])
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_GenerateSaltedHash_System_Byte___System_Byte___
+  commentId: M:WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[],System.Byte[])
+  name.vb: GenerateSaltedHash(Byte(), Byte())
+  fullName: WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[], System.Byte[])
+  fullName.vb: WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte(), System.Byte())
+  nameWithType: AppSecurity.GenerateSaltedHash(Byte[], Byte[])
+  nameWithType.vb: AppSecurity.GenerateSaltedHash(Byte(), Byte())
+- uid: WebApplication.Framework.AppSecurity.GenerateSaltedHash*
+  name: GenerateSaltedHash
+  href: api/WebApplication/WebApplication.Framework.AppSecurity.html#WebApplication_Framework_AppSecurity_GenerateSaltedHash_
+  commentId: Overload:WebApplication.Framework.AppSecurity.GenerateSaltedHash
+  isSpec: "True"
+  fullName: WebApplication.Framework.AppSecurity.GenerateSaltedHash
+  nameWithType: AppSecurity.GenerateSaltedHash
+- uid: WebApplication.Framework.ConnectedUsersTrack
+  name: ConnectedUsersTrack
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html
+  commentId: T:WebApplication.Framework.ConnectedUsersTrack
+  fullName: WebApplication.Framework.ConnectedUsersTrack
+  nameWithType: ConnectedUsersTrack
+- uid: WebApplication.Framework.ConnectedUsersTrack.Add(System.String,System.String)
+  name: Add(String, String)
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_Add_System_String_System_String_
+  commentId: M:WebApplication.Framework.ConnectedUsersTrack.Add(System.String,System.String)
+  fullName: WebApplication.Framework.ConnectedUsersTrack.Add(System.String, System.String)
+  nameWithType: ConnectedUsersTrack.Add(String, String)
+- uid: WebApplication.Framework.ConnectedUsersTrack.Add*
+  name: Add
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_Add_
+  commentId: Overload:WebApplication.Framework.ConnectedUsersTrack.Add
+  isSpec: "True"
+  fullName: WebApplication.Framework.ConnectedUsersTrack.Add
+  nameWithType: ConnectedUsersTrack.Add
+- uid: WebApplication.Framework.ConnectedUsersTrack.GetUsers(System.String[])
+  name: GetUsers(String[])
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_GetUsers_System_String___
+  commentId: M:WebApplication.Framework.ConnectedUsersTrack.GetUsers(System.String[])
+  name.vb: GetUsers(String())
+  fullName: WebApplication.Framework.ConnectedUsersTrack.GetUsers(System.String[])
+  fullName.vb: WebApplication.Framework.ConnectedUsersTrack.GetUsers(System.String())
+  nameWithType: ConnectedUsersTrack.GetUsers(String[])
+  nameWithType.vb: ConnectedUsersTrack.GetUsers(String())
+- uid: WebApplication.Framework.ConnectedUsersTrack.GetUsers*
+  name: GetUsers
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_GetUsers_
+  commentId: Overload:WebApplication.Framework.ConnectedUsersTrack.GetUsers
+  isSpec: "True"
+  fullName: WebApplication.Framework.ConnectedUsersTrack.GetUsers
+  nameWithType: ConnectedUsersTrack.GetUsers
+- uid: WebApplication.Framework.ConnectedUsersTrack.Remove(System.String,System.String)
+  name: Remove(String, String)
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_Remove_System_String_System_String_
+  commentId: M:WebApplication.Framework.ConnectedUsersTrack.Remove(System.String,System.String)
+  fullName: WebApplication.Framework.ConnectedUsersTrack.Remove(System.String, System.String)
+  nameWithType: ConnectedUsersTrack.Remove(String, String)
+- uid: WebApplication.Framework.ConnectedUsersTrack.Remove*
+  name: Remove
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_Remove_
+  commentId: Overload:WebApplication.Framework.ConnectedUsersTrack.Remove
+  isSpec: "True"
+  fullName: WebApplication.Framework.ConnectedUsersTrack.Remove
+  nameWithType: ConnectedUsersTrack.Remove
+- uid: WebApplication.Framework.ConnectedUsersTrack.Users
+  name: Users
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_Users
+  commentId: P:WebApplication.Framework.ConnectedUsersTrack.Users
+  fullName: WebApplication.Framework.ConnectedUsersTrack.Users
+  nameWithType: ConnectedUsersTrack.Users
+- uid: WebApplication.Framework.ConnectedUsersTrack.Users*
+  name: Users
+  href: api/WebApplication/WebApplication.Framework.ConnectedUsersTrack.html#WebApplication_Framework_ConnectedUsersTrack_Users_
+  commentId: Overload:WebApplication.Framework.ConnectedUsersTrack.Users
+  isSpec: "True"
+  fullName: WebApplication.Framework.ConnectedUsersTrack.Users
+  nameWithType: ConnectedUsersTrack.Users
 - uid: WebApplication.Framework.Extensions
   name: WebApplication.Framework.Extensions
   href: api/WebApplication/WebApplication.Framework.Extensions.html
@@ -1596,6 +1963,119 @@ references:
   isSpec: "True"
   fullName: WebApplication.Framework.Query.TeacherSubjects
   nameWithType: Query.TeacherSubjects
+- uid: WebApplication.Framework.UserRole
+  name: UserRole
+  href: api/WebApplication/WebApplication.Framework.UserRole.html
+  commentId: T:WebApplication.Framework.UserRole
+  fullName: WebApplication.Framework.UserRole
+  nameWithType: UserRole
+- uid: WebApplication.Framework.UserRole.#ctor
+  name: UserRole()
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole__ctor
+  commentId: M:WebApplication.Framework.UserRole.#ctor
+  fullName: WebApplication.Framework.UserRole.UserRole()
+  nameWithType: UserRole.UserRole()
+- uid: WebApplication.Framework.UserRole.#ctor(WebApplication.Framework.UserType)
+  name: UserRole(UserType)
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole__ctor_WebApplication_Framework_UserType_
+  commentId: M:WebApplication.Framework.UserRole.#ctor(WebApplication.Framework.UserType)
+  fullName: WebApplication.Framework.UserRole.UserRole(WebApplication.Framework.UserType)
+  nameWithType: UserRole.UserRole(UserType)
+- uid: WebApplication.Framework.UserRole.#ctor*
+  name: UserRole
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole__ctor_
+  commentId: Overload:WebApplication.Framework.UserRole.#ctor
+  isSpec: "True"
+  fullName: WebApplication.Framework.UserRole.UserRole
+  nameWithType: UserRole.UserRole
+- uid: WebApplication.Framework.UserRole.Name
+  name: Name
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_Name
+  commentId: P:WebApplication.Framework.UserRole.Name
+  fullName: WebApplication.Framework.UserRole.Name
+  nameWithType: UserRole.Name
+- uid: WebApplication.Framework.UserRole.Name*
+  name: Name
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_Name_
+  commentId: Overload:WebApplication.Framework.UserRole.Name
+  isSpec: "True"
+  fullName: WebApplication.Framework.UserRole.Name
+  nameWithType: UserRole.Name
+- uid: WebApplication.Framework.UserRole.op_Implicit(WebApplication.Framework.UserRole)~System.String
+  name: Implicit(UserRole to String)
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_op_Implicit_WebApplication_Framework_UserRole__System_String
+  commentId: M:WebApplication.Framework.UserRole.op_Implicit(WebApplication.Framework.UserRole)~System.String
+  name.vb: Widening(UserRole to String)
+  fullName: WebApplication.Framework.UserRole.Implicit(WebApplication.Framework.UserRole to System.String)
+  fullName.vb: WebApplication.Framework.UserRole.Widening(WebApplication.Framework.UserRole to System.String)
+  nameWithType: UserRole.Implicit(UserRole to String)
+  nameWithType.vb: UserRole.Widening(UserRole to String)
+- uid: WebApplication.Framework.UserRole.op_Implicit*
+  name: Implicit
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_op_Implicit_
+  commentId: Overload:WebApplication.Framework.UserRole.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: WebApplication.Framework.UserRole.Implicit
+  fullName.vb: WebApplication.Framework.UserRole.Widening
+  nameWithType: UserRole.Implicit
+  nameWithType.vb: UserRole.Widening
+- uid: WebApplication.Framework.UserRole.ToString
+  name: ToString()
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_ToString
+  commentId: M:WebApplication.Framework.UserRole.ToString
+  fullName: WebApplication.Framework.UserRole.ToString()
+  nameWithType: UserRole.ToString()
+- uid: WebApplication.Framework.UserRole.ToString*
+  name: ToString
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_ToString_
+  commentId: Overload:WebApplication.Framework.UserRole.ToString
+  isSpec: "True"
+  fullName: WebApplication.Framework.UserRole.ToString
+  nameWithType: UserRole.ToString
+- uid: WebApplication.Framework.UserRole.Value
+  name: Value
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_Value
+  commentId: P:WebApplication.Framework.UserRole.Value
+  fullName: WebApplication.Framework.UserRole.Value
+  nameWithType: UserRole.Value
+- uid: WebApplication.Framework.UserRole.Value*
+  name: Value
+  href: api/WebApplication/WebApplication.Framework.UserRole.html#WebApplication_Framework_UserRole_Value_
+  commentId: Overload:WebApplication.Framework.UserRole.Value
+  isSpec: "True"
+  fullName: WebApplication.Framework.UserRole.Value
+  nameWithType: UserRole.Value
+- uid: WebApplication.Framework.UserType
+  name: UserType
+  href: api/WebApplication/WebApplication.Framework.UserType.html
+  commentId: T:WebApplication.Framework.UserType
+  fullName: WebApplication.Framework.UserType
+  nameWithType: UserType
+- uid: WebApplication.Framework.UserType.Student
+  name: Student
+  href: api/WebApplication/WebApplication.Framework.UserType.html#WebApplication_Framework_UserType_Student
+  commentId: F:WebApplication.Framework.UserType.Student
+  fullName: WebApplication.Framework.UserType.Student
+  nameWithType: UserType.Student
+- uid: WebApplication.Framework.UserType.Teacher
+  name: Teacher
+  href: api/WebApplication/WebApplication.Framework.UserType.html#WebApplication_Framework_UserType_Teacher
+  commentId: F:WebApplication.Framework.UserType.Teacher
+  fullName: WebApplication.Framework.UserType.Teacher
+  nameWithType: UserType.Teacher
+- uid: WebApplication.Framework.UserType.TeacherAdmin
+  name: TeacherAdmin
+  href: api/WebApplication/WebApplication.Framework.UserType.html#WebApplication_Framework_UserType_TeacherAdmin
+  commentId: F:WebApplication.Framework.UserType.TeacherAdmin
+  fullName: WebApplication.Framework.UserType.TeacherAdmin
+  nameWithType: UserType.TeacherAdmin
+- uid: WebApplication.Framework.UserType.Unknown
+  name: Unknown
+  href: api/WebApplication/WebApplication.Framework.UserType.html#WebApplication_Framework_UserType_Unknown
+  commentId: F:WebApplication.Framework.UserType.Unknown
+  fullName: WebApplication.Framework.UserType.Unknown
+  nameWithType: UserType.Unknown
 - uid: WebApplication.Global
   name: Global
   href: api/WebApplication/WebApplication.Global.html
@@ -1680,6 +2160,32 @@ references:
   isSpec: "True"
   fullName: WebApplication.Global.Application_Start
   nameWithType: Global.Application_Start
+- uid: WebApplication.Global.InitEnrolledUsersService
+  name: InitEnrolledUsersService()
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_InitEnrolledUsersService
+  commentId: M:WebApplication.Global.InitEnrolledUsersService
+  fullName: WebApplication.Global.InitEnrolledUsersService()
+  nameWithType: Global.InitEnrolledUsersService()
+- uid: WebApplication.Global.InitEnrolledUsersService*
+  name: InitEnrolledUsersService
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_InitEnrolledUsersService_
+  commentId: Overload:WebApplication.Global.InitEnrolledUsersService
+  isSpec: "True"
+  fullName: WebApplication.Global.InitEnrolledUsersService
+  nameWithType: Global.InitEnrolledUsersService
+- uid: WebApplication.Global.InitLoggedUsersTrack
+  name: InitLoggedUsersTrack()
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_InitLoggedUsersTrack
+  commentId: M:WebApplication.Global.InitLoggedUsersTrack
+  fullName: WebApplication.Global.InitLoggedUsersTrack()
+  nameWithType: Global.InitLoggedUsersTrack()
+- uid: WebApplication.Global.InitLoggedUsersTrack*
+  name: InitLoggedUsersTrack
+  href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_InitLoggedUsersTrack_
+  commentId: Overload:WebApplication.Global.InitLoggedUsersTrack
+  isSpec: "True"
+  fullName: WebApplication.Global.InitLoggedUsersTrack
+  nameWithType: Global.InitLoggedUsersTrack
 - uid: WebApplication.Global.Session_End(System.Object,System.EventArgs)
   name: Session_End(Object, EventArgs)
   href: api/WebApplication/WebApplication.Global.html#WebApplication_Global_Session_End_System_Object_System_EventArgs_
@@ -1794,6 +2300,25 @@ references:
   commentId: F:WebApplication.Inicio.textBoxPassword
   fullName: WebApplication.Inicio.textBoxPassword
   nameWithType: Inicio.textBoxPassword
+- uid: WebApplication.RedirectPage
+  name: RedirectPage
+  href: api/WebApplication/WebApplication.RedirectPage.html
+  commentId: T:WebApplication.RedirectPage
+  fullName: WebApplication.RedirectPage
+  nameWithType: RedirectPage
+- uid: WebApplication.RedirectPage.Page_Init(System.Object,System.EventArgs)
+  name: Page_Init(Object, EventArgs)
+  href: api/WebApplication/WebApplication.RedirectPage.html#WebApplication_RedirectPage_Page_Init_System_Object_System_EventArgs_
+  commentId: M:WebApplication.RedirectPage.Page_Init(System.Object,System.EventArgs)
+  fullName: WebApplication.RedirectPage.Page_Init(System.Object, System.EventArgs)
+  nameWithType: RedirectPage.Page_Init(Object, EventArgs)
+- uid: WebApplication.RedirectPage.Page_Init*
+  name: Page_Init
+  href: api/WebApplication/WebApplication.RedirectPage.html#WebApplication_RedirectPage_Page_Init_
+  commentId: Overload:WebApplication.RedirectPage.Page_Init
+  isSpec: "True"
+  fullName: WebApplication.RedirectPage.Page_Init
+  nameWithType: RedirectPage.Page_Init
 - uid: WebApplication.Registro
   name: Registro
   href: api/WebApplication/WebApplication.Registro.html
@@ -1837,6 +2362,12 @@ references:
   commentId: F:WebApplication.Registro.EmailRegExpr
   fullName: WebApplication.Registro.EmailRegExpr
   nameWithType: Registro.EmailRegExpr
+- uid: WebApplication.Registro.EnrolledEmailValidator
+  name: EnrolledEmailValidator
+  href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_EnrolledEmailValidator
+  commentId: F:WebApplication.Registro.EnrolledEmailValidator
+  fullName: WebApplication.Registro.EnrolledEmailValidator
+  nameWithType: Registro.EnrolledEmailValidator
 - uid: WebApplication.Registro.Master
   name: Master
   href: api/WebApplication/WebApplication.Registro.html#WebApplication_Registro_Master
@@ -2061,6 +2592,12 @@ references:
   commentId: F:WebApplication.SiteMaster.ButtonViewProfile
   fullName: WebApplication.SiteMaster.ButtonViewProfile
   nameWithType: SiteMaster.ButtonViewProfile
+- uid: WebApplication.SiteMaster.ContentUpdatePanel
+  name: ContentUpdatePanel
+  href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_ContentUpdatePanel
+  commentId: F:WebApplication.SiteMaster.ContentUpdatePanel
+  fullName: WebApplication.SiteMaster.ContentUpdatePanel
+  nameWithType: SiteMaster.ContentUpdatePanel
 - uid: WebApplication.SiteMaster.createAccountLink
   name: createAccountLink
   href: api/WebApplication/WebApplication.SiteMaster.html#WebApplication_SiteMaster_createAccountLink
@@ -2140,12 +2677,304 @@ references:
   commentId: F:WebApplication.SiteMaster.userMenu
   fullName: WebApplication.SiteMaster.userMenu
   nameWithType: SiteMaster.userMenu
+- uid: WebApplication.TimeMeanWebService
+  name: WebApplication.TimeMeanWebService
+  href: api/WebApplication/WebApplication.TimeMeanWebService.html
+  commentId: N:WebApplication.TimeMeanWebService
+  fullName: WebApplication.TimeMeanWebService
+  nameWithType: WebApplication.TimeMeanWebService
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  name: GetAllSubjectsMeansCompletedEventArgs
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.html
+  commentId: T:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs
+  nameWithType: GetAllSubjectsMeansCompletedEventArgs
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.Result
+  name: Result
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.html#WebApplication_TimeMeanWebService_GetAllSubjectsMeansCompletedEventArgs_Result
+  commentId: P:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.Result
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.Result
+  nameWithType: GetAllSubjectsMeansCompletedEventArgs.Result
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.Result*
+  name: Result
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.html#WebApplication_TimeMeanWebService_GetAllSubjectsMeansCompletedEventArgs_Result_
+  commentId: Overload:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.Result
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventArgs.Result
+  nameWithType: GetAllSubjectsMeansCompletedEventArgs.Result
+- uid: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  name: GetAllSubjectsMeansCompletedEventHandler
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler.html
+  commentId: T:WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  fullName: WebApplication.TimeMeanWebService.GetAllSubjectsMeansCompletedEventHandler
+  nameWithType: GetAllSubjectsMeansCompletedEventHandler
+- uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+  name: GetSubjectMeansCompletedEventArgs
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.html
+  commentId: T:WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+  fullName: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs
+  nameWithType: GetSubjectMeansCompletedEventArgs
+- uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.Result
+  name: Result
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.html#WebApplication_TimeMeanWebService_GetSubjectMeansCompletedEventArgs_Result
+  commentId: P:WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.Result
+  fullName: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.Result
+  nameWithType: GetSubjectMeansCompletedEventArgs.Result
+- uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.Result*
+  name: Result
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.html#WebApplication_TimeMeanWebService_GetSubjectMeansCompletedEventArgs_Result_
+  commentId: Overload:WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.Result
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventArgs.Result
+  nameWithType: GetSubjectMeansCompletedEventArgs.Result
+- uid: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+  name: GetSubjectMeansCompletedEventHandler
+  href: api/WebApplication/WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler.html
+  commentId: T:WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+  fullName: WebApplication.TimeMeanWebService.GetSubjectMeansCompletedEventHandler
+  nameWithType: GetSubjectMeansCompletedEventHandler
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService
+  name: SubjectsMeansService
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html
+  commentId: T:WebApplication.TimeMeanWebService.SubjectsMeansService
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService
+  nameWithType: SubjectsMeansService
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.#ctor
+  name: SubjectsMeansService()
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService__ctor
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.#ctor
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.SubjectsMeansService()
+  nameWithType: SubjectsMeansService.SubjectsMeansService()
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.#ctor*
+  name: SubjectsMeansService
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService__ctor_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.#ctor
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.SubjectsMeansService
+  nameWithType: SubjectsMeansService.SubjectsMeansService
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.CancelAsync(System.Object)
+  name: CancelAsync(Object)
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_CancelAsync_System_Object_
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.CancelAsync(System.Object)
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.CancelAsync(System.Object)
+  nameWithType: SubjectsMeansService.CancelAsync(Object)
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.CancelAsync*
+  name: CancelAsync
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_CancelAsync_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.CancelAsync
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.CancelAsync
+  nameWithType: SubjectsMeansService.CancelAsync
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeans
+  name: GetAllSubjectsMeans()
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetAllSubjectsMeans
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeans
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeans()
+  nameWithType: SubjectsMeansService.GetAllSubjectsMeans()
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeans*
+  name: GetAllSubjectsMeans
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetAllSubjectsMeans_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeans
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeans
+  nameWithType: SubjectsMeansService.GetAllSubjectsMeans
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync
+  name: GetAllSubjectsMeansAsync()
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetAllSubjectsMeansAsync
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync()
+  nameWithType: SubjectsMeansService.GetAllSubjectsMeansAsync()
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync(System.Object)
+  name: GetAllSubjectsMeansAsync(Object)
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetAllSubjectsMeansAsync_System_Object_
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync(System.Object)
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync(System.Object)
+  nameWithType: SubjectsMeansService.GetAllSubjectsMeansAsync(Object)
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync*
+  name: GetAllSubjectsMeansAsync
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetAllSubjectsMeansAsync_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansAsync
+  nameWithType: SubjectsMeansService.GetAllSubjectsMeansAsync
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansCompleted
+  name: GetAllSubjectsMeansCompleted
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetAllSubjectsMeansCompleted
+  commentId: E:WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansCompleted
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetAllSubjectsMeansCompleted
+  nameWithType: SubjectsMeansService.GetAllSubjectsMeansCompleted
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeans(System.String)
+  name: GetSubjectMeans(String)
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetSubjectMeans_System_String_
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeans(System.String)
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeans(System.String)
+  nameWithType: SubjectsMeansService.GetSubjectMeans(String)
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeans*
+  name: GetSubjectMeans
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetSubjectMeans_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeans
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeans
+  nameWithType: SubjectsMeansService.GetSubjectMeans
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync(System.String)
+  name: GetSubjectMeansAsync(String)
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetSubjectMeansAsync_System_String_
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync(System.String)
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync(System.String)
+  nameWithType: SubjectsMeansService.GetSubjectMeansAsync(String)
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync(System.String,System.Object)
+  name: GetSubjectMeansAsync(String, Object)
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetSubjectMeansAsync_System_String_System_Object_
+  commentId: M:WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync(System.String,System.Object)
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync(System.String, System.Object)
+  nameWithType: SubjectsMeansService.GetSubjectMeansAsync(String, Object)
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync*
+  name: GetSubjectMeansAsync
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetSubjectMeansAsync_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansAsync
+  nameWithType: SubjectsMeansService.GetSubjectMeansAsync
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansCompleted
+  name: GetSubjectMeansCompleted
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_GetSubjectMeansCompleted
+  commentId: E:WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansCompleted
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.GetSubjectMeansCompleted
+  nameWithType: SubjectsMeansService.GetSubjectMeansCompleted
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.Url
+  name: Url
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_Url
+  commentId: P:WebApplication.TimeMeanWebService.SubjectsMeansService.Url
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.Url
+  nameWithType: SubjectsMeansService.Url
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.Url*
+  name: Url
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_Url_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.Url
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.Url
+  nameWithType: SubjectsMeansService.Url
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.UseDefaultCredentials
+  name: UseDefaultCredentials
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_UseDefaultCredentials
+  commentId: P:WebApplication.TimeMeanWebService.SubjectsMeansService.UseDefaultCredentials
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.UseDefaultCredentials
+  nameWithType: SubjectsMeansService.UseDefaultCredentials
+- uid: WebApplication.TimeMeanWebService.SubjectsMeansService.UseDefaultCredentials*
+  name: UseDefaultCredentials
+  href: api/WebApplication/WebApplication.TimeMeanWebService.SubjectsMeansService.html#WebApplication_TimeMeanWebService_SubjectsMeansService_UseDefaultCredentials_
+  commentId: Overload:WebApplication.TimeMeanWebService.SubjectsMeansService.UseDefaultCredentials
+  isSpec: "True"
+  fullName: WebApplication.TimeMeanWebService.SubjectsMeansService.UseDefaultCredentials
+  nameWithType: SubjectsMeansService.UseDefaultCredentials
 - uid: WebApplication.UserPages
   name: WebApplication.UserPages
   href: api/WebApplication/WebApplication.UserPages.html
   commentId: N:WebApplication.UserPages
   fullName: WebApplication.UserPages
   nameWithType: WebApplication.UserPages
+- uid: WebApplication.UserPages.Coordinador
+  name: Coordinador
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html
+  commentId: T:WebApplication.UserPages.Coordinador
+  fullName: WebApplication.UserPages.Coordinador
+  nameWithType: Coordinador
+- uid: WebApplication.UserPages.Coordinador.DropDownSubjects
+  name: DropDownSubjects
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_DropDownSubjects
+  commentId: F:WebApplication.UserPages.Coordinador.DropDownSubjects
+  fullName: WebApplication.UserPages.Coordinador.DropDownSubjects
+  nameWithType: Coordinador.DropDownSubjects
+- uid: WebApplication.UserPages.Coordinador.DropDownSubjects_DataBinding(System.Object,System.EventArgs)
+  name: DropDownSubjects_DataBinding(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_DropDownSubjects_DataBinding_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.Coordinador.DropDownSubjects_DataBinding(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.Coordinador.DropDownSubjects_DataBinding(System.Object, System.EventArgs)
+  nameWithType: Coordinador.DropDownSubjects_DataBinding(Object, EventArgs)
+- uid: WebApplication.UserPages.Coordinador.DropDownSubjects_DataBinding*
+  name: DropDownSubjects_DataBinding
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_DropDownSubjects_DataBinding_
+  commentId: Overload:WebApplication.UserPages.Coordinador.DropDownSubjects_DataBinding
+  isSpec: "True"
+  fullName: WebApplication.UserPages.Coordinador.DropDownSubjects_DataBinding
+  nameWithType: Coordinador.DropDownSubjects_DataBinding
+- uid: WebApplication.UserPages.Coordinador.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
+  name: DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_DropDownSubjects_SelectedIndexChanged_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.Coordinador.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.Coordinador.DropDownSubjects_SelectedIndexChanged(System.Object, System.EventArgs)
+  nameWithType: Coordinador.DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
+- uid: WebApplication.UserPages.Coordinador.DropDownSubjects_SelectedIndexChanged*
+  name: DropDownSubjects_SelectedIndexChanged
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_DropDownSubjects_SelectedIndexChanged_
+  commentId: Overload:WebApplication.UserPages.Coordinador.DropDownSubjects_SelectedIndexChanged
+  isSpec: "True"
+  fullName: WebApplication.UserPages.Coordinador.DropDownSubjects_SelectedIndexChanged
+  nameWithType: Coordinador.DropDownSubjects_SelectedIndexChanged
+- uid: WebApplication.UserPages.Coordinador.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  name: GridViewTasks_Sorting(Object, GridViewSortEventArgs)
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_GridViewTasks_Sorting_System_Object_System_Web_UI_WebControls_GridViewSortEventArgs_
+  commentId: M:WebApplication.UserPages.Coordinador.GridViewTasks_Sorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)
+  fullName: WebApplication.UserPages.Coordinador.GridViewTasks_Sorting(System.Object, System.Web.UI.WebControls.GridViewSortEventArgs)
+  nameWithType: Coordinador.GridViewTasks_Sorting(Object, GridViewSortEventArgs)
+- uid: WebApplication.UserPages.Coordinador.GridViewTasks_Sorting*
+  name: GridViewTasks_Sorting
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_GridViewTasks_Sorting_
+  commentId: Overload:WebApplication.UserPages.Coordinador.GridViewTasks_Sorting
+  isSpec: "True"
+  fullName: WebApplication.UserPages.Coordinador.GridViewTasks_Sorting
+  nameWithType: Coordinador.GridViewTasks_Sorting
+- uid: WebApplication.UserPages.Coordinador.GridViewTasksMeans
+  name: GridViewTasksMeans
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_GridViewTasksMeans
+  commentId: F:WebApplication.UserPages.Coordinador.GridViewTasksMeans
+  fullName: WebApplication.UserPages.Coordinador.GridViewTasksMeans
+  nameWithType: Coordinador.GridViewTasksMeans
+- uid: WebApplication.UserPages.Coordinador.Master
+  name: Master
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_Master
+  commentId: P:WebApplication.UserPages.Coordinador.Master
+  fullName: WebApplication.UserPages.Coordinador.Master
+  nameWithType: Coordinador.Master
+- uid: WebApplication.UserPages.Coordinador.Master*
+  name: Master
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_Master_
+  commentId: Overload:WebApplication.UserPages.Coordinador.Master
+  isSpec: "True"
+  fullName: WebApplication.UserPages.Coordinador.Master
+  nameWithType: Coordinador.Master
+- uid: WebApplication.UserPages.Coordinador.MeansService
+  name: MeansService
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_MeansService
+  commentId: P:WebApplication.UserPages.Coordinador.MeansService
+  fullName: WebApplication.UserPages.Coordinador.MeansService
+  nameWithType: Coordinador.MeansService
+- uid: WebApplication.UserPages.Coordinador.MeansService*
+  name: MeansService
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_MeansService_
+  commentId: Overload:WebApplication.UserPages.Coordinador.MeansService
+  isSpec: "True"
+  fullName: WebApplication.UserPages.Coordinador.MeansService
+  nameWithType: Coordinador.MeansService
+- uid: WebApplication.UserPages.Coordinador.Page_Load(System.Object,System.EventArgs)
+  name: Page_Load(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_Page_Load_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.Coordinador.Page_Load(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.Coordinador.Page_Load(System.Object, System.EventArgs)
+  nameWithType: Coordinador.Page_Load(Object, EventArgs)
+- uid: WebApplication.UserPages.Coordinador.Page_Load*
+  name: Page_Load
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_Page_Load_
+  commentId: Overload:WebApplication.UserPages.Coordinador.Page_Load
+  isSpec: "True"
+  fullName: WebApplication.UserPages.Coordinador.Page_Load
+  nameWithType: Coordinador.Page_Load
+- uid: WebApplication.UserPages.Coordinador.SubjectsDataSource
+  name: SubjectsDataSource
+  href: api/WebApplication/WebApplication.UserPages.Coordinador.html#WebApplication_UserPages_Coordinador_SubjectsDataSource
+  commentId: F:WebApplication.UserPages.Coordinador.SubjectsDataSource
+  fullName: WebApplication.UserPages.Coordinador.SubjectsDataSource
+  nameWithType: Coordinador.SubjectsDataSource
 - uid: WebApplication.UserPages.ExportarTareas
   name: ExportarTareas
   href: api/WebApplication/WebApplication.UserPages.ExportarTareas.html
@@ -2793,6 +3622,68 @@ references:
   commentId: T:WebApplication.UserPages.StudentHome
   fullName: WebApplication.UserPages.StudentHome
   nameWithType: StudentHome
+- uid: WebApplication.UserPages.StudentHome.ConnectedStudentCount
+  name: ConnectedStudentCount
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedStudentCount
+  commentId: F:WebApplication.UserPages.StudentHome.ConnectedStudentCount
+  fullName: WebApplication.UserPages.StudentHome.ConnectedStudentCount
+  nameWithType: StudentHome.ConnectedStudentCount
+- uid: WebApplication.UserPages.StudentHome.ConnectedStudents
+  name: ConnectedStudents
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedStudents
+  commentId: F:WebApplication.UserPages.StudentHome.ConnectedStudents
+  fullName: WebApplication.UserPages.StudentHome.ConnectedStudents
+  nameWithType: StudentHome.ConnectedStudents
+- uid: WebApplication.UserPages.StudentHome.ConnectedTeacherCount
+  name: ConnectedTeacherCount
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedTeacherCount
+  commentId: F:WebApplication.UserPages.StudentHome.ConnectedTeacherCount
+  fullName: WebApplication.UserPages.StudentHome.ConnectedTeacherCount
+  nameWithType: StudentHome.ConnectedTeacherCount
+- uid: WebApplication.UserPages.StudentHome.ConnectedTeachers
+  name: ConnectedTeachers
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedTeachers
+  commentId: F:WebApplication.UserPages.StudentHome.ConnectedTeachers
+  fullName: WebApplication.UserPages.StudentHome.ConnectedTeachers
+  nameWithType: StudentHome.ConnectedTeachers
+- uid: WebApplication.UserPages.StudentHome.ConnectedUsers
+  name: ConnectedUsers
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedUsers
+  commentId: P:WebApplication.UserPages.StudentHome.ConnectedUsers
+  fullName: WebApplication.UserPages.StudentHome.ConnectedUsers
+  nameWithType: StudentHome.ConnectedUsers
+- uid: WebApplication.UserPages.StudentHome.ConnectedUsers*
+  name: ConnectedUsers
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedUsers_
+  commentId: Overload:WebApplication.UserPages.StudentHome.ConnectedUsers
+  isSpec: "True"
+  fullName: WebApplication.UserPages.StudentHome.ConnectedUsers
+  nameWithType: StudentHome.ConnectedUsers
+- uid: WebApplication.UserPages.StudentHome.ConnectedUsersTimer
+  name: ConnectedUsersTimer
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedUsersTimer
+  commentId: F:WebApplication.UserPages.StudentHome.ConnectedUsersTimer
+  fullName: WebApplication.UserPages.StudentHome.ConnectedUsersTimer
+  nameWithType: StudentHome.ConnectedUsersTimer
+- uid: WebApplication.UserPages.StudentHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  name: ConnectedUsersTimer_Tick(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedUsersTimer_Tick_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.StudentHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.StudentHome.ConnectedUsersTimer_Tick(System.Object, System.EventArgs)
+  nameWithType: StudentHome.ConnectedUsersTimer_Tick(Object, EventArgs)
+- uid: WebApplication.UserPages.StudentHome.ConnectedUsersTimer_Tick*
+  name: ConnectedUsersTimer_Tick
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedUsersTimer_Tick_
+  commentId: Overload:WebApplication.UserPages.StudentHome.ConnectedUsersTimer_Tick
+  isSpec: "True"
+  fullName: WebApplication.UserPages.StudentHome.ConnectedUsersTimer_Tick
+  nameWithType: StudentHome.ConnectedUsersTimer_Tick
+- uid: WebApplication.UserPages.StudentHome.ConnectedUsersUpdatePanel
+  name: ConnectedUsersUpdatePanel
+  href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_ConnectedUsersUpdatePanel
+  commentId: F:WebApplication.UserPages.StudentHome.ConnectedUsersUpdatePanel
+  fullName: WebApplication.UserPages.StudentHome.ConnectedUsersUpdatePanel
+  nameWithType: StudentHome.ConnectedUsersUpdatePanel
 - uid: WebApplication.UserPages.StudentHome.Master
   name: Master
   href: api/WebApplication/WebApplication.UserPages.StudentHome.html#WebApplication_UserPages_StudentHome_Master
@@ -2868,19 +3759,6 @@ references:
   commentId: F:WebApplication.UserPages.TareasAlumno.DropDownSubjects
   fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects
   nameWithType: TareasAlumno.DropDownSubjects
-- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object,System.EventArgs)
-  name: DropDownSubjects_DataBound(Object, EventArgs)
-  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DropDownSubjects_DataBound_System_Object_System_EventArgs_
-  commentId: M:WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object,System.EventArgs)
-  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound(System.Object, System.EventArgs)
-  nameWithType: TareasAlumno.DropDownSubjects_DataBound(Object, EventArgs)
-- uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound*
-  name: DropDownSubjects_DataBound
-  href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DropDownSubjects_DataBound_
-  commentId: Overload:WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound
-  isSpec: "True"
-  fullName: WebApplication.UserPages.TareasAlumno.DropDownSubjects_DataBound
-  nameWithType: TareasAlumno.DropDownSubjects_DataBound
 - uid: WebApplication.UserPages.TareasAlumno.DropDownSubjects_SelectedIndexChanged(System.Object,System.EventArgs)
   name: DropDownSubjects_SelectedIndexChanged(Object, EventArgs)
   href: api/WebApplication/WebApplication.UserPages.TareasAlumno.html#WebApplication_UserPages_TareasAlumno_DropDownSubjects_SelectedIndexChanged_System_Object_System_EventArgs_
@@ -3096,12 +3974,24 @@ references:
   isSpec: "True"
   fullName: WebApplication.UserPages.Teacher.ShowPage
   nameWithType: Teacher.ShowPage
+- uid: WebApplication.UserPages.Teacher.TasksMeansTab
+  name: TasksMeansTab
+  href: api/WebApplication/WebApplication.UserPages.Teacher.html#WebApplication_UserPages_Teacher_TasksMeansTab
+  commentId: F:WebApplication.UserPages.Teacher.TasksMeansTab
+  fullName: WebApplication.UserPages.Teacher.TasksMeansTab
+  nameWithType: Teacher.TasksMeansTab
 - uid: WebApplication.UserPages.Teacher.TasksTab
   name: TasksTab
   href: api/WebApplication/WebApplication.UserPages.Teacher.html#WebApplication_UserPages_Teacher_TasksTab
   commentId: F:WebApplication.UserPages.Teacher.TasksTab
   fullName: WebApplication.UserPages.Teacher.TasksTab
   nameWithType: Teacher.TasksTab
+- uid: WebApplication.UserPages.Teacher.TeacherAdminPanel
+  name: TeacherAdminPanel
+  href: api/WebApplication/WebApplication.UserPages.Teacher.html#WebApplication_UserPages_Teacher_TeacherAdminPanel
+  commentId: F:WebApplication.UserPages.Teacher.TeacherAdminPanel
+  fullName: WebApplication.UserPages.Teacher.TeacherAdminPanel
+  nameWithType: Teacher.TeacherAdminPanel
 - uid: WebApplication.UserPages.Teacher.TeacherContent
   name: TeacherContent
   href: api/WebApplication/WebApplication.UserPages.Teacher.html#WebApplication_UserPages_Teacher_TeacherContent
@@ -3133,6 +4023,68 @@ references:
   commentId: T:WebApplication.UserPages.TeacherHome
   fullName: WebApplication.UserPages.TeacherHome
   nameWithType: TeacherHome
+- uid: WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  name: ConnectedStudentCount
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedStudentCount
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedStudentCount
+  nameWithType: TeacherHome.ConnectedStudentCount
+- uid: WebApplication.UserPages.TeacherHome.ConnectedStudents
+  name: ConnectedStudents
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedStudents
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedStudents
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedStudents
+  nameWithType: TeacherHome.ConnectedStudents
+- uid: WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  name: ConnectedTeacherCount
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedTeacherCount
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedTeacherCount
+  nameWithType: TeacherHome.ConnectedTeacherCount
+- uid: WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  name: ConnectedTeachers
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedTeachers
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedTeachers
+  nameWithType: TeacherHome.ConnectedTeachers
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsers
+  name: ConnectedUsers
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedUsers
+  commentId: P:WebApplication.UserPages.TeacherHome.ConnectedUsers
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsers
+  nameWithType: TeacherHome.ConnectedUsers
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsers*
+  name: ConnectedUsers
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedUsers_
+  commentId: Overload:WebApplication.UserPages.TeacherHome.ConnectedUsers
+  isSpec: "True"
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsers
+  nameWithType: TeacherHome.ConnectedUsers
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  name: ConnectedUsersTimer
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedUsersTimer
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer
+  nameWithType: TeacherHome.ConnectedUsersTimer
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  name: ConnectedUsersTimer_Tick(Object, EventArgs)
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedUsersTimer_Tick_System_Object_System_EventArgs_
+  commentId: M:WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object,System.EventArgs)
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick(System.Object, System.EventArgs)
+  nameWithType: TeacherHome.ConnectedUsersTimer_Tick(Object, EventArgs)
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick*
+  name: ConnectedUsersTimer_Tick
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedUsersTimer_Tick_
+  commentId: Overload:WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick
+  isSpec: "True"
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersTimer_Tick
+  nameWithType: TeacherHome.ConnectedUsersTimer_Tick
+- uid: WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
+  name: ConnectedUsersUpdatePanel
+  href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_ConnectedUsersUpdatePanel
+  commentId: F:WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
+  fullName: WebApplication.UserPages.TeacherHome.ConnectedUsersUpdatePanel
+  nameWithType: TeacherHome.ConnectedUsersUpdatePanel
 - uid: WebApplication.UserPages.TeacherHome.Master
   name: Master
   href: api/WebApplication/WebApplication.UserPages.TeacherHome.html#WebApplication_UserPages_TeacherHome_Master
@@ -3201,6 +4153,12 @@ references:
   commentId: F:WebApplication.UserPages.TeacherMenu.Tasks
   fullName: WebApplication.UserPages.TeacherMenu.Tasks
   nameWithType: TeacherMenu.Tasks
+- uid: WebApplication.UserPages.TeacherMenu.TasksMeans
+  name: TasksMeans
+  href: api/WebApplication/WebApplication.UserPages.TeacherMenu.html#WebApplication_UserPages_TeacherMenu_TasksMeans
+  commentId: F:WebApplication.UserPages.TeacherMenu.TasksMeans
+  fullName: WebApplication.UserPages.TeacherMenu.TasksMeans
+  nameWithType: TeacherMenu.TasksMeans
 - uid: WebApplication.Utils
   name: WebApplication.Utils
   href: api/WebApplication/WebApplication.Utils.html

@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: WebApplication.Framework.AppSecurity
+  commentId: T:WebApplication.Framework.AppSecurity
+  id: AppSecurity
+  parent: WebApplication.Framework
+  children:
+  - WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[],System.Byte[])
+  - WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  - WebApplication.Framework.AppSecurity.GenerateHash(System.String,System.String)
+  - WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[],System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: AppSecurity
+  nameWithType: AppSecurity
+  fullName: WebApplication.Framework.AppSecurity
+  type: Class
+  source:
+    remote:
+      path: WebApplication/Framework/AppSecurity.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: AppSecurity
+    path: ../WebApplication/Framework/AppSecurity.cs
+    startLine: 7
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public class AppSecurity
+    content.vb: Public Class AppSecurity
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WebApplication.Framework.AppSecurity.GenerateHash(System.String,System.String)
+  commentId: M:WebApplication.Framework.AppSecurity.GenerateHash(System.String,System.String)
+  id: GenerateHash(System.String,System.String)
+  parent: WebApplication.Framework.AppSecurity
+  langs:
+  - csharp
+  - vb
+  name: GenerateHash(String, String)
+  nameWithType: AppSecurity.GenerateHash(String, String)
+  fullName: WebApplication.Framework.AppSecurity.GenerateHash(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AppSecurity.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GenerateHash
+    path: ../WebApplication/Framework/AppSecurity.cs
+    startLine: 20
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  summary: "\n<p>\nGenerate a hash with the given salt.\n</p>\n<p>\nTo convert a hash to its string representation <xref href=\"System.Convert.ToBase64String(System.Byte%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Convert.FromBase64String(System.String)\" data-throw-if-not-resolved=\"false\"></xref> to convert it back.\n</p>\n"
+  example: []
+  syntax:
+    content: public static byte[] GenerateHash(string data, string salt = "")
+    parameters:
+    - id: data
+      type: System.String
+      description: The data to hash
+    - id: salt
+      type: System.String
+      description: The salt to apply
+    return:
+      type: System.Byte[]
+      description: The salted hash byte array
+    content.vb: Public Shared Function GenerateHash(data As String, salt As String = "") As Byte()
+  overload: WebApplication.Framework.AppSecurity.GenerateHash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[],System.Byte[])
+  commentId: M:WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[],System.Byte[])
+  id: GenerateSaltedHash(System.Byte[],System.Byte[])
+  parent: WebApplication.Framework.AppSecurity
+  langs:
+  - csharp
+  - vb
+  name: GenerateSaltedHash(Byte[], Byte[])
+  nameWithType: AppSecurity.GenerateSaltedHash(Byte[], Byte[])
+  fullName: WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte[], System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AppSecurity.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: GenerateSaltedHash
+    path: ../WebApplication/Framework/AppSecurity.cs
+    startLine: 36
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  summary: "\n<p>\nGenerate a salted hash with the given salt.\n</p>\n<p>\nTo convert text to byte arrays can be done using the method <see cref=\"!:Encoding.UTF8.GetBytes(string)\"></see>.\nTo convert a hash to its string representation <xref href=\"System.Convert.ToBase64String(System.Byte%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Convert.FromBase64String(System.String)\" data-throw-if-not-resolved=\"false\"></xref> to convert it back.\n</p>\n"
+  example: []
+  syntax:
+    content: public static byte[] GenerateSaltedHash(byte[] data, byte[] salt = null)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The data to hash in bytes
+    - id: salt
+      type: System.Byte[]
+      description: The salt to apply in bytes
+    return:
+      type: System.Byte[]
+      description: The salted hash byte array
+    content.vb: Public Shared Function GenerateSaltedHash(data As Byte(), salt As Byte() = Nothing) As Byte()
+  overload: WebApplication.Framework.AppSecurity.GenerateSaltedHash*
+  nameWithType.vb: AppSecurity.GenerateSaltedHash(Byte(), Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.AppSecurity.GenerateSaltedHash(System.Byte(), System.Byte())
+  name.vb: GenerateSaltedHash(Byte(), Byte())
+- uid: WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[],System.Byte[])
+  commentId: M:WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[],System.Byte[])
+  id: CompareByteArrays(System.Byte[],System.Byte[])
+  parent: WebApplication.Framework.AppSecurity
+  langs:
+  - csharp
+  - vb
+  name: CompareByteArrays(Byte[], Byte[])
+  nameWithType: AppSecurity.CompareByteArrays(Byte[], Byte[])
+  fullName: WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte[], System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AppSecurity.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: CompareByteArrays
+    path: ../WebApplication/Framework/AppSecurity.cs
+    startLine: 55
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static bool CompareByteArrays(byte[] array1, byte[] array2)
+    parameters:
+    - id: array1
+      type: System.Byte[]
+    - id: array2
+      type: System.Byte[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CompareByteArrays(array1 As Byte(), array2 As Byte()) As Boolean
+  overload: WebApplication.Framework.AppSecurity.CompareByteArrays*
+  nameWithType.vb: AppSecurity.CompareByteArrays(Byte(), Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.AppSecurity.CompareByteArrays(System.Byte(), System.Byte())
+  name.vb: CompareByteArrays(Byte(), Byte())
+- uid: WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  commentId: M:WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  id: ConvertToString(System.Byte[])
+  parent: WebApplication.Framework.AppSecurity
+  langs:
+  - csharp
+  - vb
+  name: ConvertToString(Byte[])
+  nameWithType: AppSecurity.ConvertToString(Byte[])
+  fullName: WebApplication.Framework.AppSecurity.ConvertToString(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: WebApplication/Framework/AppSecurity.cs
+      branch: FerMod
+      repo: git@github.com:FerMod/HADSProject.git
+    id: ConvertToString
+    path: ../WebApplication/Framework/AppSecurity.cs
+    startLine: 70
+  assemblies:
+  - WebApplication
+  namespace: WebApplication.Framework
+  syntax:
+    content: public static string ConvertToString(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function ConvertToString(bytes As Byte()) As String
+  overload: WebApplication.Framework.AppSecurity.ConvertToString*
+  nameWithType.vb: AppSecurity.ConvertToString(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WebApplication.Framework.AppSecurity.ConvertToString(System.Byte())
+  name.vb: ConvertToString(Byte())
+references:
+- uid: WebApplication.Framework
+  commentId: N:WebApplication.Framework
+  name: WebApplication.Framework
+  nameWithType: WebApplication.Framework
+  fullName: WebApplication.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Convert.ToBase64String(System.Byte[])
+  commentId: M:System.Convert.ToBase64String(System.Byte[])
+  isExternal: true
+- uid: System.Convert.FromBase64String(System.String)
+  commentId: M:System.Convert.FromBase64String(System.String)
+  isExternal: true
+- uid: WebApplication.Framework.AppSecurity.GenerateHash*
+  commentId: Overload:WebApplication.Framework.AppSecurity.GenerateHash
+  name: GenerateHash
+  nameWithType: AppSecurity.GenerateHash
+  fullName: WebApplication.Framework.AppSecurity.GenerateHash
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WebApplication.Framework.AppSecurity.GenerateSaltedHash*
+  commentId: Overload:WebApplication.Framework.AppSecurity.GenerateSaltedHash
+  name: GenerateSaltedHash
+  nameWithType: AppSecurity.GenerateSaltedHash
+  fullName: WebApplication.Framework.AppSecurity.GenerateSaltedHash
+- uid: WebApplication.Framework.AppSecurity.CompareByteArrays*
+  commentId: Overload:WebApplication.Framework.AppSecurity.CompareByteArrays
+  name: CompareByteArrays
+  nameWithType: AppSecurity.CompareByteArrays
+  fullName: WebApplication.Framework.AppSecurity.CompareByteArrays
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WebApplication.Framework.AppSecurity.ConvertToString*
+  commentId: Overload:WebApplication.Framework.AppSecurity.ConvertToString
+  name: ConvertToString
+  nameWithType: AppSecurity.ConvertToString
+  fullName: WebApplication.Framework.AppSecurity.ConvertToString

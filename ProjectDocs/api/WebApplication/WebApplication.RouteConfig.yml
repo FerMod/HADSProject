@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: WebApplication/App_Start/RouteConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RouteConfig
     path: ../WebApplication/App_Start/RouteConfig.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: WebApplication/App_Start/RouteConfig.cs
-      branch: master
+      branch: FerMod
       repo: git@github.com:FerMod/HADSProject.git
     id: RegisterRoutes
     path: ../WebApplication/App_Start/RouteConfig.cs
